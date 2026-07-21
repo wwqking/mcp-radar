@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next
+/out
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# 采集缓存（构建期 GitHub/npm/registry 响应缓存，不入库）
+/.cache
+
+# misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-canvas-light text-neutral-800 dark:bg-canvas-dark dark:text-neutral-200;
+  }
+  ::selection {
+    @apply bg-brand-200 text-brand-900 dark:bg-brand-800 dark:text-brand-50;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-neutral-200/80 bg-white shadow-sm transition-shadow hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900;
+  }
+  .mono {
+    @apply font-mono;
+  }
+  .container-site {
+    @apply mx-auto w-full max-w-site px-4 sm:px-6 lg:px-8;
+  }
+  .link-accent {
+    @apply text-brand-600 underline-offset-4 hover:underline dark:text-brand-400;
+  }
+}
