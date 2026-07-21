@@ -51,8 +51,15 @@ lib/collector/        本项目内置「引擎」——构建期采集：
   build-data.ts        编排：白名单+registry → 富化 → 打分 → 分类 → 排序 → 趋势
   cached-fetch.ts      磁盘缓存（.cache/），避开 GitHub 限流重复打
 
+  dataset.ts           全量数据集读写（build 直接读，不再采集）
+
+data/servers.json     采集好的全量 server 数据（CI 提交，build 直接读）
 data/snapshots/       历史快照（提交进 git，趋势/diff 的数据基础）
 ```
+
+> **build 不采集**：`npm run collect`（CI 每日跑）采集并写 `data/servers.json` + 快照，提交进 git。
+> Vercel/本地 build 只**读** `data/servers.json`（瞬时），不重新拓 API——彻底避开 build 超时、
+> 且 Vercel 无需 GITHUB_TOKEN。数据集缺失时才回退实时采集（兜底）。
 
 **趋势 / 周增量**（`snapshots.ts`）：每次 live 采集写一份 `data/snapshots/YYYY-MM-DD.json`
 （slug → stars/downloads）。下次采集读最近的旧快照做 diff：

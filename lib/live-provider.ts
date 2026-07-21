@@ -13,12 +13,13 @@ import type {
   RadarBuckets,
 } from "./provider";
 import { CATEGORIES, formatNumber } from "./mock-provider";
-import { collectServers } from "./collector/build-data";
+import { loadServers } from "./collector/build-data";
 
-// 构建进程内只采一次，全部页面共享（否则每个页面每个查询都重新采集）
+// 构建进程内只读一次，全部页面共享。
+// loadServers 优先读采集好的 data/servers.json（瞬时），读不到才退回实时采集。
 let _cache: Promise<MCPServer[]> | null = null;
 function servers(): Promise<MCPServer[]> {
-  if (!_cache) _cache = collectServers();
+  if (!_cache) _cache = loadServers();
   return _cache;
 }
 

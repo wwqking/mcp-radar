@@ -18,11 +18,13 @@ import {
   daysBetweenDates,
   type SnapshotMetric,
 } from "./snapshots";
+import { writeDataset, readDataset } from "./dataset";
 
 const REGISTRY_URL = "https://registry.modelcontextprotocol.io";
 
-/** "先采少量"：默认只采 40 个（控制 GitHub 调用量，未认证也不炸）。可用 env 调。 */
-const DEFAULT_LIMIT = Number(process.env.MCP_COLLECT_LIMIT ?? 40);
+/** 每日采集数量默认值。可用 env MCP_COLLECT_LIMIT 覆盖。
+ *  100 = 白名单 ~26 个 + registry 补量，按 stars 取 top 100（起步铺量，仍在 build/限流安全区）。 */
+const DEFAULT_LIMIT = Number(process.env.MCP_COLLECT_LIMIT ?? 100);
 
 function slugify(name: string): string {
   return name
@@ -206,7 +208,23 @@ export async function collectServers(limit = DEFAULT_LIMIT): Promise<MCPServer[]
   // 趋势/diff：用历史快照算周增量 + 构造 sparkline，然后写入今天的快照
   await applyTrends(top);
 
+  // 落盘全量数据集：供 Vercel build 直接读取，不必在 build 里重新采集
+  await writeDataset(top);
+
   return top;
+}
+
+/**
+ * 供数据层（live-provider）用：优先读采集好的数据集（瞬时），读不到才现场采集。
+ *
+ * 正常流程：CI 每天 `npm run collect` → 写 data/servers.json 提交 → Vercel build 读它。
+ * 兜底：本地首次跑、或数据集缺失时，退回实时采集（慢但能出数据）。
+ */
+export async function loadServers(): Promise<MCPServer[]> {
+  const ds = await readDataset();
+  if (ds && ds.servers.length > 0) return ds.servers;
+  console.warn("[collector] 未找到 data/servers.json，退回实时采集（build 会较慢）");
+  return collectServers();
 }
 
 /**

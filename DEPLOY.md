@@ -32,13 +32,12 @@ git push -u origin master
 
    | 变量 | 值 | 说明 |
    |---|---|---|
-   | `NEXT_PUBLIC_SITE_URL` | `https://www.mcpradars.com` | 规范域名（sitemap/canonical/schema 用，与实际访问域名一致） |
-   | `NEXT_PUBLIC_DATA_SOURCE` | `live` | 用真实采集数据 |
-   | `GITHUB_TOKEN` | `ghp_...` | Vercel build 时也要采集，需 token（只读 public_repo） |
-   | `MCP_COLLECT_LIMIT` | `40` | 采集数量 |
+   | `NEXT_PUBLIC_SITE_URL` | `https://www.mcpradars.com` | 规范域名（sitemap/canonical/schema 用） |
+   | `NEXT_PUBLIC_DATA_SOURCE` | `live` | 读采集好的真实数据 |
 
-   > 注意：Vercel build 也会跑采集（因为页面 SSG 时调采集器）。所以 Vercel 环境同样需要
-   > `GITHUB_TOKEN`。它和 CI 里的 token 可以是同一个，但**分别**配在两处 Secret。
+   > **Vercel build 不再采集**：build 直接读仓库里 CI 提交的 `data/servers.json`（瞬时）。
+   > 所以 Vercel 环境**不需要** `GITHUB_TOKEN` / `MCP_COLLECT_LIMIT`——采集只在 GitHub Actions 跑。
+   > （兜底：万一 `data/servers.json` 缺失，build 会退回实时采集，此时才需要 token；正常流程不会。）
 
 ### 3. 绑定域名
 

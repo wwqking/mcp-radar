@@ -36,20 +36,20 @@ jobs:
       - name: 采集真实数据 + 写当天快照
         env:
           GITHUB_TOKEN: ${{ secrets.MCP_GITHUB_TOKEN }} # 只读 public_repo，仅 CI 用
-          MCP_COLLECT_LIMIT: ${{ vars.MCP_COLLECT_LIMIT || '40' }}
+          MCP_COLLECT_LIMIT: ${{ vars.MCP_COLLECT_LIMIT || '100' }}
         run: npm run collect
 
-      - name: 提交快照（有变化才提交）
-        # Vercel 已开启 Git 自动部署：这个 push 会自动触发 Vercel 重新 build + 上线，
-        # 无需单独的 Deploy Hook。数据每日随快照 push 自动更新。
+      - name: 提交数据集 + 快照（有变化才提交）
+        # 提交 data/servers.json（build 直接读它，不再重新采集）+ data/snapshots（趋势历史）。
+        # Vercel 已开启 Git 自动部署：这个 push 自动触发 build + 上线，无需 Deploy Hook。
         run: |
           git config user.name "mcp-radar-bot"
           git config user.email "bot@mcpradars.com"
-          if [ -n "$(git status --porcelain data/snapshots)" ]; then
-            git add data/snapshots
-            git commit -m "chore: 每日快照 $(date -u +%Y-%m-%d)"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "chore: 每日数据更新 $(date -u +%Y-%m-%d)"
             git push
-            echo "✓ 快照已更新并推送（将自动触发 Vercel 部署）"
+            echo "✓ 数据已更新并推送（将自动触发 Vercel 部署）"
           else
-            echo "无快照变化，跳过提交（无需部署）"
+            echo "无数据变化，跳过提交（无需部署）"
           fi
