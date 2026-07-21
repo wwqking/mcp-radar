@@ -40,6 +40,8 @@ jobs:
         run: npm run collect
 
       - name: 提交快照（有变化才提交）
+        # Vercel 已开启 Git 自动部署：这个 push 会自动触发 Vercel 重新 build + 上线，
+        # 无需单独的 Deploy Hook。数据每日随快照 push 自动更新。
         run: |
           git config user.name "mcp-radar-bot"
           git config user.email "bot@mcpradars.com"
@@ -47,16 +49,7 @@ jobs:
             git add data/snapshots
             git commit -m "chore: 每日快照 $(date -u +%Y-%m-%d)"
             git push
-            echo "✓ 快照已更新并推送"
+            echo "✓ 快照已更新并推送（将自动触发 Vercel 部署）"
           else
-            echo "无快照变化，跳过提交"
-          fi
-
-      - name: 触发 Vercel 部署
-        # Vercel 项目里创建 Deploy Hook，URL 存到 GitHub Secret VERCEL_DEPLOY_HOOK
-        run: |
-          if [ -n "${{ secrets.VERCEL_DEPLOY_HOOK }}" ]; then
-            curl -fsS -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}" && echo "✓ 已触发 Vercel 部署"
-          else
-            echo "⚠ 未配置 VERCEL_DEPLOY_HOOK，跳过部署触发（请在仓库 Secrets 里配置）"
+            echo "无快照变化，跳过提交（无需部署）"
           fi

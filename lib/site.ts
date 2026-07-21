@@ -1,8 +1,9 @@
 // 站点级常量 —— 域名/站名/邮箱集中一处，避免散落多文件、上线漏改。
 // 所有需要绝对 URL 的地方（sitemap / robots / feed / canonical / schema）都引用这里。
 
-/** 生产域名。可用环境变量覆盖（预览环境用不同域名时）。 */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://mcpradars.com").replace(/\/$/, "");
+/** 生产域名。可用环境变量覆盖（预览环境用不同域名时）。
+ *  规范域名用 www（Vercel 里 apex 已 301 重定向到 www），保持 canonical/sitemap 一致。 */
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.mcpradars.com").replace(/\/$/, "");
 
 export const SITE_NAME = "MCP Radar";
 
