@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import SubscribeInline from "@/components/SubscribeInline";
+import SubscribeInline, { subscribeStrings } from "@/components/SubscribeInline";
+import SubscribeForm from "@/components/SubscribeForm";
+import WaitlistCta from "@/components/WaitlistCta";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 
@@ -57,17 +59,14 @@ export default function NewsletterPage({ params }: { params: { locale: Locale } 
             <li>{n.freeItem2}</li>
             <li>{n.freeItem3}</li>
           </ul>
-          <form className="mt-5">
-            <input
-              type="email"
-              required
-              placeholder="you@example.com"
-              className="w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-sm outline-none focus:border-brand-500 dark:border-neutral-700 dark:bg-neutral-900"
+          <div className="mt-5">
+            <SubscribeForm
+              strings={{ ...subscribeStrings(params.locale), cta: n.freeCta }}
+              source="newsletter-free"
+              layout="stacked"
+              buttonVariant="outline"
             />
-            <button className="mt-2 w-full rounded-lg border border-brand-600 py-2.5 text-sm font-medium text-brand-700 hover:bg-brand-50 dark:border-brand-500 dark:text-brand-300 dark:hover:bg-brand-950">
-              {n.freeCta}
-            </button>
-          </form>
+          </div>
         </div>
 
         <div className="card relative flex flex-col border-2 border-brand-600 p-6 dark:border-brand-500">
@@ -93,27 +92,35 @@ export default function NewsletterPage({ params }: { params: { locale: Locale } 
             <li>{n.proGuides}</li>
             <li>{n.proExport}</li>
           </ul>
-          <button className="mt-5 w-full rounded-lg bg-brand-600 py-2.5 text-sm font-medium text-white hover:bg-brand-700">
-            {n.proCta}
-          </button>
-          <p className="mt-2 text-center text-xs text-neutral-400">{n.proNote}</p>
+          <WaitlistCta
+            label={n.proCtaWaitlist}
+            strings={{ ...subscribeStrings(params.locale), cta: n.proCtaWaitlist }}
+            source="newsletter-pro"
+            note={n.waitlistNote}
+          />
         </div>
       </div>
 
       {/* 团队档 */}
-      <div className="mt-4 card flex flex-col items-start gap-3 border border-neutral-200 p-6 dark:border-neutral-700 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">{n.teamTier}</p>
-          <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">{n.teamDesc}</p>
+      <div className="mt-4 card border border-neutral-200 p-6 dark:border-neutral-700">
+        <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">{n.teamTier}</p>
+            <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">{n.teamDesc}</p>
+          </div>
+          <div className="shrink-0 text-right">
+            <p className="text-2xl font-extrabold text-neutral-900 dark:text-neutral-50">
+              {n.teamPrice}<span className="text-sm font-normal text-neutral-400">{n.teamPricePer}</span>
+            </p>
+          </div>
         </div>
-        <div className="shrink-0 text-right">
-          <p className="text-2xl font-extrabold text-neutral-900 dark:text-neutral-50">
-            {n.teamPrice}<span className="text-sm font-normal text-neutral-400">{n.teamPricePer}</span>
-          </p>
-          <button className="mt-1 rounded-lg border border-brand-600 px-4 py-1.5 text-sm font-medium text-brand-700 hover:bg-brand-50 dark:border-brand-500 dark:text-brand-300 dark:hover:bg-brand-950">
-            {n.teamCta}
-          </button>
-        </div>
+        <WaitlistCta
+          label={n.teamCtaWaitlist}
+          strings={{ ...subscribeStrings(params.locale), cta: n.teamCtaWaitlist }}
+          source="newsletter-team"
+          note={n.waitlistNote}
+          buttonVariant="outline"
+        />
       </div>
 
       {/* FAQ */}

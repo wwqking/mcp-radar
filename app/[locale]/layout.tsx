@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import CompareTray from "@/components/CompareTray";
 import JsonLd from "@/components/JsonLd";
 import { SITE_NAME } from "@/lib/site";
 import { organizationSchema, webSiteSchema } from "@/lib/schema";
@@ -64,6 +65,7 @@ export default function LocaleLayout({
 }) {
   if (!isLocale(params.locale)) notFound();
   const locale = params.locale as Locale;
+  const c = getDictionary(locale).compare;
   return (
     <>
       {/* 根布局的 <html lang> 是静态 zh-CN 兜底；这里按当前 locale 校正，保持 SSG 不变 */}
@@ -75,6 +77,7 @@ export default function LocaleLayout({
       <JsonLd data={[organizationSchema(), webSiteSchema()]} />
       <SiteHeader locale={locale} />
       <main className="flex-1">{children}</main>
+      <CompareTray locale={locale} strings={{ trayLabel: c.trayLabel, compareCta: c.compareCta, clear: c.clear }} />
       <SiteFooter locale={locale} />
     </>
   );

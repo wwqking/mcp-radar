@@ -16,6 +16,9 @@ import SourceMethodNote from "@/components/SourceMethodNote";
 import ServerCard from "@/components/ServerCard";
 import Sparkline from "@/components/Sparkline";
 import SubscribeInline from "@/components/SubscribeInline";
+import InstallCommandCard from "@/components/InstallCommand";
+import { installCommands } from "@/lib/install";
+import CompareButton from "@/components/CompareButton";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
 import type { Locale } from "@/lib/i18n/locales";
@@ -63,6 +66,7 @@ function trendPct(data: number[]): string | null {
 export default async function ServerDetailPage({ params }: Props) {
   const { locale } = params;
   const d = getDictionary(locale).server;
+  const dCompare = getDictionary(locale).compare;
   const s = await getServerBySlug(params.name);
   if (!s) notFound();
 
@@ -148,6 +152,10 @@ export default async function ServerDetailPage({ params }: Props) {
                   <a href={s.registryUrl} target="_blank" rel="noopener" className="rounded-lg border border-neutral-200 px-3 py-1.5 text-sm text-neutral-600 hover:border-brand-400 hover:text-brand-700 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-brand-300">
                     registry ↗
                   </a>
+                  <CompareButton
+                    slug={s.slug}
+                    strings={{ add: dCompare.add, added: dCompare.added, full: dCompare.full }}
+                  />
                 </div>
               </div>
               <div className="flex shrink-0 flex-col items-center gap-1">
@@ -170,6 +178,15 @@ export default async function ServerDetailPage({ params }: Props) {
               {deathReasonText(s, locale) && <span className="mt-1 block text-xs opacity-80">{d.verdictBasis}{deathReasonText(s, locale)}</span>}
             </div>
           </header>
+
+          {/* 安装 / 接入命令 */}
+          <InstallCommandCard
+            commands={installCommands(s)}
+            title={d.installTitle}
+            note={d.installNote}
+            copyLabel={d.copy}
+            copiedLabel={d.copied}
+          />
 
           {/* 五维信号卡 */}
           <section className="mt-6 grid gap-4 sm:grid-cols-2">

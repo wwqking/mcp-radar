@@ -89,7 +89,10 @@
     "faq2Q": "怎么退订？",
     "faq2A": "每封邮件底部一键退订，立即生效。",
     "faq3Q": "数据会卖吗？",
-    "faq3A": "不会。邮箱只用于发送周刊，永不出售或共享。"
+    "faq3A": "不会。邮箱只用于发送周刊，永不出售或共享。",
+    "proCtaWaitlist": "加入候补名单",
+    "teamCtaWaitlist": "预约团队档",
+    "waitlistNote": "会员功能开发中 · 留邮箱抢先体验"
   },
   "sponsor": {
     "metaTitle": "赞助 —— 排名绝不出售，展示位明码标价",
@@ -179,6 +182,14 @@
     "desc": "新增 server、爆火趋势、弃坑预警——引擎自动追踪，人工筛选后发到你邮箱。",
     "cta": "免费订阅",
     "note": "每周一封 · 随时退订 · 不卖数据"
+  },
+  "subscribeForm": {
+    "submitting": "提交中…",
+    "success": "订阅成功！请查收确认邮件。",
+    "already": "你已经在订阅列表里了 ✓",
+    "invalidEmail": "请输入有效的邮箱地址",
+    "notConfigured": "订阅暂未开放，稍后再来～",
+    "error": "出了点问题，请稍后重试"
   },
   "sourceNote": {
     "sources": "数据来源：",
@@ -369,6 +380,40 @@
     "methodLink": "评分方法论 →",
     "correctionA": "认为本页数据有误？维护者可",
     "correctionLink": "提交更正",
-    "correctionB": "。"
+    "correctionB": "。",
+    "installTitle": "安装 / 接入",
+    "installNote": "以官方 README 为准；env 与参数各 server 不同。",
+    "copy": "复制",
+    "copied": "已复制 ✓"
+  },
+  "compare": {
+    "add": "加入对比",
+    "added": "已加入对比 ✓",
+    "full": "最多对比 4 个",
+    "trayLabel": "对比栏",
+    "compareCta": "对比",
+    "clear": "清空",
+    "metaTitle": "MCP server 对比",
+    "metaDesc": "并排对比多个 MCP server 的 TrustScore、维护状态与关键信号。",
+    "title": "MCP server 对比",
+    "empty": "还没有选中要对比的 server。去榜单或详情页点「加入对比」。",
+    "browse": "去看榜单",
+    "colMetric": "指标",
+    "trustScore": "TrustScore",
+    "lifecycle": "维护状态",
+    "stars": "GitHub stars",
+    "downloads": "npm 周下载",
+    "lastCommit": "最近提交",
+    "license": "协议",
+    "maintenance": "维护活跃",
+    "adoption": "采用度",
+    "usability": "可用性",
+    "health": "健康度",
+    "community": "社区",
+    "viewDetail": "看详情",
+    "remove": "移除",
+    "daysAgo": "{n} 天前",
+    "today": "今天",
+    "none": "—"
   }
 }

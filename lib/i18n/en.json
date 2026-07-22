@@ -89,7 +89,10 @@
     "faq2Q": "How do I unsubscribe?",
     "faq2A": "One-click unsubscribe at the bottom of every email, effective immediately.",
     "faq3Q": "Do you sell my data?",
-    "faq3A": "No. Your email is used only to send the newsletter, never sold or shared."
+    "faq3A": "No. Your email is used only to send the newsletter, never sold or shared.",
+    "proCtaWaitlist": "Join the waitlist",
+    "teamCtaWaitlist": "Request team access",
+    "waitlistNote": "Membership is in the works · leave your email for early access"
   },
   "sponsor": {
     "metaTitle": "Sponsor — rankings are never for sale, placements are transparently priced",
@@ -179,6 +182,14 @@
     "desc": "New servers, breakout trends, abandonment alerts — tracked automatically, curated by hand, sent to your inbox.",
     "cta": "Subscribe free",
     "note": "One email a week · unsubscribe anytime · no data selling"
+  },
+  "subscribeForm": {
+    "submitting": "Subscribing…",
+    "success": "Subscribed! Check your inbox to confirm.",
+    "already": "You're already on the list ✓",
+    "invalidEmail": "Please enter a valid email address",
+    "notConfigured": "Subscriptions are not open yet — check back soon.",
+    "error": "Something went wrong, please try again"
   },
   "sourceNote": {
     "sources": "Sources: ",
@@ -369,6 +380,40 @@
     "methodLink": "Scoring methodology →",
     "correctionA": "Think this page is wrong? Maintainers can ",
     "correctionLink": "submit a correction",
-    "correctionB": "."
+    "correctionB": ".",
+    "installTitle": "Install / Connect",
+    "installNote": "Follow the official README; env and args vary per server.",
+    "copy": "Copy",
+    "copied": "Copied ✓"
+  },
+  "compare": {
+    "add": "Add to compare",
+    "added": "Added ✓",
+    "full": "Compare up to 4",
+    "trayLabel": "Compare",
+    "compareCta": "Compare",
+    "clear": "Clear",
+    "metaTitle": "Compare MCP servers",
+    "metaDesc": "Compare TrustScore, maintenance status and key signals of multiple MCP servers side by side.",
+    "title": "Compare MCP servers",
+    "empty": "No servers selected yet. Tap \"Add to compare\" on the leaderboard or a detail page.",
+    "browse": "Browse leaderboard",
+    "colMetric": "Metric",
+    "trustScore": "TrustScore",
+    "lifecycle": "Status",
+    "stars": "GitHub stars",
+    "downloads": "npm weekly",
+    "lastCommit": "Last commit",
+    "license": "License",
+    "maintenance": "Maintenance",
+    "adoption": "Adoption",
+    "usability": "Usability",
+    "health": "Health",
+    "community": "Community",
+    "viewDetail": "View",
+    "remove": "Remove",
+    "daysAgo": "{n}d ago",
+    "today": "today",
+    "none": "—"
   }
 }
