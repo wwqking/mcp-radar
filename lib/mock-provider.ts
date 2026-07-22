@@ -799,6 +799,12 @@ function radarSync(): RadarBuckets {
     server: s,
     kind: "trending" as const,
     evidence: `+${s.signals.starsWeeklyDelta} ⭐ / 周${s.signals.npmWeeklyDownloads ? `，周下载 ${formatNumber(s.signals.npmWeeklyDownloads)}` : ""}`,
+    evidenceKey: "trendingDelta" as const,
+    evidenceVars: {
+      starsDelta: s.signals.starsWeeklyDelta,
+      stars: s.signals.stars,
+      downloads: s.signals.npmWeeklyDownloads,
+    },
   }));
 
   const added: RadarEntry[] = servers
@@ -807,6 +813,8 @@ function radarSync(): RadarBuckets {
       server: s,
       kind: "new" as const,
       evidence: `${formatDate(s.addedAt)} 首次收录，已获 ${formatNumber(s.signals.stars)} ⭐`,
+      evidenceKey: "new" as const,
+      evidenceVars: { addedAt: s.addedAt, stars: s.signals.stars },
     }));
 
   const dead: RadarEntry[] = graveyardSync()
@@ -815,6 +823,7 @@ function radarSync(): RadarBuckets {
       server: s,
       kind: "dead" as const,
       evidence: s.deathReason ?? "健康度持续恶化",
+      evidenceKey: "dead" as const,
     }));
 
   return { trending, added, dead };

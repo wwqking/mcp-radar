@@ -83,7 +83,7 @@ export function computeLifecycle(sig: HealthSignals): Lifecycle {
   return "active";
 }
 
-/** 一句策展判断 */
+/** 一句策展判断（中文，i18n 兜底用）。多语言渲染见 lib/i18n/verdict.ts。 */
 export function computeVerdict(lifecycle: Lifecycle, sig: HealthSignals): string {
   switch (lifecycle) {
     case "active":

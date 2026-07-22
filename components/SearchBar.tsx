@@ -4,14 +4,19 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { MCPServer } from "@/lib/types";
 import { LIFECYCLE_META } from "@/lib/constants";
+import type { Locale } from "@/lib/i18n/locales";
+import { localizedHref } from "@/lib/i18n/href";
 
 interface Props {
   servers: MCPServer[];
+  locale: Locale;
+  placeholderHero: string;
+  placeholderNav: string;
   size?: "nav" | "hero";
 }
 
 /** 全站即时搜索（server 名/用途），导航站第一入口 */
-export default function SearchBar({ servers, size = "nav" }: Props) {
+export default function SearchBar({ servers, locale, placeholderHero, placeholderNav, size = "nav" }: Props) {
   const [q, setQ] = useState("");
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
@@ -42,7 +47,7 @@ export default function SearchBar({ servers, size = "nav" }: Props) {
   const go = (slug: string) => {
     setOpen(false);
     setQ("");
-    router.push(`/server/${slug}`);
+    router.push(localizedHref(locale, `/server/${slug}`));
   };
 
   const onKey = (e: React.KeyboardEvent) => {
@@ -77,7 +82,7 @@ export default function SearchBar({ servers, size = "nav" }: Props) {
         }}
         onFocus={() => setOpen(true)}
         onKeyDown={onKey}
-        placeholder={isHero ? "搜索 server 名或用途，比如「数据库」「截图」…" : "搜索 server…"}
+        placeholder={isHero ? placeholderHero : placeholderNav}
         className={`w-full rounded-xl border bg-white outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200 dark:border-neutral-700 dark:bg-neutral-900 dark:focus:ring-brand-900 ${
           isHero
             ? "border-neutral-300 py-4 pl-11 pr-4 text-base shadow-sm"

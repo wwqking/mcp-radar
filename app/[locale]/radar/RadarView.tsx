@@ -5,55 +5,60 @@ import type { RadarBuckets } from "@/lib/provider";
 import ServerCard from "@/components/ServerCard";
 import SubscribeInline from "@/components/SubscribeInline";
 import SourceMethodNote from "@/components/SourceMethodNote";
+import type { Locale } from "@/lib/i18n/locales";
+import { evidenceText } from "@/lib/i18n/verdict";
 
-const PERIODS = ["本周", "上周", "历史"] as const;
+interface RadarLabels {
+  h1: string;
+  sub: string;
+  sourceLabel: string;
+  periodThisWeek: string;
+  periodLastWeek: string;
+  periodHistory: string;
+  placeholderNote: string;
+  trendingTitle: string;
+  trendingDesc: string;
+  newTitle: string;
+  newDesc: string;
+  deadTitle: string;
+  deadDesc: string;
+  emptyPrefix: string;
+  emptySuffix: string;
+  shareTitle: string;
+}
 
 interface Props {
   entries: RadarBuckets;
   lastUpdated: string;
+  locale: Locale;
+  labels: RadarLabels;
 }
 
 /** 雷达页交互层：时间切换 + 分享按钮。数据由服务端父组件 fetch 后传入。 */
-export default function RadarView({ entries, lastUpdated }: Props) {
-  const [period, setPeriod] = useState<(typeof PERIODS)[number]>("本周");
+export default function RadarView({ entries, lastUpdated, locale, labels: L }: Props) {
+  const periods = [L.periodThisWeek, L.periodLastWeek, L.periodHistory] as const;
+  const [period, setPeriod] = useState<string>(L.periodThisWeek);
   const { trending, added, dead } = entries;
 
   const sections = [
-    {
-      key: "trending",
-      title: "🔥 爆火",
-      desc: "stars / 下载周环比涨幅榜",
-      entries: trending,
-    },
-    {
-      key: "new",
-      title: "🆕 新增",
-      desc: "本周首次进 registry 的 server",
-      entries: added,
-    },
-    {
-      key: "dead",
-      title: "⚰️ 死亡 / 濒危",
-      desc: "新判定 dead / dying，附判定依据",
-      entries: dead,
-    },
+    { key: "trending", title: L.trendingTitle, desc: L.trendingDesc, entries: trending },
+    { key: "new", title: L.newTitle, desc: L.newDesc, entries: added },
+    { key: "dead", title: L.deadTitle, desc: L.deadDesc, entries: dead },
   ];
 
   return (
     <div className="container-site py-10 sm:py-14">
       <header className="mb-8">
         <h1 className="text-2xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-50 sm:text-3xl">
-          趋势雷达
+          {L.h1}
         </h1>
-        <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
-          本周 MCP 生态发生了什么。每个变化都有可解释的依据——涨了多少、为什么判死，全都写明。
-        </p>
-        <SourceMethodNote className="mt-3" sources={["引擎每周 diff 扫描"]} updatedAt={lastUpdated} />
+        <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">{L.sub}</p>
+        <SourceMethodNote locale={locale} className="mt-3" sources={[L.sourceLabel]} updatedAt={lastUpdated} />
       </header>
 
       {/* 时间切换 */}
       <div className="mb-8 flex rounded-lg border border-neutral-200 p-0.5 dark:border-neutral-700 w-fit">
-        {PERIODS.map((p) => (
+        {periods.map((p) => (
           <button
             key={p}
             onClick={() => setPeriod(p)}
@@ -68,9 +73,9 @@ export default function RadarView({ entries, lastUpdated }: Props) {
         ))}
       </div>
 
-      {period !== "本周" && (
+      {period !== L.periodThisWeek && (
         <p className="mb-8 rounded-lg bg-neutral-100 px-4 py-2.5 text-sm text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400">
-          {period === "上周" ? "上周" : "历史"}数据为演示占位 —— 接引擎周报 diff 后展示真实历史。
+          {L.placeholderNote.replace("{period}", period)}
         </p>
       )}
 
@@ -83,14 +88,15 @@ export default function RadarView({ entries, lastUpdated }: Props) {
             </div>
             {sec.entries.length > 0 ? (
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {sec.entries.map((e) => (
+                {sec.entries.map((e) => {
+                  const ev = evidenceText(e, locale);
+                  return (
                   <div key={e.server.slug} className="relative">
-                    <ServerCard server={e.server} evidence={e.evidence} />
-                    {/* 分享按钮 */}
+                    <ServerCard server={e.server} locale={locale} evidence={ev} />
                     <button
-                      title="分享（生成带数字的分享图）"
+                      title={L.shareTitle}
                       onClick={() => {
-                        const text = `${e.server.name} — ${e.evidence} | MCP Radar`;
+                        const text = `${e.server.name} — ${ev} | MCP Radar`;
                         navigator.clipboard?.writeText(text).catch(() => {});
                       }}
                       className="absolute right-3 top-3 rounded-md bg-white/80 p-1.5 text-neutral-400 opacity-0 shadow-sm transition-opacity hover:text-brand-600 [div:hover>&]:opacity-100 dark:bg-neutral-900/80"
@@ -100,18 +106,18 @@ export default function RadarView({ entries, lastUpdated }: Props) {
                       </svg>
                     </button>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             ) : (
               <p className="rounded-lg border border-dashed border-neutral-200 py-8 text-center text-sm text-neutral-400 dark:border-neutral-700">
-                本周暂无{sec.title.slice(2)}变化。
+                {L.emptyPrefix}{sec.title.slice(2)}{L.emptySuffix}
               </p>
             )}
 
-            {/* 列表中部订阅钩子 */}
             {idx === 0 && (
               <div className="mt-8">
-                <SubscribeInline variant="compact" />
+                <SubscribeInline locale={locale} variant="compact" />
               </div>
             )}
           </section>

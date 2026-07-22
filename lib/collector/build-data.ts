@@ -117,6 +117,9 @@ async function enrichOne(cand: RegistryCandidate): Promise<MCPServer> {
             lifecycle === "dead"
               ? "仓库 archived，作者停止维护"
               : `最近提交 ${signals.lastCommitDaysAgo ?? "?"} 天前，issue 响应弱，无新 release`,
+          // 结构化 key，供多语言运行时渲染（见 lib/i18n/verdict.ts）
+          deathReasonKey: lifecycle === "dead" ? ("archived" as const) : ("stale" as const),
+          deathReasonDays: lifecycle === "dying" ? signals.lastCommitDaysAgo : null,
         }
       : {};
 
@@ -134,6 +137,8 @@ async function enrichOne(cand: RegistryCandidate): Promise<MCPServer> {
     npmPackage: cand.npmPackage,
     registryUrl: REGISTRY_URL,
     verdict,
+    verdictKey: lifecycle,
+    verdictDays: lifecycle === "dying" ? signals.lastCommitDaysAgo : null,
     addedAt: cand.publishedAt ? cand.publishedAt.slice(0, 10) : todayIso(),
     ...deathInfo,
     starsTrend: [], // 趋势需历史快照，先空（sparkline 会显示「无数据」）

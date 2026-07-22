@@ -57,6 +57,15 @@ export function getLastUpdated(): Promise<string> {
 }
 
 // ---------- 透传客户端安全常量（服务端组件可继续从 data.ts 取，省得改 import） ----------
-export { CATEGORIES, formatNumber, formatDate, LIFECYCLE_META } from "./constants";
+export {
+  CATEGORIES,
+  formatNumber,
+  formatDate,
+  LIFECYCLE_META,
+  categoryName,
+  categoryTagline,
+  categoryDescription,
+  lifecycleLabel,
+} from "./constants";
 
 export type { SiteStats, LeaderboardOptions, RadarBuckets } from "./provider";

@@ -83,9 +83,16 @@ export const liveProvider: MCPDataProvider = {
       .map((s) => ({
         server: s,
         kind: "trending" as const,
+        // 旧字段兜底（中文），新的多语言渲染用 evidenceKey + evidenceVars
         evidence: hasDelta
           ? `+${formatNumber(s.signals.starsWeeklyDelta)} ⭐ / 周${s.signals.npmWeeklyDownloads ? `，周下载 ${formatNumber(s.signals.npmWeeklyDownloads)}` : ""}`
           : `${formatNumber(s.signals.stars)} ⭐${s.signals.npmWeeklyDownloads ? `，周下载 ${formatNumber(s.signals.npmWeeklyDownloads)}` : ""}`,
+        evidenceKey: hasDelta ? ("trendingDelta" as const) : ("trendingStars" as const),
+        evidenceVars: {
+          starsDelta: s.signals.starsWeeklyDelta,
+          stars: s.signals.stars,
+          downloads: s.signals.npmWeeklyDownloads,
+        },
       }));
 
     // 新增：按 addedAt 最近的
@@ -96,6 +103,8 @@ export const liveProvider: MCPDataProvider = {
         server: s,
         kind: "new" as const,
         evidence: `${s.addedAt} 首次收录，${formatNumber(s.signals.stars)} ⭐`,
+        evidenceKey: "new" as const,
+        evidenceVars: { addedAt: s.addedAt, stars: s.signals.stars },
       }));
 
     const dead: RadarEntry[] = graveyardOf(list)
@@ -104,6 +113,7 @@ export const liveProvider: MCPDataProvider = {
         server: s,
         kind: "dead" as const,
         evidence: s.deathReason ?? "健康度持续恶化",
+        evidenceKey: "dead" as const,
       }));
 
     return { trending, added, dead };

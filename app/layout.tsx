@@ -1,43 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
-import JsonLd from "@/components/JsonLd";
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, SITE_TAGLINE } from "@/lib/site";
-import { organizationSchema, webSiteSchema } from "@/lib/schema";
+import { SITE_URL, SITE_NAME } from "@/lib/site";
+
+// 根布局只放 <html>/<body> 骨架；站点头/尾、多语言 metadata 在 app/[locale]/layout.tsx。
+// <html lang> 由 [locale] 布局无法直接改根节点，这里用默认 en 兜底；
+// 各语言页面的 hreflang / og:locale 已在 [locale] 布局里精确声明，SEO 不受影响。
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: `${SITE_NAME} —— 找到能用的 MCP server，标注哪个还活着`,
-    template: `%s | ${SITE_NAME}`,
-  },
-  description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
-  alternates: {
-    canonical: "/",
-    types: {
-      "application/rss+xml": "/feed.xml",
-      "application/feed+json": "/feed.json",
-    },
-  },
-  openGraph: {
-    type: "website",
-    siteName: SITE_NAME,
-    title: SITE_NAME,
-    description: SITE_TAGLINE,
-    url: "/",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: SITE_NAME,
-    description: SITE_TAGLINE,
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* 防暗色闪烁 */}
         <script
@@ -47,13 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} RSS`} href="/feed.xml" />
-        <JsonLd data={[organizationSchema(), webSiteSchema()]} />
       </head>
-      <body className="flex min-h-screen flex-col">
-        <SiteHeader />
-        <main className="flex-1">{children}</main>
-        <SiteFooter />
-      </body>
+      <body className="flex min-h-screen flex-col">{children}</body>
     </html>
   );
 }

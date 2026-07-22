@@ -4,20 +4,29 @@ import { formatNumber } from "@/lib/constants";
 import TrustScore from "./TrustScore";
 import LifecycleBadge from "./LifecycleBadge";
 import Sparkline from "./Sparkline";
+import type { Locale } from "@/lib/i18n/locales";
+import { localizedHref } from "@/lib/i18n/href";
 
 interface Props {
   server: MCPServer;
+  locale: Locale;
   showTrend?: boolean;
   evidence?: string; // 雷达页的可解释依据
   rank?: number; // 榜单页排名
 }
 
 /** 榜单/雷达/搜索结果统一卡片 */
-export default function ServerCard({ server, showTrend = false, evidence, rank }: Props) {
+export default function ServerCard({ server, locale, showTrend = false, evidence, rank }: Props) {
   const s = server.signals;
+  const updated =
+    s.lastCommitDaysAgo === null
+      ? null
+      : s.lastCommitDaysAgo === 0
+        ? locale === "en" ? "updated today" : "今天更新"
+        : locale === "en" ? `updated ${s.lastCommitDaysAgo}d ago` : `${s.lastCommitDaysAgo} 天前更新`;
   return (
     <Link
-      href={`/server/${server.slug}`}
+      href={localizedHref(locale, `/server/${server.slug}`)}
       className="card group flex flex-col gap-3 p-4 sm:p-5"
     >
       <div className="flex items-start justify-between gap-3">
@@ -47,13 +56,9 @@ export default function ServerCard({ server, showTrend = false, evidence, rank }
 
       <div className="mt-auto flex items-center justify-between gap-3">
         <div className="flex items-center gap-3 text-xs text-neutral-500 dark:text-neutral-400">
-          <LifecycleBadge status={server.lifecycle} size="sm" />
+          <LifecycleBadge status={server.lifecycle} locale={locale} size="sm" />
           {s.stars > 0 && <span title="GitHub stars">⭐ {formatNumber(s.stars)}</span>}
-          {s.lastCommitDaysAgo !== null && (
-            <span title="最近提交">
-              {s.lastCommitDaysAgo === 0 ? "今天更新" : `${s.lastCommitDaysAgo} 天前更新`}
-            </span>
-          )}
+          {updated && <span>{updated}</span>}
         </div>
         {showTrend && server.starsTrend.length > 1 && (
           <Sparkline data={server.starsTrend} width={80} height={24} />

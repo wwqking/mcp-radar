@@ -1,13 +1,15 @@
 import type { Lifecycle } from "@/lib/types";
-import { LIFECYCLE_META } from "@/lib/constants";
+import { LIFECYCLE_META, lifecycleLabel } from "@/lib/constants";
+import type { Locale } from "@/lib/i18n/locales";
 
 interface Props {
   status: Lifecycle;
+  locale: Locale;
   size?: "sm" | "md";
 }
 
 /** 生命周期标记：active / dying / dead / unverifiable */
-export default function LifecycleBadge({ status, size = "md" }: Props) {
+export default function LifecycleBadge({ status, locale, size = "md" }: Props) {
   const meta = LIFECYCLE_META[status];
   return (
     <span
@@ -16,7 +18,7 @@ export default function LifecycleBadge({ status, size = "md" }: Props) {
       }`}
     >
       <span className={`h-1.5 w-1.5 rounded-full ${meta.dotClass}`} />
-      {meta.label}
+      {lifecycleLabel(status, locale)}
     </span>
   );
 }
