@@ -108,10 +108,20 @@ npm run build
   - `/llms.txt`（`app/llms.txt/route.ts`）：给 AI 引擎的站点地图 + 方法论 + 数据边界，含实时高分 server。
 - **OG 图**：`app/opengraph-image.tsx` 用 next/og 代码生成的品牌图，全站默认。
 
+## 变现 / 交互功能
+
+- **订阅（真实生效）**：`/api/subscribe`（`app/api/subscribe/route.ts`）转发 Buttondown。
+  配 `BUTTONDOWN_API_KEY` 才开启；未配返回 503，前端提示「订阅暂未开放」不假成功。
+  客户端表单 `components/SubscribeForm.tsx`（加载/成功/错误态 + 蜜罐反爬）；
+  内嵌位 `SubscribeInline`、newsletter 免费档直接订阅、Pro/团队档 `WaitlistCta` 收候补邮箱（`source` 打标区分入口）。
+- **每页动态 OG 图**：`app/[locale]/server/[name]/opengraph-image.tsx`——带 server 名 + TrustScore 环 + 生命周期 + stars/下载，随详情页 SSG 各出一张（全站默认图仍是 `app/[locale]/opengraph-image.tsx`）。
+- **复制安装命令**：详情页 `InstallCommandCard`（`lib/install.ts` 生成 `claude mcp add` / JSON 配置，多 tab + 一键复制）。
+- **对比**：`/[locale]/compare?ids=a,b,c`（noindex 工具页）。详情页「加入对比」（`CompareButton`）→ 浮动对比栏（`CompareTray`，全局挂在 layout）→ 并排对比表（`CompareTable`）。状态存 localStorage（`lib/compare-store.ts`），跨页/刷新/多标签同步。
+
 ## 待办
 
 - [ ] 扩充白名单 / 调大 `MCP_COLLECT_LIMIT` 铺更多长尾页面（当前 curated ~26 个 + registry 补量）
 - [ ] 每日 cron 跑 `npm run build` 让快照按天累积（趋势/爆火才有真实历史）
-- [ ] 订阅表单接 Buttondown / Resend
 - [ ] 上线后 Google/Bing Search Console 提交 sitemap，启动沙盒期倒计时
-- [ ]（可选）动态 OG 图：每页带 server 名 + TrustScore（当前是全站统一静态图）
+- [ ] 上线后在 Vercel env 配 `BUTTONDOWN_API_KEY` 开启订阅
+- [ ] Pro/团队档的真正支付（Stripe）——目前只收候补邮箱
