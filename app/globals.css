@@ -5,9 +5,13 @@
 @layer base {
   html {
     @apply antialiased;
+    /* 站点最小宽度 1400px：窄于此宽度出现横向滚动条，避免布局塌陷。
+       放在 html 上（而非 body），body 是 flex 容器，min-width 不一定撑开滚动。 */
+    min-width: 1400px;
   }
   body {
     @apply bg-canvas-light text-neutral-800 dark:bg-canvas-dark dark:text-neutral-200;
+    min-width: 1400px;
   }
   ::selection {
     @apply bg-brand-200 text-brand-900 dark:bg-brand-800 dark:text-brand-50;
