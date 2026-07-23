@@ -9,6 +9,10 @@ import { SITE_URL, SITE_NAME } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: SITE_NAME,
+  // Google Search Console 站点验证（Next 会渲染成 <meta name="google-site-verification">）
+  verification: {
+    google: "tKkAtF_Bz-59xK_MCadc2vvUBy1a2s2oHklIrmsUjyk",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
