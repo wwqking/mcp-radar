@@ -7,7 +7,7 @@
 import { collectServers } from "../lib/collector/build-data";
 
 async function main() {
-  const limit = Number(process.env.MCP_COLLECT_LIMIT ?? 200);
+  const limit = Number(process.env.MCP_COLLECT_LIMIT ?? 300);
   console.log(`[collect] 开始采集，limit=${limit}，token=${process.env.GITHUB_TOKEN ? "有" : "无（限流 60/h）"}`);
 
   const start = Date.now();

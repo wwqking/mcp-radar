@@ -48,12 +48,14 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   { name: "prisma-mcp", repoUrl: "https://github.com/prisma/mcp", npmPackage: null },
   { name: "mcp-server-motherduck", repoUrl: "https://github.com/motherduckdb/mcp-server-motherduck", npmPackage: null },
   { name: "mcp-server-weaviate", repoUrl: "https://github.com/weaviate/mcp-server-weaviate", npmPackage: null },
+  { name: "mcp-confluent", repoUrl: "https://github.com/confluentinc/mcp-confluent", npmPackage: null },
 
   // 搜索 / 知识
   { name: "exa-mcp-server", repoUrl: "https://github.com/exa-labs/exa-mcp-server", npmPackage: "exa-mcp-server" },
   { name: "tavily-mcp", repoUrl: "https://github.com/tavily-ai/tavily-mcp", npmPackage: "tavily-mcp" },
   { name: "@brave/brave-search-mcp-server", repoUrl: "https://github.com/brave/brave-search-mcp-server", npmPackage: "@brave/brave-search-mcp-server" },
   { name: "jina-mcp", repoUrl: "https://github.com/jina-ai/MCP", npmPackage: null },
+  { name: "hf-mcp-server", repoUrl: "https://github.com/huggingface/hf-mcp-server", npmPackage: null },
 
   // 通讯 / 协作
   { name: "@notionhq/notion-mcp-server", repoUrl: "https://github.com/makenotion/notion-mcp-server", npmPackage: "@notionhq/notion-mcp-server" },
@@ -61,11 +63,15 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   { name: "@elevenlabs/elevenlabs-mcp", repoUrl: "https://github.com/elevenlabs/elevenlabs-mcp", npmPackage: null },
   { name: "atlassian-mcp-server", repoUrl: "https://github.com/atlassian/atlassian-mcp-server", npmPackage: null },
   { name: "slack-mcp-server", repoUrl: "https://github.com/korotovsky/slack-mcp-server", npmPackage: null },
+  { name: "airtable-mcp-server", repoUrl: "https://github.com/domdomegg/airtable-mcp-server", npmPackage: "airtable-mcp-server" },
 
   // 支付 / 商业
   { name: "@stripe/mcp", repoUrl: "https://github.com/stripe/agent-toolkit", npmPackage: "@stripe/mcp" },
   { name: "apify-mcp-server", repoUrl: "https://github.com/apify/apify-mcp-server", npmPackage: "@apify/actors-mcp-server" },
   { name: "zapier-mcp", repoUrl: "https://github.com/zapier/zapier-mcp", npmPackage: null },
+  { name: "@paypal/mcp", repoUrl: "https://github.com/paypal/agent-toolkit", npmPackage: "@paypal/mcp" },
+  { name: "square-mcp-server", repoUrl: "https://github.com/square/square-mcp-server", npmPackage: null },
+  { name: "twilio-mcp", repoUrl: "https://github.com/twilio-labs/mcp", npmPackage: null },
 
   // 云 / DevOps
   { name: "@cloudflare/mcp-server-cloudflare", repoUrl: "https://github.com/cloudflare/mcp-server-cloudflare", npmPackage: null },
@@ -78,6 +84,8 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   { name: "netlify-mcp", repoUrl: "https://github.com/netlify/netlify-mcp", npmPackage: null },
   { name: "snowflake-mcp", repoUrl: "https://github.com/Snowflake-Labs/mcp", npmPackage: null },
   { name: "dynatrace-mcp", repoUrl: "https://github.com/dynatrace-oss/dynatrace-mcp", npmPackage: null },
+  { name: "microsoft-mcp", repoUrl: "https://github.com/microsoft/mcp", npmPackage: null },
+  { name: "vantage-mcp-server", repoUrl: "https://github.com/vantage-sh/vantage-mcp-server", npmPackage: null },
 
   // AI / 模型
   { name: "@upstash/context7-mcp", repoUrl: "https://github.com/upstash/context7", npmPackage: "@upstash/context7-mcp" },

@@ -23,10 +23,10 @@ import { writeDataset, readDataset } from "./dataset";
 const REGISTRY_URL = "https://registry.modelcontextprotocol.io";
 
 /** 每日采集数量默认值。可用 env MCP_COLLECT_LIMIT 覆盖。
- *  200 = 白名单 ~26 个 + registry 补量，按 stars 取 top 200。
- *  探底发现 registry 可采上千，但 stars≥10 的仅 ~120 个，过了 ~150 名基本是 0-1 star 空壳，
- *  再往上是低质长尾（对 SEO 反而有害）。200 是"多铺一点真实项"与"控质量"的折中。 */
-const DEFAULT_LIMIT = Number(process.env.MCP_COLLECT_LIMIT ?? 200);
+ *  300 = 白名单 ~64 个（优质保底）+ registry 补量，按 stars 取 top 300。
+ *  探底发现 registry 可采上千，但 stars≥10 的仅 ~120 个，过了 ~150 名多是低质长尾。
+ *  白名单已扩到 64 个真实官方 server，前排质量有保底，故把 limit 提到 300 铺更多长尾页面。 */
+const DEFAULT_LIMIT = Number(process.env.MCP_COLLECT_LIMIT ?? 300);
 
 function slugify(name: string): string {
   return name
