@@ -1,5 +1,5 @@
 import type { Locale } from "./locales";
-import { LOCALES } from "./locales";
+import { LOCALES, DEFAULT_LOCALE } from "./locales";
 
 // 给站内路径加上 locale 前缀。
 //   localizedHref("en", "/leaderboard") -> "/en/leaderboard"
@@ -14,6 +14,22 @@ export function localizedHref(locale: Locale, path: string): string {
   }
   if (path === "/") return `/${locale}`;
   return `/${locale}${path}`;
+}
+
+// 生成 Next Metadata.alternates 用的 canonical + hreflang 语言映射。
+// 传入“裸路径”（不带 locale 前缀，如 "/server/foo" 或 "/"），当前 locale 的 canonical 指向自己，
+// languages 里每种语言互指同一内容，并给 x-default 兜底到默认语言。
+//   hreflangAlternates("en", "/server/foo")
+//   -> { canonical: "/en/server/foo",
+//        languages: { en: "/en/server/foo", zh: "/zh/server/foo", "x-default": "/en/server/foo" } }
+export function hreflangAlternates(
+  locale: Locale,
+  barePath: string,
+): { canonical: string; languages: Record<string, string> } {
+  const languages: Record<string, string> = {};
+  for (const l of LOCALES) languages[l] = localizedHref(l, barePath);
+  languages["x-default"] = localizedHref(DEFAULT_LOCALE, barePath);
+  return { canonical: localizedHref(locale, barePath), languages };
 }
 
 // 把带 locale 前缀的路径还原成“裸路径”（用于语言切换时保留当前页面）。

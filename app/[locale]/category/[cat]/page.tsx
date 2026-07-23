@@ -18,7 +18,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { localizedHref } from "@/lib/i18n/href";
+import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 
 interface Props {
   params: { cat: string; locale: Locale };
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: hreflangAlternates(params.locale, `/category/${cat.slug}`),
     openGraph: { title, description, url, type: "website" },
     twitter: { card: "summary_large_image", title, description },
   };

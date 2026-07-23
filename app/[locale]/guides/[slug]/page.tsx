@@ -8,7 +8,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { SITE_NAME, absoluteUrl } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { localizedHref } from "@/lib/i18n/href";
+import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 
 interface Props {
   params: { slug: string; locale: Locale };
@@ -25,7 +25,7 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: g.title,
     description: g.excerpt,
-    alternates: { canonical: url },
+    alternates: hreflangAlternates(params.locale, `/guides/${g.slug}`),
     openGraph: { title: g.title, description: g.excerpt, url, type: "article" },
     twitter: { card: "summary_large_image", title: g.title, description: g.excerpt },
   };

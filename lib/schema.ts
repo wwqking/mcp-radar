@@ -36,6 +36,19 @@ export function webSiteSchema() {
   };
 }
 
+/** FAQ 结构化数据 —— 支柱页/详情页的 FAQ 区，命中 Google 富结果 + 喂 AI 引擎（GEO）。 */
+export function faqSchema(items: Array<{ q: string; a: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((it) => ({
+      "@type": "Question",
+      name: it.q,
+      acceptedAnswer: { "@type": "Answer", text: it.a },
+    })),
+  };
+}
+
 /** 面包屑（详情页 / 分类页），items 为 [{name, path}] */
 export function breadcrumbSchema(items: Array<{ name: string; path: string }>) {
   return {
