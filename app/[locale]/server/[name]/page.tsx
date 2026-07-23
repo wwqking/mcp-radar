@@ -24,11 +24,12 @@ import { getServerCapability } from "@/lib/server-capabilities";
 import ReadmeFactsCard from "@/components/ReadmeFactsCard";
 import PickGuideCard from "@/components/PickGuideCard";
 import { getPickGuide } from "@/lib/pick-guide";
+import { getSeoLandingByServer } from "@/lib/seo-landing";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { localizedHref } from "@/lib/i18n/href";
+import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 import { verdictText, deathReasonText } from "@/lib/i18n/verdict";
 
 interface Props {
@@ -53,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: hreflangAlternates(params.locale, `/server/${s.slug}`),
     openGraph: { title, description, url, type: "article" },
     twitter: { card: "summary_large_image", title, description },
   };
@@ -80,6 +81,7 @@ export default async function ServerDetailPage({ params }: Props) {
   const similar = await getSimilarServers(s);
   const pickGuide = getPickGuide(s.categories[0]);
   const primaryCategory = s.categories[0] ? await getCategoryBySlug(s.categories[0]) : undefined;
+  const seoLanding = getSeoLandingByServer(s.slug);
   const starsTrend = trendPct(s.starsTrend);
   const dlTrend = trendPct(s.downloadsTrend);
   const daysAgo = (n: number | null) =>
@@ -91,7 +93,10 @@ export default async function ServerDetailPage({ params }: Props) {
     name: s.name,
     description: s.description,
     applicationCategory: "DeveloperApplication",
-    ...(s.repoUrl ? { codeRepository: s.repoUrl } : {}),
+    applicationSubCategory: "Model Context Protocol Server",
+    operatingSystem: "Any",
+    offers: { "@type": "Offer", price: 0, priceCurrency: "USD" },
+    ...(s.repoUrl ? { codeRepository: s.repoUrl, sameAs: [s.repoUrl] } : {}),
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: (s.trustScore / 20).toFixed(1),
@@ -145,6 +150,16 @@ export default async function ServerDetailPage({ params }: Props) {
                   {s.name}
                 </h1>
                 <p className="mt-2 text-neutral-600 dark:text-neutral-400">{s.tagline}</p>
+                {seoLanding && (
+                  <Link
+                    href={localizedHref(locale, `/servers/${seoLanding.toolSlug}-mcp-server`)}
+                    className="link-accent mt-3 inline-flex text-sm font-medium"
+                  >
+                    {locale === "zh"
+                      ? `${seoLanding.zh.toolName} MCP Server 接入指南 →`
+                      : `${seoLanding.en.toolName} MCP Server setup guide →`}
+                  </Link>
+                )}
                 <div className="mt-4 flex flex-wrap gap-2">
                   {s.repoUrl && (
                     <a href={s.repoUrl} target="_blank" rel="noopener" className="rounded-lg border border-neutral-200 px-3 py-1.5 text-sm text-neutral-600 hover:border-brand-400 hover:text-brand-700 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-brand-300">

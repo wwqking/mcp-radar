@@ -34,6 +34,7 @@ export default async function SiteFooter({ locale }: { locale: Locale }) {
           <div>
             <h4 className="mb-3 text-sm font-semibold text-neutral-900 dark:text-neutral-100">{dict.footer.aboutSite}</h4>
             <ul className="space-y-1.5 text-sm text-neutral-500 dark:text-neutral-400">
+              <li><Link href={t("/what-is-mcp-server")} className="hover:text-brand-600 dark:hover:text-brand-400">{locale === "zh" ? "什么是 MCP Server" : "What is an MCP Server"}</Link></li>
               <li><Link href={t("/about")} className="hover:text-brand-600 dark:hover:text-brand-400">{dict.footer.methodology}</Link></li>
               <li><Link href={t("/leaderboard")} className="hover:text-brand-600 dark:hover:text-brand-400">{dict.footer.qualityBoard}</Link></li>
               <li><Link href={t("/graveyard")} className="hover:text-brand-600 dark:hover:text-brand-400">{dict.footer.graveyard}</Link></li>

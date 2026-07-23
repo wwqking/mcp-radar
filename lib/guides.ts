@@ -36,6 +36,9 @@ export interface Guide extends GuideMeta, GuideContent {
 
 // 结构注册表：新增指南在这里加一条，再到 guides.zh.ts / guides.en.ts 补内容。
 const GUIDE_META: GuideMeta[] = [
+  // SEO 承接文（全文免费）：教程词 / 对比词落地，喂搜索流量。
+  { slug: "claude-code-mcp-config", tier: "free", icon: "🛠️", publishedAt: "2026-07-23", readingMinutes: 7 },
+  { slug: "mcp-proxy-vs-gateway", tier: "free", icon: "🔀", publishedAt: "2026-07-23", readingMinutes: 6 },
   { slug: "choosing-mcp-server", tier: "member", icon: "📋", publishedAt: "2026-07-14", readingMinutes: 12 },
   { slug: "mcp-security-red-lines", tier: "free", icon: "🚨", publishedAt: "2026-07-07", readingMinutes: 8 },
   { slug: "self-host-vs-remote", tier: "free", icon: "⚖️", publishedAt: "2026-06-30", readingMinutes: 6 },

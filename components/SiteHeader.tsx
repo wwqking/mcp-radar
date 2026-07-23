@@ -17,6 +17,7 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
     { href: "/#categories", label: dict.nav.categories },
     { href: "/leaderboard", label: dict.nav.leaderboard },
     { href: "/radar", label: dict.nav.radar },
+    { href: "/guides", label: dict.nav.guides },
     { href: "/graveyard", label: dict.nav.graveyard },
     { href: "/about", label: dict.nav.about },
   ];

@@ -2,6 +2,100 @@
 import type { GuideContent } from "./guides";
 
 export const GUIDES_EN: Record<string, GuideContent> = {
+  "claude-code-mcp-config": {
+    title: "How to Configure MCP Servers in Claude Code",
+    excerpt:
+      "A step-by-step guide to adding, configuring, and debugging MCP servers in Claude Code — the config file, the `claude mcp add` command, environment variables, and the errors people hit most.",
+    sections: [
+      {
+        heading: "The two ways to add an MCP server in Claude Code",
+        body: [
+          "Claude Code gives you two paths to connect an MCP server. The fastest is the CLI: `claude mcp add <name> -- npx -y <package>`. This registers the server and writes the config for you.",
+          "The second is editing the config file directly, which you'll want when you need fine control over environment variables, arguments, or a remote HTTP endpoint. Both end up in the same place — the CLI is just a convenience wrapper.",
+          "Whichever you use, the mental model is the same: you're telling Claude Code the command to launch the server (for local stdio servers) or the URL to reach it (for remote servers).",
+        ],
+      },
+      {
+        heading: "The config file: shape and location",
+        body: [
+          "The core of MCP configuration is a JSON block under an `mcpServers` key. Each server gets a name, a `command` (e.g. `npx`), and an `args` array (the package and any flags).",
+          "A minimal local server looks like this: `{ \"mcpServers\": { \"filesystem\": { \"command\": \"npx\", \"args\": [\"-y\", \"@modelcontextprotocol/server-filesystem\", \"/Users/me/projects\"] } } }`. The last arg here is the directory the server is allowed to touch.",
+          "After editing the file, restart Claude Code so it re-reads the config and launches the server as a child process.",
+        ],
+      },
+      {
+        heading: "Passing secrets: environment variables, not plaintext",
+        body: [
+          "Most useful servers need a credential — a GitHub token, a database URL, an API key. Pass these through an `env` object in the server's config block, not hardcoded into args where they'd leak into logs and shell history.",
+          "Example: a GitHub server takes `\"env\": { \"GITHUB_PERSONAL_ACCESS_TOKEN\": \"ghp_...\" }`. Scope the token to the minimum permissions the task needs — a read-only token for read-only work.",
+          "For servers you share across a team, keep the token out of committed config and inject it from your shell environment instead.",
+        ],
+      },
+      {
+        heading: "Verifying the server actually connected",
+        body: [
+          "After restarting, the quickest check is to ask Claude directly: \"what MCP tools do you have?\" If the server connected, its tools show up in the list.",
+          "If they don't, the server failed to start. The two most common causes are a wrong package name (typo in `args`) and a missing runtime (the server needs Node or Python you don't have).",
+          "Run the server's launch command manually in a terminal — e.g. `npx -y <package>` — to see the real error message, which Claude Code otherwise swallows.",
+        ],
+      },
+      {
+        heading: "The errors people hit most",
+        body: [
+          "\"Server disconnected\" right after launch: usually a missing required environment variable. Check the server's README for which env vars it needs.",
+          "Tools appear but every call fails: almost always a credential/permission problem — the token is expired, or scoped too narrowly for the action.",
+          "Server works in one client but not Claude Code: different clients read config from different files. Make sure you edited Claude Code's config, not Claude Desktop's.",
+          "Once it's connected and a test call returns real data, you're done — the server is now part of Claude's context and you can use it in plain language.",
+        ],
+      },
+    ],
+  },
+  "mcp-proxy-vs-gateway": {
+    title: "MCP Proxy Server vs MCP Gateway: Which Do You Need?",
+    excerpt:
+      "\"Proxy\" and \"gateway\" get used interchangeably in the MCP world, but they solve different problems. Here's how to tell them apart and pick the right one for your setup.",
+    sections: [
+      {
+        heading: "The short answer",
+        body: [
+          "An MCP proxy sits between one client and one (or a few) servers, mainly to bridge transports or add a thin layer — for example, exposing a local stdio server over HTTP so a remote client can reach it.",
+          "An MCP gateway sits in front of many servers and many clients, adding centralized concerns: authentication, access control, rate limiting, routing, logging, and a single connection point.",
+          "Rule of thumb: if your problem is \"how do I reach this one server,\" you want a proxy. If your problem is \"how do I govern dozens of servers across a team,\" you want a gateway.",
+        ],
+      },
+      {
+        heading: "What a proxy actually does",
+        body: [
+          "The classic use for an MCP proxy is transport bridging. Many servers only speak stdio (they run as a local child process). A proxy can wrap one and expose it over HTTP/SSE so it can be hosted and reached over the network.",
+          "Proxies are also handy for local development — inspecting the traffic between client and server, injecting a fixed set of headers, or adapting a slightly non-standard server. They stay intentionally thin.",
+          "What a proxy is not: it's not where you put your org's auth policy or fan-out routing. Pushing those into a proxy is how you end up reinventing a gateway badly.",
+        ],
+      },
+      {
+        heading: "What a gateway adds on top",
+        body: [
+          "A gateway is the control plane for MCP at scale. It presents one endpoint to clients and routes to the right backend server, so clients don't each need to know about every server.",
+          "On top of routing, it centralizes the things you don't want duplicated per server: authentication and authorization (who can call what), rate limiting, audit logging, and often a policy layer for which tools are allowed.",
+          "For teams, this is the difference between every developer wiring up raw tokens to raw servers versus a single governed entry point where access is granted, revoked, and observed centrally.",
+        ],
+      },
+      {
+        heading: "How to choose",
+        body: [
+          "Choose a proxy if: you're an individual or small team, you need to make a specific server reachable (transport bridging), or you're debugging MCP traffic locally. Low overhead, fast to stand up.",
+          "Choose a gateway if: multiple people connect to multiple servers, you need centralized auth and audit for compliance, or you want to control which tools are exposed without touching each server.",
+          "It's not either/or — a gateway may use proxies internally to reach stdio servers. Start with a proxy for a single need; adopt a gateway when governance across many servers becomes the real problem.",
+        ],
+      },
+      {
+        heading: "Before you pick a specific product",
+        body: [
+          "Both proxies and gateways are third-party components sitting in your credential path, so the same due diligence applies: is it actively maintained, how does it handle secrets, and does it have a clear license?",
+          "That's exactly what MCP Radar scores. Whichever category you land in, check the TrustScore and maintenance signals of the specific implementation before routing production traffic through it.",
+        ],
+      },
+    ],
+  },
   "choosing-mcp-server": {
     title: "Choosing an MCP server for your company: a due-diligence checklist",
     excerpt:
