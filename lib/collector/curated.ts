@@ -72,6 +72,19 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   { name: "@paypal/mcp", repoUrl: "https://github.com/paypal/agent-toolkit", npmPackage: "@paypal/mcp" },
   { name: "square-mcp-server", repoUrl: "https://github.com/square/square-mcp-server", npmPackage: null },
   { name: "twilio-mcp", repoUrl: "https://github.com/twilio-labs/mcp", npmPackage: null },
+  { name: "@paddle/paddle-mcp", repoUrl: "https://github.com/PaddleHQ/paddle-mcp-server", npmPackage: "@paddle/paddle-mcp" },
+
+  // 建站 / 电商（独立站从 0 到卖货：店铺 / 商品 / 订单 / 建站）
+  { name: "shopify-mcp", repoUrl: "https://github.com/GeLi2001/shopify-mcp", npmPackage: "shopify-mcp" },
+  { name: "mcp-wordpress-remote", repoUrl: "https://github.com/Automattic/mcp-wordpress-remote", npmPackage: null },
+  { name: "webflow-mcp-server", repoUrl: "https://github.com/webflow/mcp-server", npmPackage: "webflow-mcp-server" },
+
+  // 营销 / 增长（邮件 / SEO / 广告 / CRM）
+  { name: "resend-mcp", repoUrl: "https://github.com/resend/resend-mcp", npmPackage: "resend-mcp" },
+  { name: "dataforseo-mcp-server", repoUrl: "https://github.com/dataforseo/mcp-server-typescript", npmPackage: "dataforseo-mcp-server" },
+  { name: "google-analytics-mcp", repoUrl: "https://github.com/googleanalytics/google-analytics-mcp", npmPackage: null },
+  { name: "meta-ads-mcp", repoUrl: "https://github.com/pipeboard-co/meta-ads-mcp", npmPackage: "meta-ads-mcp" },
+  { name: "mcp-hubspot", repoUrl: "https://github.com/baryhuang/mcp-hubspot", npmPackage: null },
 
   // 云 / DevOps
   { name: "@cloudflare/mcp-server-cloudflare", repoUrl: "https://github.com/cloudflare/mcp-server-cloudflare", npmPackage: null },
