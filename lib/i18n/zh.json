@@ -50,7 +50,51 @@
     "hotViewAll": "完整榜单 →",
     "whyTitle": "别的导航只列工具，我们还告诉你它是不是还有人维护。",
     "whyBody": "每个 server 的健康数据由引擎每日自动计算：最近提交、issue 响应、下载趋势、仓库是否 archived。评分方法论完全公开，排名绝不出售。",
-    "whyLink": "看看我们怎么打分 →"
+    "whyLink": "看看我们怎么打分 →",
+    "intentTitle": "我想让 AI……",
+    "intentSub": "按你想解决的事，直达能用的 server",
+    "intents": [
+      {
+        "icon": "🗄️",
+        "label": "操作我的数据库",
+        "cat": "database"
+      },
+      {
+        "icon": "🌐",
+        "label": "抓网页 / 自动化浏览器",
+        "cat": "browser"
+      },
+      {
+        "icon": "📁",
+        "label": "读写文件和文档",
+        "cat": "files"
+      },
+      {
+        "icon": "🔍",
+        "label": "联网搜索、查资料",
+        "cat": "search"
+      },
+      {
+        "icon": "🛠️",
+        "label": "管代码 / GitHub / 部署",
+        "cat": "dev"
+      },
+      {
+        "icon": "💬",
+        "label": "发消息 / 管日程 / 协作",
+        "cat": "comms"
+      },
+      {
+        "icon": "☁️",
+        "label": "运维云和基础设施",
+        "cat": "cloud"
+      },
+      {
+        "icon": "💳",
+        "label": "处理支付和商业数据",
+        "cat": "commerce"
+      }
+    ]
   },
   "newsletter": {
     "metaTitle": "订阅 —— 每周 5 分钟看完 MCP 生态",
@@ -393,7 +437,8 @@
     "needsApiKey": "需要 API key / token",
     "noApiKey": "无需额外密钥",
     "runtimeNeeds": "运行环境",
-    "configTitle": "配置示例（接入用）"
+    "configTitle": "配置示例（接入用）",
+    "pickGuideTitle": "同类里怎么选"
   },
   "compare": {
     "add": "加入对比",

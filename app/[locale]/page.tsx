@@ -83,6 +83,41 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
         </div>
       </section>
 
+      {/* ===== 需求入口「我想让 AI……」（面向普通人，链到分类页） ===== */}
+      <section className="container-site pt-12 sm:pt-16">
+        <div className="mb-6">
+          <h2 className="text-xl font-bold text-neutral-900 dark:text-neutral-100 sm:text-2xl">{h.intentTitle}</h2>
+          <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">{h.intentSub}</p>
+        </div>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {h.intents.map((it) => {
+            const counts = countBySlug.get(it.cat);
+            return (
+              <Link
+                key={it.cat}
+                href={t(`/category/${it.cat}`)}
+                className="card group flex items-center gap-3 p-4 hover:border-brand-400 dark:hover:border-brand-600"
+              >
+                <span className="text-2xl">{it.icon}</span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm font-medium text-neutral-800 group-hover:text-brand-700 dark:text-neutral-200 dark:group-hover:text-brand-300">
+                    {it.label}
+                  </span>
+                  {counts && (
+                    <span className="text-xs text-neutral-400">
+                      {h.categoryCount
+                        .replace("{total}", String(counts.total))
+                        .replace("{active}", String(counts.active))}
+                    </span>
+                  )}
+                </span>
+                <span className="shrink-0 text-neutral-300 group-hover:text-brand-500 dark:text-neutral-600">→</span>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
       {/* ===== 分类入口宫格 ===== */}
       <section id="categories" className="container-site py-12 sm:py-16">
         <div className="mb-6 flex items-end justify-between">

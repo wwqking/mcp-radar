@@ -50,7 +50,51 @@
     "hotViewAll": "Full leaderboard →",
     "whyTitle": "Other directories just list tools. We also tell you whether anyone still maintains it.",
     "whyBody": "Each server's health is computed daily by the engine: recent commits, issue response, download trend, whether the repo is archived. The scoring methodology is fully public and rankings are never for sale.",
-    "whyLink": "See how we score →"
+    "whyLink": "See how we score →",
+    "intentTitle": "I want my AI to…",
+    "intentSub": "Jump straight to servers that work, by what you want to solve",
+    "intents": [
+      {
+        "icon": "🗄️",
+        "label": "work with my database",
+        "cat": "database"
+      },
+      {
+        "icon": "🌐",
+        "label": "scrape the web / drive a browser",
+        "cat": "browser"
+      },
+      {
+        "icon": "📁",
+        "label": "read & write files and docs",
+        "cat": "files"
+      },
+      {
+        "icon": "🔍",
+        "label": "search the web & find info",
+        "cat": "search"
+      },
+      {
+        "icon": "🛠️",
+        "label": "manage code / GitHub / deploy",
+        "cat": "dev"
+      },
+      {
+        "icon": "💬",
+        "label": "message / schedule / collaborate",
+        "cat": "comms"
+      },
+      {
+        "icon": "☁️",
+        "label": "operate cloud & infrastructure",
+        "cat": "cloud"
+      },
+      {
+        "icon": "💳",
+        "label": "handle payments & business data",
+        "cat": "commerce"
+      }
+    ]
   },
   "newsletter": {
     "metaTitle": "Subscribe — the MCP ecosystem in 5 minutes a week",
@@ -393,7 +437,8 @@
     "needsApiKey": "Needs an API key / token",
     "noApiKey": "No extra key needed",
     "runtimeNeeds": "Runtime",
-    "configTitle": "Config example (to connect)"
+    "configTitle": "Config example (to connect)",
+    "pickGuideTitle": "How to choose among these"
   },
   "compare": {
     "add": "Add to compare",

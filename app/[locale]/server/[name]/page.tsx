@@ -22,6 +22,8 @@ import CompareButton from "@/components/CompareButton";
 import CapabilityCard from "@/components/CapabilityCard";
 import { getServerCapability } from "@/lib/server-capabilities";
 import ReadmeFactsCard from "@/components/ReadmeFactsCard";
+import PickGuideCard from "@/components/PickGuideCard";
+import { getPickGuide } from "@/lib/pick-guide";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
 import type { Locale } from "@/lib/i18n/locales";
@@ -76,6 +78,7 @@ export default async function ServerDetailPage({ params }: Props) {
   const sig = s.signals;
   const capability = getServerCapability(s.slug);
   const similar = await getSimilarServers(s);
+  const pickGuide = getPickGuide(s.categories[0]);
   const primaryCategory = s.categories[0] ? await getCategoryBySlug(s.categories[0]) : undefined;
   const starsTrend = trendPct(s.starsTrend);
   const dlTrend = trendPct(s.downloadsTrend);
@@ -294,10 +297,11 @@ export default async function ServerDetailPage({ params }: Props) {
             </section>
           )}
 
-          {/* 相似 server */}
+          {/* 相似 server + 选型指南 */}
           {similar.length > 0 && (
             <section className="mt-10">
               <h2 className="mb-4 text-lg font-bold text-neutral-900 dark:text-neutral-100">{d.similarTitle}</h2>
+              {pickGuide && <PickGuideCard guide={pickGuide} locale={locale} title={d.pickGuideTitle} />}
               <div className="grid gap-4 sm:grid-cols-2">
                 {similar.map((x) => (
                   <ServerCard key={x.slug} server={x} locale={locale} />
