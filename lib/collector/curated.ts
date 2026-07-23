@@ -25,12 +25,14 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   { name: "@playwright/mcp", repoUrl: "https://github.com/microsoft/playwright-mcp", npmPackage: "@playwright/mcp" },
   { name: "firecrawl-mcp-server", repoUrl: "https://github.com/mendableai/firecrawl-mcp-server", npmPackage: "firecrawl-mcp" },
   { name: "@browserbase/mcp-server-browserbase", repoUrl: "https://github.com/browserbase/mcp-server-browserbase", npmPackage: null },
+  { name: "@hyperbrowser/mcp", repoUrl: "https://github.com/hyperbrowserai/mcp", npmPackage: null },
 
   // 开发 / 代码
   { name: "@github/github-mcp-server", repoUrl: "https://github.com/github/github-mcp-server", npmPackage: null },
   { name: "sentry-mcp", repoUrl: "https://github.com/getsentry/sentry-mcp", npmPackage: "@sentry/mcp-server" },
   { name: "figma-developer-mcp", repoUrl: "https://github.com/GLips/Figma-Context-MCP", npmPackage: "figma-developer-mcp" },
   { name: "mcp-server-kubernetes", repoUrl: "https://github.com/Flux159/mcp-server-kubernetes", npmPackage: "mcp-server-kubernetes" },
+  { name: "@21st-dev/magic", repoUrl: "https://github.com/21st-dev/magic-mcp", npmPackage: "@21st-dev/magic" },
 
   // 数据库 / 数据
   { name: "@supabase/mcp-server-supabase", repoUrl: "https://github.com/supabase-community/supabase-mcp", npmPackage: "@supabase/mcp-server-supabase" },
@@ -38,6 +40,9 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   { name: "mcp-server-qdrant", repoUrl: "https://github.com/qdrant/mcp-server-qdrant", npmPackage: null },
   { name: "mongodb-mcp-server", repoUrl: "https://github.com/mongodb-js/mongodb-mcp-server", npmPackage: "mongodb-mcp-server" },
   { name: "@clickhouse/mcp-clickhouse", repoUrl: "https://github.com/ClickHouse/mcp-clickhouse", npmPackage: null },
+  { name: "@elastic/mcp-server-elasticsearch", repoUrl: "https://github.com/elastic/mcp-server-elasticsearch", npmPackage: "@elastic/mcp-server-elasticsearch" },
+  { name: "chroma-mcp", repoUrl: "https://github.com/chroma-core/chroma-mcp", npmPackage: null },
+  { name: "mcp-server-neon", repoUrl: "https://github.com/neondatabase/mcp-server-neon", npmPackage: null },
 
   // 搜索 / 知识
   { name: "exa-mcp-server", repoUrl: "https://github.com/exa-labs/exa-mcp-server", npmPackage: "exa-mcp-server" },
@@ -47,13 +52,18 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   // 通讯 / 协作
   { name: "@notionhq/notion-mcp-server", repoUrl: "https://github.com/makenotion/notion-mcp-server", npmPackage: "@notionhq/notion-mcp-server" },
   { name: "@linear/mcp", repoUrl: "https://github.com/linear/linear-mcp", npmPackage: null },
+  { name: "@elevenlabs/elevenlabs-mcp", repoUrl: "https://github.com/elevenlabs/elevenlabs-mcp", npmPackage: null },
 
   // 支付 / 商业
   { name: "@stripe/mcp", repoUrl: "https://github.com/stripe/agent-toolkit", npmPackage: "@stripe/mcp" },
+  { name: "apify-mcp-server", repoUrl: "https://github.com/apify/apify-mcp-server", npmPackage: "@apify/actors-mcp-server" },
 
   // 云 / DevOps
   { name: "@cloudflare/mcp-server-cloudflare", repoUrl: "https://github.com/cloudflare/mcp-server-cloudflare", npmPackage: null },
   { name: "aws-mcp-server", repoUrl: "https://github.com/awslabs/mcp", npmPackage: null },
+  { name: "mcp-grafana", repoUrl: "https://github.com/grafana/mcp-grafana", npmPackage: null },
+  { name: "@heroku/mcp-server", repoUrl: "https://github.com/heroku/heroku-mcp-server", npmPackage: "@heroku/mcp-server" },
+  { name: "mcp-toolbox", repoUrl: "https://github.com/googleapis/mcp-toolbox", npmPackage: null },
 
   // AI / 模型
   { name: "@upstash/context7-mcp", repoUrl: "https://github.com/upstash/context7", npmPackage: "@upstash/context7-mcp" },
