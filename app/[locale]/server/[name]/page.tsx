@@ -19,6 +19,8 @@ import SubscribeInline from "@/components/SubscribeInline";
 import InstallCommandCard from "@/components/InstallCommand";
 import { installCommands } from "@/lib/install";
 import CompareButton from "@/components/CompareButton";
+import CapabilityCard from "@/components/CapabilityCard";
+import { getServerCapability } from "@/lib/server-capabilities";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
 import type { Locale } from "@/lib/i18n/locales";
@@ -71,6 +73,7 @@ export default async function ServerDetailPage({ params }: Props) {
   if (!s) notFound();
 
   const sig = s.signals;
+  const capability = getServerCapability(s.slug);
   const similar = await getSimilarServers(s);
   const primaryCategory = s.categories[0] ? await getCategoryBySlug(s.categories[0]) : undefined;
   const starsTrend = trendPct(s.starsTrend);
@@ -178,6 +181,20 @@ export default async function ServerDetailPage({ params }: Props) {
               {deathReasonText(s, locale) && <span className="mt-1 block text-xs opacity-80">{d.verdictBasis}{deathReasonText(s, locale)}</span>}
             </div>
           </header>
+
+          {/* 能解决什么问题（人工精写，仅白名单 server 有） */}
+          {capability && (
+            <CapabilityCard
+              cap={capability}
+              locale={locale}
+              strings={{
+                capabilitiesTitle: d.capabilitiesTitle,
+                whatCanDo: d.whatCanDo,
+                tryTitle: d.tryTitle,
+                tryNote: d.tryNote,
+              }}
+            />
+          )}
 
           {/* 安装 / 接入命令 */}
           <InstallCommandCard
