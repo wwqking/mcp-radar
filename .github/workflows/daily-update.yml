@@ -36,7 +36,7 @@ jobs:
       - name: 采集真实数据 + 写当天快照
         env:
           GITHUB_TOKEN: ${{ secrets.MCP_GITHUB_TOKEN }} # 只读 public_repo，仅 CI 用
-          MCP_COLLECT_LIMIT: ${{ vars.MCP_COLLECT_LIMIT || '100' }}
+          MCP_COLLECT_LIMIT: ${{ vars.MCP_COLLECT_LIMIT || '200' }}
         run: npm run collect
 
       - name: 提交数据集 + 快照（有变化才提交）
