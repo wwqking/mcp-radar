@@ -11,7 +11,8 @@
     "abandoned": "半年没更新",
     "subscribe": "订阅",
     "sponsor": "赞助",
-    "viewAll": "查看全部"
+    "viewAll": "查看全部",
+    "recommended": "首选"
   },
   "nav": {
     "categories": "分类",
@@ -90,11 +91,18 @@
         "cat": "cloud"
       },
       {
-        "icon": "💳",
-        "label": "处理支付和商业数据",
+        "icon": "🛒",
+        "label": "开独立站 / 收款 / 电商",
         "cat": "commerce"
+      },
+      {
+        "icon": "📈",
+        "label": "做营销 / SEO / 拉流量",
+        "cat": "marketing"
       }
-    ]
+    ],
+    "stackTitle": "我要做一件事，该配哪几个 server",
+    "stackSub": "按目标给你一整套组合方案，每个都链到实时状态 —— 死掉的当场标出来。"
   },
   "newsletter": {
     "metaTitle": "订阅 —— 每周 5 分钟看完 MCP 生态",

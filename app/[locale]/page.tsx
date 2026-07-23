@@ -11,7 +11,9 @@ import {
 } from "@/lib/data";
 import SearchBar from "@/components/SearchBar";
 import ServerCard from "@/components/ServerCard";
+import StackCard from "@/components/StackCard";
 import SubscribeInline from "@/components/SubscribeInline";
+import { STACKS } from "@/lib/stacks";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizedHref } from "@/lib/i18n/href";
@@ -30,6 +32,9 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
   ]);
   const weeklyNew = radar.added.slice(0, 3);
   const weeklyDead = radar.dead.slice(0, 3);
+
+  // 组合方案用：slug → server 映射（取活体状态 + 链接）
+  const serverMap = new Map(servers.map((s) => [s.slug, s]));
 
   const categoryCounts = await Promise.all(
     CATEGORIES.map(async (c) => {
@@ -115,6 +120,25 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
               </Link>
             );
           })}
+        </div>
+      </section>
+
+      {/* ===== 组合方案「我要做一件事，配哪几个 server」 ===== */}
+      <section className="container-site pt-12 sm:pt-16">
+        <div className="mb-6">
+          <h2 className="text-xl font-bold text-neutral-900 dark:text-neutral-100 sm:text-2xl">{h.stackTitle}</h2>
+          <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">{h.stackSub}</p>
+        </div>
+        <div className="grid gap-4">
+          {STACKS.map((stack) => (
+            <StackCard
+              key={stack.slug}
+              stack={stack}
+              locale={locale}
+              serverMap={serverMap}
+              recommendedLabel={dict.common.recommended}
+            />
+          ))}
         </div>
       </section>
 

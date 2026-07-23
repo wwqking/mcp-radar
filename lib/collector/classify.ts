@@ -10,7 +10,8 @@ const RULES: Array<{ cat: string; kw: RegExp }> = [
   { cat: "comms", kw: /\b(slack|email|gmail|calendar|discord|telegram|teams|notion|message|chat|mail)\b/i },
   { cat: "cloud", kw: /\b(aws|gcp|azure|kubernetes|k8s|docker|cloudflare|terraform|devops|deploy|infra|monitoring)\b/i },
   { cat: "ai", kw: /\b(openai|anthropic|llm|model|embedding|qdrant|pinecone|weaviate|memory|agent|inference|ml)\b/i },
-  { cat: "commerce", kw: /\b(stripe|payment|shopify|paypal|invoice|billing|ecommerce|commerce|checkout|subscription)\b/i },
+  { cat: "commerce", kw: /\b(stripe|payment|shopify|paypal|paddle|invoice|billing|ecommerce|commerce|checkout|subscription|woocommerce|webflow|wordpress|storefront|store)\b/i },
+  { cat: "marketing", kw: /\b(marketing|seo|ads?|advertis|analytics|campaign|newsletter|resend|mailchimp|klaviyo|hubspot|crm|dataforseo|meta[-\s]?ads|google[-\s]?analytics|conversion|audience)\b/i },
 ];
 
 /** 返回命中的分类 slug 数组；无命中返回 ["misc"] */

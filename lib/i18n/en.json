@@ -11,7 +11,8 @@
     "abandoned": "No update in 6 months",
     "subscribe": "Subscribe",
     "sponsor": "Sponsor",
-    "viewAll": "View all"
+    "viewAll": "View all",
+    "recommended": "Top pick"
   },
   "nav": {
     "categories": "Categories",
@@ -90,11 +91,18 @@
         "cat": "cloud"
       },
       {
-        "icon": "💳",
-        "label": "handle payments & business data",
+        "icon": "🛒",
+        "label": "Launch a store / payments / commerce",
         "cat": "commerce"
+      },
+      {
+        "icon": "📈",
+        "label": "Marketing / SEO / drive traffic",
+        "cat": "marketing"
       }
-    ]
+    ],
+    "stackTitle": "Want to do one thing? Here's the whole stack",
+    "stackSub": "A full server combo per goal, each linked to live status — dead ones flagged on the spot."
   },
   "newsletter": {
     "metaTitle": "Subscribe — the MCP ecosystem in 5 minutes a week",
