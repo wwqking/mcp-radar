@@ -5,7 +5,7 @@
 
 import type { MCPServer, HealthSignals, Lifecycle } from "../types";
 import { fetchRegistryCandidates, parseGithubRepo, type RegistryCandidate } from "./registry";
-import { fetchGithubHealth } from "./github";
+import { fetchGithubHealth, fetchReadmeFacts } from "./github";
 import { fetchNpmAdoption } from "./npm";
 import { computeBreakdown, computeTrustScore, computeLifecycle, computeVerdict } from "./score";
 import { classify } from "./classify";
@@ -70,8 +70,13 @@ async function enrichOne(cand: RegistryCandidate): Promise<MCPServer> {
 
   let signals: HealthSignals;
   let ghDescription: string | null = null;
+  let readmeFacts: import("../types").ReadmeFacts | undefined;
   if (gh) {
-    const health = await fetchGithubHealth(gh.owner, gh.repo);
+    const [health, readme] = await Promise.all([
+      fetchGithubHealth(gh.owner, gh.repo),
+      fetchReadmeFacts(gh.owner, gh.repo),
+    ]);
+    readmeFacts = readme ?? undefined;
     const npm = cand.npmPackage ? await fetchNpmAdoption(cand.npmPackage) : null;
     if (health) {
       ghDescription = health.description;
@@ -145,6 +150,7 @@ async function enrichOne(cand: RegistryCandidate): Promise<MCPServer> {
     ...deathInfo,
     starsTrend: [], // 趋势需历史快照，先空（sparkline 会显示「无数据」）
     downloadsTrend: [],
+    ...(readmeFacts ? { readmeFacts } : {}),
   };
 }
 

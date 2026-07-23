@@ -21,6 +21,7 @@ import { installCommands } from "@/lib/install";
 import CompareButton from "@/components/CompareButton";
 import CapabilityCard from "@/components/CapabilityCard";
 import { getServerCapability } from "@/lib/server-capabilities";
+import ReadmeFactsCard from "@/components/ReadmeFactsCard";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
 import type { Locale } from "@/lib/i18n/locales";
@@ -192,6 +193,20 @@ export default async function ServerDetailPage({ params }: Props) {
                 whatCanDo: d.whatCanDo,
                 tryTitle: d.tryTitle,
                 tryNote: d.tryNote,
+              }}
+            />
+          )}
+
+          {/* 接入前先知道（README 规则提取，所有有 repo 的 server 都可能有） */}
+          {s.readmeFacts && (
+            <ReadmeFactsCard
+              facts={s.readmeFacts}
+              strings={{
+                factsTitle: d.factsTitle,
+                needsApiKey: d.needsApiKey,
+                noApiKey: d.noApiKey,
+                runtimeNeeds: d.runtimeNeeds,
+                configTitle: d.configTitle,
               }}
             />
           )}

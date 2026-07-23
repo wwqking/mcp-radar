@@ -87,6 +87,19 @@ export interface MCPServer {
   starsTrend: number[];
   /** 近 90 天下载趋势 */
   downloadsTrend: number[];
+  /** 从 README 规则提取的结构化事实（采集期填充；无 repo/README 时缺省）。 */
+  readmeFacts?: ReadmeFacts;
+}
+
+/** 从 README 规则提取的结构化事实（非 AI，正则/标题匹配）。
+ *  只保留规则可靠的三项；工具列表提取噪音大，交白名单人工精写。 */
+export interface ReadmeFacts {
+  /** 是否需要 API key / token 才能用（搜到相关关键词即 true）。 */
+  needsApiKey: boolean;
+  /** 运行时依赖（node / python / docker，能识别到的）。 */
+  runtimes: string[];
+  /** 典型配置 JSON 片段（含 mcpServers 的代码块，原样保留，供"怎么接"展示）。 */
+  configSnippet: string | null;
 }
 
 /** 雷达 evidence 的结构化 key，供多语言运行时渲染。 */

@@ -6,6 +6,7 @@
 // 认证：读 GITHUB_TOKEN（未认证 60/h，token 5000/h）。"先采少量" 下未认证也够。
 
 import { cachedGetJson } from "./cached-fetch";
+import type { ReadmeFacts } from "../types";
 
 const GH = "https://api.github.com";
 
@@ -119,4 +120,60 @@ export async function fetchGithubHealth(owner: string, repo: string): Promise<Gi
     license: r.license?.spdx_id && r.license.spdx_id !== "NOASSERTION" ? r.license.spdx_id : (r.license?.name ?? null),
     issueResponseDays,
   };
+}
+
+interface ReadmeResponse {
+  content?: string; // base64
+  encoding?: string;
+}
+
+/** 抓仓库 README 并用规则提取结构化事实。任何失败都返回 null（不中断富化）。 */
+export async function fetchReadmeFacts(owner: string, repo: string): Promise<ReadmeFacts | null> {
+  const res = await cachedGetJson<ReadmeResponse>(`${GH}/repos/${owner}/${repo}/readme`, ghHeaders());
+  if (!res.ok || !res.data?.content) return null;
+
+  let md: string;
+  try {
+    md = Buffer.from(res.data.content, "base64").toString("utf-8");
+  } catch {
+    return null;
+  }
+  return extractReadmeFacts(md);
+}
+
+/** 纯函数：从 README markdown 规则提取事实（无网络，便于单测/复用）。 */
+export function extractReadmeFacts(md: string): ReadmeFacts {
+  return {
+    needsApiKey: detectNeedsApiKey(md),
+    runtimes: detectRuntimes(md),
+    configSnippet: extractConfigSnippet(md),
+  };
+}
+
+function detectNeedsApiKey(md: string): boolean {
+  // 常见信号：环境变量式的 KEY/TOKEN、"api key"、"apiKey"、需要凭证的措辞
+  return /\b[A-Z][A-Z0-9_]*(?:API[_ ]?KEY|_TOKEN|ACCESS[_ ]?TOKEN)\b/.test(md)
+    || /\bapi[\s_-]?key\b/i.test(md)
+    || /\baccess token\b/i.test(md)
+    || /\bbearer token\b/i.test(md);
+}
+
+function detectRuntimes(md: string): string[] {
+  const out = new Set<string>();
+  if (/\bnpx\b|"command"\s*:\s*"npx"|\bnpm install\b/i.test(md)) out.add("Node.js");
+  if (/\buvx\b|\bpip install\b|"command"\s*:\s*"uvx?"|\bpython\b/i.test(md)) out.add("Python");
+  if (/\bdocker run\b|"command"\s*:\s*"docker"/i.test(md)) out.add("Docker");
+  return Array.from(out);
+}
+
+/** 抽取含 mcpServers 的 JSON 代码块（"怎么接"的真实配置）。 */
+function extractConfigSnippet(md: string): string | null {
+  // ```json ... ``` 或 ``` ... ``` 里含 mcpServers 的块
+  const blocks = md.match(/```(?:json|jsonc)?\s*([\s\S]*?)```/g);
+  if (!blocks) return null;
+  for (const b of blocks) {
+    const body = b.replace(/```(?:json|jsonc)?\s*/, "").replace(/```$/, "").trim();
+    if (/mcpServers/.test(body) && body.length <= 800) return body;
+  }
+  return null;
 }
