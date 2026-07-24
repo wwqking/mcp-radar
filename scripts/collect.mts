@@ -7,8 +7,8 @@
 import { collectServers } from "../lib/collector/build-data";
 
 async function main() {
-  const limit = Number(process.env.MCP_COLLECT_LIMIT ?? 300);
-  console.log(`[collect] 开始采集，limit=${limit}，token=${process.env.GITHUB_TOKEN ? "有" : "无（限流 60/h）"}`);
+  const limit = Number(process.env.MCP_COLLECT_LIMIT ?? 800);
+  console.log(`[collect] 开始采集，registry 补量池=${limit}（最终数量=白名单必留+registry过门槛，不封顶），token=${process.env.GITHUB_TOKEN ? "有" : "无（限流 60/h）"}`);
 
   const start = Date.now();
   const servers = await collectServers(limit);

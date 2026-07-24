@@ -1,0 +1,13 @@
+primary_keyword,cluster,volume,kd,intent,serp,decision,target_url,page_type,priority,wave,status_vs_current
+mcp vs rag,comparison,720,26,Informational,🟢 weak-medium,DO,/compare/mcp-vs-rag,comparison guide,P0,Wave 1,NEW — 最高机会，与 rag vs mcp 合并
+mcp resources vs tools,comparison,590,24,Informational,🟡 medium,DO,/compare/mcp-resources-vs-tools,comparison guide,P1,Wave 1,NEW — 概念对比
+mcp vs a2a,comparison,590,28,Informational,🟡 medium,DO,/compare/mcp-vs-a2a,comparison guide,P1,Wave 2,NEW — agent协议对比
+mcp vs cli / cli vs mcp,comparison,650,26,Informational,provisional,DO,/compare/mcp-vs-cli,comparison guide,P1,Wave 2,NEW — 两词合并(390+260)，均分4.2
+langchain vs mcp,comparison,260,16,Informational,provisional,WATCH,/compare/langchain-vs-mcp,comparison guide,P2,Wave 3,NEW — KD低但量小
+mcp proxy server vs mcp gateway,comparison,720,19,Commercial,🟡 medium,DONE,/guides/mcp-proxy-vs-gateway,comparison,P0,—,已建(上一轮)
+claude code mcp server configuration,setup-tutorial,880,21,Informational,provisional,DONE,/guides/claude-code-mcp-config,tutorial,P0,—,已建(上一轮)
+what is an mcp server,what-is-mcp,—,—,Informational,—,DONE,/what-is-mcp-server,pillar,P0,—,已建(上一轮支柱页)
+{tool} mcp server (824词簇),server-detail,169010,19,Informational,mixed,PARTIAL,/servers/{tool}-mcp-server,detail landing,P0,ongoing,已建7个(context7/github/filesystem/figma/playwright/linear/postgres)；可按数据扩更多
+mcp inspector,protocol,4400,24,Navigational,🔴 strong,DROP,—,—,—,—,官方工具垄断，不建独立页
+mcp security best practices,security,210,24,Informational,🔴 strong,DEMOTE,—,—,P2,—,官方+NSA主导；如做放 /guides，低优先
+how to build an mcp server,setup-tutorial,390,24,Informational,🔴 strong,DROP,—,—,—,—,官方教程主导，目录站非内容强项

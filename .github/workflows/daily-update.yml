@@ -36,7 +36,9 @@ jobs:
       - name: 采集真实数据 + 写当天快照
         env:
           GITHUB_TOKEN: ${{ secrets.MCP_GITHUB_TOKEN }} # 只读 public_repo，仅 CI 用
-          MCP_COLLECT_LIMIT: ${{ vars.MCP_COLLECT_LIMIT || '300' }}
+          # registry 补量池大小（非最终数量上限）：最终=白名单必留+registry过质量门槛，不封顶。
+          # 与 .env 保持一致=800。要临时调整可在仓库 Variables 里设 MCP_COLLECT_LIMIT 覆盖。
+          MCP_COLLECT_LIMIT: ${{ vars.MCP_COLLECT_LIMIT || '800' }}
         run: npm run collect
 
       - name: 提交数据集 + 快照（有变化才提交）

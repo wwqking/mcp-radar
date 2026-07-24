@@ -22,11 +22,20 @@ import { writeDataset, readDataset } from "./dataset";
 
 const REGISTRY_URL = "https://registry.modelcontextprotocol.io";
 
-/** 每日采集数量默认值。可用 env MCP_COLLECT_LIMIT 覆盖。
- *  300 = 白名单 ~64 个（优质保底）+ registry 补量，按 stars 取 top 300。
- *  探底发现 registry 可采上千，但 stars≥10 的仅 ~120 个，过了 ~150 名多是低质长尾。
- *  白名单已扩到 64 个真实官方 server，前排质量有保底，故把 limit 提到 300 铺更多长尾页面。 */
-const DEFAULT_LIMIT = Number(process.env.MCP_COLLECT_LIMIT ?? 300);
+/** registry 补量池大小默认值。可用 env MCP_COLLECT_LIMIT 覆盖。
+ *  注意语义：这不再是「最终采集数量的硬上限」，而是「从 registry 拉多少候选来补量」。
+ *  最终数量 = 白名单全部（必留）+ registry 候选里通过质量门槛的（见 passesQualityGate）。
+ *  白名单每新增一个真实 server，总量随之增加——不再被 slice 砍到固定数。 */
+const DEFAULT_LIMIT = Number(process.env.MCP_COLLECT_LIMIT ?? 800);
+
+/** registry 补量项的质量门槛：白名单无条件保留（在下方单独处理），
+ *  registry 长尾要么有 star（社区认可），要么可运行（有包/仓库可审计），否则丢弃避免扫进垃圾。
+ *  这样「去掉硬上限、采多少保留多少」不会变成「把一堆 0 星死项也收进来」。 */
+function passesQualityGate(s: MCPServer): boolean {
+  if (s.signals.stars > 0) return true;
+  if (s.signals.hasRunnableEntry && s.lifecycle !== "unverifiable") return true;
+  return false;
+}
 
 function slugify(name: string): string {
   return name
@@ -176,12 +185,13 @@ function seedToCandidate(seed: (typeof CURATED_SEEDS)[number]): RegistryCandidat
  * registry 负责铺长尾。合并后按真实 stars 降序，避免字母序采到一堆冷门项。
  */
 export async function collectServers(limit = DEFAULT_LIMIT): Promise<MCPServer[]> {
-  // registry 多拉一些作为补量池（白名单之外的候选）
-  const registryPool = Math.max(limit * 2, 60);
-  const registryCands = await fetchRegistryCandidates({ limit: registryPool, onlyWithRepo: true });
+  // registry 补量池：从 registry 拉这么多候选（白名单之外的长尾）
+  const registryCands = await fetchRegistryCandidates({ limit, onlyWithRepo: true });
 
-  // 合并候选：白名单在前（优先富化），registry 补量在后；按 name 去重
-  const merged: RegistryCandidate[] = [...CURATED_SEEDS.map(seedToCandidate)];
+  // 合并候选：白名单在前（优先富化 + 必留），registry 补量在后；按 name 去重
+  const curatedCandidates = CURATED_SEEDS.map(seedToCandidate);
+  const curatedNames = new Set(curatedCandidates.map((c) => c.name));
+  const merged: RegistryCandidate[] = [...curatedCandidates];
   const names = new Set(merged.map((c) => c.name));
   for (const c of registryCands) {
     if (!names.has(c.name)) {
@@ -214,9 +224,17 @@ export async function collectServers(limit = DEFAULT_LIMIT): Promise<MCPServer[]
     seenSlug.has(s.slug) ? false : (seenSlug.add(s.slug), true),
   );
 
-  // 按 stars 降序，取 top limit（白名单高星项自然排到前面）
-  deduped.sort((a, b) => b.signals.stars - a.signals.stars);
-  const top = deduped.slice(0, limit);
+  // 质量筛选：白名单无条件保留（优质保底），registry 长尾须过质量门槛（有 star 或可运行）。
+  // 不再 slice 到固定数——白名单新增或 registry 多出合格项，总量随之增加。
+  const kept = deduped.filter((s) => curatedNames.has(s.name) || passesQualityGate(s));
+
+  // 按 stars 降序排列（展示顺序：高星在前），但不截断
+  kept.sort((a, b) => b.signals.stars - a.signals.stars);
+  const dropped = deduped.length - kept.length;
+  console.log(
+    `[collector] 富化 ${deduped.length} 个 → 保留 ${kept.length}（白名单 ${curatedNames.size} 必留，registry 过门槛补量），过滤掉 ${dropped} 个低质项`,
+  );
+  const top = kept;
 
   // 趋势/diff：用历史快照算周增量 + 构造 sparkline，然后写入今天的快照
   await applyTrends(top);

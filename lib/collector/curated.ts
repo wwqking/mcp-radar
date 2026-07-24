@@ -103,4 +103,37 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   // AI / 模型
   { name: "@upstash/context7-mcp", repoUrl: "https://github.com/upstash/context7", npmPackage: "@upstash/context7-mcp" },
   { name: "perplexity-mcp", repoUrl: "https://github.com/perplexityai/modelcontextprotocol", npmPackage: null },
+
+  // ===== 补量批次 A（据第二轮 mcp-server 关键词研究，逐个 GitHub API 核实存在+非归档+确为该工具的 MCP server）=====
+  // 数据 / 分析
+  { name: "dbt-mcp", repoUrl: "https://github.com/dbt-labs/dbt-mcp", npmPackage: null },
+  { name: "mcp-server-chart", repoUrl: "https://github.com/antvis/mcp-server-chart", npmPackage: null },
+  { name: "mcp-server-mysql", repoUrl: "https://github.com/benborla/mcp-server-mysql", npmPackage: null },
+  { name: "arxiv-mcp-server", repoUrl: "https://github.com/blazickjp/arxiv-mcp-server", npmPackage: null },
+
+  // 企业 / SaaS 工具
+  { name: "servicenow-mcp", repoUrl: "https://github.com/echelon-ai-labs/servicenow-mcp", npmPackage: null },
+  { name: "xero-mcp-server", repoUrl: "https://github.com/XeroAPI/xero-mcp-server", npmPackage: null },
+  { name: "pagerduty-mcp-server", repoUrl: "https://github.com/PagerDuty/pagerduty-mcp-server", npmPackage: null },
+  { name: "quickbooks-online-mcp-server", repoUrl: "https://github.com/intuit/quickbooks-online-mcp-server", npmPackage: null },
+  { name: "mcp-server-asana", repoUrl: "https://github.com/roychri/mcp-server-asana", npmPackage: null },
+  { name: "mcp-atlassian", repoUrl: "https://github.com/sooperset/mcp-atlassian", npmPackage: null },
+
+  // 开发 / DevOps / 代码
+  { name: "n8n-mcp", repoUrl: "https://github.com/czlonkowski/n8n-mcp", npmPackage: null },
+  { name: "shadcn-ui-mcp-server", repoUrl: "https://github.com/Jpisnice/shadcn-ui-mcp-server", npmPackage: null },
+  { name: "postgres-mcp", repoUrl: "https://github.com/crystaldba/postgres-mcp", npmPackage: null },
+  { name: "unity-mcp", repoUrl: "https://github.com/CoplayDev/unity-mcp", npmPackage: null },
+  { name: "django-mcp-server", repoUrl: "https://github.com/gts360/django-mcp-server", npmPackage: null },
+  { name: "mcp-selenium", repoUrl: "https://github.com/angiejones/mcp-selenium", npmPackage: null },
+  { name: "firebase-mcp", repoUrl: "https://github.com/gannonh/firebase-mcp", npmPackage: null },
+  { name: "gitlab-mcp", repoUrl: "https://github.com/zereight/gitlab-mcp", npmPackage: null },
+  { name: "mcp-jenkins", repoUrl: "https://github.com/lanbaoshen/mcp-jenkins", npmPackage: null },
+  { name: "vercel-mcp", repoUrl: "https://github.com/vercel/next-devtools-mcp", npmPackage: null },
+
+  // 金融 / 消费类
+  { name: "spotify-mcp", repoUrl: "https://github.com/varunneal/spotify-mcp", npmPackage: null },
+  { name: "mcp-server-airbnb", repoUrl: "https://github.com/openbnb-org/mcp-server-airbnb", npmPackage: null },
+  { name: "mcp-server-youtube-transcript", repoUrl: "https://github.com/kimtaeyoon83/mcp-server-youtube-transcript", npmPackage: null },
+  { name: "weather-mcp-server", repoUrl: "https://github.com/ezh0v/weather-mcp-server", npmPackage: null },
 ];

@@ -1,0 +1,25 @@
+site: mcpradars
+site_type: directory        # MCP 服务发现/目录站：详情页 /servers/{slug} + 指南 /guides + 支柱页
+market: United States
+language: English
+seeds: [mcp]
+# 排除噪音：品牌资源/低商业价值/无关同名（MCP 也是很多缩写）
+exclude_terms:
+  - logo
+  - icon
+  - salary
+  - job
+  - jobs
+  - lyrics
+  - reddit          # 论坛词单独看，不当页面词
+  - "medical"       # MCP 有 "medical control physician" 等同名歧义
+  - "certified"     # Microsoft Certified Professional 等同名
+  - minecraft       # mcp 也是 Minecraft Coder Pack 缩写，非本站主题
+kd_ceiling: 30              # 新站只追 KD < 30
+volume_floor: 50
+research_date: 2026-07-23
+notes: >
+  这是第二次研究。第一次种子词是 "mcp server"（产出已建站的 Excel + /servers 落地页体系）。
+  本次种子 "mcp" 更宽，目标是找 server 类之外的新主题集群：mcp 本身 / mcp client /
+  mcp tools / what is mcp / mcp vs xxx 等。已有页面（/servers/*、/what-is-mcp-server、
+  /guides/*）要标出来避免重复建，只规划真正的新页。
