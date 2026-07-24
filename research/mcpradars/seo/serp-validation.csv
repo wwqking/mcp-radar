@@ -1,0 +1,8 @@
+keyword,cluster,volume,kd,ai_overview,serp_verdict,dominant_page_type,top_competitors,decision,note
+mcp vs rag,comparison,720,26,yes,🟢 weak-medium,中型SaaS博客+Reddit,merge.dev / medium / reddit / truefoundry / infranodus,DO-P0,无巨头/官方垄断；一篇扎实对比+FAQ可挤进；100%词簇带AIO利于GEO
+rag vs mcp,comparison,720,19,yes,🟢 weak-medium,同上(同一SERP),同 mcp vs rag,DO-P0(同页),与 mcp vs rag 合并成一页，二词同意图
+mcp resources vs tools,comparison,590,24,yes,🟡 medium,中型博客+论坛+官方1条,medium / reddit / workos / codesignal / modelcontextprotocol.io,DO-P1,概念对比页；官方只1条不垄断；吃AIO
+mcp vs a2a,comparison,590,28,yes,🟡 medium,博客+论坛,auth0 / reddit / merge.dev / heidloff.net,DO-P1,无绝对垄断，可打；agent协议对比
+mcp inspector,protocol,4400,24,yes,🔴 strong,官方文档+大厂,modelcontextprotocol.io / github官方 / palantir / auth0,DROP,导航型；官方工具本身垄断首页，目录站难打；可在协议指南内提及
+mcp security best practices,security,210,24,yes,🔴 strong,官方+政府权威,modelcontextprotocol.io / nsa.gov / truefoundry,DEMOTE-P2,官方+NSA权威主导；硬打性价比低；可做但非优先
+how to build an mcp server,setup-tutorial,390,24,yes,🔴 strong,官方教程+大厂SDK,modelcontextprotocol.io / reddit / medium / 各SDK文档,DROP,官方权威教程主导；目录站非内容强项，放弃独立页
