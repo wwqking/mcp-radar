@@ -9,6 +9,7 @@ import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 import { getPillarContent, PILLAR_RELATED_SERVERS } from "@/lib/pillar-what-is-mcp";
+import { SEO_LANDINGS, seoLandingText } from "@/lib/seo-landing";
 
 interface Props {
   params: { locale: Locale };
@@ -127,6 +128,47 @@ export default async function PillarPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      {/* MCP Server 接入指南目录：列出所有 SEO 落地页，给它们传站内内链权重 + 方便浏览 */}
+      <section className="mt-12">
+        <h2 className="mb-2 text-lg font-bold text-neutral-900 dark:text-neutral-100">
+          {locale === "zh" ? "热门 MCP Server 接入指南" : "Popular MCP Server Setup Guides"}
+        </h2>
+        <p className="mb-4 text-sm text-neutral-500 dark:text-neutral-400">
+          {locale === "zh"
+            ? "按工具查看接入方式、可用能力和配置——每个都是能用的真实 server。"
+            : "Browse setup, capabilities, and config by tool — each is a real, usable server."}
+        </p>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+          {SEO_LANDINGS.map((l) => {
+            const t = seoLandingText(l, locale);
+            return (
+              <Link
+                key={l.toolSlug}
+                href={localizedHref(locale, `/servers/${l.toolSlug}-mcp-server`)}
+                className="card px-3 py-2.5 text-sm font-medium text-neutral-700 hover:border-brand-400 hover:text-brand-700 dark:text-neutral-300 dark:hover:text-brand-300"
+              >
+                {t.toolName} MCP Server →
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* 本地装 vs 远程连 —— 支柱页是全站权重最高的内链源，remote 落地页要从这里拿一条 */}
+      <section className="mt-12">
+        <h2 className="mb-2 text-lg font-bold text-neutral-900 dark:text-neutral-100">
+          {locale === "zh" ? "不想在本机装？用远程的" : "Don't want to install anything? Use a remote one"}
+        </h2>
+        <p className="mb-4 text-sm text-neutral-500 dark:text-neutral-400">
+          {locale === "zh"
+            ? "有些 server 作者已经跑在自己服务器上，给一个 URL 就能连，不用 npx / pip 装任何东西。"
+            : "Some servers are already hosted by their authors — you paste a URL instead of installing anything with npx or pip."}
+        </p>
+        <Link href={localizedHref(locale, "/remote-mcp-servers")} className="link-accent">
+          {locale === "zh" ? "查看所有 Remote MCP Servers" : "Browse all remote MCP servers"} →
+        </Link>
+      </section>
 
       {/* FAQ（配 FAQPage schema） */}
       <section className="mt-12">

@@ -38,6 +38,12 @@ interface RegistryPage {
   metadata?: { nextCursor?: string; count?: number };
 }
 
+/** 托管端点（registry `remotes` 条目）：type 如 streamable-http / sse。 */
+export interface RemoteEndpoint {
+  type: string;
+  url: string;
+}
+
 /** registry 富化后的一条候选（钥匙 + 官方元信息） */
 export interface RegistryCandidate {
   name: string;
@@ -48,6 +54,10 @@ export interface RegistryCandidate {
   npmPackage: string | null;
   /** 纯 remotes 型（无仓库/无包）→ 无法审计 */
   remoteOnly: boolean;
+  /** 托管端点：有这个就能不装包直接连（remote MCP server）。
+   *  registry 里 82% 的条目带 remotes，其中过半同时有 repo——这批既能审计健康数据、
+   *  又能远程直连，是 /remote-mcp-servers 页的主体。 */
+  remoteEndpoints: RemoteEndpoint[];
   status: string;
   publishedAt: string | null;
   updatedAt: string | null;
@@ -68,6 +78,9 @@ function toCandidate(item: RegistryItem): RegistryCandidate {
   const repoUrl = s.repository?.url ?? null;
   const npmPackage = pickNpmPackage(s);
   const hasPackage = (s.packages?.length ?? 0) > 0;
+  const remoteEndpoints = (s.remotes ?? [])
+    .filter((r) => r.type && r.url)
+    .map((r) => ({ type: r.type, url: r.url }));
   return {
     name: s.name,
     title: s.title || s.name,
@@ -75,6 +88,7 @@ function toCandidate(item: RegistryItem): RegistryCandidate {
     repoUrl,
     npmPackage,
     remoteOnly: !repoUrl && !hasPackage,
+    remoteEndpoints,
     status: official?.status ?? "unknown",
     publishedAt: official?.publishedAt ?? null,
     updatedAt: official?.updatedAt ?? null,

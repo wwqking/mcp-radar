@@ -15,6 +15,7 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
 
   const NAV = [
     { href: "/#categories", label: dict.nav.categories },
+    { href: "/remote-mcp-servers", label: dict.nav.remote },
     { href: "/leaderboard", label: dict.nav.leaderboard },
     { href: "/radar", label: dict.nav.radar },
     { href: "/guides", label: dict.nav.guides },

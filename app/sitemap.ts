@@ -25,6 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPaths: Array<[string, number]> = [
     ["", 1],
     ["/what-is-mcp-server", 0.9],
+    ["/remote-mcp-servers", 0.9], // 主词 `remote mcp servers`，SERP 首位是竞品同型分类页
     ["/guides", 0.7],
     ["/leaderboard", 0.7],
     ["/radar", 0.7],

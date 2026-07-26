@@ -10,6 +10,7 @@ import { fetchNpmAdoption } from "./npm";
 import { computeBreakdown, computeTrustScore, computeLifecycle, computeVerdict } from "./score";
 import { classify } from "./classify";
 import { CURATED_SEEDS } from "./curated";
+import { DISCOVERED_SEEDS } from "./discovered";
 import {
   readAllSnapshots,
   readPreviousSnapshot,
@@ -160,6 +161,7 @@ async function enrichOne(cand: RegistryCandidate): Promise<MCPServer> {
     starsTrend: [], // 趋势需历史快照，先空（sparkline 会显示「无数据」）
     downloadsTrend: [],
     ...(readmeFacts ? { readmeFacts } : {}),
+    ...(cand.remoteEndpoints.length ? { remoteEndpoints: cand.remoteEndpoints } : {}),
   };
 }
 
@@ -172,6 +174,8 @@ function seedToCandidate(seed: (typeof CURATED_SEEDS)[number]): RegistryCandidat
     repoUrl: seed.repoUrl,
     npmPackage: seed.npmPackage,
     remoteOnly: false,
+    // 白名单是「本地装包跑」的开源 server；托管端点由 registry 侧提供，这里恒空。
+    remoteEndpoints: [],
     status: "active",
     publishedAt: null,
     updatedAt: null,
@@ -188,11 +192,20 @@ export async function collectServers(limit = DEFAULT_LIMIT): Promise<MCPServer[]
   // registry 补量池：从 registry 拉这么多候选（白名单之外的长尾）
   const registryCands = await fetchRegistryCandidates({ limit, onlyWithRepo: true });
 
-  // 合并候选：白名单在前（优先富化 + 必留），registry 补量在后；按 name 去重
+  // 合并候选：白名单在前（优先富化 + 必留），机器发现的次之，registry 补量在后；按 name 去重。
+  // 注意 curatedNames 只收手工白名单——机器发现的种子不给「无条件保留」豁免，
+  // 仍要过 passesQualityGate（人没看过的东西不该享受人看过的待遇）。
   const curatedCandidates = CURATED_SEEDS.map(seedToCandidate);
   const curatedNames = new Set(curatedCandidates.map((c) => c.name));
+  const discoveredCandidates = DISCOVERED_SEEDS.map(seedToCandidate);
   const merged: RegistryCandidate[] = [...curatedCandidates];
   const names = new Set(merged.map((c) => c.name));
+  for (const c of discoveredCandidates) {
+    if (!names.has(c.name)) {
+      names.add(c.name);
+      merged.push(c);
+    }
+  }
   for (const c of registryCands) {
     if (!names.has(c.name)) {
       names.add(c.name);
@@ -232,7 +245,8 @@ export async function collectServers(limit = DEFAULT_LIMIT): Promise<MCPServer[]
   kept.sort((a, b) => b.signals.stars - a.signals.stars);
   const dropped = deduped.length - kept.length;
   console.log(
-    `[collector] 富化 ${deduped.length} 个 → 保留 ${kept.length}（白名单 ${curatedNames.size} 必留，registry 过门槛补量），过滤掉 ${dropped} 个低质项`,
+    `[collector] 富化 ${deduped.length} 个 → 保留 ${kept.length}（白名单 ${curatedNames.size} 必留，` +
+      `自动发现 ${discoveredCandidates.length} + registry 补量均须过门槛），过滤掉 ${dropped} 个低质项`,
   );
   const top = kept;
 

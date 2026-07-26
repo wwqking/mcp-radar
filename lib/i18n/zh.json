@@ -16,6 +16,7 @@
   },
   "nav": {
     "categories": "分类",
+    "remote": "Remote",
     "leaderboard": "榜单",
     "radar": "雷达",
     "graveyard": "墓地",
@@ -363,6 +364,24 @@
     "listAnchorA": "本类共 {n} 个 server",
     "listAnchorB": "，其中 {stale} 个已半年无更新或弃坑（已折叠到底部）",
     "srcRegistry": "官方 registry"
+  },
+  "remote": {
+    "title": "Remote MCP Servers —— 免安装、直接连的托管 MCP 服务",
+    "desc": "{count} 个提供托管端点的 MCP server：不用本地装包，填个 URL 就能连。每个都带维护活跃度与健康数据。",
+    "home": "首页",
+    "h1": "Remote MCP Servers",
+    "lead": "Remote MCP server 指的是作者已经把服务跑在自己服务器上、对外给一个 URL 的 MCP server。你不用 npx / pip 装任何东西，在客户端里填上这个地址就能用。",
+    "whyTitle": "什么时候该用 remote，什么时候该本地装",
+    "whyRemote": "用 remote：想马上试一下、不想在本机装运行时、或者服务本来就要连作者那边的云端数据（比如 SaaS 官方出的 server）。",
+    "whyLocal": "用本地：要访问你自己机器上的文件/数据库，或者不想把请求经过第三方服务器——凭据和数据都会流经对方。",
+    "cautionTitle": "接之前先看一眼",
+    "caution": "远程端点意味着你的请求（可能含凭据）会发到对方服务器上。下面每个条目都标了维护活跃度和健康分，先看清楚再接生产。",
+    "listAnchor": "{n} 个带托管端点的 server，按健康分排序",
+    "transportTitle": "传输方式",
+    "relatedTitle": "相关",
+    "srcRegistry": "官方 registry",
+    "empty": "暂无带托管端点的 server（数据更新中）。",
+    "pillarLink": "什么是 MCP Server"
   },
   "guides": {
     "metaTitle": "指南 —— MCP 选型与落地的深度内容",

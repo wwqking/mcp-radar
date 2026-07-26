@@ -16,6 +16,7 @@
   },
   "nav": {
     "categories": "Categories",
+    "remote": "Remote",
     "leaderboard": "Leaderboard",
     "radar": "Radar",
     "graveyard": "Graveyard",
@@ -363,6 +364,24 @@
     "listAnchorA": "{n} servers in this category",
     "listAnchorB": ", of which {stale} haven't been updated in 6 months or are abandoned (folded to the bottom)",
     "srcRegistry": "Official registry"
+  },
+  "remote": {
+    "title": "Remote MCP Servers — hosted, no install required",
+    "desc": "{count} MCP servers with hosted endpoints: no local install, just paste a URL. Each one flagged with maintenance status and health data.",
+    "home": "Home",
+    "h1": "Remote MCP Servers",
+    "lead": "A remote MCP server is one the author already runs on their own infrastructure and exposes as a URL. You don't npx or pip install anything — you paste the address into your client and it works.",
+    "whyTitle": "When to use remote vs. local",
+    "whyRemote": "Use remote when: you want to try something immediately, you'd rather not install a runtime locally, or the service inherently talks to the vendor's cloud anyway (most official SaaS servers).",
+    "whyLocal": "Use local when: you need access to files or databases on your own machine, or you don't want requests routed through a third party — credentials and data both pass through them.",
+    "cautionTitle": "Before you connect",
+    "caution": "A remote endpoint means your requests — possibly including credentials — go to someone else's server. Every entry below shows maintenance activity and a health score, so check before wiring it into production.",
+    "listAnchor": "{n} servers with a hosted endpoint, sorted by health score",
+    "transportTitle": "Transport",
+    "relatedTitle": "Related",
+    "srcRegistry": "Official registry",
+    "empty": "No servers with hosted endpoints yet (data refreshing).",
+    "pillarLink": "What is an MCP server"
   },
   "guides": {
     "metaTitle": "Guides — in-depth MCP selection and rollout",

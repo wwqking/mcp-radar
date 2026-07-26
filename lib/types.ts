@@ -89,6 +89,15 @@ export interface MCPServer {
   downloadsTrend: number[];
   /** 从 README 规则提取的结构化事实（采集期填充；无 repo/README 时缺省）。 */
   readmeFacts?: ReadmeFacts;
+  /** 托管端点：非空 = 这是个 remote MCP server，不用本地装包就能连。
+   *  来自 registry 的 `remotes` 字段（见 collector/registry.ts）。 */
+  remoteEndpoints?: RemoteEndpoint[];
+}
+
+/** 托管端点：type 如 streamable-http / sse，url 是可直接连的地址。 */
+export interface RemoteEndpoint {
+  type: string;
+  url: string;
 }
 
 /** 从 README 规则提取的结构化事实（非 AI，正则/标题匹配）。

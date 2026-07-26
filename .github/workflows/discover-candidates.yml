@@ -1,0 +1,74 @@
+name: 候选发现（开 PR，不自动合并）
+
+# 每日采集（daily-update.yml）只会重跑已知清单，发现不了新 server——
+# 瓶颈是采集**源**不是频率。这个 workflow 补的是源：找「用户在搜、但库里没有」的 server，
+# 过三道机器门槛后开成 PR 让人过目。
+#
+# 为什么是 PR 不是直接 commit：三道门槛过完仍会漏（实测漏过「课程被当成 server」、
+# 「canvas 撞了 canva」），最后一道必须是人。PR 只改 lib/collector/discovered.ts，
+# 碰不到手工维护的 curated.ts。
+
+on:
+  schedule:
+    # UTC 周一 21:00 = 北京时间周二 05:00，每周一次（比每日采集早一小时，避免撞车）
+    - cron: "0 21 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: discover-candidates
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: 发现候选（三道门槛）
+        env:
+          GITHUB_TOKEN: ${{ secrets.MCP_GITHUB_TOKEN }} # 只读 public_repo；没 token 会被限到 60/h 跑不完
+          MCP_DISCOVER_MAX: ${{ vars.MCP_DISCOVER_MAX || '25' }}
+          MCP_DISCOVER_MIN_STARS: ${{ vars.MCP_DISCOVER_MIN_STARS || '50' }}
+        run: npm run discover
+
+      - name: 类型检查（保证生成的 discovered.ts 能编译）
+        run: npx tsc --noEmit
+
+      - name: 有新候选就开 PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain lib/collector/discovered.ts)" ]; then
+            echo "候选无变化，不开 PR"
+            exit 0
+          fi
+
+          BRANCH="discover/$(date -u +%Y-%m-%d)"
+          git config user.name "mcp-radar-bot"
+          git config user.email "bot@mcpradars.com"
+          git checkout -b "$BRANCH"
+          # discover-state.json 是关键词清单的游标，必须一起提交，否则下周又从头验同样的 60 个
+          git add lib/collector/discovered.ts data/discover-report.md data/discover-state.json
+          git commit -m "chore(discover): 本周候选 server $(date -u +%Y-%m-%d)"
+          git push -u origin "$BRANCH"
+
+          # 报告直接当 PR 正文——里面有过门槛的清单和被挡掉的原因，审的人不用翻代码
+          gh pr create \
+            --title "候选 server 待审 · $(date -u +%Y-%m-%d)" \
+            --body-file data/discover-report.md \
+            --base master \
+            --head "$BRANCH"
