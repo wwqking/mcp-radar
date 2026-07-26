@@ -170,6 +170,9 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   { name: "splunk-mcp", repoUrl: "https://github.com/livehybrid/splunk-mcp", npmPackage: null }, // 1290/mo ★107
 
   // 协作 / 生产力
+  // ⚠️ linkedin 这条是补的：库里原本匹配到的 ai-com-mcp-linkedin 实际仓库是
+  // la-rebelion/hapimcp（★8，通用 API 网关，不是 LinkedIn 的 server）。建落地页前核实出来的。
+  { name: "linkedin-mcp-server", repoUrl: "https://github.com/stickerdaniel/linkedin-mcp-server", npmPackage: null }, // 1150/mo ★2901
   { name: "todoist-mcp", repoUrl: "https://github.com/Doist/todoist-mcp", npmPackage: null }, // 850/mo ★529
   { name: "zendesk-mcp-server", repoUrl: "https://github.com/reminia/zendesk-mcp-server", npmPackage: null }, // 850/mo ★110
   { name: "clickup-mcp-server", repoUrl: "https://github.com/taazkareem/clickup-mcp-server", npmPackage: null }, // 1320/mo ★49
