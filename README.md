@@ -120,8 +120,32 @@ npm run build
 
 ## 待办
 
-- [ ] 扩充白名单 / 调大 `MCP_COLLECT_LIMIT` 铺更多长尾页面（当前 curated ~26 个 + registry 补量）
-- [ ] 每日 cron 跑 `npm run build` 让快照按天累积（趋势/爆火才有真实历史）
+### SEO / 内容（依据 `research/mcpradars/seo-r3/`，第三轮竞品采词研究）
+
+- [ ] **`/clients` 模块**——竞品共 1,359 页，`mcp clients` 首页同时挂着 mcpmarket /
+      mcp.so / pulsemcp 三家的列表页。做 40–60 个 curated 即可，别追竞品的 1,359 个。
+      带一个高价值报错词：`cursor mcp spawn npx enoent`（1,600/mo, KD 24）——
+      配置炸了来搜的人转化意图极强。brief 在 `seo-r3/briefs/clients--listing-hub.md`
+- [ ] **W2 工具落地页 35 个**（18,550/mo）——neo4j / unreal / terraform / asana /
+      selenium / firebase / kubernetes 等。⚠️ 边际收益已明显下降：W1 均 3,787/mo，
+      W2 只有 530/mo，建议排在 `/clients` 之后
+- [ ] **W3 工具落地页 57 个**（7,060/mo）——优先级最低
+- [ ] `/servers/linear-mcp-server` 指向的 `linear/linear-mcp` 是托管型 server、
+      无代码可审计（trust=28, unverifiable）。保留是因为「如实说我们验不了」本身是
+      本站的价值主张；若认为不划算可摘掉
 - [ ] 上线后 Google/Bing Search Console 提交 sitemap，启动沙盒期倒计时
+
+已完成：工具落地页 19→44（W1, 94,670/mo）、`/remote-mcp-servers`、白名单 92→127。
+Agent Skills 主题（389 词 / 124,480 月量）已决定**单独开站**，产物在 `seo-r3/` 待搬。
+
+### 数据 / 采集
+
+- [x] 去掉采集硬上限，改「白名单必留 + registry 过质量门槛」（不封顶）
+- [x] 候选发现流水线 `npm run discover` + 每周 CI 开 PR（不自动合并）
+- [ ] 每日 cron 跑 `npm run build` 让快照按天累积（趋势/爆火才有真实历史）
+- [ ] 关键词待办清单还剩 561 个没验（`data/discover-state.json` 是游标，每周推进 60 个）
+
+### 变现
+
 - [ ] 上线后在 Vercel env 配 `BUTTONDOWN_API_KEY` 开启订阅
 - [ ] Pro/团队档的真正支付（Stripe）——目前只收候补邮箱
