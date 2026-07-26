@@ -17,3 +17,7 @@
 .DS_Store
 *.tsbuildinfo
 next-env.d.ts
+
+# 竞品 sitemap 原始 XML（关键词研究证据链的一部分，但 23MB 且随时能重抓，不入库）
+# 关键词导出 CSV 保留——那些需要付费工具会话，抓不回来。
+/research/**/raw/sitemaps/

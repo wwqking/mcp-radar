@@ -1,0 +1,78 @@
+{
+  "raw_keywords": 25479,
+  "after_clean": 10149,
+  "clusters": 5,
+  "total_planned_pages": 5195,
+  "priority_counts": {
+    "P0": 1126,
+    "P1": 3150,
+    "P2": 5873
+  },
+  "cluster_summary": [
+    {
+      "cluster_id": "entry_detail",
+      "cluster": "Entry / Detail",
+      "keywords": 8069,
+      "total_volume": 1743380,
+      "avg_kd": 24.8,
+      "avg_score": 50.8,
+      "p0_count": 934,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 5142,
+      "planned_total": 5143
+    },
+    {
+      "cluster_id": "client_integration",
+      "cluster": "Client Integration",
+      "keywords": 983,
+      "total_volume": 157580,
+      "avg_kd": 24.9,
+      "avg_score": 51.8,
+      "p0_count": 126,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 12,
+      "planned_total": 13
+    },
+    {
+      "cluster_id": "concept_compare",
+      "cluster": "Concept & Compare",
+      "keywords": 382,
+      "total_volume": 46460,
+      "avg_kd": 15.4,
+      "avg_score": 49.4,
+      "p0_count": 34,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 12,
+      "planned_total": 13
+    },
+    {
+      "cluster_id": "howto_build",
+      "cluster": "How-to / Build",
+      "keywords": 343,
+      "total_volume": 33930,
+      "avg_kd": 22.5,
+      "avg_score": 49.1,
+      "p0_count": 12,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 12,
+      "planned_total": 13
+    },
+    {
+      "cluster_id": "ops_infra",
+      "cluster": "Ops / Infra / Security",
+      "keywords": 372,
+      "total_volume": 27960,
+      "avg_kd": 13.9,
+      "avg_score": 48.9,
+      "p0_count": 20,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 12,
+      "planned_total": 13
+    }
+  ]
+}

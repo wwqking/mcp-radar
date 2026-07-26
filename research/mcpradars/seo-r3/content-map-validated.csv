@@ -1,0 +1,130 @@
+primary_keyword,module,volume,kd,serp,decision,target_url,page_type,priority,wave,data_dependency,status_vs_current
+agent skills,skills,4400,52,🟢 目录站#1,DO,/skills,listing hub,P0,W1,需采集 skills 数据,NEW 模块 — 前两轮 seed-only 完全看不见
+claude skills,skills,27100,58,🟡,DO,/what-are-agent-skills,pillar,P0,W1,无,NEW 支柱页 — 全站最大单词量
+awesome-claude-skills,skills,1300,0,🟢 全是小站,DO,/skills/awesome-claude-skills,curated listing,P0,W1,需采集 skills 数据,NEW — KD0，最易吃的入口
+skill-creator,skills,1600,28,—,DO,/skills/skill-creator,detail,P1,W2,需采集,NEW
+agent skills marketplace,skills,320,26,—,DO,/skills/marketplace,listing,P1,W2,需采集,NEW，与 skill marketplace(320) 合并
+skills.sh,skills,4400,26,🔴 产品官网垄断,DROP-KW / KEEP-PAGE,/skills/skills-sh,detail,P2,W3,需采集,丢主词，页面改打 qualified 变体
+mcp clients,clients,1000,46,🟡 三家目录在首页,DO,/clients,listing hub,P0,W1,需采集 client 数据,"NEW 模块 — 竞品共 1,359 页"
+cursor mcp servers,clients,720,44,—,DO,/clients/cursor,detail,P1,W2,需采集,NEW
+claude code mcp servers,clients,720,26,—,DO,/clients/claude-code,detail,P1,W2,需采集,NEW
+vscode mcp,clients,720,63,—,DO,/clients/vscode,detail,P2,W3,需采集,NEW
+remote mcp servers,remote,480,24,🟡 分类页#1,DO,/category/remote,facet hub,P0,W1,已有数据可标记,NEW facet — 成本最低的一个
+mcp remote / mcp-remote,remote,2290,27,—,DO,/guides/remote-vs-local-mcp,guide,P1,W2,无,合并 mcp-remote(1900)+mcp remote(390)
+google drive mcp,servers,14440,64,🔴 厂商垄断,DO,/servers/google-mcp-server,detail landing,P1,W1,已有真 server: google-analytics-mcp (trust 72),NEW 落地页
+n8n mcp,servers,11830,47,🟡 竞品详情页在榜,DO,/servers/n8n-mcp-server,detail landing,P0,W1,已有真 server: n8n-mcp (trust 90),NEW 落地页
+aws mcp servers,servers,7550,60,🔴 厂商垄断,DO,/servers/aws-mcp-server,detail landing,P1,W1,已有真 server: aws-mcp-server (trust 84),NEW 落地页
+atlassian mcp,servers,6840,54,🔴 厂商垄断,DO,/servers/atlassian-mcp-server,detail landing,P1,W1,已有真 server: mcp-atlassian (trust 85),NEW 落地页
+mcp microsoft,servers,5940,75,🔴 厂商垄断,DO,/servers/microsoft-mcp-server,detail landing,P1,W1,已有真 server: microsoft-mcp (trust 81),NEW 落地页
+supabase mcp,servers,5860,53,🔴 厂商垄断,DO,/servers/supabase-mcp-server,detail landing,P1,W1,已有真 server: supabase-mcp-server-supabase (trust 79),NEW 落地页
+slack mcp,servers,5650,56,🔴 厂商垄断,DO,/servers/slack-mcp-server,detail landing,P1,W1,已有真 server: slack-mcp-server (trust 72),NEW 落地页
+notion mcp,servers,4400,56,🔴 厂商垄断,DO,/servers/notion-mcp-server,detail landing,P1,W1,已有真 server: notionhq-notion-mcp-server (trust 67),NEW 落地页
+sequential thinking mcp,servers,3760,38,🟡 竞品详情页在榜,DO,/servers/sequential-mcp-server,detail landing,P0,W1,已有真 server: modelcontextprotocol-server-sequential-thinking (trust 81),NEW 落地页
+gitlab mcp,servers,3550,39,🟡 竞品详情页在榜,DO,/servers/gitlab-mcp-server,detail landing,P0,W1,已有真 server: gitlab-mcp (trust 87),NEW 落地页
+shadcn mcp,servers,2520,33,🟡 竞品详情页在榜,DO,/servers/shadcn-mcp-server,detail landing,P0,W1,已有真 server: shadcn-ui-mcp-server (trust 71),NEW 落地页
+unity mcp,servers,2360,22,🔴 厂商垄断,DO,/servers/unity-mcp-server,detail landing,P1,W1,已有真 server: unity-mcp (trust 85),NEW 落地页
+snowflake mcp,servers,2330,45,🟡 竞品详情页在榜,DO,/servers/snowflake-mcp-server,detail landing,P0,W1,已有真 server: snowflake-mcp (trust 62),NEW 落地页
+cloudflare mcp,servers,1990,58,🔴 厂商垄断,DO,/servers/cloudflare-mcp-server,detail landing,P1,W1,已有真 server: cloudflare-mcp-server-cloudflare (trust 76),NEW 落地页
+vercel mcp,servers,1880,39,🔴 厂商垄断,DO,/servers/vercel-mcp-server,detail landing,P1,W1,已有真 server: vercel-mcp (trust 64),NEW 落地页
+brave search mcp,servers,1780,45,🟡 竞品详情页在榜,DO,/servers/brave-mcp-server,detail landing,P0,W1,已有真 server: brave-brave-search-mcp-server (trust 77),NEW 落地页
+grafana mcp,servers,1760,22,🔴 厂商垄断,DO,/servers/grafana-mcp-server,detail landing,P1,W1,已有真 server: mcp-grafana (trust 82),NEW 落地页
+stripe mcp,servers,1540,41,🔴 厂商垄断,DO,/servers/stripe-mcp-server,detail landing,P1,W1,已有真 server: stripe-mcp (trust 78),NEW 落地页
+dbt mcp,servers,1430,27,🟡 竞品详情页在榜,DO,/servers/dbt-mcp-server,detail landing,P0,W1,已有真 server: dbt-mcp (trust 80),NEW 落地页
+wordpress mcp,servers,1280,43,🟡 竞品详情页在榜,DO,/servers/wordpress-mcp-server,detail landing,P0,W1,已有真 server: mcp-wordpress-remote (trust 71),NEW 落地页
+mysql mcp,servers,1270,33,🟡 竞品详情页在榜,DO,/servers/mysql-mcp-server,detail landing,P0,W1,已有真 server: mcp-server-mysql (trust 74),NEW 落地页
+hubspot mcp server,servers,1230,31,🟡 竞品详情页在榜,DO,/servers/hubspot-mcp-server,detail landing,P0,W1,已有真 server: mcp-hubspot (trust 53),NEW 落地页
+mongodb-mcp-server,servers,1200,46,🟡 竞品详情页在榜,DO,/servers/mongodb-mcp-server,detail landing,P0,W1,已有真 server: mongodb-mcp-server (trust 82),NEW 落地页
+linkedin mcp,servers,1150,35,🟡 竞品详情页在榜,DO,/servers/linkedin-mcp-server,detail landing,P0,W1,已有真 server: ai-com-mcp-linkedin (trust 61),NEW 落地页
+servicenow mcp server,servers,1130,17,🟡 竞品详情页在榜,DO,/servers/servicenow-mcp-server,detail landing,P0,W1,已有真 server: servicenow-mcp (trust 60),NEW 落地页
+neo4j mcp server,servers,880,37,🟡 竞品详情页在榜,DO,/servers/neo4j-mcp-server,detail landing,P0,W2,已有真 server: mcp-neo4j (trust 60),NEW 落地页
+unreal engine mcp,servers,810,24,🟡 竞品详情页在榜,DO,/servers/unreal-mcp-server,detail landing,P0,W2,已有真 server: ai-smithery-chir24-unreal-mcp (trust 82),NEW 落地页
+terraform mcp server,servers,800,50,🔴 厂商垄断,DO,/servers/terraform-mcp-server,detail landing,P1,W2,已有真 server: terraform-mcp-server (trust 80),NEW 落地页
+asana mcp,servers,790,19,🔴 厂商垄断,DO,/servers/asana-mcp-server,detail landing,P1,W2,已有真 server: mcp-server-asana (trust 64),NEW 落地页
+magic mcp,servers,790,3,🟡 竞品详情页在榜,DO,/servers/magic-mcp-server,detail landing,P1,W2,已有真 server: 21st-dev-magic (trust 55),NEW 落地页
+selenium mcp,servers,780,22,🟡 竞品详情页在榜,DO,/servers/selenium-mcp-server,detail landing,P1,W2,已有真 server: mcp-selenium (trust 60),NEW 落地页
+firebase mcp,servers,710,35,🟡 竞品详情页在榜,DO,/servers/firebase-mcp-server,detail landing,P1,W2,已有真 server: firebase-mcp (trust 53),NEW 落地页
+mcp-router,servers,690,12,🟡 竞品详情页在榜,DO,/servers/router-mcp-server,detail landing,P1,W2,已有真 server: ai-traderouter-trade-router-mcp (trust 53),NEW 落地页
+quickbooks mcp,servers,680,9,🟡 竞品详情页在榜,DO,/servers/quickbooks-mcp-server,detail landing,P1,W2,已有真 server: quickbooks-online-mcp-server (trust 81),NEW 落地页
+kubernetes mcp server,servers,670,42,🟡 竞品详情页在榜,DO,/servers/kubernetes-mcp-server,detail landing,P1,W2,已有真 server: mcp-server-kubernetes (trust 89),NEW 落地页
+arxiv-mcp-server,servers,640,7,🟡 竞品详情页在榜,DO,/servers/arxiv-mcp-server,detail landing,P1,W2,已有真 server: arxiv-mcp-server (trust 79),NEW 落地页
+mcp-server-chart,servers,590,20,🟡 竞品详情页在榜,DO,/servers/chart-mcp-server,detail landing,P1,W2,已有真 server: mcp-server-chart (trust 71),NEW 落地页
+webflow mcp,servers,560,17,🟡 竞品详情页在榜,DO,/servers/webflow-mcp-server,detail landing,P1,W2,已有真 server: webflow-mcp-server (trust 61),NEW 落地页
+youtube mcp,servers,540,33,🟡 竞品详情页在榜,DO,/servers/youtube-mcp-server,detail landing,P1,W2,已有真 server: mcp-server-youtube-transcript (trust 71),NEW 落地页
+ref mcp,servers,510,23,🟡 竞品详情页在榜,DO,/servers/ref-mcp-server,detail landing,P1,W2,已有真 server: ai-smithery-ref-tools-ref-tools-mcp (trust 67),NEW 落地页
+mcp toolbox for databases,servers,500,39,🟡 竞品详情页在榜,DO,/servers/toolbox-mcp-server,detail landing,P1,W2,已有真 server: mcp-toolbox (trust 84),NEW 落地页
+meta mcp,servers,490,30,🟡 竞品详情页在榜,DO,/servers/meta-mcp-server,detail landing,P1,W2,已有真 server: meta-ads-mcp (trust 76),NEW 落地页
+apify mcp,servers,480,55,🟡 竞品详情页在榜,DO,/servers/apify-mcp-server,detail landing,P1,W2,已有真 server: apify-mcp-server (trust 82),NEW 落地页
+dynatrace mcp server,servers,470,36,🟡 竞品详情页在榜,DO,/servers/dynatrace-mcp-server,detail landing,P1,W2,已有真 server: dynatrace-mcp (trust 80),NEW 落地页
+spotify mcp,servers,470,28,🟡 竞品详情页在榜,DO,/servers/spotify-mcp-server,detail landing,P1,W2,已有真 server: spotify-mcp (trust 57),NEW 落地页
+pagerduty mcp server,servers,460,19,🟡 竞品详情页在榜,DO,/servers/pagerduty-mcp-server,detail landing,P1,W2,已有真 server: pagerduty-mcp-server (trust 75),NEW 落地页
+revit mcp plugin,servers,430,18,🟡 竞品详情页在榜,DO,/servers/plugin-mcp-server,detail landing,P1,W2,已有真 server: ai-circulara-plugin (trust 57),NEW 落地页
+jenkins mcp,servers,430,32,🟡 竞品详情页在榜,DO,/servers/jenkins-mcp-server,detail landing,P1,W2,已有真 server: mcp-jenkins (trust 63),NEW 落地页
+clickhouse mcp,servers,400,15,🟡 竞品详情页在榜,DO,/servers/clickhouse-mcp-server,detail landing,P1,W2,已有真 server: clickhouse-mcp-clickhouse (trust 70),NEW 落地页
+neon mcp,servers,400,28,🟡 竞品详情页在榜,DO,/servers/neon-mcp-server,detail landing,P1,W2,已有真 server: mcp-server-neon (trust 76),NEW 落地页
+mcp atlas,servers,400,34,🟡 竞品详情页在榜,DO,/servers/atlas-mcp-server,detail landing,P1,W2,已有真 server: app-anakior-atlas-mind (trust 62),NEW 落地页
+sap mcp server,servers,400,32,🟡 竞品详情页在榜,DO,/servers/sap-mcp-server,detail landing,P1,W2,已有真 server: ai-oobeprotocol-sap-mcp-sap-mcp (trust 70),NEW 落地页
+smithery mcp,servers,390,43,🟡 竞品详情页在榜,DO,/servers/smithery-mcp-server,detail landing,P1,W2,已有真 server: ai-smithery-browserbasehq-mcp-browserbase (trust 55),NEW 落地页
+browserbase mcp,servers,370,31,🟡 竞品详情页在榜,DO,/servers/browserbase-mcp-server,detail landing,P1,W2,已有真 server: browserbase-mcp-server-browserbase (trust 55),NEW 落地页
+weather mcp server,servers,370,12,🟡 竞品详情页在榜,DO,/servers/weather-mcp-server,detail landing,P1,W2,已有真 server: weather-mcp-server (trust 54),NEW 落地页
+elastic mcp server,servers,370,35,🟡 竞品详情页在榜,DO,/servers/elastic-mcp-server,detail landing,P1,W2,已有真 server: elastic-mcp-server-elasticsearch (trust 64),NEW 落地页
+zapier mcp server,servers,330,43,🟡 竞品详情页在榜,DO,/servers/zapier-mcp-server,detail landing,P1,W2,已有真 server: zapier-mcp (trust 74),NEW 落地页
+django mcp server,servers,320,23,🟡 竞品详情页在榜,DO,/servers/django-mcp-server,detail landing,P1,W2,已有真 server: django-mcp-server (trust 62),NEW 落地页
+mcp catalog,servers,320,59,🟡 竞品详情页在榜,DO,/servers/catalog-mcp-server,detail landing,P1,W2,已有真 server: ai-buywhere-catalog-api (trust 55),NEW 落地页
+mcp skills,servers,310,31,🟡 竞品详情页在榜,DO,/servers/skills-mcp-server,detail landing,P1,W2,已有真 server: ai-com-mcp-skills-search (trust 80),NEW 落地页
+21st dev mcp,servers,300,9,🟡 竞品详情页在榜,DO,/servers/21st-mcp-server,detail landing,P1,W3,已有真 server: 21st-dev-magic (trust 55),NEW 落地页
+lucid mcp,servers,280,17,🟡 竞品详情页在榜,DO,/servers/lucid-mcp-server,detail landing,P1,W3,已有真 server: app-lucid-mcp-lucid (trust 53),NEW 落地页
+airbnb mcp server,servers,280,22,🟡 竞品详情页在榜,DO,/servers/airbnb-mcp-server,detail landing,P1,W3,已有真 server: mcp-server-airbnb (trust 61),NEW 落地页
+facebook ads mcp,servers,280,40,🟡 竞品详情页在榜,DO,/servers/ads-mcp-server,detail landing,P1,W3,已有真 server: meta-ads-mcp (trust 76),NEW 落地页
+mermaid mcp,servers,260,26,🟡 竞品详情页在榜,DO,/servers/mermaid-mcp-server,detail landing,P1,W3,已有真 server: ai-smithery-hustcc-mcp-mermaid (trust 65),NEW 落地页
+stock mcp,servers,260,35,🟡 竞品详情页在榜,DO,/servers/stock-mcp-server,detail landing,P1,W3,已有真 server: ai-smithery-jjlabsio-korea-stock-mcp (trust 69),NEW 落地页
+netlify mcp,servers,250,15,🟡 竞品详情页在榜,DO,/servers/netlify-mcp-server,detail landing,P1,W3,已有真 server: netlify-mcp (trust 65),NEW 落地页
+redis mcp,servers,240,25,🟡 竞品详情页在榜,DO,/servers/redis-mcp-server,detail landing,P1,W3,已有真 server: redis-mcp-redis (trust 79),NEW 落地页
+elasticsearch mcp,servers,230,42,🟡 竞品详情页在榜,DO,/servers/elasticsearch-mcp-server,detail landing,P1,W3,已有真 server: elastic-mcp-server-elasticsearch (trust 64),NEW 落地页
+q developer mcp,servers,220,36,🟡 竞品详情页在榜,DO,/servers/developer-mcp-server,detail landing,P1,W3,已有真 server: figma-developer-mcp (trust 84),NEW 落地页
+dataforseo mcp,servers,210,26,🟡 竞品详情页在榜,DO,/servers/dataforseo-mcp-server,detail landing,P1,W3,已有真 server: dataforseo-mcp-server (trust 81),NEW 落地页
+rmcp extension,servers,210,17,🟡 竞品详情页在榜,DO,/servers/rmcp-mcp-server,detail landing,P1,W3,已有真 server: ai-dinglebear-tailscale-rmcp (trust 65),NEW 落地页
+revenue cat mcp,servers,210,21,🟡 竞品详情页在榜,DO,/servers/cat-mcp-server,detail landing,P1,W3,已有真 server: cat-2022-catalunya-2022 (trust 51),NEW 落地页
+elevenlabs mcp,servers,210,34,🟡 竞品详情页在榜,DO,/servers/elevenlabs-mcp-server,detail landing,P1,W3,已有真 server: elevenlabs-elevenlabs-mcp (trust 77),NEW 落地页
+paypal mcp,servers,200,34,🟡 竞品详情页在榜,DO,/servers/paypal-mcp-server,detail landing,P1,W3,已有真 server: paypal-mcp (trust 53),NEW 落地页
+heroku mcp server,servers,200,37,🟡 竞品详情页在榜,DO,/servers/heroku-mcp-server,detail landing,P1,W3,已有真 server: heroku-mcp-server (trust 67),NEW 落地页
+xero mcp server,servers,180,5,🟡 竞品详情页在榜,DO,/servers/xero-mcp-server,detail landing,P1,W3,已有真 server: xero-mcp-server (trust 59),NEW 落地页
+resend mcp,servers,170,23,🟡 竞品详情页在榜,DO,/servers/resend-mcp-server,detail landing,P1,W3,已有真 server: resend-mcp (trust 79),NEW 落地页
+mcp run,servers,170,34,🟡 竞品详情页在榜,DO,/servers/run-mcp-server,detail landing,P1,W3,已有真 server: cloud-run-mcp (trust 69),NEW 落地页
+pinecone mcp,servers,160,39,🟡 竞品详情页在榜,DO,/servers/pinecone-mcp-server,detail landing,P1,W3,已有真 server: pinecone-database-mcp (trust 62),NEW 落地页
+attio mcp,servers,150,22,🟡 竞品详情页在榜,DO,/servers/attio-mcp-server,detail landing,P1,W3,已有真 server: ai-smithery-kesslerio-attio-mcp-server (trust 73),NEW 落地页
+npm mcp,servers,150,29,🟡 竞品详情页在榜,DO,/servers/npm-mcp-server,detail landing,P1,W3,已有真 server: ai-smithery-nekzus-npm-sentinel-mcp (trust 71),NEW 落地页
+everything search mcp,servers,140,2,🟡 竞品详情页在榜,DO,/servers/everything-mcp-server,detail landing,P1,W3,已有真 server: modelcontextprotocol-server-everything (trust 80),NEW 落地页
+mcp base sizes,servers,130,12,🟡 竞品详情页在榜,DO,/servers/base-mcp-server,detail landing,P1,W3,已有真 server: ai-tensorfeed-x402-base-mcp (trust 52),NEW 落地页
+email mcp,servers,130,32,🟡 竞品详情页在榜,DO,/servers/email-mcp-server,detail landing,P1,W3,已有真 server: ai-verifox-email-verifier (trust 56),NEW 落地页
+mcp control panel,servers,120,5,🟡 竞品详情页在榜,DO,/servers/control-mcp-server,detail landing,P1,W3,已有真 server: ai-thinkneo-control-plane (trust 66),NEW 落地页
+square mcp,servers,110,27,🟡 竞品详情页在榜,DO,/servers/square-mcp-server,detail landing,P1,W3,已有真 server: square-mcp-server (trust 56),NEW 落地页
+upstash mcp,servers,110,26,🟡 竞品详情页在榜,DO,/servers/upstash-mcp-server,detail landing,P1,W3,已有真 server: upstash-context7-mcp (trust 94),NEW 落地页
+mcp confluent,servers,100,12,🟡 竞品详情页在榜,DO,/servers/confluent-mcp-server,detail landing,P1,W3,已有真 server: mcp-confluent (trust 75),NEW 落地页
+weaviate mcp server,servers,90,6,🟡 竞品详情页在榜,DO,/servers/weaviate-mcp-server,detail landing,P1,W3,已有真 server: mcp-server-weaviate (trust 56),NEW 落地页
+alpha vantage mcp,servers,90,38,🟡 竞品详情页在榜,DO,/servers/vantage-mcp-server,detail landing,P1,W3,已有真 server: vantage-mcp-server (trust 73),NEW 落地页
+plane mcp,servers,90,0,🟡 竞品详情页在榜,DO,/servers/plane-mcp-server,detail landing,P1,W3,已有真 server: ai-thinkneo-control-plane (trust 66),NEW 落地页
+generate mcp server from openapi spec,servers,90,23,🟡 竞品详情页在榜,DO,/servers/generate-mcp-server,detail landing,P1,W3,已有真 server: ai-spritecook-generate (trust 50),NEW 落地页
+domain name mcp,servers,80,6,🟡 竞品详情页在榜,DO,/servers/domain-mcp-server,detail landing,P1,W3,已有真 server: ai-justdomain-just-domain (trust 54),NEW 落地页
+hyperbrowser mcp server,servers,80,1,🟡 竞品详情页在榜,DO,/servers/hyperbrowser-mcp-server,detail landing,P1,W3,已有真 server: hyperbrowser-mcp (trust 55),NEW 落地页
+mcp-3 elisa kit,servers,80,5,🟡 竞品详情页在榜,DO,/servers/kit-mcp-server,detail landing,P1,W3,已有真 server: cc-orionlabsone-orion-agent-kit (trust 55),NEW 落地页
+infinitus mcp server healthcare model context protocol,servers,80,13,🟡 竞品详情页在榜,DO,/servers/healthcare-mcp-server,detail landing,P1,W3,已有真 server: bid-scope-healthcare (trust 58),NEW 落地页
+tailscale mcp,servers,70,21,🟡 竞品详情页在榜,DO,/servers/tailscale-mcp-server,detail landing,P1,W3,已有真 server: ai-dinglebear-tailscale-rmcp (trust 65),NEW 落地页
+unifi mcp,servers,70,12,🟡 竞品详情页在榜,DO,/servers/unifi-mcp-server,detail landing,P1,W3,已有真 server: ai-dinglebear-unifi-rmcp (trust 65),NEW 落地页
+blender mcp addon,servers,70,16,🟡 竞品详情页在榜,DO,/servers/addon-mcp-server,detail landing,P1,W3,已有真 server: ai-ankimcp-anki-mcp-server-addon (trust 76),NEW 落地页
+strava mcp,servers,70,19,🟡 竞品详情页在榜,DO,/servers/strava-mcp-server,detail landing,P1,W3,已有真 server: ai-com-mcp-strava (trust 61),NEW 落地页
+thoughtspot mcp,servers,50,25,🟡 竞品详情页在榜,DO,/servers/thoughtspot-mcp-server,detail landing,P1,W3,已有真 server: app-thoughtspot-mcp-server (trust 66),NEW 落地页
+akshare mcp,servers,50,6,🟡 竞品详情页在榜,DO,/servers/akshare-mcp-server,detail landing,P1,W3,已有真 server: ai-smithery-zwldarren-akshare-one-mcp (trust 55),NEW 落地页
+chroma mcp,servers,50,11,🟡 竞品详情页在榜,DO,/servers/chroma-mcp-server,detail landing,P1,W3,已有真 server: chroma-mcp (trust 54),NEW 落地页
+thinking mcp,servers,50,23,🟡 竞品详情页在榜,DO,/servers/thinking-mcp-server,detail landing,P1,W3,已有真 server: modelcontextprotocol-server-sequential-thinking (trust 81),NEW 落地页
+beta ray bill mcp,servers,40,6,🟡 竞品详情页在榜,DO,/servers/beta-mcp-server,detail landing,P1,W3,已有真 server: ai-smithery-kesslerio-attio-mcp-server-beta (trust 73),NEW 落地页
+motherduck mcp,servers,40,29,🟡 竞品详情页在榜,DO,/servers/motherduck-mcp-server,detail landing,P1,W3,已有真 server: mcp-server-motherduck (trust 69),NEW 落地页
+crypto trading mcp,servers,40,12,🟡 竞品详情页在榜,DO,/servers/crypto-mcp-server,detail landing,P1,W3,已有真 server: ai-smithery-truss44-mcp-crypto-price (trust 69),NEW 落地页
+legal mcp server,servers,30,14,🟡 竞品详情页在榜,DO,/servers/legal-mcp-server,detail landing,P1,W3,已有真 server: bid-scope-legal (trust 61),NEW 落地页
+mcp analytics,servers,30,19,🟡 竞品详情页在榜,DO,/servers/analytics-mcp-server,detail landing,P1,W3,已有真 server: google-analytics-mcp (trust 72),NEW 落地页
+visa intelligent commerce platform model context protocol mcp framework tools,servers,30,0,🟡 竞品详情页在榜,DO,/servers/commerce-mcp-server,detail landing,P1,W3,已有真 server: ai-nexez-commerce (trust 62),NEW 落地页
+can one mcp client connect to multiple mcp servers,servers,20,0,🟡 竞品详情页在榜,DO,/servers/one-mcp-server,detail landing,P1,W3,已有真 server: ai-smithery-zwldarren-akshare-one-mcp (trust 55),NEW 落地页
+revenue intelligence tools comparison api access mcp,servers,10,0,🟡 竞品详情页在榜,DO,/servers/intelligence-mcp-server,detail landing,P1,W3,已有真 server: ai-lumify-sports-intelligence (trust 55),NEW 落地页
+mcp server only selected tools,servers,0,0,🟡 竞品详情页在榜,DO,/servers/only-mcp-server,detail landing,P1,W3,已有真 server: capital-hove-read-only-local-mysql-mcp-server (trust 57),NEW 落地页
+mcp transcript tool,servers,0,0,🟡 竞品详情页在榜,DO,/servers/transcript-mcp-server,detail landing,P1,W3,已有真 server: mcp-server-youtube-transcript (trust 71),NEW 落地页
+attempting connection with missing mods mcp fml forge at client,servers,0,0,🟡 竞品详情页在榜,DO,/servers/forge-mcp-server,detail landing,P1,W3,已有真 server: ai-voxell-forge (trust 52),NEW 落地页
+most popular mcp client in china 2025,servers,0,0,🟡 竞品详情页在榜,DO,/servers/china-mcp-server,detail landing,P1,W3,已有真 server: ai-smithery-xinkuang-china-stock-mcp (trust 52),NEW 落地页

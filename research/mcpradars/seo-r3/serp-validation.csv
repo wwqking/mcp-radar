@@ -1,0 +1,12 @@
+keyword,volume,kd,verdict,dominant_page_type,top_competitors,note
+claude skills,27100,58,🟡,官方文档+个人博客+小目录,platform.claude.com / support.claude.com / claudeskills.info / chrislema.com / reddit,官方占前3，但4-8位是小博客和 claudeskills.info 这种小目录 → 目录站能挤进去；KD58 偏高，作为模块支柱页而非速赢
+agent skills,4400,52,🟢,目录站占首位,agentskills.io / github / platform.claude.com / learn.microsoft.com / sysdig,agentskills.io（纯目录）稳居 #1 —— 直接证明这个 SERP 接受目录型页面
+awesome-claude-skills,1300,0,🟢,GitHub+一堆小站,github(ComposioHQ) / awesome-skills.com / awesomeclaude.ai / awesomeclaudeskills.com / reddit,三个专门做这事的小域名都能排上；KD0；最容易吃的入口词
+mcp clients,1000,46,🟡,官方文档+三家目录,modelcontextprotocol.io ×2 / mcpmarket.com/client / mcp.so/clients / pulsemcp.com/clients / github,首页同时有三家竞品目录的 /clients 列表页 → 模块本身被验证成立
+remote mcp servers,480,24,🟡,目录站占首位,mcpservers.org/remote-mcp-servers / modelcontextprotocol.io / github awesome / pulsemcp.com/servers / circleci,mcpservers.org 的 remote 分类页 #1 → facet/分类页就能拿排名，成本低
+skills.sh,4400,26,🔴,产品官网自身,www.skills.sh / github vercel-labs/skills / paralect / dev.to,导航型意图，用户要的是产品本身 → 丢词保页（详情页目标改 qualified 变体）
+servicenow mcp server,1130,17,🟡,厂商文档+1个目录详情页,servicenow.com ×4 / github / mcpservers.org/servers/... / newsroom,竞品目录详情页已在首页第5位 → 我们同型页可打，位置在 5-9 区间
+asana mcp,790,19,🟡,厂商文档+1个目录详情页,developers.asana.com ×4 / github / remote-mcp.com/servers/asana / reddit,同上，remote-mcp.com 详情页 #9 → 可打
+shadcn mcp,2520,33,🟡,官方docs+一堆周边小站+目录,ui.shadcn.com ×2 / github / shadcn.io / shadcnstudio / mcpservers.org/servers/...,周边小站林立说明门槛不高；竞品目录详情页在榜
+unity mcp,2360,22,🔴,厂商全面垄断,docs.unity3d.com / github CoplayDev / unity.com blog ×2 / discussions.unity.com,Unity 官方占据 5/7 位 → 详情页仍建（长尾+内链价值），但别指望主词
+grafana mcp,1760,22,🔴,厂商全面垄断,grafana.com docs ×3 / github grafana / community.grafana.com / hub.docker.com,同 unity，厂商自有域名通吃 → 降级

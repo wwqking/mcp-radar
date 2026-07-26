@@ -1,0 +1,60 @@
+site: mcpradars
+site_type: directory        # MCP 服务发现/目录站：详情页 /servers/{tool}-mcp-server + /guides + 支柱页
+market: United States
+language: English
+
+# 第三轮。前两轮（seo-mcp-server/ 种子=mcp server、seo/ 种子=mcp）都是纯 seed 扩展，
+# 从没跑过竞品采词。seed 扩展只能返回「含种子词」的关键词 —— 结构性看不见品类里
+# 不含 "mcp" 的需求。本轮核心增量 = Stage A1/A2 从真实排名竞品采词。
+seeds: [mcp server, mcp]
+core_keyword: mcp server
+
+# A1 结果：真 Google (pws=0, gl=us) 搜 mcp server / mcp server directory /
+# best mcp servers / mcp servers list，取排名且同类型（目录站）的：
+competitors:
+  - mcp.so              # MCP.so Marketplace，命中 "mcp server directory" + "mcp servers list"
+  - www.pulsemcp.com    # 自称 22,250+ servers，命中上述两词
+  - glama.ai            # /mcp/servers 大目录，命中 "mcp servers list"
+  - mcp.directory       # 命中 "mcp server directory" 第 1；自称 "3,000+ MCP Servers & Skills"
+                        # ↑ 带 Skills 目录，正是 seed 扩展看不见的模块，特意纳入
+competitors_excluded:
+  - modelcontextprotocol.io   # 官方文档，非目录站，不可比
+  - github.com/punkpeye/awesome-mcp-servers  # GitHub awesome list，非站点
+  - mcpservers.org      # awesome-list 静态清单，页面模块极少，参考价值低于上面 4 个
+
+exclude_terms:
+  - logo
+  - icon
+  - salary
+  - job
+  - jobs
+  - lyrics
+  - crack
+  - nulled
+  - "medical"        # MCP = medical control physician 同名歧义
+  - "certified"      # Microsoft Certified Professional 同名
+  - minecraft        # mcp = Minecraft Coder Pack 同名
+  - "mcp exam"
+  - "mcp practice"
+
+kd_ceiling: 30
+volume_floor: 50
+research_date: 2026-07-25
+
+# 现有站点资产（避免重复规划，Stage E-F 要对齐）
+existing:
+  servers_in_db: 524                     # data/servers.json
+  tool_landing_pages: 21                 # lib/seo-landing.ts → /servers/{tool}-mcp-server
+  landing_slugs: [airtable, anki, context7, exa, fetch, figma, filesystem, firecrawl,
+                  github, linear, memory, perplexity, playwright, postgres, qdrant,
+                  sentry, shopify, tavily, twilio]
+  guides: [choosing-mcp-server, claude-code-mcp-config, mcp-production-checklist,
+           mcp-proxy-vs-gateway, mcp-security-red-lines, self-host-vs-remote]
+  pillar: /what-is-mcp-server
+  other_routes: [/leaderboard, /radar, /graveyard, /category/{cat}, /server/{name},
+                 /compare, /about, /newsletter, /sponsor]
+
+notes: >
+  硬约束：只给 data/servers.json 里有真实 server 数据的工具建详情页（安装命令 / stars /
+  TrustScore / 能力卡）。没有真数据的关键词进采集清单，不建空壳页 —— 这是第一轮已确立的
+  规则（thin content / doorway pages 会拖累整站）。
