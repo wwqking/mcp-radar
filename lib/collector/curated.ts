@@ -136,4 +136,59 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   { name: "mcp-server-airbnb", repoUrl: "https://github.com/openbnb-org/mcp-server-airbnb", npmPackage: null },
   { name: "mcp-server-youtube-transcript", repoUrl: "https://github.com/kimtaeyoon83/mcp-server-youtube-transcript", npmPackage: null },
   { name: "weather-mcp-server", repoUrl: "https://github.com/ezh0v/weather-mcp-server", npmPackage: null },
+
+  // ===== 补量批次 B（第三轮竞品采词研究，research/mcpradars/seo-r3/collect-whitelist-final.csv）=====
+  // 三道门槛逐个过：① GitHub 搜索命中的仓库名要与工具名对得上（实测 32% 是误命中，
+  // 高星如 LibreChat 会被 chatgpt/azure/langchain 三个词同时错配）② ★≥20 且未归档
+  // ③ 人工确认确为该工具的 MCP server（又剔掉 8 个，如 huggingface/mcp-course 是课程不是 server）。
+  // npmPackage 只在「npm 元数据的 repository 指回同一个仓库」时才填 —— 27 个同名包里 17 个
+  // 指向别人的重实现（npm `fastmcp` 是 punkpeye 的 TS 版，不是 PrefectHQ 的 Python 版），
+  // 填错会让 TrustScore 用别人的下载数计算。核不准一律 null，靠 GitHub 信号打分。
+  // 浏览器 / 自动化
+  { name: "chrome-devtools-mcp", repoUrl: "https://github.com/ChromeDevTools/chrome-devtools-mcp", npmPackage: "chrome-devtools-mcp" }, // 12160/mo ★47598
+  { name: "puppeteer-mcp-server", repoUrl: "https://github.com/merajmehrabi/puppeteer-mcp-server", npmPackage: "puppeteer-mcp-server" }, // 1500/mo ★478
+  { name: "playwriter", repoUrl: "https://github.com/remorses/playwriter", npmPackage: "playwriter" }, // 1600/mo ★3718
+
+  // 设计 / 创作 / 3D
+  { name: "blender-mcp", repoUrl: "https://github.com/ahujasid/blender-mcp", npmPackage: null }, // 3390/mo ★24826
+  { name: "excalidraw-mcp", repoUrl: "https://github.com/excalidraw/excalidraw-mcp", npmPackage: null }, // 1050/mo ★5008
+  { name: "drawio-mcp-server", repoUrl: "https://github.com/lgazo/drawio-mcp-server", npmPackage: "drawio-mcp-server" }, // 650/mo ★1357
+  { name: "robloxstudio-mcp", repoUrl: "https://github.com/boshyxd/robloxstudio-mcp", npmPackage: "robloxstudio-mcp" }, // 1900/mo ★483
+  { name: "godot-mcp", repoUrl: "https://github.com/Coding-Solo/godot-mcp", npmPackage: null }, // 800/mo ★4899
+
+  // 开发 / DevOps
+  { name: "azure-devops-mcp", repoUrl: "https://github.com/microsoft/azure-devops-mcp", npmPackage: null }, // 1440/mo ★1909
+  { name: "postman-mcp-server", repoUrl: "https://github.com/postmanlabs/postman-mcp-server", npmPackage: null }, // 1290/mo ★287
+  { name: "railway-mcp-server", repoUrl: "https://github.com/railwayapp/railway-mcp-server", npmPackage: null }, // 760/mo ★194
+  { name: "XcodeBuildMCP", repoUrl: "https://github.com/getsentry/XcodeBuildMCP", npmPackage: "xcodebuildmcp" }, // 1340/mo ★6144
+  { name: "dart-mcp-server", repoUrl: "https://github.com/its-dart/dart-mcp-server", npmPackage: "dart-mcp-server" }, // 880/mo ★128
+  { name: "deepwiki-mcp", repoUrl: "https://github.com/regenrek/deepwiki-mcp", npmPackage: null }, // 770/mo ★1374
+  { name: "ida-pro-mcp", repoUrl: "https://github.com/mrexodia/ida-pro-mcp", npmPackage: null }, // 710/mo ★10766
+
+  // 可观测 / 安全
+  { name: "mcp-server-datadog", repoUrl: "https://github.com/winor30/mcp-server-datadog", npmPackage: "@winor30/mcp-server-datadog" }, // 2950/mo ★143
+  { name: "splunk-mcp", repoUrl: "https://github.com/livehybrid/splunk-mcp", npmPackage: null }, // 1290/mo ★107
+
+  // 协作 / 生产力
+  { name: "todoist-mcp", repoUrl: "https://github.com/Doist/todoist-mcp", npmPackage: null }, // 850/mo ★529
+  { name: "zendesk-mcp-server", repoUrl: "https://github.com/reminia/zendesk-mcp-server", npmPackage: null }, // 850/mo ★110
+  { name: "clickup-mcp-server", repoUrl: "https://github.com/taazkareem/clickup-mcp-server", npmPackage: null }, // 1320/mo ★49
+  { name: "mcp-apple-notes", repoUrl: "https://github.com/RafalWilinski/mcp-apple-notes", npmPackage: null }, // 2900/mo ★407
+  { name: "granola-mcp-server", repoUrl: "https://github.com/proofsh/granola-mcp-server", npmPackage: null }, // 710/mo ★93
+  { name: "ha-mcp", repoUrl: "https://github.com/homeassistant-ai/ha-mcp", npmPackage: null }, // 740/mo ★4118
+
+  // 数据 / 金融
+  { name: "ontobricks", repoUrl: "https://github.com/databrickslabs/ontobricks", npmPackage: null }, // 1250/mo ★199
+  { name: "kite-mcp-server", repoUrl: "https://github.com/zerodha/kite-mcp-server", npmPackage: null }, // 790/mo ★288
+
+  // Agent 框架 / 工具链
+  { name: "serena", repoUrl: "https://github.com/oraios/serena", npmPackage: null }, // 2720/mo ★26897
+  { name: "fastmcp", repoUrl: "https://github.com/PrefectHQ/fastmcp", npmPackage: null }, // 1680/mo ★26842
+  { name: "fastapi_mcp", repoUrl: "https://github.com/tadata-org/fastapi_mcp", npmPackage: null }, // 1610/mo ★11951
+  { name: "mcp-use", repoUrl: "https://github.com/mcp-use/mcp-use", npmPackage: "mcp-use" }, // 1040/mo ★10357
+  { name: "mcp-ui", repoUrl: "https://github.com/MCP-UI-Org/mcp-ui", npmPackage: null }, // 1300/mo ★5036
+  { name: "mcp-feedback-enhanced", repoUrl: "https://github.com/Minidoracat/mcp-feedback-enhanced", npmPackage: null }, // 1300/mo ★3788
+  { name: "mcp-handler", repoUrl: "https://github.com/vercel/mcp-handler", npmPackage: "mcp-handler" }, // 720/mo ★628
+  { name: "open-mcp-client", repoUrl: "https://github.com/CopilotKit/open-mcp-client", npmPackage: null }, // 2400/mo ★1646
+  { name: "Windows-MCP", repoUrl: "https://github.com/CursorTouch/Windows-MCP", npmPackage: null }, // 1300/mo ★6500
 ];
