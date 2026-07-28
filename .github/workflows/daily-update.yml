@@ -36,9 +36,12 @@ jobs:
       - name: 采集真实数据 + 写当天快照
         env:
           GITHUB_TOKEN: ${{ secrets.MCP_GITHUB_TOKEN }} # 只读 public_repo，仅 CI 用
-          # registry 补量池大小（非最终数量上限）：最终=白名单必留+registry过质量门槛，不封顶。
-          # 与 .env 保持一致=800。要临时调整可在仓库 Variables 里设 MCP_COLLECT_LIMIT 覆盖。
+          # Registry 元数据始终完整分页；800 是每天 GitHub/npm 深度富化预算，不再是来源窗口。
           MCP_COLLECT_LIMIT: ${{ vars.MCP_COLLECT_LIMIT || '800' }}
+          # 每天优先尝试让这批“从未入库”的 Registry 候选进入目录。
+          MCP_NEW_SERVER_LIMIT: ${{ vars.MCP_NEW_SERVER_LIMIT || '250' }}
+          # 连续 3 次完整扫描都消失才移除，防止 Registry 临时抖动造成 URL/数量来回变。
+          MCP_MISSING_GRACE_RUNS: ${{ vars.MCP_MISSING_GRACE_RUNS || '3' }}
         run: npm run collect
 
       - name: 提交数据集 + 快照（有变化才提交）

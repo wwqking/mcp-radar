@@ -48,6 +48,7 @@ lib/collector/        本项目内置「引擎」——构建期采集：
   score.ts             TrustScore 五维评分 + 生命周期判定（设计文档 §2）
   classify.ts          关键词自动分类（设计文档 §3）
   snapshots.ts         历史快照读写 + 周增量/趋势计算（见下）
+  catalog-state.ts     来源持久状态 + 连续缺失宽限（防止临时抖动误删）
   build-data.ts        编排：白名单+registry → 富化 → 打分 → 分类 → 排序 → 趋势
   cached-fetch.ts      磁盘缓存（.cache/），避开 GitHub 限流重复打
 
@@ -69,11 +70,14 @@ data/snapshots/       历史快照（提交进 git，趋势/diff 的数据基础
 - 首次运行（无历史）：delta=0、sparkline 显示「无数据」，自动降级不报错。
 - 想让趋势有意义，需**定期构建**（如每日 cron）让快照按天累积。
 
-**采集策略**（`build-data.ts`）：白名单直采 + registry 补量，合并后**按 stars 降序取 top N**。
+**采集策略**（`build-data.ts`）：白名单直采 + 自动发现种子 + Registry 完整 latest 分页，
+再按每日预算轮转做 GitHub/npm 深度富化。
 - 白名单（`curated.ts`）：实测知名官方 server（playwright/github/filesystem…）多数**不在**官方
   registry 里，靠内置 repo 清单直接富化保底优质数据。
-- registry：补长尾（SEO 基数）。
-- 排序：按真实 stars 降序，避免采到字母序开头的冷门项。
+- Registry：每天完整拉元数据，不再只看字母序前 N 条；`MCP_COLLECT_LIMIT` 只控制深度富化预算。
+- 持久合并：旧条目不会因为当天没轮到富化而消失；来源连续缺失 3 次后才移除。
+- 新项目优先：每天由 `MCP_NEW_SERVER_LIMIT` 预留一批名额，目录会持续吸收新 server。
+- 排序：最终展示按真实 stars 降序，但不截断目录总数。
 
 所有查询函数返回 Promise，页面/组件用 `await` 调用。
 
@@ -120,29 +124,18 @@ npm run build
 
 ## 待办
 
-### SEO / 内容（依据 `research/mcpradars/seo-r3/`，第三轮竞品采词研究）
-
-- [ ] **`/clients` 模块**——竞品共 1,359 页，`mcp clients` 首页同时挂着 mcpmarket /
-      mcp.so / pulsemcp 三家的列表页。做 40–60 个 curated 即可，别追竞品的 1,359 个。
-      带一个高价值报错词：`cursor mcp spawn npx enoent`（1,600/mo, KD 24）——
-      配置炸了来搜的人转化意图极强。brief 在 `seo-r3/briefs/clients--listing-hub.md`
-- [ ] **W2 工具落地页 35 个**（18,550/mo）——neo4j / unreal / terraform / asana /
-      selenium / firebase / kubernetes 等。⚠️ 边际收益已明显下降：W1 均 3,787/mo，
-      W2 只有 530/mo，建议排在 `/clients` 之后
-- [ ] **W3 工具落地页 57 个**（7,060/mo）——优先级最低
-- [ ] `/servers/linear-mcp-server` 指向的 `linear/linear-mcp` 是托管型 server、
-      无代码可审计（trust=28, unverifiable）。保留是因为「如实说我们验不了」本身是
-      本站的价值主张；若认为不划算可摘掉
-- [ ] 上线后 Google/Bing Search Console 提交 sitemap，启动沙盒期倒计时
+### SEO / 内容
 
 已完成：工具落地页 19→44（W1, 94,670/mo）、`/remote-mcp-servers`、白名单 92→127。
+第三轮研究（`seo-r3/`）的剩余项（/clients 模块、W2/W3 落地页等）已决定不做。
 Agent Skills 主题（389 词 / 124,480 月量）已决定**单独开站**，产物在 `seo-r3/` 待搬。
 
 ### 数据 / 采集
 
 - [x] 去掉采集硬上限，改「白名单必留 + registry 过质量门槛」（不封顶）
 - [x] 候选发现流水线 `npm run discover` + 每周 CI 开 PR（不自动合并）
-- [ ] 每日 cron 跑 `npm run build` 让快照按天累积（趋势/爆火才有真实历史）
+- [x] Registry 完整 latest 分页 + 持久目录 + 每日分批富化（消除字母序 800 条窗口）
+- [x] 每日 cron 采集并提交数据集/快照，让趋势按天累积
 - [ ] 关键词待办清单还剩 561 个没验（`data/discover-state.json` 是游标，每周推进 60 个）
 
 ### 变现

@@ -1,6 +1,6 @@
 // 自动发现的 server 种子 —— 由 `npm run discover` 生成，经人工审 PR 后合并。
 //
-// ⚠️ 这个文件是机器写的，别手工改：下次 discover 会整体重写它。
+// ⚠️ 这个文件由 discover 追加维护；旧种子不会被下一期候选覆盖。
 // 手工挑的 server 请加到 curated.ts —— 两份分开是刻意的：
 //   - curated.ts  手工维护，采集时**无条件保留**（优质保底）
 //   - discovered.ts 机器发现，采集时仍要过 passesQualityGate（机器没人看过，不给豁免）

@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { Lifecycle, MCPServer, Category } from "@/lib/types";
 import { formatNumber, categoryName } from "@/lib/constants";
@@ -60,6 +60,12 @@ export default function LeaderboardTable({ servers, categories, locale, labels: 
   const [sort, setSort] = useState<SortKey>("score");
   const [view, setView] = useState<View>("table");
   const [expanded, setExpanded] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (window.matchMedia("(max-width: 639px)").matches) {
+      setView("card");
+    }
+  }, []);
 
   const list = useMemo(() => {
     let l = [...servers];

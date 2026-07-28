@@ -25,10 +25,10 @@ export default function CompareTray({ locale, strings }: Props) {
   const href = `${localizedHref(locale, "/compare")}?ids=${encodeURIComponent(slugs.join(","))}`;
 
   return (
-    <div className="fixed inset-x-0 bottom-4 z-50 flex justify-center px-4">
-      <div className="flex max-w-full items-center gap-3 rounded-full border border-neutral-200 bg-white/95 px-4 py-2 shadow-lg backdrop-blur dark:border-neutral-700 dark:bg-neutral-900/95">
+    <div className="fixed inset-x-0 bottom-3 z-50 flex justify-center px-3 sm:bottom-4 sm:px-4">
+      <div className="flex w-full max-w-2xl flex-wrap items-center gap-2 rounded-2xl border border-neutral-200 bg-white/95 px-3 py-2 shadow-lg backdrop-blur dark:border-neutral-700 dark:bg-neutral-900/95 sm:w-auto sm:max-w-full sm:flex-nowrap sm:gap-3 sm:rounded-full sm:px-4">
         <span className="hidden text-xs font-semibold text-neutral-400 sm:inline">{strings.trayLabel}</span>
-        <div className="flex items-center gap-1.5 overflow-x-auto">
+        <div className="scrollbar-hidden order-1 flex min-w-0 flex-1 items-center gap-1.5 overflow-x-auto">
           {slugs.map((s) => (
             <span
               key={s}
@@ -49,13 +49,13 @@ export default function CompareTray({ locale, strings }: Props) {
         <button
           type="button"
           onClick={() => clearCompare()}
-          className="shrink-0 text-xs text-neutral-400 hover:text-neutral-600 dark:hover:text-neutral-200"
+          className="order-2 shrink-0 px-1 py-1 text-xs text-neutral-400 hover:text-neutral-600 dark:hover:text-neutral-200"
         >
           {strings.clear}
         </button>
         <a
           href={href}
-          className={`shrink-0 rounded-full px-4 py-1.5 text-sm font-medium text-white ${
+          className={`order-3 w-full shrink-0 rounded-full px-4 py-2 text-center text-sm font-medium text-white sm:w-auto sm:py-1.5 ${
             slugs.length >= 2 ? "bg-brand-600 hover:bg-brand-700" : "pointer-events-none bg-neutral-300 dark:bg-neutral-700"
           }`}
         >

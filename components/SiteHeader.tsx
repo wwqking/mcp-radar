@@ -25,15 +25,15 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-neutral-200/80 bg-canvas-light/90 backdrop-blur dark:border-neutral-800 dark:bg-canvas-dark/90">
-      <div className="container-site flex h-14 items-center gap-4">
-        <Link href={t("/")} className="flex shrink-0 items-center gap-2">
+      <div className="container-site flex h-14 items-center gap-3">
+        <Link href={t("/")} className="flex shrink-0 items-center gap-2" aria-label="MCP Radar">
           <LogoMark className="h-7 w-7 text-brand-600 dark:text-brand-500" />
           <span className="text-base font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
             MCP <span className="text-brand-600 dark:text-brand-400">Radar</span>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 xl:flex">
           {NAV.map((n) => (
             <Link
               key={n.label}
@@ -45,14 +45,16 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-2">
-          <SearchBar
-            servers={servers}
-            locale={locale}
-            placeholderHero={dict.searchBar.placeholderHero}
-            placeholderNav={dict.searchBar.placeholderNav}
-            size="nav"
-          />
+        <div className="ml-auto flex min-w-0 items-center gap-1.5 sm:gap-2">
+          <div className="hidden sm:block">
+            <SearchBar
+              servers={servers}
+              locale={locale}
+              placeholderHero={dict.searchBar.placeholderHero}
+              placeholderNav={dict.searchBar.placeholderNav}
+              size="nav"
+            />
+          </div>
           <LocaleSwitcher current={locale} />
           <ThemeToggle />
           <Link
@@ -64,18 +66,33 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
         </div>
       </div>
 
+      <div className="container-site pb-2 sm:hidden">
+        <SearchBar
+          servers={servers}
+          locale={locale}
+          placeholderHero={dict.searchBar.placeholderHero}
+          placeholderNav={dict.searchBar.placeholderNav}
+          size="hero"
+        />
+      </div>
+
       {/* 移动端导航 */}
-      <nav className="container-site flex items-center gap-1 overflow-x-auto pb-2 md:hidden">
-        {NAV.map((n) => (
-          <Link
-            key={n.label}
-            href={t(n.href)}
-            className="shrink-0 rounded-lg px-3 py-1 text-sm text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800"
-          >
-            {n.label}
-          </Link>
-        ))}
-      </nav>
+      <div className="container-site xl:hidden">
+        <nav
+          className="scrollbar-hidden -mx-1 flex items-center gap-1 overflow-x-auto px-1 pb-2"
+          aria-label={locale === "zh" ? "主导航" : "Main navigation"}
+        >
+          {NAV.map((n) => (
+            <Link
+              key={n.label}
+              href={t(n.href)}
+              className="shrink-0 rounded-lg px-3 py-1.5 text-sm text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800"
+            >
+              {n.label}
+            </Link>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }

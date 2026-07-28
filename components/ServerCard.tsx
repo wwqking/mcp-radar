@@ -54,8 +54,8 @@ export default function ServerCard({ server, locale, showTrend = false, evidence
         </p>
       )}
 
-      <div className="mt-auto flex items-center justify-between gap-3">
-        <div className="flex items-center gap-3 text-xs text-neutral-500 dark:text-neutral-400">
+      <div className="mt-auto flex flex-wrap items-center justify-between gap-3">
+        <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1 text-xs text-neutral-500 dark:text-neutral-400">
           <LifecycleBadge status={server.lifecycle} locale={locale} size="sm" />
           {s.stars > 0 && <span title="GitHub stars">⭐ {formatNumber(s.stars)}</span>}
           {updated && <span>{updated}</span>}

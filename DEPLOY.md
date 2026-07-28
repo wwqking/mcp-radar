@@ -51,7 +51,9 @@ Vercel → Project → Domains → 添加 `mcpradars.com`，勾选「Redirect ap
 | 类型 | 名称 | 值 |
 |---|---|---|
 | Secret | `MCP_GITHUB_TOKEN` | GitHub token（只读 public_repo），CI 采集用 |
-| Variable | `MCP_COLLECT_LIMIT` | `40`（可选，默认 40） |
+| Variable | `MCP_COLLECT_LIMIT` | `800`（每日 GitHub/npm 深度富化预算） |
+| Variable | `MCP_NEW_SERVER_LIMIT` | `250`（每日优先尝试入库的新项目数） |
+| Variable | `MCP_MISSING_GRACE_RUNS` | `3`（来源连续缺失几次后才移除） |
 
 > 不需要 Deploy Hook——bot 每天 push 快照，Vercel 的 Git 自动部署会接管。
 

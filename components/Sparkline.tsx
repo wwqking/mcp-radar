@@ -28,7 +28,14 @@ export default function Sparkline({ data, width = 120, height = 32, tone = "auto
     tone === "brand" ? "#0d6b50" : rising ? "#059669" : "#dc2626"; // 涨绿跌红（开发者直觉）
 
   return (
-    <svg width={width} height={height} className="overflow-visible">
+    <svg
+      width={width}
+      height={height}
+      viewBox={`0 0 ${width} ${height}`}
+      preserveAspectRatio="none"
+      aria-hidden="true"
+      className="h-auto max-w-full overflow-visible"
+    >
       <polyline points={points} fill="none" stroke={stroke} strokeWidth="1.8" strokeLinejoin="round" strokeLinecap="round" />
     </svg>
   );

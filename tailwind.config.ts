@@ -36,7 +36,7 @@ const config: Config = {
         mono: ["'JetBrains Mono'", "ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"],
       },
       maxWidth: {
-        // 站点内容区最大宽度。站点 min-width 为 1400px，内容区留出左右边距，取 82.5rem(1320px)。
+        // 站点内容区最大宽度；窄屏由 container-site 的响应式内边距自然收缩。
         site: "82.5rem",
       },
     },

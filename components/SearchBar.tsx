@@ -67,7 +67,7 @@ export default function SearchBar({ servers, locale, placeholderHero, placeholde
   const isHero = size === "hero";
 
   return (
-    <div ref={boxRef} className={`relative ${isHero ? "w-full" : "w-48 md:w-64"}`}>
+    <div ref={boxRef} className={`relative ${isHero ? "w-full" : "w-40 md:w-52 lg:w-64"}`}>
       <div className="pointer-events-none absolute inset-y-0 left-3 flex items-center text-neutral-400">
         <svg className={isHero ? "h-5 w-5" : "h-4 w-4"} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
@@ -85,7 +85,7 @@ export default function SearchBar({ servers, locale, placeholderHero, placeholde
         placeholder={isHero ? placeholderHero : placeholderNav}
         className={`w-full rounded-xl border bg-white outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200 dark:border-neutral-700 dark:bg-neutral-900 dark:focus:ring-brand-900 ${
           isHero
-            ? "border-neutral-300 py-4 pl-11 pr-4 text-base shadow-sm"
+            ? "border-neutral-300 py-3 pl-11 pr-4 text-base shadow-sm sm:py-4"
             : "border-neutral-200 py-1.5 pl-9 pr-3 text-sm"
         }`}
       />

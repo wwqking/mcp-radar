@@ -96,44 +96,68 @@ function toCandidate(item: RegistryItem): RegistryCandidate {
 }
 
 /**
- * 拉 registry server 清单。
- * @param limit 最多返回多少条候选（"先采少量" → 传小值，控制下游 GitHub 调用量）
- * @param onlyWithRepo 是否只保留有 GitHub 仓库的（健康数据是独家卖点，无 repo 的先跳过）
+ * 拉 registry 的 latest server 清单。
+ *
+ * 不传 limit = 遍历完整游标分页。采集器会把 GitHub 富化预算单独控制，
+ * 因此这里不能再把「每天愿意富化多少条」误当成「只看字母序前多少条」。
+ *
+ * @param limit 可选，仅用于本地 smoke test；生产采集不传，读取全量。
+ * @param onlyWithRepo 是否只保留有仓库的（健康数据是独家卖点，无 repo 的先跳过）
  */
 export async function fetchRegistryCandidates(opts: {
-  limit: number;
+  limit?: number;
   onlyWithRepo?: boolean;
 }): Promise<RegistryCandidate[]> {
   const { limit, onlyWithRepo = true } = opts;
+  const maxCandidates = limit && limit > 0 ? limit : Number.POSITIVE_INFINITY;
   const out: RegistryCandidate[] = [];
   const seen = new Set<string>();
+  const seenCursors = new Set<string>();
   let cursor: string | undefined;
   let pages = 0;
-  const MAX_PAGES = 40; // 安全上限，防止游标异常时死循环
+  // Registry 已超过 100 页；默认给足 50,000 个原始条目的空间，同时用 cursor 去重防死循环。
+  const maxPages = Number(process.env.MCP_REGISTRY_MAX_PAGES ?? 500);
 
-  while (out.length < limit && pages < MAX_PAGES) {
+  while (out.length < maxCandidates && pages < maxPages) {
     pages++;
-    const url = new URL("/v0/servers", REGISTRY_BASE);
+    const url = new URL("/v0.1/servers", REGISTRY_BASE);
     url.searchParams.set("limit", "100");
-    if (cursor) url.searchParams.set("cursor", cursor);
+    url.searchParams.set("version", "latest");
+    if (cursor) {
+      if (seenCursors.has(cursor)) {
+        console.warn(`[registry] 检测到重复 cursor，已在第 ${pages} 页停止，避免死循环`);
+        break;
+      }
+      seenCursors.add(cursor);
+      url.searchParams.set("cursor", cursor);
+    }
 
     const res = await cachedGetJson<RegistryPage>(url.toString());
     if (!res.ok || !res.data) break;
 
     for (const item of res.data.servers) {
       const cand = toCandidate(item);
-      // 去重：registry 每个版本一条，只留最新遇到的第一条（isLatest 优先靠排序，这里按 name 去重）
+      // version=latest 理论上每个 name 只有一条；仍按 name 去重，防御预览 API 的异常重复。
       if (seen.has(cand.name)) continue;
+      if (cand.status === "deleted") continue;
       if (onlyWithRepo && !cand.repoUrl) continue;
       seen.add(cand.name);
       out.push(cand);
-      if (out.length >= limit) break;
+      if (out.length >= maxCandidates) break;
     }
 
     cursor = res.data.metadata?.nextCursor;
     if (!cursor) break;
   }
 
+  if (cursor && pages >= maxPages) {
+    console.warn(
+      `[registry] 达到分页安全上限 ${maxPages}，清单可能不完整；` +
+        `可提高 MCP_REGISTRY_MAX_PAGES`,
+    );
+  }
+
+  console.log(`[registry] latest 全量扫描 ${pages} 页 → ${out.length} 个带仓库候选`);
   return out;
 }
 

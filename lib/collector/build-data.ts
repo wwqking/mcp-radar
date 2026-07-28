@@ -20,14 +20,21 @@ import {
   type SnapshotMetric,
 } from "./snapshots";
 import { writeDataset, readDataset } from "./dataset";
+import {
+  advanceCatalogState,
+  readCatalogState,
+  writeCatalogState,
+  type CatalogSource,
+} from "./catalog-state";
 
 const REGISTRY_URL = "https://registry.modelcontextprotocol.io";
 
-/** registry 补量池大小默认值。可用 env MCP_COLLECT_LIMIT 覆盖。
- *  注意语义：这不再是「最终采集数量的硬上限」，而是「从 registry 拉多少候选来补量」。
- *  最终数量 = 白名单全部（必留）+ registry 候选里通过质量门槛的（见 passesQualityGate）。
- *  白名单每新增一个真实 server，总量随之增加——不再被 slice 砍到固定数。 */
-const DEFAULT_LIMIT = Number(process.env.MCP_COLLECT_LIMIT ?? 800);
+/** 每天最多做多少个 GitHub/npm 深度富化。Registry 元数据始终完整遍历，不再受此窗口限制。 */
+const DEFAULT_ENRICH_LIMIT = Number(process.env.MCP_COLLECT_LIMIT ?? 800);
+/** 每天给“从未入库”的 Registry 项目预留多少个富化名额，避免旧项目占满预算导致总数不增长。 */
+const DEFAULT_NEW_SERVER_LIMIT = Number(process.env.MCP_NEW_SERVER_LIMIT ?? 250);
+/** 连续多少次完整 Registry 扫描没看到，才真正从公开数据集移除。 */
+const MISSING_GRACE_RUNS = Number(process.env.MCP_MISSING_GRACE_RUNS ?? 3);
 
 /** registry 补量项的质量门槛：白名单无条件保留（在下方单独处理），
  *  registry 长尾要么有 star（社区认可），要么可运行（有包/仓库可审计），否则丢弃避免扫进垃圾。
@@ -182,81 +189,340 @@ function seedToCandidate(seed: (typeof CURATED_SEEDS)[number]): RegistryCandidat
   };
 }
 
+interface SourcedCandidate {
+  candidate: RegistryCandidate;
+  source: CatalogSource;
+}
+
+function mergeRemoteEndpoints(
+  a: RegistryCandidate["remoteEndpoints"],
+  b: RegistryCandidate["remoteEndpoints"],
+): RegistryCandidate["remoteEndpoints"] {
+  const seen = new Set<string>();
+  return [...a, ...b].filter((endpoint) => {
+    const key = `${endpoint.type}:${endpoint.url}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+/** 高优先级种子保留 repo/package，同时用 Registry 补齐描述、发布日期和 remote endpoint。 */
+function supplementCandidate(
+  primary: RegistryCandidate,
+  secondary: RegistryCandidate,
+): RegistryCandidate {
+  const repoUrl = primary.repoUrl ?? secondary.repoUrl;
+  const npmPackage = primary.npmPackage ?? secondary.npmPackage;
+  return {
+    ...primary,
+    title: primary.title !== primary.name ? primary.title : secondary.title || primary.title,
+    description: primary.description || secondary.description,
+    repoUrl,
+    npmPackage,
+    remoteOnly: !repoUrl && !npmPackage,
+    remoteEndpoints: mergeRemoteEndpoints(primary.remoteEndpoints, secondary.remoteEndpoints),
+    status: secondary.status || primary.status,
+    publishedAt: primary.publishedAt ?? secondary.publishedAt,
+    updatedAt: secondary.updatedAt ?? primary.updatedAt,
+  };
+}
+
+/** 三个来源合成稳定目录：curated > discovered > registry；同名时补元数据，不重复计数。 */
+function buildCandidateCatalog(registryCandidates: RegistryCandidate[]): SourcedCandidate[] {
+  const byName = new Map<string, SourcedCandidate>();
+  const add = (candidate: RegistryCandidate, source: CatalogSource) => {
+    const existing = byName.get(candidate.name);
+    if (existing) {
+      existing.candidate = supplementCandidate(existing.candidate, candidate);
+      return;
+    }
+    byName.set(candidate.name, { candidate, source });
+  };
+
+  for (const seed of CURATED_SEEDS) add(seedToCandidate(seed), "curated");
+  for (const seed of DISCOVERED_SEEDS) add(seedToCandidate(seed), "discovered");
+  for (const candidate of registryCandidates) add(candidate, "registry");
+
+  // URL 最终按 slug 唯一。极少数不同名字会 slug 碰撞，保留高优先级来源先出现的那条。
+  const seenSlugs = new Set<string>();
+  const out: SourcedCandidate[] = [];
+  let slugCollisions = 0;
+  for (const item of Array.from(byName.values())) {
+    const slug = slugify(item.candidate.name);
+    if (seenSlugs.has(slug)) {
+      slugCollisions++;
+      continue;
+    }
+    seenSlugs.add(slug);
+    out.push(item);
+  }
+  if (slugCollisions > 0) {
+    console.warn(`[collector] ${slugCollisions} 个候选发生 slug 碰撞，已按来源优先级去重`);
+  }
+  return out;
+}
+
+function candidateRecency(c: RegistryCandidate): number {
+  return new Date(c.updatedAt ?? c.publishedAt ?? 0).getTime() || 0;
+}
+
+function dataAge(s: MCPServer | undefined): number {
+  if (!s) return 0;
+  return new Date(s.signals.dataUpdatedAt || 0).getTime() || 0;
+}
+
 /**
- * 采集全流程：白名单直采 + registry 补量 → 富化 → 按 stars 排序 → 取 top limit。
- *
- * 策略（见 curated.ts）：知名 server 多不在官方 registry，靠白名单保底优质数据；
- * registry 负责铺长尾。合并后按真实 stars 降序，避免字母序采到一堆冷门项。
+ * 用最新 Registry 元数据刷新旧条目，但不需要为此调用 GitHub。
+ * 健康信号留到轮转富化时更新。
  */
-export async function collectServers(limit = DEFAULT_LIMIT): Promise<MCPServer[]> {
-  // registry 补量池：从 registry 拉这么多候选（白名单之外的长尾）
-  const registryCands = await fetchRegistryCandidates({ limit, onlyWithRepo: true });
+function refreshMetadata(previous: MCPServer, cand: RegistryCandidate): MCPServer {
+  const description = cand.description || previous.description;
+  const tagline =
+    cand.title && cand.title !== cand.name
+      ? cand.title.slice(0, 80)
+      : previous.tagline || description.slice(0, 80) || cand.name;
+  const endpoints = cand.remoteEndpoints.length
+    ? cand.remoteEndpoints
+    : previous.remoteEndpoints;
+  const next: MCPServer = {
+    ...previous,
+    name: cand.name,
+    tagline,
+    description,
+    categories: classify(cand.name, description),
+    repoUrl: cand.repoUrl ?? previous.repoUrl,
+    npmPackage: cand.npmPackage ?? previous.npmPackage,
+    registryUrl: REGISTRY_URL,
+    signals: {
+      ...previous.signals,
+      inOfficialRegistry: true,
+    },
+  };
+  if (endpoints?.length) next.remoteEndpoints = endpoints;
+  else delete next.remoteEndpoints;
+  return next;
+}
 
-  // 合并候选：白名单在前（优先富化 + 必留），机器发现的次之，registry 补量在后；按 name 去重。
-  // 注意 curatedNames 只收手工白名单——机器发现的种子不给「无条件保留」豁免，
-  // 仍要过 passesQualityGate（人没看过的东西不该享受人看过的待遇）。
-  const curatedCandidates = CURATED_SEEDS.map(seedToCandidate);
-  const curatedNames = new Set(curatedCandidates.map((c) => c.name));
-  const discoveredCandidates = DISCOVERED_SEEDS.map(seedToCandidate);
-  const merged: RegistryCandidate[] = [...curatedCandidates];
-  const names = new Set(merged.map((c) => c.name));
-  for (const c of discoveredCandidates) {
-    if (!names.has(c.name)) {
-      names.add(c.name);
-      merged.push(c);
+/** 首次收录/首次判定日期属于目录历史，日常重新富化不能每天重置。 */
+function preserveStableDates(next: MCPServer, previous: MCPServer | undefined): MCPServer {
+  if (!previous) return next;
+  const stable = { ...next, addedAt: previous.addedAt || next.addedAt };
+  if (
+    (next.lifecycle === "dead" || next.lifecycle === "dying") &&
+    previous.deadAt
+  ) {
+    stable.deadAt = previous.deadAt;
+  }
+  return stable;
+}
+
+function formatNames(list: MCPServer[]): string {
+  return list.slice(0, 12).map((s) => s.name).join(", ");
+}
+
+/**
+ * 采集全流程：
+ * 1. 完整遍历 Registry latest 元数据；
+ * 2. 与白名单、自动发现种子和昨日数据做持久合并；
+ * 3. 在每日 API 预算内优先富化新项目，再轮转刷新旧项目；
+ * 4. 来源连续缺失多次后才移除，避免字母序窗口和临时故障造成数量抖动。
+ *
+ * MCP_COLLECT_LIMIT 现在是“每日深度富化预算”，不是 Registry 来源数量上限。
+ */
+export async function collectServers(
+  enrichLimit = DEFAULT_ENRICH_LIMIT,
+): Promise<MCPServer[]> {
+  const today = todayIso();
+  const previousDataset = await readDataset();
+  const previousServers = previousDataset?.servers ?? [];
+  const previousBySlug = new Map(previousServers.map((s) => [s.slug, s]));
+  const previousSlugs = new Set(previousBySlug.keys());
+  const oldCatalogState = await readCatalogState();
+
+  // Registry 元数据请求便宜且无需 token：完整拉取，彻底消除“字母序前 800 条”的来源盲区。
+  const registryCandidates = await fetchRegistryCandidates({ onlyWithRepo: true });
+  const catalog = buildCandidateCatalog(registryCandidates);
+  const catalogBySlug = new Map(catalog.map((item) => [slugify(item.candidate.name), item]));
+  const currentSources = new Map(
+    catalog.map((item) => [slugify(item.candidate.name), item.source]),
+  );
+
+  const seeds = catalog.filter((item) => item.source !== "registry");
+  const registryNew = catalog
+    .filter(
+      (item) =>
+        item.source === "registry" &&
+        !previousSlugs.has(slugify(item.candidate.name)),
+    )
+    .sort((a, b) => {
+      const aAttempt =
+        oldCatalogState.entries[slugify(a.candidate.name)]?.lastEnrichmentAttemptAt;
+      const bAttempt =
+        oldCatalogState.entries[slugify(b.candidate.name)]?.lastEnrichmentAttemptAt;
+      // 从未尝试的优先；失败过的按最早尝试时间轮转回来，不能永久占住前 250 个名额。
+      if (!aAttempt && bAttempt) return -1;
+      if (aAttempt && !bAttempt) return 1;
+      if (aAttempt && bAttempt && aAttempt !== bAttempt) {
+        return aAttempt.localeCompare(bAttempt);
+      }
+      return candidateRecency(b.candidate) - candidateRecency(a.candidate);
+    });
+  const registryExisting = catalog
+    .filter(
+      (item) =>
+        item.source === "registry" &&
+        previousSlugs.has(slugify(item.candidate.name)),
+    )
+    .sort((a, b) => {
+      const aSlug = slugify(a.candidate.name);
+      const bSlug = slugify(b.candidate.name);
+      return (
+        dataAge(previousBySlug.get(aSlug)) - dataAge(previousBySlug.get(bSlug)) ||
+        a.candidate.name.localeCompare(b.candidate.name)
+      );
+    });
+
+  // 种子每天都刷新；剩余预算先保证一批新项目能入库，再轮转旧项目。
+  const budget = Math.max(seeds.length, enrichLimit);
+  const remainingBudget = Math.max(0, budget - seeds.length);
+  const newQuota = Math.min(
+    registryNew.length,
+    DEFAULT_NEW_SERVER_LIMIT,
+    remainingBudget,
+  );
+  const selected: SourcedCandidate[] = [
+    ...seeds,
+    ...registryNew.slice(0, newQuota),
+  ];
+  let slots = budget - selected.length;
+  const existingTake = Math.min(slots, registryExisting.length);
+  selected.push(...registryExisting.slice(0, existingTake));
+  slots -= existingTake;
+  if (slots > 0) {
+    selected.push(...registryNew.slice(newQuota, newQuota + slots));
+  }
+
+  const selectedSlugs = new Set(selected.map((item) => slugify(item.candidate.name)));
+  console.log(
+    `[collector] 来源目录 ${catalog.length}（curated ${CURATED_SEEDS.length} + ` +
+      `discovered ${DISCOVERED_SEEDS.length} + registry ${registryCandidates.length}，已去重）；` +
+      `待入库 ${registryNew.length}，本次深度富化 ${selected.length}/${budget}`,
+  );
+
+  const catalogTransition = advanceCatalogState(
+    oldCatalogState,
+    currentSources,
+    Array.from(previousSlugs),
+    today,
+    MISSING_GRACE_RUNS,
+  );
+  for (const item of selected) {
+    const slug = slugify(item.candidate.name);
+    if (item.source !== "registry" || previousSlugs.has(slug)) continue;
+    const entry = catalogTransition.state.entries[slug];
+    if (!entry) continue;
+    entry.lastEnrichmentAttemptAt = today;
+    entry.enrichmentAttempts = (entry.enrichmentAttempts ?? 0) + 1;
+  }
+
+  const finalBySlug = new Map<string, MCPServer>();
+
+  // 未轮到深度富化的已收录项目保留健康信号，但同步最新 Registry 元数据。
+  for (const previous of previousServers) {
+    const current = catalogBySlug.get(previous.slug);
+    if (current && !selectedSlugs.has(previous.slug)) {
+      finalBySlug.set(previous.slug, refreshMetadata(previous, current.candidate));
+    } else if (!current && catalogTransition.retainMissingSlugs.has(previous.slug)) {
+      finalBySlug.set(previous.slug, previous);
     }
   }
-  for (const c of registryCands) {
-    if (!names.has(c.name)) {
-      names.add(c.name);
-      merged.push(c);
-    }
-  }
 
-  // 并发富化（限流保护：token 下 5000/h 充足，5 路并发够快又不炸）
+  // 深度富化（限流保护：token 下 5000/h；5 路并发）。
   const CONCURRENCY = 5;
-  const enriched: MCPServer[] = [];
-  for (let i = 0; i < merged.length; i += CONCURRENCY) {
-    const batch = merged.slice(i, i + CONCURRENCY);
+  let qualityRejected = 0;
+  let retainedOnFailure = 0;
+  for (let i = 0; i < selected.length; i += CONCURRENCY) {
+    const batch = selected.slice(i, i + CONCURRENCY);
     const results = await Promise.all(
-      batch.map(async (cand) => {
+      batch.map(async (item) => {
+        const cand = item.candidate;
+        const slug = slugify(cand.name);
+        const previous = previousBySlug.get(slug);
         try {
-          return await enrichOne(cand);
+          const enriched = await enrichOne(cand);
+          const auditable = enriched.signals.repoAuditable !== false;
+          const passes = item.source === "curated" || passesQualityGate(enriched);
+          if (!auditable || !passes) {
+            if (previous) {
+              retainedOnFailure++;
+              return refreshMetadata(previous, cand);
+            }
+            qualityRejected++;
+            return null;
+          }
+          return preserveStableDates(enriched, previous);
         } catch (err) {
-          console.warn(`[collector] 富化失败，跳过 ${cand.name}: ${String(err)}`);
+          if (previous) {
+            retainedOnFailure++;
+            console.warn(`[collector] 富化失败，保留旧数据 ${cand.name}: ${String(err)}`);
+            return refreshMetadata(previous, cand);
+          }
+          console.warn(`[collector] 富化失败，暂不入库 ${cand.name}: ${String(err)}`);
           return null;
         }
       }),
     );
-    for (const r of results) if (r) enriched.push(r);
+    for (const server of results) {
+      if (server) finalBySlug.set(server.slug, server);
+    }
   }
 
-  // 去重 slug
-  const seenSlug = new Set<string>();
-  const deduped = enriched.filter((s) =>
-    seenSlug.has(s.slug) ? false : (seenSlug.add(s.slug), true),
+  const final = Array.from(finalBySlug.values()).sort(
+    (a, b) => b.signals.stars - a.signals.stars,
+  );
+  const finalSlugs = new Set(final.map((s) => s.slug));
+  const added = final.filter((s) => !previousSlugs.has(s.slug));
+  const removed = previousServers.filter((s) => !finalSlugs.has(s.slug));
+  const sourceCounts = final.reduce<Record<CatalogSource, number>>(
+    (acc, server) => {
+      const source =
+        currentSources.get(server.slug) ??
+        catalogTransition.state.entries[server.slug]?.source ??
+        "registry";
+      acc[source]++;
+      return acc;
+    },
+    { curated: 0, discovered: 0, registry: 0 },
   );
 
-  // 质量筛选：白名单无条件保留（优质保底），registry 长尾须过质量门槛（有 star 或可运行）。
-  // 不再 slice 到固定数——白名单新增或 registry 多出合格项，总量随之增加。
-  const kept = deduped.filter((s) => curatedNames.has(s.name) || passesQualityGate(s));
-
-  // 按 stars 降序排列（展示顺序：高星在前），但不截断
-  kept.sort((a, b) => b.signals.stars - a.signals.stars);
-  const dropped = deduped.length - kept.length;
   console.log(
-    `[collector] 富化 ${deduped.length} 个 → 保留 ${kept.length}（白名单 ${curatedNames.size} 必留，` +
-      `自动发现 ${discoveredCandidates.length} + registry 补量均须过门槛），过滤掉 ${dropped} 个低质项`,
+    `[collector] 目录结果 ${final.length}：+${added.length} -${removed.length} ` +
+      `= 净增 ${added.length - removed.length}；来源 curated ${sourceCounts.curated} / ` +
+      `discovered ${sourceCounts.discovered} / registry ${sourceCounts.registry}`,
   );
-  const top = kept;
+  if (added.length) console.log(`[collector] 新增：${formatNames(added)}`);
+  if (removed.length) console.log(`[collector] 移除：${formatNames(removed)}`);
+  if (catalogTransition.retainMissingSlugs.size) {
+    console.log(
+      `[collector] 来源暂缺但处于 ${MISSING_GRACE_RUNS} 次宽限期：` +
+        `${catalogTransition.retainMissingSlugs.size} 个`,
+    );
+  }
+  if (qualityRejected || retainedOnFailure) {
+    console.log(
+      `[collector] 本轮质量门槛拒绝新项 ${qualityRejected}；富化异常保留旧数据 ${retainedOnFailure}`,
+    );
+  }
 
   // 趋势/diff：用历史快照算周增量 + 构造 sparkline，然后写入今天的快照
-  await applyTrends(top);
+  await applyTrends(final);
 
   // 落盘全量数据集：供 Vercel build 直接读取，不必在 build 里重新采集
-  await writeDataset(top);
+  await writeDataset(final);
+  await writeCatalogState(catalogTransition.state);
 
-  return top;
+  return final;
 }
 
 /**

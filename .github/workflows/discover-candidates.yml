@@ -50,14 +50,16 @@ jobs:
 
       - name: 有新候选就开 PR
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 可选 PAT 兜底；仓库已允许 Actions 创建 PR 时会直接使用 GITHUB_TOKEN。
+          GH_TOKEN: ${{ secrets.MCP_DISCOVER_PR_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
-          if [ -z "$(git status --porcelain lib/collector/discovered.ts)" ]; then
-            echo "候选无变化，不开 PR"
+          if [ -z "$(git status --porcelain lib/collector/discovered.ts data/discover-report.md data/discover-state.json)" ]; then
+            echo "候选、报告和关键词游标均无变化，不开 PR"
             exit 0
           fi
 
-          BRANCH="discover/$(date -u +%Y-%m-%d)"
+          # 带 run id，避免同一天手动重跑与已有远程分支冲突。
+          BRANCH="discover/$(date -u +%Y-%m-%d)-${GITHUB_RUN_ID}"
           git config user.name "mcp-radar-bot"
           git config user.email "bot@mcpradars.com"
           git checkout -b "$BRANCH"

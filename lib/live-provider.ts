@@ -2,7 +2,7 @@
 // 派生出分类/榜单/墓地/雷达/统计等全部视图。实现 MCPDataProvider 契约。
 //
 // 启用：NEXT_PUBLIC_DATA_SOURCE=live
-// 数据量由 MCP_COLLECT_LIMIT 控制（默认 40，"先采少量"）。
+// Registry 元数据完整拉取；MCP_COLLECT_LIMIT 只控制每日 GitHub/npm 深度富化预算。
 // 只在服务端（SSG 构建期 / ISR）运行。
 
 import type { Category, MCPServer, RadarEntry } from "./types";

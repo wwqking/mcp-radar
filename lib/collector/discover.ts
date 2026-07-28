@@ -37,6 +37,12 @@ export interface Candidate {
   source: "github" | "keyword";
   /** keyword 来源时带上搜索量，供 PR 里排序 */
   volume?: number;
+  /** keyword 来源时带上是哪份清单（人工缺口 / 竞品采词），审 PR 时判断可信度 */
+  backlog?: string;
+  /** 是 GitHub 搜不到、靠 registry 兜底解析出来的。这类跳过了「仓库名必须带 mcp」，审 PR 时多看一眼 */
+  viaRegistry?: boolean;
+  /** registry 条目自报的 npm 包名。只当**候选**用，仍要过门槛 ③ 反查 repository */
+  npmHint?: string | null;
 }
 
 export interface Rejection {
@@ -102,14 +108,22 @@ const NOT_A_SERVER = [
  * 代价是会漏掉名字不带 mcp 的真 server（如 oraios/serena）——这是刻意的取舍：
  * 机器发现宁可保守，漏掉的走 curated.ts 手工加。误收的代价（空壳页拖累整站）远大于漏收。
  */
-export function looksLikeServer(item: { name: string; description: string | null }): string | null {
+export function looksLikeServer(
+  item: { name: string; description: string | null },
+  opts: { trusted?: boolean } = {},
+): string | null {
   const name = item.name.toLowerCase();
   const hay = `${name} ${item.description ?? ""}`.toLowerCase();
 
-  if (!/mcp/.test(name)) return "仓库名不带 mcp（多半只是描述里顺带提到）";
+  // 黑名单任何来源都要过 —— registry 里同样有人把清单站/客户端/网关当 server 发布。
   for (const re of NOT_A_SERVER) {
     if (re.test(hay)) return `像是 ${re.source.replace(/\\b/g, "").replace(/\\/g, "")} 而不是 server`;
   }
+  // 下面两条是「从名字和描述**猜**是不是 server」，只对 GitHub 搜索这种没人背书的来源用。
+  // registry 条目是发布者主动提交的官方声明，再猜一遍只会误杀厂商 monorepo
+  // （stripe/agent-toolkit 名字既不带 mcp、描述也没有 server 字样，但它确实是官方 server）。
+  if (opts.trusted) return null;
+  if (!/mcp/.test(name)) return "仓库名不带 mcp（多半只是描述里顺带提到）";
   const isServer = /\bservers?\b/.test(hay) || /\btools?\b/.test(hay) || /\bconnector\b/.test(hay);
   if (!isServer) return "没有 server/tool 语义";
   return null;
@@ -117,16 +131,29 @@ export function looksLikeServer(item: { name: string; description: string | null
 
 // ---------- 门槛 ① 相关性（仅关键词来源需要）----------
 
+/** 词干容错的下限。往下调会退化成 chat / lang 这种通用词根——
+ *  那正是 gate ① 当初要挡的 LibreChat 型误命中（`chatgpt` 砍到 `chat` 就会命中 LibreChat）。 */
+const MIN_STEM = 6;
+
 /**
  * 关键词来源要验「这个仓库真的是这个工具的 server」。
- * 判据：仓库全名（去非字母数字）里出现关键词的主 token。
+ * 判据：仓库全名（去非字母数字）里出现关键词的主 token，或它的词干。
  * 实测这一道砍掉 32% 的误命中——没有它，LibreChat 会同时冒充 chatgpt/azure/langchain。
+ *
+ * ⚠️ 词干容错是 2026-07-27 补的：只做全词包含会漏掉「仓库用简称、关键词用全称」的一大类——
+ * `postgresql` 匹配不上 `crystaldba/postgres-mcp`（而这正是我们 postgres 落地页指向的 server），
+ * `nextjs`/`monday.com` 同理。做法是从长到短试关键词的前缀，命中即算匹配，但**前缀不短于 6 位**。
  */
 export function repoMatchesKeyword(keyword: string, repoFullName: string): boolean {
   const head = keyword.split(/\s+/)[0] ?? "";
   const key = normalize(head);
   if (key.length < 3) return false;
-  return normalize(repoFullName).includes(key);
+  const repo = normalize(repoFullName);
+  if (repo.includes(key)) return true;
+  for (let len = key.length - 1; len >= MIN_STEM; len--) {
+    if (repo.includes(key.slice(0, len))) return true;
+  }
+  return false;
 }
 
 // ---------- 门槛 ③ npm 包归属 ----------
@@ -164,6 +191,63 @@ function npmGuesses(repo: string): string[] {
 const SEARCH_DELAY_MS = Number(process.env.MCP_DISCOVER_SEARCH_DELAY_MS ?? 2200);
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+/** 关键词搜索取前几条。
+ *  ⚠️ 原来是 3，太窄：`shadcnui` 的真身 `Jpisnice/shadcn-ui-mcp-server` 排不进前 3，
+ *  被一个 ★0 的同名仓库顶掉后判星数不足直接丢了。改 per_page 不增加请求数，只是同一次搜索多要几条。 */
+const SEARCH_PER_PAGE = Number(process.env.MCP_DISCOVER_SEARCH_PER_PAGE ?? 10);
+
+// ---------- 兜底解析：官方 registry ----------
+
+const REGISTRY = "https://registry.modelcontextprotocol.io";
+
+interface RegistrySearchPage {
+  servers: Array<{
+    server: {
+      name: string;
+      repository?: { url?: string };
+      packages?: Array<{ registryType?: string; registry_name?: string; identifier?: string; name?: string }>;
+    };
+  }>;
+}
+
+/**
+ * GitHub 关键词搜索找不到时，问官方 registry。
+ *
+ * 为什么需要这一路：厂商自己发布的 server 常住 monorepo，仓库名既不带工具名也不带 mcp
+ * （`stripe/agent-toolkit`），GitHub 的名字/描述搜索天然够不着，但 registry 里有条目——
+ * 那是发布者主动提交的，比搜索结果可信。registry 的 `search=` + `version=latest` 都实测可用。
+ */
+export async function resolveFromRegistry(
+  keyword: string,
+): Promise<{ repo: string; npmPackage: string | null } | null> {
+  const url = `${REGISTRY}/v0/servers?search=${encodeURIComponent(keyword)}&version=latest&limit=20`;
+  const res = await cachedGetJson<RegistrySearchPage>(url);
+  if (!res.ok || !res.data?.servers?.length) return null;
+
+  for (const item of res.data.servers) {
+    const repoUrl = item.server?.repository?.url;
+    if (!repoUrl) continue; // 纯 remote 条目拿不到健康数据，跟第一轮定的规则冲突
+    const m = repoUrl.match(/github\.com[/:]([^/]+)\/([^/#?.]+)/i);
+    if (!m) continue;
+    const full = `${m[1]}/${m[2]}`;
+    // 门槛 ① 照旧：registry 的 search 也会返回一堆沾边的
+    if (!repoMatchesKeyword(keyword, full)) continue;
+    const npm = (item.server.packages ?? []).find(
+      (p) => (p.registryType ?? p.registry_name)?.toLowerCase() === "npm",
+    );
+    return { repo: full, npmPackage: npm?.identifier ?? npm?.name ?? null };
+  }
+  return null;
+}
+
+/** 把一个已知的 owner/repo 拉成跟搜索结果同构的对象，好走同一套门槛。
+ *  用的是普通 REST（5000/h），不吃 search 那个 30/min 的限流，不用节流。 */
+async function fetchRepoAsSearchItem(repoFullName: string): Promise<SearchItem | null> {
+  const res = await cachedGetJson<SearchItem>(`${GH}/repos/${repoFullName}`, ghHeaders());
+  if (!res.ok || !res.data?.full_name) return null;
+  return res.data;
+}
+
 // ---------- 已有清单 ----------
 
 /** 库里已有的 + 两份种子文件里已有的 repo（小写 owner/repo）。 */
@@ -186,11 +270,12 @@ export function knownRepos(existingRepoUrls: Array<string | null>): Set<string> 
 export async function discoverFromGithub(
   known: Set<string>,
   opts: { pages?: number } = {},
-): Promise<{ found: Candidate[]; rejected: Rejection[] }> {
+): Promise<{ found: Candidate[]; rejected: Rejection[]; alreadyKnown: number }> {
   const pages = opts.pages ?? 3;
   const found: Candidate[] = [];
   const rejected: Rejection[] = [];
   const seen = new Set<string>();
+  let alreadyKnown = 0;
 
   for (let page = 1; page <= pages; page++) {
     const q = encodeURIComponent(`mcp server in:name,description stars:>=${MIN_STARS}`);
@@ -203,7 +288,7 @@ export async function discoverFromGithub(
       const repo = item.full_name.toLowerCase();
       if (seen.has(repo)) continue;
       seen.add(repo);
-      if (known.has(repo)) continue; // 已在库里/清单里，不重复提
+      if (known.has(repo)) { alreadyKnown++; continue; } // 已在库里/清单里，不重复提
       if (item.fork) { rejected.push({ repo: item.full_name, reason: "是 fork" }); continue; }
       if (item.archived) { rejected.push({ repo: item.full_name, reason: "已归档" }); continue; }
 
@@ -229,7 +314,7 @@ export async function discoverFromGithub(
       });
     }
   }
-  return { found, rejected };
+  return { found, rejected, alreadyKnown };
 }
 
 // ---------- 发现：关键词待办清单 ----------
@@ -237,6 +322,8 @@ export async function discoverFromGithub(
 export interface KeywordTarget {
   keyword: string;
   volume: number;
+  /** 来自哪份待办清单，透传到候选上供报告分组 */
+  backlog?: string;
 }
 
 /**
@@ -246,37 +333,57 @@ export interface KeywordTarget {
 export async function discoverFromKeywords(
   targets: KeywordTarget[],
   known: Set<string>,
-): Promise<{ found: Candidate[]; rejected: Rejection[] }> {
+): Promise<{ found: Candidate[]; rejected: Rejection[]; alreadyKnown: number }> {
   const found: Candidate[] = [];
   const rejected: Rejection[] = [];
+  /** 搜到了但库里已经有 —— 既不是命中也不是挡掉。必须单独计数：
+   *  2026-07-26 首跑 60 个词只出 1 个候选，看着像门槛太严，实际是前 60 个词
+   *  刚被人工采进白名单，搜到的 repo 全在库里。这个数不报出来就会误判成门槛问题。 */
+  let alreadyKnown = 0;
 
   for (const t of targets) {
     const q = encodeURIComponent(`${t.keyword} mcp in:name,description`);
-    const url = `${GH}/search/repositories?q=${q}&sort=stars&order=desc&per_page=3`;
+    const url = `${GH}/search/repositories?q=${q}&sort=stars&order=desc&per_page=${SEARCH_PER_PAGE}`;
     const res = await cachedGetJson<{ items: SearchItem[] }>(url, ghHeaders());
     await sleep(SEARCH_DELAY_MS);
-    if (!res.ok || !res.data?.items?.length) {
-      rejected.push({ repo: t.keyword, reason: "GitHub 上搜不到仓库" });
-      continue;
+    const items = res.ok ? (res.data?.items ?? []) : [];
+
+    // 门槛 ①：在结果里找仓库名与关键词对得上的，而不是无脑取第一个。
+    // items 按 star 降序，find 命中的自然是最高星的那个匹配项。
+    let match = items.find((i) => repoMatchesKeyword(t.keyword, i.full_name)) ?? null;
+
+    // GitHub 搜不到、或搜出来全是误命中 → 兜底问官方 registry
+    let npmHint: string | null = null;
+    let trusted = false;
+    if (!match) {
+      const hit = await resolveFromRegistry(t.keyword);
+      if (hit) {
+        match = await fetchRepoAsSearchItem(hit.repo);
+        if (match) {
+          npmHint = hit.npmPackage;
+          trusted = true;
+        }
+      }
     }
 
-    // 门槛 ①：在前 3 个结果里找仓库名与关键词对得上的，而不是无脑取第一个
-    const match = res.data.items.find((i) => repoMatchesKeyword(t.keyword, i.full_name));
     if (!match) {
       rejected.push({
         repo: t.keyword,
-        reason: `搜索误命中（首位是 ${res.data.items[0].full_name}，与词无关）`,
+        reason: items.length
+          ? `搜索误命中（首位是 ${items[0].full_name}，与词无关），registry 里也没有`
+          : "GitHub 和 registry 都搜不到仓库",
       });
       continue;
     }
+
     const repo = match.full_name.toLowerCase();
-    if (known.has(repo)) continue;
+    if (known.has(repo)) { alreadyKnown++; continue; }
     if (match.archived) { rejected.push({ repo: match.full_name, reason: "已归档" }); continue; }
     if (match.stargazers_count < MIN_STARS) {
       rejected.push({ repo: match.full_name, reason: `★${match.stargazers_count} < ${MIN_STARS}` });
       continue;
     }
-    const notServer = looksLikeServer(match);
+    const notServer = looksLikeServer(match, { trusted });
     if (notServer) { rejected.push({ repo: match.full_name, reason: notServer }); continue; }
     const idle = idleDays(match.pushed_at);
     if (idle > MAX_IDLE_DAYS) {
@@ -295,15 +402,20 @@ export async function discoverFromKeywords(
       npmPackage: null,
       source: "keyword",
       volume: t.volume,
+      backlog: t.backlog,
+      viaRegistry: trusted,
+      npmHint,
     });
     known.add(repo); // 同一批里多个词命中同一个 repo 只提一次
   }
-  return { found, rejected };
+  return { found, rejected, alreadyKnown };
 }
 
-/** 给候选补 npm 包名（过门槛 ③ 才填）。 */
+/** 给候选补 npm 包名（过门槛 ③ 才填）。
+ *  registry 自报的包名当**第一个猜测**，但不豁免门槛 ③——registry 条目也有填错 repository 的。 */
 export async function attachNpmPackages(cands: Candidate[]): Promise<void> {
   for (const c of cands) {
-    c.npmPackage = await resolveNpmPackage(c.repo, npmGuesses(c.repo));
+    const guesses = c.npmHint ? [c.npmHint, ...npmGuesses(c.repo)] : npmGuesses(c.repo);
+    c.npmPackage = await resolveNpmPackage(c.repo, guesses);
   }
 }

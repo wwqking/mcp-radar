@@ -83,6 +83,12 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
               <span>🟡 {dict.common.dying} <strong className="text-amber-600 dark:text-amber-400">{stats.dying}</strong></span>
               <span className="hidden h-1 w-1 rounded-full bg-neutral-300 sm:block" />
               <span>⚰️ {dict.common.dead} <strong className="text-red-600 dark:text-red-400">{stats.dead}</strong></span>
+              {stats.unverifiable > 0 && (
+                <>
+                  <span className="hidden h-1 w-1 rounded-full bg-neutral-300 sm:block" />
+                  <span>⚪ {dict.common.unverifiable} <strong className="text-neutral-600 dark:text-neutral-300">{stats.unverifiable}</strong></span>
+                </>
+              )}
             </div>
           </div>
         </div>
