@@ -5,10 +5,11 @@ import { getServerBySlug, getSimilarServers, formatNumber } from "@/lib/data";
 import { getServerCapability } from "@/lib/server-capabilities";
 import CapabilityCard from "@/components/CapabilityCard";
 import InstallCommandCard from "@/components/InstallCommand";
+import ClientCompatCard from "@/components/ClientCompatCard";
 import { installCommands } from "@/lib/install";
 import ServerCard from "@/components/ServerCard";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema, ORGANIZATION_ID } from "@/lib/schema";
 import { SITE_NAME, absoluteUrl } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -67,12 +68,14 @@ export default async function SeoLandingPage({ params }: Props) {
   const appSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
+    "@id": absoluteUrl(`/${locale}/server/${s.slug}#software`),
+    url: absoluteUrl(`/${locale}/servers/${params.tool}`),
     name: h1,
     description: t.tagline,
     applicationCategory: "DeveloperApplication",
     applicationSubCategory: "Model Context Protocol Server",
     operatingSystem: "Any",
-    offers: { "@type": "Offer", price: 0, priceCurrency: "USD" },
+    provider: { "@id": ORGANIZATION_ID },
     ...(s.repoUrl ? { codeRepository: s.repoUrl, sameAs: [s.repoUrl] } : {}),
   };
   const crumb = breadcrumbSchema([
@@ -134,7 +137,26 @@ export default async function SeoLandingPage({ params }: Props) {
         note={d.installNote}
         copyLabel={d.copy}
         copiedLabel={d.copied}
+        analyticsId={s.slug}
       />
+
+      {/* 能接哪些客户端 —— 承接 "{server} + {client}" 的集成搜索意图，
+          不必为每个 client×server 组合单开一页。 */}
+      {s.clientCompat?.length ? (
+        <ClientCompatCard
+          compat={s.clientCompat}
+          verified={s.installVerified}
+          strings={{
+            compatTitle: d.compatTitle,
+            viaStdio: d.viaStdio,
+            viaRemote: d.viaRemote,
+            derivedNote: d.derivedNote,
+            verifiedNote: d.verifiedNote,
+            toolsTitle: d.toolsTitle,
+            verifiedOn: d.verifiedOn,
+          }}
+        />
+      ) : null}
 
       {/* Why use it */}
       <section className="card mt-6 p-5 sm:p-6">
