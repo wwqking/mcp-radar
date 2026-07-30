@@ -77,6 +77,7 @@ const GUIDE_META: GuideMeta[] = [
   { slug: "claude-mcp-list-command", tier: "free", icon: "📟", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
   { slug: "youtube-transcript-for-claude", tier: "free", icon: "🎬", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
   { slug: "mcp-remote", tier: "free", icon: "🌉", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
+  { slug: "can-claude-generate-images", tier: "free", icon: "🖼️", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
   {
     slug: "awesome-mcp-servers",
     tier: "free", icon: "⭐",

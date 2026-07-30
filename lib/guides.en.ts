@@ -439,6 +439,45 @@ export const GUIDES_EN: Record<string, GuideContent> = {
     ],
   },
 
+  "can-claude-generate-images": {
+    title: "Can Claude generate images? What MCP does and doesn't change",
+    excerpt:
+      "Claude cannot draw images itself — it is a text and vision model. But with an image-generation MCP server connected, it can call an external model to produce them. Here is the honest distinction and how to set it up.",
+    sections: [
+      {
+        heading: "The short answer",
+        body: [
+          "Out of the box, no. Claude reads and understands images, but it does not generate them — its own output is text. If you ask it to \"draw a logo\", it will describe one, or write code that draws one, but it will not return a picture.",
+          "This trips people up because Claude is clearly capable with images: it can analyze a screenshot, read a chart, or describe a photo in detail. That is vision — understanding images that come in. Generation — producing images that go out — is a different capability, and Claude does not have it natively.",
+          "What changes the answer is tooling. Through MCP, Claude can call an external image model and hand you back the result, so from your side of the conversation it looks like Claude made an image. Strictly, Claude decided what to ask for and an image server produced it.",
+        ],
+      },
+      {
+        heading: "How image generation through MCP actually works",
+        body: [
+          "An image-generation MCP server wraps a model like DALL·E, Stable Diffusion or Flux behind a tool Claude can call. You describe what you want in the conversation, Claude formulates the prompt and calls the tool, and the server returns an image.",
+          "The division of labour is worth understanding because it affects quality. Claude is good at turning your vague request into a detailed, well-structured image prompt — that is a language task, and it is genuinely helpful. The actual pixels come from the image model, so the ceiling on quality is set by that model, not by Claude.",
+          "These servers almost always need an API key for the underlying image service, and that service usually charges per image. So unlike a read-only transcript or search server, this is one where connecting it has a direct cost attached, and the key gives whatever holds it the ability to spend money. Scope it accordingly.",
+        ],
+      },
+      {
+        heading: "Setting it up",
+        body: [
+          "Search our catalog for image-generation servers and read the detail page before installing. This is a young, thin category — there are far fewer maintained image servers than, say, filesystem or search servers — so pay attention to the maintenance signals rather than assuming any given one is solid.",
+          "Because these servers hold a paid API key, treat the key as you would any billing credential: use a scoped key if the provider supports it, watch the usage dashboard for the first while, and revoke it if you stop using the server.",
+          "Check the client compatibility on the detail page too. Most run locally over stdio and work with Claude Desktop, Claude Code, Cursor and VS Code, but confirm before you rely on it.",
+        ],
+      },
+      {
+        heading: "When you don't need MCP for this",
+        body: [
+          "If image generation is the main thing you want, a dedicated image tool or a chat product with generation built in may be a better fit than wiring one into Claude through MCP. The MCP route makes sense when generating an image is one step inside a larger task Claude is already doing — writing a blog post and illustrating it, say — not when the image is the whole job.",
+          "It is also worth remembering that Claude can write the code to generate images programmatically. For charts, diagrams and anything data-driven, having Claude produce a script is often better than a generative model, because the output is exact and reproducible rather than an approximation.",
+        ],
+      },
+    ],
+  },
+
   "awesome-mcp-servers": {
     title: "Awesome MCP servers: a maintained list, ranked by real signals",
     excerpt:
