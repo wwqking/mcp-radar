@@ -1,0 +1,53 @@
+{
+  "verifiedAt": "2026-07-30",
+  "total": 2,
+  "ok": 2,
+  "started": 0,
+  "failed": 0,
+  "results": [
+    {
+      "slug": "modelcontextprotocol-server-memory",
+      "package": "@modelcontextprotocol/server-memory",
+      "status": "ok",
+      "tools": [
+        "create_entities",
+        "create_relations",
+        "add_observations",
+        "delete_entities",
+        "delete_observations",
+        "delete_relations",
+        "read_graph",
+        "search_nodes",
+        "open_nodes"
+      ],
+      "toolCount": 9,
+      "startupMs": 18662,
+      "error": null,
+      "verifiedAt": "2026-07-30"
+    },
+    {
+      "slug": "modelcontextprotocol-server-everything",
+      "package": "@modelcontextprotocol/server-everything",
+      "status": "ok",
+      "tools": [
+        "echo",
+        "get-annotated-message",
+        "get-env",
+        "get-resource-links",
+        "get-resource-reference",
+        "get-structured-content",
+        "get-sum",
+        "get-tiny-image",
+        "gzip-file-as-resource",
+        "toggle-simulated-logging",
+        "toggle-subscriber-updates",
+        "trigger-long-running-operation",
+        "simulate-research-query"
+      ],
+      "toolCount": 13,
+      "startupMs": 27740,
+      "error": null,
+      "verifiedAt": "2026-07-30"
+    }
+  ]
+}
