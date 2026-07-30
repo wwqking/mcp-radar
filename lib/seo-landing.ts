@@ -70,7 +70,7 @@ export const SEO_LANDINGS: SeoLanding[] = [
       ],
       whyUse: [
         "Good for: developers and data analysts who want the AI to help explore data, generate reports, or debug production data issues.",
-        "Before connecting: your connection string holds sensitive credentials — use a read-only account for production databases. The maintenance and health signals for this server are shown below so you can judge whether it's production-ready.",
+        "Before connecting: your connection string holds sensitive credentials — use a read-only account for production databases. Review the maintenance signals below, then test compatibility and security in your own environment.",
       ],
       faq: [
         { q: "Will the Postgres MCP Server modify my data?", a: "It depends on the permissions of the database account you give it. To stay safe, use a read-only account for production so the AI can only query, not change data." },
@@ -1660,6 +1660,152 @@ export const SEO_LANDINGS: SeoLanding[] = [
       faq: [
         { q: "Does it support Universal Analytics?", a: "No, GA4 only. UA has been sunset." },
         { q: "Can it change my GA configuration?", a: "It's built for querying data. Granting the service account Viewer keeps it read-only, which is the recommended setup." },
+      ],
+    },
+  },
+  // 高采用度实体落地页（W1-1 首批）。只挑：库里已有、有可安装包、非误挂借星、
+  // 且是可辨识的知名工具。ai-netcafe / worldmonitor 那类误挂条目不建。
+  {
+    toolSlug: "chrome-devtools",
+    serverSlug: "chrome-devtools-mcp",
+    zh: {
+      toolName: "Chrome DevTools",
+      tagline: "Chrome DevTools MCP Server：让 AI 编码助手直接开一个真实 Chrome，查 DOM、看网络请求、读控制台报错——不用你截图粘贴。附安装配置。",
+      intro: [
+        "Chrome DevTools MCP Server 把浏览器的开发者工具接给 AI。你在调一个前端 bug 时，不用再把控制台报错、网络面板截图手动喂给 AI——它自己开一个 Chrome，去读页面真实的 DOM、网络请求和 console 输出。",
+        "对做 Web 开发的人来说，这省掉的是「复现问题 → 截图 → 描述给 AI」这段来回。AI 直接看到浏览器里发生了什么，定位问题的上下文更完整。",
+      ],
+      whyUse: [
+        "适合：让 AI 帮忙调前端问题、分析页面性能、复现浏览器里那些「只有在真实环境才出现」的 bug 的开发者。",
+        "接入前注意：它会启动一个真实浏览器进程，比纯 API 类 server 吃资源。本页下方能看到它的维护活跃度和 TrustScore，以及我们推导出的客户端兼容性。",
+      ],
+      faq: [
+        { q: "它需要我本地装 Chrome 吗？", a: "需要一个可被它驱动的 Chrome/Chromium。具体版本要求以官方 README 为准。" },
+        { q: "支持哪些 AI 客户端？", a: "本地 stdio 型，Claude Desktop、Claude Code、Cursor、VS Code 等支持 MCP 的客户端都能接。下方兼容性区块有详情。" },
+      ],
+    },
+    en: {
+      toolName: "Chrome DevTools",
+      tagline: "Chrome DevTools MCP Server: lets AI coding agents drive a real Chrome — inspect the DOM, read network requests and console errors — without you screenshotting and pasting. Setup guide included.",
+      intro: [
+        "The Chrome DevTools MCP Server hands the browser's developer tools to your AI. When you're debugging a frontend issue, you no longer paste console errors and network-panel screenshots by hand — the AI opens a Chrome and reads the page's real DOM, network requests and console output itself.",
+        "For web developers this removes the reproduce-screenshot-describe loop. The AI sees what actually happened in the browser, so it has fuller context for finding the problem.",
+      ],
+      whyUse: [
+        "Good for: developers who want the AI to help debug frontend issues, analyze page performance, or reproduce browser-only bugs that only appear in a real environment.",
+        "Before connecting: it launches a real browser process, so it is heavier than a pure API server. The maintenance signals, TrustScore and derived client compatibility are all below.",
+      ],
+      faq: [
+        { q: "Does it need Chrome installed locally?", a: "It needs a Chrome/Chromium it can drive. Check the official README for exact version requirements." },
+        { q: "Which AI clients are supported?", a: "It's a local stdio server, so Claude Desktop, Claude Code, Cursor and VS Code all work. See the compatibility section below." },
+      ],
+    },
+  },
+  {
+    toolSlug: "mcp-use",
+    serverSlug: "mcp-use",
+    zh: {
+      toolName: "mcp-use",
+      tagline: "mcp-use：一个全栈 MCP 框架，用来开发跑在 ChatGPT / Claude 上的 MCP 应用，也能自己搭 server。附安装说明。",
+      intro: [
+        "mcp-use 不是某个具体功能的 server，而是一个开发框架——帮你构建能接进 ChatGPT、Claude 的 MCP 应用，也能用它自己搭一个 MCP server。定位更接近「MCP 开发脚手架」。",
+        "如果你想做的不是「用一个现成 server」而是「自己写一个」，或者想把 MCP 能力嵌进自己的应用里，这类框架省掉的是从零对接协议的活。",
+      ],
+      whyUse: [
+        "适合：要自己开发 MCP server 或 MCP 应用的开发者，而不是只想接一个现成工具的使用者。",
+        "接入前注意：它是框架不是即插即用的工具 server，用它需要写代码。下方的维护信号对框架类项目尤其重要——框架停更的迁移成本比单个 server 高得多。",
+      ],
+      faq: [
+        { q: "它和直接用官方 SDK 有什么区别？", a: "它在协议之上提供了更高层的抽象，目标是少写样板。是否值得取决于你的项目复杂度，具体能力以官方文档为准。" },
+        { q: "能用来接现成的 server 吗？", a: "它主要面向开发，如果你只是想用一个现成 server，直接看那个 server 自己的接入说明更直接。" },
+      ],
+    },
+    en: {
+      toolName: "mcp-use",
+      tagline: "mcp-use: a fullstack MCP framework for building MCP apps that run on ChatGPT / Claude, and for building servers of your own. Setup notes included.",
+      intro: [
+        "mcp-use is not a server for one specific function — it's a development framework for building MCP apps that plug into ChatGPT and Claude, and for building an MCP server of your own. Think of it as MCP scaffolding rather than a finished tool.",
+        "If what you want is to write a server rather than use an existing one, or to embed MCP capabilities into your own app, a framework like this saves you from wiring up the protocol from scratch.",
+      ],
+      whyUse: [
+        "Good for: developers building an MCP server or MCP app, rather than users who just want to connect a finished tool.",
+        "Before connecting: it's a framework, not a plug-and-play tool server — using it means writing code. The maintenance signals below matter more than usual for a framework: migrating off an abandoned framework costs far more than swapping one server.",
+      ],
+      faq: [
+        { q: "How is it different from using the official SDK directly?", a: "It offers a higher-level abstraction over the protocol, aiming to cut boilerplate. Whether it's worth it depends on your project's complexity; see the official docs for specifics." },
+        { q: "Can I use it to connect existing servers?", a: "It's aimed at development. If you just want to use a finished server, that server's own setup instructions are more direct." },
+      ],
+    },
+  },
+  {
+    toolSlug: "xcodebuild",
+    serverSlug: "xcodebuildmcp",
+    zh: {
+      toolName: "XcodeBuild",
+      tagline: "XcodeBuildMCP：让 AI 编码助手直接调 Xcode 构建、跑测试、管理模拟器——iOS/macOS 开发的 MCP server。附安装配置。",
+      intro: [
+        "XcodeBuildMCP 把 Xcode 的命令行能力接给 AI：构建项目、跑测试、启动和管理模拟器、读构建错误。在做 iOS/macOS 开发时，AI 可以自己触发一次构建、看失败原因，而不是等你把 Xcode 的报错复制出来。",
+        "对 Apple 平台开发者来说，这把「改代码 → 切到 Xcode 构建 → 复制错误回 AI」的循环收进了对话里。",
+      ],
+      whyUse: [
+        "适合：用 AI 辅助 iOS/macOS 开发、希望 AI 能自己跑构建和测试来验证改动的开发者。",
+        "接入前注意：需要装了 Xcode 的 macOS 环境。这是本地 stdio 型 server，凭据面很小——它操作的是本地 Xcode，不碰远程服务。",
+      ],
+      faq: [
+        { q: "它能替我改代码吗？", a: "它提供的是构建、测试、模拟器管理这类能力。改代码由 AI 通过别的工具（如文件系统 server）做，它负责验证。" },
+        { q: "需要 Xcode 吗？", a: "需要。它本质是把 xcodebuild 等命令行工具封装成 MCP 工具，没有 Xcode 就没有底层命令可调。" },
+      ],
+    },
+    en: {
+      toolName: "XcodeBuild",
+      tagline: "XcodeBuildMCP: lets AI coding agents run Xcode builds, tests and simulators directly — an MCP server for iOS/macOS development. Setup guide included.",
+      intro: [
+        "XcodeBuildMCP hands Xcode's command-line capabilities to your AI: build projects, run tests, launch and manage simulators, read build errors. During iOS/macOS development the AI can trigger a build and see why it failed, instead of waiting for you to copy the error out of Xcode.",
+        "For Apple-platform developers this folds the edit-switch-to-Xcode-copy-error loop into the conversation.",
+      ],
+      whyUse: [
+        "Good for: developers using AI to assist iOS/macOS work who want the AI to run builds and tests itself to verify changes.",
+        "Before connecting: needs a macOS environment with Xcode installed. It's a local stdio server with a small credential surface — it drives your local Xcode and does not touch remote services.",
+      ],
+      faq: [
+        { q: "Can it edit my code?", a: "It provides build, test and simulator capabilities. Editing is done by the AI through other tools (like a filesystem server); this one verifies." },
+        { q: "Does it require Xcode?", a: "Yes. It essentially wraps xcodebuild and related command-line tools as MCP tools, so without Xcode there are no underlying commands to call." },
+      ],
+    },
+  },
+  {
+    toolSlug: "21st-dev-magic",
+    serverSlug: "21st-dev-magic",
+    zh: {
+      toolName: "21st.dev Magic",
+      tagline: "21st.dev Magic MCP：在 Cursor / Claude Code / Windsurf 里搜索并生成 React/UI 组件——像 v0 但直接在你的编辑器里。附安装配置。",
+      intro: [
+        "21st.dev Magic 把一个上万量级的 React/UI 组件库接给 AI 编码助手。你在写界面时，可以让 AI 直接搜出合适的组件并生成代码，定位类似 v0，但发生在你的 Cursor / Claude Code / Windsurf 里，不用切到另一个产品。",
+        "对做前端的人来说，省掉的是「去组件站找 → 复制 → 改适配」这段，AI 直接把组件落到你正在写的文件里。",
+      ],
+      whyUse: [
+        "适合：用 AI 辅助前端开发、经常要拼 UI 组件、希望不离开编辑器的开发者。",
+        "接入前注意：它连的是 21st.dev 的组件服务，需要对应的 API key。本页下方有维护信号和客户端兼容性；这类 server 有外部服务依赖，注意 key 的权限范围。",
+      ],
+      faq: [
+        { q: "生成的组件是它自己画的吗？", a: "它从一个组件库里搜索匹配项并生成接入代码，不是凭空画像素。库的质量决定了结果质量。" },
+        { q: "支持哪些编辑器？", a: "主打 Cursor、Claude Code、Windsurf 等支持 MCP 的编辑器。下方兼容性区块有详情。" },
+      ],
+    },
+    en: {
+      toolName: "21st.dev Magic",
+      tagline: "21st.dev Magic MCP: search and generate React/UI components inside Cursor / Claude Code / Windsurf — like v0, but in your editor. Setup guide included.",
+      intro: [
+        "21st.dev Magic hands a library of 10,000+ React/UI components to your AI coding agent. While building an interface you can have the AI search for a fitting component and generate the code — similar to v0, but happening inside your Cursor / Claude Code / Windsurf rather than in a separate product.",
+        "For frontend work this removes the find-on-a-component-site, copy, adapt loop — the AI drops the component straight into the file you're writing.",
+      ],
+      whyUse: [
+        "Good for: developers using AI for frontend work who assemble UI components often and want to stay in their editor.",
+        "Before connecting: it talks to 21st.dev's component service and needs an API key. Maintenance signals and client compatibility are below; this server has an external-service dependency, so mind the key's scope.",
+      ],
+      faq: [
+        { q: "Does it draw the components itself?", a: "It searches a component library for matches and generates the integration code — it doesn't paint pixels from scratch. The library's quality sets the ceiling on results." },
+        { q: "Which editors are supported?", a: "It targets Cursor, Claude Code and Windsurf and other MCP-capable editors. See the compatibility section below." },
       ],
     },
   },
