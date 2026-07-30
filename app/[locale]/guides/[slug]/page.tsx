@@ -1,10 +1,12 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getGuideSlugs, getGuideBySlug, freeSectionCount } from "@/lib/guides";
-import Paywall from "@/components/Paywall";
+import { getGuideSlugs, getGuideBySlug } from "@/lib/guides";
+import { getAllServers } from "@/lib/data";
+import { bestOf } from "@/lib/best-of";
+import RankingTable from "@/components/RankingTable";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, ORGANIZATION_ID } from "@/lib/schema";
 import { SITE_NAME, absoluteUrl } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -31,15 +33,20 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function GuideArticlePage({ params }: Props) {
+export default async function GuideArticlePage({ params }: Props) {
   const { locale } = params;
   const d = getDictionary(locale).guides;
+  const ds = getDictionary(locale).server;   // 榜单表头复用 server 段的词条
   const g = getGuideBySlug(params.slug, locale);
   if (!g) notFound();
 
-  const freeCount = freeSectionCount(g);
-  const visibleSections = g.sections.slice(0, freeCount);
-  const locked = g.tier === "member" && freeCount < g.sections.length;
+  // best-of 类指南的榜单由实时数据生成，而不是写死在文案里。
+  const ranking = g.ranking
+    ? bestOf(await getAllServers(), g.ranking.categories, {
+        starsFloor: g.ranking.starsFloor,
+        exclude: g.ranking.exclude,
+      })
+    : null;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -47,10 +54,12 @@ export default function GuideArticlePage({ params }: Props) {
     headline: g.title,
     description: g.excerpt,
     datePublished: g.publishedAt,
+    dateModified: g.modifiedAt,
     url: absoluteUrl(`/${locale}/guides/${g.slug}`),
-    author: { "@type": "Organization", name: SITE_NAME },
-    publisher: { "@type": "Organization", name: SITE_NAME },
-    isAccessibleForFree: g.tier === "free",
+    image: absoluteUrl(`/${locale}/opengraph-image`),
+    author: { "@id": ORGANIZATION_ID },
+    publisher: { "@id": ORGANIZATION_ID },
+    isAccessibleForFree: true,
   };
   const crumb = breadcrumbSchema([
     { name: d.h1, path: `/${locale}/guides` },
@@ -100,18 +109,17 @@ export default function GuideArticlePage({ params }: Props) {
           {g.sections.map((s, i) => (
             <li key={s.heading} className="flex items-center gap-2">
               <span className="text-neutral-300 dark:text-neutral-600">{i + 1}.</span>
-              <span className={i < freeCount ? "text-neutral-600 dark:text-neutral-300" : "text-neutral-400 dark:text-neutral-500"}>
+              <span className="text-neutral-600 dark:text-neutral-300">
                 {s.heading}
-                {i >= freeCount && <span className="ml-1.5 text-xs">🔒</span>}
               </span>
             </li>
           ))}
         </ol>
       </div>
 
-      {/* 正文（免费部分） */}
+      {/* 正文：真实会员系统上线前保持全文可索引、可阅读。 */}
       <article className="space-y-8">
-        {visibleSections.map((s) => (
+        {g.sections.map((s, si) => (
           <section key={s.heading}>
             <h2 className="text-lg font-bold text-neutral-900 dark:text-neutral-100">{s.heading}</h2>
             <div className="mt-3 space-y-3">
@@ -121,11 +129,24 @@ export default function GuideArticlePage({ params }: Props) {
                 </p>
               ))}
             </div>
+            {/* best-of 指南的数据榜单：插在指定 section 之后，由实时数据生成 */}
+            {ranking && g.ranking?.afterSection === si && (
+              <RankingTable
+                list={ranking}
+                locale={locale}
+                strings={{
+                  rank: ds.rankingRank,
+                  server: ds.rankingServer,
+                  trustScore: ds.rankingTrust,
+                  stars: ds.rankingStars,
+                  clients: ds.rankingClients,
+                  methodNote: ds.rankingMethod,
+                }}
+              />
+            )}
           </section>
         ))}
       </article>
-
-      {locked && <Paywall title={g.title} locale={locale} />}
 
       <div className="mt-12 border-t border-neutral-200 pt-6 text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400">
         <Link href={localizedHref(locale, "/guides")} className="link-accent">{d.backToList}</Link>

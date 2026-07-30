@@ -66,7 +66,7 @@ export const GUIDES_EN: Record<string, GuideContent> = {
       {
         heading: "What a proxy actually does",
         body: [
-          "The classic use for an MCP proxy is transport bridging. Many servers only speak stdio (they run as a local child process). A proxy can wrap one and expose it over HTTP/SSE so it can be hosted and reached over the network.",
+          "The classic use for an MCP proxy is transport bridging. Many servers only speak stdio (they run as a local child process). A proxy can wrap one and expose it over Streamable HTTP so it can be hosted and reached over the network.",
           "Proxies are also handy for local development — inspecting the traffic between client and server, injecting a fixed set of headers, or adapting a slightly non-standard server. They stay intentionally thin.",
           "What a proxy is not: it's not where you put your org's auth policy or fan-out routing. Pushing those into a proxy is how you end up reinventing a gateway badly.",
         ],
@@ -99,43 +99,43 @@ export const GUIDES_EN: Record<string, GuideContent> = {
   "choosing-mcp-server": {
     title: "Choosing an MCP server for your company: a due-diligence checklist",
     excerpt:
-      "Between \"it installs and runs\" and \"it's production-ready\" sits a due-diligence checklist nobody has written. We reverse-engineered 12 must-check items from the health data of 1,200+ servers.",
+      "Installing successfully is only the start. This checklist turns public maintenance, licensing and security signals into a repeatable review before you connect a server.",
     sections: [
       {
         heading: "Why \"it runs\" doesn't mean \"it's usable\"",
         body: [
           "MCP servers have almost no install barrier — one npx command and it's running. But the real question in an enterprise setting is: will this server still be maintained in three months? Is the way it handles credentials safe? How long do its maintainers take to respond to a security vulnerability?",
-          "We tracked maintenance data for 1,247 MCP servers: 137 are abandoned and 168 haven't been updated in over six months — meaning if you pick one at random from an \"awesome MCP\" list, there's nearly a one-in-four chance of hitting a zombie project.",
-          "This checklist turns due diligence into 12 tickable items, all doable in 15 minutes from public data.",
+          "Catalog size and lifecycle counts change with each data snapshot, so use the current leaderboard rather than a hard-coded ecosystem total.",
+          "This checklist turns due diligence into repeatable checks you can perform from public data before testing in an isolated environment.",
         ],
       },
       {
         heading: "Part 1: Liveness checks (5 must-check items)",
         body: [
-          "1. Is the last commit < 30 days ago? For projects past 90 days, issue response rate falls off a cliff to under 20%.",
-          "2. Are there > 10 commits in 90 days? Below that, projects usually only have \"life-support commits\" (README tweaks, version bumps).",
-          "3. Is the median open-issue response time < 7 days? Sort the repo's Issues page by \"recently commented\" to judge quickly.",
-          "4. Is the repo archived? An archived repo's API dependencies rot over time, typically becoming unusable after ~6 months.",
+          "1. Check the last commit date and review what recent commits actually changed; recency alone does not prove quality.",
+          "2. Review the 90-day commit history for meaningful fixes, releases and dependency maintenance rather than relying on a single threshold.",
+          "3. Sample recent issues and confirm whether maintainers reply and close actionable reports. MCP Radar reports the share with replies, not a median response time.",
+          "4. Check whether the repo is archived. Treat archived software as unsupported unless a maintained successor is clearly documented.",
           "5. Is there a clear license? Code with no license is legally \"all rights reserved\" for enterprises — unusable commercially.",
         ],
       },
       {
-        heading: "Part 2: Security & compliance (member preview)",
+        heading: "Part 2: Security & compliance",
         body: [
           "6. How are credentials passed? Prefer servers that inject via environment variables; be wary of implementations that require writing a token into a config file — the latter leaks easily in multi-client setups.",
           "7. Any third-party hosted dependencies? Hosted servers (e.g. Firecrawl, Exa) mean your data passes through a third party's servers; evaluate their privacy policy…",
         ],
       },
       {
-        heading: "Part 3: Adoption cross-check (member)",
+        heading: "Part 3: Adoption cross-check",
         body: [
-          "This part covers: healthy ratio ranges between stars and downloads, how to spot \"star-farmed\" servers, how much weight to give awesome-list inclusions, and the cross-check table template we use internally.",
+          "Treat stars, downloads and forks as context rather than proof. Confirm that the package belongs to the linked repository, releases are recent, and independent users report successful setups.",
         ],
       },
       {
-        heading: "Appendix: due-diligence checklist template (member)",
+        heading: "Appendix: due-diligence checklist",
         body: [
-          "A 12-item due-diligence table you can copy straight into Notion / Lark Docs, with the data source and pass threshold for each item.",
+          "Record repository and package identity, last review date, license, required permissions, credential handling, network destinations, maintenance evidence, rollback plan and an owner for re-review.",
         ],
       },
     ],
@@ -148,7 +148,7 @@ export const GUIDES_EN: Record<string, GuideContent> = {
       {
         heading: "Red lines 1-3: credentials & permissions",
         body: [
-          "Red line 1: Requires storing credentials in plaintext in a config file. Legitimate MCP servers always read credentials via environment variables or the system keychain. The config-file approach scatters tokens to uncontrolled locations in multi-client setups like Claude Desktop.",
+          "Red line 1: Requires long-lived credentials in plaintext without explaining safer alternatives. Prefer scoped environment variables or a system keychain, and protect any client configuration that must contain a token.",
           "Red line 2: Requests permissions beyond what the feature needs. A \"read calendar\" server asking for write access, a \"query database\" server asking for DDL rights — reject outright.",
           "Red line 3: A hosted server that can't explain where data flows. When your prompts and returned data pass through a third party's servers, you must have a clear answer on whether they log it, how long they keep it, and what it's used for.",
         ],
@@ -157,7 +157,7 @@ export const GUIDES_EN: Record<string, GuideContent> = {
         heading: "Red lines 4-7: supply-chain risk",
         body: [
           "Red line 4: A remote-only server with no open-source repo. You can't audit what code it actually runs — you're handing permissions to a black box.",
-          "Red line 5: Install script of unknown provenance. Behind a one-line npx install is full package-execution permission; confirm the package name matches the official repo (typosquatting attacks happen monthly in the npm ecosystem).",
+          "Red line 5: Install script of unknown provenance. Behind a one-line npx install is package-execution permission; confirm the package name, publisher and repository before running it.",
           "Red line 6: Dependency chain too deep or containing known-vulnerable deps. Run npm audit; skip anything with unpatched high-severity vulnerabilities.",
           "Red line 7: Maintainer identity untraceable. Anonymous accounts, no prior projects, no community presence — the trust cost is on you.",
         ],
@@ -181,8 +181,8 @@ export const GUIDES_EN: Record<string, GuideContent> = {
       {
         heading: "Three deployment shapes",
         body: [
-          "Local stdio: the server runs as a child process on your machine, communicating over standard input/output. Data never leaves the machine; the trust model is simplest — you only need to trust the code itself.",
-          "Self-hosted HTTP: the server runs on your own servers, shared by the team. Data never leaves your infrastructure boundary, but you handle auth and high availability yourself.",
+          "Local stdio: the server runs as a child process on your machine. Transport is local, but the process can still read granted data or make outbound network requests; use OS permissions or a sandbox.",
+          "Self-hosted HTTP: the server runs on your infrastructure. You control the deployment boundary, but dependencies and configured integrations may still send data elsewhere; you also own auth and availability.",
           "Hosted remote: run by the official team or a third party, ready to use. Least effort, but data flows through a third party; the trust model is most complex — you trust the code, the operator, and their infrastructure at once.",
         ],
       },
@@ -212,20 +212,60 @@ export const GUIDES_EN: Record<string, GuideContent> = {
         heading: "Four new variables in production",
         body: [
           "In a demo an MCP server only needs to \"work\"; in production it must have controllable timeouts, retryable failures, bearable concurrency, and observable behavior.",
-          "We compiled a checklist distilled from 12 real production deployments (including 3 failed-rollback cases).",
+          "Use this checklist as a starting point and adapt thresholds to your workload, client behavior and recovery requirements.",
         ],
       },
       {
-        heading: "Stability config (member preview)",
+        heading: "Stability config",
         body: [
           "Timeouts: the MCP protocol doesn't enforce timeouts, so you must configure them client-side. We suggest a 30s default for tool calls, with long tasks declared explicitly…",
           "Retries: idempotent read-only tools can retry safely; write operations must implement a dedup key…",
         ],
       },
       {
-        heading: "Observability plan (member)",
+        heading: "Observability plan",
         body: [
           "A complete log-collection plan: which fields must be recorded (tool name, latency, token cost, error type), how to feed it into your existing APM, and our open-source JSON log schema.",
+        ],
+      },
+    ],
+  },
+
+  "best-mcp-servers-for-business": {
+    title: "Best MCP servers for business, sales and marketing",
+    excerpt:
+      "A ranked shortlist of MCP servers for CRM, ads, analytics, payments and email — scored on public maintenance and adoption signals, not on who paid us. The table is regenerated from live data, so it does not go stale.",
+    sections: [
+      {
+        heading: "How this list is built",
+        body: [
+          "Most \"best MCP server\" lists are somebody's handwritten opinion from six months ago. This one is generated from the same daily-collected dataset that powers the rest of this site, so when a project stops being maintained it drops off without anyone editing this page.",
+          "Two filters decide who appears. First, an adoption floor of 200 GitHub stars — a \"best\" list that includes projects nobody uses is padding. Second, the project must be classified as marketing or commerce and still be actively maintained; archived and stalled repos are excluded outright.",
+          "Whatever survives both filters is ordered by TrustScore, our five-dimension score over public signals (maintenance 30%, adoption 25%, usability 20%, health 15%, community 10%). The full weighting and every input field is published on our editorial policy page — you can disagree with the formula, but you can check it.",
+          "One caveat worth stating plainly: TrustScore measures maintenance and adoption, not security and not fitness for your use case. A high score means the project is alive and used, not that it is safe to point at your production CRM. Do your own review before connecting anything that holds customer data.",
+        ],
+      },
+      {
+        heading: "The shortlist",
+        body: [
+          "Ranked by TrustScore among actively-maintained marketing and commerce servers with at least 200 stars. Scores and star counts refresh daily.",
+        ],
+      },
+      {
+        heading: "How to choose between them",
+        body: [
+          "Start from the system that owns your data rather than from the server list. If your pipeline lives in HubSpot, a HubSpot server beats a higher-scoring generic one every time — the integration you don't have to build is worth more than a few TrustScore points.",
+          "For ads and analytics work, check whether the server exposes write operations or is read-only. Read-only analytics servers (pulling GA4 reports, for example) are low-risk and a reasonable first thing to connect. Anything that can spend money — creating campaigns, adjusting budgets — deserves a scoped API key and a hard look at what the tools actually do.",
+          "For payments, the calculus is different again: prefer official vendor servers over community reimplementations. Stripe and Shopify publish their own, and a payments integration is not where you want a well-meaning third-party wrapper sitting between you and the API.",
+          "Check the client compatibility section on each server's detail page before you commit. Most of these run locally over stdio and work with Claude Desktop, Claude Code, Cursor and VS Code, but the remote-only ones need a client that supports HTTP transport.",
+        ],
+      },
+      {
+        heading: "What this list deliberately leaves out",
+        body: [
+          "Servers under 200 stars, even well-built ones. The threshold is arbitrary but it has to be somewhere, and below it the signal from adoption gets too thin to rank on.",
+          "Anything archived or without a commit in a long time, regardless of how popular it once was. A dead payments integration is worse than no integration.",
+          "Two servers that our classifier tagged as commerce but which are not business tools at all — a trading-memory server and an API gateway. The classifier matches keywords in project descriptions, so \"unified billing\" and \"trading\" both trip the commerce rule. We exclude them by hand rather than pretend the classifier is perfect.",
         ],
       },
     ],

@@ -21,11 +21,23 @@ export interface GuideContent {
 /** 语言无关的结构信息。 */
 interface GuideMeta {
   slug: string;
-  /** free = 全文免费；member = 前 30% 免费 + Paywall */
+  /** 目前所有指南全文开放；未来如上线真实账号体系再启用 member。 */
   tier: "free" | "member";
   icon: string;
   publishedAt: string;
+  modifiedAt: string;
   readingMinutes: number;
+  /** best-of 类指南的榜单参数。有这个字段时，页面会在正文里插一张
+   *  由 data/servers.json 实时生成的榜单表——榜单不写死在文案里，
+   *  因为手写排名会过期，而且没法回答「凭什么是这个顺序」。 */
+  ranking?: {
+    categories: string[];
+    starsFloor: number;
+    /** 分类器误判的兜底排除（理由写在 lib/best-of.ts 的注释里）。 */
+    exclude?: string[];
+    /** 插在第几个 section 之后（0 = 全部正文之前）。 */
+    afterSection: number;
+  };
 }
 
 /** 组装后的指南（结构 + 某语言内容）。 */
@@ -37,12 +49,26 @@ export interface Guide extends GuideMeta, GuideContent {
 // 结构注册表：新增指南在这里加一条，再到 guides.zh.ts / guides.en.ts 补内容。
 const GUIDE_META: GuideMeta[] = [
   // SEO 承接文（全文免费）：教程词 / 对比词落地，喂搜索流量。
-  { slug: "claude-code-mcp-config", tier: "free", icon: "🛠️", publishedAt: "2026-07-23", readingMinutes: 7 },
-  { slug: "mcp-proxy-vs-gateway", tier: "free", icon: "🔀", publishedAt: "2026-07-23", readingMinutes: 6 },
-  { slug: "choosing-mcp-server", tier: "member", icon: "📋", publishedAt: "2026-07-14", readingMinutes: 12 },
-  { slug: "mcp-security-red-lines", tier: "free", icon: "🚨", publishedAt: "2026-07-07", readingMinutes: 8 },
-  { slug: "self-host-vs-remote", tier: "free", icon: "⚖️", publishedAt: "2026-06-30", readingMinutes: 6 },
-  { slug: "mcp-production-checklist", tier: "member", icon: "🚀", publishedAt: "2026-06-22", readingMinutes: 10 },
+  { slug: "claude-code-mcp-config", tier: "free", icon: "🛠️", publishedAt: "2026-07-23", modifiedAt: "2026-07-28", readingMinutes: 1 },
+  { slug: "mcp-proxy-vs-gateway", tier: "free", icon: "🔀", publishedAt: "2026-07-23", modifiedAt: "2026-07-28", readingMinutes: 1 },
+  { slug: "choosing-mcp-server", tier: "free", icon: "📋", publishedAt: "2026-07-14", modifiedAt: "2026-07-28", readingMinutes: 2 },
+  { slug: "mcp-security-red-lines", tier: "free", icon: "🚨", publishedAt: "2026-07-07", modifiedAt: "2026-07-28", readingMinutes: 3 },
+  { slug: "self-host-vs-remote", tier: "free", icon: "⚖️", publishedAt: "2026-06-30", modifiedAt: "2026-07-28", readingMinutes: 2 },
+  { slug: "mcp-production-checklist", tier: "free", icon: "🚀", publishedAt: "2026-06-22", modifiedAt: "2026-07-28", readingMinutes: 1 },
+  // best-of：榜单由数据生成（见 ranking 字段），正文只写「怎么选」和「怎么读这张表」。
+  // 200★ 门槛是实测定的：50★ 时 69 星的新仓库会压过 Stripe 和 Google Analytics。
+  {
+    slug: "best-mcp-servers-for-business",
+    tier: "free", icon: "📈",
+    publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4,
+    ranking: {
+      categories: ["marketing", "commerce"],
+      starsFloor: 200,
+      // 分类器按描述关键词匹配，"unified billing" / "trading" 都撞上了 commerce 规则。
+      exclude: ["io-github-mnemox-ai-tradememory-protocol", "io-github-qverisai-mcp"],
+      afterSection: 1,
+    },
+  },
 ];
 
 function contentFor(slug: string, locale: Locale): { content: GuideContent; translated: boolean } {
@@ -71,13 +97,11 @@ export function getGuideSlugs(): string[] {
   return GUIDE_META.map((m) => m.slug);
 }
 
+export function getGuideModifiedAt(slug: string): string | undefined {
+  return GUIDE_META.find((m) => m.slug === slug)?.modifiedAt;
+}
+
 export function getGuideBySlug(slug: string, locale: Locale): Guide | undefined {
   const meta = GUIDE_META.find((m) => m.slug === slug);
   return meta ? assemble(meta, locale) : undefined;
-}
-
-/** 会员文免费可见的段落数（约前 30%） */
-export function freeSectionCount(guide: Guide): number {
-  if (guide.tier === "free") return guide.sections.length;
-  return Math.max(1, Math.ceil(guide.sections.length * 0.3));
 }
