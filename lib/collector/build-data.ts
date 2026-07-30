@@ -16,6 +16,7 @@ import {
 } from "./score";
 import { classify } from "./classify";
 import { deriveClientCompat } from "./client-compat";
+import { readVerifications, applyVerifications } from "./install-verification";
 import { CURATED_SEEDS } from "./curated";
 import { DISCOVERED_SEEDS } from "./discovered";
 import {
@@ -562,9 +563,18 @@ export async function collectServers(
     }
   }
 
-  const final = Array.from(finalBySlug.values()).sort(
-    (a, b) => b.signals.stars - a.signals.stars,
-  );
+  // 沙箱验证结果由独立的 verify-install workflow 产出，这里只消费：
+  // 把实测过的 server 的 clientCompat.basis 升级成 verified，并挂上工具列表。
+  // 两边解耦——验证跑挂了不影响每日采集。
+  const verifications = readVerifications();
+  const final = applyVerifications(
+    Array.from(finalBySlug.values()),
+    verifications,
+  ).sort((a, b) => b.signals.stars - a.signals.stars);
+  if (verifications.size) {
+    const applied = final.filter((s) => s.installVerified).length;
+    console.log(`[collector] 沙箱验证结果 ${verifications.size} 条，已标记 verified ${applied} 个`);
+  }
   const finalSlugs = new Set(final.map((s) => s.slug));
   const added = final.filter((s) => !previousSlugs.has(s.slug));
   const removed = previousServers.filter((s) => !finalSlugs.has(s.slug));

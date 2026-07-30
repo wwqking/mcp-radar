@@ -432,6 +432,8 @@
     "viaRemote": "远程",
     "derivedNote": "依据 registry manifest 的包类型和 transport 推导，我们尚未实际安装验证。接入前请以官方 README 为准。",
     "verifiedNote": "✓ 表示我们在沙箱里装过并确认能启动；未标记的仅由 manifest 推导得出。",
+    "toolsTitle": "实测暴露 {n} 个工具",
+    "verifiedOn": "{date} 在干净沙箱中安装并启动成功 · 启动耗时 {sec}s · 未提供任何凭据，因此需要 API key 的工具在你那里表现可能不同。",
     "runnable": "可运行入口",
     "runnableYes": "可解析（npx/远程）",
     "runnableNo": "无法解析",

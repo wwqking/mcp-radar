@@ -101,6 +101,13 @@ export interface MCPServer {
   /** 能接哪些客户端。basis 区分 derived（按 manifest 推的）和 verified（沙箱实测）。
    *  空数组是合法结果——registry 没给足信息时不猜。 */
   clientCompat?: ClientCompat[];
+  /** 沙箱实测结果：真装过、真起来过、真列出过工具。只有 status=ok 的才写这里。 */
+  installVerified?: {
+    verifiedAt: string;
+    startupMs: number | null;
+    /** 实测拿到的工具名 —— 竞品抄不走的独家内容。 */
+    tools: string[];
+  };
   registryUrl: string;
   /** 一句策展判断（旧字段，i18n 兜底用）。新数据优先用 verdictKey 运行时按 locale 渲染。 */
   verdict: string;

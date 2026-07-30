@@ -1,0 +1,111 @@
+name: 安装验证（沙箱实测，开 PR）
+
+# 把 clientCompat 的 basis 从 derived（按 manifest 推的）升级成 verified（真装过）。
+# 对每个 npm 型 server 跑一次 MCP 握手：initialize → tools/list，记录能否启动、
+# 暴露哪些工具、启动耗时。这是「装不装得起来」这类竞品抄不走的独家内容。
+#
+# 为什么必须在 CI 跑而不是本机：
+#   这一步会执行从公开 registry 抓来的第三方包。GitHub runner 是一次性容器，
+#   跑完即销毁，且里面没有任何开发者凭据——这正是需要的隔离级别。
+#   本机跑等于拿自己的环境去执行几十个陌生包，不划算。
+#
+# 为什么开 PR 不直接 commit：
+#   验证结果会决定页面上打不打 ✓。误标一个 verified 就是在页面上撒谎，
+#   所以最后一道是人。PR 只改 data/install-verification.json，碰不到别的。
+#
+# runner 里不放任何 secrets：verify-install.mts 本身也会过滤环境变量白名单，
+# 但双保险——这个 job 压根不引用 secrets，只有开 PR 那步用 GITHUB_TOKEN。
+
+on:
+  schedule:
+    # UTC 周三 20:00 = 北京时间周四 04:00。避开每日采集(22:00)和候选发现(周一21:00)
+    - cron: "0 20 * * 3"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "验证多少个（按 stars 降序取 npm 型）"
+        required: false
+        default: "38"
+      force:
+        description: "true = 忽略已有结果全部重验"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: verify-install
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    # 每个 server 最多 90s，38 个最坏约 60 分钟；留足余量但不无限挂着。
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: 沙箱实测（执行第三方包，runner 内无凭据）
+        env:
+          VERIFY_LIMIT: ${{ github.event.inputs.limit || '38' }}
+          VERIFY_TIMEOUT_MS: "90000"
+          VERIFY_FORCE: ${{ github.event.inputs.force == 'true' && '1' || '' }}
+        run: npx tsx scripts/verify-install.mts
+
+      - name: 结果摘要写进 job summary
+        run: |
+          node -e '
+            const d = require("./data/install-verification.json");
+            const rows = d.results
+              .sort((a, b) => (b.toolCount || 0) - (a.toolCount || 0))
+              .map(r => `| ${r.slug} | ${r.status} | ${r.toolCount || "—"} | ${r.startupMs ? (r.startupMs/1000).toFixed(1)+"s" : "—"} | ${(r.error || "").slice(0,60)} |`)
+              .join("\n");
+            const md = [
+              `## 安装验证 ${d.verifiedAt}`,
+              "",
+              `ok **${d.ok}** · started **${d.started}** · failed **${d.failed}** （共 ${d.total}）`,
+              "",
+              "只有 ok 会把 basis 升级成 verified。started = 起来了但没列出工具（多半缺凭据），不升级。",
+              "",
+              "| server | 状态 | 工具数 | 启动 | 错误 |",
+              "|---|---|---:|---:|---|",
+              rows,
+            ].join("\n");
+            require("fs").appendFileSync(process.env.GITHUB_STEP_SUMMARY, md + "\n");
+            require("fs").writeFileSync("/tmp/pr-body.md", md + "\n");
+          '
+
+      - name: 有变化就开 PR
+        env:
+          GH_TOKEN: ${{ secrets.MCP_DISCOVER_PR_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain data/install-verification.json)" ]; then
+            echo "验证结果无变化，不开 PR"
+            exit 0
+          fi
+
+          BRANCH="verify/$(date -u +%Y-%m-%d)-${GITHUB_RUN_ID}"
+          git config user.name "mcp-radar-bot"
+          git config user.email "bot@mcpradars.com"
+          git checkout -b "$BRANCH"
+          git add data/install-verification.json
+          git commit -m "chore(verify): 安装验证结果 $(date -u +%Y-%m-%d)"
+          git push -u origin "$BRANCH"
+
+          gh pr create \
+            --title "安装验证结果 · $(date -u +%Y-%m-%d)" \
+            --body-file /tmp/pr-body.md \
+            --base master \
+            --head "$BRANCH"

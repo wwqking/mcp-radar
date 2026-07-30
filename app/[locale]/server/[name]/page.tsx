@@ -258,12 +258,15 @@ export default async function ServerDetailPage({ params }: Props) {
           {s.clientCompat?.length ? (
             <ClientCompatCard
               compat={s.clientCompat}
+              verified={s.installVerified}
               strings={{
                 compatTitle: d.compatTitle,
                 viaStdio: d.viaStdio,
                 viaRemote: d.viaRemote,
                 derivedNote: d.derivedNote,
                 verifiedNote: d.verifiedNote,
+                toolsTitle: d.toolsTitle,
+                verifiedOn: d.verifiedOn,
               }}
             />
           ) : null}
