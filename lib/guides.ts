@@ -83,6 +83,8 @@ const GUIDE_META: GuideMeta[] = [
   { slug: "rag-vs-mcp", tier: "free", icon: "🔍", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
   { slug: "a2a-vs-mcp", tier: "free", icon: "🔗", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
   { slug: "mcp-vs-cli", tier: "free", icon: "⌨️", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
+  { slug: "mcp-error-32001-timeout", tier: "free", icon: "⏱️", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
+  { slug: "mcp-server-hosting", tier: "free", icon: "☁️", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
   {
     slug: "awesome-mcp-servers",
     tier: "free", icon: "⭐",

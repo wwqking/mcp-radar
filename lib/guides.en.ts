@@ -439,6 +439,83 @@ export const GUIDES_EN: Record<string, GuideContent> = {
     ],
   },
 
+  "mcp-error-32001-timeout": {
+    title: "MCP error -32001: request timed out — causes and fixes",
+    excerpt:
+      "The -32001 error means an MCP request did not get a response within the time limit. It is a symptom, not a root cause — here is how to find out which of the usual culprits is behind it and what to do about each.",
+    sections: [
+      {
+        heading: "What -32001 actually is",
+        body: [
+          "-32001 is the MCP protocol's code for \"request timed out\". Your client sent a request — usually a tool call — and did not receive a response within the window it was willing to wait, so it gave up and surfaced this error.",
+          "The key thing to understand is that a timeout is a symptom. It tells you the server did not answer in time; it does not tell you why. The server might be slow, stuck, waiting on something external, or already dead. Debugging -32001 is a process of narrowing down which.",
+        ],
+      },
+      {
+        heading: "The common causes, roughly in order",
+        body: [
+          "A slow tool doing real work. Some tool calls genuinely take a while — a large web scrape, a heavy database query, a model call inside the server. If the operation legitimately needs 40 seconds and the client's timeout is 30, you get -32001 even though nothing is broken. This is the most common and most benign cause.",
+          "A server hung on startup or on an external dependency. If the server is waiting on an API that is itself slow or unreachable, the request never completes. This looks identical to a slow tool from the client's side, which is why you have to look at the server to tell them apart.",
+          "A server that crashed mid-request. If the process died after accepting the request, no response is ever coming, and the client waits out the full timeout before reporting -32001. Here the timeout is real but the timeout value is irrelevant — the fix is whatever crashed the server.",
+        ],
+      },
+      {
+        heading: "How to narrow it down",
+        body: [
+          "Run the tool's underlying operation directly, outside the MCP client, and time it. If it takes longer than your client's timeout, you have found the cause and the fix is to raise the timeout or make the operation faster — not to touch the MCP config.",
+          "Check whether the server is still alive after the error. A server that shows as connected but times out on every call is usually hung on a dependency; one that has disconnected crashed. The claude mcp list command (or your client's equivalent) tells you which.",
+          "Look at what the tool depends on. Timeouts that come and go with the same input often trace to a flaky external service rather than the server itself — in which case the MCP layer is the messenger, not the problem.",
+        ],
+      },
+      {
+        heading: "The fixes",
+        body: [
+          "If the operation is legitimately slow, raise the client's timeout for that server. Most clients let you configure this; the protocol itself does not impose a fixed limit, so the number is entirely up to the client.",
+          "If the server is hanging on an external call, the fix belongs in the server or the service it depends on, not in your config. A timeout inside the server (so it fails fast with a real error instead of hanging) turns a mysterious -32001 into a readable message.",
+          "If the server is crashing, run its command manually to see the actual error, exactly as you would for any server that fails to start. The timeout is downstream of the crash; fix the crash and the timeout goes away.",
+        ],
+      },
+    ],
+  },
+
+  "mcp-server-hosting": {
+    title: "Hosting an MCP server: local, self-hosted, or managed",
+    excerpt:
+      "MCP servers can run on your own machine, on infrastructure you host, or as a managed remote service. The three models differ in effort, security surface and who can reach them — here's how to choose.",
+    sections: [
+      {
+        heading: "The three ways to run a server",
+        body: [
+          "Local: the server runs as a process on the same machine as the client, launched on demand over stdio. This is how most MCP servers are used today, and for a single developer it is the simplest option — nothing to deploy, nothing exposed to the network.",
+          "Self-hosted remote: you run the server on your own infrastructure and clients reach it over HTTP. This makes sense when a team needs to share one server, or when the server needs to sit close to data that lives in your environment.",
+          "Managed remote: a vendor hosts the server and you connect to their endpoint, usually with OAuth. You trade control for not having to operate anything — the vendor handles uptime, updates and scaling.",
+        ],
+      },
+      {
+        heading: "When local is enough",
+        body: [
+          "If you are one person connecting a server to your own client, run it locally. Deploying a server to shared infrastructure to solve a single-user problem adds an attack surface, an uptime obligation and a maintenance burden for no benefit.",
+          "Local also keeps credentials on your machine rather than on a server others can reach, which for something like a filesystem or database server is a meaningful security advantage. The limit is simply that a local server is only available to that machine — nobody else can use it, and it is not running when your laptop is closed.",
+        ],
+      },
+      {
+        heading: "When to self-host a remote server",
+        body: [
+          "Self-hosting becomes worthwhile when multiple people or agents need the same server, or when the server must run somewhere specific — inside your network, next to a database, on a schedule independent of any laptop.",
+          "It comes with the responsibilities of any service you expose: authentication so that only authorized clients can connect, transport security so traffic is encrypted, and monitoring so you notice when it breaks. A remote MCP server with no auth in front of it is an open door to whatever it can do, which for a server holding real credentials is a serious risk. Our guide to MCP security red lines covers what not to skip.",
+        ],
+      },
+      {
+        heading: "When managed hosting makes sense",
+        body: [
+          "Managed hosting is the right call when the server is offered as a product by the vendor whose system it talks to — a SaaS company's official MCP server, hosted by them. You get first-party maintenance and no operational load, at the cost of routing your access through their infrastructure.",
+          "The trade-off to weigh is trust and data flow: a managed server sees the requests you send it, so for sensitive data you may prefer to self-host even when a managed option exists. For connecting to a vendor's own service you were already using, managed hosting usually adds no new exposure and saves real effort.",
+          "If your client only speaks stdio and the server is remote, you may need a bridge to connect the two — our guide to mcp-remote covers that case.",
+        ],
+      },
+    ],
+  },
+
   "rag-vs-mcp": {
     title: "RAG vs MCP: they solve different problems (and work together)",
     excerpt:
