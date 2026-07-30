@@ -55,12 +55,24 @@ function dedupeByRepo(servers: MCPServer[]): MCPServer[] {
 export function bestOf(
   servers: MCPServer[],
   categories: string[],
-  { starsFloor = 50, limit = 12, exclude = [] as string[] } = {},
+  {
+    starsFloor = 50,
+    limit = 12,
+    exclude = [] as string[],
+    requireOfficialRegistry = false,
+  } = {},
 ): BestOfList {
   const cats = new Set(categories);
   const skip = new Set(exclude);
   const pool = servers.filter(
-    (s) => s.lifecycle === "active" && (s.categories ?? []).some((c) => cats.has(c)),
+    (s) =>
+      s.lifecycle === "active" &&
+      (s.categories ?? []).some((c) => cats.has(c)) &&
+      // 跨品类的宽榜（"awesome mcp servers" 这类）必须要求 registry 验证过。
+      // 否则会捞到 star 数挂错的条目：实测有一条 registry 记录把 repoUrl
+      // 指向了 ChatGPTNextWeb/NextChat（88k★，跟它毫无关系），
+      // 靠 star 排序时直接冲到榜首。窄品类榜池子小、人眼能扫完，不强制。
+      (!requireOfficialRegistry || Boolean(s.signals?.inOfficialRegistry)),
   );
   const eligible = dedupeByRepo(pool)
     .filter((s) => !skip.has(s.slug))

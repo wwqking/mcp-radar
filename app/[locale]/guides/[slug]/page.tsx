@@ -45,6 +45,7 @@ export default async function GuideArticlePage({ params }: Props) {
     ? bestOf(await getAllServers(), g.ranking.categories, {
         starsFloor: g.ranking.starsFloor,
         exclude: g.ranking.exclude,
+        requireOfficialRegistry: g.ranking.requireOfficialRegistry,
       })
     : null;
 

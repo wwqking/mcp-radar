@@ -35,6 +35,8 @@ interface GuideMeta {
     starsFloor: number;
     /** 分类器误判的兜底排除（理由写在 lib/best-of.ts 的注释里）。 */
     exclude?: string[];
+    /** 跨品类宽榜要打开，挡掉 star 数挂错的条目。 */
+    requireOfficialRegistry?: boolean;
     /** 插在第几个 section 之后（0 = 全部正文之前）。 */
     afterSection: number;
   };
@@ -66,6 +68,28 @@ const GUIDE_META: GuideMeta[] = [
       starsFloor: 200,
       // 分类器按描述关键词匹配，"unified billing" / "trading" 都撞上了 commerce 规则。
       exclude: ["io-github-mnemox-ai-tradememory-protocol", "io-github-qverisai-mcp"],
+      afterSection: 1,
+    },
+  },
+  // 甜蜜区内容页（KD<=30 且有量）。词源见
+  // research/mcpradars/seo/run-2026-07-29/CONTENT-PAGE-PLAN.csv
+  { slug: "cursor-mcp-spawn-npx-enoent", tier: "free", icon: "🩺", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
+  { slug: "claude-mcp-list-command", tier: "free", icon: "📟", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
+  { slug: "youtube-transcript-for-claude", tier: "free", icon: "🎬", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
+  { slug: "mcp-remote", tier: "free", icon: "🌉", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
+  {
+    slug: "awesome-mcp-servers",
+    tier: "free", icon: "⭐",
+    publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3,
+    // 这个词搜的是「给我一份清单」，所以主体就该是数据榜，不是散文。
+    ranking: {
+      categories: ["dev", "ai", "search", "files", "database", "browser", "comms", "cloud"],
+      starsFloor: 1000,
+      requireOfficialRegistry: true,
+      // registry 里这条把 repository 填成了 ChatGPTNextWeb/NextChat（88k★，
+      // 与它无关），于是靠 star 排序时冲到榜首。错在上游 manifest，我们改不了，
+      // 但也不该替它把 8.8 万 star 当成自己的展示出去。
+      exclude: ["com-ainetcafe-ai-netcafe"],
       afterSection: 1,
     },
   },

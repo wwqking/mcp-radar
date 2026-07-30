@@ -270,4 +270,210 @@ export const GUIDES_EN: Record<string, GuideContent> = {
       },
     ],
   },
+
+  "cursor-mcp-spawn-npx-enoent": {
+    title: "Fixing \"spawn npx ENOENT\" in Cursor's MCP config",
+    excerpt:
+      "Cursor reports spawn npx ENOENT when it cannot find the npx binary — almost always a PATH problem caused by how GUI apps are launched, not a broken server. Here is how to confirm the cause and the three fixes that work.",
+    sections: [
+      {
+        heading: "What the error actually means",
+        body: [
+          "ENOENT is \"Error NO ENTity\" — the operating system could not find the file it was asked to execute. When Cursor prints spawn npx ENOENT, the missing file is npx itself, not your MCP server. The server never started, so nothing about the server's code or config is at fault yet.",
+          "This matters because the obvious next move — reinstalling the MCP server, or rewriting its arguments — cannot possibly help. The failure happens one step earlier, when Cursor tries to launch the process at all.",
+          "The reason it happens on a machine where npx clearly works: a GUI application launched from Finder, Spotlight or the Dock does not inherit the PATH from your shell profile. Your terminal reads ~/.zshrc and picks up nvm, Homebrew or fnm; Cursor, launched by the window manager, gets a much shorter system PATH that usually contains only /usr/bin, /bin, /usr/sbin and /sbin. If node was installed through a version manager, it lives somewhere else entirely and is invisible to Cursor.",
+        ],
+      },
+      {
+        heading: "Confirm it in ten seconds",
+        body: [
+          "Run `which npx` in your terminal and note the path. If it contains .nvm, .fnm, .volta, or /opt/homebrew, you have just confirmed the diagnosis: that directory is almost certainly not on the PATH Cursor sees.",
+          "For a definitive check, open Cursor's own integrated terminal and run `echo $PATH` there, then compare it with `echo $PATH` in your normal terminal. On macOS the two are frequently different. The integrated terminal usually does load your profile, so it is not a perfect proxy for what the MCP subprocess sees, but a difference here is a strong signal.",
+        ],
+      },
+      {
+        heading: "Fix 1 — use an absolute path (most reliable)",
+        body: [
+          "Rather than hoping Cursor can resolve npx, tell it exactly where the binary is. Take the output of `which npx` and put it in the command field verbatim.",
+          "This is the fix we recommend first because it does not depend on shell configuration, survives restarts, and behaves identically whether Cursor was opened from the Dock or the command line. Its one downside is that the path embeds a Node version if you use nvm, so it will need updating when you upgrade Node — a worthwhile trade for a config that actually works.",
+          "The same applies to uvx for Python-based servers: use the absolute path there too.",
+        ],
+      },
+      {
+        heading: "Fix 2 — launch Cursor from the terminal",
+        body: [
+          "Starting Cursor with the `cursor` command from a shell means it inherits that shell's full environment, including the PATH that makes npx resolvable. This is useful for confirming the diagnosis quickly, but it is a poor permanent fix: the moment you open Cursor from the Dock out of habit, the error is back.",
+          "Treat this as a diagnostic step rather than a solution. If launching from the terminal fixes it, you have proven the problem is PATH inheritance and can then apply fix 1 or 3 properly.",
+        ],
+      },
+      {
+        heading: "Fix 3 — install Node system-wide",
+        body: [
+          "If you do not need multiple Node versions, installing Node from the official installer places it in /usr/local/bin, which is on the default PATH that GUI applications see. This removes the class of problem entirely rather than working around it.",
+          "This is the wrong choice if you rely on nvm to switch versions per project, since a system-wide install can shadow your managed versions and cause confusing mismatches. For most people who hit this error while just trying to get one MCP server running, it is the simplest permanent answer.",
+        ],
+      },
+      {
+        heading: "If it still fails after all three",
+        body: [
+          "Check that the package name in your config actually exists. A typo produces a different but easily-confused error: npx will resolve fine, then fail to find the package, which surfaces as a non-zero exit rather than ENOENT. If the message changed after applying a fix above, you have made progress and are now debugging a different problem.",
+          "On Windows, ENOENT more often means npx.cmd rather than npx — the extension matters, and some configs need the full `npx.cmd` name or a shell wrapper.",
+          "Finally, verify the server itself is installable at all by running the exact command from your config in a terminal. If it fails there too, the problem is the server or the package, and the Cursor configuration was never the issue.",
+        ],
+      },
+    ],
+  },
+
+  "claude-mcp-list-command": {
+    title: "claude mcp list: checking which MCP servers are actually connected",
+    excerpt:
+      "The claude mcp list command shows which servers Claude Code has registered and whether each one is connecting. A reference for the command, how to read its output, and what to do when a server shows as failed.",
+    sections: [
+      {
+        heading: "What the command does",
+        body: [
+          "`claude mcp list` prints every MCP server registered with Claude Code along with its connection state. It answers the question people usually have at that moment: I edited a config, did it take effect?",
+          "It is worth understanding that registration and connection are separate things. A server can be correctly registered — it appears in the list — and still fail to connect, because connecting means actually launching the process and completing the MCP handshake. The list command is the fastest way to see which of those two stages you are stuck at.",
+        ],
+      },
+      {
+        heading: "Reading the output",
+        body: [
+          "Each entry shows the server name you registered it under, the command used to start it, and a status. A connected server has completed the initialize handshake and its tools are available to the model. A failed server was launched but did not respond as expected — the process may have exited immediately, or crashed while starting.",
+          "If a server you just added is missing from the list entirely, the config was not read. That points at editing the wrong file or the wrong scope, not at the server itself.",
+        ],
+      },
+      {
+        heading: "The related commands you will need",
+        body: [
+          "`claude mcp add <name> -- <command>` registers a server. The double dash matters: everything after it is the command Claude Code will run, so flags belonging to the server are not mistaken for flags belonging to Claude.",
+          "`claude mcp remove <name>` unregisters one. Useful when a half-configured server is failing on every start and cluttering the output.",
+          "`claude mcp get <name>` shows the full configuration for a single server, which is the quickest way to confirm that arguments and environment variables were stored the way you intended rather than mangled by shell quoting.",
+        ],
+      },
+      {
+        heading: "When a server shows as failed",
+        body: [
+          "Run the server's command directly in a terminal first. If it fails there, the problem is the server or its package and has nothing to do with Claude Code — you have just saved yourself from debugging the wrong layer.",
+          "If it runs fine in the terminal but fails under Claude Code, suspect the environment. Servers that need an API key fail at startup when the key was not passed through, and a PATH that works in your shell may not be available to a GUI-launched client. The same class of problem produces the spawn npx ENOENT error in Cursor, and the diagnosis is the same.",
+          "A server that starts but exposes no tools is usually waiting on credentials rather than broken. Our detail pages record the tools each server exposed when we installed it in a clean sandbox with no credentials — comparing that list against what you see is a quick way to tell \"this server needs configuration\" from \"this server is misbehaving\".",
+        ],
+      },
+    ],
+  },
+
+  "youtube-transcript-for-claude": {
+    title: "How to get a YouTube transcript into Claude",
+    excerpt:
+      "Three ways to give Claude the text of a YouTube video — copy-paste, an MCP server that fetches transcripts on demand, or a download tool — with the trade-offs and limits of each.",
+    sections: [
+      {
+        heading: "The quickest way, with no setup",
+        body: [
+          "YouTube generates transcripts for most videos automatically. Open the video, expand the description, and use \"Show transcript\" — you can select the text and paste it into Claude directly. For a single video this beats installing anything.",
+          "Two caveats. Auto-generated transcripts have no punctuation and mis-hear proper nouns and jargon, so a technical talk may arrive noticeably garbled. And a long video produces a lot of text: an hour of speech is roughly 9,000 words, which is fine for Claude's context window but will crowd out other material in a long conversation.",
+          "Pasting also loses timestamps unless you keep them, which matters if you want to ask \"where in the video does she talk about X\" rather than just summarizing.",
+        ],
+      },
+      {
+        heading: "Using an MCP server instead",
+        body: [
+          "If you do this regularly, an MCP server lets you give Claude a URL and have it fetch the transcript itself. The practical difference is not effort per video so much as what becomes possible: Claude can pull several videos in one conversation, or fetch a transcript midway through a task without you leaving the chat.",
+          "Transcript servers are generally read-only and need no API key, which makes them one of the lower-risk things to connect. They work by requesting the caption track YouTube already publishes, so they are subject to the same limitation as the manual approach — a video with captions disabled has nothing to fetch, and no server can work around that.",
+          "Search our catalog for YouTube transcript servers and check the detail page before installing. The maintenance signals matter here more than usual: this category depends on an undocumented YouTube endpoint, so a server that stopped being updated is likely to be broken rather than merely stale.",
+        ],
+      },
+      {
+        heading: "When the video has no captions",
+        body: [
+          "Some videos genuinely have no caption track — the uploader disabled them, or the video is too new for YouTube's automatic pass. In that case there is no transcript to fetch by any method, and the remaining option is to transcribe the audio yourself with a speech-to-text tool, then paste the result.",
+          "This is worth knowing before you start debugging: a transcript server returning nothing for one specific video is usually correct behavior, not a bug.",
+        ],
+      },
+      {
+        heading: "Which approach to pick",
+        body: [
+          "For one video, paste it. Setting up an MCP server to summarize a single talk is strictly more work than selecting text.",
+          "For repeated research across many videos, install a server. The break-even is somewhere around the third or fourth video in a session.",
+          "For anything where accuracy of specific quotes matters, verify against the video itself regardless of method. Auto-generated captions are good enough to summarize from and not good enough to quote from.",
+        ],
+      },
+    ],
+  },
+
+  "mcp-remote": {
+    title: "mcp-remote: connecting stdio-only clients to remote MCP servers",
+    excerpt:
+      "mcp-remote is a proxy that lets MCP clients which only speak stdio connect to remote HTTP servers, handling OAuth along the way. What it does, when you need it, and when you do not.",
+    sections: [
+      {
+        heading: "The problem it solves",
+        body: [
+          "MCP servers come in two shapes. Local ones run as a process on your machine and talk over stdio — standard input and output. Remote ones are hosted somewhere and speak HTTP. These are different transports, and a client built for one cannot talk to the other.",
+          "That becomes a problem when the server you want is remote-only but your client only supports stdio. mcp-remote sits between them: your client launches it as an ordinary local stdio process, and it forwards everything to the remote server over HTTP, translating in both directions.",
+          "It also handles the OAuth flow that hosted servers typically require, which is the part that is genuinely awkward to do yourself. On first connection it opens a browser for you to authorize, then keeps the resulting token for subsequent runs.",
+        ],
+      },
+      {
+        heading: "How you configure it",
+        body: [
+          "You do not install mcp-remote as a server in its own right. It goes in the command position of a normal server entry, with the remote server's URL as its argument — so from the client's point of view it is just another local stdio server that happens to be a bridge.",
+          "Because it runs through npx, everything in our guide to npx PATH problems applies: if your client cannot find npx, mcp-remote will fail to start with an ENOENT error before it ever reaches the network.",
+        ],
+      },
+      {
+        heading: "When you do not need it",
+        body: [
+          "Check your client's native support first. Claude Desktop, Claude Code, Cursor and VS Code have all added remote server support, and where a client can connect directly, going through a proxy adds a moving part for no benefit. Our detail pages list which transports each server offers, so you can see whether a direct connection is available.",
+          "You also do not need it for local servers, which is a surprisingly common mistake. If the server runs on your machine via npx or uvx, it already speaks stdio and there is nothing to bridge.",
+        ],
+      },
+      {
+        heading: "What to watch out for",
+        body: [
+          "A proxy is one more thing that can break, and it fails in ways that are harder to read than a direct connection: an authentication failure at the remote end may surface as a generic startup error locally. When debugging, establish whether the remote server is reachable at all before investigating the bridge.",
+          "The stored OAuth token is a credential sitting on your disk. Treat it with the same care as an API key, and revoke it at the provider if you stop using the server.",
+          "Latency is added on every tool call, which is usually irrelevant but can matter for chatty tools that make many small requests. If a remote server feels slow through the bridge, that is expected rather than a misconfiguration.",
+        ],
+      },
+    ],
+  },
+
+  "awesome-mcp-servers": {
+    title: "Awesome MCP servers: a maintained list, ranked by real signals",
+    excerpt:
+      "A curated list of MCP servers that are actually maintained and actually used — generated from daily-collected GitHub, npm and registry data rather than hand-edited, so entries drop off when projects die.",
+    sections: [
+      {
+        heading: "Why another list",
+        body: [
+          "The awesome-* convention has served open source well, but it has a known failure mode: the list is a file in a repository, and files do not notice when the projects they link to are abandoned. Popular awesome lists routinely carry entries that stopped being maintained a year ago, because removing something requires a human to notice and open a pull request.",
+          "This list is generated instead. It comes from the same dataset that powers the rest of this site, refreshed daily, so a project that stops getting commits or gets archived simply stops appearing here. Nobody has to remember to remove it.",
+          "The trade-off is that a generated list cannot capture taste. It cannot tell you that one server has a nicer API than another, or that a particular maintainer is responsive. For that, read the detail pages and the repositories themselves — this list is a filter, not a verdict.",
+        ],
+      },
+      {
+        heading: "The list",
+        body: [
+          "Actively-maintained servers with at least 1,000 stars that are verified in the official MCP registry, ordered by TrustScore. Refreshed daily.",
+        ],
+      },
+      {
+        heading: "How to read it",
+        body: [
+          "TrustScore combines five dimensions of public data: maintenance activity, adoption, usability, repository health and community signals. The weighting is published in full on our editorial policy page. It measures whether a project is alive and used — not whether it is secure, and not whether it fits your particular problem.",
+          "Star counts are included alongside the score because the two answer different questions. A high score with modest stars usually means a well-run but niche project; high stars with a middling score often means something popular that has slowed down. Neither is inherently better.",
+          "The clients column shows how many MCP clients the server can connect to, derived from the package type and transport it declares. A check mark means we installed it in a sandbox and confirmed it starts — measured, not inferred.",
+        ],
+      },
+      {
+        heading: "What is filtered out, and why",
+        body: [
+          "Projects under 1,000 stars. This list is deliberately a high bar; our full catalog covers everything else and lets you filter by category.",
+          "Anything not verified in the official registry. For a broad cross-category list this filter does real work — it removes entries whose metadata nobody has checked.",
+          "One entry that is registry-verified but declares a repository it does not own: its manifest points at an unrelated project with 88,000 stars, which would have placed it near the top on borrowed adoption. The error is upstream in the registry and we cannot fix it there, but we are not going to republish someone else's stars as theirs.",
+        ],
+      },
+    ],
+  },
 };
