@@ -15,7 +15,15 @@ export interface RegistryServer {
   description?: string;
   version?: string;
   repository?: { url: string; source?: string };
-  packages?: Array<{ registryType?: string; registry_name?: string; identifier?: string; name?: string; version?: string }>;
+  packages?: Array<{
+    registryType?: string;
+    registry_name?: string;
+    identifier?: string;
+    name?: string;
+    version?: string;
+    /** stdio / streamable-http / sse。决定这个包能接哪些客户端。 */
+    transport?: { type?: string };
+  }>;
   remotes?: Array<{ type: string; url: string }>;
 }
 
@@ -44,6 +52,22 @@ export interface RemoteEndpoint {
   url: string;
 }
 
+/** 可安装包 —— 客户端兼容性判定的原始证据。
+ *
+ *  为什么要保留而不是压成 hasPackage 布尔：判断「这个 server 能不能接
+ *  Claude Desktop」需要知道 registryType（npm/pypi/oci 决定用 npx/uvx/docker）
+ *  和 transport（stdio 才能本地起进程，streamable-http 走远程）。
+ *  压成布尔之后这些全丢了，只能靠猜——而猜出来的兼容性声明正是不能上页的东西。 */
+export interface InstallablePackage {
+  /** npm / pypi / oci / nuget … */
+  registryType: string;
+  /** 包名，如 `@modelcontextprotocol/server-filesystem` */
+  identifier: string;
+  version: string | null;
+  /** stdio / streamable-http / sse；registry 未声明时为 null（不猜） */
+  transport: string | null;
+}
+
 /** registry 富化后的一条候选（钥匙 + 官方元信息） */
 export interface RegistryCandidate {
   name: string;
@@ -52,6 +76,10 @@ export interface RegistryCandidate {
   repoUrl: string | null;
   /** 首个 npm 包名（用于 npm 富化） */
   npmPackage: string | null;
+  /** Registry manifest 是否提供任一可安装 package（不限于 npm）。 */
+  hasPackage: boolean;
+  /** 全部可安装包（含 registryType / transport），客户端兼容性判定的证据源。 */
+  packages: InstallablePackage[];
   /** 纯 remotes 型（无仓库/无包）→ 无法审计 */
   remoteOnly: boolean;
   /** 托管端点：有这个就能不装包直接连（remote MCP server）。
@@ -72,11 +100,28 @@ function pickNpmPackage(s: RegistryServer): string | null {
   return npm.identifier ?? npm.name ?? null;
 }
 
+/** 保留 registry 声明的安装包原样，缺字段留 null——不猜、不填默认值。
+ *  identifier 缺失的条目直接丢：没有包名就装不了，留着只会污染兼容性判定。 */
+function toInstallablePackages(s: RegistryServer): InstallablePackage[] {
+  return (s.packages ?? []).flatMap((p) => {
+    const identifier = p.identifier ?? p.name;
+    const registryType = p.registryType ?? p.registry_name;
+    if (!identifier || !registryType) return [];
+    return [{
+      registryType: registryType.toLowerCase(),
+      identifier,
+      version: p.version ?? null,
+      transport: p.transport?.type?.toLowerCase() ?? null,
+    }];
+  });
+}
+
 function toCandidate(item: RegistryItem): RegistryCandidate {
   const s = item.server;
   const official = item._meta?.["io.modelcontextprotocol.registry/official"];
   const repoUrl = s.repository?.url ?? null;
   const npmPackage = pickNpmPackage(s);
+  const packages = toInstallablePackages(s);
   const hasPackage = (s.packages?.length ?? 0) > 0;
   const remoteEndpoints = (s.remotes ?? [])
     .filter((r) => r.type && r.url)
@@ -87,6 +132,8 @@ function toCandidate(item: RegistryItem): RegistryCandidate {
     description: s.description ?? "",
     repoUrl,
     npmPackage,
+    hasPackage,
+    packages,
     remoteOnly: !repoUrl && !hasPackage,
     remoteEndpoints,
     status: official?.status ?? "unknown",

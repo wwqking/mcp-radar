@@ -7,8 +7,15 @@ import type { MCPServer, HealthSignals, Lifecycle } from "../types";
 import { fetchRegistryCandidates, parseGithubRepo, type RegistryCandidate } from "./registry";
 import { fetchGithubHealth, fetchReadmeFacts } from "./github";
 import { fetchNpmAdoption } from "./npm";
-import { computeBreakdown, computeTrustScore, computeLifecycle, computeVerdict } from "./score";
+import {
+  computeBreakdown,
+  computeTrustScore,
+  computeLifecycle,
+  computeVerdict,
+  issueResponseRate,
+} from "./score";
 import { classify } from "./classify";
+import { deriveClientCompat } from "./client-compat";
 import { CURATED_SEEDS } from "./curated";
 import { DISCOVERED_SEEDS } from "./discovered";
 import {
@@ -59,11 +66,16 @@ function todayIso(): string {
 }
 
 /** 无 GitHub 数据时的兜底 signals（纯 remotes / repo 拿不到） */
-function emptySignals(cand: RegistryCandidate, auditable: boolean): HealthSignals {
+function emptySignals(
+  cand: RegistryCandidate,
+  auditable: boolean,
+  inOfficialRegistry: boolean,
+): HealthSignals {
   return {
     lastCommitDaysAgo: null,
     commits90d: null,
     issueResponseDays: null,
+    issueResponseRatePct: null,
     archived: false,
     stars: 0,
     starsWeeklyDelta: 0,
@@ -74,14 +86,19 @@ function emptySignals(cand: RegistryCandidate, auditable: boolean): HealthSignal
     license: null,
     contributors: null,
     forks: null,
-    inOfficialRegistry: true,
-    hasRunnableEntry: !!cand.npmPackage || cand.remoteOnly,
+    inOfficialRegistry,
+    officialRegistryVerifiedAt: inOfficialRegistry ? todayIso() : null,
+    hasRunnableEntry: cand.hasPackage || cand.remoteEndpoints.length > 0,
     repoAuditable: auditable,
     dataUpdatedAt: todayIso(),
   };
 }
 
-async function enrichOne(cand: RegistryCandidate): Promise<MCPServer> {
+async function enrichOne(
+  cand: RegistryCandidate,
+  inOfficialRegistry: boolean,
+  allowReadmeFacts: boolean,
+): Promise<MCPServer> {
   const gh = parseGithubRepo(cand.repoUrl);
   const auditable = !!gh;
 
@@ -91,7 +108,7 @@ async function enrichOne(cand: RegistryCandidate): Promise<MCPServer> {
   if (gh) {
     const [health, readme] = await Promise.all([
       fetchGithubHealth(gh.owner, gh.repo),
-      fetchReadmeFacts(gh.owner, gh.repo),
+      allowReadmeFacts ? fetchReadmeFacts(gh.owner, gh.repo) : Promise.resolve(null),
     ]);
     readmeFacts = readme ?? undefined;
     const npm = cand.npmPackage ? await fetchNpmAdoption(cand.npmPackage) : null;
@@ -100,7 +117,8 @@ async function enrichOne(cand: RegistryCandidate): Promise<MCPServer> {
       signals = {
         lastCommitDaysAgo: health.lastCommitDaysAgo,
         commits90d: health.commits90d,
-        issueResponseDays: health.issueResponseDays,
+        issueResponseDays: null,
+        issueResponseRatePct: health.issueResponseRatePct,
         archived: health.archived,
         stars: health.stars,
         starsWeeklyDelta: 0, // 需两次快照做 diff，先 0（雷达 diff 是后续 cron 的事）
@@ -111,18 +129,19 @@ async function enrichOne(cand: RegistryCandidate): Promise<MCPServer> {
         license: health.license,
         contributors: health.contributors,
         forks: health.forks,
-        inOfficialRegistry: true,
-        hasRunnableEntry: !!cand.npmPackage || auditable,
+        inOfficialRegistry,
+        officialRegistryVerifiedAt: inOfficialRegistry ? todayIso() : null,
+        hasRunnableEntry: cand.hasPackage || cand.remoteEndpoints.length > 0,
         repoAuditable: true,
         dataUpdatedAt: todayIso(),
       };
     } else {
       // repo 拿不到（限流/私有/404）→ 当作无法富化
-      signals = emptySignals(cand, false);
+      signals = emptySignals(cand, false, inOfficialRegistry);
     }
   } else {
     // 纯 remotes 型
-    signals = emptySignals(cand, false);
+    signals = emptySignals(cand, false, inOfficialRegistry);
   }
 
   const breakdown = computeBreakdown(signals);
@@ -159,6 +178,9 @@ async function enrichOne(cand: RegistryCandidate): Promise<MCPServer> {
     signals,
     repoUrl: cand.repoUrl,
     npmPackage: cand.npmPackage,
+    hasPublishedPackage: cand.hasPackage,
+    packages: cand.packages,
+    clientCompat: deriveClientCompat(cand.packages, cand.remoteEndpoints),
     registryUrl: REGISTRY_URL,
     verdict,
     verdictKey: lifecycle,
@@ -180,6 +202,13 @@ function seedToCandidate(seed: (typeof CURATED_SEEDS)[number]): RegistryCandidat
     description: "",
     repoUrl: seed.repoUrl,
     npmPackage: seed.npmPackage,
+    hasPackage: !!seed.npmPackage,
+    // 白名单只手工维护了包名，没有版本和 transport。npm 包不声明 transport 时
+    // 按 MCP 默认形态当 stdio 处理（这也是 npx 能直接起的前提）；版本留 null，
+    // 安装命令就不带 @version —— 宁可给不带版本的真命令，也不编一个版本号。
+    packages: seed.npmPackage
+      ? [{ registryType: "npm", identifier: seed.npmPackage, version: null, transport: "stdio" }]
+      : [],
     remoteOnly: false,
     // 白名单是「本地装包跑」的开源 server；托管端点由 registry 侧提供，这里恒空。
     remoteEndpoints: [],
@@ -192,6 +221,7 @@ function seedToCandidate(seed: (typeof CURATED_SEEDS)[number]): RegistryCandidat
 interface SourcedCandidate {
   candidate: RegistryCandidate;
   source: CatalogSource;
+  inOfficialRegistry: boolean;
 }
 
 function mergeRemoteEndpoints(
@@ -208,6 +238,16 @@ function mergeRemoteEndpoints(
 }
 
 /** 高优先级种子保留 repo/package，同时用 Registry 补齐描述、发布日期和 remote endpoint。 */
+/** 两条候选是不是同一个仓库。任一边没有 repoUrl 就判否——
+ *  「不知道」不能当成「是」，这正是同名不同人被误合并的入口。 */
+function sameRepo(a: RegistryCandidate, b: RegistryCandidate): boolean {
+  const norm = (u: string | null) =>
+    u?.toLowerCase().replace(/^https?:\/\//, "").replace(/\.git$/, "").replace(/\/+$/, "") ?? null;
+  const x = norm(a.repoUrl);
+  const y = norm(b.repoUrl);
+  return x !== null && x === y;
+}
+
 function supplementCandidate(
   primary: RegistryCandidate,
   secondary: RegistryCandidate,
@@ -220,7 +260,18 @@ function supplementCandidate(
     description: primary.description || secondary.description,
     repoUrl,
     npmPackage,
-    remoteOnly: !repoUrl && !npmPackage,
+    hasPackage: primary.hasPackage || secondary.hasPackage,
+    // 种子只手工记了包名（常常是 null），registry 才有 registryType/version/transport，
+    // 所以要把 registry 的安装证据补进来。
+    //
+    // ⚠️ 但只在两边确实是同一个仓库时补。同名不同人的情况是真实存在的：
+    // 种子里的 jupyter-mcp-server 是 datalayer/（★1227），registry 里叫这个名字的
+    // 是 ChengJiale150/ —— 两个不同的项目。无条件合并会把别人的包挂到这个 server 上，
+    // 页面上就会出现一条装了也跑不起来的安装命令。仓库对不上时宁可没有兼容性数据。
+    packages: primary.packages.length
+      ? primary.packages
+      : sameRepo(primary, secondary) ? secondary.packages : [],
+    remoteOnly: !repoUrl && !(primary.hasPackage || secondary.hasPackage),
     remoteEndpoints: mergeRemoteEndpoints(primary.remoteEndpoints, secondary.remoteEndpoints),
     status: secondary.status || primary.status,
     publishedAt: primary.publishedAt ?? secondary.publishedAt,
@@ -235,9 +286,14 @@ function buildCandidateCatalog(registryCandidates: RegistryCandidate[]): Sourced
     const existing = byName.get(candidate.name);
     if (existing) {
       existing.candidate = supplementCandidate(existing.candidate, candidate);
+      if (source === "registry") existing.inOfficialRegistry = true;
       return;
     }
-    byName.set(candidate.name, { candidate, source });
+    byName.set(candidate.name, {
+      candidate,
+      source,
+      inOfficialRegistry: source === "registry",
+    });
   };
 
   for (const seed of CURATED_SEEDS) add(seedToCandidate(seed), "curated");
@@ -245,16 +301,22 @@ function buildCandidateCatalog(registryCandidates: RegistryCandidate[]): Sourced
   for (const candidate of registryCandidates) add(candidate, "registry");
 
   // URL 最终按 slug 唯一。极少数不同名字会 slug 碰撞，保留高优先级来源先出现的那条。
-  const seenSlugs = new Set<string>();
+  const bySlug = new Map<string, SourcedCandidate>();
   const out: SourcedCandidate[] = [];
   let slugCollisions = 0;
   for (const item of Array.from(byName.values())) {
     const slug = slugify(item.candidate.name);
-    if (seenSlugs.has(slug)) {
+    const kept = bySlug.get(slug);
+    if (kept) {
       slugCollisions++;
+      // 碰撞的两条是同一个东西的不同写法（`MCPJungle` vs
+      // `io.github.mcpjungle/MCPJungle`）。名字保留高优先级来源的，但要把落败那条
+      // 的元数据并进来，否则 registry 的 packages/remotes 会随它一起被丢掉。
+      kept.candidate = supplementCandidate(kept.candidate, item.candidate);
+      if (item.source === "registry") kept.inOfficialRegistry = true;
       continue;
     }
-    seenSlugs.add(slug);
+    bySlug.set(slug, item);
     out.push(item);
   }
   if (slugCollisions > 0) {
@@ -276,7 +338,11 @@ function dataAge(s: MCPServer | undefined): number {
  * 用最新 Registry 元数据刷新旧条目，但不需要为此调用 GitHub。
  * 健康信号留到轮转富化时更新。
  */
-function refreshMetadata(previous: MCPServer, cand: RegistryCandidate): MCPServer {
+function refreshMetadata(
+  previous: MCPServer,
+  cand: RegistryCandidate,
+  inOfficialRegistry: boolean,
+): MCPServer {
   const description = cand.description || previous.description;
   const tagline =
     cand.title && cand.title !== cand.name
@@ -293,10 +359,15 @@ function refreshMetadata(previous: MCPServer, cand: RegistryCandidate): MCPServe
     categories: classify(cand.name, description),
     repoUrl: cand.repoUrl ?? previous.repoUrl,
     npmPackage: cand.npmPackage ?? previous.npmPackage,
+    hasPublishedPackage: cand.hasPackage,
+    packages: cand.packages,
+    clientCompat: deriveClientCompat(cand.packages, cand.remoteEndpoints),
     registryUrl: REGISTRY_URL,
     signals: {
       ...previous.signals,
-      inOfficialRegistry: true,
+      inOfficialRegistry,
+      officialRegistryVerifiedAt: inOfficialRegistry ? todayIso() : null,
+      hasRunnableEntry: cand.hasPackage || cand.remoteEndpoints.length > 0,
     },
   };
   if (endpoints?.length) next.remoteEndpoints = endpoints;
@@ -404,6 +475,11 @@ export async function collectServers(
   }
 
   const selectedSlugs = new Set(selected.map((item) => slugify(item.candidate.name)));
+  const repoCounts = new Map<string, number>();
+  for (const item of catalog) {
+    const repo = item.candidate.repoUrl?.toLowerCase();
+    if (repo) repoCounts.set(repo, (repoCounts.get(repo) ?? 0) + 1);
+  }
   console.log(
     `[collector] 来源目录 ${catalog.length}（curated ${CURATED_SEEDS.length} + ` +
       `discovered ${DISCOVERED_SEEDS.length} + registry ${registryCandidates.length}，已去重）；` +
@@ -432,7 +508,10 @@ export async function collectServers(
   for (const previous of previousServers) {
     const current = catalogBySlug.get(previous.slug);
     if (current && !selectedSlugs.has(previous.slug)) {
-      finalBySlug.set(previous.slug, refreshMetadata(previous, current.candidate));
+      finalBySlug.set(
+        previous.slug,
+        refreshMetadata(previous, current.candidate, current.inOfficialRegistry),
+      );
     } else if (!current && catalogTransition.retainMissingSlugs.has(previous.slug)) {
       finalBySlug.set(previous.slug, previous);
     }
@@ -450,13 +529,18 @@ export async function collectServers(
         const slug = slugify(cand.name);
         const previous = previousBySlug.get(slug);
         try {
-          const enriched = await enrichOne(cand);
+          const repoKey = cand.repoUrl?.toLowerCase();
+          const enriched = await enrichOne(
+            cand,
+            item.inOfficialRegistry,
+            !repoKey || repoCounts.get(repoKey) === 1,
+          );
           const auditable = enriched.signals.repoAuditable !== false;
           const passes = item.source === "curated" || passesQualityGate(enriched);
           if (!auditable || !passes) {
             if (previous) {
               retainedOnFailure++;
-              return refreshMetadata(previous, cand);
+              return refreshMetadata(previous, cand, item.inOfficialRegistry);
             }
             qualityRejected++;
             return null;
@@ -466,7 +550,7 @@ export async function collectServers(
           if (previous) {
             retainedOnFailure++;
             console.warn(`[collector] 富化失败，保留旧数据 ${cand.name}: ${String(err)}`);
-            return refreshMetadata(previous, cand);
+            return refreshMetadata(previous, cand, item.inOfficialRegistry);
           }
           console.warn(`[collector] 富化失败，暂不入库 ${cand.name}: ${String(err)}`);
           return null;
@@ -533,9 +617,53 @@ export async function collectServers(
  */
 export async function loadServers(): Promise<MCPServer[]> {
   const ds = await readDataset();
-  if (ds && ds.servers.length > 0) return ds.servers;
+  if (ds && ds.servers.length > 0) return normalizePublishedServers(ds.servers);
   console.warn("[collector] 未找到 data/servers.json，退回实时采集（build 会较慢）");
   return collectServers();
+}
+
+/**
+ * 旧数据集曾把“仓库可审计”误当作“可运行”，并把所有来源都标成官方 Registry。
+ * 在下一次完整采集前按可证明事实保守纠偏，避免错误结论继续上线。
+ */
+export function normalizePublishedServers(servers: MCPServer[]): MCPServer[] {
+  const repoCounts = new Map<string, number>();
+  for (const server of servers) {
+    const repo = server.repoUrl?.toLowerCase();
+    if (repo) repoCounts.set(repo, (repoCounts.get(repo) ?? 0) + 1);
+  }
+
+  return servers.map((server) => {
+    const registryVerified = Boolean(server.signals.officialRegistryVerifiedAt);
+    const responseRate = issueResponseRate(server.signals);
+    const signals: HealthSignals = {
+      ...server.signals,
+      issueResponseDays: null,
+      issueResponseRatePct: responseRate,
+      inOfficialRegistry: registryVerified,
+      hasRunnableEntry:
+        Boolean(server.hasPublishedPackage) ||
+        Boolean(server.npmPackage) ||
+        Boolean(server.remoteEndpoints?.length),
+    };
+    const breakdown = computeBreakdown(signals);
+    const lifecycle = computeLifecycle(signals);
+    const repo = server.repoUrl?.toLowerCase();
+    const readmeFacts =
+      repo && repoCounts.get(repo)! > 1 ? undefined : server.readmeFacts;
+
+    return {
+      ...server,
+      signals,
+      breakdown,
+      trustScore: computeTrustScore(breakdown),
+      lifecycle,
+      verdict: computeVerdict(lifecycle, signals),
+      verdictKey: lifecycle,
+      verdictDays: lifecycle === "dying" ? signals.lastCommitDaysAgo : null,
+      ...(readmeFacts ? { readmeFacts } : { readmeFacts: undefined }),
+    };
+  });
 }
 
 /**

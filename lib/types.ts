@@ -8,6 +8,28 @@ export type VerdictKey = "active" | "dying" | "dead" | "unverifiable";
 /** 死因运行时取词的 key。 */
 export type DeathReasonKey = "archived" | "stale";
 
+/** 可安装包。registryType 决定启动器（npm→npx / pypi→uvx / oci→docker），
+ *  transport 决定能不能本地起进程。两者都是客户端兼容性判定的输入。 */
+export interface InstallablePackage {
+  registryType: string;
+  identifier: string;
+  version: string | null;
+  /** stdio / streamable-http / sse；registry 未声明时 null（不猜） */
+  transport: string | null;
+}
+
+/** 客户端兼容性。
+ *  basis 是这条数据的可信级别，必须一路透传到页面上：
+ *    derived  —— 按 registry manifest 推的，没实际跑过
+ *    verified —— 沙箱里真装过、真起来过
+ *  把 derived 当 verified 展示等于在页面上撒谎，所以这个字段不能省。 */
+export interface ClientCompat {
+  client: string;
+  basis: "derived" | "verified";
+  via: "stdio" | "remote";
+  runner: string | null;
+}
+
 export interface Category {
   slug: string;
   name: string;
@@ -33,7 +55,10 @@ export interface ScoreBreakdown {
 export interface HealthSignals {
   lastCommitDaysAgo: number | null; // 最近提交距今（天）
   commits90d: number | null; // 90 天提交数
-  issueResponseDays: number | null; // issue 中位响应（天），null = 无响应
+  /** @deprecated 旧数据字段；历史值是回复率桶，不是真实响应天数。新采集固定写 null。 */
+  issueResponseDays: number | null;
+  /** 最近抽样的非 PR issue 中，有至少一条评论的比例。null = 无法采样。 */
+  issueResponseRatePct?: number | null;
   archived: boolean;
   stars: number;
   starsWeeklyDelta: number; // 周环比增量
@@ -45,6 +70,8 @@ export interface HealthSignals {
   contributors: number | null;
   forks: number | null;
   inOfficialRegistry: boolean;
+  /** 只有 Registry API 在本次采集明确返回该项目时才写入，旧数据不能据此推断。 */
+  officialRegistryVerifiedAt?: string | null;
   hasRunnableEntry: boolean; // 能否解析可运行入口
   /** 是否有开源仓库可审计（纯 remotes 型为 false → unverifiable）。
    *  mock 数据未显式给时由 repoUrl 推导（见 mock-provider 归一化）。 */
@@ -66,6 +93,14 @@ export interface MCPServer {
   signals: HealthSignals;
   repoUrl: string | null;
   npmPackage: string | null;
+  /** Registry manifest 是否提供任一可安装 package（包括非 npm）。 */
+  hasPublishedPackage?: boolean;
+  /** 可安装包清单（registryType / identifier / version / transport）。
+   *  客户端兼容性和安装命令都由它推导，所以要原样留着而不是压成布尔。 */
+  packages?: InstallablePackage[];
+  /** 能接哪些客户端。basis 区分 derived（按 manifest 推的）和 verified（沙箱实测）。
+   *  空数组是合法结果——registry 没给足信息时不猜。 */
+  clientCompat?: ClientCompat[];
   registryUrl: string;
   /** 一句策展判断（旧字段，i18n 兜底用）。新数据优先用 verdictKey 运行时按 locale 渲染。 */
   verdict: string;
