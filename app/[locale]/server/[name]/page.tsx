@@ -20,17 +20,20 @@ import InstallCommandCard from "@/components/InstallCommand";
 import { installCommands } from "@/lib/install";
 import CompareButton from "@/components/CompareButton";
 import CapabilityCard from "@/components/CapabilityCard";
+import ClientCompatCard from "@/components/ClientCompatCard";
 import { getServerCapability } from "@/lib/server-capabilities";
 import ReadmeFactsCard from "@/components/ReadmeFactsCard";
 import PickGuideCard from "@/components/PickGuideCard";
 import { getPickGuide } from "@/lib/pick-guide";
 import { getSeoLandingByServer } from "@/lib/seo-landing";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, ORGANIZATION_ID } from "@/lib/schema";
+import { absoluteUrl } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 import { verdictText, deathReasonText } from "@/lib/i18n/verdict";
+import TrackedLink from "@/components/TrackedLink";
 
 interface Props {
   params: { name: string; locale: Locale };
@@ -90,19 +93,31 @@ export default async function ServerDetailPage({ params }: Props) {
   const appSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
+    "@id": absoluteUrl(`/${locale}/server/${s.slug}#software`),
+    url: absoluteUrl(`/${locale}/server/${s.slug}`),
     name: s.name,
     description: s.description,
     applicationCategory: "DeveloperApplication",
     applicationSubCategory: "Model Context Protocol Server",
     operatingSystem: "Any",
-    offers: { "@type": "Offer", price: 0, priceCurrency: "USD" },
+    provider: { "@id": ORGANIZATION_ID },
     ...(s.repoUrl ? { codeRepository: s.repoUrl, sameAs: [s.repoUrl] } : {}),
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: (s.trustScore / 20).toFixed(1),
-      bestRating: 5,
-      ratingCount: Math.max(sig.stars, 1),
-    },
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "MCP Radar TrustScore",
+        value: s.trustScore,
+        minValue: 0,
+        maxValue: 100,
+        description:
+          "A maintenance and adoption signal score, not a user rating or a security certification.",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Lifecycle signal",
+        value: s.lifecycle,
+      },
+    ],
   };
 
   const crumb = breadcrumbSchema([
@@ -112,6 +127,14 @@ export default async function ServerDetailPage({ params }: Props) {
   ]);
 
   const verifiable = s.lifecycle !== "unverifiable";
+  const registryKnown = sig.officialRegistryVerifiedAt !== undefined;
+  const claimUrl =
+    "https://github.com/wwqking/mcp-radar/issues/new?" +
+    new URLSearchParams({
+      title: `Claim or correct: ${s.name}`,
+      body: `Server page: ${absoluteUrl(`/${locale}/server/${s.slug}`)}\nRepository: ${s.repoUrl ?? "not listed"}\n\nPlease describe the correction or verification evidence:`,
+      labels: "data-correction",
+    }).toString();
 
   return (
     <div className="container-site py-10 sm:py-14">
@@ -162,18 +185,20 @@ export default async function ServerDetailPage({ params }: Props) {
                 )}
                 <div className="mt-4 flex flex-wrap gap-2">
                   {s.repoUrl && (
-                    <a href={s.repoUrl} target="_blank" rel="noopener" className="rounded-lg border border-neutral-200 px-3 py-1.5 text-sm text-neutral-600 hover:border-brand-400 hover:text-brand-700 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-brand-300">
+                    <TrackedLink href={s.repoUrl} target="_blank" rel="noopener" eventName="Outbound Server Source" eventProps={{ server: s.slug, source: "github" }} className="rounded-lg border border-neutral-200 px-3 py-1.5 text-sm text-neutral-600 hover:border-brand-400 hover:text-brand-700 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-brand-300">
                       GitHub ↗
-                    </a>
+                    </TrackedLink>
                   )}
                   {s.npmPackage && (
-                    <a href={`https://www.npmjs.com/package/${s.npmPackage}`} target="_blank" rel="noopener" className="rounded-lg border border-neutral-200 px-3 py-1.5 text-sm text-neutral-600 hover:border-brand-400 hover:text-brand-700 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-brand-300">
+                    <TrackedLink href={`https://www.npmjs.com/package/${s.npmPackage}`} target="_blank" rel="noopener" eventName="Outbound Server Source" eventProps={{ server: s.slug, source: "npm" }} className="rounded-lg border border-neutral-200 px-3 py-1.5 text-sm text-neutral-600 hover:border-brand-400 hover:text-brand-700 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-brand-300">
                       npm ↗
+                    </TrackedLink>
+                  )}
+                  {sig.inOfficialRegistry && (
+                    <a href={s.registryUrl} target="_blank" rel="noopener" className="rounded-lg border border-neutral-200 px-3 py-1.5 text-sm text-neutral-600 hover:border-brand-400 hover:text-brand-700 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-brand-300">
+                      registry ↗
                     </a>
                   )}
-                  <a href={s.registryUrl} target="_blank" rel="noopener" className="rounded-lg border border-neutral-200 px-3 py-1.5 text-sm text-neutral-600 hover:border-brand-400 hover:text-brand-700 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-brand-300">
-                    registry ↗
-                  </a>
                   <CompareButton
                     slug={s.slug}
                     strings={{ add: dCompare.add, added: dCompare.added, full: dCompare.full }}
@@ -229,6 +254,20 @@ export default async function ServerDetailPage({ params }: Props) {
             />
           )}
 
+          {/* 能接哪些客户端（由 registry manifest 的包类型和 transport 推导） */}
+          {s.clientCompat?.length ? (
+            <ClientCompatCard
+              compat={s.clientCompat}
+              strings={{
+                compatTitle: d.compatTitle,
+                viaStdio: d.viaStdio,
+                viaRemote: d.viaRemote,
+                derivedNote: d.derivedNote,
+                verifiedNote: d.verifiedNote,
+              }}
+            />
+          ) : null}
+
           {/* 安装 / 接入命令 */}
           <InstallCommandCard
             commands={installCommands(s)}
@@ -236,6 +275,7 @@ export default async function ServerDetailPage({ params }: Props) {
             note={d.installNote}
             copyLabel={d.copy}
             copiedLabel={d.copied}
+            analyticsId={s.slug}
           />
 
           {/* 五维信号卡 */}
@@ -247,7 +287,12 @@ export default async function ServerDetailPage({ params }: Props) {
               <div className="divide-y divide-neutral-100 dark:divide-neutral-800">
                 <SignalRow icon="📝" label={d.lastCommit} value={daysAgo(sig.lastCommitDaysAgo)} tone={sig.lastCommitDaysAgo !== null && sig.lastCommitDaysAgo <= 30 ? "good" : sig.lastCommitDaysAgo !== null && sig.lastCommitDaysAgo > 180 ? "bad" : "default"} />
                 <SignalRow icon="📈" label={d.commits90d} value={sig.commits90d ?? "—"} tone={(sig.commits90d ?? 0) > 20 ? "good" : sig.commits90d === 0 ? "bad" : "default"} />
-                <SignalRow icon="💬" label={d.issueResp} value={sig.issueResponseDays === null ? d.noResponse : d.nDays.replace("{n}", String(sig.issueResponseDays))} tone={sig.issueResponseDays === null ? "bad" : sig.issueResponseDays <= 3 ? "good" : "default"} />
+                <SignalRow
+                  icon="💬"
+                  label={d.issueResp}
+                  value={sig.issueResponseRatePct == null ? d.noResponse : `${sig.issueResponseRatePct}%`}
+                  tone={sig.issueResponseRatePct == null ? "default" : sig.issueResponseRatePct >= 60 ? "good" : sig.issueResponseRatePct === 0 ? "bad" : "default"}
+                />
                 <SignalRow icon="🗃️" label={d.repoStatus} value={sig.archived ? d.archived : d.normal} tone={sig.archived ? "bad" : "good"} />
               </div>
             </div>
@@ -268,7 +313,12 @@ export default async function ServerDetailPage({ params }: Props) {
                 {d.usabilityTitle} <span className="ml-1 text-xs font-normal text-neutral-400">{d.weightScore.replace("{w}", "20").replace("{v}", String(s.breakdown.usability))}</span>
               </h2>
               <div className="divide-y divide-neutral-100 dark:divide-neutral-800">
-                <SignalRow icon="📋" label={d.officialRegistry} value={sig.inOfficialRegistry ? d.listed : d.notListed} tone={sig.inOfficialRegistry ? "good" : "warn"} />
+                <SignalRow
+                  icon="📋"
+                  label={d.officialRegistry}
+                  value={!registryKnown ? d.registryUnknown : sig.inOfficialRegistry ? d.listed : d.notListed}
+                  tone={sig.inOfficialRegistry ? "good" : "warn"}
+                />
                 <SignalRow icon="▶️" label={d.runnable} value={sig.hasRunnableEntry ? d.runnableYes : d.runnableNo} tone={sig.hasRunnableEntry ? "good" : "bad"} />
                 <SignalRow icon="🔍" label={d.auditability} value={verifiable ? d.auditYes : d.auditNo} tone={verifiable ? "good" : "warn"} />
               </div>
@@ -289,7 +339,11 @@ export default async function ServerDetailPage({ params }: Props) {
           <SourceMethodNote
             locale={locale}
             className="mt-3"
-            sources={s.repoUrl ? ["GitHub API", "npm registry", d.sourceRegistry] : [d.sourceRegistry]}
+            sources={[
+              ...(s.repoUrl ? ["GitHub API"] : []),
+              ...(s.npmPackage ? ["npm registry"] : []),
+              ...(sig.inOfficialRegistry ? [d.sourceRegistry] : []),
+            ]}
             updatedAt={sig.dataUpdatedAt}
           />
 
@@ -332,6 +386,27 @@ export default async function ServerDetailPage({ params }: Props) {
 
         {/* ===== 侧栏 ===== */}
         <aside className="space-y-4 lg:sticky lg:top-20 lg:self-start">
+          <div className="card p-4">
+            <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">
+              {locale === "zh" ? "你是项目维护者？" : "Are you the maintainer?"}
+            </p>
+            <p className="mt-1 text-xs leading-5 text-neutral-500 dark:text-neutral-400">
+              {locale === "zh"
+                ? "免费认领或提交更正，并附上仓库、域名或发布者身份等可验证证据。"
+                : "Claim this page or submit a correction for free with verifiable repository, domain or publisher evidence."}
+            </p>
+            <TrackedLink
+              href={claimUrl}
+              target="_blank"
+              rel="noopener"
+              eventName="Claim Page"
+              eventProps={{ server: s.slug }}
+              className="link-accent mt-2 inline-block text-xs font-medium"
+            >
+              {locale === "zh" ? "认领 / 更正此页 →" : "Claim / correct this page →"}
+            </TrackedLink>
+          </div>
+
           {/* 赞助位（明确标注） */}
           <div className="rounded-xl border border-dashed border-neutral-300 p-4 dark:border-neutral-700">
             <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-neutral-400">{d.sponsorLabel}</p>

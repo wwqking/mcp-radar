@@ -24,13 +24,61 @@ function serverKey(slug: string, npmPackage: string | null): string {
   return base.replace(/[^a-z0-9-]/gi, "-").replace(/-+/g, "-").replace(/^-|-$/g, "") || "server";
 }
 
+/** registryType → 本地启动器。和 collector/client-compat.ts 的 RUNNER 保持一致。 */
+const RUNNER_ARGS: Record<string, (id: string) => { command: string; args: string[] }> = {
+  npm: (id) => ({ command: "npx", args: ["-y", id] }),
+  pypi: (id) => ({ command: "uvx", args: [id] }),
+  oci: (id) => ({ command: "docker", args: ["run", "-i", "--rm", id] }),
+};
+
 export function installCommands(server: {
   slug: string;
   npmPackage: string | null;
   repoUrl: string | null;
+  packages?: Array<{ registryType: string; identifier: string; version: string | null; transport: string | null }>;
+  remoteEndpoints?: Array<{ type: string; url: string }>;
 }): InstallCommand[] {
   const { slug, npmPackage, repoUrl } = server;
   const key = serverKey(slug, npmPackage);
+
+  // registry manifest 里声明的第一个可本地启动的包。比 npmPackage 更可信：
+  // 它带 registryType，所以 pypi/oci 型 server 也能给出真命令，而不是
+  // 一句「see README」——那批以前全被当成「仅仓库型」降级处理了。
+  const localPkg = (server.packages ?? []).find(
+    (p) => (!p.transport || p.transport === "stdio") && RUNNER_ARGS[p.registryType],
+  );
+  if (localPkg) {
+    const pinned = localPkg.version ? `${localPkg.identifier}@${localPkg.version}` : localPkg.identifier;
+    const { command, args } = RUNNER_ARGS[localPkg.registryType](pinned);
+    const jsonConfig = `{
+  "mcpServers": {
+    "${key}": {
+      "command": "${command}",
+      "args": ${JSON.stringify(args)}
+    }
+  }
+}`;
+    return [
+      { label: "Claude Code", lang: "bash", code: `claude mcp add ${key} -- ${command} ${args.join(" ")}` },
+      { label: "JSON config", lang: "json", code: jsonConfig },
+    ];
+  }
+
+  // 纯远程型：没有本地包，但有托管端点，直接给 URL 接法。
+  const remote = (server.remoteEndpoints ?? [])[0];
+  if (remote) {
+    const jsonConfig = `{
+  "mcpServers": {
+    "${key}": {
+      "url": "${remote.url}"
+    }
+  }
+}`;
+    return [
+      { label: "Claude Code", lang: "bash", code: `claude mcp add --transport http ${key} ${remote.url}` },
+      { label: "JSON config", lang: "json", code: jsonConfig },
+    ];
+  }
 
   if (npmPackage) {
     const claudeCli = `claude mcp add ${key} -- npx -y ${npmPackage}`;
