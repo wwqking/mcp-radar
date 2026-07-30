@@ -78,6 +78,11 @@ const GUIDE_META: GuideMeta[] = [
   { slug: "youtube-transcript-for-claude", tier: "free", icon: "🎬", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
   { slug: "mcp-remote", tier: "free", icon: "🌉", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
   { slug: "can-claude-generate-images", tier: "free", icon: "🖼️", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
+  // 概念对比页（concept_compare 簇）。词源 CONTENT-PAGE-PLAN.csv。
+  // mcp-proxy-vs-gateway 已有指南覆盖，不重复建。
+  { slug: "rag-vs-mcp", tier: "free", icon: "🔍", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
+  { slug: "a2a-vs-mcp", tier: "free", icon: "🔗", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
+  { slug: "mcp-vs-cli", tier: "free", icon: "⌨️", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
   {
     slug: "awesome-mcp-servers",
     tier: "free", icon: "⭐",

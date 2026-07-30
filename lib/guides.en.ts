@@ -439,6 +439,118 @@ export const GUIDES_EN: Record<string, GuideContent> = {
     ],
   },
 
+  "rag-vs-mcp": {
+    title: "RAG vs MCP: they solve different problems (and work together)",
+    excerpt:
+      "RAG and MCP are often compared as if you must pick one, but they answer different questions. RAG is about retrieving knowledge; MCP is about giving a model live access to tools and data. Here's when each applies.",
+    sections: [
+      {
+        heading: "The short version",
+        body: [
+          "RAG — retrieval-augmented generation — is a technique for feeding a model relevant text at inference time, usually by searching a vector database of documents you embedded beforehand. It exists to answer questions from a body of knowledge the model was not trained on.",
+          "MCP — the Model Context Protocol — is a standard for connecting a model to external tools and data sources at runtime. It exists to let a model do things: query a live database, call an API, read a file, send a message.",
+          "So the comparison is slightly misframed. RAG retrieves knowledge; MCP grants capability. You can use either alone, and plenty of real systems use both — an MCP server can itself perform a RAG lookup.",
+        ],
+      },
+      {
+        heading: "What RAG is good at",
+        body: [
+          "RAG shines when the task is \"answer from these documents\". You have a corpus — support articles, internal wikis, a product manual — and you want the model to ground its answers in that specific material rather than its training data. Embedding the corpus once and retrieving the relevant chunks per query is efficient and well-understood.",
+          "Its limits are worth naming. RAG gives the model text to read, not actions to take — it cannot place an order or update a record. And it works on a snapshot: if the underlying documents change, the index has to be rebuilt, so RAG is a poor fit for data that changes by the minute.",
+        ],
+      },
+      {
+        heading: "What MCP is good at",
+        body: [
+          "MCP shines when the task needs live data or side effects. \"What's the current status of order 4471\" cannot be answered from a pre-built index — it requires querying the system of record right now. \"Create a calendar event\" is an action, not a retrieval. These are MCP's territory.",
+          "MCP also handles freshness for free: because the server queries the source at call time, there is no index to go stale. The trade-off is latency and reliability — every tool call is a live request that can be slow or fail, whereas a vector lookup is fast and local.",
+        ],
+      },
+      {
+        heading: "When to use which — and both",
+        body: [
+          "Use RAG when the answer lives in a stable body of documents and you only need the model to read. Use MCP when the answer requires querying a live system, or when the model needs to take an action rather than just answer.",
+          "Use both when a task spans the two. A support agent might retrieve the relevant policy with RAG and then look up the customer's actual account state through an MCP server — knowledge plus capability in one flow. Treating them as rivals leads to picking the wrong tool; treating them as complementary is usually closer to what real systems need.",
+          "One practical note: because an MCP server is just a program, nothing stops it from doing retrieval internally. A \"docs\" MCP server that searches your knowledge base on demand is RAG wearing an MCP interface — which is often the cleanest way to expose a corpus that also changes over time.",
+        ],
+      },
+    ],
+  },
+
+  "a2a-vs-mcp": {
+    title: "A2A vs MCP: agent-to-agent communication vs model-to-tool access",
+    excerpt:
+      "A2A and MCP are both protocols in the agent ecosystem, but they operate at different layers. MCP connects one model to tools; A2A lets independent agents talk to each other. They are complementary, not competing.",
+    sections: [
+      {
+        heading: "Two protocols, two layers",
+        body: [
+          "MCP — the Model Context Protocol — standardizes how a single model or agent reaches out to tools and data. It is the layer between one agent and the capabilities it uses: a database, an API, a filesystem.",
+          "A2A — agent-to-agent — standardizes how separate, independently-built agents communicate and delegate to one another. It is the layer between agents, letting a scheduling agent hand a task to a research agent that neither team built together.",
+          "So they are not alternatives. MCP answers \"how does my agent use a tool\"; A2A answers \"how does my agent talk to your agent\". A sophisticated system uses both: each agent uses MCP to reach its own tools, and A2A to coordinate with peers.",
+        ],
+      },
+      {
+        heading: "Where MCP fits",
+        body: [
+          "If you are building one agent and want to give it access to your systems, MCP is what you need. The agent stays a single entity; MCP is the wiring to everything it can touch. The vast majority of \"connect my AI to X\" problems are MCP problems, not A2A problems.",
+          "MCP assumes a client-server shape: your agent is the client, and each tool is a server. It does not attempt to coordinate multiple autonomous agents — that is deliberately out of scope, which is part of why the protocol stayed simple enough to be widely adopted.",
+        ],
+      },
+      {
+        heading: "Where A2A fits",
+        body: [
+          "A2A becomes relevant once you have multiple agents that were not designed as one system and need to interoperate — often across organizational boundaries. Its job is discovery, capability negotiation, and message passing between peers that treat each other as black boxes.",
+          "This is a genuinely harder problem than tool access, involving identity, trust, and long-running tasks between parties that do not share a codebase. It is also much earlier in adoption than MCP, so if you are unsure which you need, you almost certainly need MCP first.",
+        ],
+      },
+      {
+        heading: "Which one you actually need",
+        body: [
+          "Building a single agent that uses your tools and data: MCP. This covers most projects, and it is where to start.",
+          "Coordinating multiple independent agents, especially ones you don't control: that is the A2A layer, and you would typically add it on top of agents that already use MCP internally.",
+          "If the question is which to learn first, the answer is MCP — it is more mature, more widely supported, and solves the problem most teams actually have today. A2A matters as multi-agent systems spanning organizations become common, which is still emerging.",
+        ],
+      },
+    ],
+  },
+
+  "mcp-vs-cli": {
+    title: "MCP vs CLI: when to expose a tool as an MCP server instead of a command",
+    excerpt:
+      "A CLI and an MCP server can wrap the same underlying tool, but they are built for different callers — humans at a terminal versus a model in a conversation. Here's how to decide which to build, or whether to build both.",
+    sections: [
+      {
+        heading: "Same tool, different caller",
+        body: [
+          "A CLI exposes functionality to a person typing commands. An MCP server exposes functionality to a model deciding what to call. Often they wrap the exact same logic — the difference is who is on the other end and what they need from the interface.",
+          "A human at a CLI reads help text, remembers flags, and interprets output with their own judgment. A model needs the tool described in a structured way it can reason about: what the tool does, what arguments it takes, what it returns. MCP provides that structured description; a CLI's --help was written for eyes, not for a scheduler.",
+        ],
+      },
+      {
+        heading: "Why not just let the model run CLI commands",
+        body: [
+          "It is tempting to give a model shell access and let it call your existing CLI. This works in demos and is risky in practice. A CLI's surface is unstructured — the model has to construct command strings, parse free-text output, and guess at error meanings, all of which are error-prone.",
+          "More importantly, shell access is a blunt, dangerous capability: a model that can run one command can usually run any command. An MCP server exposes exactly the operations you chose, with typed arguments and defined results, which is both safer and more reliable than hoping the model assembles the right incantation.",
+        ],
+      },
+      {
+        heading: "When a CLI is still the right answer",
+        body: [
+          "If the primary user is a human, build the CLI. Scripting, CI pipelines, and interactive terminal use are all better served by a command than by a protocol designed for models. Not every tool needs an MCP interface, and adding one to a tool no model will call is wasted effort.",
+          "Many tools legitimately want both: a CLI for people and an MCP server for agents, sharing the same core logic underneath. That is a reasonable architecture — the two interfaces serve different callers and neither makes the other redundant.",
+        ],
+      },
+      {
+        heading: "Deciding for your tool",
+        body: [
+          "Ask who calls it. Humans in terminals and scripts: CLI. A model in a conversation choosing actions: MCP server. Both audiences: both interfaces over shared logic.",
+          "If you are wrapping an existing CLI for model use, resist the urge to just shell out to it. Model the operations you actually want the model to perform as proper MCP tools with typed inputs — you will get more reliable behavior and a far smaller blast radius than handing over the whole command line.",
+        ],
+      },
+    ],
+  },
+
   "can-claude-generate-images": {
     title: "Can Claude generate images? What MCP does and doesn't change",
     excerpt:
