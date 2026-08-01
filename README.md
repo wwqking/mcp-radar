@@ -2,6 +2,8 @@
 
 找到能用的 MCP server —— 按用途分类，标注哪个还活着。
 
+在线目录：[MCP Radar](https://www.mcpradars.com/en) — 浏览带有维护状态、TrustScore、排名与实用指南的 MCP servers。
+
 基于 Next.js 14 App Router + TypeScript + Tailwind CSS 的公开前台。设计文档见上级目录 `mcp-radar.md` / `mcp-radar-frontend.md`。
 
 ## 开发
