@@ -19,7 +19,7 @@ import { getSeoLandingSlugs, getSeoLanding, seoLandingText } from "@/lib/seo-lan
 const SUFFIX = "-mcp-server";
 
 interface Props {
-  params: { tool: string; locale: Locale };
+  params: Promise<{ tool: string; locale: Locale }>;
 }
 
 // URL 段是 "{toolSlug}-mcp-server"，如 postgres-mcp-server；预生成所有白名单落地页。
@@ -33,24 +33,25 @@ function toolSlugFromParam(param: string): string | null {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const toolSlug = toolSlugFromParam(params.tool);
+  const { tool, locale } = await params;
+  const toolSlug = toolSlugFromParam(tool);
   const landing = toolSlug ? getSeoLanding(toolSlug) : undefined;
   if (!landing) return {};
-  const t = seoLandingText(landing, params.locale);
+  const t = seoLandingText(landing, locale);
   // 站点名后缀由 layout 的 title.template 统一追加，这里不再手动拼 | SITE_NAME，避免重复。
   const title = `${t.toolName} MCP Server — Setup, Tools & Config`;
   return {
     title,
     description: t.tagline,
-    alternates: hreflangAlternates(params.locale, `/servers/${params.tool}`),
-    openGraph: { title, description: t.tagline, url: `/${params.locale}/servers/${params.tool}`, type: "article" },
+    alternates: hreflangAlternates(locale, `/servers/${tool}`),
+    openGraph: { title, description: t.tagline, url: `/${locale}/servers/${tool}`, type: "article" },
     twitter: { card: "summary_large_image", title, description: t.tagline },
   };
 }
 
 export default async function SeoLandingPage({ params }: Props) {
-  const { locale } = params;
-  const toolSlug = toolSlugFromParam(params.tool);
+  const { locale, tool } = await params;
+  const toolSlug = toolSlugFromParam(tool);
   const landing = toolSlug ? getSeoLanding(toolSlug) : undefined;
   if (!landing) notFound();
 
@@ -69,7 +70,7 @@ export default async function SeoLandingPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "@id": absoluteUrl(`/${locale}/server/${s.slug}#software`),
-    url: absoluteUrl(`/${locale}/servers/${params.tool}`),
+    url: absoluteUrl(`/${locale}/servers/${tool}`),
     name: h1,
     description: t.tagline,
     applicationCategory: "DeveloperApplication",
@@ -81,7 +82,7 @@ export default async function SeoLandingPage({ params }: Props) {
   const crumb = breadcrumbSchema([
     { name: SITE_NAME, path: `/${locale}` },
     { name: "MCP Servers", path: `/${locale}/leaderboard` },
-    { name: h1, path: `/${locale}/servers/${params.tool}` },
+    { name: h1, path: `/${locale}/servers/${tool}` },
   ]);
   const faq = faqSchema(t.faq.map((f) => ({ q: f.q, a: f.a })));
 

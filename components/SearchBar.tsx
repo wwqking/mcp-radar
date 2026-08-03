@@ -2,21 +2,22 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import type { MCPServer } from "@/lib/types";
 import { LIFECYCLE_META } from "@/lib/constants";
 import type { Locale } from "@/lib/i18n/locales";
 import { localizedHref } from "@/lib/i18n/href";
+import { trackEvent } from "@/lib/analytics";
+import { useSearchServers } from "@/components/SearchProvider";
 
 interface Props {
-  servers: MCPServer[];
   locale: Locale;
   placeholderHero: string;
   placeholderNav: string;
-  size?: "nav" | "hero";
+  size?: "nav" | "hero" | "responsive";
 }
 
 /** 全站即时搜索（server 名/用途），导航站第一入口 */
-export default function SearchBar({ servers, locale, placeholderHero, placeholderNav, size = "nav" }: Props) {
+export default function SearchBar({ locale, placeholderHero, placeholderNav, size = "nav" }: Props) {
+  const { servers, ensureLoaded } = useSearchServers();
   const [q, setQ] = useState("");
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
@@ -27,12 +28,20 @@ export default function SearchBar({ servers, locale, placeholderHero, placeholde
     const kw = q.trim().toLowerCase();
     if (!kw) return [];
     return servers
-      .filter(
-        (s) =>
-          s.name.toLowerCase().includes(kw) ||
-          s.tagline.toLowerCase().includes(kw) ||
-          s.description.toLowerCase().includes(kw)
-      )
+      .map((server) => {
+        const name = server.name.toLowerCase();
+        const tagline = server.tagline.toLowerCase();
+        let relevance = 0;
+        if (name === kw) relevance += 1000;
+        else if (name.startsWith(kw)) relevance += 700;
+        else if (name.includes(kw)) relevance += 450;
+        if (tagline.includes(kw)) relevance += 180;
+        if (server.lifecycle === "active") relevance += 20;
+        relevance += server.trustScore / 10;
+        return { server, relevance };
+      })
+      .filter(({ relevance }) => relevance >= 100)
+      .sort((a, b) => b.relevance - a.relevance)
       .slice(0, 8);
   }, [q, servers]);
 
@@ -45,6 +54,10 @@ export default function SearchBar({ servers, locale, placeholderHero, placeholde
   }, []);
 
   const go = (slug: string) => {
+    trackEvent("Search Result Click", {
+      server: slug,
+      placement: size,
+    });
     setOpen(false);
     setQ("");
     router.push(localizedHref(locale, `/server/${slug}`));
@@ -58,16 +71,26 @@ export default function SearchBar({ servers, locale, placeholderHero, placeholde
       e.preventDefault();
       setActive((a) => Math.max(a - 1, 0));
     } else if (e.key === "Enter" && results[active]) {
-      go(results[active].slug);
+      go(results[active].server.slug);
     } else if (e.key === "Escape") {
       setOpen(false);
     }
   };
 
   const isHero = size === "hero";
+  const isResponsive = size === "responsive";
 
   return (
-    <div ref={boxRef} className={`relative ${isHero ? "w-full" : "w-40 md:w-52 lg:w-64"}`}>
+    <div
+      ref={boxRef}
+      className={`relative ${
+        isHero
+          ? "w-full"
+          : isResponsive
+            ? "w-full sm:w-40 md:w-52 lg:w-64"
+            : "w-40 md:w-52 lg:w-64"
+      }`}
+    >
       <div className="pointer-events-none absolute inset-y-0 left-3 flex items-center text-neutral-400">
         <svg className={isHero ? "h-5 w-5" : "h-4 w-4"} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
@@ -76,11 +99,15 @@ export default function SearchBar({ servers, locale, placeholderHero, placeholde
       <input
         value={q}
         onChange={(e) => {
+          ensureLoaded();
           setQ(e.target.value);
           setOpen(true);
           setActive(0);
         }}
-        onFocus={() => setOpen(true)}
+        onFocus={() => {
+          ensureLoaded();
+          setOpen(true);
+        }}
         onKeyDown={onKey}
         placeholder={isHero ? placeholderHero : placeholderNav}
         className={`w-full rounded-xl border bg-white outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200 dark:border-neutral-700 dark:bg-neutral-900 dark:focus:ring-brand-900 ${
@@ -91,7 +118,7 @@ export default function SearchBar({ servers, locale, placeholderHero, placeholde
       />
       {open && results.length > 0 && (
         <ul className="absolute z-50 mt-2 w-full overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-lg dark:border-neutral-700 dark:bg-neutral-900">
-          {results.map((s, i) => (
+          {results.map(({ server: s }, i) => (
             <li key={s.slug}>
               <button
                 onMouseDown={() => go(s.slug)}

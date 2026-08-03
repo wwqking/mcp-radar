@@ -42,8 +42,8 @@ export interface GithubHealth {
   commits90d: number | null;
   contributors: number | null;
   license: string | null;
-  /** issue 中位响应天数；null = 无法计算 / 无响应 */
-  issueResponseDays: number | null;
+  /** 最近抽样的非 PR issue 中，有评论的比例；不是响应时长。 */
+  issueResponseRatePct: number | null;
 }
 
 function daysBetween(iso: string, now = Date.now()): number {
@@ -94,17 +94,13 @@ export async function fetchGithubHealth(owner: string, repo: string): Promise<Gi
   let contributors: number | null = null;
   if (contribRes.ok && Array.isArray(contribRes.data)) contributors = contribRes.data.length;
 
-  // issue 响应：用「有评论的 issue 占比」粗估响应性
-  let issueResponseDays: number | null = null;
+  // issue 响应：只公布实际能测到的「有评论 issue 占比」，不伪装成响应天数。
+  let issueResponseRatePct: number | null = null;
   if (issuesRes.ok && Array.isArray(issuesRes.data)) {
-    const responded = issuesRes.data.filter((i) => !i.pull_request && i.comments > 0);
-    // 无法直接拿首评时间（需再打评论接口，成本高）；用「有评论的 issue 占比」粗估响应性：
-    // 有响应的 issue 越多，给一个较小的响应天数；全无响应给 null。
-    if (responded.length > 0) {
-      const ratio = responded.length / Math.max(1, issuesRes.data.filter((i) => !i.pull_request).length);
-      issueResponseDays = ratio >= 0.6 ? 2 : ratio >= 0.3 ? 5 : 9;
-    } else {
-      issueResponseDays = null;
+    const issues = issuesRes.data.filter((i) => !i.pull_request);
+    const responded = issues.filter((i) => i.comments > 0);
+    if (issues.length > 0) {
+      issueResponseRatePct = Math.round((responded.length / issues.length) * 100);
     }
   }
 
@@ -118,7 +114,7 @@ export async function fetchGithubHealth(owner: string, repo: string): Promise<Gi
     commits90d,
     contributors,
     license: r.license?.spdx_id && r.license.spdx_id !== "NOASSERTION" ? r.license.spdx_id : (r.license?.name ?? null),
-    issueResponseDays,
+    issueResponseRatePct,
   };
 }
 

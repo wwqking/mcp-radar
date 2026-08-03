@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { getAllServers } from "@/lib/data";
 import SearchBar from "./SearchBar";
 import ThemeToggle from "./ThemeToggle";
 import LogoMark from "./Logo";
@@ -9,7 +8,6 @@ import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizedHref } from "@/lib/i18n/href";
 
 export default async function SiteHeader({ locale }: { locale: Locale }) {
-  const servers = await getAllServers();
   const dict = getDictionary(locale);
   const t = (p: string) => localizedHref(locale, p);
 
@@ -25,8 +23,8 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-neutral-200/80 bg-canvas-light/90 backdrop-blur dark:border-neutral-800 dark:bg-canvas-dark/90">
-      <div className="container-site flex h-14 items-center gap-3">
-        <Link href={t("/")} className="flex shrink-0 items-center gap-2" aria-label="MCP Radar">
+      <div className="container-site flex min-h-14 flex-wrap items-center gap-3 pt-2 sm:flex-nowrap sm:py-0">
+        <Link href={t("/")} prefetch={false} className="flex shrink-0 items-center gap-2" aria-label="MCP Radar">
           <LogoMark className="h-7 w-7 text-brand-600 dark:text-brand-500" />
           <span className="text-base font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
             MCP <span className="text-brand-600 dark:text-brand-400">Radar</span>
@@ -38,6 +36,7 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
             <Link
               key={n.label}
               href={t(n.href)}
+              prefetch={false}
               className="rounded-lg px-3 py-1.5 text-sm text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-100"
             >
               {n.label}
@@ -45,16 +44,16 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
           ))}
         </nav>
 
-        <div className="ml-auto flex min-w-0 items-center gap-1.5 sm:gap-2">
-          <div className="hidden sm:block">
-            <SearchBar
-              servers={servers}
-              locale={locale}
-              placeholderHero={dict.searchBar.placeholderHero}
-              placeholderNav={dict.searchBar.placeholderNav}
-              size="nav"
-            />
-          </div>
+        <div className="order-3 w-full pb-2 sm:order-none sm:ml-auto sm:w-auto sm:pb-0">
+          <SearchBar
+            locale={locale}
+            placeholderHero={dict.searchBar.placeholderHero}
+            placeholderNav={dict.searchBar.placeholderNav}
+            size="responsive"
+          />
+        </div>
+
+        <div className="ml-auto flex min-w-0 items-center gap-1.5 sm:ml-0 sm:gap-2">
           <LocaleSwitcher current={locale} />
           <ThemeToggle />
           <Link
@@ -64,16 +63,6 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
             {dict.common.subscribe}
           </Link>
         </div>
-      </div>
-
-      <div className="container-site pb-2 sm:hidden">
-        <SearchBar
-          servers={servers}
-          locale={locale}
-          placeholderHero={dict.searchBar.placeholderHero}
-          placeholderNav={dict.searchBar.placeholderNav}
-          size="hero"
-        />
       </div>
 
       {/* 移动端导航 */}
@@ -86,7 +75,8 @@ export default async function SiteHeader({ locale }: { locale: Locale }) {
             <Link
               key={n.label}
               href={t(n.href)}
-              className="shrink-0 rounded-lg px-3 py-1.5 text-sm text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800"
+              prefetch={false}
+              className="flex min-h-11 shrink-0 items-center rounded-lg px-3 py-2 text-sm text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800"
             >
               {n.label}
             </Link>

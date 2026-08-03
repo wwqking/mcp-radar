@@ -2,18 +2,22 @@ import type { Metadata } from "next";
 import { EMAIL_SPONSOR } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { hreflangAlternates } from "@/lib/i18n/href";
+import TrackedLink from "@/components/TrackedLink";
 
-export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
-  const dict = getDictionary(params.locale);
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const dict = getDictionary(locale);
   return {
     title: dict.sponsor.metaTitle,
     description: dict.sponsor.metaDesc,
-    alternates: { canonical: `/${params.locale}/sponsor` },
+    alternates: hreflangAlternates(locale, "/sponsor"),
   };
 }
 
-export default function SponsorPage({ params }: { params: { locale: Locale } }) {
-  const dict = getDictionary(params.locale);
+export default async function SponsorPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
+  const dict = getDictionary(locale);
   const s = dict.sponsor;
 
   const slots = [
@@ -92,7 +96,15 @@ export default function SponsorPage({ params }: { params: { locale: Locale } }) 
       <section className="mt-10 rounded-xl bg-neutral-100 p-6 dark:bg-neutral-800/50">
         <h2 className="font-bold text-neutral-900 dark:text-neutral-100">{s.contactTitle}</h2>
         <p className="mt-2 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-          {s.contactBody}<span className="mono">{EMAIL_SPONSOR}</span>
+          {s.contactBody}
+          <TrackedLink
+            href={`mailto:${EMAIL_SPONSOR}`}
+            className="link-accent mono"
+            eventName="Sponsor Contact"
+            eventProps={{ placement: "sponsor-page" }}
+          >
+            {EMAIL_SPONSOR}
+          </TrackedLink>
         </p>
       </section>
     </div>

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { getServerBySlug } from "@/lib/data";
 import ServerCard from "@/components/ServerCard";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema, ORGANIZATION_ID } from "@/lib/schema";
 import { SITE_NAME, absoluteUrl } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -12,22 +12,23 @@ import { getPillarContent, PILLAR_RELATED_SERVERS } from "@/lib/pillar-what-is-m
 import { SEO_LANDINGS, seoLandingText } from "@/lib/seo-landing";
 
 interface Props {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const c = getPillarContent(params.locale);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const c = getPillarContent(locale);
   return {
     title: c.title,
     description: c.excerpt,
-    alternates: hreflangAlternates(params.locale, "/what-is-mcp-server"),
-    openGraph: { title: c.title, description: c.excerpt, url: `/${params.locale}/what-is-mcp-server`, type: "article" },
+    alternates: hreflangAlternates(locale, "/what-is-mcp-server"),
+    openGraph: { title: c.title, description: c.excerpt, url: `/${locale}/what-is-mcp-server`, type: "article" },
     twitter: { card: "summary_large_image", title: c.title, description: c.excerpt },
   };
 }
 
 export default async function PillarPage({ params }: Props) {
-  const { locale } = params;
+  const { locale } = await params;
   const c = getPillarContent(locale);
   const d = getDictionary(locale).guides; // 复用 guides 词典的通用串（目录/返回等）
 
@@ -46,9 +47,12 @@ export default async function PillarPage({ params }: Props) {
     "@type": "Article",
     headline: c.title,
     description: c.excerpt,
+    datePublished: "2026-07-01",
+    dateModified: "2026-07-28",
     url: absoluteUrl(`/${locale}/what-is-mcp-server`),
-    author: { "@type": "Organization", name: SITE_NAME },
-    publisher: { "@type": "Organization", name: SITE_NAME },
+    image: absoluteUrl(`/${locale}/opengraph-image`),
+    author: { "@id": ORGANIZATION_ID },
+    publisher: { "@id": ORGANIZATION_ID },
     isAccessibleForFree: true,
   };
   const crumb = breadcrumbSchema([

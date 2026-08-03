@@ -36,7 +36,7 @@ import { verdictText, deathReasonText } from "@/lib/i18n/verdict";
 import TrackedLink from "@/components/TrackedLink";
 
 interface Props {
-  params: { name: string; locale: Locale };
+  params: Promise<{ name: string; locale: Locale }>;
 }
 
 export async function generateStaticParams() {
@@ -45,19 +45,20 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const s = await getServerBySlug(params.name);
+  const { name, locale } = await params;
+  const s = await getServerBySlug(name);
   if (!s) return {};
-  const d = getDictionary(params.locale).server;
+  const d = getDictionary(locale).server;
   const title = d.metaTitleTpl.replace("{name}", s.name);
   const description = d.metaDescTpl
     .replace("{tagline}", s.tagline)
     .replace("{score}", String(s.trustScore))
-    .replace("{verdict}", verdictText(s, params.locale));
-  const url = `/${params.locale}/server/${s.slug}`;
+    .replace("{verdict}", verdictText(s, locale));
+  const url = `/${locale}/server/${s.slug}`;
   return {
     title,
     description,
-    alternates: hreflangAlternates(params.locale, `/server/${s.slug}`),
+    alternates: hreflangAlternates(locale, `/server/${s.slug}`),
     openGraph: { title, description, url, type: "article" },
     twitter: { card: "summary_large_image", title, description },
   };
@@ -73,10 +74,10 @@ function trendPct(data: number[]): string | null {
 }
 
 export default async function ServerDetailPage({ params }: Props) {
-  const { locale } = params;
+  const { locale, name } = await params;
   const d = getDictionary(locale).server;
   const dCompare = getDictionary(locale).compare;
-  const s = await getServerBySlug(params.name);
+  const s = await getServerBySlug(name);
   if (!s) notFound();
 
   const sig = s.signals;

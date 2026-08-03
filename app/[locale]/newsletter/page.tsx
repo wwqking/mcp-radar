@@ -4,19 +4,33 @@ import SubscribeForm from "@/components/SubscribeForm";
 import WaitlistCta from "@/components/WaitlistCta";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { formatNumber, getLastUpdated, getRadarEntries, getSiteStats } from "@/lib/data";
+import { evidenceText } from "@/lib/i18n/verdict";
+import { hreflangAlternates } from "@/lib/i18n/href";
 
-export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
-  const dict = getDictionary(params.locale);
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const dict = getDictionary(locale);
   return {
     title: dict.newsletter.metaTitle,
     description: dict.newsletter.metaDesc,
-    alternates: { canonical: `/${params.locale}/newsletter` },
+    alternates: hreflangAlternates(locale, "/newsletter"),
   };
 }
 
-export default function NewsletterPage({ params }: { params: { locale: Locale } }) {
-  const dict = getDictionary(params.locale);
+export default async function NewsletterPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
+  const dict = getDictionary(locale);
   const n = dict.newsletter;
+  const [radar, stats, lastUpdated] = await Promise.all([
+    getRadarEntries(),
+    getSiteStats(),
+    getLastUpdated(),
+  ]);
+  const trend = radar.trending[0];
+  const added = radar.added[0];
+  const risk = radar.dead[0];
+  const en = locale === "en";
 
   return (
     <div className="container-site max-w-3xl py-10 sm:py-16">
@@ -31,22 +45,28 @@ export default function NewsletterPage({ params }: { params: { locale: Locale } 
         </p>
       </div>
 
-      {/* 样例展示 */}
+      {/* 用当前数据生成预览，避免用虚构期号和硬编码统计。 */}
       <div className="card mt-10 p-6 sm:p-8">
         <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-neutral-400">{n.sampleLabel}</p>
         <div className="space-y-4 rounded-lg border border-neutral-100 bg-neutral-50/50 p-5 dark:border-neutral-800 dark:bg-neutral-800/30">
-          <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">MCP Radar Weekly #42</p>
+          <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">
+            {en ? "Latest data snapshot" : "最新数据快照"} · {lastUpdated}
+          </p>
           <div className="space-y-3 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-            <p>🔥 <strong>figma-developer-mcp</strong> +260 ⭐ this week</p>
-            <p>🆕 <strong>Linear</strong> official server is live</p>
-            <p>⚰️ <strong>docker-mcp-toolkit</strong> archived (was 2.1k ⭐)</p>
-            <p>📊 23 new servers this week · 11% abandonment rate</p>
+            {trend && <p>🔥 <strong>{trend.server.name}</strong> — {evidenceText(trend, locale)}</p>}
+            {added && <p>🆕 <strong>{added.server.name}</strong> — {evidenceText(added, locale)}</p>}
+            {risk && <p>⚰️ <strong>{risk.server.name}</strong> — {evidenceText(risk, locale)}</p>}
+            <p>
+              📊 {en
+                ? `${formatNumber(stats.total)} tracked · ${formatNumber(stats.dying + stats.dead)} currently flagged at risk`
+                : `追踪 ${formatNumber(stats.total)} 个 · 当前 ${formatNumber(stats.dying + stats.dead)} 个被标记为风险项`}
+            </p>
           </div>
         </div>
       </div>
 
       <div className="mt-8">
-        <SubscribeInline locale={params.locale} />
+        <SubscribeInline locale={locale} />
       </div>
 
       {/* 免费 / 会员 两档 */}
@@ -61,7 +81,7 @@ export default function NewsletterPage({ params }: { params: { locale: Locale } 
           </ul>
           <div className="mt-5">
             <SubscribeForm
-              strings={{ ...subscribeStrings(params.locale), cta: n.freeCta }}
+              strings={{ ...subscribeStrings(locale), cta: n.freeCta }}
               source="newsletter-free"
               layout="stacked"
               buttonVariant="outline"
@@ -94,7 +114,7 @@ export default function NewsletterPage({ params }: { params: { locale: Locale } 
           </ul>
           <WaitlistCta
             label={n.proCtaWaitlist}
-            strings={{ ...subscribeStrings(params.locale), cta: n.proCtaWaitlist }}
+            strings={{ ...subscribeStrings(locale), cta: n.proCtaWaitlist }}
             source="newsletter-pro"
             note={n.waitlistNote}
           />
@@ -116,7 +136,7 @@ export default function NewsletterPage({ params }: { params: { locale: Locale } 
         </div>
         <WaitlistCta
           label={n.teamCtaWaitlist}
-          strings={{ ...subscribeStrings(params.locale), cta: n.teamCtaWaitlist }}
+          strings={{ ...subscribeStrings(locale), cta: n.teamCtaWaitlist }}
           source="newsletter-team"
           note={n.waitlistNote}
           buttonVariant="outline"

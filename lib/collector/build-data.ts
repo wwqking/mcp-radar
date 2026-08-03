@@ -612,7 +612,7 @@ export async function collectServers(
   // 趋势/diff：用历史快照算周增量 + 构造 sparkline，然后写入今天的快照
   await applyTrends(final);
 
-  // 落盘全量数据集：供 Vercel build 直接读取，不必在 build 里重新采集
+  // 落盘全量数据集：供 Cloudflare build 直接读取，不必在 build 里重新采集
   await writeDataset(final);
   await writeCatalogState(catalogTransition.state);
 
@@ -622,7 +622,7 @@ export async function collectServers(
 /**
  * 供数据层（live-provider）用：优先读采集好的数据集（瞬时），读不到才现场采集。
  *
- * 正常流程：CI 每天 `npm run collect` → 写 data/servers.json 提交 → Vercel build 读它。
+ * 正常流程：CI 每天 `npm run collect` → 写 data/servers.json 提交 → Cloudflare build 读它。
  * 兜底：本地首次跑、或数据集缺失时，退回实时采集（慢但能出数据）。
  */
 export async function loadServers(): Promise<MCPServer[]> {

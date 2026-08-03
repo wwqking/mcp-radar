@@ -1,7 +1,7 @@
 name: 每日采集与部署
 
-# 方案 A：每天在 CI 里采集真实数据 → 写快照 → commit 回仓库 → 触发 Vercel 部署。
-# 采集/commit 在这里做（有 git 写权限、快照能持久累积趋势）；Vercel 只负责 build+上线。
+# 每天在 CI 里采集真实数据 → 写快照 → commit 回 master → 触发 Cloudflare Workers Builds。
+# 采集/commit 在这里做（有 git 写权限、快照能持久累积趋势）；Cloudflare 负责 build+上线。
 
 on:
   schedule:
@@ -46,7 +46,7 @@ jobs:
 
       - name: 提交数据集 + 快照（有变化才提交）
         # 提交 data/servers.json（build 直接读它，不再重新采集）+ data/snapshots（趋势历史）。
-        # Vercel 已开启 Git 自动部署：这个 push 自动触发 build + 上线，无需 Deploy Hook。
+        # Cloudflare Workers Builds 已连接 master：这个 push 自动触发 build + 上线。
         run: |
           git config user.name "mcp-radar-bot"
           git config user.email "bot@mcpradars.com"
@@ -54,7 +54,7 @@ jobs:
             git add data/
             git commit -m "chore: 每日数据更新 $(date -u +%Y-%m-%d)"
             git push
-            echo "✓ 数据已更新并推送（将自动触发 Vercel 部署）"
+            echo "✓ 数据已更新并推送（将自动触发 Cloudflare 部署）"
           else
             echo "无数据变化，跳过提交（无需部署）"
           fi

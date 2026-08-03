@@ -12,6 +12,8 @@ const CACHE_DIR = join(process.cwd(), ".cache", "collector");
 
 /** 缓存有效期（毫秒）：默认 12 小时，构建间复用 */
 const TTL_MS = Number(process.env.MCP_CACHE_TTL_MS ?? 12 * 60 * 60 * 1000);
+/** 单个外部请求最大等待时间，避免某个 GitHub/npm/Registry 连接无限挂住整批采集。 */
+const FETCH_TIMEOUT_MS = Number(process.env.MCP_FETCH_TIMEOUT_MS ?? 20_000);
 
 interface CacheEntry<T> {
   fetchedAt: number;
@@ -65,7 +67,10 @@ export async function cachedGetJson<T>(
   let lastErr: unknown = null;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      const res = await fetch(url, { headers: { Accept: "application/json", ...headers } });
+      const res = await fetch(url, {
+        headers: { Accept: "application/json", ...headers },
+        signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+      });
       if (res.status === 403 || res.status === 429) {
         // 限流：不缓存，短暂等待后重试一次
         lastErr = new Error(`rate limited: ${res.status}`);

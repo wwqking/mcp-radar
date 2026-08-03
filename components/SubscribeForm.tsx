@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 export interface SubscribeFormStrings {
   cta: string;
@@ -64,6 +65,10 @@ export default function SubscribeForm({
       };
 
       if (res.ok && data.ok) {
+        trackEvent("Newsletter Subscribe", {
+          source,
+          result: data.already ? "already" : "new",
+        });
         setStatus("success");
         setMessage(data.already ? strings.already : strings.success);
         setEmail("");
@@ -71,6 +76,10 @@ export default function SubscribeForm({
       }
 
       setStatus("error");
+      trackEvent("Newsletter Subscribe Error", {
+        source,
+        status: res.status,
+      });
       if (res.status === 503 || data.error === "not_configured") {
         setMessage(strings.notConfigured);
       } else if (res.status === 422 || data.error === "invalid_email") {

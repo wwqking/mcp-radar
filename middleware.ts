@@ -21,7 +21,14 @@ export function middleware(req: NextRequest) {
   const hasLocale = LOCALES.some(
     (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`),
   );
-  if (hasLocale) return NextResponse.next();
+  if (hasLocale) {
+    const locale = LOCALES.find(
+      (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`),
+    ) ?? DEFAULT_LOCALE;
+    const response = NextResponse.next();
+    response.headers.set("Content-Language", locale === "zh" ? "zh-CN" : "en");
+    return response;
+  }
 
   const locale = detectLocale(req);
   const url = req.nextUrl.clone();

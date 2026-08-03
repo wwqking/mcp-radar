@@ -2,7 +2,7 @@
 
 找到能用的 MCP server —— 按用途分类，标注哪个还活着。
 
-基于 Next.js 14 App Router + TypeScript + Tailwind CSS 的公开前台。设计文档见上级目录 `mcp-radar.md` / `mcp-radar-frontend.md`。
+基于 Next.js 15 App Router + TypeScript + Tailwind CSS 的公开前台，通过 OpenNext 部署到 Cloudflare Workers。设计文档见上级目录 `mcp-radar.md` / `mcp-radar-frontend.md`。
 
 ## 开发
 
@@ -23,6 +23,8 @@ app/            页面（App Router）
   leaderboard/  质量榜
   graveyard/    MCP 墓地
   about/ newsletter/ sponsor/  信任与变现页
+  privacy/ terms/ editorial-policy/  隐私、条款与编辑政策
+  dataset.json/  可引用的公开健康数据快照
   sitemap.ts robots.ts
 components/     TrustScore / LifecycleBadge / ServerCard / SearchBar / SignalRow 等
 lib/            types.ts 数据类型 · data.ts mock 数据层
@@ -43,7 +45,7 @@ lib/data.ts            按 NEXT_PUBLIC_DATA_SOURCE 选 provider（服务端专�
 lib/collector/        本项目内置「引擎」——构建期采集：
   curated.ts           知名 server 白名单（直采种子，见下）
   registry.ts          官方 MCP registry：拿 server 清单 + repo url + 包名
-  github.ts            GitHub API 富化：stars / 提交活跃 / archived / license / 贡献者
+  github.ts            GitHub API 富化：stars / 提交活跃 / archived / license / 贡献者 / 近期 issue 获回复比例
   npm.ts               npm 富化：周下载量 + 发版频率
   score.ts             TrustScore 五维评分 + 生命周期判定（设计文档 §2）
   classify.ts          关键词自动分类（设计文档 §3）
@@ -59,8 +61,8 @@ data/snapshots/       历史快照（提交进 git，趋势/diff 的数据基础
 ```
 
 > **build 不采集**：`npm run collect`（CI 每日跑）采集并写 `data/servers.json` + 快照，提交进 git。
-> Vercel/本地 build 只**读** `data/servers.json`（瞬时），不重新拓 API——彻底避开 build 超时、
-> 且 Vercel 无需 GITHUB_TOKEN。数据集缺失时才回退实时采集（兜底）。
+> Cloudflare/本地 build 只**读** `data/servers.json`（瞬时），不重新请求 API——彻底避开 build 超时、
+> 且 Workers Builds 无需 GITHUB_TOKEN。数据集缺失时才回退实时采集（兜底）。
 
 **趋势 / 周增量**（`snapshots.ts`）：每次 live 采集写一份 `data/snapshots/YYYY-MM-DD.json`
 （slug → stars/downloads）。下次采集读最近的旧快照做 diff：
@@ -72,8 +74,8 @@ data/snapshots/       历史快照（提交进 git，趋势/diff 的数据基础
 
 **采集策略**（`build-data.ts`）：白名单直采 + 自动发现种子 + Registry 完整 latest 分页，
 再按每日预算轮转做 GitHub/npm 深度富化。
-- 白名单（`curated.ts`）：实测知名官方 server（playwright/github/filesystem…）多数**不在**官方
-  registry 里，靠内置 repo 清单直接富化保底优质数据。
+- 白名单（`curated.ts`）：知名 server 的仓库种子，用于目录覆盖；只有 Registry API 本次明确
+  返回的项目才展示“官方 Registry 已验证”，白名单本身不等于官方收录。
 - Registry：每天完整拉元数据，不再只看字母序前 N 条；`MCP_COLLECT_LIMIT` 只控制深度富化预算。
 - 持久合并：旧条目不会因为当天没轮到富化而消失；来源连续缺失 3 次后才移除。
 - 新项目优先：每天由 `MCP_NEW_SERVER_LIMIT` 预留一批名额，目录会持续吸收新 server。
@@ -102,14 +104,16 @@ npm run build
 
 ## SEO / GEO（已就绪）
 
-- **域名**：集中在 `lib/site.ts`（`NEXT_PUBLIC_SITE_URL`，默认 `https://mcpradars.com`），
+- **域名**：集中在 `lib/site.ts`（`NEXT_PUBLIC_SITE_URL`，默认 `https://www.mcpradars.com`），
   sitemap / robots / canonical / schema / feed 全部引用它。
 - **每页 metadata**：canonical + OpenGraph + Twitter card（`summary_large_image`）。
-- **结构化数据**（`lib/schema.ts`）：全站 Organization + WebSite(SearchAction)；
-  详情页 SoftwareApplication + BreadcrumbList；分类页 CollectionPage(ItemList)；指南 Article。
+- **结构化数据**（`lib/schema.ts`）：全站 Organization + WebSite；
+  详情页 SoftwareApplication + BreadcrumbList；分类页 CollectionPage(ItemList)；指南 Article；
+  榜单页 Dataset。TrustScore 使用 PropertyValue，不伪装成用户 AggregateRating。
 - **GEO**：
   - `robots.ts` 明确放行 GPTBot / ClaudeBot / PerplexityBot / Google-Extended 等 AI 爬虫。
   - `/llms.txt`（`app/llms.txt/route.ts`）：给 AI 引擎的站点地图 + 方法论 + 数据边界，含实时高分 server。
+  - `/dataset.json`：版本化公开快照，输出来源、日期和可复核的派生字段。
 - **OG 图**：`app/opengraph-image.tsx` 用 next/og 代码生成的品牌图，全站默认。
 
 ## 变现 / 交互功能
@@ -121,6 +125,7 @@ npm run build
 - **每页动态 OG 图**：`app/[locale]/server/[name]/opengraph-image.tsx`——带 server 名 + TrustScore 环 + 生命周期 + stars/下载，随详情页 SSG 各出一张（全站默认图仍是 `app/[locale]/opengraph-image.tsx`）。
 - **复制安装命令**：详情页 `InstallCommandCard`（`lib/install.ts` 生成 `claude mcp add` / JSON 配置，多 tab + 一键复制）。
 - **对比**：`/[locale]/compare?ids=a,b,c`（noindex 工具页）。详情页「加入对比」（`CompareButton`）→ 浮动对比栏（`CompareTray`，全局挂在 layout）→ 并排对比表（`CompareTable`）。状态存 localStorage（`lib/compare-store.ts`），跨页/刷新/多标签同步。
+- **统计**：全站接入 Google Tag Manager（默认容器 `GTM-M27PF8G6`，可由 `NEXT_PUBLIC_GTM_ID` 覆盖）；搜索结果点击、安装命令复制、订阅、候补和赞助联系等不含 PII 的转化事件会推送到 `dataLayer`。
 
 ## 待办
 
@@ -140,5 +145,14 @@ Agent Skills 主题（389 词 / 124,480 月量）已决定**单独开站**，产
 
 ### 变现
 
-- [ ] 上线后在 Vercel env 配 `BUTTONDOWN_API_KEY` 开启订阅
+- [ ] 在 Cloudflare Worker 的 Variables and secrets 中配 `BUTTONDOWN_API_KEY` 开启订阅
 - [ ] Pro/团队档的真正支付（Stripe）——目前只收候补邮箱
+
+## 部署
+
+- 生产 Worker：`mcp-radar`，规范域名 `https://www.mcpradars.com`。
+- Cloudflare Workers Builds 连接 GitHub 仓库 `wwqking/mcp-radar`，监听 `master`。
+- push 到 `master` 后自动执行 `npm run deploy`；其他分支可用 `npm run upload` 产生预览版本。
+- 本地手动发布仍可执行 `npm run deploy`。
+
+详细配置与验证方式见 [`DEPLOY.md`](./DEPLOY.md)。

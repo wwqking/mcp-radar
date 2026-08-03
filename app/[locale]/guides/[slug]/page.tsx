@@ -13,31 +13,32 @@ import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 
 interface Props {
-  params: { slug: string; locale: Locale };
+  params: Promise<{ slug: string; locale: Locale }>;
 }
 
 export function generateStaticParams() {
   return getGuideSlugs().map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const g = getGuideBySlug(params.slug, params.locale);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const g = getGuideBySlug(slug, locale);
   if (!g) return {};
-  const url = `/${params.locale}/guides/${g.slug}`;
+  const url = `/${locale}/guides/${g.slug}`;
   return {
     title: g.title,
     description: g.excerpt,
-    alternates: hreflangAlternates(params.locale, `/guides/${g.slug}`),
+    alternates: hreflangAlternates(locale, `/guides/${g.slug}`),
     openGraph: { title: g.title, description: g.excerpt, url, type: "article" },
     twitter: { card: "summary_large_image", title: g.title, description: g.excerpt },
   };
 }
 
 export default async function GuideArticlePage({ params }: Props) {
-  const { locale } = params;
+  const { locale, slug } = await params;
   const d = getDictionary(locale).guides;
   const ds = getDictionary(locale).server;   // 榜单表头复用 server 段的词条
-  const g = getGuideBySlug(params.slug, locale);
+  const g = getGuideBySlug(slug, locale);
   if (!g) notFound();
 
   // best-of 类指南的榜单由实时数据生成，而不是写死在文案里。

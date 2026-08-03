@@ -2,37 +2,52 @@
 // 利于 Google 富结果 + AI 引擎（GEO）理解站点实体与内容。
 
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, absoluteUrl } from "./site";
+import { LOCALE_HTML_LANG, type Locale } from "./i18n/locales";
+
+export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+export const WEBSITE_ID = `${SITE_URL}/#website`;
 
 /** 站点组织实体（全站注入一次） */
-export function organizationSchema() {
+export function organizationSchema(
+  locale: Locale = "en",
+  description = SITE_DESCRIPTION,
+) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": ORGANIZATION_ID,
     name: SITE_NAME,
     url: SITE_URL,
-    description: SITE_DESCRIPTION,
-    logo: absoluteUrl("/opengraph-image"),
+    description,
+    inLanguage: LOCALE_HTML_LANG[locale],
+    logo: {
+      "@type": "ImageObject",
+      url: absoluteUrl("/icon"),
+    },
+    sameAs: ["https://github.com/wwqking/mcp-radar"],
+    knowsAbout: [
+      "Model Context Protocol",
+      "MCP servers",
+      "open-source software maintenance",
+      "developer tools",
+    ],
   };
 }
 
-/** WebSite + 站内搜索动作（让 Google 展示站点搜索框） */
-export function webSiteSchema() {
+/** WebSite 实体。站内搜索目前是前端即时搜索，不声明不可落地的 SearchAction。 */
+export function webSiteSchema(
+  locale: Locale = "en",
+  description = SITE_DESCRIPTION,
+) {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": WEBSITE_ID,
     name: SITE_NAME,
     url: SITE_URL,
-    description: SITE_DESCRIPTION,
-    inLanguage: "zh-CN",
-    potentialAction: {
-      "@type": "SearchAction",
-      // 站内搜索是即时前端搜索，这里指向首页并带 query 参数占位（GEO/SEO 惯例）
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE_URL}/?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
+    description,
+    inLanguage: LOCALE_HTML_LANG[locale],
+    publisher: { "@id": ORGANIZATION_ID },
   };
 }
 

@@ -21,7 +21,7 @@ import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 
 interface Props {
-  params: { cat: string; locale: Locale };
+  params: Promise<{ cat: string; locale: Locale }>;
 }
 
 export function generateStaticParams() {
@@ -29,30 +29,31 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const cat = await getCategoryBySlug(params.cat);
+  const { cat: catSlug, locale } = await params;
+  const cat = await getCategoryBySlug(catSlug);
   if (!cat) return {};
-  const d = getDictionary(params.locale).category;
+  const d = getDictionary(locale).category;
   const servers = await getServersByCategory(cat.slug);
-  const name = categoryName(cat, params.locale);
-  const title = d.titleTpl.replace("{name}", name).replace("{tagline}", categoryTagline(cat, params.locale));
+  const name = categoryName(cat, locale);
+  const title = d.titleTpl.replace("{name}", name).replace("{tagline}", categoryTagline(cat, locale));
   const description = d.descTpl
-    .replace("{description}", categoryDescription(cat, params.locale))
+    .replace("{description}", categoryDescription(cat, locale))
     .replace("{count}", String(servers.length));
-  const url = `/${params.locale}/category/${cat.slug}`;
+  const url = `/${locale}/category/${cat.slug}`;
   return {
     title,
     description,
-    alternates: hreflangAlternates(params.locale, `/category/${cat.slug}`),
+    alternates: hreflangAlternates(locale, `/category/${cat.slug}`),
     openGraph: { title, description, url, type: "website" },
     twitter: { card: "summary_large_image", title, description },
   };
 }
 
 export default async function CategoryPage({ params }: Props) {
-  const { locale } = params;
+  const { locale, cat: catSlug } = await params;
   const dict = getDictionary(locale);
   const d = dict.category;
-  const cat = await getCategoryBySlug(params.cat);
+  const cat = await getCategoryBySlug(catSlug);
   if (!cat) notFound();
 
   const servers = await getServersByCategory(cat.slug);

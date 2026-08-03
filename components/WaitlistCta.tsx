@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import SubscribeForm, { type SubscribeFormStrings } from "./SubscribeForm";
+import { trackEvent } from "@/lib/analytics";
 
 interface Props {
   /** 按钮文案（未展开时） */
@@ -33,7 +34,14 @@ export default function WaitlistCta({ label, strings, source, note, buttonVarian
       : "mt-5 w-full rounded-lg bg-brand-600 py-2.5 text-sm font-medium text-white hover:bg-brand-700";
 
   return (
-    <button type="button" onClick={() => setOpen(true)} className={btnClass}>
+    <button
+      type="button"
+      onClick={() => {
+        trackEvent("Waitlist Open", { source });
+        setOpen(true);
+      }}
+      className={btnClass}
+    >
       {label}
     </button>
   );

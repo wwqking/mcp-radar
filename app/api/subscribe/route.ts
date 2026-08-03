@@ -3,7 +3,7 @@
 // 全站是纯静态 SSG，这个 route 是唯一的运行时端点：接收邮箱 → 转发给 Buttondown 建列表。
 // 不收款、不建库，只把邮箱交给 newsletter 服务商。
 //
-// 生效条件：环境变量配了 BUTTONDOWN_API_KEY（Vercel 项目 env 里加即可）。
+// 生效条件：Cloudflare Worker 的 Variables and secrets 配了 BUTTONDOWN_API_KEY。
 // 未配置时返回 503 + 明确文案，前端降级提示「订阅暂未开放」，不会假装成功。
 //
 // Buttondown API: https://docs.buttondown.email/api-subscribers-create
@@ -14,6 +14,9 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const RATE_WINDOW_MS = 60_000;
+const RATE_MAX = 5;
+const rateBuckets = new Map<string, { count: number; resetAt: number }>();
 
 interface SubscribeBody {
   email?: unknown;
@@ -24,6 +27,32 @@ interface SubscribeBody {
 }
 
 export async function POST(req: Request) {
+  const contentLength = Number(req.headers.get("content-length") ?? 0);
+  if (contentLength > 10_000) {
+    return NextResponse.json({ ok: false, error: "payload_too_large" }, { status: 413 });
+  }
+
+  const forwarded = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim();
+  const clientKey = forwarded || req.headers.get("x-real-ip") || "unknown";
+  const now = Date.now();
+  const bucket = rateBuckets.get(clientKey);
+  if (bucket && bucket.resetAt > now && bucket.count >= RATE_MAX) {
+    return NextResponse.json(
+      { ok: false, error: "rate_limited" },
+      {
+        status: 429,
+        headers: {
+          "Retry-After": String(Math.ceil((bucket.resetAt - now) / 1000)),
+        },
+      },
+    );
+  }
+  if (!bucket || bucket.resetAt <= now) {
+    rateBuckets.set(clientKey, { count: 1, resetAt: now + RATE_WINDOW_MS });
+  } else {
+    bucket.count += 1;
+  }
+
   let body: SubscribeBody;
   try {
     body = await req.json();

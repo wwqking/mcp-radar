@@ -15,7 +15,7 @@ export default function LocaleSwitcher({ current }: { current: Locale }) {
   }
 
   return (
-    <div className="flex items-center rounded-lg border border-neutral-200 p-0.5 text-xs dark:border-neutral-700">
+    <div className="flex min-h-11 items-center rounded-lg border border-neutral-200 p-0.5 text-xs dark:border-neutral-700">
       {LOCALES.map((l) => {
         const active = l === current;
         return (
@@ -27,8 +27,8 @@ export default function LocaleSwitcher({ current }: { current: Locale }) {
             aria-current={active ? "true" : undefined}
             className={
               active
-                ? "rounded-md bg-brand-600 px-2 py-1 font-medium text-white"
-                : "rounded-md px-2 py-1 text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-100"
+                ? "flex min-h-9 items-center rounded-md bg-brand-600 px-2 py-1 font-medium text-white"
+                : "flex min-h-9 items-center rounded-md px-2 py-1 text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-100"
             }
           >
             {LOCALE_LABELS[l]}

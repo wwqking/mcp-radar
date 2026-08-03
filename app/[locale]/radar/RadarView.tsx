@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import type { RadarBuckets } from "@/lib/provider";
 import ServerCard from "@/components/ServerCard";
 import SubscribeInline from "@/components/SubscribeInline";
@@ -36,8 +35,6 @@ interface Props {
 
 /** 雷达页交互层：时间切换 + 分享按钮。数据由服务端父组件 fetch 后传入。 */
 export default function RadarView({ entries, lastUpdated, locale, labels: L }: Props) {
-  const periods = [L.periodThisWeek, L.periodLastWeek, L.periodHistory] as const;
-  const [period, setPeriod] = useState<string>(L.periodThisWeek);
   const { trending, added, dead } = entries;
 
   const sections = [
@@ -55,29 +52,6 @@ export default function RadarView({ entries, lastUpdated, locale, labels: L }: P
         <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">{L.sub}</p>
         <SourceMethodNote locale={locale} className="mt-3" sources={[L.sourceLabel]} updatedAt={lastUpdated} />
       </header>
-
-      {/* 时间切换 */}
-      <div className="mb-8 flex rounded-lg border border-neutral-200 p-0.5 dark:border-neutral-700 w-fit">
-        {periods.map((p) => (
-          <button
-            key={p}
-            onClick={() => setPeriod(p)}
-            className={`rounded-md px-4 py-1.5 text-sm ${
-              period === p
-                ? "bg-brand-600 text-white"
-                : "text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
-            }`}
-          >
-            {p}
-          </button>
-        ))}
-      </div>
-
-      {period !== L.periodThisWeek && (
-        <p className="mb-8 rounded-lg bg-neutral-100 px-4 py-2.5 text-sm text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400">
-          {L.placeholderNote.replace("{period}", period)}
-        </p>
-      )}
 
       <div className="space-y-12">
         {sections.map((sec, idx) => (

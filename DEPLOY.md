@@ -1,85 +1,96 @@
-# 部署与持续更新（Vercel + 方案 A）
+# 部署与持续更新（Cloudflare Workers Builds）
 
-数据更新机制 = **每日 GitHub Actions 采集 → commit 快照 push → Vercel 自动部署**。
-采集/快照持久化在 CI 做（有 git 写权限，趋势能累积），Vercel 靠 Git 自动部署上线。
+生产环境使用 Cloudflare Workers + OpenNext。GitHub 仓库与 Worker 直接连接，push 到 `master` 后由 Workers Builds 自动构建和发布。
 
+```text
+人工 push 代码到 master
+  └─ Cloudflare Workers Builds
+       └─ npm run deploy
+            ├─ opennextjs-cloudflare build
+            └─ opennextjs-cloudflare deploy
+
+GitHub Actions 每日采集
+  └─ npm run collect
+       └─ commit data/ 并 push master
+            └─ 触发同一条 Cloudflare 自动部署链路
 ```
-GitHub Actions（每日 cron）
-  └─ npm run collect  →  拉 registry+GitHub+npm，算分/分类，写 data/snapshots/当天.json
-  └─ commit 快照 push 回仓库（趋势历史随仓库累积）
-        └─ Vercel 监听 master push → 全新 build（已带最新快照）→ 上线
-```
 
-> 靠 Vercel 的 Git 自动部署触发，**不需要 Deploy Hook**。bot 每天 push 快照即自动部署。
+## 生产目标
 
-## 一次性配置清单
+- Cloudflare 账户 ID：`c761ce097f5d90ecc01ed8dff5f1acab`
+- Worker：`mcp-radar`
+- 生产分支：`master`
+- 生产域名：`https://www.mcpradars.com`
+- 备用域名：`https://mcpradars.com`
+- Workers.dev：`https://mcp-radar.wangknit.workers.dev`
 
-### 1. 推代码到 GitHub
+Worker 名、路由、兼容性日期和静态资产绑定均在 `wrangler.jsonc` 内版本化。
+
+## Workers Builds 配置
+
+Cloudflare Dashboard → Workers & Pages → `mcp-radar` → Settings → Builds：
+
+| 配置 | 值 |
+|---|---|
+| Git repository | `wwqking/mcp-radar` |
+| Production branch | `master` |
+| Root directory | `/` |
+| Build command | 留空 |
+| Deploy command | `npm run deploy` |
+| Non-production deploy command | `npm run upload` |
+
+Build Variables and secrets：
+
+| 名称 | 类型 | 值 / 说明 |
+|---|---|---|
+| `NEXT_PUBLIC_SITE_URL` | Variable | `https://www.mcpradars.com` |
+| `NEXT_PUBLIC_DATA_SOURCE` | Variable | `live` |
+| `NEXT_PUBLIC_GTM_ID` | Variable | `GTM-M27PF8G6` |
+| `BUTTONDOWN_API_KEY` | Secret | 从 Buttondown 取得，不得提交到 Git |
+
+Workers Builds 会在 Cloudflare 侧自动管理部署凭据，不需把 `CLOUDFLARE_API_TOKEN` 放进 GitHub Secrets。
+
+## 日常发布
 
 ```bash
-# 在 GitHub 建空仓库 mcp-radar 后：
-git remote add origin git@github.com:<你>/mcp-radar.git
-git push -u origin master
+git add <files>
+git commit -m "feat: ..."
+git push origin master
 ```
 
-> `.env`（含 GITHUB_TOKEN）已被 `.gitignore` 挡住，不会上传。确认 `git status` 里看不到它。
+push 成功后，Cloudflare 会在 GitHub commit 上回写 build check。只有 `master` 的成功构建会提升为生产版本；其他分支使用 `npm run upload` 上传预览版本，不覆盖生产。
 
-### 2. Vercel 连接项目
+## 每日数据更新
 
-1. Vercel → New Project → 导入这个 GitHub 仓库。
-2. Framework 自动识别 Next.js，Build Command / Output 用默认即可。
-3. **环境变量**（Project Settings → Environment Variables）：
+`.github/workflows/daily-update.yml` 每天执行一次：
 
-   | 变量 | 值 | 说明 |
-   |---|---|---|
-   | `NEXT_PUBLIC_SITE_URL` | `https://www.mcpradars.com` | 规范域名（sitemap/canonical/schema 用） |
-   | `NEXT_PUBLIC_DATA_SOURCE` | `live` | 读采集好的真实数据 |
+1. 运行 `npm run collect`。
+2. 如果 `data/` 有变化，提交数据集与快照。
+3. push 回 `master`。
+4. Workers Builds 自动发布新数据。
 
-   > **Vercel build 不再采集**：build 直接读仓库里 CI 提交的 `data/servers.json`（瞬时）。
-   > 所以 Vercel 环境**不需要** `GITHUB_TOKEN` / `MCP_COLLECT_LIMIT`——采集只在 GitHub Actions 跑。
-   > （兜底：万一 `data/servers.json` 缺失，build 会退回实时采集，此时才需要 token；正常流程不会。）
+采集仍需 GitHub 仓库中的 `MCP_GITHUB_TOKEN` secret，及可选的 `MCP_COLLECT_LIMIT` / `MCP_NEW_SERVER_LIMIT` / `MCP_MISSING_GRACE_RUNS` variables。
 
-### 3. 绑定域名
+## 本地手动发布（兜底）
 
-Vercel → Project → Domains → 添加 `mcpradars.com`，勾选「Redirect apex to www」→
-实际访问域名为 `www.mcpradars.com`（apex 301 跳 www）。DNS 按 Vercel 提示在域名商配。
+```bash
+npx wrangler auth activate mcp-radar-cloudflare
+npm run deploy
+```
 
-### 4. 配 GitHub Secret（每日更新用）
-
-仓库 → Settings → Secrets and variables → Actions：
-
-| 类型 | 名称 | 值 |
-|---|---|---|
-| Secret | `MCP_GITHUB_TOKEN` | GitHub token（只读 public_repo），CI 采集用 |
-| Variable | `MCP_COLLECT_LIMIT` | `800`（每日 GitHub/npm 深度富化预算） |
-| Variable | `MCP_NEW_SERVER_LIMIT` | `250`（每日优先尝试入库的新项目数） |
-| Variable | `MCP_MISSING_GRACE_RUNS` | `3`（来源连续缺失几次后才移除） |
-
-> 不需要 Deploy Hook——bot 每天 push 快照，Vercel 的 Git 自动部署会接管。
-
-### 5. 部署触发方式（保持 Vercel Git 自动部署）
-
-Vercel 默认监听 `master` push 自动 build，**保持开启即可**：
-- 人工改代码 push → 自动部署 ✅
-- 每日 workflow push 快照 → 自动部署（数据每日更新）✅
-
-无需 Deploy Hook，无重复部署问题。
+这条路径仅用于 CI 故障或紧急修复。正常情况下应该通过 `master` push 发布，确保生产版本与 Git 可追溯。
 
 ## 验证
 
-- 手动触发一次：GitHub → Actions → 「每日采集与部署」→ Run workflow。
-- 看 Actions 日志：应输出「采集完成 N 个 server」+「快照已更新并推送」+「已触发 Vercel 部署」。
-- Vercel 部署完成后访问站点，确认数据是当天的。
-
-## 上线后（SEO 冷启动）
-
-- Google Search Console / Bing Webmaster：添加 `mcpradars.com`，提交 `sitemap.xml`。
-- 这是设计文档强调的「第 1 天提交索引、把沙盒期用满」，越早越好。
-
-## 本地手动采集（可选）
-
 ```bash
-cp .env.example .env   # 填 GITHUB_TOKEN
-npm run collect        # 只采集写快照，不 build
-npm run build && npm start   # 本地看真实数据
+curl -I https://www.mcpradars.com/en
+curl -sS --compressed https://www.mcpradars.com/en \
+  | rg 'ca-pub-5972123080217605'
 ```
+
+发布后应同时检查：
+
+- Cloudflare build 状态为 Success。
+- `www.mcpradars.com` 返回 HTTP 200。
+- 页面 HTML 包含当前 AdSense client ID。
+- `/dataset.json` 与 `/sitemap.xml` 可访问。

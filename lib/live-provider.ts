@@ -14,6 +14,7 @@ import type {
 } from "./provider";
 import { CATEGORIES, formatNumber } from "./mock-provider";
 import { loadServers } from "./collector/build-data";
+import { readDataset } from "./collector/dataset";
 
 // 构建进程内只读一次，全部页面共享。
 // loadServers 优先读采集好的 data/servers.json（瞬时），读不到才退回实时采集。
@@ -27,6 +28,58 @@ function graveyardOf(list: MCPServer[]): MCPServer[] {
   return list
     .filter((s) => s.lifecycle === "dead" || s.lifecycle === "dying")
     .sort((a, b) => (a.deadAt ?? "").localeCompare(b.deadAt ?? "") * -1);
+}
+
+const SIMILARITY_STOP_WORDS = new Set([
+  "mcp",
+  "server",
+  "model",
+  "context",
+  "protocol",
+  "official",
+  "tool",
+  "tools",
+  "with",
+  "from",
+  "for",
+  "and",
+  "the",
+]);
+
+function similarityTokens(server: MCPServer): Set<string> {
+  return new Set(
+    `${server.name} ${server.tagline}`
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter((token) => token.length >= 3 && !SIMILARITY_STOP_WORDS.has(token)),
+  );
+}
+
+function similarScore(source: MCPServer, candidate: MCPServer): number {
+  const sharedCategories = candidate.categories.filter((category) =>
+    source.categories.includes(category),
+  );
+  if (sharedCategories.length === 0) return -1;
+
+  const sourceTokens = similarityTokens(source);
+  const candidateTokens = similarityTokens(candidate);
+  const sharedTokens = Array.from(sourceTokens).filter((token) =>
+    candidateTokens.has(token),
+  ).length;
+  const onlyBroadMisc =
+    sharedCategories.length === 1 && sharedCategories[0] === "misc";
+  if (onlyBroadMisc && sharedTokens === 0) return -1;
+
+  let score = sharedCategories.length * 30 + sharedTokens * 18;
+  if (source.categories[0] === candidate.categories[0]) score += 12;
+  if (
+    Boolean(source.remoteEndpoints?.length) ===
+    Boolean(candidate.remoteEndpoints?.length)
+  ) {
+    score += 6;
+  }
+  score += Math.max(0, 10 - Math.abs(source.trustScore - candidate.trustScore) / 10);
+  return score;
 }
 
 export const liveProvider: MCPDataProvider = {
@@ -53,9 +106,19 @@ export const liveProvider: MCPDataProvider = {
   },
   async getSimilarServers(server, n = 4) {
     return (await servers())
-      .filter((s) => s.slug !== server.slug && s.categories.some((c) => server.categories.includes(c)))
-      .sort((a, b) => b.trustScore - a.trustScore)
-      .slice(0, n);
+      .filter((s) => s.slug !== server.slug)
+      .map((candidate) => ({
+        candidate,
+        similarity: similarScore(server, candidate),
+      }))
+      .filter(({ similarity }) => similarity >= 0)
+      .sort(
+        (a, b) =>
+          b.similarity - a.similarity ||
+          b.candidate.trustScore - a.candidate.trustScore,
+      )
+      .slice(0, n)
+      .map(({ candidate }) => candidate);
   },
   async getLeaderboard(options?: LeaderboardOptions) {
     let list = [...(await servers())];
@@ -129,6 +192,7 @@ export const liveProvider: MCPDataProvider = {
     };
   },
   async getLastUpdated() {
-    return new Date().toISOString().slice(0, 10);
+    const dataset = await readDataset();
+    return dataset?.collectedAt || new Date().toISOString().slice(0, 10);
   },
 };

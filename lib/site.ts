@@ -2,7 +2,7 @@
 // 所有需要绝对 URL 的地方（sitemap / robots / feed / canonical / schema）都引用这里。
 
 /** 生产域名。可用环境变量覆盖（预览环境用不同域名时）。
- *  规范域名用 www（Vercel 里 apex 已 301 重定向到 www），保持 canonical/sitemap 一致。 */
+ *  规范域名统一使用 Cloudflare Worker 的 www 自定义域名，保持 canonical/sitemap 一致。 */
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.mcpradars.com").replace(/\/$/, "");
 
 export const SITE_NAME = "MCP Radar";
@@ -13,8 +13,8 @@ export const SITE_DESCRIPTION =
   "按用途分类的 MCP server 导航。每个 server 都标注维护状态：活跃 / 半年没更新 / 已弃坑。数据来自官方 registry、GitHub、npm，每日更新。";
 
 /** 联系邮箱 */
-export const EMAIL_CORRECTIONS = "corrections@mcpradars.com";
-export const EMAIL_SPONSOR = "sponsor@mcpradars.com";
+export const EMAIL_CORRECTIONS = "wangknit@gmail.com";
+export const EMAIL_SPONSOR = "wangknit@gmail.com";
 
 /** 拼绝对 URL（path 以 / 开头） */
 export function absoluteUrl(path = "/"): string {

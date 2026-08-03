@@ -3,18 +3,20 @@ import { getRadarEntries, getLastUpdated } from "@/lib/data";
 import RadarView from "./RadarView";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { hreflangAlternates } from "@/lib/i18n/href";
 
-export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
-  const d = getDictionary(params.locale).radar;
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const d = getDictionary(locale).radar;
   return {
     title: d.metaTitle,
     description: d.metaDesc,
-    alternates: { canonical: `/${params.locale}/radar` },
+    alternates: hreflangAlternates(locale, "/radar"),
   };
 }
 
-export default async function RadarPage({ params }: { params: { locale: Locale } }) {
-  const { locale } = params;
+export default async function RadarPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
   const d = getDictionary(locale).radar;
   const [entries, lastUpdated] = await Promise.all([getRadarEntries(), getLastUpdated()]);
   return (

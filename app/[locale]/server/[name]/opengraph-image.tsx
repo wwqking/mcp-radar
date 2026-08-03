@@ -40,10 +40,11 @@ export async function generateStaticParams() {
 export default async function ServerOgImage({
   params,
 }: {
-  params: { name: string; locale: string };
+  params: Promise<{ name: string; locale: string }>;
 }) {
-  const locale = isLocale(params.locale) ? params.locale : "en";
-  const s = await getServerBySlug(params.name);
+  const { name, locale: localeParam } = await params;
+  const locale = isLocale(localeParam) ? localeParam : "en";
+  const s = await getServerBySlug(name);
 
   // 兜底：数据缺失时退回品牌图，绝不抛错让整站构建挂掉。
   if (!s) {

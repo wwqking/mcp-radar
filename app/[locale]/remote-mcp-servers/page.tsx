@@ -19,7 +19,7 @@ import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 import type { MCPServer } from "@/lib/types";
 
 interface Props {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }
 
 /** 带托管端点的 server —— 有 remoteEndpoints 就算，按健康分降序。 */
@@ -31,21 +31,22 @@ async function getRemoteServers(): Promise<MCPServer[]> {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const d = getDictionary(params.locale).remote;
+  const { locale } = await params;
+  const d = getDictionary(locale).remote;
   const servers = await getRemoteServers();
   const title = d.title;
   const description = d.desc.replace("{count}", String(servers.length));
   return {
     title,
     description,
-    alternates: hreflangAlternates(params.locale, "/remote-mcp-servers"),
-    openGraph: { title, description, url: `/${params.locale}/remote-mcp-servers`, type: "website" },
+    alternates: hreflangAlternates(locale, "/remote-mcp-servers"),
+    openGraph: { title, description, url: `/${locale}/remote-mcp-servers`, type: "website" },
     twitter: { card: "summary_large_image", title, description },
   };
 }
 
 export default async function RemoteServersPage({ params }: Props) {
-  const { locale } = params;
+  const { locale } = await params;
   const dict = getDictionary(locale);
   const d = dict.remote;
 

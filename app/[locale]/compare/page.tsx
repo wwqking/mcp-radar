@@ -4,30 +4,31 @@ import { getAllServers } from "@/lib/data";
 import CompareTable from "@/components/CompareTable";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { localizedHref } from "@/lib/i18n/href";
+import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 import type { MCPServer } from "@/lib/types";
 
 interface Props {
-  params: { locale: Locale };
-  searchParams: { ids?: string };
+  params: Promise<{ locale: Locale }>;
+  searchParams: Promise<{ ids?: string }>;
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const c = getDictionary(params.locale).compare;
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const c = getDictionary(locale).compare;
   return {
     title: c.metaTitle,
     description: c.metaDesc,
-    alternates: { canonical: `/${params.locale}/compare` },
+    alternates: hreflangAlternates(locale, "/compare"),
     // 对比页是工具性动态页，不进搜索索引（避免无限 query 变体污染 index）
     robots: { index: false, follow: true },
   };
 }
 
 export default async function ComparePage({ params, searchParams }: Props) {
-  const { locale } = params;
+  const [{ locale }, { ids }] = await Promise.all([params, searchParams]);
   const c = getDictionary(locale).compare;
 
-  const requested = (searchParams.ids ?? "")
+  const requested = (ids ?? "")
     .split(",")
     .map((s) => s.trim())
     .filter(Boolean)

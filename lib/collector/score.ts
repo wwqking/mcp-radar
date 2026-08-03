@@ -16,6 +16,15 @@ function logScore(value: number, midpoint: number): number {
   return clamp((Math.log10(value + 1) / Math.log10(midpoint + 1)) * 70);
 }
 
+/** 兼容旧数据里的 2/5/9 天桶；这些值原本实际代表高/中/低回复率。 */
+export function issueResponseRate(sig: HealthSignals): number | null {
+  if (sig.issueResponseRatePct !== undefined) return sig.issueResponseRatePct;
+  if (sig.issueResponseDays === 2) return 75;
+  if (sig.issueResponseDays === 5) return 45;
+  if (sig.issueResponseDays === 9) return 15;
+  return null;
+}
+
 export function computeBreakdown(sig: HealthSignals): ScoreBreakdown {
   // ---- 维护活跃度 30% ----
   let maintenance = 0;
@@ -35,7 +44,8 @@ export function computeBreakdown(sig: HealthSignals): ScoreBreakdown {
                 ? 35
                 : 10;
     const commitVolume = sig.commits90d === null ? 40 : clamp((sig.commits90d / 60) * 100);
-    const issueResp = sig.issueResponseDays === null ? 20 : sig.issueResponseDays <= 3 ? 100 : sig.issueResponseDays <= 7 ? 70 : 45;
+    const responseRate = issueResponseRate(sig);
+    const issueResp = responseRate === null ? 20 : responseRate;
     maintenance = clamp(commitRecency * 0.5 + commitVolume * 0.3 + issueResp * 0.2);
   }
 
@@ -77,7 +87,8 @@ export function computeLifecycle(sig: HealthSignals): Lifecycle {
   if (!sig.repoAuditable) return "unverifiable"; // 纯 remotes 型，无仓库可审计
   if (sig.archived) return "dead";
   const stale = sig.lastCommitDaysAgo !== null && sig.lastCommitDaysAgo > 180;
-  const noResponse = sig.issueResponseDays === null;
+  const responseRate = issueResponseRate(sig);
+  const noResponse = responseRate === null || responseRate === 0;
   const noRelease = (sig.releaseFrequencyPerMonth ?? 0) === 0;
   if (stale && noResponse && noRelease) return "dying";
   return "active";
@@ -87,7 +98,7 @@ export function computeLifecycle(sig: HealthSignals): Lifecycle {
 export function computeVerdict(lifecycle: Lifecycle, sig: HealthSignals): string {
   switch (lifecycle) {
     case "active":
-      return "✅ 活跃维护，适合生产";
+      return "✅ 未检测到明确停更信号；生产使用前仍需完成安全与兼容性验证";
     case "dying":
       return `⚠️ 已 ${sig.lastCommitDaysAgo ?? "半年+"} 天未更新，issue 响应弱，谨慎用于生产`;
     case "dead":

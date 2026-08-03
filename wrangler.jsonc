@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "mcp-radar",
+  "account_id": "c761ce097f5d90ecc01ed8dff5f1acab",
+  "main": ".open-next/worker.js",
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "mcpradars.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.mcpradars.com",
+      "custom_domain": true
+    }
+  ],
+  "compatibility_date": "2026-07-31",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

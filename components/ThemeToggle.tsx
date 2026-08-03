@@ -25,7 +25,7 @@ export default function ThemeToggle() {
     <button
       onClick={toggle}
       aria-label="切换暗色模式"
-      className="shrink-0 rounded-lg p-2.5 text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200 sm:p-2"
+      className="flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-lg p-2.5 text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200 sm:p-2"
     >
       {dark === null ? (
         <span className="block h-5 w-5" />

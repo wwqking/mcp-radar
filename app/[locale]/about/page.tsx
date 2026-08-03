@@ -3,19 +3,20 @@ import Link from "next/link";
 import { EMAIL_CORRECTIONS } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { localizedHref } from "@/lib/i18n/href";
+import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 
-export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
-  const d = getDictionary(params.locale).about;
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const d = getDictionary(locale).about;
   return {
     title: d.metaTitle,
     description: d.metaDesc,
-    alternates: { canonical: `/${params.locale}/about` },
+    alternates: hreflangAlternates(locale, "/about"),
   };
 }
 
-export default function AboutPage({ params }: { params: { locale: Locale } }) {
-  const { locale } = params;
+export default async function AboutPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
   const d = getDictionary(locale).about;
 
   const WEIGHTS = [
@@ -144,7 +145,8 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
         <h2 className="font-bold text-neutral-900 dark:text-neutral-100">{d.correctionTitle}</h2>
         <p className="mt-2 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
           {d.correctionBody}
-          <span className="mono"> {EMAIL_CORRECTIONS}</span>
+          {" "}
+          <a className="link-accent mono" href={`mailto:${EMAIL_CORRECTIONS}`}>{EMAIL_CORRECTIONS}</a>
         </p>
       </section>
     </div>

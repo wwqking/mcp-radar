@@ -39,6 +39,9 @@ export default async function SiteFooter({ locale }: { locale: Locale }) {
               <li><Link href={t("/leaderboard")} className="hover:text-brand-600 dark:hover:text-brand-400">{dict.footer.qualityBoard}</Link></li>
               <li><Link href={t("/graveyard")} className="hover:text-brand-600 dark:hover:text-brand-400">{dict.footer.graveyard}</Link></li>
               <li><Link href={t("/sponsor")} className="hover:text-brand-600 dark:hover:text-brand-400">{dict.common.sponsor}</Link></li>
+              <li><Link href={t("/editorial-policy")} className="hover:text-brand-600 dark:hover:text-brand-400">{locale === "zh" ? "编辑与赞助政策" : "Editorial policy"}</Link></li>
+              <li><Link href={t("/privacy")} className="hover:text-brand-600 dark:hover:text-brand-400">{locale === "zh" ? "隐私政策" : "Privacy"}</Link></li>
+              <li><Link href={t("/terms")} className="hover:text-brand-600 dark:hover:text-brand-400">{locale === "zh" ? "使用条款" : "Terms"}</Link></li>
             </ul>
           </div>
 

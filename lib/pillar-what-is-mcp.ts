@@ -57,7 +57,7 @@ const ZH: PillarContent = {
       heading: "MCP 是怎么工作的：Host、Client、Server、Transport",
       body: [
         "一次完整的 MCP 调用涉及四个角色。Host 是承载 AI 的应用（Claude Desktop、Cursor、VS Code）；Client 是 Host 内部管理与某个 Server 连接的模块；Server 就是提供能力的程序；Transport 是两者通信的通道。",
-        "Transport 目前主流两种：stdio（标准输入输出，用于本地 Server，客户端把 Server 当子进程启动，最常见）和 HTTP/SSE（用于远程 Server，Server 部署在别处，通过网络连接）。本地跑的 filesystem、postgres 这类多用 stdio；托管的 SaaS 型 MCP 服务多用远程 HTTP。",
+        "Transport 目前主流两种：stdio（标准输入输出，用于客户端启动的本地子进程）和 Streamable HTTP（用于通过网络连接的远程 Server）。旧版 HTTP+SSE transport 已在当前 MCP 规范中被替代。",
         "调用流程：客户端启动时连接 Server → Server 声明自己有哪些 Tools/Resources → 对话中模型决定调用某个 Tool → 客户端把调用请求发给 Server → Server 执行并返回结构化结果 → 模型基于结果继续。",
       ],
     },
@@ -105,7 +105,7 @@ const ZH: PillarContent = {
     },
     {
       q: "用 MCP Server 安全吗？",
-      a: "MCP 本身提供了权限边界（比如 filesystem 只能访问你明确允许的目录）。但 Server 是第三方代码，接入前务必确认它的来源、要不要 API Key、有没有安全红线。生产环境建议只用可审计、活跃维护的 Server。",
+      a: "MCP 可以传递 roots 和能力范围，但 roots 不是强制执行的安全边界。Server 是第三方代码：接入前应核验来源与权限，使用操作系统权限或沙箱限制，检查网络访问，并在隔离环境测试后再用于生产。",
     },
     {
       q: "MCP Server 要花钱吗？",
@@ -140,7 +140,7 @@ const EN: PillarContent = {
       heading: "How MCP works: Host, Client, Server, Transport",
       body: [
         "A complete MCP call involves four roles. The Host is the app that carries the AI (Claude Desktop, Cursor, VS Code); the Client is the module inside the Host that manages the connection to a given Server; the Server is the program providing the capability; and the Transport is the channel they communicate over.",
-        "Two transports dominate today: stdio (standard input/output, for local Servers, where the client launches the Server as a child process — the most common case) and HTTP/SSE (for remote Servers deployed elsewhere and reached over the network). Local Servers like filesystem or postgres usually use stdio; hosted SaaS-style MCP services usually use remote HTTP.",
+        "Two transports dominate today: stdio (standard input/output, for local Servers launched as child processes) and Streamable HTTP (for remote Servers reached over the network). The older HTTP+SSE transport has been replaced in the current MCP specification.",
         "The call flow: on startup the client connects to the Server → the Server declares which Tools/Resources it offers → mid-conversation the model decides to call a Tool → the client sends the call to the Server → the Server executes and returns a structured result → the model continues based on that result.",
       ],
     },
@@ -188,7 +188,7 @@ const EN: PillarContent = {
     },
     {
       q: "Are MCP Servers safe to use?",
-      a: "MCP itself provides permission boundaries (for example, filesystem can only access directories you explicitly allow). But a Server is third-party code, so before connecting one, verify its source, whether it needs an API key, and whether it has any security red lines. For production, use only auditable, actively maintained Servers.",
+      a: "MCP can communicate requested roots and capabilities, but roots are not an enforced security boundary. A Server is third-party code: verify its source and permissions, apply OS-level restrictions or a sandbox, inspect network access, and test it before production use.",
     },
     {
       q: "Do MCP Servers cost money?",

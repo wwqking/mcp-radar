@@ -18,8 +18,8 @@ import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizedHref } from "@/lib/i18n/href";
 
-export default async function HomePage({ params }: { params: { locale: Locale } }) {
-  const { locale } = params;
+export default async function HomePage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
   const dict = getDictionary(locale);
   const h = dict.home;
   const t = (p: string) => localizedHref(locale, p);
@@ -58,7 +58,8 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
               {h.heroTitleA}
               <br className="hidden sm:block" />
               {h.heroTitleB}
-              <span className="text-brand-600 dark:text-brand-400">{h.heroTitleHighlight}</span>。
+              <span className="text-brand-600 dark:text-brand-400">{h.heroTitleHighlight}</span>
+              {locale === "zh" ? "。" : "."}
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-base text-neutral-600 dark:text-neutral-400 sm:text-lg">
               {h.heroSub.replace("{total}", formatNumber(stats.total))}
@@ -66,7 +67,6 @@ export default async function HomePage({ params }: { params: { locale: Locale } 
 
             <div className="mx-auto mt-8 max-w-xl">
               <SearchBar
-                servers={servers}
                 locale={locale}
                 placeholderHero={dict.searchBar.placeholderHero}
                 placeholderNav={dict.searchBar.placeholderNav}

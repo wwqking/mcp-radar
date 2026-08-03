@@ -5,20 +5,21 @@ import LifecycleBadge from "@/components/LifecycleBadge";
 import SubscribeInline from "@/components/SubscribeInline";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { localizedHref } from "@/lib/i18n/href";
+import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 import { deathReasonText } from "@/lib/i18n/verdict";
 
-export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
-  const d = getDictionary(params.locale).graveyard;
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const d = getDictionary(locale).graveyard;
   return {
     title: d.metaTitle,
     description: d.metaDesc,
-    alternates: { canonical: `/${params.locale}/graveyard` },
+    alternates: hreflangAlternates(locale, "/graveyard"),
   };
 }
 
-export default async function GraveyardPage({ params }: { params: { locale: Locale } }) {
-  const { locale } = params;
+export default async function GraveyardPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
   const d = getDictionary(locale).graveyard;
   const [dead, stats] = await Promise.all([getGraveyard(), getSiteStats()]);
 

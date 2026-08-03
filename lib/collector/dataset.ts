@@ -1,6 +1,6 @@
 // 完整数据集读写 —— 采集产出的全量 server 数据（含 TrustScore/分类/信号/趋势）落盘。
 //
-// 目的：让 Vercel build 直接读这份 JSON（瞬时），不必在 build 里重新拓 registry+GitHub+npm。
+// 目的：让 Cloudflare build 直接读这份 JSON（瞬时），不必在 build 里重新拓 registry+GitHub+npm。
 // 采集在 CI（GitHub Actions）跑一次 → 写 data/servers.json 提交进 git → build 只读文件。
 //
 // 与 snapshots（只存 stars/downloads 时间序列）不同，这里存完整 MCPServer[]。

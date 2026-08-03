@@ -5,25 +5,55 @@ import LeaderboardTable from "@/components/LeaderboardTable";
 import SubscribeInline from "@/components/SubscribeInline";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { localizedHref } from "@/lib/i18n/href";
+import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
+import JsonLd from "@/components/JsonLd";
+import { ORGANIZATION_ID } from "@/lib/schema";
+import { absoluteUrl } from "@/lib/site";
 
-export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
-  const d = getDictionary(params.locale).leaderboard;
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const d = getDictionary(locale).leaderboard;
   return {
     title: d.metaTitle,
     description: d.metaDesc,
-    alternates: { canonical: `/${params.locale}/leaderboard` },
+    alternates: hreflangAlternates(locale, "/leaderboard"),
   };
 }
 
-export default async function LeaderboardPage({ params }: { params: { locale: Locale } }) {
-  const { locale } = params;
+export default async function LeaderboardPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
   const dict = getDictionary(locale);
   const d = dict.leaderboard;
   const [servers, lastUpdated] = await Promise.all([getAllServers(), getLastUpdated()]);
+  const datasetSchema = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "MCP Radar server health dataset",
+    description: d.metaDesc,
+    url: absoluteUrl(`/${locale}/leaderboard`),
+    dateModified: lastUpdated,
+    creator: { "@id": ORGANIZATION_ID },
+    measurementTechnique:
+      "Public MCP Registry, GitHub and npm signals combined with the published MCP Radar methodology.",
+    variableMeasured: [
+      "TrustScore",
+      "lifecycle",
+      "last commit age",
+      "recent issues with replies",
+      "GitHub stars",
+      "npm weekly downloads",
+      "license",
+    ],
+    distribution: {
+      "@type": "DataDownload",
+      encodingFormat: "application/json",
+      contentUrl: absoluteUrl("/dataset.json"),
+    },
+  };
 
   return (
     <div className="container-site py-10 sm:py-14">
+      <JsonLd data={datasetSchema} />
       <header className="mb-6">
         <h1 className="text-2xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-50 sm:text-3xl">
           {d.h1}

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { InstallCommand } from "@/lib/install";
+import { trackEvent } from "@/lib/analytics";
 
 interface Props {
   commands: InstallCommand[];
@@ -9,10 +10,11 @@ interface Props {
   note: string;
   copyLabel: string;
   copiedLabel: string;
+  analyticsId?: string;
 }
 
 /** 安装命令卡片：多形态 tab 切换 + 一键复制。 */
-export default function InstallCommandCard({ commands, title, note, copyLabel, copiedLabel }: Props) {
+export default function InstallCommandCard({ commands, title, note, copyLabel, copiedLabel, analyticsId }: Props) {
   const [active, setActive] = useState(0);
   const [copied, setCopied] = useState(false);
 
@@ -21,6 +23,10 @@ export default function InstallCommandCard({ commands, title, note, copyLabel, c
   async function copy() {
     try {
       await navigator.clipboard.writeText(current.code);
+      trackEvent("Install Command Copy", {
+        server: analyticsId ?? "unknown",
+        command: current.label,
+      });
       setCopied(true);
       setTimeout(() => setCopied(false), 1600);
     } catch {
