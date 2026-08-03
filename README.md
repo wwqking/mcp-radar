@@ -154,7 +154,7 @@ Agent Skills 主题（389 词 / 124,480 月量）已决定**单独开站**，产
 
 - 生产 Worker：`mcp-radar`，规范域名 `https://www.mcpradars.com`。
 - Cloudflare Workers Builds 连接 GitHub 仓库 `wwqking/mcp-radar`，监听 `master`。
-- push 到 `master` 后自动执行 `npm run deploy`；其他分支可用 `npm run upload` 产生预览版本。
+- push 到 `master` 后由 Workers Builds 依次执行 `npx opennextjs-cloudflare build` 和 `npx opennextjs-cloudflare deploy`；其他分支执行 `npx opennextjs-cloudflare upload` 产生预览版本。
 - 本地手动发布仍可执行 `npm run deploy`。
 
 详细配置与验证方式见 [`DEPLOY.md`](./DEPLOY.md)。

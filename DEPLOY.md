@@ -5,9 +5,8 @@
 ```text
 人工 push 代码到 master
   └─ Cloudflare Workers Builds
-       └─ npm run deploy
-            ├─ opennextjs-cloudflare build
-            └─ opennextjs-cloudflare deploy
+       ├─ npx opennextjs-cloudflare build
+       └─ npx opennextjs-cloudflare deploy
 
 GitHub Actions 每日采集
   └─ npm run collect
@@ -35,9 +34,9 @@ Cloudflare Dashboard → Workers & Pages → `mcp-radar` → Settings → Builds
 | Git repository | `wwqking/mcp-radar` |
 | Production branch | `master` |
 | Root directory | `/` |
-| Build command | 留空 |
-| Deploy command | `npm run deploy` |
-| Non-production deploy command | `npm run upload` |
+| Build command | `npx opennextjs-cloudflare build` |
+| Deploy command | `npx opennextjs-cloudflare deploy` |
+| Non-production deploy command | `npx opennextjs-cloudflare upload` |
 
 Build Variables and secrets：
 
@@ -58,7 +57,7 @@ git commit -m "feat: ..."
 git push origin master
 ```
 
-push 成功后，Cloudflare 会在 GitHub commit 上回写 build check。只有 `master` 的成功构建会提升为生产版本；其他分支使用 `npm run upload` 上传预览版本，不覆盖生产。
+push 成功后，Cloudflare 会在 GitHub commit 上回写 build check。只有 `master` 的成功构建会提升为生产版本；其他分支使用 `npx opennextjs-cloudflare upload` 上传预览版本，不覆盖生产。
 
 ## 每日数据更新
 
