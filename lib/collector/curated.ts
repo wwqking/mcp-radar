@@ -194,4 +194,7 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   { name: "mcp-handler", repoUrl: "https://github.com/vercel/mcp-handler", npmPackage: "mcp-handler" }, // 720/mo ★628
   { name: "open-mcp-client", repoUrl: "https://github.com/CopilotKit/open-mcp-client", npmPackage: null }, // 2400/mo ★1646
   { name: "Windows-MCP", repoUrl: "https://github.com/CursorTouch/Windows-MCP", npmPackage: null }, // 1300/mo ★6500
+
+  // x402 / 支付 / 加密数据
+  { name: "@agentservices/client", repoUrl: "https://github.com/vbkotecha/agentservices-api", npmPackage: "@agentservices/client" },
 ];
