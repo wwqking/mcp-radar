@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import {
-  CATEGORIES,
+  PUBLIC_CATEGORIES,
   getCategoryBySlug,
   getServersByCategory,
   getLastUpdated,
@@ -19,13 +19,14 @@ import { absoluteUrl } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
+import { TAXONOMY_TOPICS, taxonomyForServer, topicName } from "@/lib/taxonomy";
 
 interface Props {
   params: Promise<{ cat: string; locale: Locale }>;
 }
 
 export function generateStaticParams() {
-  return CATEGORIES.map((c) => ({ cat: c.slug }));
+  return PUBLIC_CATEGORIES.map((c) => ({ cat: c.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -58,7 +59,14 @@ export default async function CategoryPage({ params }: Props) {
 
   const servers = await getServersByCategory(cat.slug);
   const lastUpdated = await getLastUpdated();
-  const related = CATEGORIES.filter((c) => c.slug !== cat.slug).slice(0, 5);
+  const related = PUBLIC_CATEGORIES.filter((c) => c.slug !== cat.slug).slice(0, 5);
+  const topicOptions = TAXONOMY_TOPICS.map((topic) => ({
+    slug: topic.slug,
+    label: topicName(topic, locale),
+    count: servers.filter((server) => taxonomyForServer(server).topics.includes(topic.slug)).length,
+  }))
+    .filter((topic) => topic.count > 0)
+    .sort((a, b) => b.count - a.count);
   const name = categoryName(cat, locale);
   const staleCount = servers.filter((s) => s.lifecycle === "dying" || s.lifecycle === "dead").length;
   const anchor =
@@ -125,7 +133,11 @@ export default async function CategoryPage({ params }: Props) {
           sortStars: dict.filters.sortStars,
           sortUpdated: dict.filters.sortUpdated,
           emptyList: dict.filters.emptyList,
+          topicFilter: dict.filters.topicFilter,
+          allTopics: dict.filters.allTopics,
+          taxonomyNote: dict.filters.taxonomyNote,
         }}
+        topicOptions={topicOptions}
       />
 
       {/* 相关分类内链 */}

@@ -14,8 +14,11 @@ export const CATEGORIES: Category[] = [
   { slug: "ai", name: "AI / 模型", tagline: "模型调用与 AI 能力扩展", icon: "🤖", description: "接入各类模型服务、向量数据库、AI 工具的 MCP server。", name_en: "AI / Models", tagline_en: "Model calls and AI capability extensions", description_en: "MCP servers that connect to model services, vector databases and AI tools." },
   { slug: "commerce", name: "建站 / 支付 / 电商", tagline: "开店、收款与独立站运营", icon: "🛒", description: "Shopify、WordPress、Webflow 建站，Stripe / PayPal / Paddle 收款，商品与订单管理类 MCP server —— 从 0 搭起一个能卖货的独立站。", name_en: "Storefront / Payments / Commerce", tagline_en: "Build stores, take payments, run your DTC site", description_en: "MCP servers for building stores (Shopify, WordPress, Webflow), taking payments (Stripe, PayPal, Paddle), and managing products and orders — everything to launch a store that sells." },
   { slug: "marketing", name: "营销 / 增长", tagline: "邮件、SEO、广告与 CRM", icon: "📈", description: "邮件营销、SEO、Google/Meta 广告、Analytics 与 CRM 类 MCP server —— 让独立站有人来、留得住、转化得掉。", name_en: "Marketing / Growth", tagline_en: "Email, SEO, ads and CRM", description_en: "MCP servers for email marketing, SEO, Google/Meta ads, analytics and CRM — drive traffic, retain visitors and convert them." },
-  { slug: "misc", name: "其他", tagline: "尚未归类的 MCP server", icon: "📦", description: "其他暂未明确分类的 MCP server。", name_en: "Other", tagline_en: "MCP servers not yet categorized", description_en: "Other MCP servers not yet clearly categorized." },
+  { slug: "misc", name: "待归类", tagline: "等待分类复核的 MCP server", icon: "📦", description: "自动分类置信度不足、等待人工复核的 MCP server。", name_en: "Needs review", tagline_en: "MCP servers awaiting taxonomy review", description_en: "MCP servers whose automated classification needs human review.", isPublic: false },
 ];
+
+/** 公开导航只展示稳定的用户任务分类；misc 是后台审核状态。 */
+export const PUBLIC_CATEGORIES = CATEGORIES.filter((category) => category.isPublic !== false);
 
 /** 按 locale 取分类文案，英文缺省时回退中文。 */
 export function categoryName(c: Category, locale: string): string {

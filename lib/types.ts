@@ -41,6 +41,19 @@ export interface Category {
   name_en?: string;
   tagline_en?: string;
   description_en?: string;
+  /** false 表示仅供内部归类/审核使用，不生成公开导航和落地页。 */
+  isPublic?: boolean;
+}
+
+/** 可增长的二级主题；主分类保持稳定，topic 承接新领域和交叉领域。 */
+export interface TaxonomyTopic {
+  slug: string;
+  name: string;
+  name_en: string;
+  description: string;
+  description_en: string;
+  /** 搜索同义词，不直接展示为导航项。 */
+  aliases: string[];
 }
 
 /** Trust Score 五维分解（主文档 §2） */
@@ -87,6 +100,14 @@ export interface MCPServer {
   tagline: string;
   description: string;
   categories: string[]; // Category.slug 数组（可多分类）
+  /** 主分类用于稳定导航；旧快照缺省时在读取阶段自动推导。 */
+  primaryCategory?: string;
+  /** 受控二级主题，可跨主分类。 */
+  topics?: string[];
+  /** 0-1，分类规则对主分类的置信度。 */
+  categoryConfidence?: number;
+  /** true 时进入后台待审核队列，不等同于下架。 */
+  needsCategoryReview?: boolean;
   lifecycle: Lifecycle;
   trustScore: number; // 0-100
   breakdown: ScoreBreakdown;

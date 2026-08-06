@@ -46,6 +46,7 @@ export interface MCPDataProvider {
   getAllServers(): Promise<MCPServer[]>;
   getServerBySlug(slug: string): Promise<MCPServer | undefined>;
   getServersByCategory(catSlug: string): Promise<MCPServer[]>;
+  getServersByTopic(topicSlug: string): Promise<MCPServer[]>;
   getTopServers(n?: number): Promise<MCPServer[]>;
   getSimilarServers(server: MCPServer, n?: number): Promise<MCPServer[]>;
 

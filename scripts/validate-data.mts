@@ -1,6 +1,8 @@
 import { readFile } from "node:fs/promises";
 import { normalizePublishedServers } from "../lib/collector/build-data";
 import type { MCPServer } from "../lib/types";
+import { CATEGORIES } from "../lib/constants";
+import { TAXONOMY_TOPICS, taxonomyForServer } from "../lib/taxonomy";
 
 interface RawDataset {
   collectedAt: string;
@@ -13,10 +15,22 @@ const dataset = JSON.parse(
 const servers = normalizePublishedServers(dataset.servers);
 const errors: string[] = [];
 const slugs = new Set<string>();
+const categorySlugs = new Set(CATEGORIES.map((category) => category.slug));
+const topicSlugs = new Set(TAXONOMY_TOPICS.map((topic) => topic.slug));
 
 for (const server of servers) {
   if (slugs.has(server.slug)) errors.push(`duplicate slug: ${server.slug}`);
   slugs.add(server.slug);
+  const taxonomy = taxonomyForServer(server);
+  for (const category of taxonomy.categories) {
+    if (!categorySlugs.has(category)) errors.push(`unknown category: ${server.slug}=${category}`);
+  }
+  for (const topic of taxonomy.topics) {
+    if (!topicSlugs.has(topic)) errors.push(`unknown topic: ${server.slug}=${topic}`);
+  }
+  if (taxonomy.categoryConfidence < 0 || taxonomy.categoryConfidence > 1) {
+    errors.push(`invalid taxonomy confidence: ${server.slug}=${taxonomy.categoryConfidence}`);
+  }
 
   if (!Number.isFinite(server.trustScore) || server.trustScore < 0 || server.trustScore > 100) {
     errors.push(`invalid TrustScore: ${server.slug}=${server.trustScore}`);

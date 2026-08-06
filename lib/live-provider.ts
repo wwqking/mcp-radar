@@ -12,9 +12,10 @@ import type {
   LeaderboardOptions,
   RadarBuckets,
 } from "./provider";
-import { CATEGORIES, formatNumber } from "./mock-provider";
+import { PUBLIC_CATEGORIES, formatNumber } from "./constants";
 import { loadServers } from "./collector/build-data";
 import { readDataset } from "./collector/dataset";
+import { taxonomyForServer } from "./taxonomy";
 
 // 构建进程内只读一次，全部页面共享。
 // loadServers 优先读采集好的 data/servers.json（瞬时），读不到才退回实时采集。
@@ -84,10 +85,10 @@ function similarScore(source: MCPServer, candidate: MCPServer): number {
 
 export const liveProvider: MCPDataProvider = {
   async getCategories(): Promise<Category[]> {
-    return CATEGORIES;
+    return PUBLIC_CATEGORIES;
   },
   async getCategoryBySlug(slug) {
-    return CATEGORIES.find((c) => c.slug === slug);
+    return PUBLIC_CATEGORIES.find((c) => c.slug === slug);
   },
   async getAllServers() {
     return servers();
@@ -97,6 +98,9 @@ export const liveProvider: MCPDataProvider = {
   },
   async getServersByCategory(catSlug) {
     return (await servers()).filter((s) => s.categories.includes(catSlug));
+  },
+  async getServersByTopic(topicSlug) {
+    return (await servers()).filter((s) => taxonomyForServer(s).topics.includes(topicSlug));
   },
   async getTopServers(n = 8) {
     return [...(await servers())]

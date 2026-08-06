@@ -6,7 +6,7 @@
 
 import Link from "next/link";
 import type { Metadata } from "next";
-import { CATEGORIES, getAllServers, getLastUpdated, categoryName } from "@/lib/data";
+import { PUBLIC_CATEGORIES, getAllServers, getLastUpdated, categoryName } from "@/lib/data";
 import CategoryList from "@/components/CategoryList";
 import SourceMethodNote from "@/components/SourceMethodNote";
 import SubscribeInline from "@/components/SubscribeInline";
@@ -168,7 +168,7 @@ export default async function RemoteServersPage({ params }: Props) {
           >
             {d.pillarLink}
           </Link>
-          {CATEGORIES.slice(0, 5).map((c) => (
+          {PUBLIC_CATEGORIES.slice(0, 5).map((c) => (
             <Link
               key={c.slug}
               href={localizedHref(locale, `/category/${c.slug}`)}

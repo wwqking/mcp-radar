@@ -2,11 +2,12 @@
 // Markdown 地图，帮它们理解本站是什么、有哪些可引用的内容、数据从哪来、边界在哪。
 // 约定路径 /llms.txt，纯文本 Markdown。
 
-import { CATEGORIES } from "@/lib/constants";
+import { PUBLIC_CATEGORIES } from "@/lib/constants";
 import { getTopServers, getLastUpdated, getSiteStats } from "@/lib/data";
 import { EMAIL_CORRECTIONS, SITE_NAME, absoluteUrl } from "@/lib/site";
 import { categoryName, categoryTagline } from "@/lib/constants";
 import { verdictText } from "@/lib/i18n/verdict";
+import { FEATURED_TOPIC_SLUGS, TAXONOMY_TOPICS } from "@/lib/taxonomy";
 
 export const dynamic = "force-static";
 
@@ -17,10 +18,15 @@ export async function GET() {
     getSiteStats(),
   ]);
 
-  const categoryLines = CATEGORIES.map(
+  const categoryLines = PUBLIC_CATEGORIES.map(
     (c) =>
       `- [${categoryName(c, "en")}](${absoluteUrl(`/en/category/${c.slug}`)}): ${categoryTagline(c, "en")}`,
   ).join("\n");
+
+  const featuredSet = new Set<string>(FEATURED_TOPIC_SLUGS);
+  const topicLines = TAXONOMY_TOPICS.filter((topic) => featuredSet.has(topic.slug))
+    .map((topic) => `- [${topic.name_en}](${absoluteUrl(`/en/topic/${topic.slug}`)}): ${topic.description_en}`)
+    .join("\n");
 
   const topLines = top
     .map(
@@ -55,6 +61,10 @@ Preferred language entry points: [English](${absoluteUrl("/en")}) · [中文](${
 ## Categories
 
 ${categoryLines}
+
+## Topics
+
+${topicLines}
 
 ## High-scoring servers
 

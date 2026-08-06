@@ -2,7 +2,7 @@
 
 import { Fragment, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import type { Lifecycle, MCPServer, Category } from "@/lib/types";
+import type { Lifecycle, MCPServer, Category, TaxonomyTopic } from "@/lib/types";
 import { formatNumber, categoryName } from "@/lib/constants";
 import TrustScore from "./TrustScore";
 import LifecycleBadge from "./LifecycleBadge";
@@ -10,9 +10,11 @@ import ServerCard from "./ServerCard";
 import type { Locale } from "@/lib/i18n/locales";
 import { localizedHref } from "@/lib/i18n/href";
 import { verdictText } from "@/lib/i18n/verdict";
+import { taxonomyForServer, topicName } from "@/lib/taxonomy";
 
 type SortKey = "score" | "stars" | "downloads" | "updated";
 type View = "table" | "card";
+const PAGE_SIZE = 100;
 
 interface Labels {
   allCategories: string;
@@ -43,33 +45,53 @@ interface Labels {
   dimUsability: string;
   dimHealth: string;
   dimCommunity: string;
+  allTopics: string;
+  topicFilter: string;
+  showing: string;
+  loadMore: string;
 }
 
 interface Props {
   servers: MCPServer[];
   categories: Category[];
+  topics: TaxonomyTopic[];
   locale: Locale;
   labels: Labels;
 }
 
 /** 榜单：筛选栏 + 表格/卡片视图切换 + 五维展开 */
-export default function LeaderboardTable({ servers, categories, locale, labels: L }: Props) {
+export default function LeaderboardTable({ servers, categories, topics, locale, labels: L }: Props) {
   const [cat, setCat] = useState<string>("all");
+  const [topic, setTopic] = useState<string>("all");
   const [lc, setLc] = useState<"all" | Lifecycle>("all");
   const [minScore, setMinScore] = useState(0);
   const [sort, setSort] = useState<SortKey>("score");
   const [view, setView] = useState<View>("table");
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   useEffect(() => {
     if (window.matchMedia("(max-width: 639px)").matches) {
       setView("card");
     }
+    const initialTopic = new URLSearchParams(window.location.search).get("topic");
+    if (initialTopic && topics.some((candidate) => candidate.slug === initialTopic)) {
+      setTopic(initialTopic);
+    }
   }, []);
+
+  const changeTopic = (nextTopic: string) => {
+    setTopic(nextTopic);
+    const url = new URL(window.location.href);
+    if (nextTopic === "all") url.searchParams.delete("topic");
+    else url.searchParams.set("topic", nextTopic);
+    window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+  };
 
   const list = useMemo(() => {
     let l = [...servers];
     if (cat !== "all") l = l.filter((s) => s.categories.includes(cat));
+    if (topic !== "all") l = l.filter((s) => taxonomyForServer(s).topics.includes(topic));
     if (lc !== "all") l = l.filter((s) => s.lifecycle === lc);
     if (minScore > 0) l = l.filter((s) => s.trustScore >= minScore);
     l.sort((a, b) => {
@@ -79,7 +101,13 @@ export default function LeaderboardTable({ servers, categories, locale, labels: 
       return (a.signals.lastCommitDaysAgo ?? 9999) - (b.signals.lastCommitDaysAgo ?? 9999);
     });
     return l;
-  }, [servers, cat, lc, minScore, sort]);
+  }, [servers, cat, topic, lc, minScore, sort]);
+  const visibleList = list.slice(0, visibleCount);
+
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+    setExpanded(null);
+  }, [cat, topic, lc, minScore, sort, view]);
 
   return (
     <div>
@@ -88,7 +116,8 @@ export default function LeaderboardTable({ servers, categories, locale, labels: 
         <select
           value={cat}
           onChange={(e) => setCat(e.target.value)}
-          className="rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-sm dark:border-neutral-700 dark:bg-neutral-900"
+          aria-label={L.allCategories}
+          className="min-h-11 rounded-lg border border-neutral-200 bg-white px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900"
         >
           <option value="all">{L.allCategories}</option>
           {categories.map((c) => (
@@ -97,9 +126,22 @@ export default function LeaderboardTable({ servers, categories, locale, labels: 
         </select>
 
         <select
+          value={topic}
+          onChange={(event) => changeTopic(event.target.value)}
+          aria-label={L.topicFilter}
+          className="min-h-11 rounded-lg border border-neutral-200 bg-white px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900"
+        >
+          <option value="all">{L.allTopics}</option>
+          {topics.map((candidate) => (
+            <option key={candidate.slug} value={candidate.slug}>{topicName(candidate, locale)}</option>
+          ))}
+        </select>
+
+        <select
           value={lc}
           onChange={(e) => setLc(e.target.value as "all" | Lifecycle)}
-          className="rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-sm dark:border-neutral-700 dark:bg-neutral-900"
+          aria-label={L.allStatus}
+          className="min-h-11 rounded-lg border border-neutral-200 bg-white px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900"
         >
           <option value="all">{L.allStatus}</option>
           <option value="active">{L.lcActive}</option>
@@ -111,7 +153,8 @@ export default function LeaderboardTable({ servers, categories, locale, labels: 
         <select
           value={minScore}
           onChange={(e) => setMinScore(Number(e.target.value))}
-          className="rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-sm dark:border-neutral-700 dark:bg-neutral-900"
+          aria-label={L.anyScore}
+          className="min-h-11 rounded-lg border border-neutral-200 bg-white px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900"
         >
           <option value={0}>{L.anyScore}</option>
           <option value={80}>{L.score80}</option>
@@ -132,7 +175,7 @@ export default function LeaderboardTable({ servers, categories, locale, labels: 
             <button
               key={v}
               onClick={() => setSort(v)}
-              className={`rounded-md px-2 py-1 ${
+              className={`min-h-11 rounded-md px-3 py-2 ${
                 sort === v
                   ? "bg-neutral-200 font-medium text-neutral-900 dark:bg-neutral-700 dark:text-neutral-100"
                   : "hover:text-neutral-900 dark:hover:text-neutral-100"
@@ -153,7 +196,7 @@ export default function LeaderboardTable({ servers, categories, locale, labels: 
             <button
               key={v}
               onClick={() => setView(v)}
-              className={`rounded-md px-3 py-1 text-sm ${
+              className={`min-h-11 rounded-md px-3 py-2 text-sm ${
                 view === v
                   ? "bg-brand-600 text-white"
                   : "text-neutral-600 dark:text-neutral-400"
@@ -165,11 +208,15 @@ export default function LeaderboardTable({ servers, categories, locale, labels: 
         </div>
       </div>
 
-      <p className="mb-4 text-sm text-neutral-400">{L.countN.replace("{n}", String(list.length))}</p>
+      <p className="mb-4 text-sm text-neutral-400" aria-live="polite">
+        {L.countN.replace("{n}", String(list.length))}
+        <span className="mx-1.5" aria-hidden="true">·</span>
+        {L.showing.replace("{shown}", String(visibleList.length)).replace("{total}", String(list.length))}
+      </p>
 
       {view === "card" ? (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {list.map((s, i) => (
+          {visibleList.map((s, i) => (
             <ServerCard key={s.slug} server={s} locale={locale} rank={i + 1} />
           ))}
         </div>
@@ -189,7 +236,7 @@ export default function LeaderboardTable({ servers, categories, locale, labels: 
               </tr>
             </thead>
             <tbody>
-              {list.map((s, i) => (
+              {visibleList.map((s, i) => (
                 <Fragment key={s.slug}>
                   <tr
                     onClick={() => setExpanded(expanded === s.slug ? null : s.slug)}
@@ -251,6 +298,18 @@ export default function LeaderboardTable({ servers, categories, locale, labels: 
               ))}
             </tbody>
           </table>
+        </div>
+      )}
+
+      {visibleCount < list.length && (
+        <div className="mt-8 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
+            className="min-h-11 rounded-lg border border-neutral-300 px-5 py-2 text-sm font-medium text-neutral-700 hover:border-brand-400 hover:text-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-300 dark:border-neutral-700 dark:text-neutral-300 dark:hover:border-brand-700 dark:hover:text-brand-300"
+          >
+            {L.loadMore}
+          </button>
         </div>
       )}
     </div>

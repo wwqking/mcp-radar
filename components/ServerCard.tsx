@@ -6,6 +6,7 @@ import LifecycleBadge from "./LifecycleBadge";
 import Sparkline from "./Sparkline";
 import type { Locale } from "@/lib/i18n/locales";
 import { localizedHref } from "@/lib/i18n/href";
+import { TAXONOMY_TOPICS, taxonomyForServer, topicName } from "@/lib/taxonomy";
 
 interface Props {
   server: MCPServer;
@@ -18,6 +19,8 @@ interface Props {
 /** 榜单/雷达/搜索结果统一卡片 */
 export default function ServerCard({ server, locale, showTrend = false, evidence, rank }: Props) {
   const s = server.signals;
+  const taxonomy = taxonomyForServer(server);
+  const topics = TAXONOMY_TOPICS.filter((topic) => taxonomy.topics.includes(topic.slug)).slice(0, 2);
   const updated =
     s.lastCommitDaysAgo === null
       ? null
@@ -52,6 +55,19 @@ export default function ServerCard({ server, locale, showTrend = false, evidence
         <p className="rounded-md bg-brand-50 px-2.5 py-1.5 text-xs text-brand-800 dark:bg-brand-950 dark:text-brand-200">
           {evidence}
         </p>
+      )}
+
+      {topics.length > 0 && (
+        <div className="flex flex-wrap gap-1.5" aria-label={locale === "zh" ? "主题" : "Topics"}>
+          {topics.map((topic) => (
+            <span
+              key={topic.slug}
+              className="rounded-full bg-neutral-100 px-2.5 py-1 text-[11px] font-medium text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
+            >
+              {topicName(topic, locale)}
+            </span>
+          ))}
+        </div>
       )}
 
       <div className="mt-auto flex flex-wrap items-center justify-between gap-3">

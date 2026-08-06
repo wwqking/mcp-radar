@@ -1,4 +1,5 @@
 import { getAllServers, getLastUpdated } from "@/lib/data";
+import { taxonomyForServer } from "@/lib/taxonomy";
 
 export const dynamic = "force-static";
 
@@ -16,14 +17,20 @@ export async function GET() {
       caveat:
         "TrustScore is a maintenance and adoption screening signal, not a user rating, security certification, or production-readiness guarantee.",
       count: servers.length,
-      servers: servers.map((server) => ({
-        slug: server.slug,
-        name: server.name,
-        categories: server.categories,
-        lifecycle: server.lifecycle,
-        trustScore: server.trustScore,
-        dataUpdatedAt: server.signals.dataUpdatedAt,
-        signals: {
+      servers: servers.map((server) => {
+        const taxonomy = taxonomyForServer(server);
+        return {
+          slug: server.slug,
+          name: server.name,
+          categories: taxonomy.categories,
+          primaryCategory: taxonomy.primaryCategory,
+          topics: taxonomy.topics,
+          categoryConfidence: taxonomy.categoryConfidence,
+          needsCategoryReview: taxonomy.needsCategoryReview,
+          lifecycle: server.lifecycle,
+          trustScore: server.trustScore,
+          dataUpdatedAt: server.signals.dataUpdatedAt,
+          signals: {
           lastCommitDaysAgo: server.signals.lastCommitDaysAgo,
           commits90d: server.signals.commits90d,
           recentIssuesWithRepliesPct:
@@ -42,8 +49,8 @@ export async function GET() {
             server.signals.hasRunnableEntry,
           repositoryAuditable:
             server.signals.repoAuditable ?? Boolean(server.repoUrl),
-        },
-        sources: [
+          },
+          sources: [
           ...(server.repoUrl ? [server.repoUrl] : []),
           ...(server.npmPackage
             ? [`https://www.npmjs.com/package/${server.npmPackage}`]
@@ -51,9 +58,10 @@ export async function GET() {
           ...(server.signals.inOfficialRegistry
             ? [server.registryUrl]
             : []),
-        ],
-        page: `https://www.mcpradars.com/en/server/${server.slug}`,
-      })),
+          ],
+          page: `https://www.mcpradars.com/en/server/${server.slug}`,
+        };
+      }),
     },
     {
       headers: {

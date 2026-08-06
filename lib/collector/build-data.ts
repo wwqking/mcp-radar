@@ -14,7 +14,7 @@ import {
   computeVerdict,
   issueResponseRate,
 } from "./score";
-import { classify } from "./classify";
+import { classifyTaxonomy } from "./classify";
 import { deriveClientCompat } from "./client-compat";
 import { readVerifications, applyVerifications } from "./install-verification";
 import { CURATED_SEEDS } from "./curated";
@@ -34,6 +34,8 @@ import {
   writeCatalogState,
   type CatalogSource,
 } from "./catalog-state";
+import { writeTaxonomyAudit } from "./taxonomy-report";
+import { classifyServerTaxonomy } from "../taxonomy";
 
 const REGISTRY_URL = "https://registry.modelcontextprotocol.io";
 
@@ -151,7 +153,7 @@ async function enrichOne(
   const verdict = computeVerdict(lifecycle, signals);
   // 描述兜底：registry 给的优先，否则用 GitHub repo description
   const description = cand.description || ghDescription || "";
-  const categories = classify(cand.name, description);
+  const taxonomy = classifyTaxonomy(cand.name, description, cand.title);
 
   const deathInfo =
     lifecycle === "dead" || lifecycle === "dying"
@@ -172,7 +174,11 @@ async function enrichOne(
     name: cand.name,
     tagline: (cand.title !== cand.name ? cand.title : description).slice(0, 80) || cand.name,
     description,
-    categories,
+    categories: taxonomy.categories,
+    primaryCategory: taxonomy.primaryCategory,
+    topics: taxonomy.topics,
+    categoryConfidence: taxonomy.categoryConfidence,
+    needsCategoryReview: taxonomy.needsCategoryReview,
     lifecycle,
     trustScore,
     breakdown,
@@ -352,12 +358,22 @@ function refreshMetadata(
   const endpoints = cand.remoteEndpoints.length
     ? cand.remoteEndpoints
     : previous.remoteEndpoints;
+  const taxonomy = classifyServerTaxonomy({
+    ...previous,
+    name: cand.name,
+    description,
+    tagline,
+  });
   const next: MCPServer = {
     ...previous,
     name: cand.name,
     tagline,
     description,
-    categories: classify(cand.name, description),
+    categories: taxonomy.categories,
+    primaryCategory: taxonomy.primaryCategory,
+    topics: taxonomy.topics,
+    categoryConfidence: taxonomy.categoryConfidence,
+    needsCategoryReview: taxonomy.needsCategoryReview,
     repoUrl: cand.repoUrl ?? previous.repoUrl,
     npmPackage: cand.npmPackage ?? previous.npmPackage,
     hasPublishedPackage: cand.hasPackage,
@@ -614,6 +630,12 @@ export async function collectServers(
 
   // 落盘全量数据集：供 Cloudflare build 直接读取，不必在 build 里重新采集
   await writeDataset(final);
+  const taxonomyAudit = await writeTaxonomyAudit(final);
+  console.log(
+    `[taxonomy] 待复核 ${taxonomyAudit.summary.needsReview}/${taxonomyAudit.total} ` +
+      `(${taxonomyAudit.summary.needsReviewRatePct}%)；` +
+      `${taxonomyAudit.alerts.length ? taxonomyAudit.alerts.join("；") : "分类分布正常"}`,
+  );
   await writeCatalogState(catalogTransition.state);
 
   return final;
@@ -661,9 +683,15 @@ export function normalizePublishedServers(servers: MCPServer[]): MCPServer[] {
     const repo = server.repoUrl?.toLowerCase();
     const readmeFacts =
       repo && repoCounts.get(repo)! > 1 ? undefined : server.readmeFacts;
+    const taxonomy = classifyServerTaxonomy(server);
 
     return {
       ...server,
+      categories: taxonomy.categories,
+      primaryCategory: taxonomy.primaryCategory,
+      topics: taxonomy.topics,
+      categoryConfidence: taxonomy.categoryConfidence,
+      needsCategoryReview: taxonomy.needsCategoryReview,
       signals,
       breakdown,
       trustScore: computeTrustScore(breakdown),

@@ -1,8 +1,7 @@
 import Link from "next/link";
 import {
-  CATEGORIES,
+  PUBLIC_CATEGORIES,
   getAllServers,
-  getServersByCategory,
   getSiteStats,
   getTopServers,
   getRadarEntries,
@@ -17,6 +16,12 @@ import { STACKS } from "@/lib/stacks";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizedHref } from "@/lib/i18n/href";
+import {
+  FEATURED_TOPIC_SLUGS,
+  TAXONOMY_TOPICS,
+  taxonomyForServer,
+  topicName,
+} from "@/lib/taxonomy";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
@@ -36,17 +41,23 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
   // 组合方案用：slug → server 映射（取活体状态 + 链接）
   const serverMap = new Map(servers.map((s) => [s.slug, s]));
 
-  const categoryCounts = await Promise.all(
-    CATEGORIES.map(async (c) => {
-      const list = await getServersByCategory(c.slug);
-      return {
-        slug: c.slug,
-        total: list.length,
-        active: list.filter((s) => s.lifecycle === "active").length,
-      };
-    })
-  );
+  const categoryCounts = PUBLIC_CATEGORIES.map((category) => {
+    const list = servers.filter((server) => server.categories.includes(category.slug));
+    return {
+      slug: category.slug,
+      total: list.length,
+      active: list.filter((server) => server.lifecycle === "active").length,
+    };
+  });
   const countBySlug = new Map(categoryCounts.map((c) => [c.slug, c]));
+  const featuredTopicSet = new Set<string>(FEATURED_TOPIC_SLUGS);
+  const featuredTopics = TAXONOMY_TOPICS.filter((topic) => featuredTopicSet.has(topic.slug))
+    .map((topic) => ({
+      topic,
+      count: servers.filter((server) => taxonomyForServer(server).topics.includes(topic.slug)).length,
+    }))
+    .filter(({ count }) => count > 0)
+    .sort((a, b) => b.count - a.count);
 
   return (
     <div>
@@ -157,7 +168,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
           </div>
         </div>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-          {CATEGORIES.map((c) => {
+          {PUBLIC_CATEGORIES.map((c) => {
             const counts = countBySlug.get(c.slug);
             return (
               <Link
@@ -178,6 +189,26 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
             );
           })}
         </div>
+        <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">{h.categoriesOverlapNote}</p>
+
+        {featuredTopics.length > 0 && (
+          <div className="mt-8 border-t border-neutral-200 pt-6 dark:border-neutral-800">
+            <h3 className="text-base font-bold text-neutral-900 dark:text-neutral-100">{h.topicsTitle}</h3>
+            <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">{h.topicsSub}</p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {featuredTopics.map(({ topic, count }) => (
+                <Link
+                  key={topic.slug}
+                  href={t(`/topic/${topic.slug}`)}
+                  className="inline-flex min-h-11 items-center rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm font-medium text-neutral-700 transition-colors hover:border-brand-400 hover:text-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-300 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:border-brand-700 dark:hover:text-brand-300"
+                >
+                  {topicName(topic, locale)}
+                  <span className="ml-1.5 text-xs font-normal text-neutral-400">{count}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       {/* ===== 本周动态 ===== */}

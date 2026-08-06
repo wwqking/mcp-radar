@@ -98,7 +98,25 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <p className="mt-3 text-sm text-neutral-400">{d.lifecycleNote}</p>
       </section>
 
-      {/* 3. 数据来源与限制 */}
+      {/* 3. 分类与主题方法 */}
+      <section className="mt-12">
+        <h2 className="text-lg font-bold text-neutral-900 dark:text-neutral-100">{d.taxonomyTitle}</h2>
+        <p className="mt-2 leading-7 text-neutral-600 dark:text-neutral-400">{d.taxonomyBody}</p>
+        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+          {[
+            [d.taxonomyPrimary, d.taxonomyPrimaryBody],
+            [d.taxonomyTopics, d.taxonomyTopicsBody],
+            [d.taxonomyReview, d.taxonomyReviewBody],
+          ].map(([title, body]) => (
+            <div key={title} className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-700">
+              <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">{title}</h3>
+              <p className="mt-2 text-sm leading-6 text-neutral-500 dark:text-neutral-400">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 4. 数据来源与限制 */}
       <section className="mt-12">
         <h2 className="text-lg font-bold text-neutral-900 dark:text-neutral-100">{d.sourceTitle}</h2>
         <div className="card mt-4 overflow-x-auto p-0">
@@ -127,7 +145,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </div>
       </section>
 
-      {/* 4. 利益披露 */}
+      {/* 5. 利益披露 */}
       <section className="mt-12">
         <h2 className="text-lg font-bold text-neutral-900 dark:text-neutral-100">{d.disclosureTitle}</h2>
         <p className="mt-2 leading-7 text-neutral-600 dark:text-neutral-400">
@@ -140,7 +158,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </Link>
       </section>
 
-      {/* 5. 更正与申诉通道 */}
+      {/* 6. 更正与申诉通道 */}
       <section className="mt-12 rounded-xl border border-neutral-200 p-6 dark:border-neutral-700">
         <h2 className="font-bold text-neutral-900 dark:text-neutral-100">{d.correctionTitle}</h2>
         <p className="mt-2 text-sm leading-6 text-neutral-600 dark:text-neutral-400">

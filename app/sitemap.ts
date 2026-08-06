@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
-import { CATEGORIES, getAllServers, getLastUpdated } from "@/lib/data";
+import { PUBLIC_CATEGORIES, getAllServers, getLastUpdated } from "@/lib/data";
 import { SITE_URL } from "@/lib/site";
 import { LOCALES } from "@/lib/i18n/locales";
 import { getSeoLandingSlugs } from "@/lib/seo-landing";
 import { getGuideModifiedAt, getGuideSlugs } from "@/lib/guides";
+import { TAXONOMY_TOPICS } from "@/lib/taxonomy";
 
 const BASE = SITE_URL;
 
@@ -58,8 +59,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ),
   );
 
-  const categoryPages = CATEGORIES.flatMap((c) =>
+  const categoryPages = PUBLIC_CATEGORIES.flatMap((c) =>
     entry(`/category/${c.slug}`, 0.8, datasetUpdatedAt, "daily"),
+  );
+
+  const topicPages = TAXONOMY_TOPICS.flatMap((topic) =>
+    entry(`/topic/${topic.slug}`, 0.7, datasetUpdatedAt, "daily"),
   );
 
   const allServers = await getAllServers();
@@ -77,5 +82,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entry(`/guides/${slug}`, 0.7, getGuideModifiedAt(slug) ?? contentUpdatedAt, "monthly"),
   );
 
-  return [...staticPages, ...categoryPages, ...serverPages, ...seoLandingPages, ...guidePages];
+  return [...staticPages, ...categoryPages, ...topicPages, ...serverPages, ...seoLandingPages, ...guidePages];
 }

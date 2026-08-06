@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CATEGORIES, categoryName } from "@/lib/constants";
+import { PUBLIC_CATEGORIES, categoryName } from "@/lib/constants";
 import { getLastUpdated } from "@/lib/data";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -18,7 +18,7 @@ export default async function SiteFooter({ locale }: { locale: Locale }) {
           <div>
             <h4 className="mb-3 text-sm font-semibold text-neutral-900 dark:text-neutral-100">{dict.footer.categoryMap}</h4>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-1.5">
-              {CATEGORIES.map((c) => (
+              {PUBLIC_CATEGORIES.map((c) => (
                 <li key={c.slug}>
                   <Link
                     href={t(`/category/${c.slug}`)}

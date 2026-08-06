@@ -28,6 +28,9 @@ export function getServerBySlug(slug: string): Promise<MCPServer | undefined> {
 export function getServersByCategory(catSlug: string): Promise<MCPServer[]> {
   return provider.getServersByCategory(catSlug);
 }
+export function getServersByTopic(topicSlug: string): Promise<MCPServer[]> {
+  return provider.getServersByTopic(topicSlug);
+}
 export function getCategoryBySlug(slug: string): Promise<Category | undefined> {
   return provider.getCategoryBySlug(slug);
 }
@@ -59,6 +62,7 @@ export function getLastUpdated(): Promise<string> {
 // ---------- 透传客户端安全常量（服务端组件可继续从 data.ts 取，省得改 import） ----------
 export {
   CATEGORIES,
+  PUBLIC_CATEGORIES,
   formatNumber,
   formatDate,
   LIFECYCLE_META,

@@ -9,7 +9,8 @@ import type {
   LeaderboardOptions,
   RadarBuckets,
 } from "./provider";
-import { CATEGORIES, formatNumber, formatDate } from "./constants";
+import { CATEGORIES, PUBLIC_CATEGORIES, formatNumber, formatDate } from "./constants";
+import { taxonomyForServer } from "./taxonomy";
 
 // ---------- 工具函数（生成趋势数组） ----------
 function trend(base: number, growth: number, noise = 0.15): number[] {
@@ -833,10 +834,10 @@ function radarSync(): RadarBuckets {
 
 export const mockProvider: MCPDataProvider = {
   async getCategories() {
-    return CATEGORIES;
+    return PUBLIC_CATEGORIES;
   },
   async getCategoryBySlug(slug) {
-    return CATEGORIES.find((c) => c.slug === slug);
+    return PUBLIC_CATEGORIES.find((c) => c.slug === slug);
   },
   async getAllServers() {
     return servers;
@@ -846,6 +847,9 @@ export const mockProvider: MCPDataProvider = {
   },
   async getServersByCategory(catSlug) {
     return servers.filter((s) => s.categories.includes(catSlug));
+  },
+  async getServersByTopic(topicSlug) {
+    return servers.filter((s) => taxonomyForServer(s).topics.includes(topicSlug));
   },
   async getTopServers(n = 8) {
     return [...servers]

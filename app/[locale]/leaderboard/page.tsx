@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CATEGORIES, getAllServers, getLastUpdated } from "@/lib/data";
+import { PUBLIC_CATEGORIES, getAllServers, getLastUpdated } from "@/lib/data";
 import LeaderboardTable from "@/components/LeaderboardTable";
 import SubscribeInline from "@/components/SubscribeInline";
 import type { Locale } from "@/lib/i18n/locales";
@@ -9,6 +9,7 @@ import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 import JsonLd from "@/components/JsonLd";
 import { ORGANIZATION_ID } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
+import { TAXONOMY_TOPICS } from "@/lib/taxonomy";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -75,7 +76,8 @@ export default async function LeaderboardPage({ params }: { params: Promise<{ lo
 
       <LeaderboardTable
         servers={servers}
-        categories={CATEGORIES}
+        categories={PUBLIC_CATEGORIES}
+        topics={TAXONOMY_TOPICS}
         locale={locale}
         labels={{
           allCategories: dict.filters.allCategories,
@@ -106,6 +108,10 @@ export default async function LeaderboardPage({ params }: { params: Promise<{ lo
           dimUsability: d.dimUsability,
           dimHealth: d.dimHealth,
           dimCommunity: d.dimCommunity,
+          allTopics: dict.filters.allTopics,
+          topicFilter: dict.filters.topicFilter,
+          showing: dict.filters.showing,
+          loadMore: dict.filters.loadMore,
         }}
       />
     </div>

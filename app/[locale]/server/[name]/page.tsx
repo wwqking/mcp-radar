@@ -34,6 +34,7 @@ import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 import { verdictText, deathReasonText } from "@/lib/i18n/verdict";
 import TrackedLink from "@/components/TrackedLink";
+import { TAXONOMY_TOPICS, taxonomyForServer, topicName } from "@/lib/taxonomy";
 
 interface Props {
   params: Promise<{ name: string; locale: Locale }>;
@@ -83,8 +84,12 @@ export default async function ServerDetailPage({ params }: Props) {
   const sig = s.signals;
   const capability = getServerCapability(s.slug);
   const similar = await getSimilarServers(s);
-  const pickGuide = getPickGuide(s.categories[0]);
-  const primaryCategory = s.categories[0] ? await getCategoryBySlug(s.categories[0]) : undefined;
+  const taxonomy = taxonomyForServer(s);
+  const primaryCategory = taxonomy.primaryCategory !== "misc"
+    ? await getCategoryBySlug(taxonomy.primaryCategory)
+    : undefined;
+  const pickGuide = getPickGuide(primaryCategory?.slug);
+  const topics = TAXONOMY_TOPICS.filter((topic) => taxonomy.topics.includes(topic.slug));
   const seoLanding = getSeoLandingByServer(s.slug);
   const starsTrend = trendPct(s.starsTrend);
   const dlTrend = trendPct(s.downloadsTrend);
@@ -144,10 +149,10 @@ export default async function ServerDetailPage({ params }: Props) {
       <nav className="mb-4 text-sm text-neutral-400">
         <Link href={localizedHref(locale, "/")} className="hover:text-brand-600">{d.home}</Link>
         <span className="mx-2">/</span>
-        {s.categories[0] && (
+        {primaryCategory && (
           <>
-            <Link href={localizedHref(locale, `/category/${s.categories[0]}`)} className="hover:text-brand-600">
-              {primaryCategory ? categoryName(primaryCategory, locale) : ""}
+            <Link href={localizedHref(locale, `/category/${primaryCategory.slug}`)} className="hover:text-brand-600">
+              {categoryName(primaryCategory, locale)}
             </Link>
             <span className="mx-2">/</span>
           </>
@@ -174,6 +179,19 @@ export default async function ServerDetailPage({ params }: Props) {
                   {s.name}
                 </h1>
                 <p className="mt-2 text-neutral-600 dark:text-neutral-400">{s.tagline}</p>
+                {topics.length > 0 && (
+                  <div className="mt-3 flex flex-wrap gap-2" aria-label={locale === "zh" ? "主题" : "Topics"}>
+                    {topics.map((topic) => (
+                      <Link
+                        key={topic.slug}
+                        href={localizedHref(locale, `/topic/${topic.slug}`)}
+                        className="inline-flex min-h-11 items-center rounded-full border border-neutral-200 px-3 py-2 text-xs font-medium text-neutral-600 hover:border-brand-400 hover:text-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-300 dark:border-neutral-700 dark:text-neutral-300 dark:hover:border-brand-700 dark:hover:text-brand-300"
+                      >
+                        {topicName(topic, locale)}
+                      </Link>
+                    ))}
+                  </div>
+                )}
                 {seoLanding && (
                   <Link
                     href={localizedHref(locale, `/servers/${seoLanding.toolSlug}-mcp-server`)}
