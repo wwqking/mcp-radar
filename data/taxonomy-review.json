@@ -1,118 +1,122 @@
 {
-  "generatedAt": "2026-08-08T22:31:27.116Z",
-  "total": 3317,
+  "generatedAt": "2026-08-09T22:31:12.716Z",
+  "total": 3542,
   "summary": {
-    "needsReview": 2044,
-    "needsReviewRatePct": 61.6,
-    "uncategorized": 1030,
-    "uncategorizedRatePct": 31.1,
+    "needsReview": 2222,
+    "needsReviewRatePct": 62.7,
+    "uncategorized": 1203,
+    "uncategorizedRatePct": 34,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 48
+    "largestCategoryRatePct": 45.9
   },
   "alerts": [
-    "待归类占比 31.1%，超过 5% 审核线",
-    "dev 占比 48%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 61.6%，超过 10%"
+    "待归类占比 34%，超过 5% 审核线",
+    "dev 占比 45.9%，超过 30% 拆分评估线",
+    "低置信度/待审核占比 62.7%，超过 10%"
   ],
   "categoryCounts": {
-    "dev": 1592,
-    "misc": 1030,
-    "search": 493,
-    "ai": 319,
-    "files": 156,
+    "dev": 1626,
+    "misc": 1203,
+    "search": 528,
+    "ai": 283,
+    "files": 165,
     "comms": 143,
-    "commerce": 111,
-    "database": 102,
-    "cloud": 101,
-    "browser": 95,
-    "marketing": 88
+    "commerce": 112,
+    "database": 103,
+    "cloud": 100,
+    "browser": 98,
+    "marketing": 79
   },
   "topicCounts": {
-    "design-media": 184,
-    "automation": 131,
-    "finance": 109,
-    "observability": 66,
+    "design-media": 194,
+    "automation": 137,
+    "finance": 121,
+    "observability": 70,
+    "mcp-infrastructure": 66,
     "legal": 64,
-    "mcp-infrastructure": 60,
     "visualization": 40,
+    "science-health": 22,
+    "game-development": 18,
+    "data-analysis": 18,
     "security": 18,
-    "science-health": 18,
-    "game-development": 17,
-    "data-analysis": 17,
-    "iot-robotics": 8
+    "iot-robotics": 10
   },
   "emergingTerms": [
     {
       "term": "coding",
-      "count": 69
-    },
-    {
-      "term": "create",
-      "count": 66
+      "count": 76
     },
     {
       "term": "free",
-      "count": 62
+      "count": 72
     },
     {
-      "term": "local",
-      "count": 61
-    },
-    {
-      "term": "memory",
-      "count": 60
-    },
-    {
-      "term": "over",
-      "count": 60
+      "term": "create",
+      "count": 70
     },
     {
       "term": "manage",
-      "count": 59
+      "count": 66
+    },
+    {
+      "term": "local",
+      "count": 63
+    },
+    {
+      "term": "memory",
+      "count": 63
+    },
+    {
+      "term": "over",
+      "count": 62
     },
     {
       "term": "live",
-      "count": 58
+      "count": 60
     },
     {
       "term": "read",
-      "count": 52
+      "count": 59
     },
     {
       "term": "code",
-      "count": 50
+      "count": 58
     },
     {
       "term": "read-only",
-      "count": 50
-    },
-    {
-      "term": "check",
-      "count": 45
+      "count": 52
     },
     {
       "term": "tasks",
-      "count": 45
+      "count": 50
     },
     {
       "term": "across",
-      "count": 43
+      "count": 48
+    },
+    {
+      "term": "check",
+      "count": 46
     },
     {
       "term": "x402",
-      "count": 42
-    },
-    {
-      "term": "audit",
-      "count": 38
+      "count": 46
     },
     {
       "term": "pipeworx-io",
-      "count": 37
+      "count": 43
+    },
+    {
+      "term": "audit",
+      "count": 40
     },
     {
       "term": "real",
-      "count": 35
+      "count": 40
+    },
+    {
+      "term": "analysis",
+      "count": 36
     },
     {
       "term": "status",
@@ -120,14 +124,18 @@
     },
     {
       "term": "usdc",
-      "count": 33
-    },
-    {
-      "term": "analysis",
-      "count": 32
+      "count": 34
     },
     {
       "term": "local-first",
+      "count": 33
+    },
+    {
+      "term": "malkreide",
+      "count": 31
+    },
+    {
+      "term": "stdio",
       "count": 31
     },
     {
@@ -135,39 +143,63 @@
       "count": 30
     },
     {
-      "term": "malkreide",
-      "count": 30
-    },
-    {
       "term": "pricing",
       "count": 30
     },
     {
+      "term": "shared",
+      "count": 30
+    },
+    {
       "term": "before",
-      "count": 28
+      "count": 29
+    },
+    {
+      "term": "intelligence",
+      "count": 29
     },
     {
       "term": "files",
+      "count": 28
+    },
+    {
+      "term": "analytics",
       "count": 27
     },
     {
-      "term": "shared",
+      "term": "query",
       "count": 27
+    },
+    {
+      "term": "security",
+      "count": 27
+    },
+    {
+      "term": "call",
+      "count": 26
+    },
+    {
+      "term": "every",
+      "count": 26
     },
     {
       "term": "poll",
       "count": 26
     },
     {
-      "term": "stdio",
+      "term": "research",
       "count": 26
     },
     {
-      "term": "analytics",
+      "term": "apis",
       "count": 25
     },
     {
-      "term": "management",
+      "term": "chrischall",
+      "count": 25
+    },
+    {
+      "term": "control",
       "count": 25
     },
     {
@@ -179,68 +211,36 @@
       "count": 25
     },
     {
-      "term": "security",
+      "term": "time",
       "count": 25
     },
     {
-      "term": "apis",
+      "term": "deterministic",
       "count": 24
     },
     {
-      "term": "call",
+      "term": "management",
       "count": 24
     },
     {
-      "term": "chrischall",
+      "term": "public",
       "count": 24
-    },
-    {
-      "term": "every",
-      "count": 24
-    },
-    {
-      "term": "research",
-      "count": 24
-    },
-    {
-      "term": "control",
-      "count": 23
-    },
-    {
-      "term": "governed",
-      "count": 23
-    },
-    {
-      "term": "review",
-      "count": 23
-    },
-    {
-      "term": "time",
-      "count": 23
     },
     {
       "term": "account",
-      "count": 22
+      "count": 23
     },
     {
-      "term": "apps",
-      "count": 22
+      "term": "build",
+      "count": 23
     },
     {
-      "term": "intelligence",
-      "count": 22
+      "term": "clients",
+      "count": 23
     },
     {
-      "term": "keys",
-      "count": 22
-    },
-    {
-      "term": "more",
-      "count": 22
-    },
-    {
-      "term": "network",
-      "count": 22
+      "term": "discover",
+      "count": 23
     }
   ],
   "reviewQueue": [
@@ -280,11 +280,25 @@
       "description": "Model Context Protocol Servers"
     },
     {
+      "slug": "ai-agentplaybooks-agentplaybooks",
+      "name": "ai.agentplaybooks/agentplaybooks",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Manage portable AI agent playbooks, Agent Skills, MCP configurations, personas, and memory."
+    },
+    {
       "slug": "ai-agenttrust-mcp-server",
       "name": "ai.agenttrust/mcp-server",
       "confidence": 0.35,
       "topics": [],
       "description": "Identity, trust, and A2A orchestration for autonomous AI agents. Official A2A partner."
+    },
+    {
+      "slug": "ai-ai-akari-agent-trust-receipt",
+      "name": "ai.ai-akari/agent-trust-receipt",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Read-only Remote MCP for externally grounded AI agent trust receipts."
     },
     {
       "slug": "ai-ankimcp-anki-mcp-server",
@@ -313,6 +327,20 @@
       "confidence": 0.35,
       "topics": [],
       "description": "AI memory layer — one shared, persistent memory across every AI tool you connect."
+    },
+    {
+      "slug": "ai-autonomad-computeback",
+      "name": "ai.autonomad/computeback",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Agent Rewards Marketplace: earn $NOMD on B2B work, spend on agent capabilities."
+    },
+    {
+      "slug": "ai-auxen-auxen",
+      "name": "ai.auxen/auxen",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Provision private AI model endpoints on dedicated GPUs (Llama, Qwen, Mistral). Pay per minute."
     },
     {
       "slug": "ai-bareun-bareun",
@@ -420,6 +448,13 @@
       "description": "Circulara Observe MCP plugin - meters your AI agents' token spend and carbon, free tier."
     },
     {
+      "slug": "ai-cofoundagent-cofound",
+      "name": "ai.cofoundagent/cofound",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP-native co-founder directory your AI agent searches, screening inbound pitches for you."
+    },
+    {
       "slug": "ai-com-mcp-contabo",
       "name": "ai.com.mcp/contabo",
       "confidence": 0.35,
@@ -462,6 +497,13 @@
       "description": "Manage your ConnectMachine contacts, networks, events, and digital business cards."
     },
     {
+      "slug": "ai-cueapi-mcp",
+      "name": "ai.cueapi/mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Schedule agent work and report write-once outcomes via CueAPI from any MCP host."
+    },
+    {
       "slug": "ai-dinglebear-apprise-rmcp",
       "name": "ai.dinglebear/apprise-rmcp",
       "confidence": 0.35,
@@ -469,11 +511,25 @@
       "description": "Rust MCP server and CLI for Apprise notification fan-out across dozens of delivery backends."
     },
     {
+      "slug": "ai-dinglebear-gotify-rmcp",
+      "name": "ai.dinglebear/gotify-rmcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Rust MCP server and CLI for Gotify push notifications and message management."
+    },
+    {
       "slug": "ai-dinglebear-rapprise",
       "name": "ai.dinglebear/rapprise",
       "confidence": 0.35,
       "topics": [],
       "description": "Apprise notifications over MCP and CLI with authenticated stdio and HTTP transports."
+    },
+    {
+      "slug": "ai-dinglebear-rgotify",
+      "name": "ai.dinglebear/rgotify",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Gotify notifications and app, client, and message management over MCP and CLI."
     },
     {
       "slug": "ai-dinglebear-rtailscale",
@@ -539,6 +595,20 @@
       "description": "Control Android TV from any AI. 38 MCP tools: playback, recap, recommend, smart-home, schedules."
     },
     {
+      "slug": "ai-dynsoft-sac",
+      "name": "ai.dynsoft/sac",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Give your AI agent the ability to respond with live, interactive apps that evolve."
+    },
+    {
+      "slug": "ai-epinu-epinu",
+      "name": "ai.epinu/epinu",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Agent-first marketplace for industrial assets & livestock medianería; humans approve every write."
+    },
+    {
       "slug": "ai-everway-everway-mcp-server",
       "name": "ai.everway/everway-mcp-server",
       "confidence": 0.35,
@@ -602,6 +672,41 @@
       "description": "Security tools for AI agents: scan MCP servers, validate HDP delegation chains, audit releases."
     },
     {
+      "slug": "ai-i18nagent-i18n-agent",
+      "name": "ai.i18nagent/i18n-agent",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "AI-powered translation for 48 languages with context-aware quality"
+    },
+    {
+      "slug": "ai-joinmultiplayer-gpu",
+      "name": "ai.joinmultiplayer/gpu",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Agent-to-agent network for teams: dm, who-knows-X routing, shared rooms. Human-in-the-loop."
+    },
+    {
+      "slug": "ai-justdrop-mcp",
+      "name": "ai.justdrop/mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Live, end-to-end encrypted, ephemeral file transfer between your AI agent and any device."
+    },
+    {
+      "slug": "ai-justpublish-just-publish",
+      "name": "ai.justpublish/just-publish",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Publish the website you built with AI to a live public URL — straight from chat, no setup."
+    },
+    {
+      "slug": "ai-kawacode-mcp",
+      "name": "ai.kawacode/mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Team-aware memory: intent, decisions, real-time conflicts for AI coding assistants."
+    },
+    {
       "slug": "ai-kernora-agent-sec",
       "name": "ai.kernora/agent-sec",
       "confidence": 0.35,
@@ -621,6 +726,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "A colony of AI citizens: join with no credential, prove skills, earn, vote on the rules."
+    },
+    {
+      "slug": "ai-lithtrix-lithtrix-mcp",
+      "name": "ai.lithtrix/lithtrix-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Identity, memory, trust, and swarm primitives for AI agents. MIRC base always free."
     },
     {
       "slug": "ai-lumify-sports-intelligence",
@@ -644,6 +756,20 @@
       "description": "Runtime authority for AI agents: credential mediation, spend cap, approval gates, audit log."
     },
     {
+      "slug": "ai-maximem-synap",
+      "name": "ai.maximem/synap",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Persistent memory for AI agents — log and recall conversation context over MCP."
+    },
+    {
+      "slug": "ai-mcpanalytics-analytics",
+      "name": "ai.mcpanalytics/analytics",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "The statistical analyst in your AI chat — validated, citable, re-runnable analysis of your data."
+    },
+    {
       "slug": "ai-mcpcap-mcpcap",
       "name": "ai.mcpcap/mcpcap",
       "confidence": 0.35,
@@ -651,11 +777,25 @@
       "description": "An MCP server for analyzing PCAP files."
     },
     {
+      "slug": "ai-meetsquad-squad",
+      "name": "ai.meetsquad/squad",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Decision intelligence for product teams. Turn scattered feedback into signal you can act on."
+    },
+    {
       "slug": "ai-mindola-lens",
       "name": "ai.mindola/lens",
       "confidence": 0.35,
       "topics": [],
       "description": "Create your digital twin: a public page that answers from your own material, with citations."
+    },
+    {
+      "slug": "ai-monnet-mcp",
+      "name": "ai.monnet/mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Model Context Protocol server for Monnet — motions, plans, and approvals for MCP-compatible clients."
     },
     {
       "slug": "ai-mrmarket-mrmarket-mcp",
@@ -684,6 +824,20 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Fuses biometric signals into a stress score (0-100) for AI adaptation. MCP + A2A native."
+    },
+    {
+      "slug": "ai-nexustoken-nexustoken-sdk",
+      "name": "ai.nexustoken/nexustoken-sdk",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Create/check agent tasks, discover capabilities, and run V2 Jobs on NexusToken."
+    },
+    {
+      "slug": "ai-nocturnus-logic-server",
+      "name": "ai.nocturnus/logic-server",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Agent reasoning, memory, and token-optimized context for AI applications."
     },
     {
       "slug": "ai-openaso-openaso",
@@ -1281,6 +1435,13 @@
       "description": "Identify the manufacturer behind any MAC address; flags randomized/private addresses."
     },
     {
+      "slug": "ai-statemind-python-code-validator",
+      "name": "ai.statemind/python-code-validator",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Validates, repairs and sandbox-runs AI-generated Python: lint, types, security, exact fixes."
+    },
+    {
       "slug": "ai-syntitan-syntitan-mcp",
       "name": "ai.syntitan/syntitan-mcp",
       "confidence": 0.35,
@@ -1645,6 +1806,13 @@
       "description": "Pick giveaway and raffle winners nobody can rig — verifiable by anyone, no API key."
     },
     {
+      "slug": "app-recao-recao-mcp",
+      "name": "app.recao/recao-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Rank a competitor's EU App Store ads by longevity. From Apple's official Ad Repository."
+    },
+    {
       "slug": "app-scanbim-scanbim-mcp",
       "name": "app.scanbim/scanbim-mcp",
       "confidence": 0.35,
@@ -1666,6 +1834,13 @@
       "description": "MCP Server for ThoughtSpot - provides OAuth authentication and tools for querying data"
     },
     {
+      "slug": "app-toolsnap-toolsnap-mcp",
+      "name": "app.toolsnap/toolsnap-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Deterministic AI agent microtools, no accounts/API keys. fetch_extract: 98% token cut. 38 tools."
+    },
+    {
       "slug": "app-trustydata-trustydata",
       "name": "app.trustydata/trustydata",
       "confidence": 0.35,
@@ -1678,6 +1853,27 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Run racket-sport tournaments from your AI assistant: fair draws, scores, live standings."
+    },
+    {
+      "slug": "app-twiceshy-twiceshy",
+      "name": "app.twiceshy/twiceshy",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Experience memory for coding agents: validated traps, fixes and dead-ends at decision time."
+    },
+    {
+      "slug": "app-undisk-mcp-stdio-proxy",
+      "name": "app.undisk.mcp/stdio-proxy",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Undisk MCP: safe file memory for AI agents."
+    },
+    {
+      "slug": "app-uploadcheck-uploadcheck",
+      "name": "app.uploadcheck/uploadcheck",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "QC videos, podcasts, and clips before upload — timestamped flags with agent-ready repair prompts."
     },
     {
       "slug": "app-worldmonitor-mcp",
@@ -1904,6 +2100,27 @@
       "description": "Remote jobs, freelance gigs, vacancies. 24 boards: Upwork, Freelancer, RemoteOK, hh.ru, Kwork."
     },
     {
+      "slug": "co-yungle-yungle",
+      "name": "co.yungle/yungle",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Ask about your Yungle file deliveries — what was sent, who downloaded, what expires. Read-only."
+    },
+    {
+      "slug": "coach-marian-eng-leadership-toolkit",
+      "name": "coach.marian/eng-leadership-toolkit",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Engineering leadership benchmarks, 1:1 playbooks, developer value calculator. 3,400+ sessions."
+    },
+    {
+      "slug": "coach-marian-mentoring-inquiry-builder",
+      "name": "coach.marian/mentoring-inquiry-builder",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Build your mentoring inquiry with Marian Kamenistak: formal offer in 16 minutes, 16% AI discount."
+    },
+    {
       "slug": "com-a11ychk-mcp",
       "name": "com.a11ychk/mcp",
       "confidence": 0.35,
@@ -1923,6 +2140,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Checks x402 Bazaar resource listings against the public discovery catalog and flags drops."
+    },
+    {
+      "slug": "com-acuris-geo-acuris-mcp",
+      "name": "com.acuris-geo/acuris-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Address validation & geocoding for AI agents: 240+ countries, UK PAF, free US/CA enrichment"
     },
     {
       "slug": "com-agenticcontrolplane-acp-mcp-server",
@@ -1995,11 +2219,25 @@
       "description": "MCP server for Altmetric APIs - track research attention across news, policy, social media, and more"
     },
     {
+      "slug": "com-angelsforagents-funding",
+      "name": "com.angelsforagents/funding",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Discover AFA capital opportunities, validate authorized agent pitches, and report grant milestones."
+    },
+    {
       "slug": "com-apify-apify-mcp-server",
       "name": "com.apify/apify-mcp-server",
       "confidence": 0.35,
       "topics": [],
       "description": "Extract data from any website with thousands of scrapers, crawlers, and automations on Apify Store ⚡"
+    },
+    {
+      "slug": "com-appfigures-mcp",
+      "name": "com.appfigures/mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Access your app analytics, ASO tools, and app market intelligence with Appfigures."
     },
     {
       "slug": "com-arcandledger-tax-tools",
@@ -2065,6 +2303,20 @@
       "description": "MCP server for Blockscout"
     },
     {
+      "slug": "com-blockventurechaincapital-bvcc-agent-wallet",
+      "name": "com.blockventurechaincapital/bvcc-agent-wallet",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Non-custodial BVCC Agent Wallet on-chain for AI agents: balances, transfers, approvals, swaps."
+    },
+    {
+      "slug": "com-branderux-mcp",
+      "name": "com.branderux/mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Turns any agent into a full agentic application — branded, interactive screens generated at runtime."
+    },
+    {
       "slug": "com-bykaranteli-mcp",
       "name": "com.bykaranteli/mcp",
       "confidence": 0.35,
@@ -2105,6 +2357,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Read, organise and carefully-gated send for Proton Mail, without your mail leaving this machine."
+    },
+    {
+      "slug": "com-coordinalo-mcp-server",
+      "name": "com.coordinalo/mcp-server",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Scheduling, availability, clients, billing and CRM for appointment-based services."
     },
     {
       "slug": "com-coresignal-mcp",
@@ -2188,14 +2447,21 @@
       "name": "com.energyaisolution/energyai",
       "confidence": 0.35,
       "topics": [],
-      "description": "Free clean-energy tools: incentives, solar estimates, scores, guides, quotes, local installers."
+      "description": "Free energy intelligence for agents: incentives, solar estimates, node scores, installer routing."
     },
     {
       "slug": "com-energyaisolution-solar-home-incentives",
       "name": "com.energyaisolution/solar-home-incentives",
       "confidence": 0.35,
       "topics": [],
-      "description": "Free solar and home-energy tools: incentives, estimates, scores, guides, quotes, installers."
+      "description": "Free solar & home energy tools: estimates, incentives by ZIP, scores, installer routing."
+    },
+    {
+      "slug": "com-entroute-entroute",
+      "name": "com.entroute/entroute",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Discover and call pay-per-request (x402) APIs, ranked by reliability, latency and price."
     },
     {
       "slug": "com-execbro-execbro",
@@ -2226,6 +2492,13 @@
       "description": "Pay for x402-priced APIs with feeless, sub-second Nano (XNO) micropayments from a local wallet."
     },
     {
+      "slug": "com-fidacy-ai-agent-firewall",
+      "name": "com.fidacy/ai-agent-firewall",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Every agent action watched, every money-moving one gated, every verdict independently verifiable."
+    },
+    {
       "slug": "com-flashcards-open-source-app-flashcards",
       "name": "com.flashcards-open-source-app/flashcards",
       "confidence": 0.35,
@@ -2254,11 +2527,25 @@
       "description": "Live App Store & Google Play data for AI agents: app discovery, ASO keywords, reviews."
     },
     {
+      "slug": "com-getmunin-munin",
+      "name": "com.getmunin/munin",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Open-source all-in-one MCP-first customer platform: KB, Conversations, CRM, CMS, Outreach, Analytics"
+    },
+    {
       "slug": "com-getspm-spm",
       "name": "com.getspm/spm",
       "confidence": 0.35,
       "topics": [],
       "description": "Durable, shareable and governed project memory with smart triage and explicit project composition."
+    },
+    {
+      "slug": "com-glasswarp-mcp-server",
+      "name": "com.glasswarp/mcp-server",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Eyes and hands on real Windows PCs — observe, click, type via Glasswarp API."
     },
     {
       "slug": "com-graneth-mcp-server",
@@ -2287,6 +2574,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Barber & cosmetology exam pass rates, booth rent with open chairs, and Texas licensee counts"
+    },
+    {
+      "slug": "com-ithura-mcp",
+      "name": "com.ithura/mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Manage tasks, sprints, projects, and wiki pages in your Ithura workspace."
     },
     {
       "slug": "com-jamesrosingmd-zenoti",
@@ -2324,6 +2618,13 @@
       "description": "Third-party sandbox verdict on any artifact in one call, no account. Also an agent marketplace."
     },
     {
+      "slug": "com-kenxcomp-kenotex-mcp",
+      "name": "com.kenxcomp/kenotex-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Let your coding agent manage real todos, events, and check-in habits in Kenotex on your Mac."
+    },
+    {
       "slug": "com-kudosity-mcp",
       "name": "com.kudosity/mcp",
       "confidence": 0.35,
@@ -2343,6 +2644,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Detect whether a company declares, deploys, or charges for AI, with evidence."
+    },
+    {
+      "slug": "com-mambabuilt-mcp-clay-to-instantly-smartlead-push",
+      "name": "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Push enriched leads into an Instantly or Smartlead campaign, with ICP gating and dedupe."
     },
     {
       "slug": "com-mambabuilt-mcp-gtm-suite",
@@ -2371,6 +2679,20 @@
       "confidence": 0.35,
       "topics": [],
       "description": "The evidence layer for MCP: live operational grades plus Trust Receipts for every registry server."
+    },
+    {
+      "slug": "com-memfleet-memfleet",
+      "name": "com.memfleet/memfleet",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Shared, governed memory for fleets of AI agents: judged contributions, provenance, operator control"
+    },
+    {
+      "slug": "com-memxus-memxus",
+      "name": "com.memxus/memxus",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Persistent memory layer that saves and recalls your project context and preferences."
     },
     {
       "slug": "com-mendapi-mendapi",
@@ -2464,6 +2786,13 @@
       "description": "Anonymous eSIMs, phone numbers, and SMS codes in 190+ countries. Crypto-paid; agents self-onboard."
     },
     {
+      "slug": "com-politicalcomms-api",
+      "name": "com.politicalcomms/api",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Compliant political SMS/MMS from MCP clients: projects, contacts, analytics, billing."
+    },
+    {
       "slug": "com-predictionmarketspicks-quant",
       "name": "com.predictionmarketspicks/quant",
       "confidence": 0.35,
@@ -2506,6 +2835,20 @@
       "description": "Savvly MCP: query fund data, model projections, and compare against alternative retirement products."
     },
     {
+      "slug": "com-schedulala-schedulala",
+      "name": "com.schedulala/schedulala",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Schedule and publish social posts to 12 platforms with first comments, analytics, and listening."
+    },
+    {
+      "slug": "com-servicialo-mcp-server",
+      "name": "com.servicialo/mcp-server",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Open protocol for booking and scheduling professional services via AI agents"
+    },
+    {
       "slug": "com-shiftyasan-mcp-server",
       "name": "com.shiftyasan/mcp-server",
       "confidence": 0.35,
@@ -2534,6 +2877,13 @@
       "description": "Capture screenshots, detect visual regressions between page versions, and analyze with AI."
     },
     {
+      "slug": "com-softician-examprep-notary-exam-prep",
+      "name": "com.softician.examprep/notary-exam-prep",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Fetch real California Notary Public exam practice questions and grade answers in-chat."
+    },
+    {
       "slug": "com-sourcey-sourcey",
       "name": "com.sourcey/sourcey",
       "confidence": 0.35,
@@ -2560,6 +2910,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Your own network — goals, commitments and interaction history — read-only, from your assistant."
+    },
+    {
+      "slug": "com-theaslangroupllc-pulse-agent-wallet",
+      "name": "com.theaslangroupllc.pulse/agent-wallet",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Local agent wallet + 900 pay-per-call data APIs — free discovery, x402 USDC, code-level spend caps"
     },
     {
       "slug": "com-theaslangroupllc-pulse-lp-copilot",
@@ -2602,6 +2959,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Free SPF, DKIM, DMARC, MX deliverability check with graded shareable reports, plus referral terms"
+    },
+    {
+      "slug": "com-trimtabist-us-tariff-ledger",
+      "name": "com.trimtabist/us-tariff-ledger",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "US tariff & trade truth: duty actually paid by origin/HS 2017+, HTS rulebook, CBP rulings. No key."
     },
     {
       "slug": "com-useorgx-orgx-mcp",
@@ -2693,6 +3057,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "A MCP (Model Context Protocol) server for interacting with dbt."
+    },
+    {
+      "slug": "de-cernion-cernion-energy-tools",
+      "name": "de.cernion/cernion-energy-tools",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Energy-domain MCP tools for Cernion context, evidence and guarded process preparation"
     },
     {
       "slug": "dev-1pass-logi",
@@ -2846,7 +3217,7 @@
       "name": "eu.departi/travel-compliance",
       "confidence": 0.35,
       "topics": [],
-      "description": "Visa, Schengen, tax & curated booking for digital nomads across 105 European destinations."
+      "description": "Travel-compliance intelligence and curated booking for digital nomads and long-stay travellers."
     },
     {
       "slug": "eu-sendletter-sendletter",
@@ -3010,6 +3381,48 @@
       "description": "Free no-key IP intelligence: geolocation, VPN detection, DNS, WHOIS, blacklists, breach checks"
     },
     {
+      "slug": "io-github-a1-x-tech-mcp-google-forms",
+      "name": "io.github.A1-x-Tech/mcp-google-forms",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for the Google Forms API: create forms, manage questions, read responses and watches."
+    },
+    {
+      "slug": "io-github-a1-x-tech-mcp-google-merchants",
+      "name": "io.github.A1-x-Tech/mcp-google-merchants",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for Google Merchant Center (Merchant API v1): products, promotions, reports, issues."
+    },
+    {
+      "slug": "io-github-a1-x-tech-mcp-google-tagmanager",
+      "name": "io.github.A1-x-Tech/mcp-google-tagmanager",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for the Google Tag Manager API v2: containers, workspaces, tags, triggers, publishing."
+    },
+    {
+      "slug": "io-github-a1-x-tech-mcp-yandex-audience",
+      "name": "io.github.A1-x-Tech/mcp-yandex-audience",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for Yandex Audience API: segments (CRM, lookalike, pixel), pixels, grants."
+    },
+    {
+      "slug": "io-github-a1-x-tech-mcp-yandex-merchants",
+      "name": "io.github.A1-x-Tech/mcp-yandex-merchants",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for the Yandex Merchants partner API: feeds, offer prices, discounts, hide/unhide."
+    },
+    {
+      "slug": "io-github-a1-x-tech-mcp-yango-delivery",
+      "name": "io.github.A1-x-Tech/mcp-yango-delivery",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for the Yango Delivery claims B2B API: price checks, delivery claims, courier tracking."
+    },
+    {
       "slug": "io-github-a202-protocol-a202-mcp",
       "name": "io.github.a202-protocol/a202-mcp",
       "confidence": 0.35,
@@ -3022,6 +3435,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "세일프라자 AI 사자왕 Bㅏ이킹의 핫딜 시맨틱 검색 서버. 쿠팡, 알리익스프레스, 11번가, G마켓 등 국내외 방대한 초특가/핫딜 정보를 시맨틱 검색으로 제공합니다."
+    },
+    {
+      "slug": "io-github-adam121393-package-intel",
+      "name": "io.github.adam121393/package-intel",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "npm, PyPI & crates.io health, vulns and dependency graphs. Runs locally, no API key."
     },
     {
       "slug": "io-github-adamsjack711-ux-pkgxray",
@@ -3196,7 +3616,7 @@
       "name": "io.github.aleksUIX/vastlint",
       "confidence": 0.35,
       "topics": [],
-      "description": "Validate VAST, VMAP, and DAAST ad tags against IAB specs. 220 rules, pure Rust core."
+      "description": "Validate VAST, VMAP, and DAAST ad tags against IAB specs. 223 rules, pure Rust core."
     },
     {
       "slug": "io-github-alex88ryabov-ng-token-saver",
@@ -3211,6 +3631,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "MCP server exposing a live Dwarf Fortress fort to an AI agent as curated, semantic tools"
+    },
+    {
+      "slug": "io-github-alfongj-com-yo",
+      "name": "io.github.alfongj-com/yo",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Let agents send content-free push notifications to a paired phone via MCP."
     },
     {
       "slug": "io-github-aliveranme-stata-mcp",
@@ -3395,6 +3822,13 @@
       "description": "Real-time codebase graph for AI assistants: call graphs, dependencies, symbol lookup."
     },
     {
+      "slug": "io-github-biosshot-kicad-copilot",
+      "name": "io.github.biosshot/kicad-copilot",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "File-oriented MCP server for KiCad schematics, PCB placement, routing, and pours."
+    },
+    {
       "slug": "io-github-blackdome-ai-blackdome-mcp",
       "name": "io.github.blackdome-ai/blackdome-mcp",
       "confidence": 0.35,
@@ -3444,6 +3878,20 @@
       "description": "Catches files and C# members you forgot to change, learned from your repo's git history"
     },
     {
+      "slug": "io-github-bystray-gonka-mcp-server",
+      "name": "io.github.bystray/gonka-mcp-server",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "A second opinion for AI agents: one prompt across several live Gonka models + roles, one call."
+    },
+    {
+      "slug": "io-github-cafferychen777-chatspatial",
+      "name": "io.github.cafferychen777/chatspatial",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Schema-enforced spatial transcriptomics analysis with 20 tools and 66 methods via MCP"
+    },
+    {
       "slug": "io-github-callstack-agent-device",
       "name": "io.github.callstack/agent-device",
       "confidence": 0.35,
@@ -3463,6 +3911,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Inspect and manage TrueNAS SCALE storage, shares, apps and system state with your own API key"
+    },
+    {
+      "slug": "io-github-charleslucas-poe-data-mcp",
+      "name": "io.github.charleslucas/poe-data-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for Path of Exile game data: wiki, economy, and Craft of Exile lookups"
     },
     {
       "slug": "io-github-choiyounggi-korea-data-mcp",
@@ -3493,6 +3948,13 @@
       "description": "Agent-to-agent marketplace MCP: list skills, buy/sell services, earn gas, cash out BTC."
     },
     {
+      "slug": "io-github-christianclaudio-sigma",
+      "name": "io.github.christianclaudio/sigma",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for Sigma Computing. Provision dashboards, build models, and automate cloud analytics."
+    },
+    {
       "slug": "io-github-clarilayer-clarilayer",
       "name": "io.github.clarilayer/clarilayer",
       "confidence": 0.35,
@@ -3512,6 +3974,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Educational MCP server with 17 math/stats tools, visualizations, and persistent workspace"
+    },
+    {
+      "slug": "io-github-cmendezs-mcp-einvoicing-core",
+      "name": "io.github.cmendezs/mcp-einvoicing-core",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Base package for European e-invoicing MCP servers with shared models, XML utils, and OAuth2 client."
     },
     {
       "slug": "io-github-cmendezs-mcp-fattura-elettronica-it",
@@ -3560,7 +4029,7 @@
       "name": "io.github.copyleftdev/kahea",
       "confidence": 0.35,
       "topics": [],
-      "description": "Deterministic OpenAPI testing and policy-gated API execution for AI agents."
+      "description": "Deterministic HTTP/WebSocket testing and policy-gated API execution for AI agents."
     },
     {
       "slug": "io-github-coret-openarchieven-mcp-server",
@@ -3582,6 +4051,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.58"
+    },
+    {
+      "slug": "io-github-crisnahine-rails-ai-context",
+      "name": "io.github.crisnahine/rails-ai-context",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "45 MCP tools give AI agents live Rails schema, routes, models, and conventions."
     },
     {
       "slug": "io-github-cyberlife-coder-velesdb-memory",
@@ -3666,6 +4142,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Huly MCP: feature-complete MCP server for Huly integration"
+    },
+    {
+      "slug": "io-github-deepagentlabs-deep-agentic-core-mcp",
+      "name": "io.github.DeepAgentLabs/deep-agentic-core-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Unified MCP server for AgenticLens and Agentic Chaos capabilities."
     },
     {
       "slug": "io-github-depixapp-depix-mcp",
@@ -3766,6 +4249,13 @@
       "description": "MCP server for Gearsystem Sega Master System / Game Gear / SG-1000 emulator"
     },
     {
+      "slug": "io-github-dshakes-distil",
+      "name": "io.github.dshakes/distil",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Reversibly compress tool outputs to recoverable handles; expand to exact original bytes on demand."
+    },
+    {
       "slug": "io-github-dtkmn-mcp-zap-server",
       "name": "io.github.dtkmn/mcp-zap-server",
       "confidence": 0.35,
@@ -3785,6 +4275,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Let agents drive vim, htop, lazygit: send keys, wait on screen state, read the rendered cell grid."
+    },
+    {
+      "slug": "io-github-echoqili-ssh-licco",
+      "name": "io.github.Echoqili/ssh-licco",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "SSH Model Context Protocol Server - Enable SSH functionality for AI models"
     },
     {
       "slug": "io-github-eezz4-zzop",
@@ -3906,6 +4403,13 @@
       "description": "See where your cloud and AI bills go, and spend less. Local-first, in your terminal or editor."
     },
     {
+      "slug": "io-github-glc-rag-geo-mcp",
+      "name": "io.github.glc-rag/geo-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Free GeoNames MCP: countries, cities, POIs, distance & nearby. Remote HTTP + agent token signup."
+    },
+    {
       "slug": "io-github-grinv-mal-mcp",
       "name": "io.github.Grinv/mal-mcp",
       "confidence": 0.35,
@@ -3934,18 +4438,18 @@
       "description": "Radar for remote AI/Infra jobs from employer ATS; your résumé never transits the server."
     },
     {
-      "slug": "io-github-happy520ai-unified-ai-system",
-      "name": "io.github.happy520ai/unified-ai-system",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Terminal-first AI gateway with nine governed MCP tools for Codex, Cursor, Cline; no-key local path."
-    },
-    {
       "slug": "io-github-hashlock-tech-hashlock",
       "name": "io.github.Hashlock-Tech/hashlock",
       "confidence": 0.35,
       "topics": [],
       "description": "Non-custodial cross-chain OTC for AI agents: sealed RFQ, negotiation, HTLC atomic swaps. Testnet."
+    },
+    {
+      "slug": "io-github-hedging8563-tokenlab",
+      "name": "io.github.hedging8563/tokenlab",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "TokenLab MCP server: 31 default and 80 full-profile tools for models, media, tasks, and files."
     },
     {
       "slug": "io-github-heidihelena-citevahti",
@@ -3983,6 +4487,13 @@
       "description": "Aviation accident report parsing and prompt generation service under the SHELL framework."
     },
     {
+      "slug": "io-github-ibnsaleem29-dorar-hadith-mcp",
+      "name": "io.github.ibnsaleem29/dorar-hadith-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Research Hadith, authenticity, grading, Takhrij and Sharh [commentaries] in Claude Desktop for free."
+    },
+    {
       "slug": "io-github-igorzheludkov-execbro",
       "name": "io.github.igorzheludkov/execbro",
       "confidence": 0.35,
@@ -4002,6 +4513,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Computer use for Hyprland: semantic desktop state over IPC, plus vision and native input"
+    },
+    {
+      "slug": "io-github-immuneeb-marigold",
+      "name": "io.github.immuneeb/marigold",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Comment on AI-generated webpages; feedback flows back to your coding agent. Free, MIT, local-first."
     },
     {
       "slug": "io-github-industrial-aiops-iaiops",
@@ -4058,6 +4576,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Fillo MCP server — provision, scaffold, publish, and query forms from your coding agent."
+    },
+    {
+      "slug": "io-github-jakzaizzat-cukaimax-tax-authority",
+      "name": "io.github.jakzaizzat/cukaimax-tax-authority",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Source-linked Malaysian individual and sole-proprietor tax guidance for AI agents."
     },
     {
       "slug": "io-github-jarmstrong158-agentsync",
@@ -4128,6 +4653,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Token-efficient code exploration via tree-sitter AST parsing. 70+ languages, 86-99% token savings."
+    },
+    {
+      "slug": "io-github-jiankn-zoxide-doctor",
+      "name": "io.github.jiankn/zoxide-doctor",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Read-only local zoxide diagnostics for MCP clients."
     },
     {
       "slug": "io-github-jigyasudham-veto",
@@ -4242,6 +4774,20 @@
       "description": "Bug translation for vibe coders: plain-English diagnosis + paste-ready fix in your AI coding agent"
     },
     {
+      "slug": "io-github-kincaidyang-whois",
+      "name": "io.github.KincaidYang/whois",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Query WHOIS/RDAP information for domains, IP addresses, CIDR prefixes and ASNs. Self-hostable."
+    },
+    {
+      "slug": "io-github-kiranreddi-sentinel-dv",
+      "name": "io.github.kiranreddi/sentinel-dv",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP tools for UVM/cocotb logs, coverage, regressions, and waveform triage."
+    },
+    {
       "slug": "io-github-klimpaskov-hoi4-agent-tools",
       "name": "io.github.klimPaskov/hoi4-agent-tools",
       "confidence": 0.35,
@@ -4263,6 +4809,13 @@
       "description": "Read and write checked code rationale stored outside source comments."
     },
     {
+      "slug": "io-github-kossik-11fgb-cleaning-tools",
+      "name": "io.github.kossik/11fgb-cleaning-tools",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Free US cleaning cost, time, crew, and chemical-use calculators with visual reports."
+    },
+    {
       "slug": "io-github-krv-labs-topos",
       "name": "io.github.Krv-Labs/topos",
       "confidence": 0.35,
@@ -4282,6 +4835,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Administers Linux via typed, approval-gated actions with an Ed25519-signed audit trail."
+    },
+    {
+      "slug": "io-github-lambdatest-mcp",
+      "name": "io.github.LambdaTest/mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Agentic testing: HyperExecute jobs, test failure triage, SmartUI visual diffs, a11y audits"
     },
     {
       "slug": "io-github-liftli-ai-liftli",
@@ -4326,6 +4886,20 @@
       "description": "Build native Linux packages (.deb/.rpm/.apk/.pkg.tar.zst) from a single PKGBUILD via MCP."
     },
     {
+      "slug": "io-github-mahesvannan-tx402",
+      "name": "io.github.Mahesvannan/tx402",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Explain Algorand transactions, groups, batches, and account activity with x402."
+    },
+    {
+      "slug": "io-github-maminihds-attester-mcp",
+      "name": "io.github.maminihds/attester-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Verify PyPI and npm packages, symbols, and version diffs against real artifacts. Free, no account."
+    },
+    {
       "slug": "io-github-mansurjisan-ndbc-mcp",
       "name": "io.github.mansurjisan/ndbc-mcp",
       "confidence": 0.35,
@@ -4352,6 +4926,20 @@
       "confidence": 0.35,
       "topics": [],
       "description": "NWS surface wind observations (ASOS/AWOS) via Weather.gov and Iowa Environmental Mesonet APIs"
+    },
+    {
+      "slug": "io-github-marcorusc-maboss",
+      "name": "io.github.marcorusc/MaBoSS",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for Boolean network simulation and attractor analysis using MaBoSS"
+    },
+    {
+      "slug": "io-github-marcorusc-physicell",
+      "name": "io.github.marcorusc/PhysiCell",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for building, inspecting, and exporting PhysiCell and PhysiBoSS configuration files"
     },
     {
       "slug": "io-github-mario-andreschak-mcp-cad-studio",
@@ -4396,6 +4984,13 @@
       "description": "Create, edit, validate, preview, and render Shotcut projects through AI clients."
     },
     {
+      "slug": "io-github-max124vip-dev-tools-for-agents",
+      "name": "io.github.max124vip-dev/tools-for-agents",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Decision Layer for AI Agents — 58+ tools, Advisor, MCP. Free key: POST /v1/register {}."
+    },
+    {
       "slug": "io-github-maxfreedompollard-compartment",
       "name": "io.github.MaxFreedomPollard/compartment",
       "confidence": 0.35,
@@ -4417,11 +5012,32 @@
       "description": "Kiwify digital-products platform, sales (list, detail), subscriptions (list, cancel), products and a"
     },
     {
+      "slug": "io-github-mcpcustoms-mcp-customs",
+      "name": "io.github.mcpcustoms/mcp-customs",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Inspect an MCP server for common security risks before you install it. Offline, zero telemetry."
+    },
+    {
       "slug": "io-github-me-qr-mcp-server",
       "name": "io.github.me-qr/mcp-server",
       "confidence": 0.35,
       "topics": [],
       "description": "Create and manage QR codes on me-qr.com from AI clients like Claude and ChatGPT."
+    },
+    {
+      "slug": "io-github-meyusufdemirci-app-store-operator",
+      "name": "io.github.meyusufdemirci/app-store-operator",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Free App Store competitive intelligence for Claude — rival downloads, revenue, and ASO keywords."
+    },
+    {
+      "slug": "io-github-michaelhutchings626-hub-alien-plugg-x402",
+      "name": "io.github.michaelhutchings626-hub/alien-plugg-x402",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "32 paid x402 endpoints for crypto, Zora & on-chain analysis. 10 MCP tools. USDC on Base."
     },
     {
       "slug": "io-github-microsoft-awesome-copilot",
@@ -4536,11 +5152,25 @@
       "description": "Catch AI-fabricated citations (real DOI + fake title). Retraction, open-access, 10,000+ CSL styles."
     },
     {
+      "slug": "io-github-mmillan76-aemet-mcp",
+      "name": "io.github.mmillan76/aemet-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server exposing AEMET (Spanish weather agency) forecasts, station data and warnings."
+    },
+    {
       "slug": "io-github-mohanagy-madar",
       "name": "io.github.mohanagy/madar",
       "confidence": 0.35,
       "topics": [],
       "description": "Authenticated local evidence paths for JavaScript and TypeScript coding agents."
+    },
+    {
+      "slug": "io-github-morluto-rea",
+      "name": "io.github.morluto/rea",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Reverse engineer anything from your terminal or agent with one CLI and MCP server."
     },
     {
       "slug": "io-github-muend-arcgis-mcp-bridge",
@@ -4606,11 +5236,39 @@
       "description": "Agent integration with the Northwestern University Libraries Digital Collections API"
     },
     {
+      "slug": "io-github-nxtg-ai-forge-orchestrator",
+      "name": "io.github.nxtg-ai/forge-orchestrator",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Multi-tool AI orchestration: Claude Code, Codex, Gemini on shared repos. 11 MCP tools, stdio."
+    },
+    {
+      "slug": "io-github-ogasurfproject-jpg-horizon-shield",
+      "name": "io.github.ogasurfproject-jpg/horizon-shield",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Independent pre-transaction audit for construction estimates. Free, and every verdict recomputes."
+    },
+    {
+      "slug": "io-github-ogasurfproject-jpg-horizon-shield-webmcp",
+      "name": "io.github.ogasurfproject-jpg/horizon-shield-webmcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Agent intake desk for property renovation. Read only, CORS open, fail closed, receipts recompute."
+    },
+    {
+      "slug": "io-github-ogasurfproject-jpg-hs-hearing",
+      "name": "io.github.ogasurfproject-jpg/hs-hearing",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Neutral, verification-gated MCP directory of Japan construction contractors (KIRA-audited)."
+    },
+    {
       "slug": "io-github-ogasurfproject-jpg-hs-verify-gate",
       "name": "io.github.ogasurfproject-jpg/hs-verify-gate",
       "confidence": 0.35,
       "topics": [],
-      "description": "Conformance and disclosure checker for MCP servers. Free, no key, verdicts you can recompute."
+      "description": "Conformance checker for MCP servers. Free, no key, verdicts recomputable and re-measured daily."
     },
     {
       "slug": "io-github-omniologynow-rgb-mcp-server",
@@ -4655,6 +5313,27 @@
       "description": "Architecture guardrails for AI-written code: dependency graph, impact, dead code, CI gate"
     },
     {
+      "slug": "io-github-packkitjs-packkit-mcp",
+      "name": "io.github.PackkitJS/packkit-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Scaffold modern npm packages, CLIs, services and apps as a native tool for AI agents."
+    },
+    {
+      "slug": "io-github-paladini-locus-mcp",
+      "name": "io.github.paladini/locus-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Lightweight MCP server for LSP code intelligence — symbol lookup, refs, types, diagnostics."
+    },
+    {
+      "slug": "io-github-parweb-ai-slop-checker",
+      "name": "io.github.parweb/ai-slop-checker",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Deterministic offline scorer for AI-writing tells in text and landing copy."
+    },
+    {
       "slug": "io-github-patdolitse-piia-engram",
       "name": "io.github.Patdolitse/piia-engram",
       "confidence": 0.35,
@@ -4674,6 +5353,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "AI-writing detection (EN/ES) that shows the evidence: named tells, hidden characters, citations."
+    },
+    {
+      "slug": "io-github-pete-builds-unifi",
+      "name": "io.github.pete-builds/unifi",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Safe-by-default UniFi MCP: Network + Protect + Access, multi-site, dry-run, audit log."
     },
     {
       "slug": "io-github-petropt-petro-mcp",
@@ -4697,11 +5383,39 @@
       "description": "California Grants Portal MCP — open State of California grant funding opportunities (keyless)."
     },
     {
+      "slug": "io-github-pipeworx-io-ct-dmv",
+      "name": "io.github.pipeworx-io/ct-dmv",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Connecticut DMV: vehicle-level electric vehicle registrations by town, make and model"
+    },
+    {
       "slug": "io-github-pipeworx-io-dc-dmv",
       "name": "io.github.pipeworx-io/dc-dmv",
       "confidence": 0.35,
       "topics": [],
       "description": "Washington DC DMV: service centers, vehicle inspections by VIN, traffic convictions"
+    },
+    {
+      "slug": "io-github-pipeworx-io-de-dmv",
+      "name": "io.github.pipeworx-io/de-dmv",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Delaware DMV: registrations by fuel type, EV and charger rebates, crash statistics"
+    },
+    {
+      "slug": "io-github-pipeworx-io-epa-regulations",
+      "name": "io.github.pipeworx-io/epa-regulations",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "EPA Regulations MCP — US Environmental Protection Agency regulations (40 CFR)."
+    },
+    {
+      "slug": "io-github-pipeworx-io-faa-regulations",
+      "name": "io.github.pipeworx-io/faa-regulations",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "FAA Regulations MCP — US Federal Aviation Regulations (14 CFR, 'FARs')."
     },
     {
       "slug": "io-github-pipeworx-io-fac",
@@ -4711,11 +5425,39 @@
       "description": "Federal Audit Clearinghouse (FAC) MCP — US single-audit data."
     },
     {
+      "slug": "io-github-pipeworx-io-fcc-ecfs",
+      "name": "io.github.pipeworx-io/fcc-ecfs",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for fcc-ecfs"
+    },
+    {
+      "slug": "io-github-pipeworx-io-fcc-regulations",
+      "name": "io.github.pipeworx-io/fcc-regulations",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "FCC Regulations MCP — US Federal Communications Commission rules (47 CFR)."
+    },
+    {
       "slug": "io-github-pipeworx-io-fda-drug-competition",
       "name": "io.github.pipeworx-io/fda-drug-competition",
       "confidence": 0.35,
       "topics": [],
       "description": "Orange Book competitive intelligence from FDA's monthly official data ZIP."
+    },
+    {
+      "slug": "io-github-pipeworx-io-fda-regulations",
+      "name": "io.github.pipeworx-io/fda-regulations",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "FDA Regulations MCP — US Food & Drug Administration regulations (21 CFR)."
+    },
+    {
+      "slug": "io-github-pipeworx-io-hi-dmv",
+      "name": "io.github.pipeworx-io/hi-dmv",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Hawaii: cumulative hybrid and electric vehicles registered statewide since 1999"
     },
     {
       "slug": "io-github-pipeworx-io-ia-dmv",
@@ -4730,6 +5472,48 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Indiana BMV branches, kiosks, BMV Connect and motorcycle skills-test locations"
+    },
+    {
+      "slug": "io-github-pipeworx-io-md-dmv",
+      "name": "io.github.pipeworx-io/md-dmv",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Maryland MVA: registered vehicles and EV/plug-in hybrid counts by county and ZIP, monthly"
+    },
+    {
+      "slug": "io-github-pipeworx-io-medicaid-intelligence",
+      "name": "io.github.pipeworx-io/medicaid-intelligence",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Medicaid drug utilization by NDC, managed-care enrollment and state enrollment operations from CMS"
+    },
+    {
+      "slug": "io-github-pipeworx-io-medicare-coverage",
+      "name": "io.github.pipeworx-io/medicare-coverage",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MCP server for medicare-coverage"
+    },
+    {
+      "slug": "io-github-pipeworx-io-mhw",
+      "name": "io.github.pipeworx-io/mhw",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "MHW MCP — Monster Hunter World data (mhw-db.com, free, no auth)"
+    },
+    {
+      "slug": "io-github-pipeworx-io-mo-dmv",
+      "name": "io.github.pipeworx-io/mo-dmv",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Missouri license offices with hours, contract agent and closure dates, refreshed daily"
+    },
+    {
+      "slug": "io-github-pipeworx-io-nc-dmv",
+      "name": "io.github.pipeworx-io/nc-dmv",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "North Carolina DMV: live field-office wait times and driver license office directory"
     },
     {
       "slug": "io-github-pipeworx-io-nihr",
@@ -4753,11 +5537,39 @@
       "description": "New York DMV: record-level vehicle and EV registrations, offices, road tests, driving schools"
     },
     {
+      "slug": "io-github-pipeworx-io-or-dmv",
+      "name": "io.github.pipeworx-io/or-dmv",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Oregon DMV: live field-office wait times and office directory for all 60 offices"
+    },
+    {
       "slug": "io-github-pipeworx-io-osha",
       "name": "io.github.pipeworx-io/osha",
       "confidence": 0.35,
       "topics": [],
       "description": "OSHA MCP — US workplace-safety standards (29 CFR Chapter XVII, parts 1900–1990)."
+    },
+    {
+      "slug": "io-github-pipeworx-io-pa-dmv",
+      "name": "io.github.pipeworx-io/pa-dmv",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "PennDOT: quarterly EV, plug-in hybrid and total vehicle registrations by county and ZIP"
+    },
+    {
+      "slug": "io-github-pipeworx-io-patents",
+      "name": "io.github.pipeworx-io/patents",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Patents MCP — wraps the USPTO Open Data Portal (ODP) Patent File Wrapper API"
+    },
+    {
+      "slug": "io-github-pipeworx-io-polygon-io",
+      "name": "io.github.pipeworx-io/polygon-io",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Polygon.io MCP."
     },
     {
       "slug": "io-github-pipeworx-io-property-records",
@@ -4767,11 +5579,46 @@
       "description": "Property Records MCP — address-level US property records (sales history,"
     },
     {
+      "slug": "io-github-pipeworx-io-sec-form-d",
+      "name": "io.github.pipeworx-io/sec-form-d",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "SEC Form D fundraising intelligence."
+    },
+    {
+      "slug": "io-github-pipeworx-io-sec-regulations",
+      "name": "io.github.pipeworx-io/sec-regulations",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "SEC Regulations MCP — US securities regulations (17 CFR)."
+    },
+    {
+      "slug": "io-github-pipeworx-io-tax-regulations",
+      "name": "io.github.pipeworx-io/tax-regulations",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Tax Regulations MCP — US Treasury / IRS regulations (26 CFR, 'Treas. Reg.')."
+    },
+    {
       "slug": "io-github-pipeworx-io-tn-dmv",
       "name": "io.github.pipeworx-io/tn-dmv",
       "confidence": 0.35,
       "topics": [],
       "description": "Tennessee driver service centers with REAL ID and CDL testing, plus crash statistics"
+    },
+    {
+      "slug": "io-github-pipeworx-io-treasury-fiscal",
+      "name": "io.github.pipeworx-io/treasury-fiscal",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Treasury Fiscal MCP — US Treasury Fiscal Data API"
+    },
+    {
+      "slug": "io-github-pipeworx-io-tx-dmv",
+      "name": "io.github.pipeworx-io/tx-dmv",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Texas DMV: statewide registered vehicle totals by fiscal year"
     },
     {
       "slug": "io-github-pipeworx-io-ukri-gtr",
@@ -4800,6 +5647,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Unofficial local MCP server for Livespace CRM with read tools and guarded writes."
+    },
+    {
+      "slug": "io-github-prodlint-prodlint",
+      "name": "io.github.prodlint/prodlint",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Production readiness for vibe-coded apps. 52 checks for security, reliability, and performance."
     },
     {
       "slug": "io-github-professionalwiki-mediawiki-mcp-server",
@@ -4835,6 +5689,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "MCP server for serial port communication. 25 tools, resources, prompts, and stdio/HTTP transports."
+    },
+    {
+      "slug": "io-github-r3dz4r-datapulse-my",
+      "name": "io.github.r3dz4r/datapulse-my",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Read-only discovery for 122 Malaysian public datasets with freshness, licence, and provenance."
     },
     {
       "slug": "io-github-rarefied-earth-groundwork",
@@ -4921,11 +5782,25 @@
       "description": "Protect your AI agents and IDEs from malicious open-source packages."
     },
     {
+      "slug": "io-github-samyatessmith-tru8",
+      "name": "io.github.SamYatesSmith/tru8",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Source-traced evidence research for AI agents. We organise the evidence; you decide."
+    },
+    {
       "slug": "io-github-sand0vvv-hyperevm-mcp",
       "name": "io.github.sand0vvv/hyperevm-mcp",
       "confidence": 0.35,
       "topics": [],
       "description": "Read-only Hyperliquid and HyperEVM data: yields, protocols, fees, markets, funding, depth."
+    },
+    {
+      "slug": "io-github-sandbanks-agentic-ssh",
+      "name": "io.github.sandbanks/agentic_ssh",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "High-performance (Rust), token-efficient, and asynchronous SSH orchestrations for AI agents."
     },
     {
       "slug": "io-github-sassyconsultingllc-sassymcp",
@@ -4956,6 +5831,20 @@
       "description": "Build websites that look designed, not generated. Fudge gives AI real websites to study."
     },
     {
+      "slug": "io-github-seanhogg-builderforce",
+      "name": "io.github.SeanHogg/builderforce",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Run tickets, boards, OKRs and cloud coding agents in your Builderforce workspace"
+    },
+    {
+      "slug": "io-github-sentien-labs-verdictswarm-mcp",
+      "name": "io.github.sentien-labs/verdictswarm-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Read-only pre-trade token risk verdicts and size-aware Solana exit screening for agents."
+    },
+    {
       "slug": "io-github-sequesign-sequesign",
       "name": "io.github.Sequesign/sequesign",
       "confidence": 0.35,
@@ -4975,6 +5864,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Fast, bounded, read-only Git evidence for local AI coding agents."
+    },
+    {
+      "slug": "io-github-shibley-mymcptools",
+      "name": "io.github.shibley/mymcptools",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Find MCP servers and check whether they actually respond, via live handshake probes."
     },
     {
       "slug": "io-github-shigechika-mcp-stdio",
@@ -5033,6 +5929,27 @@
       "description": "Remote MCP for Dant3: discover public rooms, agents and work with accountable machine identities."
     },
     {
+      "slug": "io-github-soapyred-freightutils",
+      "name": "io.github.SoapyRED/freightutils",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Neutral freight reference + validation layer for AI agents: ADR, HS, UN/LOCODE, freight math"
+    },
+    {
+      "slug": "io-github-solveacx-voc-mcp",
+      "name": "io.github.SolveaCX/voc-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "VOC OpenAPI gives AI agents authorized review and product data for insights, tagging, and listings."
+    },
+    {
+      "slug": "io-github-starfetch-js-starfetch",
+      "name": "io.github.starfetch-js/starfetch",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Query public astronomy catalogs through metadata-first TAP and ADQL tools."
+    },
+    {
       "slug": "io-github-startreedata-mcp-pinot",
       "name": "io.github.startreedata/mcp-pinot",
       "confidence": 0.35,
@@ -5061,6 +5978,13 @@
       "description": "MCP server for Superserve sandboxes: create, exec, and manage Firecracker microVMs"
     },
     {
+      "slug": "io-github-swisspra-on-board",
+      "name": "io.github.swisspra/On_Board",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Cross-platform shared memory and ticket coordination for AI agents across MCP clients."
+    },
+    {
       "slug": "io-github-symbo-ls-symbols-mcp",
       "name": "io.github.symbo-ls/symbols-mcp",
       "confidence": 0.35,
@@ -5075,11 +5999,25 @@
       "description": "Verifiable dealings with other agents: prove what you did, vet who you deal with, bind agreements"
     },
     {
+      "slug": "io-github-synvoya-codeinspectus",
+      "name": "io.github.Synvoya/codeinspectus",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Local-first MCP security scanner and CLI for AI-generated applications."
+    },
+    {
       "slug": "io-github-talivia-group-agent",
       "name": "io.github.talivia-group/agent",
       "confidence": 0.35,
       "topics": [],
       "description": "Revenue-first analytics installed and verified by AI agents through Talivia"
+    },
+    {
+      "slug": "io-github-tangchangzhe-bt-ops-mcp-server",
+      "name": "io.github.tangchangzhe/bt-ops-mcp-server",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Secure MCP server for BT Panel operations with scoped permissions and audited writes."
     },
     {
       "slug": "io-github-tatopenn-cell-dense-evolution",
@@ -5094,6 +6032,20 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Counter-signed evidence records for agent commerce: receipts, verification, dispute envelopes."
+    },
+    {
+      "slug": "io-github-thalovant-thalovant-mcp",
+      "name": "io.github.thalovant/thalovant-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Connect MCP clients to Thalovant control-plane and hub runtime APIs over stdio or Streamable HTTP."
+    },
+    {
+      "slug": "io-github-thebluehouse75-hermes-action-bridge",
+      "name": "io.github.TheBlueHouse75/hermes-action-bridge",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Delegate real-world actions from Claude Code, Codex, and other agents to Hermes Agent."
     },
     {
       "slug": "io-github-thriftell-budgetary",
@@ -5131,6 +6083,20 @@
       "description": "Find your AI agent's likely failure mode, get runtime settings, and clarify ambiguous prompts."
     },
     {
+      "slug": "io-github-tresor4k-realdentalcosts-mcp",
+      "name": "io.github.tresor4k/realdentalcosts-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "US dental prices: 12 procedures, 51 states, 200+ cities, cash vs insurance estimates."
+    },
+    {
+      "slug": "io-github-truman-t3-keyshot-mcp",
+      "name": "io.github.truman-t3/keyshot-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Control local KeyShot scenes, cameras, environments, and renders through headless scripting."
+    },
+    {
       "slug": "io-github-usekaval-kaval",
       "name": "io.github.usekaval/kaval",
       "confidence": 0.35,
@@ -5150,6 +6116,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Business-day, SLA, cron and recurrence calculations — offline, holiday-aware, no network."
+    },
+    {
+      "slug": "io-github-wartzar-bee-tokenscope",
+      "name": "io.github.wartzar-bee/tokenscope",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Analyze Claude Code session cost & context attribution: output, cached re-reads, cache writes."
     },
     {
       "slug": "io-github-wellknownmcp-hoshin-kanri",
@@ -5285,11 +6258,25 @@
       "description": "Generate Multisim circuits, run simulations, export data, and create experiment reports."
     },
     {
+      "slug": "io-github-zhitongblog-unterm",
+      "name": "io.github.zhitongblog/unterm",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "The terminal AI agents can drive: spawn panes, run commands, read screens, scrolling screenshots."
+    },
+    {
       "slug": "io-github-zhurong2020-pyobfus-mcp",
       "name": "io.github.zhurong2020/pyobfus-mcp",
       "confidence": 0.35,
       "topics": [],
       "description": "Obfuscate Python & reverse-map stack traces from your agent. AST-based, no phone-home. PyArmor alt."
+    },
+    {
+      "slug": "io-github-zoster81-scripthold",
+      "name": "io.github.zoster81/scripthold",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Secure encoding-aware local workspace runtime for AI agents"
     },
     {
       "slug": "io-github-zscaler-zscaler-mcp-server",
@@ -5551,18 +6538,18 @@
       "description": "A webhook inbox for agents: one call returns a live URL. Mock, verify, inspect and replay."
     },
     {
+      "slug": "net-mostexpensivewatches-mcp",
+      "name": "net.mostexpensivewatches/mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Documented luxury-watch auction records: 1,150+ verified results, prices, rankings and datasets"
+    },
+    {
       "slug": "network-tagit-nfc-verify",
       "name": "network.tagit/nfc-verify",
       "confidence": 0.35,
       "topics": [],
       "description": "Verify on-chain lifecycle state and provenance of NFC-tagged physical products."
-    },
-    {
-      "slug": "no-apier-mcp",
-      "name": "no.apier/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Compliance API bridging AI agents to Norwegian government systems (Altinn, Maskinporten, BRREG)"
     },
     {
       "slug": "one-faf-rust-faf-mcp",
@@ -5684,6 +6671,13 @@
       "description": "An inter-agent graffiti wall for one completely optional trace."
     },
     {
+      "slug": "so-echoai-echo-ai",
+      "name": "so.echoai/echo-ai",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "List, configure, chat with, analyse and embed your Echo AI assistants."
+    },
+    {
       "slug": "square-mcp-server",
       "name": "square-mcp-server",
       "confidence": 0.35,
@@ -5726,6 +6720,13 @@
       "description": "MCP Server to fetch costs and usage data from your Vantage account."
     },
     {
+      "slug": "vote-andre-elections",
+      "name": "vote.andre/elections",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Résultats des élections françaises 1999-2026 par bureau de vote, socio-démo INSEE et cartes."
+    },
+    {
       "slug": "weather-mcp-server",
       "name": "weather-mcp-server",
       "confidence": 0.35,
@@ -5761,53 +6762,11 @@
       "description": "A Model Context Protocol server for Zendesk"
     },
     {
-      "slug": "ai-agentplaybooks-agentplaybooks",
-      "name": "ai.agentplaybooks/agentplaybooks",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Manage portable AI agent playbooks, Agent Skills, MCP configurations, personas, and memory."
-    },
-    {
-      "slug": "ai-ai-akari-agent-trust-receipt",
-      "name": "ai.ai-akari/agent-trust-receipt",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Read-only Remote MCP for externally grounded AI agent trust receipts."
-    },
-    {
-      "slug": "ai-autonomad-computeback",
-      "name": "ai.autonomad/computeback",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Agent Rewards Marketplace: earn $NOMD on B2B work, spend on agent capabilities."
-    },
-    {
-      "slug": "ai-auxen-auxen",
-      "name": "ai.auxen/auxen",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Provision private AI model endpoints on dedicated GPUs (Llama, Qwen, Mistral). Pay per minute."
-    },
-    {
       "slug": "ai-clawfetch-mcp",
       "name": "ai.clawfetch/mcp",
       "confidence": 0.45,
       "topics": [],
       "description": "Web intelligence for AI agents: fetch, render, extract, research. x402 micropayments, no API keys."
-    },
-    {
-      "slug": "ai-cofoundagent-cofound",
-      "name": "ai.cofoundagent/cofound",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP-native co-founder directory your AI agent searches, screening inbound pitches for you."
-    },
-    {
-      "slug": "ai-cueapi-mcp",
-      "name": "ai.cueapi/mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Schedule agent work and report write-once outcomes via CueAPI from any MCP host."
     },
     {
       "slug": "ai-dablock-visibility-index",
@@ -5824,165 +6783,11 @@
       "description": "Measured share of answer for 20 SaaS brands. An open dataset, not an audit of your site."
     },
     {
-      "slug": "ai-dinglebear-gotify-rmcp",
-      "name": "ai.dinglebear/gotify-rmcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Rust MCP server and CLI for Gotify push notifications and message management."
-    },
-    {
-      "slug": "ai-dinglebear-rgotify",
-      "name": "ai.dinglebear/rgotify",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Gotify notifications and app, client, and message management over MCP and CLI."
-    },
-    {
-      "slug": "ai-dynsoft-sac",
-      "name": "ai.dynsoft/sac",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Give your AI agent the ability to respond with live, interactive apps that evolve."
-    },
-    {
-      "slug": "ai-epinu-epinu",
-      "name": "ai.epinu/epinu",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Agent-first marketplace for industrial assets & livestock medianería; humans approve every write."
-    },
-    {
-      "slug": "ai-i18nagent-i18n-agent",
-      "name": "ai.i18nagent/i18n-agent",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "AI-powered translation for 48 languages with context-aware quality"
-    },
-    {
-      "slug": "ai-joinmultiplayer-gpu",
-      "name": "ai.joinmultiplayer/gpu",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Agent-to-agent network for teams: dm, who-knows-X routing, shared rooms. Human-in-the-loop."
-    },
-    {
-      "slug": "ai-justdrop-mcp",
-      "name": "ai.justdrop/mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Live, end-to-end encrypted, ephemeral file transfer between your AI agent and any device."
-    },
-    {
-      "slug": "ai-justpublish-just-publish",
-      "name": "ai.justpublish/just-publish",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Publish the website you built with AI to a live public URL — straight from chat, no setup."
-    },
-    {
-      "slug": "ai-kawacode-mcp",
-      "name": "ai.kawacode/mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Team-aware memory: intent, decisions, real-time conflicts for AI coding assistants."
-    },
-    {
-      "slug": "ai-lithtrix-lithtrix-mcp",
-      "name": "ai.lithtrix/lithtrix-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Identity, memory, trust, and swarm primitives for AI agents. MIRC base always free."
-    },
-    {
-      "slug": "ai-maximem-synap",
-      "name": "ai.maximem/synap",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Persistent memory for AI agents — log and recall conversation context over MCP."
-    },
-    {
-      "slug": "ai-mcpanalytics-analytics",
-      "name": "ai.mcpanalytics/analytics",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "The statistical analyst in your AI chat — validated, citable, re-runnable analysis of your data."
-    },
-    {
-      "slug": "ai-meetsquad-squad",
-      "name": "ai.meetsquad/squad",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Decision intelligence for product teams. Turn scattered feedback into signal you can act on."
-    },
-    {
-      "slug": "ai-monnet-mcp",
-      "name": "ai.monnet/mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Model Context Protocol server for Monnet — motions, plans, and approvals for MCP-compatible clients."
-    },
-    {
-      "slug": "ai-nexustoken-nexustoken-sdk",
-      "name": "ai.nexustoken/nexustoken-sdk",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Create/check agent tasks, discover capabilities, and run V2 Jobs on NexusToken."
-    },
-    {
-      "slug": "ai-nocturnus-logic-server",
-      "name": "ai.nocturnus/logic-server",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Agent reasoning, memory, and token-optimized context for AI applications."
-    },
-    {
       "slug": "ai-syntheticbrew-syntheticbrew",
       "name": "ai.syntheticbrew/syntheticbrew",
       "confidence": 0.45,
       "topics": [],
       "description": "Embed an AI chat widget on your website from your coding agent: provision, configure, get snippet."
-    },
-    {
-      "slug": "app-recao-recao-mcp",
-      "name": "app.recao/recao-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Rank a competitor's EU App Store ads by longevity. From Apple's official Ad Repository."
-    },
-    {
-      "slug": "app-toolsnap-toolsnap-mcp",
-      "name": "app.toolsnap/toolsnap-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Deterministic AI agent microtools, no accounts/API keys. fetch_extract: 98% token cut. 38 tools."
-    },
-    {
-      "slug": "app-twiceshy-twiceshy",
-      "name": "app.twiceshy/twiceshy",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Experience memory for coding agents: validated traps, fixes and dead-ends at decision time."
-    },
-    {
-      "slug": "app-undisk-mcp-stdio-proxy",
-      "name": "app.undisk.mcp/stdio-proxy",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Undisk MCP: safe file memory for AI agents."
-    },
-    {
-      "slug": "app-uploadcheck-uploadcheck",
-      "name": "app.uploadcheck/uploadcheck",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "QC videos, podcasts, and clips before upload — timestamped flags with agent-ready repair prompts."
-    },
-    {
-      "slug": "co-yungle-yungle",
-      "name": "co.yungle/yungle",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Ask about your Yungle file deliveries — what was sent, who downloaded, what expires. Read-only."
     },
     {
       "slug": "com-a2a2p-a2a2p",
@@ -5992,32 +6797,11 @@
       "description": "Turn agent intent into physical parts: engineering review, measured geometry, calibrated pricing."
     },
     {
-      "slug": "com-blockventurechaincapital-bvcc-agent-wallet",
-      "name": "com.blockventurechaincapital/bvcc-agent-wallet",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Non-custodial BVCC Agent Wallet on-chain for AI agents: balances, transfers, approvals, swaps."
-    },
-    {
-      "slug": "com-fidacy-ai-agent-firewall",
-      "name": "com.fidacy/ai-agent-firewall",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Every agent action watched, every money-moving one gated, every verdict independently verifiable."
-    },
-    {
       "slug": "com-formpaste-formpaste",
       "name": "com.formpaste/formpaste",
       "confidence": 0.45,
       "topics": [],
       "description": "Create and wire up contact forms from your coding agent. Forms, snippets, and submissions."
-    },
-    {
-      "slug": "com-getmunin-munin",
-      "name": "com.getmunin/munin",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Open-source all-in-one MCP-first customer platform: KB, Conversations, CRM, CMS, Outreach, Analytics"
     },
     {
       "slug": "com-ifttt-mcp",
@@ -6039,34 +6823,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Approved acceptance criteria served over MCP to Claude Code, Cursor, or Codex. Git-only, sealed."
-    },
-    {
-      "slug": "com-memxus-memxus",
-      "name": "com.memxus/memxus",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Persistent memory layer that saves and recalls your project context and preferences."
-    },
-    {
-      "slug": "com-politicalcomms-api",
-      "name": "com.politicalcomms/api",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Compliant political SMS/MMS from MCP clients: projects, contacts, analytics, billing."
-    },
-    {
-      "slug": "com-schedulala-schedulala",
-      "name": "com.schedulala/schedulala",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Schedule and publish social posts to 12 platforms with first comments, analytics, and listening."
-    },
-    {
-      "slug": "com-theaslangroupllc-pulse-agent-wallet",
-      "name": "com.theaslangroupllc.pulse/agent-wallet",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Local agent wallet + 900 pay-per-call data APIs — free discovery, x402 USDC, code-level spend caps"
     },
     {
       "slug": "com-tulimoa-platform",
@@ -6132,11 +6888,39 @@
       "description": "HSM-backed vault secrets for AI agents (JIT fetch) plus prompt-injection and threat scanning."
     },
     {
+      "slug": "io-github-2s-io-mcp",
+      "name": "io.github.2s-io/mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "575+ agent tools: data, AI gateway, storage/queues/watchers. x402 USDC, no keys, usage billing."
+    },
+    {
+      "slug": "io-github-99blaked99-the-metis-fca-handbook-ai-harness-mcp",
+      "name": "io.github.99blakeD99/the-metis-fca-handbook-ai-harness-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP server for FCA Handbook compliance analysis with verbatim citations."
+    },
+    {
+      "slug": "io-github-aahlijia-dekko",
+      "name": "io.github.aahlijia/dekko",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Static code map generator: MAP.md + map.json for any repo, plus a Claude Code /map plugin"
+    },
+    {
       "slug": "io-github-abhishekjkrsna-swapi-mcp",
       "name": "io.github.abhishekjkrsna/swapi-mcp",
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server for SWAPI API"
+    },
+    {
+      "slug": "io-github-aborruso-ckan-mcp-server",
+      "name": "io.github.aborruso/ckan-mcp-server",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP server for interacting with CKAN open data portals"
     },
     {
       "slug": "io-github-acedatacloud-mcp-face-transform",
@@ -6216,6 +7000,13 @@
       "description": "Signed machine messages + wallet trust gates via x402; free verifiable agent passports."
     },
     {
+      "slug": "io-github-agntcy-dir-mcp",
+      "name": "io.github.agntcy/dir-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP server for working with OASF agent records in the Agntcy Directory."
+    },
+    {
       "slug": "io-github-agorapassadoagora-debug-aipm",
       "name": "io.github.agorapassadoagora-debug/aipm",
       "confidence": 0.45,
@@ -6249,6 +7040,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Verify, discover, and rate AI agents before transacting."
+    },
+    {
+      "slug": "io-github-aimplifier-eeg-mcp",
+      "name": "io.github.AImplifier/eeg-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Real-time EEG: BrainFlow streaming, wall-clock replay, online DSP, recording, and stimulation."
     },
     {
       "slug": "io-github-ainative-studio-ainative-opencode-memory-mcp",
@@ -6307,6 +7105,13 @@
       "description": "Administer a Zigbee2MQTT estate: health, mesh diagnostics, OTA, pairing, device management."
     },
     {
+      "slug": "io-github-alvisooculus-optionsahoy-mcp",
+      "name": "io.github.AlvisoOculus/optionsahoy-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Equity comp tax/trade optimizer: ISO/AMT exercise, NSO, RSU, QSBS, concentration, hedging. 50-state."
+    },
+    {
       "slug": "io-github-alyiox-mcp-samsclub-ads",
       "name": "io.github.alyiox/mcp-samsclub-ads",
       "confidence": 0.45,
@@ -6319,6 +7124,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "A neutral memory quality-gate MCP server: save_memory, recall_memory, forget_memory over stdio."
+    },
+    {
+      "slug": "io-github-amplichina-madeforai-supplychain-skill",
+      "name": "io.github.amplichina/madeforai-supplychain-skill",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP connector for human-reviewed manufacturing tasks through MadeForAI hosted fulfillment."
     },
     {
       "slug": "io-github-amzscout-corp-amzscout-skill-mcp",
@@ -6356,6 +7168,20 @@
       "description": "Australian economic data from the ABS, RBA, and APRA: CPI, GDP, cash rate, labour, and more."
     },
     {
+      "slug": "io-github-anthonysuherli-br8n",
+      "name": "io.github.anthonysuherli/br8n",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Capture dev context on interrupt; replay it as a 30-second resume card. Git stash for your head."
+    },
+    {
+      "slug": "io-github-antics-gg-antics-mcp",
+      "name": "io.github.antics-gg/antics-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Deploy a web game to a playable multiplayer URL with rooms, state sync, and leaderboards."
+    },
+    {
       "slug": "io-github-antonkarliner-truepane",
       "name": "io.github.antonkarliner/truepane",
       "confidence": 0.45,
@@ -6391,6 +7217,13 @@
       "description": "MCP server that exposes GraphQL operations as tools for AI models."
     },
     {
+      "slug": "io-github-appwrite-mcp",
+      "name": "io.github.appwrite/mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP (Model Context Protocol) server for Appwrite"
+    },
+    {
       "slug": "io-github-artgas1-xmlriver-mcp",
       "name": "io.github.artgas1/xmlriver-mcp",
       "confidence": 0.45,
@@ -6398,11 +7231,32 @@
       "description": "Google/Yandex SERP parsing and Yandex Wordstat keyword frequency via XMLRiver XML API"
     },
     {
+      "slug": "io-github-arturlys-listonic-mcp",
+      "name": "io.github.ArturLys/listonic-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Let your AI manage your real grocery list — unofficial Listonic MCP server"
+    },
+    {
+      "slug": "io-github-arturogarrido-claudinho",
+      "name": "io.github.arturogarrido/claudinho",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Live 2026 World Cup scores, fixtures & standings for your AI agent. No keys. Unofficial fan project."
+    },
+    {
       "slug": "io-github-aryanspv-har-forensics-mcp",
       "name": "io.github.aryanspv/har-forensics-mcp",
       "confidence": 0.45,
       "topics": [],
       "description": "Tells you what leaked in a .har capture, who's on the page, and what to strip. No network calls."
+    },
+    {
+      "slug": "io-github-ashmet-vibemap-mcp",
+      "name": "io.github.AshMet/vibemap-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Load & create VibeMap product specs from your coding agent; sync build progress."
     },
     {
       "slug": "io-github-ashutoshraj97-agentready-mcp",
@@ -6482,6 +7336,13 @@
       "description": "Send push notifications, build audiences, and view campaign analytics from PushEngage."
     },
     {
+      "slug": "io-github-b1ff-atlassian-dc-mcp-confluence",
+      "name": "io.github.b1ff/atlassian-dc-mcp-confluence",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP server for Atlassian Confluence Data Center - access and manage content"
+    },
+    {
       "slug": "io-github-bailinghub-bailinghub-governance",
       "name": "io.github.bailinghub/bailinghub-governance",
       "confidence": 0.45,
@@ -6522,6 +7383,20 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Exit-cost estimates, depth concentration, liquidity tiers, and sealed records; no commodity futures."
+    },
+    {
+      "slug": "io-github-bg4ff8mtdn-dotcom-ownership-attestation-protocol",
+      "name": "io.github.bg4ff8mtdn-dotcom/ownership-attestation-protocol",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP protocol enforcing explicit task acceptance and attestation-tagged completion claims."
+    },
+    {
+      "slug": "io-github-bg4ff8mtdn-dotcom-ownership-provenance-protocol",
+      "name": "io.github.bg4ff8mtdn-dotcom/ownership-provenance-protocol",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP protocol requiring task acceptance and provenance tags. Self-hosted only - see README."
     },
     {
       "slug": "io-github-bickov-slimsnap",
@@ -6636,6 +7511,20 @@
       "description": "Official MCP server for Brilliant Directories — manage members, posts, leads, reviews, and more."
     },
     {
+      "slug": "io-github-bruchris-canvas-lms-mcp",
+      "name": "io.github.bruchris/canvas-lms-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "TypeScript MCP server for Canvas LMS — 163 tools across 41 domains."
+    },
+    {
+      "slug": "io-github-bulatko-vk",
+      "name": "io.github.bulatko/vk",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "VK (VKontakte): read walls, users, communities and stats; publish, edit and comment on posts."
+    },
+    {
       "slug": "io-github-bytewizard42i-soulsketch",
       "name": "io.github.bytewizard42i/soulsketch",
       "confidence": 0.45,
@@ -6692,6 +7581,13 @@
       "description": "Corporate-disclosure research across 12 official sources behind ten intent-based tools."
     },
     {
+      "slug": "io-github-cdeust-ai-architect-mcp-spec",
+      "name": "io.github.cdeust/ai-architect-mcp-spec",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "PRD verification and host-driven generation with multi-judge consensus across 17 MCP tools."
+    },
+    {
       "slug": "io-github-cdeust-automatised-pipeline",
       "name": "io.github.cdeust/automatised-pipeline",
       "confidence": 0.45,
@@ -6713,6 +7609,13 @@
       "description": "Neutral, sourced, real-time comparisons on any topic, in 32 languages."
     },
     {
+      "slug": "io-github-cgseyhan-architectos",
+      "name": "io.github.cgseyhan/architectos",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "ArchitectOS - AI-Native Repository Intelligence & Architecture Operating System."
+    },
+    {
       "slug": "io-github-changchinfu-mcp-gauge",
       "name": "io.github.CHANGCHINFU/mcp-gauge",
       "confidence": 0.45,
@@ -6720,11 +7623,32 @@
       "description": "US government data (USGS/NOAA/SEC/FDA) with cryptographic proof; x402 pay-per-call, no API key"
     },
     {
+      "slug": "io-github-chanmeng666-archlang-mcp",
+      "name": "io.github.ChanMeng666/archlang-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Compile, describe, lint, validate, score and repair multi-storey and curved ArchLang floor plans."
+    },
+    {
+      "slug": "io-github-chaoz23-charactercheck",
+      "name": "io.github.chaoz23/charactercheck",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Read-only CharacterCheck MCP server for deterministic character context with provenance and trust."
+    },
+    {
       "slug": "io-github-chaoz23-dmcheck",
       "name": "io.github.chaoz23/dmcheck",
       "confidence": 0.45,
       "topics": [],
       "description": "Deterministic conduct verdicts for live tabletop sessions - CI for running a game."
+    },
+    {
+      "slug": "io-github-chaoz23-srdcheck",
+      "name": "io.github.chaoz23/srdcheck",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Scoped deterministic SRD 5.2.1 rules checks for agents — applied rules cited, boundaries explicit."
     },
     {
       "slug": "io-github-chrischall-artsonia-mcp",
@@ -6746,6 +7670,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Credit Karma transactions for Claude — spending by category, merchant, and account summary"
+    },
+    {
+      "slug": "io-github-chrischall-crowntowncompost-mcp",
+      "name": "io.github.chrischall/crowntowncompost-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Customer access to the Crown Town Compost portal: pickups, invoices, and skips (AI-built)."
     },
     {
       "slug": "io-github-chrischall-easytable-mcp",
@@ -6902,6 +7833,13 @@
       "description": "Meter usage and manage usage-based billing from AI tools via the ClockNext API."
     },
     {
+      "slug": "io-github-cloud1map-agent-relay",
+      "name": "io.github.cloud1map/agent-relay",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Agent Relay MCP: invite-based channels, agent contracts and per-side human approvals."
+    },
+    {
       "slug": "io-github-coaspe-sap-abap-mcp",
       "name": "io.github.Coaspe/sap-abap-mcp",
       "confidence": 0.45,
@@ -6927,7 +7865,7 @@
       "name": "io.github.CodesWhat/portkey-admin-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Full Portkey Admin API MCP server — configs, prompts, keys, analytics, and more."
+      "description": "Portkey Admin API MCP server with current coverage and Prisma AIRS interoperability guidance."
     },
     {
       "slug": "io-github-colossal1598-ship-mcp",
@@ -6956,6 +7894,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Check prompts against ComplyEdge TrustLint offline rules with article-cited findings."
+    },
+    {
+      "slug": "io-github-constripacity-claude-code-bridge",
+      "name": "io.github.constripacity/claude-code-bridge",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP relay so Claude Code agents on different machines can exchange messages via named channels."
     },
     {
       "slug": "io-github-corantgmbh-mcp-airq",
@@ -7028,6 +7973,13 @@
       "description": "MCP server for dry-run Ethereum transaction simulation via Crypto APIs"
     },
     {
+      "slug": "io-github-cryptoapis-io-mcp-x402-pay",
+      "name": "io.github.CryptoAPIs-io/mcp-x402-pay",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP server that pays x402-gated HTTP endpoints — fetch, and on a 402 authorize, sign, retry"
+    },
+    {
       "slug": "io-github-cuneiform-llc-clearlist",
       "name": "io.github.Cuneiform-LLC/clearlist",
       "confidence": 0.45,
@@ -7049,11 +8001,32 @@
       "description": "Offline observational astronomy: positions, rise/set, moon phases, eclipses, and seasons."
     },
     {
+      "slug": "io-github-cyanheads-census-mcp-server",
+      "name": "io.github.cyanheads/census-mcp-server",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Query U.S. Census Bureau data, variables, and geography via MCP."
+    },
+    {
       "slug": "io-github-cyanheads-cpsc-recalls-mcp-server",
       "name": "io.github.cyanheads/cpsc-recalls-mcp-server",
       "confidence": 0.45,
       "topics": [],
       "description": "US consumer product recalls from the CPSC — hazards, remedies, and affected products."
+    },
+    {
+      "slug": "io-github-cyanheads-eia-energy-mcp-server",
+      "name": "io.github.cyanheads/eia-energy-mcp-server",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Browse and query the EIA API v2 — electricity, petroleum, natural gas, coal, forecasts via MCP."
+    },
+    {
+      "slug": "io-github-cyanheads-exchange-rates-mcp-server",
+      "name": "io.github.cyanheads/exchange-rates-mcp-server",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Convert currencies, get FX rates, and query historical ECB exchange rate data."
     },
     {
       "slug": "io-github-cyanheads-imf-mcp-server",
@@ -7075,6 +8048,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Global weather via Open-Meteo: forecast, ERA5 archive, marine, air quality, geocoding, elevation."
+    },
+    {
+      "slug": "io-github-cyanheads-openaq-mcp-server",
+      "name": "io.github.cyanheads/openaq-mcp-server",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Find air-quality stations and read pollutant observations from government monitors via OpenAQ v3."
     },
     {
       "slug": "io-github-cyanheads-openchargemap-mcp-server",
@@ -7147,6 +8127,13 @@
       "description": "Stable eight-tool MCP server for changed-UI assurance, authority-aware UI task context, and repair."
     },
     {
+      "slug": "io-github-dengyier-openworkproof",
+      "name": "io.github.dengyier/OpenWorkProof",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Verifiable execution for AI agents: Ed25519-signed work contracts and audit trails."
+    },
+    {
       "slug": "io-github-dernif-payanagent",
       "name": "io.github.derNif/payanagent",
       "confidence": 0.45,
@@ -7159,6 +8146,20 @@
       "confidence": 0.45,
       "topics": [],
       "description": "An MCP server that provides AI travel recommendations from Asian expats."
+    },
+    {
+      "slug": "io-github-dhi13man-oorep-mcp",
+      "name": "io.github.Dhi13man/oorep-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP server and TypeScript SDK for OOREP homeopathic repertory and materia medica reference data."
+    },
+    {
+      "slug": "io-github-digital-threads-token-pilot",
+      "name": "io.github.Digital-Threads/token-pilot",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Save up to 80% tokens when AI reads code via AST-aware structural reading"
     },
     {
       "slug": "io-github-digitalgremlin-hn-developer-sentiment-mcp",
@@ -7175,11 +8176,32 @@
       "description": "Non-UTF-8 files: CP1251, CP1252, KOI8, ISO-8859, UTF-16, GBK auto-detected and preserved"
     },
     {
+      "slug": "io-github-dizzlkheinz-ynab-mcpb",
+      "name": "io.github.dizzlkheinz/ynab-mcpb",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Local-first YNAB MCP for reconciliation, receipt splitting, safe cleanup, and spending analysis"
+    },
+    {
       "slug": "io-github-dkosarevsky-albu-mcp",
       "name": "io.github.dKosarevsky/albu-mcp",
       "confidence": 0.45,
       "topics": [],
       "description": "AlbumentationsX MCP for batch previews, compare preview runs, segmentation masks, and exports."
+    },
+    {
+      "slug": "io-github-dns-aid-dns-aid",
+      "name": "io.github.dns-aid/dns-aid",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Discover and publish AI agents via DNS using SVCB records (RFC 9460)"
+    },
+    {
+      "slug": "io-github-do-droid-busan-essentials",
+      "name": "io.github.do-droid/busan-essentials",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Find the nearest restroom, pharmacy, WiFi, or AED in Busan, Korea. 8,680 places, Korean+English."
     },
     {
       "slug": "io-github-doc2mcp-freefirecommunity",
@@ -7203,6 +8225,13 @@
       "description": "Allow AI systems to view and control your Starling Bank account via MCP."
     },
     {
+      "slug": "io-github-droodotfoo-raxol",
+      "name": "io.github.DROOdotFOO/raxol",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Elixir/OTP runtime where every UI component auto-exposes MCP tools; stdio server: mix mcp.server"
+    },
+    {
       "slug": "io-github-dumbspacecookie-stickies",
       "name": "io.github.dumbspacecookie/stickies",
       "confidence": 0.45,
@@ -7210,11 +8239,32 @@
       "description": "Persistent, expiring, importance-graded sticky notes for Claude Code."
     },
     {
+      "slug": "io-github-dustintrap-kvm-pilot",
+      "name": "io.github.DustinTrap/kvm-pilot",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Smart hands for your AI agents - write-capable KVM+BMC+SSH MCP server: gated, verified, audited."
+    },
+    {
       "slug": "io-github-dwarehouse1-vrm-toolkit-mcp",
       "name": "io.github.dwarehouse1/vrm-toolkit-mcp",
       "confidence": 0.45,
       "topics": [],
       "description": "Inspect, validate and preview VRM / VRMA files from an AI agent (5 tools, local stdio server)."
+    },
+    {
+      "slug": "io-github-edonzo-talkthru",
+      "name": "io.github.EdonZo/talkthru",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Talk while using your app — your coding agent gets each sentence aligned to the frame. Fully local."
+    },
+    {
+      "slug": "io-github-edushinka-betbetter-mcp",
+      "name": "io.github.edushinka/betbetter-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Free sports model win probabilities and fair odds for nine sports. No API key required."
     },
     {
       "slug": "io-github-eilodon-calm-mcp",
@@ -7245,6 +8295,13 @@
       "description": "Agent-native MCP server for driving, inspecting, and asserting on real Electron desktop apps."
     },
     {
+      "slug": "io-github-eltociear-skill-audit-mcp",
+      "name": "io.github.eltociear/skill-audit-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Scan agent skills and MCP servers for malicious patterns before you load them"
+    },
+    {
       "slug": "io-github-emergent-wisdom-semahash",
       "name": "io.github.emergent-wisdom/semahash",
       "confidence": 0.45,
@@ -7273,6 +8330,13 @@
       "description": "Odoo MCP: gated writes, multi-instance. Free hosted: ERPipe (mcp.erpipe.com)"
     },
     {
+      "slug": "io-github-errick0x-hyde-mcp",
+      "name": "io.github.errick0x/hyde-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Discover and trade tokenize-anything coins on hyde.trade (Robinhood Chain). Non-custodial."
+    },
+    {
       "slug": "io-github-ethanasm-mcp-queue-doctor",
       "name": "io.github.ethanasm/mcp-queue-doctor",
       "confidence": 0.45,
@@ -7285,6 +8349,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Unofficial SberBank Online: read accounts and operations, transfer with human approval."
+    },
+    {
+      "slug": "io-github-felixwaweru-code-fundi-mcp",
+      "name": "io.github.FelixWaweru/code-fundi-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "CodeFundi MCP server for codebase mapping and blast-radius analysis."
     },
     {
       "slug": "io-github-fernandoludvig-rdstation-crm-mcp",
@@ -7306,6 +8377,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server implementation for Figranium"
+    },
+    {
+      "slug": "io-github-fino-wind-vaultbeat",
+      "name": "io.github.Fino-wind/vaultbeat",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Needs Vaultbeat for iOS (Pro). Your AI agent reads your E2EE Apple Health data, decrypted locally"
     },
     {
       "slug": "io-github-fisher521-bookmarks-lifecycle",
@@ -7364,6 +8442,13 @@
       "description": "MCP server for Google Sheets API — read, write, format, batch operations."
     },
     {
+      "slug": "io-github-freyabit-shanghai-library-open-data-mcp",
+      "name": "io.github.FreyaBit/shanghai-library-open-data-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "上海图书馆开放数据检索 MCP：纪年/家谱/建筑/红色事件/99 个 webapi + 搜韵诗词，支持 stdio 与 HTTP。"
+    },
+    {
       "slug": "io-github-frndchagas-coolify-mcp",
       "name": "io.github.frndchagas/coolify-mcp",
       "confidence": 0.45,
@@ -7392,11 +8477,39 @@
       "description": "Local MCP access to approved 1Password fields without exposing plaintext secrets to AI agents."
     },
     {
+      "slug": "io-github-garl-protocol-agent-trust",
+      "name": "io.github.Garl-Protocol/agent-trust",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Tamper-evident action receipts, trust scoring & capability tokens for AI agents. 29 MCP tools."
+    },
+    {
+      "slug": "io-github-garl-protocol-mcp-server",
+      "name": "io.github.Garl-Protocol/mcp-server",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "18 trust tools for AI agents — verify, score, route, compare, and delegate with confidence."
+    },
+    {
+      "slug": "io-github-garlickim21-ratatosk-mcp",
+      "name": "io.github.garlicKim21/ratatosk-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "CNCF release intelligence: typed facts from release notes; check_stack compares versions locally."
+    },
+    {
       "slug": "io-github-gatsv-tech-epiphany",
       "name": "io.github.GATSV-tech/epiphany",
       "confidence": 0.45,
       "topics": [],
       "description": "One private, local memory your AI tools share. Cross-model, on-device, never lose a session."
+    },
+    {
+      "slug": "io-github-gblinproject-gblin-mcp-server",
+      "name": "io.github.gblinproject/gblin-mcp-server",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Collateral-backed treasury vault for AI agents on Base. Crash Shield defends, JIT pays x402."
     },
     {
       "slug": "io-github-georgeracu-google-jules-mcp-server",
@@ -7411,6 +8524,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Credential isolation for AI agents. Inject secrets at the network boundary."
+    },
+    {
+      "slug": "io-github-getmarrow-marrow",
+      "name": "io.github.getmarrow/marrow",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Runtime governance, proof, outcome closure, and fleet intelligence for MCP-compatible AI agents."
     },
     {
       "slug": "io-github-getpapi-papi",
@@ -7490,6 +8610,20 @@
       "description": "Private projects, preflight, decisions, and handoffs that keep work continuous across AI tools."
     },
     {
+      "slug": "io-github-helloaigent-dev-helloaigent-publisher",
+      "name": "io.github.helloaigent-dev/helloaigent-publisher",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Run a Hello Aigent feed from your agent: create feeds, publish signed updates, read analytics."
+    },
+    {
+      "slug": "io-github-helloaigent-dev-helloaigent-subscriber",
+      "name": "io.github.helloaigent-dev/helloaigent-subscriber",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Subscribe your agent to Hello Aigent feeds: discover, fetch signed updates, verify, and act."
+    },
+    {
       "slug": "io-github-heznpc-airmcp",
       "name": "io.github.heznpc/airmcp",
       "confidence": 0.45,
@@ -7511,6 +8645,13 @@
       "description": "Apple Mail over MCP: fenced reads, draft-only writing, human-gated actions, audited with undo."
     },
     {
+      "slug": "io-github-honeytones-idios",
+      "name": "io.github.honeytones/idios",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Private escrow for AI agent work on Beam: verifiable delivery, worker collateral, M of N disputes."
+    },
+    {
       "slug": "io-github-horizungroup-horizun-msproject-mcp",
       "name": "io.github.HorizunGroup/horizun-msproject-mcp",
       "confidence": 0.45,
@@ -7525,11 +8666,25 @@
       "description": "MCP server for Hostinger API"
     },
     {
+      "slug": "io-github-houtini-ai-gemini",
+      "name": "io.github.houtini-ai/gemini",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Model Context Protocol server for Google Gemini AI with chat, research, and grounding"
+    },
+    {
       "slug": "io-github-hungledatatyk-hyperai-mcp",
       "name": "io.github.hungledatatyk/hyperai-mcp",
       "confidence": 0.45,
       "topics": [],
       "description": "Hyper AI MCP server"
+    },
+    {
+      "slug": "io-github-hushlor-mcp-server-tauri",
+      "name": "io.github.Hushlor/mcp-server-tauri",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "A Model Context Protocol server for use with Tauri v2 applications"
     },
     {
       "slug": "io-github-hypawave-mcp",
@@ -7551,6 +8706,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Read-only Deputy coverage, workload, timesheet, availability, and staffing signals."
+    },
+    {
+      "slug": "io-github-i4ctime-q-ring",
+      "name": "io.github.I4cTime/q-ring",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Quantum-inspired keyring for AI coding agents with superposition, entanglement, and tunneling."
     },
     {
       "slug": "io-github-iamalisson-inquisitor",
@@ -7595,6 +8757,13 @@
       "description": "Repo-native task continuity for AI coding agents: a reviewed task-state ledger served over MCP."
     },
     {
+      "slug": "io-github-ilpr-waitlister",
+      "name": "io.github.ilpr/waitlister",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Create waitlists, landing pages, manage subscribers, referrals, and view stats on Waitlister."
+    },
+    {
       "slug": "io-github-ilyaivanchikov-weeek-mcp-smart",
       "name": "io.github.IlyaIvanchikov/weeek-mcp-smart",
       "confidence": 0.45,
@@ -7607,6 +8776,20 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Gives coding agents the user's own view and control of overseer.nvim tasks in Neovim"
+    },
+    {
+      "slug": "io-github-info-arnav-unlocalhost",
+      "name": "io.github.info-arnav/unlocalhost",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Deploy localhost to a private, authenticated link from your AI coding agent."
+    },
+    {
+      "slug": "io-github-ingtian-witness",
+      "name": "io.github.IngTian/witness",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Distills your sessions or any text corpus into a dated history of how its subject changed."
     },
     {
       "slug": "io-github-invigil-invigil",
@@ -7623,6 +8806,13 @@
       "description": "The agent eval standard for MCP. Score every agent output for quality, safety, and cost."
     },
     {
+      "slug": "io-github-ironsecco-ironclaw",
+      "name": "io.github.IronSecCo/ironclaw",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Sandboxed shell exec for MCP clients: run untrusted agent commands in a gVisor container."
+    },
+    {
       "slug": "io-github-isaiahdupree-realtystack-mcp",
       "name": "io.github.IsaiahDupree/realtystack-mcp",
       "confidence": 0.45,
@@ -7635,6 +8825,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Remote MCP connector for App Store + Google Play data via StoreBridge API. No auth required."
+    },
+    {
+      "slug": "io-github-islomzoda-termada",
+      "name": "io.github.Islomzoda/termada",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Persistent, policy-controlled missions for AI agents operating local and SSH environments."
     },
     {
       "slug": "io-github-it-atelier-gn-claws-mail-mcp-plugin",
@@ -7721,6 +8918,13 @@
       "description": "Static MCP manifest and tool-policy security preflight with signed input-redacted receipts"
     },
     {
+      "slug": "io-github-jedanderson432-jedanderson-corpus-mcp",
+      "name": "io.github.jedanderson432/jedanderson-corpus-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP access to the jedanderson.org corpus — environmental superintelligence and information physics."
+    },
+    {
       "slug": "io-github-jeff-nasseri-mikrotik-mcp",
       "name": "io.github.jeff-nasseri/mikrotik-mcp",
       "confidence": 0.45,
@@ -7798,6 +9002,13 @@
       "description": "Read and manage macOS system settings and perform scoped desktop actions."
     },
     {
+      "slug": "io-github-joosthel-sevdesk-mcp",
+      "name": "io.github.joosthel/sevdesk-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Complete sevDesk MCP server: all API endpoints, guarded writes, built-in bookkeeping audits."
+    },
+    {
       "slug": "io-github-jordan23wagner-ops-agent-handoff",
       "name": "io.github.jordan23wagner-ops/agent-handoff",
       "confidence": 0.45,
@@ -7817,6 +9028,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Governed, read-only MCP server exposing Google Ad Manager inventory discovery to buyer agents"
+    },
+    {
+      "slug": "io-github-judgment-pack-judgment-pack",
+      "name": "io.github.Judgment-Pack/judgment-pack",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Offline JPS validator, conformance tester, and experimental evaluator over stdio MCP; keyless."
     },
     {
       "slug": "io-github-justhandledlabs-agent-gateway",
@@ -7859,6 +9077,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Rent real GPUs from the terminal. Per-second billing, $0.50 minimum. stdio MCP server."
+    },
+    {
+      "slug": "io-github-jyswee-oddsockets",
+      "name": "io.github.jyswee/oddsockets",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Agent-first real-time messaging: pub/sub, presence, history. 12 tools over SSE, self-provision."
     },
     {
       "slug": "io-github-jyswee-secretcarousel",
@@ -7924,13 +9149,6 @@
       "description": "Japanese open-data MCP server: corporate-number validation, zengin bank codes, national holidays"
     },
     {
-      "slug": "io-github-kiranreddi-sentinel-dv",
-      "name": "io.github.kiranreddi/sentinel-dv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP tools for UVM/cocotb logs, coverage, regressions, and waveform triage."
-    },
-    {
       "slug": "io-github-kitepon-rgb-aiterm-mcp",
       "name": "io.github.kitepon-rgb/aiterm-mcp",
       "confidence": 0.45,
@@ -7943,20 +9161,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "An MCP server that provides access to the Zoo API for various CAD operations and tools."
-    },
-    {
-      "slug": "io-github-klnuno-fast-mcp-ssh",
-      "name": "io.github.klNuno/fast-mcp-ssh",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "SSH, SFTP, PTY shells, host-to-host copies and remote screenshots for AI agents. One Rust binary."
-    },
-    {
-      "slug": "io-github-korovin-aa97-talkthrough-mcp",
-      "name": "io.github.korovin-aa97/talkthrough-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Local MCP server: screen recordings into transcript, exact frames, OCR, wall-clock evidence."
     },
     {
       "slug": "io-github-kriskraw80-mychart",
@@ -8001,13 +9205,6 @@
       "description": "Persistent, consensus-validated institutional memory for AI agents. Runs locally."
     },
     {
-      "slug": "io-github-lambdatest-mcp",
-      "name": "io.github.LambdaTest/mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Agentic testing: HyperExecute jobs, test failure triage, SmartUI visual diffs, a11y audits"
-    },
-    {
       "slug": "io-github-lazyants-lexware",
       "name": "io.github.lazyants/lexware",
       "confidence": 0.45,
@@ -8020,13 +9217,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "AI lead discovery, qualification, and outreach prep on your Leadbay account."
-    },
-    {
-      "slug": "io-github-legalithm-legalithm-mcp-server",
-      "name": "io.github.legalithm/legalithm-mcp-server",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "EU AI Act compliance in your editor: classify risk, cite obligations, draft Article 50 text."
     },
     {
       "slug": "io-github-lemaur-livewire-flux-mcp",
@@ -8062,6 +9252,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "An MCP Server to utilize Lineai's rich software dependency data in your AI programming assistant."
+    },
+    {
+      "slug": "io-github-liquihog-hogswap-mcp",
+      "name": "io.github.LiquiHog/hogswap-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Pay any Algorand x402 invoice with any asset, plus DEX swap quotes and unsigned builds."
     },
     {
       "slug": "io-github-littleblakew-msds-chain",
@@ -8113,13 +9310,6 @@
       "description": "Shared, permission-aware company context for AI agents, with provenance, approvals and audit."
     },
     {
-      "slug": "io-github-lonniev-taxsort-mcp",
-      "name": "io.github.lonniev/taxsort-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "TaxSort — Tollbooth-monetized MCP server for personal tax transaction classification"
-    },
-    {
       "slug": "io-github-lozit-mcp-standardnotes",
       "name": "io.github.lozit/mcp-standardnotes",
       "confidence": 0.45,
@@ -8160,13 +9350,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Claim-level provenance preflight for sanitized nonfiction passages; automated triage only."
-    },
-    {
-      "slug": "io-github-mahesvannan-tx402",
-      "name": "io.github.Mahesvannan/tx402",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Explain Algorand transactions, groups, batches, and account activity with x402."
     },
     {
       "slug": "io-github-malkreide-amtsblatt-mcp",
@@ -8309,6 +9492,13 @@
       "description": "BLV open data for food safety and veterinary inspections"
     },
     {
+      "slug": "io-github-malkreide-swiss-geodata-mcp",
+      "name": "io.github.malkreide/swiss-geodata-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Swiss federal geodata (geo.admin.ch): layers, spatial identify, zoning, heights, LV95 conversion"
+    },
+    {
       "slug": "io-github-malkreide-swiss-housing-mcp",
       "name": "io.github.malkreide/swiss-housing-mcp",
       "confidence": 0.45,
@@ -8421,20 +9611,6 @@
       "description": "Roslyn MCP server: semantic .NET/C# intelligence - analysis, refactoring, tests, IL inspection."
     },
     {
-      "slug": "io-github-marcorusc-maboss",
-      "name": "io.github.marcorusc/MaBoSS",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for Boolean network simulation and attractor analysis using MaBoSS"
-    },
-    {
-      "slug": "io-github-marcorusc-physicell",
-      "name": "io.github.marcorusc/PhysiCell",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for building, inspecting, and exporting PhysiCell and PhysiBoSS configuration files"
-    },
-    {
       "slug": "io-github-marshallbear1-juno-open-health-tools",
       "name": "io.github.MarshallBear1/juno-open-health-tools",
       "confidence": 0.45,
@@ -8519,6 +9695,13 @@
       "description": "Query Magic: The Gathering cards, sets, and prices and manage your I Want My MTG collection."
     },
     {
+      "slug": "io-github-mattjeff-orizn-visa-mcp",
+      "name": "io.github.MattJeff/orizn-visa-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Visa requirements for 39,585 passport-destination pairs in 15 languages. Free key, no card."
+    },
+    {
       "slug": "io-github-maxellis-orcaslicer-mcp",
       "name": "io.github.MaxEllis/orcaslicer-mcp",
       "confidence": 0.45,
@@ -8533,18 +9716,18 @@
       "description": "The shell around your coding agent: a neuro-symbolic code graph with calibrated trust, via MCP."
     },
     {
-      "slug": "io-github-mcpcustoms-mcp-customs",
-      "name": "io.github.mcpcustoms/mcp-customs",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Inspect an MCP server for common security risks before you install it. Offline, zero telemetry."
-    },
-    {
       "slug": "io-github-mdefrance-autocarver",
       "name": "io.github.mdefrance/autocarver",
       "confidence": 0.45,
       "topics": [],
       "description": "Qualify dataset columns and process them against a target with AutoCarver, fully on your machine."
+    },
+    {
+      "slug": "io-github-meemoprasad-meeba-brain",
+      "name": "io.github.meemoprasad/meeba-brain",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Ground-truth code graph for your codebase: exact callers, callees, symbols & dependencies."
     },
     {
       "slug": "io-github-memoweft-memoweft",
@@ -8554,11 +9737,18 @@
       "description": "Portable AI memory as MCP tools: five reads and three controlled writes."
     },
     {
-      "slug": "io-github-michaelhutchings626-hub-alien-plugg-x402",
-      "name": "io.github.michaelhutchings626-hub/alien-plugg-x402",
+      "slug": "io-github-mibayy-token-savior",
+      "name": "io.github.Mibayy/token-savior",
       "confidence": 0.45,
       "topics": [],
-      "description": "32 paid x402 endpoints for crypto, Zora & on-chain analysis. 10 MCP tools. USDC on Base."
+      "description": "Structural codebase MCP server with persistent memory: navigate by symbol, recall across sessions."
+    },
+    {
+      "slug": "io-github-mibayy-token-savior-recall",
+      "name": "io.github.Mibayy/token-savior-recall",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Structural codebase MCP server with persistent memory: navigate by symbol, recall across sessions."
     },
     {
       "slug": "io-github-mikeashtoneillc-usdi-mcp-server",
@@ -8580,13 +9770,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Discover and call 170+ x402 services on minia2a.uk with built-in USDC micropayments"
-    },
-    {
-      "slug": "io-github-mirnoorata-codexa",
-      "name": "io.github.mirnoorata/codexa",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Codex-native codebase intelligence context compiler and query-only MCP server."
     },
     {
       "slug": "io-github-mizcausevic-dev-mcp-kinetic-gain",
@@ -8631,18 +9814,18 @@
       "description": "Hosted memory for AI agents that learns and forgets — one key across Claude, Cursor & ChatGPT."
     },
     {
-      "slug": "io-github-mnymann-nordic-data",
-      "name": "io.github.Mnymann/nordic-data",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Company, KYB, VAT, sanctions, LEI and address data for 15 EU countries."
-    },
-    {
       "slug": "io-github-moneolabs-moneo",
       "name": "io.github.moneolabs/moneo",
       "confidence": 0.45,
       "topics": [],
       "description": "A guarded wallet for AI agents on Robinhood Chain: a spending policy runs before every signature."
+    },
+    {
+      "slug": "io-github-monoxide-xen-microcap-mcp",
+      "name": "io.github.monoxide-xen/microcap-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Simulate, generate and draw analog circuits in Micro-Cap 12: SPICE analyses, sweeps and schematics"
     },
     {
       "slug": "io-github-morluto-flameox",
@@ -8666,6 +9849,20 @@
       "description": "Token-bounded repository context for coding agents over MCP."
     },
     {
+      "slug": "io-github-mrfentmen-mixpanel-mcp",
+      "name": "io.github.mrfentmen/mixpanel-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Query Mixpanel events, funnels, retention, cohorts, and user profiles."
+    },
+    {
+      "slug": "io-github-mrfentmen-screenplaywriter-mcp",
+      "name": "io.github.mrfentmen/screenplaywriter-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Read, write, and analyze screenplays in Fountain format."
+    },
+    {
       "slug": "io-github-mrrefactoring-atlassian-dc-mcp-confluence",
       "name": "io.github.MrRefactoring/atlassian-dc-mcp-confluence",
       "confidence": 0.45,
@@ -8677,7 +9874,7 @@
       "name": "io.github.mrsingh86/trimtab-ais",
       "confidence": 0.45,
       "topics": [],
-      "description": "Live ships at 8 US gateways + Census port trade by country & commodity. Free, no API key."
+      "description": "US tariff & trade truth: duty actually paid by origin/HS 2017+, HTS rulebook, CBP rulings. No key."
     },
     {
       "slug": "io-github-mrslbt-japan-ux",
@@ -8813,6 +10010,13 @@
       "description": "Stateful WebSocket session registry with per-connection Shannon entropy delta tracking for schema di"
     },
     {
+      "slug": "io-github-nexus-mcp-infra-transfer-entropy-api-sdk",
+      "name": "io.github.nexus-mcp-infra/transfer-entropy-api-sdk",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Detect causal dependencies in time series"
+    },
+    {
       "slug": "io-github-nguyenhuy158-healthchecksio-mcp",
       "name": "io.github.nguyenhuy158/healthchecksio-mcp",
       "confidence": 0.45,
@@ -8832,13 +10036,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Fresh, attributed facts from your sources — cached, and invalidated the moment a source changes."
-    },
-    {
-      "slug": "io-github-nishitasetia-akta-pro-mcp",
-      "name": "io.github.nishitasetia/akta.pro-MCP",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Private company data & real-time news signals for AI agents."
     },
     {
       "slug": "io-github-nithishr-mcp-multi-poc-alpha",
@@ -8981,20 +10178,6 @@
       "description": "Free, editor-less MCP server for Rive: create, edit, inspect, render and preview .riv animations"
     },
     {
-      "slug": "io-github-ogasurfproject-jpg-horizon-shield",
-      "name": "io.github.ogasurfproject-jpg/horizon-shield",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Independent auditor for Japanese construction & renovation estimates; flags overcharge risk."
-    },
-    {
-      "slug": "io-github-ogasurfproject-jpg-horizon-shield-webmcp",
-      "name": "io.github.ogasurfproject-jpg/horizon-shield-webmcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Agent-facing intake for HORIZON SHIELD, the Japanese construction estimate auditor."
-    },
-    {
       "slug": "io-github-ogasurfproject-jpg-hs-audit-app",
       "name": "io.github.ogasurfproject-jpg/hs-audit-app",
       "confidence": 0.45,
@@ -9007,6 +10190,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server for FRED (Federal Reserve Economic Data): full read API plus GeoFRED, 34 tools."
+    },
+    {
+      "slug": "io-github-oktopeak-lawmatics-mcp",
+      "name": "io.github.oktopeak/lawmatics-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Connect Claude to Lawmatics: matters, contacts, pipelines, tasks, forms, custom fields, invoices."
     },
     {
       "slug": "io-github-opcastil11-apuchat",
@@ -9069,7 +10259,7 @@
       "name": "io.github.ostapondo/plonk",
       "confidence": 0.45,
       "topics": [],
-      "description": "Mac window manager your AI agent can drive: layouts, workspaces, snap zones, screenshots."
+      "description": "MCP server for Plonk: macOS window zones, workspaces, keep-awake, screenshots and on-device OCR."
     },
     {
       "slug": "io-github-ozgurcd-gograph",
@@ -9077,13 +10267,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Local Go repository call graphs and structural analysis for coding agents over stdio."
-    },
-    {
-      "slug": "io-github-packkitjs-packkit-mcp",
-      "name": "io.github.PackkitJS/packkit-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Scaffold modern npm packages, CLIs, services and apps as a native tool for AI agents."
     },
     {
       "slug": "io-github-paidsync-paidsync",
@@ -9105,20 +10288,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Fragrance encyclopedia: note pyramids, accords, perfumers and dupes (parfica.com)."
-    },
-    {
-      "slug": "io-github-parksanggwon-admob-mcp-server",
-      "name": "io.github.ParkSangGwon/admob-mcp-server",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for the Google AdMob API — apps, ad units, mediation, and revenue reports"
-    },
-    {
-      "slug": "io-github-partymola-bosch-flow-mcp",
-      "name": "io.github.partymola/bosch-flow-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for Bosch eBike Flow (BES3): battery health, charge cycles, components, and ride data."
     },
     {
       "slug": "io-github-pascalebeier-hitkeep",
@@ -9156,13 +10325,6 @@
       "description": "MCP server for Cisco Catalyst SD-WAN (vManage): fabric inventory, device health, alarms, policies."
     },
     {
-      "slug": "io-github-pedrammadani-legalithm-mcp-server",
-      "name": "io.github.PedramMadani/legalithm-mcp-server",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "EU AI Act risk classification, obligations and Article 50 disclosures. Offline, no API key."
-    },
-    {
       "slug": "io-github-pedroknigge-arkgate",
       "name": "io.github.pedroknigge/arkgate",
       "confidence": 0.45,
@@ -9198,13 +10360,6 @@
       "description": "Live context MCP server: resolves git, services, and tests into agent context. Local-first, MIT."
     },
     {
-      "slug": "io-github-pete-builds-unifi",
-      "name": "io.github.pete-builds/unifi",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Safe-by-default UniFi MCP: Network + Protect + Access, multi-site, dry-run, audit log."
-    },
-    {
       "slug": "io-github-peteratpondo-kit-memory-demo",
       "name": "io.github.PeterAtPondo/kit-memory-demo",
       "confidence": 0.45,
@@ -9233,25 +10388,18 @@
       "description": "Feynman's twelve-problems method as an MCP server: dormant problems + an evoke loop for new tricks."
     },
     {
+      "slug": "io-github-pierrejanineh-tech-debt-mcp",
+      "name": "io.github.PierreJanineh/tech-debt-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP Server for analyzing technical debt across multiple programming languages"
+    },
+    {
       "slug": "io-github-pilot-protocol-pilot-mcp",
       "name": "io.github.pilot-protocol/pilot-mcp",
       "confidence": 0.45,
       "topics": [],
       "description": "Your agent's overlay network. 435 specialist agents + P2P A2A messaging on a 190k-node network."
-    },
-    {
-      "slug": "io-github-pipeworx-io-ct-dmv",
-      "name": "io.github.pipeworx-io/ct-dmv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Connecticut DMV: vehicle-level electric vehicle registrations by town, make and model"
-    },
-    {
-      "slug": "io-github-pipeworx-io-de-dmv",
-      "name": "io.github.pipeworx-io/de-dmv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Delaware DMV: registrations by fuel type, EV and charger rebates, crash statistics"
     },
     {
       "slug": "io-github-pipeworx-io-digitraffic-ais",
@@ -9261,13 +10409,6 @@
       "description": "Digitraffic AIS MCP — live vessel positions in Finnish and Baltic Sea waters."
     },
     {
-      "slug": "io-github-pipeworx-io-fcc-ecfs",
-      "name": "io.github.pipeworx-io/fcc-ecfs",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for fcc-ecfs"
-    },
-    {
       "slug": "io-github-pipeworx-io-grantconnect-au",
       "name": "io.github.pipeworx-io/grantconnect-au",
       "confidence": 0.45,
@@ -9275,109 +10416,11 @@
       "description": "GrantConnect (Australia) MCP — Commonwealth grant opportunities and grants"
     },
     {
-      "slug": "io-github-pipeworx-io-hi-dmv",
-      "name": "io.github.pipeworx-io/hi-dmv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Hawaii: cumulative hybrid and electric vehicles registered statewide since 1999"
-    },
-    {
-      "slug": "io-github-pipeworx-io-md-dmv",
-      "name": "io.github.pipeworx-io/md-dmv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Maryland MVA: registered vehicles and EV/plug-in hybrid counts by county and ZIP, monthly"
-    },
-    {
-      "slug": "io-github-pipeworx-io-medicaid-intelligence",
-      "name": "io.github.pipeworx-io/medicaid-intelligence",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Medicaid drug utilization by NDC, managed-care enrollment and state enrollment operations from CMS"
-    },
-    {
-      "slug": "io-github-pipeworx-io-medicare-coverage",
-      "name": "io.github.pipeworx-io/medicare-coverage",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for medicare-coverage"
-    },
-    {
-      "slug": "io-github-pipeworx-io-mhw",
-      "name": "io.github.pipeworx-io/mhw",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MHW MCP — Monster Hunter World data (mhw-db.com, free, no auth)"
-    },
-    {
-      "slug": "io-github-pipeworx-io-mo-dmv",
-      "name": "io.github.pipeworx-io/mo-dmv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Missouri license offices with hours, contract agent and closure dates, refreshed daily"
-    },
-    {
-      "slug": "io-github-pipeworx-io-nc-dmv",
-      "name": "io.github.pipeworx-io/nc-dmv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "North Carolina DMV: live field-office wait times and driver license office directory"
-    },
-    {
-      "slug": "io-github-pipeworx-io-or-dmv",
-      "name": "io.github.pipeworx-io/or-dmv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Oregon DMV: live field-office wait times and office directory for all 60 offices"
-    },
-    {
-      "slug": "io-github-pipeworx-io-pa-dmv",
-      "name": "io.github.pipeworx-io/pa-dmv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "PennDOT: quarterly EV, plug-in hybrid and total vehicle registrations by county and ZIP"
-    },
-    {
-      "slug": "io-github-pipeworx-io-patents",
-      "name": "io.github.pipeworx-io/patents",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Patents MCP — wraps the USPTO Open Data Portal (ODP) Patent File Wrapper API"
-    },
-    {
-      "slug": "io-github-pipeworx-io-polygon-io",
-      "name": "io.github.pipeworx-io/polygon-io",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Polygon.io MCP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-sec-form-d",
-      "name": "io.github.pipeworx-io/sec-form-d",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "SEC Form D fundraising intelligence."
-    },
-    {
       "slug": "io-github-pipeworx-io-social-signal",
       "name": "io.github.pipeworx-io/social-signal",
       "confidence": 0.45,
       "topics": [],
       "description": "Social Signal — post-VOLUME TIME SERIES across the open social networks that"
-    },
-    {
-      "slug": "io-github-pipeworx-io-treasury-fiscal",
-      "name": "io.github.pipeworx-io/treasury-fiscal",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Treasury Fiscal MCP — US Treasury Fiscal Data API"
-    },
-    {
-      "slug": "io-github-pipeworx-io-tx-dmv",
-      "name": "io.github.pipeworx-io/tx-dmv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Texas DMV: statewide registered vehicle totals by fiscal year"
     },
     {
       "slug": "io-github-pipeworx-io-us-dmv",
@@ -9436,6 +10479,13 @@
       "description": "Find LinkedIn jobs and people, research companies, manage network, posts, and messages with MCP."
     },
     {
+      "slug": "io-github-pratikmehkarkar-vin-recall-mcp",
+      "name": "io.github.pratikmehkarkar/vin-recall-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Decodes US VINs and looks up open NHTSA safety recall campaigns for a vehicle."
+    },
+    {
       "slug": "io-github-predgeai-whale-data-mcp",
       "name": "io.github.predgeAI/whale-data-mcp",
       "confidence": 0.45,
@@ -9455,13 +10505,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "ASO analytics and App Store optimization tools for indie iOS developers and AI agents."
-    },
-    {
-      "slug": "io-github-prohect-bind-alias-mcp",
-      "name": "io.github.Prohect/bind-alias-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP bridge for BindAlias Minecraft mod: game state, screenshots, aliases, and config editing."
     },
     {
       "slug": "io-github-prophet-git-one-brain",
@@ -9539,13 +10582,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Validate & format git commit messages per the Udacity Git Commit Message Style Guide."
-    },
-    {
-      "slug": "io-github-r3dz4r-datapulse-my",
-      "name": "io.github.r3dz4r/datapulse-my",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Read-only discovery for 122 Malaysian public datasets with freshness, licence, and provenance."
     },
     {
       "slug": "io-github-raphysicst-create-korean-secondary-learning-map-mc",
@@ -9982,18 +11018,18 @@
       "description": "Sovereign encrypted memory for AI agents. Sealed on your machine. Start free: say Join SAIHM."
     },
     {
+      "slug": "io-github-salatmaster-keenetic-mcp",
+      "name": "io.github.salatmaster/keenetic-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Control a Keenetic router: devices, Wi-Fi, VPN routing, segments, safe verified writes."
+    },
+    {
       "slug": "io-github-sammyboi81-arkhive",
       "name": "io.github.sammyboi81/arkhive",
       "confidence": 0.45,
       "topics": [],
       "description": "ArkHive MCP: governed, tamper-evident local memory for AI agents. Where context gives meaning."
-    },
-    {
-      "slug": "io-github-samyatessmith-tru8",
-      "name": "io.github.SamYatesSmith/tru8",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Source-traced evidence research for AI agents. We organise the evidence; you decide."
     },
     {
       "slug": "io-github-samytouri-agent-hub",
@@ -10094,13 +11130,6 @@
       "description": "Pay-per-use web extract, token prices, and wallet balances via x402 USDC micropayments."
     },
     {
-      "slug": "io-github-sentien-labs-verdictswarm-mcp",
-      "name": "io.github.sentien-labs/verdictswarm-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Read-only pre-trade token risk verdicts and size-aware Solana exit screening for agents."
-    },
-    {
       "slug": "io-github-sergii-ziborov-radiochron",
       "name": "io.github.sergii-ziborov/radiochron",
       "confidence": 0.45,
@@ -10141,13 +11170,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Check real-time uptime and incident status for 285 APIs and cloud services."
-    },
-    {
-      "slug": "io-github-shibley-mymcptools",
-      "name": "io.github.shibley/mymcptools",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Find MCP servers and check whether they actually respond, via live handshake probes."
     },
     {
       "slug": "io-github-shigechika-aruba-central-mcp",
@@ -10304,25 +11326,11 @@
       "description": "PageRank-curated code intelligence for coding agents over an indexed source repository."
     },
     {
-      "slug": "io-github-soapyred-freightutils",
-      "name": "io.github.SoapyRED/freightutils",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Neutral freight reference + validation layer for AI agents: ADR, HS, UN/LOCODE, freight math"
-    },
-    {
       "slug": "io-github-socialpranker-agentburn",
       "name": "io.github.Socialpranker/agentburn",
       "confidence": 0.45,
       "topics": [],
       "description": "Local profiler for AI agents: burn by source, overnight bill, behavioral forensics, config fixes"
-    },
-    {
-      "slug": "io-github-solveacx-voc-mcp",
-      "name": "io.github.SolveaCX/voc-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "VOC OpenAPI gives AI agents authorized review and product data for insights, tagging, and listings."
     },
     {
       "slug": "io-github-soteeabam-looppause",
@@ -10437,6 +11445,13 @@
       "description": "Static analysis scanner for MCP server code and multi-tenant SaaS applications."
     },
     {
+      "slug": "io-github-sudomock-mcp",
+      "name": "io.github.sudomock/mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Product mockup API. Render PSD and 2D mockups, generate videos, manage async jobs and webhooks."
+    },
+    {
       "slug": "io-github-suigar-gaming-mcp",
       "name": "io.github.Suigar-Gaming/mcp",
       "confidence": 0.45,
@@ -10458,25 +11473,11 @@
       "description": "GA4 MCP server for AI agents: schema discovery, server-side aggregation, analysis-ready defaults."
     },
     {
-      "slug": "io-github-swisspra-on-board",
-      "name": "io.github.swisspra/On_Board",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Cross-platform shared memory and ticket coordination for AI agents across MCP clients."
-    },
-    {
       "slug": "io-github-synergic-apis-mcp",
       "name": "io.github.Synergic-APIs/mcp",
       "confidence": 0.45,
       "topics": [],
       "description": "Official US data for AI agents: CPI inflation since 1913, famous prices, national debt since 1790."
-    },
-    {
-      "slug": "io-github-synvoya-codeinspectus",
-      "name": "io.github.Synvoya/codeinspectus",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Local-first MCP security scanner and CLI for AI-generated applications."
     },
     {
       "slug": "io-github-taehyeonglim-korean-elementary-learning-map-mcp",
@@ -10491,13 +11492,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP cron validator for AI agents; flags impossible schedules and other silent cron bugs."
-    },
-    {
-      "slug": "io-github-takiguchi-yu-google-workspace-mcp-server",
-      "name": "io.github.takiguchi-yu/google-workspace-mcp-server",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "An MCP server for Google Workspaces."
     },
     {
       "slug": "io-github-tang-vu-keryx",
@@ -10533,13 +11527,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Turn a screen recording into agent-readable annotated keyframes. MCP server + CLI on ffmpeg."
-    },
-    {
-      "slug": "io-github-thalovant-thalovant-mcp",
-      "name": "io.github.thalovant/thalovant-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Connect MCP clients to Thalovant control-plane and hub runtime APIs over stdio or Streamable HTTP."
     },
     {
       "slug": "io-github-the-nine-nation-remote-ssh-mcp",
@@ -10591,13 +11578,6 @@
       "description": "Rust release tooling — drop-in GoReleaser parity + Rust extras."
     },
     {
-      "slug": "io-github-tj-smith47-cfgd",
-      "name": "io.github.tj-smith47/cfgd",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Declarative, GitOps-style machine configuration management"
-    },
-    {
       "slug": "io-github-toloka-tendem-mcp",
       "name": "io.github.Toloka/tendem-mcp",
       "confidence": 0.45,
@@ -10633,11 +11613,11 @@
       "description": "AI-powered MCP server for analyzing Architectural Decision Records (ADRs)."
     },
     {
-      "slug": "io-github-tresor4k-realdentalcosts-mcp",
-      "name": "io.github.tresor4k/realdentalcosts-mcp",
+      "slug": "io-github-tranqui004-signalint",
+      "name": "io.github.TranQui004/signalint",
       "confidence": 0.45,
       "topics": [],
-      "description": "US dental prices: 12 procedures, 51 states, 200+ cities, cash vs insurance estimates."
+      "description": "Local stdio MCP server for cached, loop-aware JS/TypeScript diagnostics (Oxlint, tsc, Biome)."
     },
     {
       "slug": "io-github-trippyogi-gitworthy",
@@ -10654,13 +11634,6 @@
       "description": "Inspect and drive Avalonia, WPF, WinUI, and .NET MAUI apps through MCP."
     },
     {
-      "slug": "io-github-truman-t3-keyshot-mcp",
-      "name": "io.github.truman-t3/keyshot-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Control local KeyShot scenes, cameras, environments, and renders through headless scripting."
-    },
-    {
       "slug": "io-github-trusterinfo-domain-trust",
       "name": "io.github.trusterinfo/domain-trust",
       "confidence": 0.45,
@@ -10668,11 +11641,18 @@
       "description": "Website trust checks: 0-100 safety score, verdict and community reviews (truster.info)."
     },
     {
-      "slug": "io-github-txn2-mcp-datahub",
-      "name": "io.github.txn2/mcp-datahub",
+      "slug": "io-github-tsvetang2-cognigy-ai-mcp-management-server",
+      "name": "io.github.TsvetanG2/cognigy-ai-mcp-management-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for DataHub data catalogs. Discover datasets, explore lineage, and access metadata."
+      "description": "MCP server for Cognigy.AI - 132 tools to build, configure & operate conversational AI agents"
+    },
+    {
+      "slug": "io-github-tsvillain-deprecation-mcp",
+      "name": "io.github.tsvillain/deprecation-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP server for cross-vendor API/SDK deprecation and breaking-change tracking"
     },
     {
       "slug": "io-github-ucsandman-dashclaw",
@@ -10920,6 +11900,13 @@
       "description": "Agent-to-agent escrow on Robinhood Chain. Post quests with ETH/USDG bounties and settle on-chain."
     },
     {
+      "slug": "io-github-whisper-sec-whisper",
+      "name": "io.github.whisper-sec/whisper",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Keyless: verify agent identities & RDAP for a /128. With a key: register, govern & egress agents."
+    },
+    {
       "slug": "io-github-wilzer-aidelly",
       "name": "io.github.wilzer/aidelly",
       "confidence": 0.45,
@@ -10948,13 +11935,6 @@
       "description": "Unofficial MCP tool surface for GS1 Belgium & Luxembourg's My Product Manager Upload API (v17)."
     },
     {
-      "slug": "io-github-winds3753-landbenchmark-mcp",
-      "name": "io.github.winds3753/landbenchmark-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Satellite land due-diligence: a green/caution/walk-away verdict with cited signals for any parcel."
-    },
-    {
       "slug": "io-github-wkoverfield-plzebo",
       "name": "io.github.wkoverfield/plzebo",
       "confidence": 0.45,
@@ -10974,6 +11954,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server for terminal commands, file operations, and process management"
+    },
+    {
+      "slug": "io-github-wynnpay102-sys-awc-agent-commons",
+      "name": "io.github.wynnpay102-sys/awc-agent-commons",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Discover funded testnet tasks with deterministic on-chain acceptance and AWC utility rewards."
     },
     {
       "slug": "io-github-wyre-technology-autotask-mcp",
@@ -11997,6 +12984,15 @@
       "description": "QuickBooks Online for Claude: reports, bookkeeping cleanup, and US & Canadian tax prep."
     },
     {
+      "slug": "com-achriom-achriom",
+      "name": "com.achriom/achriom",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Media memory for AI agents and their humans: books, movies, music, shows, anime, podcasts, games."
+    },
+    {
       "slug": "com-agentfenster-agentfenster",
       "name": "com.agentfenster/agentfenster",
       "confidence": 0.55,
@@ -12040,6 +13036,15 @@
         "finance"
       ],
       "description": "63 pay-per-call tools for agents: vision, text, data, web, blockchain. USDC on Base via x402."
+    },
+    {
+      "slug": "com-boothcheck-boothcheck",
+      "name": "com.boothcheck/boothcheck",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "What a stock price is betting on: implied growth, duration, and margin, read from SEC filings."
     },
     {
       "slug": "com-coinpaprika-coinpaprika",
@@ -12132,6 +13137,15 @@
       "description": "MCP marketplace: agents pay per call in USDC via x402. Plus Base chain data and a USDC<->bank ramp."
     },
     {
+      "slug": "com-focusgts-aep",
+      "name": "com.focusgts/aep",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Full-CRUD Adobe Experience Platform server: 46 tools for schemas, ingestion, profiles, audiences."
+    },
+    {
       "slug": "com-getplexa-mcp",
       "name": "com.getplexa/mcp",
       "confidence": 0.55,
@@ -12167,6 +13181,15 @@
         "automation"
       ],
       "description": "AI-powered test automation: run tests, analyze failures, query results across mabl workspaces."
+    },
+    {
+      "slug": "com-medplum-mcp",
+      "name": "com.medplum/mcp",
+      "confidence": 0.55,
+      "topics": [
+        "science-health"
+      ],
+      "description": "Securely access and manage FHIR healthcare data stored in Medplum."
     },
     {
       "slug": "com-meertrack-mcp-server",
@@ -12221,6 +13244,16 @@
         "finance"
       ],
       "description": "Halal stock screening with receipts: every Sharia verdict cites its SEC filing. 5 methodologies."
+    },
+    {
+      "slug": "com-okareo-okareo",
+      "name": "com.okareo/okareo",
+      "confidence": 0.55,
+      "topics": [
+        "design-media",
+        "observability"
+      ],
+      "description": "Simulation, evaluation and monitoring for voice agents."
     },
     {
       "slug": "com-playbykey-theory-mcp",
@@ -12394,6 +13427,15 @@
       "description": "Production-grade MCP server giving Claude 27 security intelligence tools across 21 APIs — CVE lookup, EPSS scoring, CISA KEV, MITRE ATT&CK, Shodan, VirusTotal, and more."
     },
     {
+      "slug": "design-60fps-library",
+      "name": "design.60fps/library",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Real iOS interaction clips, motion breakdowns, SwiftUI to match. Paid licence required."
+    },
+    {
       "slug": "design-uproad-uproad",
       "name": "design.uproad/uproad",
       "confidence": 0.55,
@@ -12521,6 +13563,25 @@
       "description": "Query live Mac system metrics, listening ports, and Claude Code and Codex session history."
     },
     {
+      "slug": "io-chirpwireless-chirp",
+      "name": "io.chirpwireless/chirp",
+      "confidence": 0.55,
+      "topics": [
+        "automation",
+        "iot-robotics"
+      ],
+      "description": "Check, add and control the smart home sensors and automations in your own Chirp home."
+    },
+    {
+      "slug": "io-codeqr-codeqr",
+      "name": "io.codeqr/codeqr",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Create and manage CodeQR short links, QR codes, and analytics from any MCP client."
+    },
+    {
       "slug": "io-draw-mcp",
       "name": "io.draw/mcp",
       "confidence": 0.55,
@@ -12564,6 +13625,15 @@
         "design-media"
       ],
       "description": "Commission cinematic AI campaign films and image sets from IBO Studio."
+    },
+    {
+      "slug": "io-github-a1-x-tech-mcp-google-business",
+      "name": "io.github.A1-x-Tech/mcp-google-business",
+      "confidence": 0.55,
+      "topics": [
+        "observability"
+      ],
+      "description": "MCP server for Google Business Profile: locations, reviews, local posts and performance metrics."
     },
     {
       "slug": "io-github-aa-on-ai-agentic-design-system",
@@ -12684,6 +13754,15 @@
       "description": "MCP server for Producer/Riffusion AI music generation"
     },
     {
+      "slug": "io-github-acedatacloud-mcp-seedance",
+      "name": "io.github.AceDataCloud/mcp-seedance",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "MCP server for ByteDance Seedance AI video generation"
+    },
+    {
       "slug": "io-github-acedatacloud-mcp-seedream-pro",
       "name": "io.github.AceDataCloud/mcp-seedream-pro",
       "confidence": 0.55,
@@ -12747,6 +13826,15 @@
       "description": "Governed SolarWinds Orion + PRTG + Zabbix ops: SWQL, alert rollup, health, 42 tools."
     },
     {
+      "slug": "io-github-akomyagin-aimcpgate",
+      "name": "io.github.akomyagin/aimcpgate",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "MCP gateway/proxy: multiplexes tool calls across upstream MCP servers into one catalog."
+    },
+    {
       "slug": "io-github-alepha188838884-context-firewall",
       "name": "io.github.Alepha188838884/context-firewall",
       "confidence": 0.55,
@@ -12781,6 +13869,15 @@
         "visualization"
       ],
       "description": "Agent-operated web + product analytics. 79 tools + 14 prompts; answers provably match the dashboard."
+    },
+    {
+      "slug": "io-github-arslan2012-qpost-mcp",
+      "name": "io.github.arslan2012/qpost-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "MCP server for QPost — lets AI agents publish video and image posts to YouTube, TikTok, Instagram."
     },
     {
       "slug": "io-github-asfbay-bit-opchain-skills",
@@ -12835,6 +13932,15 @@
         "observability"
       ],
       "description": "Bank and lender monitoring with historical-evidence limits and eligibility flags beside every claim."
+    },
+    {
+      "slug": "io-github-beeswaxpat-chronoverify",
+      "name": "io.github.beeswaxpat/chronoverify",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Verify a photo's capture time and provenance: C2PA validation, EXIF/XMP, and pixel forensics."
     },
     {
       "slug": "io-github-berntpopp-genefoundry",
@@ -12926,6 +14032,15 @@
         "observability"
       ],
       "description": "Live flight tracking and aviation data via FlightAware AeroAPI (flights, airports, alerts)."
+    },
+    {
+      "slug": "io-github-chrischall-gemini-mcp",
+      "name": "io.github.chrischall/gemini-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Generate and edit images with Google Gemini (Nano Banana / Nano Banana Pro) image models."
     },
     {
       "slug": "io-github-chrischall-vibo-mcp",
@@ -13036,6 +14151,15 @@
       "description": "MCP server for fee recommendations and gas estimation on EVM, UTXO, XRP, Tezos, Solana"
     },
     {
+      "slug": "io-github-cryptoapis-io-mcp-x402-accept",
+      "name": "io.github.CryptoAPIs-io/mcp-x402-accept",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Self-hosted MCP proxy that puts an x402 paywall in front of an existing MCP server"
+    },
+    {
       "slug": "io-github-crytobot459-eurorwa-analyst",
       "name": "io.github.crytobot459/eurorwa-analyst",
       "confidence": 0.55,
@@ -13052,6 +14176,24 @@
         "finance"
       ],
       "description": "Agent-native TypeScript framework for building MCP servers with declarative definitions."
+    },
+    {
+      "slug": "io-github-cyanheads-openalex-mcp-server",
+      "name": "io.github.cyanheads/openalex-mcp-server",
+      "confidence": 0.55,
+      "topics": [
+        "science-health"
+      ],
+      "description": "Access the OpenAlex academic research catalog — 270M+ publications."
+    },
+    {
+      "slug": "io-github-cyanheads-openfec-mcp-server",
+      "name": "io.github.cyanheads/openfec-mcp-server",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Access FEC campaign finance data. Query data about candidates, money trails, and election filings."
     },
     {
       "slug": "io-github-damianotobasco-sync-socials-agent",
@@ -13225,6 +14367,15 @@
       "description": "Zero-addon MCP server for Godot 4: agents edit, run, and play-test the game."
     },
     {
+      "slug": "io-github-erova-vibesharing",
+      "name": "io.github.erova/vibesharing",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Deploy prototypes and collect team feedback from Claude Code, Cursor, or any MCP client."
+    },
+    {
       "slug": "io-github-evanfollis-preflight",
       "name": "io.github.evanfollis/preflight",
       "confidence": 0.55,
@@ -13268,6 +14419,15 @@
         "data-analysis"
       ],
       "description": "Bidirectional data lineage graph for Power BI (.pbix) files, from source to display"
+    },
+    {
+      "slug": "io-github-federicodeponte-openpaper-mcp",
+      "name": "io.github.federicodeponte/openpaper-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "science-health"
+      ],
+      "description": "Autonomous research engine: auto research from a prompt to a fully-cited academic paper via MCP"
     },
     {
       "slug": "io-github-flumpiey-manager-mcp",
@@ -13324,6 +14484,15 @@
       "description": "stdio bridge for the local Unity Editor MCP server from FunplayAI/funplay-unity-mcp."
     },
     {
+      "slug": "io-github-ganapativs-microcharts",
+      "name": "io.github.ganapativs/microcharts",
+      "confidence": 0.55,
+      "topics": [
+        "visualization"
+      ],
+      "description": "Find, wire, and render microcharts — word-sized React charts with generated alt text."
+    },
+    {
       "slug": "io-github-gautamvarmadatla-mcpsafetywarden",
       "name": "io.github.gautamvarmadatla/mcpsafetywarden",
       "confidence": 0.55,
@@ -13368,6 +14537,15 @@
         "observability"
       ],
       "description": "Analyze .NET solutions: Generate Mermaid graphs, ERDs, class diagrams, and project metrics."
+    },
+    {
+      "slug": "io-github-happy520ai-unified-ai-system",
+      "name": "io.github.happy520ai/unified-ai-system",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Self-hosted MCP gateway for Codex, Cursor, and Cline with provider-free prompt enhancement."
     },
     {
       "slug": "io-github-hashi-kazu-ai-test-process-mcp",
@@ -13497,6 +14675,51 @@
       "description": "A Codex stdio MCP server that generates repo-local tldraw diagrams and detects code graph drift."
     },
     {
+      "slug": "io-github-javalenciacai-mcp-reportia",
+      "name": "io.github.javalenciacai/mcp-reportia",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Reportia HTTP API as 66 curated MCP tools (accounting, mappings, SIIGO)."
+    },
+    {
+      "slug": "io-github-jkawamoto-mcp-youtube-transcript",
+      "name": "io.github.jkawamoto/mcp-youtube-transcript",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "An MCP server retrieving transcripts of YouTube videos"
+    },
+    {
+      "slug": "io-github-jmendozapuche-latam-fintech-synthetic-data",
+      "name": "io.github.jmendozapuche/latam-fintech-synthetic-data",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Privacy-safe synthetic financial data for LatAm fintech, AI agents, testing and ML."
+    },
+    {
+      "slug": "io-github-jonnybottles-patch-tuesday",
+      "name": "io.github.jonnybottles/patch-tuesday",
+      "confidence": 0.55,
+      "topics": [
+        "security"
+      ],
+      "description": "Query Microsoft Patch Tuesday security updates (MSRC) with EPSS and CISA KEV enrichment"
+    },
+    {
+      "slug": "io-github-joyall-au-cardossier-market-api",
+      "name": "io.github.Joyall-au/cardossier-market-api",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Polish used-car market data: valuations, price history, liquidity, regional prices. Keyless demo."
+    },
+    {
       "slug": "io-github-juh5ng-k-data-mcp",
       "name": "io.github.juh5ng/k-data-mcp",
       "confidence": 0.55,
@@ -13560,6 +14783,15 @@
       "description": "Submit and track stock/crypto direction predictions on LDBD's public leaderboard (ldbd.app)."
     },
     {
+      "slug": "io-github-kn0wbot-clavis",
+      "name": "io.github.KN0WBOT/clavis",
+      "confidence": 0.55,
+      "topics": [
+        "observability"
+      ],
+      "description": "Encrypted credential vault for AI agents — auto OAuth refresh, rate limiting, audit logging."
+    },
+    {
       "slug": "io-github-kyanitelabs-kinocut",
       "name": "io.github.KyaniteLabs/kinocut",
       "confidence": 0.55,
@@ -13576,15 +14808,6 @@
         "design-media"
       ],
       "description": "Official LabelGrid MCP server — manage your music catalog, releases, analytics and distribution."
-    },
-    {
-      "slug": "io-github-laf-rge-quickbooks-mcp",
-      "name": "io.github.laf-rge/quickbooks-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "MCP server for QuickBooks Online API integration"
     },
     {
       "slug": "io-github-le-vai-designesy-org",
@@ -13767,6 +14990,15 @@
         "automation"
       ],
       "description": "A digital audio workstation MCP App with sequencing, mixing, effects, automation, and rendering."
+    },
+    {
+      "slug": "io-github-marketeyeslive-market-eyes-live",
+      "name": "io.github.marketeyeslive/market-eyes-live",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Free MCP: MELANY ratings for any US stock or ETF (11,000+, on demand) plus mortgage-rate context."
     },
     {
       "slug": "io-github-matematicsolutions-at-eli-mcp",
@@ -14027,7 +15259,7 @@
       "topics": [
         "automation"
       ],
-      "description": "Explain any lockfile or workflow-pin change: bumps, vulns, ages, deprecations — 43 formats"
+      "description": "Explain any lockfile or workflow-pin change: bumps, vulns, ages, deprecations — 60 formats"
     },
     {
       "slug": "io-github-mayor-modder-cities2-mcp",
@@ -14221,6 +15453,16 @@
       "description": "MCP memory for AI trading agents. Store trades, recall similar setups, track strategy performance."
     },
     {
+      "slug": "io-github-mobabur94-hammerspoon",
+      "name": "io.github.mobabur94/hammerspoon",
+      "confidence": 0.55,
+      "topics": [
+        "design-media",
+        "automation"
+      ],
+      "description": "macOS automation via Hammerspoon — 75 tools for windows, Spaces, audio, Bluetooth, and more"
+    },
+    {
       "slug": "io-github-mobile-next-mobile-mcp",
       "name": "io.github.mobile-next/mobile-mcp",
       "confidence": 0.55,
@@ -14239,15 +15481,6 @@
       "description": "Local MCP canvas for Modellix image generation, editing, task recovery, and visual project work."
     },
     {
-      "slug": "io-github-mohitagw15856-pm-claude-skills",
-      "name": "io.github.mohitagw15856/pm-claude-skills",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "1078 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
-    },
-    {
       "slug": "io-github-moonriddim-skedra",
       "name": "io.github.moonriddim/skedra",
       "confidence": 0.55,
@@ -14255,6 +15488,24 @@
         "visualization"
       ],
       "description": "Create, read and live-edit visual boards, Kanban plans, Gantt timelines and diagrams with AI agents."
+    },
+    {
+      "slug": "io-github-mrfentmen-adobe-premiere-mcp",
+      "name": "io.github.mrfentmen/adobe-premiere-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Control Adobe Premiere Pro video editing via ExtendScript."
+    },
+    {
+      "slug": "io-github-mrfentmen-gimp-mcp",
+      "name": "io.github.mrfentmen/gimp-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Control GIMP image editing via Python-Fu scripting from AI agents."
     },
     {
       "slug": "io-github-mtcontext-mtcontext",
@@ -14273,24 +15524,6 @@
         "design-media"
       ],
       "description": "Render LDraw/LEGO models to images with real part geometry via headless Blender + ImportLDraw"
-    },
-    {
-      "slug": "io-github-musyta-labs-mcpcut",
-      "name": "io.github.musyta-labs/mcpcut",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "A real timeline video editor for AI agents: journaled edits, FFmpeg/MLT rendering, exports"
-    },
-    {
-      "slug": "io-github-mutonby-openshorts",
-      "name": "io.github.mutonby/openshorts",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Turn long videos into viral vertical shorts and publish them to TikTok, Instagram and YouTube."
     },
     {
       "slug": "io-github-nagarjunr-sparkplug-b",
@@ -14319,6 +15552,15 @@
         "visualization"
       ],
       "description": "Last.fm MCP server: scrobbles, charts, artist/album/track info and more"
+    },
+    {
+      "slug": "io-github-nitmi-blea",
+      "name": "io.github.Nitmi/blea",
+      "confidence": 0.55,
+      "topics": [
+        "automation"
+      ],
+      "description": "Safe BLE diagnostics, evidence workflows, and guarded automation for AI agents."
     },
     {
       "slug": "io-github-nodeflare-app-nodeflare-mcp",
@@ -14448,13 +15690,31 @@
       "description": "Read-only MCP server for the Monzo banking API: OAuth, local transaction cache, spending analysis."
     },
     {
-      "slug": "io-github-partymola-ticktick-mcp",
-      "name": "io.github.partymola/ticktick-mcp",
+      "slug": "io-github-phdwight-pse-edge-mcp",
+      "name": "io.github.phdwight/pse-edge-mcp",
       "confidence": 0.55,
       "topics": [
-        "automation"
+        "finance"
       ],
-      "description": "MCP server for TickTick task management: field-preserving updates and completion tracking."
+      "description": "Philippine Stock Exchange data via PSE Edge: EOD quotes, price history, disclosures, financials."
+    },
+    {
+      "slug": "io-github-philipad-health-export-mcp",
+      "name": "io.github.PhilipAD/health-export-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "observability"
+      ],
+      "description": "Query 190 Apple Health metrics from any MCP agent — zero-dependency, read-only, local-first."
+    },
+    {
+      "slug": "io-github-pipeworx-io-banking-regulations",
+      "name": "io.github.pipeworx-io/banking-regulations",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Banking Regulations MCP — US banking & consumer-finance rules (12 CFR)."
     },
     {
       "slug": "io-github-pipeworx-io-energy-charts",
@@ -14556,6 +15816,15 @@
       "description": "MCP server for Unity: 130+ tools, Unity 6 skills, AI/ML discovery. No Editor."
     },
     {
+      "slug": "io-github-raportagent-raportagent-mcp",
+      "name": "io.github.raportagent/raportagent-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "legal"
+      ],
+      "description": "Sourced market and compliance research for Claude Desktop, Claude Code and Cursor."
+    },
+    {
       "slug": "io-github-redhatinsights-insights-mcp",
       "name": "io.github.RedHatInsights/insights-mcp",
       "confidence": 0.55,
@@ -14635,6 +15904,15 @@
         "design-media"
       ],
       "description": "Producer AI Music is a free AI music generator. Describe a song or paste lyrics, get a full track"
+    },
+    {
+      "slug": "io-github-rodrgds-openpost",
+      "name": "io.github.rodrgds/openpost",
+      "confidence": 0.55,
+      "topics": [
+        "automation"
+      ],
+      "description": "Manage social publishing workflows through OpenPost"
     },
     {
       "slug": "io-github-rogermsc-rendercheck",
@@ -14772,15 +16050,6 @@
       "description": "Snapshot tests and CI for agent workflows: record a run, replay it at 0 tokens, diff for drift."
     },
     {
-      "slug": "io-github-sergii-ziborov-weavatrix-online",
-      "name": "io.github.sergii-ziborov/weavatrix-online",
-      "confidence": 0.55,
-      "topics": [
-        "security"
-      ],
-      "description": "Source-free Weavatrix MCP: preview-gated sync, advisories, malware review, architecture contracts."
-    },
-    {
       "slug": "io-github-shawnwollenberg-walletlens",
       "name": "io.github.shawnwollenberg/walletlens",
       "confidence": 0.55,
@@ -14806,6 +16075,15 @@
         "design-media"
       ],
       "description": "AI image generation and editing with prompt optimization and quality presets"
+    },
+    {
+      "slug": "io-github-sidneybissoli-medical-terminologies-mcp",
+      "name": "io.github.SidneyBissoli/medical-terminologies-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "science-health"
+      ],
+      "description": "Diagnoses, drugs & lab codes: ICD-11, SNOMED, LOINC, RxNorm, MeSH, ATC, CID-10. 37 tools, MIT."
     },
     {
       "slug": "io-github-signaledi-mcp-server",
@@ -14859,7 +16137,7 @@
       "topics": [
         "automation"
       ],
-      "description": "Test mobile and TV apps through MCP on iOS simulators, physical Apple devices, Android phones, an..."
+      "description": "MCP tools for testing mobile and TV apps on iOS simulators, Android phones, and Apple/Android TV."
     },
     {
       "slug": "io-github-snapsynapse-ai-incident-law",
@@ -14905,6 +16183,15 @@
         "automation"
       ],
       "description": "Dynamic context loading for AI assistants with TDD workflow and AST analysis"
+    },
+    {
+      "slug": "io-github-taux-io-twse-mcp",
+      "name": "io.github.taux-io/twse-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Taiwan Stock Exchange (TWSE) open data as MCP tools: stock quotes, ETF data, 140+ public datasets."
     },
     {
       "slug": "io-github-thestreamcode-chutes-media-mcp",
@@ -14959,6 +16246,15 @@
         "design-media"
       ],
       "description": "Design KiCad schematics by talking to Claude. Places parts, wires nets, runs ERC. Needs KiCad 10."
+    },
+    {
+      "slug": "io-github-uxloom-dev-uxloom",
+      "name": "io.github.uxloom-dev/uxloom",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Agent-native UI/UX design validation: journey completeness, state coverage, and WCAG checks."
     },
     {
       "slug": "io-github-vicseeai-vicsee-mcp-server",
@@ -15032,6 +16328,15 @@
         "finance"
       ],
       "description": "MCP server for Webull OpenAPI: trading and market data access for AI assistants"
+    },
+    {
+      "slug": "io-github-wesseltl-crypto-price-mcp",
+      "name": "io.github.wesseltl/crypto-price-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Live crypto prices and candles for AI agents (200+ coins). Data only, no trading advice."
     },
     {
       "slug": "io-github-wi9ine-toss-invest",
@@ -15214,6 +16519,15 @@
       "description": "NovelAI image generation as MCP tools: txt2img, img2img, inpaint, upscale, Director, ControlNet."
     },
     {
+      "slug": "io-github-xxxoooxoxo-wiff",
+      "name": "io.github.xxxoooxoxo/wiff",
+      "confidence": 0.55,
+      "topics": [
+        "automation"
+      ],
+      "description": "Deterministic, resumable multi-agent workflows across Codex, Claude, Cursor, and Kimi."
+    },
+    {
       "slug": "io-github-xzxzzx-ai-bilibili-mcp",
       "name": "io.github.XZXZZX-Ai/bilibili-mcp",
       "confidence": 0.55,
@@ -15302,6 +16616,15 @@
         "finance"
       ],
       "description": "Query financial index data, run backtests, and deploy systematic investment strategies on Index One."
+    },
+    {
+      "slug": "io-kiloiot-kilo",
+      "name": "io.kiloiot/kilo",
+      "confidence": 0.55,
+      "topics": [
+        "iot-robotics"
+      ],
+      "description": "The IoT platform where AI controls real-world devices: read, provision, automate and command."
     },
     {
       "slug": "io-onesource-mcp",
