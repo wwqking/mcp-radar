@@ -708,7 +708,8 @@ const GUIDES_EN_BASE: Record<string, GuideContent> = {
 };
 
 /** 关键词验证后的内容批次覆盖旧短文，并注册新指南。 */
-export const GUIDES_EN: Record<string, GuideContent> = {
-  ...GUIDES_EN_BASE,
-  ...GUIDE_BATCH_2026_08_12_EN,
-};
+export const GUIDES_EN: Record<string, GuideContent> = Object.assign(
+  {},
+  GUIDES_EN_BASE,
+  GUIDE_BATCH_2026_08_12_EN,
+);
