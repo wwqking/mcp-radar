@@ -48,7 +48,7 @@ export default async function PillarPage({ params }: Props) {
     headline: c.title,
     description: c.excerpt,
     datePublished: "2026-07-01",
-    dateModified: "2026-07-28",
+    dateModified: c.lastVerified ?? "2026-07-28",
     url: absoluteUrl(`/${locale}/what-is-mcp-server`),
     image: absoluteUrl(`/${locale}/opengraph-image`),
     author: { "@id": ORGANIZATION_ID },
@@ -66,7 +66,7 @@ export default async function PillarPage({ params }: Props) {
   const tocLabel = locale === "zh" ? "目录" : "On this page";
 
   return (
-    <div className="container-site max-w-3xl py-10 sm:py-14">
+    <div className="container-site max-w-4xl py-10 sm:py-14">
       <JsonLd data={[articleSchema, crumb, faq]} />
 
       <nav className="mb-4 text-sm text-neutral-400">
@@ -88,7 +88,58 @@ export default async function PillarPage({ params }: Props) {
             </p>
           ))}
         </div>
+        {c.lastVerified && (
+          <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
+            MCP Radar Editorial · {locale === "zh" ? "事实核验" : "Facts verified"}: {c.lastVerified}
+            {c.refreshDue ? ` · ${locale === "zh" ? "下次复核" : "Refresh due"}: ${c.refreshDue}` : ""}
+          </p>
+        )}
       </header>
+
+      {c.directAnswer && (
+        <section className="mb-8 rounded-2xl border border-brand-200 bg-brand-50/70 p-5 dark:border-brand-900 dark:bg-brand-950/30 sm:p-6">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand-700 dark:text-brand-300">
+            {locale === "zh" ? "直接答案" : "Direct answer"}
+          </p>
+          <p className="mt-2 text-base font-medium leading-7 text-neutral-800 dark:text-neutral-200">{c.directAnswer}</p>
+        </section>
+      )}
+
+      {c.visual && (
+        <figure className="mb-8 rounded-2xl border border-neutral-200 bg-neutral-50 p-5 dark:border-neutral-800 dark:bg-neutral-900/60 sm:p-6">
+          <h2 className="text-base font-bold text-neutral-900 dark:text-neutral-100">{c.visual.title}</h2>
+          <div className="mt-4 grid gap-3 md:grid-cols-4">
+            {c.visual.items.map((item, index) => (
+              <div key={item.label} className="rounded-xl border border-neutral-200 bg-white p-4 dark:border-neutral-700 dark:bg-neutral-950">
+                <span className="text-xs font-semibold text-brand-600 dark:text-brand-400">{index + 1}</span>
+                <p className="mt-1 font-semibold text-neutral-900 dark:text-neutral-100">{item.label}</p>
+                <p className="mt-1 text-xs leading-5 text-neutral-500 dark:text-neutral-400">{item.description}</p>
+              </div>
+            ))}
+          </div>
+          <figcaption className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">{c.visual.caption}</figcaption>
+        </figure>
+      )}
+
+      {c.comparison && (
+        <figure className="mb-8">
+          <div className="overflow-x-auto rounded-xl border border-neutral-200 dark:border-neutral-800">
+            <table className="w-full min-w-[640px] text-left text-sm">
+              <thead className="bg-neutral-50 text-xs uppercase tracking-wider text-neutral-500 dark:bg-neutral-900 dark:text-neutral-400">
+                <tr>{c.comparison.headers.map((header) => <th key={header} className="px-4 py-3 font-semibold">{header}</th>)}</tr>
+              </thead>
+              <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800">
+                {c.comparison.rows.map((row, rowIndex) => (
+                  <tr key={rowIndex}>{row.map((cell, cellIndex) => (
+                    <td key={cellIndex} className={`px-4 py-3 align-top leading-6 text-neutral-600 dark:text-neutral-300 ${cellIndex === 0 ? "font-semibold text-neutral-900 dark:text-neutral-100" : ""}`}>{cell}</td>
+                  ))}</tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <figcaption className="mt-2 text-xs text-neutral-500 dark:text-neutral-400">{c.comparison.caption}</figcaption>
+        </figure>
+      )}
 
       {/* 目录 */}
       <div className="card mb-8 p-5">
@@ -140,8 +191,8 @@ export default async function PillarPage({ params }: Props) {
         </h2>
         <p className="mb-4 text-sm text-neutral-500 dark:text-neutral-400">
           {locale === "zh"
-            ? "按工具查看接入方式、可用能力和配置——每个都是能用的真实 server。"
-            : "Browse setup, capabilities, and config by tool — each is a real, usable server."}
+            ? "按工具查看接入方式、能力与证据；实际可用性仍需在你的客户端和账号中验证。"
+            : "Browse setup, capabilities, and evidence by tool; verify actual usability in your client and account."}
         </p>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
           {SEO_LANDINGS.map((l) => {
@@ -159,6 +210,22 @@ export default async function PillarPage({ params }: Props) {
         </div>
       </section>
 
+      {c.sources && c.sources.length > 0 && (
+        <section className="mt-12">
+          <h2 className="mb-3 text-lg font-bold text-neutral-900 dark:text-neutral-100">
+            {locale === "zh" ? "来源" : "Sources"}
+          </h2>
+          <ol className="space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
+            {c.sources.map((source) => (
+              <li key={source.url}>
+                <a href={source.url} target="_blank" rel="noreferrer" className="link-accent">{source.label}</a>
+                <span className="text-neutral-400"> · {locale === "zh" ? "访问" : "retrieved"} {source.retrievedAt}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+
       {/* 本地装 vs 远程连 —— 支柱页是全站权重最高的内链源，remote 落地页要从这里拿一条 */}
       <section className="mt-12">
         <h2 className="mb-2 text-lg font-bold text-neutral-900 dark:text-neutral-100">
@@ -166,8 +233,8 @@ export default async function PillarPage({ params }: Props) {
         </h2>
         <p className="mb-4 text-sm text-neutral-500 dark:text-neutral-400">
           {locale === "zh"
-            ? "有些 server 作者已经跑在自己服务器上，给一个 URL 就能连，不用 npx / pip 装任何东西。"
-            : "Some servers are already hosted by their authors — you paste a URL instead of installing anything with npx or pip."}
+            ? "远程 server 通过 URL 连接，不用在本机安装包；连接前仍需核验运营方、认证方式与数据边界。"
+            : "Remote servers connect by URL without a local package; verify the operator, authentication, and data boundary first."}
         </p>
         <Link href={localizedHref(locale, "/remote-mcp-servers")} className="link-accent">
           {locale === "zh" ? "查看所有 Remote MCP Servers" : "Browse all remote MCP servers"} →

@@ -36,10 +36,10 @@
     "lastUpdated": "数据每日更新，最后更新于 {date}"
   },
   "home": {
-    "heroTitleA": "找到能用的 MCP server ——",
+    "heroTitleA": "找到有证据的 MCP server ——",
     "heroTitleB": "按用途分类，",
-    "heroTitleHighlight": "标注哪个还活着",
-    "heroSub": "收录 {total} 个 MCP server，每个都标了维护状态：🟢 活跃 / 🟡 半年没更新 / ⚰️ 已弃坑。",
+    "heroTitleHighlight": "核对维护状态",
+    "heroSub": "收录 {total} 条 MCP server 记录，并标注生命周期、来源、采用度与可运行入口证据。",
     "statTotal": "收录 {n} 个",
     "categoriesTitle": "浏览所有主分类",
     "categoriesSub": "主分类保持稳定；增长中的细分领域放在主题中。",
@@ -59,7 +59,7 @@
     "whyBody": "每个 server 的健康数据由引擎每日自动计算：最近提交、issue 响应、下载趋势、仓库是否 archived。评分方法论完全公开，排名绝不出售。",
     "whyLink": "看看我们怎么打分 →",
     "intentTitle": "我想让 AI……",
-    "intentSub": "按你想解决的事，直达能用的 server",
+    "intentSub": "按任务找到候选项，再逐条核对证据",
     "intents": [
       {
         "icon": "🗄️",

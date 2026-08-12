@@ -8,6 +8,9 @@ import { taxonomyForServer } from "@/lib/taxonomy";
 
 type Sort = "score" | "updated" | "stars";
 type Filter = "all" | "active";
+type RemoteTransportFilter = "all" | "streamable-http" | "sse";
+type RemoteSourceFilter = "all" | "official" | "community";
+type RemoteAuthFilter = "all" | "key" | "unknown";
 const PAGE_SIZE = 48;
 
 interface FilterLabels {
@@ -37,15 +40,22 @@ interface Props {
   labels: FilterLabels;
   anchor: string; // 已在服务端拼好的“本类共 N 个…”整句
   topicOptions?: TopicFilterOption[];
+  remoteMode?: boolean;
 }
 
 /** 分类页：lifecycle 筛选 + 排序 */
-export default function CategoryList({ servers, locale, labels, anchor, topicOptions = [] }: Props) {
+export default function CategoryList({ servers, locale, labels, anchor, topicOptions = [], remoteMode = false }: Props) {
   const [sort, setSort] = useState<Sort>("score");
   const [filter, setFilter] = useState<Filter>("all");
   const [topic, setTopic] = useState("all");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [remoteTransport, setRemoteTransport] = useState<RemoteTransportFilter>("all");
+  const [remoteSource, setRemoteSource] = useState<RemoteSourceFilter>("all");
+  const [remoteAuth, setRemoteAuth] = useState<RemoteAuthFilter>("all");
   const topicSelectId = useId();
+  const transportSelectId = useId();
+  const sourceSelectId = useId();
+  const authSelectId = useId();
 
   useEffect(() => {
     const initial = new URLSearchParams(window.location.search).get("topic");
@@ -65,6 +75,15 @@ export default function CategoryList({ servers, locale, labels, anchor, topicOpt
     if (topic !== "all") {
       l = l.filter((server) => taxonomyForServer(server).topics.includes(topic));
     }
+    if (remoteMode && remoteTransport !== "all") {
+      l = l.filter((server) => server.remoteEndpoints?.some((endpoint) => endpoint.type === remoteTransport));
+    }
+    if (remoteMode && remoteSource !== "all") {
+      l = l.filter((server) => remoteSource === "official" ? server.signals.inOfficialRegistry : !server.signals.inOfficialRegistry);
+    }
+    if (remoteMode && remoteAuth !== "all") {
+      l = l.filter((server) => remoteAuth === "key" ? server.readmeFacts?.needsApiKey === true : server.readmeFacts?.needsApiKey !== true);
+    }
     l.sort((a, b) => {
       const rank = (s: MCPServer) => (s.lifecycle === "dead" || s.lifecycle === "unverifiable" ? 1 : 0);
       if (rank(a) !== rank(b)) return rank(a) - rank(b);
@@ -73,12 +92,12 @@ export default function CategoryList({ servers, locale, labels, anchor, topicOpt
       return (a.signals.lastCommitDaysAgo ?? 9999) - (b.signals.lastCommitDaysAgo ?? 9999);
     });
     return l;
-  }, [servers, sort, filter, topic]);
+  }, [servers, sort, filter, topic, remoteMode, remoteTransport, remoteSource, remoteAuth]);
   const visibleList = list.slice(0, visibleCount);
 
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [sort, filter, topic]);
+  }, [sort, filter, topic, remoteTransport, remoteSource, remoteAuth]);
 
   return (
     <div>
@@ -129,6 +148,28 @@ export default function CategoryList({ servers, locale, labels, anchor, topicOpt
             </select>
           </div>
         )}
+        {remoteMode && (
+          <>
+            <label htmlFor={transportSelectId} className="sr-only">{locale === "zh" ? "传输" : "Transport"}</label>
+            <select id={transportSelectId} value={remoteTransport} onChange={(event) => setRemoteTransport(event.target.value as RemoteTransportFilter)} className="min-h-11 rounded-lg border border-neutral-200 bg-white px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900">
+              <option value="all">{locale === "zh" ? "全部传输" : "All transports"}</option>
+              <option value="streamable-http">Streamable HTTP</option>
+              <option value="sse">SSE</option>
+            </select>
+            <label htmlFor={sourceSelectId} className="sr-only">{locale === "zh" ? "来源" : "Source"}</label>
+            <select id={sourceSelectId} value={remoteSource} onChange={(event) => setRemoteSource(event.target.value as RemoteSourceFilter)} className="min-h-11 rounded-lg border border-neutral-200 bg-white px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900">
+              <option value="all">{locale === "zh" ? "全部来源" : "All sources"}</option>
+              <option value="official">{locale === "zh" ? "官方 registry" : "Official registry"}</option>
+              <option value="community">{locale === "zh" ? "社区元数据" : "Community metadata"}</option>
+            </select>
+            <label htmlFor={authSelectId} className="sr-only">{locale === "zh" ? "认证证据" : "Auth evidence"}</label>
+            <select id={authSelectId} value={remoteAuth} onChange={(event) => setRemoteAuth(event.target.value as RemoteAuthFilter)} className="min-h-11 rounded-lg border border-neutral-200 bg-white px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900">
+              <option value="all">{locale === "zh" ? "全部认证状态" : "All auth evidence"}</option>
+              <option value="key">{locale === "zh" ? "README 提及密钥" : "Key indicated"}</option>
+              <option value="unknown">{locale === "zh" ? "未核实" : "Not verified"}</option>
+            </select>
+          </>
+        )}
         <div className="flex items-center gap-1.5 text-sm text-neutral-500 dark:text-neutral-400">
           {labels.sortBy}
           {(
@@ -167,7 +208,7 @@ export default function CategoryList({ servers, locale, labels, anchor, topicOpt
 
       <div className="grid gap-4 sm:grid-cols-2">
         {visibleList.map((s) => (
-          <ServerCard key={s.slug} server={s} locale={locale} />
+          <ServerCard key={s.slug} server={s} locale={locale} showRemoteEvidence={remoteMode} />
         ))}
       </div>
 

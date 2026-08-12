@@ -6,6 +6,7 @@
 // 内链集中放在 relatedServers / relatedCategories，由页面渲染成卡片区，正文保持纯文本可翻译。
 
 import type { Locale } from "./i18n/locales";
+import { PILLAR_WHAT_IS_MCP_EN_2026 } from "./pillar-what-is-mcp.2026.en";
 
 export interface PillarSection {
   heading: string;
@@ -17,12 +18,18 @@ export interface PillarFaq {
   a: string;
 }
 
-interface PillarContent {
+export interface PillarContent {
   title: string;
   excerpt: string;
   intro: string[];
+  directAnswer?: string;
+  lastVerified?: string;
+  refreshDue?: string;
+  comparison?: { caption: string; headers: string[]; rows: string[][] };
+  visual?: { title: string; caption: string; items: { label: string; description: string }[] };
   sections: PillarSection[];
   faq: PillarFaq[];
+  sources?: { label: string; url: string; retrievedAt: string }[];
 }
 
 /** 内链到详情页的高信任 server（slug 语言无关，展示名从数据取，这里只存 slug + 一句话）。 */
@@ -201,7 +208,7 @@ const EN: PillarContent = {
   ],
 };
 
-const CONTENT: Record<Locale, PillarContent> = { zh: ZH, en: EN };
+const CONTENT: Record<Locale, PillarContent> = { zh: ZH, en: PILLAR_WHAT_IS_MCP_EN_2026 };
 
 export function getPillarContent(locale: Locale): PillarContent {
   return CONTENT[locale] ?? CONTENT.en;
