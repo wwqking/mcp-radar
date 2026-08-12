@@ -1,7 +1,8 @@
 // 指南英文内容。缺某篇时，accessor 会回退中文（见 guides.ts）。
 import type { GuideContent } from "./guides";
+import { GUIDE_BATCH_2026_08_12_EN } from "./guides.batch-2026-08-12.en";
 
-export const GUIDES_EN: Record<string, GuideContent> = {
+const GUIDES_EN_BASE: Record<string, GuideContent> = {
   "claude-code-mcp-config": {
     title: "How to Configure MCP Servers in Claude Code",
     excerpt:
@@ -704,4 +705,10 @@ export const GUIDES_EN: Record<string, GuideContent> = {
       },
     ],
   },
+};
+
+/** 关键词验证后的内容批次覆盖旧短文，并注册新指南。 */
+export const GUIDES_EN: Record<string, GuideContent> = {
+  ...GUIDES_EN_BASE,
+  ...GUIDE_BATCH_2026_08_12_EN,
 };

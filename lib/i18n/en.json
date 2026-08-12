@@ -36,10 +36,10 @@
     "lastUpdated": "Updated daily · last updated {date}"
   },
   "home": {
-    "heroTitleA": "Find MCP servers that work —",
+    "heroTitleA": "Find MCP servers with evidence —",
     "heroTitleB": "sorted by use case, ",
-    "heroTitleHighlight": "flagged by what's still alive",
-    "heroSub": "{total} MCP servers indexed, each flagged by maintenance status: 🟢 active / 🟡 stale / ⚰️ abandoned.",
+    "heroTitleHighlight": "checked for maintenance",
+    "heroSub": "{total} MCP server records indexed with lifecycle, source, adoption, and runnable-entry evidence.",
     "statTotal": "{n} indexed",
     "categoriesTitle": "Browse all primary categories",
     "categoriesSub": "Primary categories stay stable; growing niches live under topics.",
@@ -59,7 +59,7 @@
     "whyBody": "Each server's health is computed daily by the engine: recent commits, issue response, download trend, whether the repo is archived. The scoring methodology is fully public and rankings are never for sale.",
     "whyLink": "See how we score →",
     "intentTitle": "I want my AI to…",
-    "intentSub": "Jump straight to servers that work, by what you want to solve",
+    "intentSub": "Jump to candidates by the job you need, then inspect the evidence",
     "intents": [
       {
         "icon": "🗄️",

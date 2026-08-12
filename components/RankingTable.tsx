@@ -6,6 +6,7 @@ import { localizedHref } from "@/lib/i18n/href";
 interface Props {
   list: BestOfList;
   locale: Locale;
+  client?: string;
   strings: {
     rank: string;
     server: string;
@@ -19,7 +20,7 @@ interface Props {
 /** best-of 指南里的数据榜单。由 data/servers.json 实时生成，不是手写排名。
  *  排序口径写在表下方——「凭什么是这个顺序」必须页面上能回答，
  *  否则和竞品那些手写榜单没有区别。 */
-export default function RankingTable({ list, locale, strings }: Props) {
+export default function RankingTable({ list, locale, client, strings }: Props) {
   if (!list.entries.length) return null;
 
   return (
@@ -36,7 +37,11 @@ export default function RankingTable({ list, locale, strings }: Props) {
             </tr>
           </thead>
           <tbody>
-            {list.entries.map(({ rank, server }) => (
+            {list.entries.map(({ rank, server }) => {
+              const targetCompat = client
+                ? server.clientCompat?.find((compat) => compat.client === client)
+                : undefined;
+              return (
               <tr
                 key={server.slug}
                 className="border-b border-neutral-100 last:border-0 dark:border-neutral-900"
@@ -60,12 +65,15 @@ export default function RankingTable({ list, locale, strings }: Props) {
                   {(server.signals?.stars ?? 0).toLocaleString()}
                 </td>
                 <td className="py-2.5 text-xs text-neutral-500 dark:text-neutral-400">
-                  {server.clientCompat?.length
-                    ? `${server.clientCompat.length}${server.installVerified ? " ✓" : ""}`
+                  {client
+                    ? targetCompat ? `${client} · ${targetCompat.basis}` : "—"
+                    : server.clientCompat?.length
+                      ? `${server.clientCompat.length}${server.installVerified ? " ✓" : ""}`
                     : "—"}
                 </td>
               </tr>
-            ))}
+              );
+            })}
           </tbody>
         </table>
       </div>

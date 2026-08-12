@@ -9,13 +9,41 @@ import { GUIDES_EN } from "./guides.en";
 export interface GuideSection {
   heading: string;
   body: string[];
+  bullets?: string[];
+  codeBlocks?: { label: string; code: string; language?: string }[];
+}
+
+export interface GuideTable {
+  caption: string;
+  headers: string[];
+  rows: string[][];
+}
+
+export interface GuideVisual {
+  title: string;
+  caption: string;
+  items: { label: string; description: string }[];
+}
+
+export interface GuideSource {
+  label: string;
+  url: string;
+  retrievedAt: string;
 }
 
 /** 单篇指南的可翻译内容（按 locale 存）。 */
 export interface GuideContent {
   title: string;
   excerpt: string;
+  directAnswer?: string;
+  keyFacts?: { label: string; value: string; note?: string }[];
+  comparison?: GuideTable;
+  visual?: GuideVisual;
   sections: GuideSection[];
+  methodology?: string[];
+  faq?: { question: string; answer: string }[];
+  relatedLinks?: { href: string; label: string; note: string }[];
+  sources?: GuideSource[];
 }
 
 /** 语言无关的结构信息。 */
@@ -26,6 +54,9 @@ interface GuideMeta {
   icon: string;
   publishedAt: string;
   modifiedAt: string;
+  lastVerified?: string;
+  refreshDue?: string;
+  editorialOwner?: string;
   readingMinutes: number;
   /** best-of 类指南的榜单参数。有这个字段时，页面会在正文里插一张
    *  由 data/servers.json 实时生成的榜单表——榜单不写死在文案里，
@@ -37,6 +68,9 @@ interface GuideMeta {
     exclude?: string[];
     /** 跨品类宽榜要打开，挡掉 star 数挂错的条目。 */
     requireOfficialRegistry?: boolean;
+    /** 客户端专题榜只纳入明确声明该客户端兼容性的条目。 */
+    client?: string;
+    limit?: number;
     /** 插在第几个 section 之后（0 = 全部正文之前）。 */
     afterSection: number;
   };
@@ -51,10 +85,10 @@ export interface Guide extends GuideMeta, GuideContent {
 // 结构注册表：新增指南在这里加一条，再到 guides.zh.ts / guides.en.ts 补内容。
 const GUIDE_META: GuideMeta[] = [
   // SEO 承接文（全文免费）：教程词 / 对比词落地，喂搜索流量。
-  { slug: "claude-code-mcp-config", tier: "free", icon: "🛠️", publishedAt: "2026-07-23", modifiedAt: "2026-07-28", readingMinutes: 1 },
-  { slug: "mcp-proxy-vs-gateway", tier: "free", icon: "🔀", publishedAt: "2026-07-23", modifiedAt: "2026-07-28", readingMinutes: 1 },
+  { slug: "claude-code-mcp-config", tier: "free", icon: "🛠️", publishedAt: "2026-07-23", modifiedAt: "2026-08-12", lastVerified: "2026-08-12", refreshDue: "2026-11-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 9 },
+  { slug: "mcp-proxy-vs-gateway", tier: "free", icon: "🔀", publishedAt: "2026-07-23", modifiedAt: "2026-08-12", lastVerified: "2026-08-12", refreshDue: "2026-11-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 7 },
   { slug: "choosing-mcp-server", tier: "free", icon: "📋", publishedAt: "2026-07-14", modifiedAt: "2026-07-28", readingMinutes: 2 },
-  { slug: "mcp-security-red-lines", tier: "free", icon: "🚨", publishedAt: "2026-07-07", modifiedAt: "2026-07-28", readingMinutes: 3 },
+  { slug: "mcp-security-red-lines", tier: "free", icon: "🚨", publishedAt: "2026-07-07", modifiedAt: "2026-08-12", lastVerified: "2026-08-12", refreshDue: "2026-09-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 10 },
   { slug: "self-host-vs-remote", tier: "free", icon: "⚖️", publishedAt: "2026-06-30", modifiedAt: "2026-07-28", readingMinutes: 2 },
   { slug: "mcp-production-checklist", tier: "free", icon: "🚀", publishedAt: "2026-06-22", modifiedAt: "2026-07-28", readingMinutes: 1 },
   // best-of：榜单由数据生成（见 ranking 字段），正文只写「怎么选」和「怎么读这张表」。
@@ -73,17 +107,17 @@ const GUIDE_META: GuideMeta[] = [
   },
   // 甜蜜区内容页（KD<=30 且有量）。词源见
   // research/mcpradars/seo/run-2026-07-29/CONTENT-PAGE-PLAN.csv
-  { slug: "cursor-mcp-spawn-npx-enoent", tier: "free", icon: "🩺", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
+  { slug: "cursor-mcp-spawn-npx-enoent", tier: "free", icon: "🩺", publishedAt: "2026-07-30", modifiedAt: "2026-08-12", lastVerified: "2026-08-12", refreshDue: "2026-09-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 8 },
   { slug: "claude-mcp-list-command", tier: "free", icon: "📟", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
   { slug: "youtube-transcript-for-claude", tier: "free", icon: "🎬", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
   { slug: "mcp-remote", tier: "free", icon: "🌉", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
   { slug: "can-claude-generate-images", tier: "free", icon: "🖼️", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
   // 概念对比页（concept_compare 簇）。词源 CONTENT-PAGE-PLAN.csv。
   // mcp-proxy-vs-gateway 已有指南覆盖，不重复建。
-  { slug: "rag-vs-mcp", tier: "free", icon: "🔍", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
-  { slug: "a2a-vs-mcp", tier: "free", icon: "🔗", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
-  { slug: "mcp-vs-cli", tier: "free", icon: "⌨️", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
-  { slug: "mcp-error-32001-timeout", tier: "free", icon: "⏱️", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 3 },
+  { slug: "rag-vs-mcp", tier: "free", icon: "🔍", publishedAt: "2026-07-30", modifiedAt: "2026-08-12", lastVerified: "2026-08-12", refreshDue: "2026-11-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 8 },
+  { slug: "a2a-vs-mcp", tier: "free", icon: "🔗", publishedAt: "2026-07-30", modifiedAt: "2026-08-12", lastVerified: "2026-08-12", refreshDue: "2026-11-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 8 },
+  { slug: "mcp-vs-cli", tier: "free", icon: "⌨️", publishedAt: "2026-07-30", modifiedAt: "2026-08-12", lastVerified: "2026-08-12", refreshDue: "2026-11-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 7 },
+  { slug: "mcp-error-32001-timeout", tier: "free", icon: "⏱️", publishedAt: "2026-07-30", modifiedAt: "2026-08-12", lastVerified: "2026-08-12", refreshDue: "2026-09-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 8 },
   { slug: "mcp-server-hosting", tier: "free", icon: "☁️", publishedAt: "2026-07-30", modifiedAt: "2026-07-30", readingMinutes: 4 },
   {
     slug: "awesome-mcp-servers",
@@ -101,6 +135,45 @@ const GUIDE_META: GuideMeta[] = [
       afterSection: 1,
     },
   },
+  // 2026-08-12 关键词验证批次：新建 4 个英文内容页。
+  {
+    slug: "mcp-resources-vs-tools",
+    tier: "free", icon: "🧩",
+    publishedAt: "2026-08-12", modifiedAt: "2026-08-12", lastVerified: "2026-08-12",
+    refreshDue: "2027-02-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 8,
+  },
+  {
+    slug: "best-mcp-servers-for-claude-code",
+    tier: "free", icon: "🤖",
+    publishedAt: "2026-08-12", modifiedAt: "2026-08-12", lastVerified: "2026-08-12",
+    refreshDue: "2026-09-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 9,
+    ranking: {
+      categories: ["dev", "files", "browser", "database", "comms"],
+      starsFloor: 500,
+      client: "claude-code",
+      limit: 10,
+      afterSection: 1,
+    },
+  },
+  {
+    slug: "best-mcp-servers-for-cursor",
+    tier: "free", icon: "🖱️",
+    publishedAt: "2026-08-12", modifiedAt: "2026-08-12", lastVerified: "2026-08-12",
+    refreshDue: "2026-09-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 9,
+    ranking: {
+      categories: ["dev", "files", "browser", "database", "comms"],
+      starsFloor: 500,
+      client: "cursor",
+      limit: 10,
+      afterSection: 1,
+    },
+  },
+  {
+    slug: "mcp-vs-function-calling",
+    tier: "free", icon: "🧱",
+    publishedAt: "2026-08-12", modifiedAt: "2026-08-12", lastVerified: "2026-08-12",
+    refreshDue: "2027-02-12", editorialOwner: "MCP Radar Editorial", readingMinutes: 7,
+  },
 ];
 
 function contentFor(slug: string, locale: Locale): { content: GuideContent; translated: boolean } {
@@ -110,7 +183,9 @@ function contentFor(slug: string, locale: Locale): { content: GuideContent; tran
     if (en) return { content: en, translated: true };
     return { content: zh, translated: false }; // 缺英文 → 回退中文
   }
-  return { content: zh, translated: true };
+  if (zh) return { content: zh, translated: true };
+  const en = GUIDES_EN[slug];
+  return { content: en, translated: false }; // 新英文指南缺中文 → 回退英文
 }
 
 function assemble(meta: GuideMeta, locale: Locale): Guide {

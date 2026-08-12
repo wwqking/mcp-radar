@@ -25,6 +25,14 @@ export interface BestOfList {
   starsFloor: number;
 }
 
+interface BestOfOptions {
+  starsFloor?: number;
+  limit?: number;
+  exclude?: string[];
+  requireOfficialRegistry?: boolean;
+  client?: string;
+}
+
 /** 同一个仓库可能在 registry 里有多条（不同发布者/命名空间）。
  *  榜单上出现两行同一个东西会直接毁掉可信度，所以按 repo 去重，保留 trust 高的那条。 */
 function dedupeByRepo(servers: MCPServer[]): MCPServer[] {
@@ -60,7 +68,8 @@ export function bestOf(
     limit = 12,
     exclude = [] as string[],
     requireOfficialRegistry = false,
-  } = {},
+    client,
+  }: BestOfOptions = {},
 ): BestOfList {
   const cats = new Set(categories);
   const skip = new Set(exclude);
@@ -68,6 +77,7 @@ export function bestOf(
     (s) =>
       s.lifecycle === "active" &&
       (s.categories ?? []).some((c) => cats.has(c)) &&
+      (!client || s.clientCompat?.some((compat) => compat.client === client)) &&
       // 跨品类的宽榜（"awesome mcp servers" 这类）必须要求 registry 验证过。
       // 否则会捞到 star 数挂错的条目：实测有一条 registry 记录把 repoUrl
       // 指向了 ChatGPTNextWeb/NextChat（88k★，跟它毫无关系），

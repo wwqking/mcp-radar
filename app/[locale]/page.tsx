@@ -5,6 +5,7 @@ import {
   getSiteStats,
   getTopServers,
   getRadarEntries,
+  getLastUpdated,
   formatNumber,
   categoryName,
 } from "@/lib/data";
@@ -29,14 +30,18 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
   const h = dict.home;
   const t = (p: string) => localizedHref(locale, p);
 
-  const [stats, servers, top, radar] = await Promise.all([
+  const [stats, servers, top, radar, lastUpdated] = await Promise.all([
     getSiteStats(),
     getAllServers(),
     getTopServers(8),
     getRadarEntries(),
+    getLastUpdated(),
   ]);
   const weeklyNew = radar.added.slice(0, 3);
   const weeklyDead = radar.dead.slice(0, 3);
+  const runnableCount = servers.filter((server) => server.signals.hasRunnableEntry).length;
+  const remoteCount = servers.filter((server) => (server.remoteEndpoints?.length ?? 0) > 0).length;
+  const installVerifiedCount = servers.filter((server) => Boolean(server.installVerified)).length;
 
   // 组合方案用：slug → server 映射（取活体状态 + 链接）
   const serverMap = new Map(servers.map((s) => [s.slug, s]));
@@ -101,6 +106,57 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
                 </>
               )}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 目录证据口径：同一份数据、同一个时间戳 ===== */}
+      <section className="container-site pt-8 sm:pt-10" aria-label={locale === "zh" ? "目录证据" : "Directory evidence"}>
+        <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900 sm:p-6">
+          <div className="flex flex-wrap items-end justify-between gap-2">
+            <div>
+              <h2 className="text-lg font-bold text-neutral-900 dark:text-neutral-100">
+                {locale === "zh" ? "这份目录测量了什么" : "What this directory measures"}
+              </h2>
+              <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+                {locale === "zh"
+                  ? "所有数字在同一次渲染中计算；数量是证据口径，不是安全或兼容性认证。"
+                  : "All counts are computed in the same render. They are evidence scopes, not security or compatibility certification."}
+              </p>
+            </div>
+            <p className="text-xs text-neutral-400">{locale === "zh" ? "数据日期" : "Data date"}: {lastUpdated}</p>
+          </div>
+          <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-5">
+            {[
+              [locale === "zh" ? "收录" : "Indexed", stats.total, locale === "zh" ? "目录记录" : "catalog records"],
+              [locale === "zh" ? "有可运行入口" : "Runnable entry", runnableCount, locale === "zh" ? "可解析命令或端点" : "resolvable command or endpoint"],
+              [locale === "zh" ? "远程" : "Remote", remoteCount, locale === "zh" ? "声明托管端点" : "declared hosted endpoint"],
+              [locale === "zh" ? "活跃" : "Active", stats.active, locale === "zh" ? "维护生命周期" : "maintenance lifecycle"],
+              [locale === "zh" ? "安装实测" : "Install verified", installVerifiedCount, locale === "zh" ? "启动并列出工具" : "started and listed tools"],
+            ].map(([label, value, note]) => (
+              <div key={String(label)} className="rounded-xl bg-neutral-50 p-3 dark:bg-neutral-950">
+                <p className="text-xs font-medium text-neutral-500 dark:text-neutral-400">{label}</p>
+                <p className="mt-1 text-xl font-extrabold text-neutral-900 dark:text-neutral-100">{value}</p>
+                <p className="mt-1 text-[11px] leading-4 text-neutral-400">{note}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {[
+              ["/remote-mcp-servers", locale === "zh" ? "远程目录" : "Remote directory"],
+              ["/leaderboard", locale === "zh" ? "排行榜" : "Leaderboard"],
+              ["/mcp-server-health-report", locale === "zh" ? "健康报告" : "Health report"],
+              ["/guides", locale === "zh" ? "指南" : "Guides"],
+              ["/about", locale === "zh" ? "TrustScore 方法" : "TrustScore method"],
+              ["/editorial-policy", locale === "zh" ? "编辑政策" : "Editorial policy"],
+            ].map(([href, label]) => (
+              <Link key={href} href={t(href)} className="rounded-full border border-neutral-200 px-3 py-1.5 text-sm text-neutral-600 hover:border-brand-400 hover:text-brand-700 dark:border-neutral-700 dark:text-neutral-400 dark:hover:border-brand-700 dark:hover:text-brand-300">
+                {label} →
+              </Link>
+            ))}
+            <a href="/dataset.json" className="rounded-full border border-neutral-200 px-3 py-1.5 text-sm text-neutral-600 hover:border-brand-400 hover:text-brand-700 dark:border-neutral-700 dark:text-neutral-400 dark:hover:border-brand-700 dark:hover:text-brand-300">
+              {locale === "zh" ? "公开数据集" : "Public dataset"} →
+            </a>
           </div>
         </div>
       </section>
