@@ -10,9 +10,12 @@ import Analytics from "@/components/Analytics";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: SITE_NAME,
-  // Google Search Console 站点验证（Next 会渲染成 <meta name="google-site-verification">）
+  // 搜索引擎站点验证（Next 会渲染成对应的 <meta> 标签）
   verification: {
     google: "tKkAtF_Bz-59xK_MCadc2vvUBy1a2s2oHklIrmsUjyk",
+    other: {
+      "msvalidate.01": "365B6B723566817E2A8702D3A1A863AF",
+    },
   },
 };
 
