@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12",
+  "updatedAt": "2026-08-13",
   "entries": {
     "modelcontextprotocol-server-filesystem": {
       "source": "curated",
@@ -1756,7 +1756,9 @@
     "ai-memoket-memoket": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "ai-mitosislabs-mitosis": {
       "source": "registry",
@@ -3640,7 +3642,9 @@
     "app-mermail-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "app-miromiro-miromiro": {
       "source": "registry",
@@ -4636,7 +4640,9 @@
     "care-fysio-discovery": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "cat-2022-catalunya-2022": {
       "source": "registry",
@@ -5045,7 +5051,9 @@
     "com-adrianczuczka-mason": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-adspirer-ads": {
       "source": "registry",
@@ -5379,7 +5387,9 @@
     "com-audiala-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-aurelianflo-core": {
       "source": "registry",
@@ -6226,7 +6236,9 @@
     "com-correctover-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-cortex-mem-memory": {
       "source": "registry",
@@ -6557,7 +6569,9 @@
     "com-deploytoagents-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-designbycurio-curio": {
       "source": "registry",
@@ -6734,7 +6748,9 @@
     "com-elkassabgidata-elkassabgidata": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-emergentphysicslab-waveguard": {
       "source": "registry",
@@ -6999,7 +7015,9 @@
     "com-gallandigital-marketplace": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-gameindustrylibrary-gil": {
       "source": "registry",
@@ -7187,7 +7205,9 @@
     "com-goalieip-trademark": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-gocosmik-cosmik": {
       "source": "registry",
@@ -7449,7 +7469,9 @@
     "com-interzoid-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-investhive-server": {
       "source": "registry",
@@ -7754,7 +7776,9 @@
     "com-limzo-telegram-group-stats": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-linkbreakers-mcp": {
       "source": "registry",
@@ -7886,47 +7910,65 @@
     "com-mambabuilt-mcp-company-change-event-feed": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-company-firmographic-enricher": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-company-identity-resolver": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-company-social-presence-mapper": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-domain-deliverability-checker": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-domain-to-linkedin-url-resolver": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-funding-press-signal-scanner": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-gtm-hiring-signal-scraper": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-gtm-signals-aggregator": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-gtm-suite": {
       "source": "registry",
@@ -7938,22 +7980,30 @@
     "com-mambabuilt-mcp-gtm-tech-stack-signal-scraper": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-icp-fit-scorer": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mambabuilt-mcp-job-board-keyword-signal-scanner": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mangofolio-investbrain": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-mareaalcalina-storefront": {
       "source": "registry",
@@ -8831,7 +8881,9 @@
     "com-nlqdb-nlqdb": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-nobleblocks-nobleblocks-mcp": {
       "source": "registry",
@@ -8863,7 +8915,9 @@
     "com-numbru-client-compass": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-numeratica-mcp": {
       "source": "registry",
@@ -9262,7 +9316,9 @@
     "com-provision-stack-provision-stack": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-prowlo-reddit-x": {
       "source": "registry",
@@ -9873,7 +9929,9 @@
     "com-sonenta-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "com-soracom-knowledge": {
       "source": "registry",
@@ -10788,7 +10846,9 @@
     "dev-arlet-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "dev-astrocal-mcp-server": {
       "source": "registry",
@@ -10887,12 +10947,16 @@
     "dev-cz-agents-dd": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "dev-cz-agents-eu-registry": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "dev-cz-agents-isir": {
       "source": "registry",
@@ -10922,7 +10986,9 @@
     "dev-deadends-deadends-dev": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "dev-depscope-mcp": {
       "source": "registry",
@@ -10958,7 +11024,9 @@
     "dev-e18e-e18e": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "dev-e2a-mcp-server": {
       "source": "registry",
@@ -10970,7 +11038,9 @@
     "dev-emailmd-emailmd": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "dev-emisar-emisar": {
       "source": "registry",
@@ -12119,7 +12189,9 @@
     "fi-zxoar-zxoar": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "film-martini-mcp": {
       "source": "registry",
@@ -12769,7 +12841,9 @@
     "io-github-0xddneto-ai-proof-of-us": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-0xdirectping-escrow": {
       "source": "registry",
@@ -12940,7 +13014,9 @@
     "io-github-24seagull-beep-sense2-catalogue": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-2s-io-mcp": {
       "source": "registry",
@@ -13002,7 +13078,9 @@
     "io-github-3esign-psychosynth": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-3xpr1ment-repiscope": {
       "source": "registry",
@@ -15223,7 +15301,9 @@
     "io-github-blite-hq-qnexus-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-blockrunai-blockrun-mcp": {
       "source": "registry",
@@ -18713,7 +18793,9 @@
     "io-github-dekryptlabs-dlbrowser": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-delego-dev-delego": {
       "source": "registry",
@@ -19036,7 +19118,9 @@
     "io-github-dudude-bit-yandex-lavka-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-duhokim-nebulamind": {
       "source": "registry",
@@ -20640,7 +20724,9 @@
     "io-github-huginnindustries-codecartographer": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-hugof1234-gilbert-mcp": {
       "source": "registry",
@@ -20685,7 +20771,9 @@
     "io-github-hylouis233-bibverify": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-hyperion-gpu-proofflow": {
       "source": "registry",
@@ -20836,7 +20924,9 @@
     "io-github-ikalus1988-misakanet": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-ilyaskhallouki-hypruse": {
       "source": "registry",
@@ -21216,7 +21306,9 @@
     "io-github-jason26214-omni-computer-use": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-jason26214-pwsh-exec-mcp": {
       "source": "registry",
@@ -21625,7 +21717,9 @@
     "io-github-ksym04-limpet": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-kvantra-dev-nouz-mcp": {
       "source": "registry",
@@ -22007,7 +22101,9 @@
     "io-github-kuudoai-amazon-ads-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-kuvopllc-better-bear": {
       "source": "registry",
@@ -22983,7 +23079,7 @@
     "io-github-maxfreedompollard-engram": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 2
+      "missingRuns": 3
     },
     "io-github-maxmlang-cxg-census-mcp": {
       "source": "registry",
@@ -23616,7 +23712,9 @@
     "io-github-nandi-services-nandi-proxmox-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-nikx-tech-sentor-mcp": {
       "source": "registry",
@@ -23861,7 +23959,9 @@
     "io-github-nicohern-abapilot-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-nicodemus941-health-api": {
       "source": "registry",
@@ -25654,7 +25754,9 @@
     "io-github-roberton003-mcp-server-decisions": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-robocular-spawnpay": {
       "source": "registry",
@@ -26017,7 +26119,9 @@
     "io-github-swatgenx-swatgenx": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-saga-labs-dora-mcp": {
       "source": "registry",
@@ -26109,22 +26213,30 @@
     "io-github-samik081-mcp-adguard-home": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-samik081-mcp-authentik": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-samik081-mcp-komodo": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-samik081-mcp-pve": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-samoradc-tetrad": {
       "source": "registry",
@@ -26326,7 +26438,9 @@
     "io-github-sendmux-sendmux-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-sentinel-gate-sentinelgate": {
       "source": "registry",
@@ -27730,7 +27844,9 @@
     "io-github-tethral-inc-acr": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-tethralai-acr": {
       "source": "registry",
@@ -28694,7 +28810,9 @@
     "io-github-vineetv2-peon-mem": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-virajmishra1-bench": {
       "source": "registry",
@@ -29165,7 +29283,9 @@
     "io-github-ys-projectcalc-agent-cold-email": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-yuzu-hub-wiring-diagram-mcp": {
       "source": "registry",
@@ -29192,12 +29312,16 @@
     "io-github-yarmoluk-ckg-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-yarmoluk-ckg-nemotron-perplexity": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-yarmoluk-ckg-nvidia-ai": {
       "source": "registry",
@@ -29950,7 +30074,9 @@
     "io-github-adityaarsharma-pickle": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-adkit-ads": {
       "source": "registry",
@@ -30327,7 +30453,9 @@
     "io-github-ahmedvnabil-egypt-research": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-ahmedxuhri-bigindexer": {
       "source": "registry",
@@ -31170,7 +31298,9 @@
     "io-github-ampres-ai-talamus": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-amranswill-pdfapi-mcp-server": {
       "source": "registry",
@@ -31393,7 +31523,9 @@
     "io-github-angelus213-foundry-api": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-aniebyl-ololand-dd": {
       "source": "registry",
@@ -31519,7 +31651,9 @@
     "io-github-antikas-openim": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-antnewman-pm-analyse": {
       "source": "registry",
@@ -31886,7 +32020,9 @@
     "io-github-aradar46-reuse-before-generate": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-aranajhonny-vlk-core": {
       "source": "registry",
@@ -32040,7 +32176,9 @@
     "io-github-arikusi-deepseek": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-arikusi-nakkas": {
       "source": "registry",
@@ -32696,7 +32834,9 @@
     "io-github-attestifyagent-attestify-os": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-atul-fusionpact-fusionpact-vectordb": {
       "source": "registry",
@@ -33659,7 +33799,9 @@
     "io-github-bituq-zendriver-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-biznetai-biznetai-mcp": {
       "source": "registry",
@@ -34380,7 +34522,9 @@
     "io-github-bzsanti-oxidize-pdf-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-bzsasson-screaming-frog-mcp": {
       "source": "registry",
@@ -34407,7 +34551,9 @@
     "io-github-cablate-google-map": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-cachly-dev-mcp-server": {
       "source": "registry",
@@ -35031,7 +35177,9 @@
     "io-github-chefcohen-corroborate-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-chenxiaofie-memory-mcp": {
       "source": "registry",
@@ -35092,7 +35240,9 @@
     "io-github-chipzen-ai-chipzen-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-chirag127-secenv-mcp": {
       "source": "registry",
@@ -35585,7 +35735,9 @@
     "io-github-ckalima-pipedrive-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-cklam12345-wisdomgraph": {
       "source": "registry",
@@ -36764,7 +36916,9 @@
     "io-github-coinrule-com-coinrule-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-colabfit-colabfit-mcp": {
       "source": "registry",
@@ -36808,17 +36962,23 @@
     "io-github-comil27-debt-payoff-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-comil27-etsy-tags-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-comil27-solrisk-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-commandoperator-cmdop-care": {
       "source": "registry",
@@ -37051,7 +37211,9 @@
     "io-github-cookiechain-cookie-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-coopergwrenn-postals-mcp": {
       "source": "registry",
@@ -37128,7 +37290,9 @@
     "io-github-couchbase-mcp-server-couchbase": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-counterpoint-studio-audio-file-mcp-app": {
       "source": "registry",
@@ -37499,7 +37663,9 @@
     "io-github-cyanheads-aviation-weather-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-cyanheads-biorxiv-mcp-server": {
       "source": "registry",
@@ -37552,7 +37718,9 @@
     "io-github-cyanheads-chembl-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-cyanheads-clinicaltrialsgov-mcp-server": {
       "source": "registry",
@@ -37694,7 +37862,9 @@
     "io-github-cyanheads-fcc-broadband-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-cyanheads-federal-regulations-mcp-server": {
       "source": "registry",
@@ -37872,7 +38042,9 @@
     "io-github-cyanheads-nonprofit-explorer-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-cyanheads-npi-providers-mcp-server": {
       "source": "registry",
@@ -37889,7 +38061,9 @@
     "io-github-cyanheads-nws-weather-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-cyanheads-obsidian-mcp-server": {
       "source": "registry",
@@ -38126,7 +38300,9 @@
     "io-github-cyanheads-treasury-fiscaldata-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-cyanheads-un-comtrade-mcp-server": {
       "source": "registry",
@@ -38148,7 +38324,9 @@
     "io-github-cyanheads-usda-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-cyanheads-usgs-water-mcp-server": {
       "source": "registry",
@@ -39272,7 +39450,9 @@
     "io-github-dbwls99706-deadends-dev": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-dcadolph-vamoose": {
       "source": "registry",
@@ -40453,7 +40633,9 @@
     "io-github-donggyun112-keymem": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-donjguido-ai-dictionary-mcp": {
       "source": "registry",
@@ -40684,7 +40866,9 @@
     "io-github-dreliq9-caid-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-dreliq9-fcp-mcp": {
       "source": "registry",
@@ -40936,7 +41120,9 @@
     "io-github-dynatrace-oss-dynatrace-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-dynatrace-oss-dynatrace-managed-mcp": {
       "source": "registry",
@@ -42114,7 +42300,9 @@
     "io-github-farukkolip-instapdown-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-farukkolip-tiktapdown-mcp": {
       "source": "registry",
@@ -43041,17 +43229,23 @@
     "io-github-g-digital-by-garrigues-ead-enterprise-suite": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-g-digital-by-garrigues-ead-factory": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-g-digital-by-garrigues-gocertius": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-gabrielcerutti-etoro-mcp-server": {
       "source": "registry",
@@ -43347,7 +43541,9 @@
     "io-github-gauravapiscean-adrex-ai": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-gautamgb-mcp-server-mcpindex": {
       "source": "registry",
@@ -45445,7 +45641,9 @@
     "io-github-holistis-bug-bounty-intelligence-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-holomodular-servicebricks": {
       "source": "registry",
@@ -45764,7 +45962,9 @@
     "io-github-hypark5540-cloudcraft-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-hypark5540-discord-mcp": {
       "source": "registry",
@@ -46214,7 +46414,9 @@
     "io-github-infino-ai-code-context": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-infino-ai-mcp-server": {
       "source": "registry",
@@ -47820,7 +48022,9 @@
     "io-github-jermayne36-heartwood-memory": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-jerrysrodz-goldhold": {
       "source": "registry",
@@ -48947,7 +49151,7 @@
     "io-github-jyswee-oddsockets": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 1
+      "missingRuns": 2
     },
     "io-github-jyswee-secretcarousel": {
       "source": "registry",
@@ -49889,7 +50093,9 @@
     "io-github-krutftw-fetchmux": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-kryptobaseddev-cleo-mcp-server": {
       "source": "registry",
@@ -49944,7 +50150,9 @@
     "io-github-kubeshark-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-kubeshop-testkube-mcp": {
       "source": "registry",
@@ -50016,7 +50224,9 @@
     "io-github-kwizzlesurp10-ctrl-x402-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-kylastech-kylas-crm": {
       "source": "registry",
@@ -50046,7 +50256,9 @@
     "io-github-l10n-dev-ai-l10n-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-l33tdawg-sage": {
       "source": "registry",
@@ -50663,7 +50875,9 @@
     "io-github-leocelis-ivd": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-leochong-visus-mcp": {
       "source": "registry",
@@ -50778,12 +50992,16 @@
     "io-github-liamohtee-agentcn": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-liboy119-agentpub": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-lifeodyssey-share-html": {
       "source": "registry",
@@ -51049,7 +51267,9 @@
     "io-github-lmaniraruta-license-verify-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-lmwharton-sieve-mcp": {
       "source": "registry",
@@ -51501,7 +51721,9 @@
     "io-github-lumayapartners-memini": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-lumiclip-lumiclip": {
       "source": "registry",
@@ -54368,7 +54590,9 @@
     "io-github-menot-you-n-memory": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-meob-euclid-mcp": {
       "source": "registry",
@@ -55960,7 +56184,9 @@
     "io-github-msanchezgrice-talkform": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-msdanyg-smart-connections-mcp": {
       "source": "registry",
@@ -56391,7 +56617,9 @@
     "io-github-nanoodlecom-nanoodle-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-nao1234g-calibration-routing": {
       "source": "registry",
@@ -56445,7 +56673,9 @@
     "io-github-nazar256-memheaven": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-nccurry-mtg-mcp": {
       "source": "registry",
@@ -57538,7 +57768,9 @@
     "io-github-novadyne-hq-vulnfeed": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-novaventures-ai-marriage-astro": {
       "source": "registry",
@@ -57754,12 +57986,16 @@
     "io-github-oaslananka-health-monitor-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-oaslananka-infra-lens-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-oaslananka-kicad-mcp-pro": {
       "source": "registry",
@@ -57806,7 +58042,9 @@
     "io-github-obcraft-apiosk-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-oborchers-tablestakes": {
       "source": "registry",
@@ -58031,12 +58269,16 @@
     "io-github-olgasafonova-mediawiki-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-olgasafonova-miro-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-olgasafonova-nordic-registry-mcp-server": {
       "source": "registry",
@@ -58209,7 +58451,9 @@
     "io-github-oomkapwn-enquire-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-ooopak11-opuslog": {
       "source": "registry",
@@ -58407,7 +58651,9 @@
     "io-github-optipub-gmail-postmaster-tools": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-optipub-outlook-snds": {
       "source": "registry",
@@ -62534,7 +62780,9 @@
     "io-github-pipeworx-io-github": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-pipeworx-io-github-private": {
       "source": "registry",
@@ -64612,7 +64860,9 @@
     "io-github-pipeworx-io-qrcode": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-pipeworx-io-quickbooks": {
       "source": "registry",
@@ -66450,7 +66700,9 @@
     "io-github-pricewatcha-pricewatcha": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-primoliquors-beacon": {
       "source": "registry",
@@ -66927,7 +67179,9 @@
     "io-github-qingxuantang-tar-engine": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-qinisolabs-bizdays": {
       "source": "registry",
@@ -67086,7 +67340,9 @@
     "io-github-quantakrypto-pqc-tools": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-quantamixsol-graqle": {
       "source": "registry",
@@ -67335,7 +67591,9 @@
     "io-github-raintree-technology-docpull": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-raintree-technology-hig-doctor": {
       "source": "registry",
@@ -67901,7 +68159,9 @@
     "io-github-rhein1-agoragentic": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-rhel-lightspeed-linux-mcp-server": {
       "source": "registry",
@@ -67955,7 +68215,9 @@
     "io-github-richard7463-ai2human-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-richardjhobbs-rrg-marketplace": {
       "source": "registry",
@@ -68190,7 +68452,9 @@
     "io-github-rnaga-wp-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-rnwy-mcp": {
       "source": "registry",
@@ -69426,7 +69690,9 @@
     "io-github-ryss30-orcool-studio": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-ryudi84-api": {
       "source": "registry",
@@ -69956,7 +70222,9 @@
     "io-github-sandovalrr-project-context": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-sandsower-kronan-mcp": {
       "source": "registry",
@@ -70933,7 +71201,9 @@
     "io-github-sgateway-s-gw": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-sgroy10-speclock": {
       "source": "registry",
@@ -71621,7 +71891,9 @@
     "io-github-sjkim1127-reversecore-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-skill-federation-skillfed-mcp": {
       "source": "registry",
@@ -73539,7 +73811,9 @@
     "io-github-talonicdev-talonic-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-tamas-fm-project-lore": {
       "source": "registry",
@@ -74355,7 +74629,9 @@
     "io-github-themutherfvcker-adu-zoning": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-theoddden-terradev": {
       "source": "registry",
@@ -74490,7 +74766,9 @@
     "io-github-thuupx-lunge": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-thuupx-memory-mcp-lite": {
       "source": "registry",
@@ -75086,7 +75364,9 @@
     "io-github-trakkr-aisearch-openai-ads-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-transloadit-mcp-server": {
       "source": "registry",
@@ -76103,7 +76383,9 @@
     "io-github-vassiliylakhonin-agenda-intelligence-md": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-vassiliylakhonin-profile-mcp": {
       "source": "registry",
@@ -76919,7 +77201,9 @@
     "io-github-waddou-mcp-moncompte": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-waddou-mcp-noticiel": {
       "source": "registry",
@@ -77287,7 +77571,9 @@
     "io-github-whalefuntech-intentlink": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-whats2000-isaacsim-mcp-server": {
       "source": "registry",
@@ -78862,7 +79148,9 @@
     "io-github-ynishi-mini-app-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-ynishi-mlua-swarm": {
       "source": "registry",
@@ -78925,7 +79213,9 @@
     "io-github-yonro-xmemo": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-yoryocoruxo-ai-rendoc-mcp-server": {
       "source": "registry",
@@ -79134,7 +79424,9 @@
     "io-github-zaplitny-atimelogger-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-github-zaq2989-clawagent": {
       "source": "registry",
@@ -79715,7 +80007,9 @@
     "io-kolvera-kolvera": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-kondux-seraph": {
       "source": "registry",
@@ -79725,7 +80019,9 @@
     "io-kortexio-memory": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "io-lenz-fact-check": {
       "source": "registry",
@@ -81095,7 +81391,9 @@
     "link-snapto-snapto": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "lv-bezbaseina-mcp": {
       "source": "registry",
@@ -81541,7 +81839,9 @@
     "org-contextoverflow-library": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "org-designesy-www-designesy": {
       "source": "registry",
@@ -81745,7 +82045,9 @@
     "pro-tasktime-agent-bridge": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "pro-worldclock-time": {
       "source": "registry",
@@ -81996,17 +82298,23 @@
     "sh-stipple-openwarrant": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "sh-stipple-openwarrant-aitext": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "sh-stipple-openwarrant-verify": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "sh-superlog-superlog": {
       "source": "registry",
@@ -82263,7 +82571,9 @@
     "tools-growthkit-revenue-intelligence": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
     },
     "tools-planwright-planwright": {
       "source": "registry",
@@ -92128,7 +92438,7 @@
     "io-github-mabulgu-strimzi-kafka-cli": {
       "source": "registry",
       "lastSeenAt": "2026-08-10",
-      "missingRuns": 2
+      "missingRuns": 3
     },
     "io-github-manuelrmz123-chiwawa": {
       "source": "registry",
@@ -94165,6 +94475,671 @@
       "lastSeenAt": "2026-08-12",
       "missingRuns": 0,
       "lastEnrichmentAttemptAt": "2026-08-12",
+      "enrichmentAttempts": 1
+    },
+    "ai-portablecontext-pcd": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "app-formatika-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-ai-semantica-semantica-ai": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-ainetcafe-netcafe-docs": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-ainetcafe-netcafe-images": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-ainetcafe-netcafe-tasks": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-ainetcafe-netcafe-translate": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-blinkcodes-catalog": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-checkmarx-checkmarx": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-dexter-works-offers": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-easydocforms-easydocforms-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-fromtocargo-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-halffee-coinrebate": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-neuhausre-followupboss": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-nuverlabs-image-gen": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-odooconsole-odoo": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-omniwatchguard-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-overlap-ai-overlap": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-parseapi-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-robbiegeorgephotography-naturepedia": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-submitmap-directory": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-uptimerobot-uptimerobot": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-walletbureau-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-whimsical-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "com-zhijipaipan-zhiji-bazi": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "dev-ezstat-ezstat-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "dev-lastping-lastping": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "dev-starwell-world-data-statistics": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "fr-bullionradar-bullionradar-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "gallery-a1-a1-gallery": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "in-1acre-land-intelligence": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-costory-finops": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-adirdavi-docmcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-aleemhaider-google-ads-manager-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-blazingcdn-blazingcdn-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-csoai-org-csoai": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-extelligence-ai-bagel": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-guangminju-mellos-mapping": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-jonathanb555-torah-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-kubaopoczka-tripwire-guard": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mangomunchr-farpy": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-rahultripgain-tripgain-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-syedomershah99-being-human": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-the-pixel-boys-shield-kya": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-thewhitewater-tube-bridge": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-yuuqq-jules-dispatch": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-alexeyleshchenko-fast-mcp-telegram": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-attestifyagent-attestify-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-bardesss-arr-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-bguillow-rgb-percolate": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-bguillow-rgb-perfume-picks": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-bguillow-rgb-pour-picks": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-brownglasses-dotplot-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cedricziel-aha-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-darksider4all-leadgen-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-donnywin85-arb-dex-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-dylantirandaz-tailscale-compute": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-eason4kim-rocket-looktwice-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-factgridai-factgrid": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-firatmio-mcp-audit-proxy": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-flop-labs-technocore-chat": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-furkanyanteri1-goaltree": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-geoacpfilho-paygate-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-gridproof-gridproof": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-iowarp-web-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-jaytahir-anagent": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-jlivingston-cipher-iamf-sentinel-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-jpka-sw-postgres-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-kapella-hub-firekeep": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-kardashev-lab-kardashev-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-kitepon-aiterm-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-linkedmash-linkedmash": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-metis-rwa-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-navshainc-noshup": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-ogconstrutorasp-apex-contabil": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-pramodreddyboddu-mq-sentinel": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-quality-network-finedata-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-r2cuerdame-codesamplex": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-rafaelgaspar-longhorn-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-samson-art-transcriptor-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-scrolldynasty-browsermesh": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-shkyyy18-mi-fitness-data-bridge": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-shotintoeternity-pocketnook": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-shrynshjn-health-partner": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-smeet666-mcp-lever": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-steffanricardo-the-dutch-directory": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-thechancerylaneproject-tclp-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-upstash-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-verdochello-verdoc-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-vladimirbakalov-secretguard-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-github-vnbochkarev-netizen-vibo-memory": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "io-tradeonyx-tradeonyx": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "me-reefwith-reef": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "net-gwindex-gwinnett-index": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
+      "enrichmentAttempts": 1
+    },
+    "net-mail7-email-validation": {
+      "source": "registry",
+      "lastSeenAt": "2026-08-13",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-08-13",
       "enrichmentAttempts": 1
     }
   }
