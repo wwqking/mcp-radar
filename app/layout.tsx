@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     google: "tKkAtF_Bz-59xK_MCadc2vvUBy1a2s2oHklIrmsUjyk",
     other: {
       "msvalidate.01": "365B6B723566817E2A8702D3A1A863AF",
+      "baidu-site-verification": "codeva-ApeZsR5Peg",
     },
   },
 };
