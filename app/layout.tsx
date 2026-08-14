@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     other: {
       "msvalidate.01": "365B6B723566817E2A8702D3A1A863AF",
       "baidu-site-verification": "codeva-ApeZsR5Peg",
+      monetag: "b6994cc0a2e71d9f16de2d7a06fb3ca7",
     },
   },
 };
