@@ -30,6 +30,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5972123080217605"
           crossOrigin="anonymous"
         />
+        <script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="270096"
+          async
+          data-cfasync="false"
+        />
         {/* 防暗色闪烁 */}
         <script
           dangerouslySetInnerHTML={{
