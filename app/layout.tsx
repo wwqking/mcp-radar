@@ -31,10 +31,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
         />
         <script
-          src="https://quge5.com/88/tag.min.js"
-          data-zone="270096"
-          async
-          data-cfasync="false"
+          dangerouslySetInnerHTML={{
+            __html: `(function(s){s.dataset.zone='11576425',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`,
+          }}
         />
         {/* 防暗色闪烁 */}
         <script
