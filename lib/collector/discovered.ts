@@ -36,4 +36,23 @@ export const DISCOVERED_SEEDS: CuratedSeed[] = [
   { name: "powerbi-modeling-mcp", repoUrl: "https://github.com/microsoft/powerbi-modeling-mcp", npmPackage: "@microsoft/powerbi-modeling-mcp" }, // ★997 · GitHub 趋势
   { name: "mcp-scanner", repoUrl: "https://github.com/cisco-ai-defense/mcp-scanner", npmPackage: null }, // ★990 · GitHub 趋势
   { name: "code-index-mcp", repoUrl: "https://github.com/johnhuang316/code-index-mcp", npmPackage: null }, // ★986 · GitHub 趋势
+  // 自动追加：2026-08-17
+  { name: "serpapi-mcp", repoUrl: "https://github.com/serpapi/serpapi-mcp", npmPackage: null }, // ★165 · 170/mo 有人搜
+  { name: "alpaca-mcp-server", repoUrl: "https://github.com/alpacahq/alpaca-mcp-server", npmPackage: null }, // ★919 · 140/mo 有人搜
+  { name: "health-auto-export-mcp-server", repoUrl: "https://github.com/HealthyApps/health-auto-export-mcp-server", npmPackage: null }, // ★61 · 140/mo 有人搜
+  { name: "okta-mcp-server", repoUrl: "https://github.com/okta/okta-mcp-server", npmPackage: null }, // ★54 · 140/mo 有人搜
+  { name: "sonarqube-mcp-server", repoUrl: "https://github.com/SonarSource/sonarqube-mcp-server", npmPackage: null }, // ★626 · 140/mo 有人搜
+  { name: "duckduckgo-mcp-server", repoUrl: "https://github.com/nickclyde/duckduckgo-mcp-server", npmPackage: null }, // ★1420 · 110/mo 有人搜
+  { name: "outlook-mcp", repoUrl: "https://github.com/ryaker/outlook-mcp", npmPackage: null }, // ★425 · 110/mo 有人搜
+  { name: "ssh-mcp-server", repoUrl: "https://github.com/classfang/ssh-mcp-server", npmPackage: null }, // ★775 · 110/mo 有人搜
+  { name: "ghidra-mcp", repoUrl: "https://github.com/bethington/ghidra-mcp", npmPackage: null }, // ★3335 · GitHub 趋势
+  { name: "markdownify-mcp", repoUrl: "https://github.com/zcaceres/markdownify-mcp", npmPackage: null }, // ★2911 · GitHub 趋势
+  { name: "jadx-ai-mcp", repoUrl: "https://github.com/zinja-coder/jadx-ai-mcp", npmPackage: null }, // ★2671 · GitHub 趋势
+  { name: "js-reverse-mcp", repoUrl: "https://github.com/zhizhuodemao/js-reverse-mcp", npmPackage: "js-reverse-mcp" }, // ★2519 · GitHub 趋势
+  { name: "korean-law-mcp", repoUrl: "https://github.com/chrisryugj/korean-law-mcp", npmPackage: "korean-law-mcp" }, // ★2461 · GitHub 趋势
+  { name: "mcp2cli", repoUrl: "https://github.com/knowsuchagency/mcp2cli", npmPackage: null }, // ★2358 · GitHub 趋势
+  { name: "gemini-mcp-tool", repoUrl: "https://github.com/jamubc/gemini-mcp-tool", npmPackage: "gemini-mcp-tool" }, // ★2277 · GitHub 趋势
+  { name: "davinci-resolve-mcp", repoUrl: "https://github.com/samuelgursky/davinci-resolve-mcp", npmPackage: "davinci-resolve-mcp" }, // ★2173 · GitHub 趋势
+  { name: "ios-simulator-mcp", repoUrl: "https://github.com/joshuayoes/ios-simulator-mcp", npmPackage: "ios-simulator-mcp" }, // ★2136 · GitHub 趋势
+  { name: "mcpb", repoUrl: "https://github.com/modelcontextprotocol/mcpb", npmPackage: null }, // ★2081 · GitHub 趋势
 ];
