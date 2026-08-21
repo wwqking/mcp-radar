@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-20T22:26:41.733Z",
-  "total": 5762,
+  "generatedAt": "2026-08-21T22:24:19.728Z",
+  "total": 5761,
   "summary": {
-    "needsReview": 3902,
+    "needsReview": 3900,
     "needsReviewRatePct": 67.7,
     "uncategorized": 2654,
     "uncategorizedRatePct": 46.1,
@@ -16,12 +16,12 @@
   ],
   "categoryCounts": {
     "misc": 2654,
-    "dev": 1902,
-    "search": 750,
+    "dev": 1901,
+    "search": 751,
     "files": 255,
     "ai": 208,
     "comms": 184,
-    "database": 166,
+    "database": 167,
     "commerce": 157,
     "cloud": 130,
     "browser": 115,
@@ -29,13 +29,13 @@
   },
   "topicCounts": {
     "design-media": 291,
+    "finance": 191,
     "automation": 190,
-    "finance": 190,
     "observability": 119,
     "legal": 90,
     "mcp-infrastructure": 86,
     "visualization": 66,
-    "science-health": 29,
+    "science-health": 31,
     "security": 29,
     "data-analysis": 27,
     "game-development": 24,
@@ -136,7 +136,7 @@
     },
     {
       "term": "x402",
-      "count": 71
+      "count": 72
     },
     {
       "term": "across",
@@ -164,7 +164,7 @@
     },
     {
       "term": "real",
-      "count": 59
+      "count": 58
     },
     {
       "term": "status",
@@ -180,7 +180,7 @@
     },
     {
       "term": "intelligence",
-      "count": 52
+      "count": 51
     },
     {
       "term": "usdc",
@@ -239,7 +239,7 @@
       "count": 41
     },
     {
-      "term": "find",
+      "term": "registry",
       "count": 40
     }
   ],
@@ -1054,7 +1054,7 @@
       "name": "ai.signalnodus/sec-filings",
       "confidence": 0.35,
       "topics": [],
-      "description": "SEC filing diffs, 8-K events, 13D stakes, insider trades, IPOs, federal contracts. Pay per call."
+      "description": "Year-over-year 10-K diffs, 8-K events, insider trades, 13F, IPOs, XBRL. Pay per call, key or x402."
     },
     {
       "slug": "ai-sitepulsar-mcp",
@@ -3777,7 +3777,7 @@
       "name": "com.theartofservice/compliance-intelligence",
       "confidence": 0.35,
       "topics": [],
-      "description": "Research 723 compliance frameworks, then find the course that helps a buyer act on them."
+      "description": "What one compliance standard already evidences of another, with the reasoning and the rejections."
     },
     {
       "slug": "com-theaslangroupllc-pulse-agent-wallet",
@@ -4876,7 +4876,7 @@
       "name": "io.github.agentic-hil/agentic-hil",
       "confidence": 0.35,
       "topics": [],
-      "description": "Policy-gated MCP tools for embedded hardware-in-the-loop testing on real devices."
+      "description": "Probe, flash, reset and drive UART and CAN on a real STM32 or other embedded target, policy-gated."
     },
     {
       "slug": "io-github-agenticsubstrate-reputation-gateway",
@@ -5520,7 +5520,7 @@
       "name": "io.github.beepboop2025/seiche",
       "confidence": 0.35,
       "topics": [],
-      "description": "US funding-stress warning with construction-PIT evidence limits and explicit eligibility flags."
+      "description": "Money, FX and capital-market evidence with source clocks, canonical citations and explicit limits."
     },
     {
       "slug": "io-github-beepboop2025-undertow",
@@ -6559,13 +6559,6 @@
       "description": "Explore and query TimeBase streams, schemas, QQL, symbols, and server status via MCP."
     },
     {
-      "slug": "io-github-equinoxaifinance-rgb-civicdataforge",
-      "name": "io.github.equinoxaifinance-rgb/civicdataforge",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Official permit, licensing, compliance, and civic-record tools for AI agents."
-    },
-    {
       "slug": "io-github-erayendes-asc-mcp",
       "name": "io.github.erayendes/asc-mcp",
       "confidence": 0.35,
@@ -6612,7 +6605,7 @@
       "name": "io.github.fauguste/boondmanager-mcp-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP Server for BoondManager API - 180 tools, 11 prompts, 22 resources (ERP/CRM)"
+      "description": "MCP Server for BoondManager API - 182 tools, 12 prompts, 22 resources (ERP/CRM)"
     },
     {
       "slug": "io-github-fedgeno-conventions-mcp",
@@ -12051,7 +12044,7 @@
       "name": "io.github.proplineapi/propline-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live odds, cross-book +EV and graded player-prop results across 21 books. Hosted endpoint included."
+      "description": "Live odds, cross-book +EV and graded player-prop results across 24 books. Hosted endpoint included."
     },
     {
       "slug": "io-github-proventools-proventools",
@@ -15155,13 +15148,6 @@
       "description": "Stress-test lowcap, perp and LP strategies. Returns the full distribution and a reproduction seed."
     },
     {
-      "slug": "xyz-mindjack-mcp",
-      "name": "xyz.mindjack/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Solana launch intelligence: calibrated rug verdicts with a published hit rate, wallets, KOL trades."
-    },
-    {
       "slug": "xyz-tollboothswap-api-tollbooth",
       "name": "xyz.tollboothswap.api/tollbooth",
       "confidence": 0.35,
@@ -15629,13 +15615,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server for Yandex Tracker API."
-    },
-    {
-      "slug": "io-github-appwrite-mcp",
-      "name": "io.github.appwrite/mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP (Model Context Protocol) server for Appwrite"
     },
     {
       "slug": "io-github-archstone-romania-archstone",
@@ -16702,13 +16681,6 @@
       "description": "Signed deterministic AI-governance measurement: EU AI Act cards + agent-callable record verify."
     },
     {
-      "slug": "io-github-csoai-org-gspc",
-      "name": "io.github.CSOAI-ORG/gspc",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Council of AI GSPC: measure + verify signed governance credentials."
-    },
-    {
       "slug": "io-github-cuneiform-llc-clearlist",
       "name": "io.github.Cuneiform-LLC/clearlist",
       "confidence": 0.45,
@@ -17434,7 +17406,7 @@
       "name": "io.github.forcedreamai/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "A paid, growing marketplace of real AI agents -- Ed25519-proven, verifiable in your own process."
+      "description": "Discover, invoke, and trustlessly verify ForceDream AI agents with cryptographic proofs. 17 tools."
     },
     {
       "slug": "io-github-forkflux-forkflux-mcp",
@@ -17875,7 +17847,7 @@
       "name": "io.github.GoPlasmatic/orion",
       "confidence": 0.45,
       "topics": [],
-      "description": "Build and operate declarative REST/Kafka services on Orion: 53 tools over the full admin API."
+      "description": "Build and operate declarative REST/Kafka services on Orion: 58 tools over the full admin API."
     },
     {
       "slug": "io-github-gorgon-cyber-gorgon-scout",
@@ -21686,6 +21658,13 @@
       "description": "Real physical SIMs for AI agents: SMS verification and rentals. 145+ countries, 2500+ services."
     },
     {
+      "slug": "io-github-vishalsachdev-canvas-mcp",
+      "name": "io.github.vishalsachdev/canvas-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Canvas LMS integration for students and educators with optional privacy controls"
+    },
+    {
       "slug": "io-github-vladic-corp-denpyo-mcp",
       "name": "io.github.vladic-corp/denpyo-mcp",
       "confidence": 0.45,
@@ -23322,7 +23301,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Transcripts from YouTube, TikTok, Instagram and podcasts (Spotify, Apple, RSS), as clean JSON."
+      "description": "Transcripts from YouTube, TikTok, Instagram and direct media files, with AI transcription fallback."
     },
     {
       "slug": "com-truss-security-truss-mcp",
@@ -24927,6 +24906,15 @@
       "description": "Apple Music MCP server: playlists, library, catalog, playback and Up Next, on Mac/Windows/Linux."
     },
     {
+      "slug": "io-github-equinoxaifinance-rgb-civicdataforge",
+      "name": "io.github.equinoxaifinance-rgb/civicdataforge",
+      "confidence": 0.55,
+      "topics": [
+        "science-health"
+      ],
+      "description": "Seven official-record tools for property compliance, healthcare integrity, and facility safety."
+    },
+    {
       "slug": "io-github-ericblair1903-nutrients-mcp",
       "name": "io.github.ericblair1903/nutrients-mcp",
       "confidence": 0.55,
@@ -25060,7 +25048,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "40 tools for Adobe Edge Delivery Services: read, audit, track, fix, publish, undo — safely."
+      "description": "41 tools for Adobe Edge Delivery Services: read, audit, track, monitor, fix, publish, undo — safely."
     },
     {
       "slug": "io-github-freema-mcp-design-system-extractor",
@@ -26789,7 +26777,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Claude guesses your brand voice. Mora gives the real one: your catalogue and performance."
+      "description": "Codex guesses your brand voice. Mora AI gives it the real one: your catalogue and performance."
     },
     {
       "slug": "io-github-mrfentmen-adobe-premiere-mcp",
@@ -28264,15 +28252,6 @@
       "description": "Generate, edit and upscale AI video and images from any agent via VicSee."
     },
     {
-      "slug": "io-github-vishalsachdev-canvas-mcp",
-      "name": "io.github.vishalsachdev/canvas-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "Canvas LMS integration for students and educators with FERPA-compliant analytics and workflows"
-    },
-    {
       "slug": "io-github-vladimir-human-ru-marketplace-mcp",
       "name": "io.github.Vladimir-Human/ru-marketplace-mcp",
       "confidence": 0.55,
@@ -29167,6 +29146,15 @@
         "mcp-infrastructure"
       ],
       "description": "Remote MCP gateway for GPT-5.6 Luna, Soul, Terra, and x402-paid agent tools with no API key."
+    },
+    {
+      "slug": "xyz-mindjack-mcp",
+      "name": "xyz.mindjack/mcp",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Solana memecoin rug check for trading agents: pump.fun launches, calibrated rug risk, wallets, KOL."
     },
     {
       "slug": "xyz-scanhood-mcp",
