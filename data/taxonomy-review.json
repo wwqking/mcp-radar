@@ -1,43 +1,43 @@
 {
-  "generatedAt": "2026-08-21T22:24:19.728Z",
-  "total": 5761,
+  "generatedAt": "2026-08-22T22:22:09.549Z",
+  "total": 5747,
   "summary": {
-    "needsReview": 3900,
+    "needsReview": 3889,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2654,
-    "uncategorizedRatePct": 46.1,
+    "uncategorized": 2643,
+    "uncategorizedRatePct": 46,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33
   },
   "alerts": [
-    "待归类占比 46.1%，超过 5% 审核线",
+    "待归类占比 46%，超过 5% 审核线",
     "dev 占比 33%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2654,
-    "dev": 1901,
+    "misc": 2643,
+    "dev": 1899,
     "search": 751,
-    "files": 255,
+    "files": 256,
     "ai": 208,
     "comms": 184,
     "database": 167,
-    "commerce": 157,
+    "commerce": 156,
     "cloud": 130,
     "browser": 115,
     "marketing": 77
   },
   "topicCounts": {
-    "design-media": 291,
+    "design-media": 290,
     "finance": 191,
     "automation": 190,
     "observability": 119,
     "legal": 90,
-    "mcp-infrastructure": 86,
+    "mcp-infrastructure": 87,
     "visualization": 66,
     "science-health": 31,
     "security": 29,
-    "data-analysis": 27,
+    "data-analysis": 26,
     "game-development": 24,
     "iot-robotics": 15
   },
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 113
+      "count": 114
     },
     {
       "term": "memory",
@@ -87,11 +87,11 @@
       "count": 104
     },
     {
-      "term": "read",
-      "count": 102
+      "term": "local",
+      "count": 101
     },
     {
-      "term": "local",
+      "term": "read",
       "count": 101
     },
     {
@@ -132,7 +132,7 @@
     },
     {
       "term": "checks",
-      "count": 77
+      "count": 75
     },
     {
       "term": "x402",
@@ -152,18 +152,18 @@
     },
     {
       "term": "public",
-      "count": 63
+      "count": 62
     },
     {
       "term": "analysis",
-      "count": 61
-    },
-    {
-      "term": "check",
-      "count": 59
+      "count": 60
     },
     {
       "term": "real",
+      "count": 59
+    },
+    {
+      "term": "check",
       "count": 58
     },
     {
@@ -179,31 +179,31 @@
       "count": 54
     },
     {
+      "term": "usdc",
+      "count": 52
+    },
+    {
       "term": "intelligence",
       "count": 51
     },
     {
-      "term": "usdc",
-      "count": 51
-    },
-    {
       "term": "evidence",
-      "count": 50
-    },
-    {
-      "term": "deterministic",
-      "count": 48
+      "count": 49
     },
     {
       "term": "every",
       "count": 48
     },
     {
-      "term": "before",
+      "term": "deterministic",
       "count": 47
     },
     {
       "term": "analytics",
+      "count": 46
+    },
+    {
+      "term": "before",
       "count": 46
     },
     {
@@ -452,7 +452,7 @@
       "name": "ai.certscore/mcp-light",
       "confidence": 0.35,
       "topics": [],
-      "description": "No-account public website privacy risk scans with 20 new scans/day and free recent-result reuse."
+      "description": "Free website privacy scanner for pre-consent cookies, trackers, consent, policy, and HTTPS/TLS."
     },
     {
       "slug": "ai-circulara-plugin",
@@ -1957,7 +1957,7 @@
       "name": "app.scfcontrolsplatform/mcp-server-scf",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP server for the SCF Controls Platform — 83 tools for controls, evidence, risk, and TPRM."
+      "description": "MCP server for the SCF Controls Platform — 135 tools for controls, evidence, risk, and TPRM."
     },
     {
       "slug": "app-thoughtspot-mcp-server",
@@ -3353,69 +3353,6 @@
       "description": "Render animated motion-graphics overlays as MP4: lower thirds, titles, callouts"
     },
     {
-      "slug": "com-moltlinestudio-creator",
-      "name": "com.moltlinestudio/creator",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP server for creators: writing analysis, headline scoring, reading time, social lengths."
-    },
-    {
-      "slug": "com-moltlinestudio-educator",
-      "name": "com.moltlinestudio/educator",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP server for educators: readability reports, grade curves, lesson timing, skill catalog."
-    },
-    {
-      "slug": "com-moltlinestudio-govern",
-      "name": "com.moltlinestudio/govern",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP server for agent governance: MCP config audits, injection scans, scope-policy checks."
-    },
-    {
-      "slug": "com-moltlinestudio-merchant",
-      "name": "com.moltlinestudio/merchant",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP server for commerce math: fees, invoice totals, discounts, proration, installment plans."
-    },
-    {
-      "slug": "com-moltlinestudio-outbound",
-      "name": "com.moltlinestudio/outbound",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP server for outreach: copy audits, sequence planning, subject line scoring, UTM builder."
-    },
-    {
-      "slug": "com-moltlinestudio-personal",
-      "name": "com.moltlinestudio/personal",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP server for personal tools: budgets, savings goals, spaced repetition, tips, countdowns."
-    },
-    {
-      "slug": "com-moltlinestudio-research",
-      "name": "com.moltlinestudio/research",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP server for research: citation formatting, stats, sample sizes, confidence intervals."
-    },
-    {
-      "slug": "com-moltlinestudio-skillmd-lint",
-      "name": "com.moltlinestudio/skillmd-lint",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP server to lint SKILL.md files: packaging checks, regex tests, JSON validation, diffs."
-    },
-    {
-      "slug": "com-moltlinestudio-timeops",
-      "name": "com.moltlinestudio/timeops",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP server for business-day math, deadline planning, meeting overlap, and SLA calculations."
-    },
-    {
       "slug": "com-monopoly-gold-planner-mcp",
       "name": "com.monopoly-gold.planner/mcp",
       "confidence": 0.35,
@@ -4323,7 +4260,7 @@
       "name": "directory.nohumans/registry",
       "confidence": 0.35,
       "topics": [],
-      "description": "Curated, probe-verified directory of paid x402 APIs. Agents check it before spending money."
+      "description": "Paid-verified directory of x402 APIs — we pay endpoints real USDC and confirm settlement on-chain."
     },
     {
       "slug": "django-mcp-server",
@@ -5072,7 +5009,7 @@
       "name": "io.github.aleksUIX/vastlint",
       "confidence": 0.35,
       "topics": [],
-      "description": "Validate VAST, VMAP, and DAAST ad tags against IAB specs. 228 rules, pure Rust core."
+      "description": "Validate VAST, VMAP, and DAAST ad tags against IAB specs. 232 rules, pure Rust core."
     },
     {
       "slug": "io-github-alex88ryabov-ng-token-saver",
@@ -5114,7 +5051,7 @@
       "name": "io.github.alice51849/lumi-app-finder",
       "confidence": 0.35,
       "topics": [],
-      "description": "Find iOS apps by task across 29 live apps and 50 Apple locales, with direct App Store links."
+      "description": "Find iOS apps by task across 43 live apps and all 50 Apple locales with direct App Store links."
     },
     {
       "slug": "io-github-alifanov-scopegate",
@@ -6087,7 +6024,7 @@
       "name": "io.github.creator35lwb-web/verifimind-genesis",
       "confidence": 0.35,
       "topics": [],
-      "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.61"
+      "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.62"
     },
     {
       "slug": "io-github-crisnahine-rails-ai-context",
@@ -15075,7 +15012,7 @@
       "name": "uk.co.cybercentry/verification",
       "confidence": 0.35,
       "topics": [],
-      "description": "Pay-per-call security verification for wallets, contracts, agents and apps, in USDC over x402."
+      "description": "Twelve tools: token, wallet, contract and site security. Two free, the rest $1 in USDC over x402."
     },
     {
       "slug": "uk-openqr-qr",
@@ -15264,7 +15201,7 @@
       "name": "io.github.aarwitz/tapp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Explore iOS, Android, and web apps; get findings, evidence, and deterministic release gates."
+      "description": "Test iOS, Android, and web apps with agent exploration, replayable flows, and CI gates."
     },
     {
       "slug": "io-github-abhishekjkrsna-swapi-mcp",
@@ -18449,7 +18386,7 @@
       "name": "io.github.JessieJanie/skim402",
       "confidence": 0.45,
       "topics": [],
-      "description": "Clean web reader for AI agents. Free remote read tier, optional x402 pay-per-call. No API keys."
+      "description": "Web reader for AI agents — output ~4x smaller than raw HTML. Card API key or x402. Free tier."
     },
     {
       "slug": "io-github-jfarcand-mirroir-mcp",
@@ -19387,7 +19324,7 @@
       "name": "io.github.MattJeff/orizn-visa-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Visa requirements for 39,585 passport-destination pairs in 15 languages. Free key, no card."
+      "description": "Visa and entry requirements for any passport/destination pair, in 15 languages. Free key."
     },
     {
       "slug": "io-github-maxellis-orcaslicer-mcp",
@@ -21690,7 +21627,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "Local searchable memory over the session histories of eighteen coding agents."
+      "description": "Local searchable memory over the session histories of twenty coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -23085,24 +23022,6 @@
         "mcp-infrastructure"
       ],
       "description": "Free, no-key Bible MCP server — 86 translations in 32 languages, from any MCP client."
-    },
-    {
-      "slug": "com-moltlinestudio-data",
-      "name": "com.moltlinestudio/data",
-      "confidence": 0.55,
-      "topics": [
-        "data-analysis"
-      ],
-      "description": "Hosted MCP server for data analysis: CSV profiling, A/B tests, cohorts, funnels, trend forecasts."
-    },
-    {
-      "slug": "com-moltlinestudio-humanizer",
-      "name": "com.moltlinestudio/humanizer",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Hosted MCP server to humanize AI text: tell scans, voice fingerprints, burstiness, rewrite checks."
     },
     {
       "slug": "com-numeratica-mcp",
@@ -26556,7 +26475,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Agent402: 500+ pay-per-call tools for agents over x402 + MPP or free via PoW. Agentic Finance"
+      "description": "Agentic Finance: 500+ tools for AI agents over x402 or MPP, free via PoW, or prepaid card credits"
     },
     {
       "slug": "io-github-mikkoparkkola-mcp-gateway",
