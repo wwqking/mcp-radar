@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-08-22T22:22:09.549Z",
-  "total": 5747,
+  "generatedAt": "2026-08-23T22:22:18.959Z",
+  "total": 5745,
   "summary": {
-    "needsReview": 3889,
+    "needsReview": 3888,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2643,
+    "uncategorized": 2641,
     "uncategorizedRatePct": 46,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33
+    "largestCategoryRatePct": 33.1
   },
   "alerts": [
     "待归类占比 46%，超过 5% 审核线",
-    "dev 占比 33%，超过 30% 拆分评估线",
+    "dev 占比 33.1%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2643,
+    "misc": 2641,
     "dev": 1899,
     "search": 751,
     "files": 256,
-    "ai": 208,
+    "ai": 209,
     "comms": 184,
     "database": 167,
     "commerce": 156,
@@ -28,12 +28,12 @@
     "marketing": 77
   },
   "topicCounts": {
-    "design-media": 290,
+    "design-media": 291,
     "finance": 191,
     "automation": 190,
     "observability": 119,
     "legal": 90,
-    "mcp-infrastructure": 87,
+    "mcp-infrastructure": 85,
     "visualization": 66,
     "science-health": 31,
     "security": 29,
@@ -75,12 +75,12 @@
       "count": 117
     },
     {
-      "term": "free",
-      "count": 114
-    },
-    {
       "term": "memory",
       "count": 113
+    },
+    {
+      "term": "free",
+      "count": 111
     },
     {
       "term": "credit",
@@ -100,7 +100,7 @@
     },
     {
       "term": "create",
-      "count": 93
+      "count": 94
     },
     {
       "term": "code",
@@ -108,7 +108,7 @@
     },
     {
       "term": "live",
-      "count": 92
+      "count": 91
     },
     {
       "term": "read-only",
@@ -128,7 +128,7 @@
     },
     {
       "term": "company",
-      "count": 78
+      "count": 79
     },
     {
       "term": "checks",
@@ -136,11 +136,11 @@
     },
     {
       "term": "x402",
-      "count": 72
+      "count": 73
     },
     {
       "term": "across",
-      "count": 69
+      "count": 70
     },
     {
       "term": "audit",
@@ -148,7 +148,7 @@
     },
     {
       "term": "tasks",
-      "count": 65
+      "count": 66
     },
     {
       "term": "public",
@@ -160,7 +160,7 @@
     },
     {
       "term": "real",
-      "count": 59
+      "count": 60
     },
     {
       "term": "check",
@@ -180,7 +180,7 @@
     },
     {
       "term": "usdc",
-      "count": 52
+      "count": 53
     },
     {
       "term": "intelligence",
@@ -215,15 +215,19 @@
       "count": 46
     },
     {
-      "term": "security",
-      "count": 44
+      "term": "apis",
+      "count": 43
     },
     {
-      "term": "apis",
-      "count": 42
+      "term": "security",
+      "count": 43
     },
     {
       "term": "call",
+      "count": 42
+    },
+    {
+      "term": "plus",
       "count": 42
     },
     {
@@ -231,15 +235,11 @@
       "count": 42
     },
     {
-      "term": "plus",
-      "count": 41
-    },
-    {
       "term": "stdio",
       "count": 41
     },
     {
-      "term": "registry",
+      "term": "find",
       "count": 40
     }
   ],
@@ -1012,7 +1012,7 @@
       "name": "ai.pubfi/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Enumerate and inspect PubFi capabilities, then execute an exact selected route."
+      "description": "Use MCP 2026-07-28 server/discover to list PubFi capabilities and execute an exact route."
     },
     {
       "slug": "ai-pullpush-pullpush-mcp",
@@ -2643,14 +2643,14 @@
       "name": "com.crisphive/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Agentic scheduling & booking for field service: availability, jobs, customers, crews, fleet."
+      "description": "Field-service dispatch & technician scheduling for AI agents — sub-3-second cascade rescheduling."
     },
     {
       "slug": "com-crosbynews-weather",
       "name": "com.crosbynews/weather",
       "confidence": 0.35,
       "topics": [],
-      "description": "Crosby, TX weather, air quality, tropics, floods, fishing, pollen, roads, radar, news & schools."
+      "description": "Crosby, TX weather, air quality, tropics, floods, fishing, pollen, burn bans, radar, news & schools."
     },
     {
       "slug": "com-dashboardbase-mcp",
@@ -2826,6 +2826,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Pay for x402-priced APIs with feeless, sub-second Nano (XNO) micropayments from a local wallet."
+    },
+    {
+      "slug": "com-fiatdock-fiatdock-mcp",
+      "name": "com.fiatdock/fiatdock-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Cash out an AI agent's USDC to a real bank account (non-custodial). Plus Base data + a marketplace"
     },
     {
       "slug": "com-fidacy-ai-agent-firewall",
@@ -4372,7 +4379,7 @@
       "name": "fr.renoolab/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Find and contact plumbers, electricians, roofers and tradespeople in France; free pro profiles."
+      "description": "Find French tradespeople, plan multi-trade projects, submit moderated contacts, create profiles."
     },
     {
       "slug": "gg-batru-batru-mcp",
@@ -5807,7 +5814,7 @@
       "name": "io.github.chuofringer/placeroot",
       "confidence": 0.35,
       "topics": [],
-      "description": "29 tools, no API key — grounds AI agents in Overture Maps open data."
+      "description": "Grounds AI agents in Overture Maps open data — compact answers, no API key."
     },
     {
       "slug": "io-github-ckalima-pipedrive-mcp-server",
@@ -7221,7 +7228,7 @@
       "name": "io.github.jblaz6335/ai-data-marketplace",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live chain reads from $0.001, web fetch, market and security data. No API key, free previews."
+      "description": "Find and buy x402 agent readiness, vendor risk, transaction, and company intelligence APIs."
     },
     {
       "slug": "io-github-jcooley8-pincushion",
@@ -7726,13 +7733,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Timezone-correct CalDAV scheduling MCP server with validated recurrence and single-occurrence edits."
-    },
-    {
-      "slug": "io-github-lincchad-novence-mcp",
-      "name": "io.github.LincChad/novence-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP for creating, checking, deploying, and hosting static sites for AI agents."
     },
     {
       "slug": "io-github-liquefy-ui-liquefy-ui",
@@ -11288,7 +11288,7 @@
       "name": "io.github.Perseus-Computing-LLC/perseus-vault",
       "confidence": 0.35,
       "topics": [],
-      "description": "Persistent, encrypted, deterministic memory for AI agents. Local-first, 122 canonical tools."
+      "description": "Persistent, encrypted, deterministic memory for AI agents. Local-first, 169 canonical tools."
     },
     {
       "slug": "io-github-pete-builds-unifi",
@@ -12558,13 +12558,6 @@
       "description": "Cross-exchange liquidation tape, paid per call in USDC on Algorand. Free catalog, no key needed."
     },
     {
-      "slug": "io-github-sekeener-airtreks-mcp",
-      "name": "io.github.SEKeener/airtreks-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Multi-city flight routing intelligence — plan RTW trips, validate alliances, get carrier picks."
-    },
-    {
       "slug": "io-github-selflabbs-economy-intel-mcp",
       "name": "io.github.selflabbs/economy-intel-mcp",
       "confidence": 0.35,
@@ -13361,13 +13354,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Devil's-advocate QC API for AIs: post a decision, get strongest counter-argument. 0.1 USDT/call"
-    },
-    {
-      "slug": "io-github-uizze-uizze",
-      "name": "io.github.uizze/uizze",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "STOP UI SLOP. Free anti-ui-slop skill and UI Slop Gate for coding agents."
     },
     {
       "slug": "io-github-ulyssesmodel-kirk-mcp",
@@ -18662,6 +18648,13 @@
       "description": "Claude Code drives Codex CLI's interactive TUI and durable tmux terminals over MCP."
     },
     {
+      "slug": "io-github-kitepon-aiterm-mcp",
+      "name": "io.github.kitepon/aiterm-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Persistent terminals and one launcher for Claude, Codex, Grok, and Cursor harnesses."
+    },
+    {
       "slug": "io-github-kittycad-zoo-mcp",
       "name": "io.github.KittyCAD/zoo-mcp",
       "confidence": 0.45,
@@ -20948,7 +20941,7 @@
       "name": "io.github.shinpr/sub-agents-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "AI sub-agent delegation for Cursor, Claude, Codex, Gemini, GLM, Kimi, Grok, and OpenCode"
+      "description": "MCP server for delegating tasks to specialized AI sub-agents across coding tools"
     },
     {
       "slug": "io-github-sidneybissoli-bcb-br-mcp",
@@ -22870,15 +22863,6 @@
       "description": "MCP server for the FFmpeg Micro video transcoding API — create, monitor, download transcodes."
     },
     {
-      "slug": "com-fiatdock-fiatdock-mcp",
-      "name": "com.fiatdock/fiatdock-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "MCP marketplace: agents pay per call in USDC via x402. Plus Base chain data and a USDC<->bank ramp."
-    },
-    {
       "slug": "com-focusgts-aep",
       "name": "com.focusgts/aep",
       "confidence": 0.55,
@@ -22904,6 +22888,15 @@
         "design-media"
       ],
       "description": "Rewrite AI-generated text so it reads as human, in a persona's voice."
+    },
+    {
+      "slug": "com-gradusmusic-notation",
+      "name": "com.gradusmusic/notation",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Gradus Notation + Harmonic Analyzer + Engraver: music tools for any AI agent. Free, no auth."
     },
     {
       "slug": "com-hitsteps-analytics-operations",
@@ -23094,7 +23087,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Read-only live access to Australian bank (CDR/open banking) and global brokerage data for AI agents."
+      "description": "Live AU/NZ bank (CDR) and brokerage data for AI agents, plus management of Redbark syncs and rules"
     },
     {
       "slug": "com-rendobar-mcp",
@@ -24831,7 +24824,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Seven official-record tools for property compliance, healthcare integrity, and facility safety."
+      "description": "Ten government-record evidence tools for property, healthcare, facilities, Norway, and routing."
     },
     {
       "slug": "io-github-ericblair1903-nutrients-mcp",
@@ -25564,15 +25557,6 @@
         "design-media"
       ],
       "description": "Analyze any video (local file or URL) into frames + transcript for Claude Code"
-    },
-    {
-      "slug": "io-github-kitepon-aiterm-mcp",
-      "name": "io.github.kitepon/aiterm-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Persistent tmux terminals for Claude, Codex, Grok, and Composer from any MCP client."
     },
     {
       "slug": "io-github-kkjh0723-mcp-ldbd",
@@ -28099,6 +28083,15 @@
       "description": "Website performance monitoring: scans, Core Web Vitals, RUM data and alerts."
     },
     {
+      "slug": "io-github-uizze-uizze",
+      "name": "io.github.uizze/uizze",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Focused full-screen UI references and hosted design materials for coding agents."
+    },
+    {
       "slug": "io-github-umodeler-picoberry-mcp",
       "name": "io.github.UModeler/picoberry-mcp",
       "confidence": 0.55,
@@ -28123,7 +28116,7 @@
       "topics": [
         "mcp-infrastructure"
       ],
-      "description": "The personal context layer for AI: your profile and files, read by any MCP client over OAuth."
+      "description": "Personal context for AI, written by you and never scraped: your profile and files, any MCP client."
     },
     {
       "slug": "io-github-uxlint-net-uxlint",
