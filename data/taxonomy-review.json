@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-23T22:22:18.959Z",
-  "total": 5745,
+  "generatedAt": "2026-08-24T22:26:21.098Z",
+  "total": 5744,
   "summary": {
-    "needsReview": 3888,
+    "needsReview": 3889,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2641,
+    "uncategorized": 2640,
     "uncategorizedRatePct": 46,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.1
@@ -15,7 +15,7 @@
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2641,
+    "misc": 2640,
     "dev": 1899,
     "search": 751,
     "files": 256,
@@ -87,12 +87,12 @@
       "count": 104
     },
     {
-      "term": "local",
+      "term": "read",
       "count": 101
     },
     {
-      "term": "read",
-      "count": 101
+      "term": "local",
+      "count": 100
     },
     {
       "term": "manage",
@@ -111,11 +111,11 @@
       "count": 91
     },
     {
-      "term": "read-only",
-      "count": 90
+      "term": "over",
+      "count": 89
     },
     {
-      "term": "over",
+      "term": "read-only",
       "count": 89
     },
     {
@@ -132,11 +132,11 @@
     },
     {
       "term": "checks",
-      "count": 75
+      "count": 74
     },
     {
       "term": "x402",
-      "count": 73
+      "count": 74
     },
     {
       "term": "across",
@@ -223,15 +223,15 @@
       "count": 43
     },
     {
+      "term": "verify",
+      "count": 43
+    },
+    {
       "term": "call",
       "count": 42
     },
     {
       "term": "plus",
-      "count": 42
-    },
-    {
-      "term": "verify",
       "count": 42
     },
     {
@@ -1012,7 +1012,7 @@
       "name": "ai.pubfi/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Use MCP 2026-07-28 server/discover to list PubFi capabilities and execute an exact route."
+      "description": "Use MCP 2026-07-28 discovery or 2025-11-25 initialize to list and execute PubFi routes."
     },
     {
       "slug": "ai-pullpush-pullpush-mcp",
@@ -2231,13 +2231,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "530 MCP tools across 561 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
-    },
-    {
-      "slug": "co-fingersai-fingers",
-      "name": "co.fingersai/fingers",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Ask what you can't be sure of. Read-only checks on tokens, NFTs, wallets and contracts."
     },
     {
       "slug": "co-obto-obto",
@@ -5464,7 +5457,7 @@
       "name": "io.github.beepboop2025/seiche",
       "confidence": 0.35,
       "topics": [],
-      "description": "Money, FX and capital-market evidence with source clocks, canonical citations and explicit limits."
+      "description": "Money, FX, capital-market and metadata-only China macro evidence with source clocks and limits."
     },
     {
       "slug": "io-github-beepboop2025-undertow",
@@ -7515,7 +7508,7 @@
       "name": "io.github.Keesan12/martin-loop",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP server for AI coding agents — verifier gates, stop limits, and Verified Handoffs."
+      "description": "One system around coding agents to run, verify, recover, and hand off software work."
     },
     {
       "slug": "io-github-kensaurus-mushi-mushi",
@@ -10392,7 +10385,7 @@
       "name": "io.github.mnemoverse/mcp-memory-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "Hosted memory for AI agents that learns and forgets — one key across Claude, Cursor & ChatGPT."
+      "description": "Hosted memory for AI agents that learns from outcomes — one key across Claude, Cursor & ChatGPT."
     },
     {
       "slug": "io-github-model-mischief-managed-agent-observatory",
@@ -16006,7 +15999,7 @@
       "name": "io.github.cachly-dev/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Persistent memory + causal root-cause analysis for AI coding agents. 122 MCP tools. EU, GDPR."
+      "description": "Persistent memory + causal root-cause analysis for AI coding agents. 123 MCP tools. EU, GDPR."
     },
     {
       "slug": "io-github-cadlens-co-cadlens-mcp",
@@ -16825,7 +16818,7 @@
       "name": "io.github.dacode-dev/agent-context-api",
       "confidence": 0.45,
       "topics": [],
-      "description": "Free MCP context preflight with local redaction and a paid HTTP upgrade."
+      "description": "Agent-work MCP: free context preflight and page-read previews, paid x402 HTTP upgrades."
     },
     {
       "slug": "io-github-dan-fetch-studio-tidyports",
@@ -19226,7 +19219,7 @@
       "name": "io.github.MarcelRoozekrans/memorylens-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for .NET memory profiling with JetBrains dotMemory integration"
+      "description": "MCP server for .NET memory profiling — in-process heap snapshots via EventPipe with leak heuristics"
     },
     {
       "slug": "io-github-mariorojasmz-apolo-cad",
@@ -20892,7 +20885,7 @@
       "name": "io.github.sergii-ziborov/weavatrix-refactor",
       "confidence": 0.45,
       "topics": [],
-      "description": "Transactional refactoring MCP with 11 evidence-backed tools, hash-bound previews, and rollback."
+      "description": "Transactional refactoring extension with 11 evidence-backed tools, previews, and rollback."
     },
     {
       "slug": "io-github-sergii-ziborov-weavatrix-refactor-js",
@@ -24725,7 +24718,7 @@
       "topics": [
         "automation"
       ],
-      "description": "GoHighLevel MCP for Claude: 241 tools, 50 modules, incl. the only programmatic GHL workflow builder"
+      "description": "GoHighLevel MCP for Claude: 242 tools, 51 modules, incl. the only programmatic GHL workflow builder"
     },
     {
       "slug": "io-github-drzamarian-n8n-mcp-community",
@@ -25205,6 +25198,15 @@
         "visualization"
       ],
       "description": "A whiteboard where AI agents draw their explanations as hand-drawn animated diagrams"
+    },
+    {
+      "slug": "io-github-hermoso-ai-hermoso",
+      "name": "io.github.hermoso-ai/hermoso",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "681 tools, all usable alone: ad research, video ads, publishing, campaigns. Meta, Google, TikTok."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
@@ -25774,6 +25776,15 @@
         "science-health"
       ],
       "description": "Read-only FreeStyle glucose sensor access via LibreLinkUp. Not a medical device."
+    },
+    {
+      "slug": "io-github-luckycat133-traecnclaw",
+      "name": "io.github.Luckycat133/traecnclaw",
+      "confidence": 0.55,
+      "topics": [
+        "automation"
+      ],
+      "description": "Local persistent TraeCN coding-task gateway with a focused MCP Agent surface."
     },
     {
       "slug": "io-github-luffysolution-svg-obsidian-vault-mcp",
@@ -27746,7 +27757,7 @@
       "topics": [
         "security"
       ],
-      "description": "Source-free Weavatrix MCP: preview-gated sync, advisories, malware review, architecture contracts."
+      "description": "Weavatrix Online extension: guarded sync, advisories, malware review, architecture contracts."
     },
     {
       "slug": "io-github-shawnwollenberg-walletlens",
