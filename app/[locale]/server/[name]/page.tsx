@@ -35,10 +35,7 @@ import { localizedHref } from "@/lib/i18n/href";
 import { verdictText, deathReasonText } from "@/lib/i18n/verdict";
 import TrackedLink from "@/components/TrackedLink";
 import { TAXONOMY_TOPICS, taxonomyForServer, topicName } from "@/lib/taxonomy";
-import {
-  evaluateServerIndexability,
-  isServerIndexable,
-} from "@/lib/seo-indexability";
+import { evaluateServerIndexability } from "@/lib/seo-indexability";
 
 interface Props {
   params: Promise<{ name: string; locale: Locale }>;
@@ -46,7 +43,10 @@ interface Props {
 
 export async function generateStaticParams() {
   const servers = await getAllServers();
-  return servers.filter(isServerIndexable).map((s) => ({ name: s.slug }));
+  // All catalog records remain browsable from the leaderboard. Index admission
+  // is controlled independently by metadata + sitemap, so low-value records
+  // are still noindex without becoming slow runtime-only routes on Workers.
+  return servers.map((s) => ({ name: s.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
