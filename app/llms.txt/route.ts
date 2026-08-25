@@ -73,6 +73,7 @@ ${topLines}
 ## Core resources
 
 - [Quality leaderboard](${absoluteUrl("/en/leaderboard")})
+- [MCP Server health report](${absoluteUrl("/en/mcp-server-health-report")}): citation-ready aggregate findings with scope and limitations.
 - [Change radar](${absoluteUrl("/en/radar")})
 - [Archived and at-risk servers](${absoluteUrl("/en/graveyard")})
 - [Selection and security guides](${absoluteUrl("/en/guides")})

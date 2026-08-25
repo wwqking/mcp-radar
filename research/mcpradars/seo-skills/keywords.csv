@@ -1,0 +1,98 @@
+keyword,volume,kd,intent,cluster,priority,serp_adjusted,target_url,decision,source
+claude skills,27100,58,mixed,claude-hub,P1,strong,/skills/claude-code/,keep-demote,validated-cluster
+claude code skills,8100,51,mixed,claude-hub,P1,strong,/skills/claude-code/,keep,validated-cluster
+skills.sh,4400,26,navigational,brands,P2,medium,/skills/,do-not-target-directly,competitor-export
+agent skills,4400,52,informational,agent-skills-concept,P2,strong,/what-are-agent-skills/,keep-demote,validated-cluster
+claude skill,4400,62,mixed,claude-hub,P2,strong,/skills/claude-code/,merge,validated-cluster
+anthropic skills,3600,64,mixed,claude-hub,P2,strong,/skills/claude-code/,merge,validated-cluster
+claude skills marketplace,2900,69,commercial,directory-marketplace,P1,medium,/skills/,keep,validated-cluster
+skill.sh,2400,22,navigational,brands,P2,medium,/skills/,do-not-target-directly,competitor-export
+skillmp,2400,15,navigational,brands,P2,medium,/skills/,do-not-target-directly,competitor-export
+agent skill,1900,45,informational,agent-skills-concept,P2,strong,/what-are-agent-skills/,merge,validated-cluster
+claude code skill,1900,50,mixed,claude-hub,P2,strong,/skills/claude-code/,merge,validated-cluster
+skill-creator,1600,28,mixed,create-skill,P0,medium,/guides/create-agent-skill/,keep,validated-cluster
+cluade skills,1600,48,navigational,claude-hub,P2,strong,/skills/claude-code/,typo-merge,competitor-export
+awesome-claude-skills,1300,0,commercial,awesome-list,P0,weak,/skills/awesome-claude-skills/,keep-promote,validated-cluster
+vercel-labs/agent-skills,1300,27,navigational,install-cli,P1,medium,/guides/install-agent-skills/,merge,validated-cluster
+vercel skills,1000,42,navigational,install-cli,P1,medium,/guides/install-agent-skills/,merge,validated-cluster
+npx skills,1000,28,transactional,install-cli,P0,medium,/guides/install-agent-skills/,keep,validated-cluster
+agentskills,1000,37,navigational,agent-skills-concept,P2,strong,/what-are-agent-skills/,merge,validated-cluster
+openai/skills,880,59,navigational,codex-hub,P2,medium,/skills/codex/,merge,validated-cluster
+claude agent skills,720,35,mixed,claude-hub,P1,strong,/skills/claude-code/,merge,validated-cluster
+claude code /skills,720,44,transactional,claude-hub,P1,strong,/skills/claude-code/,merge,validated-cluster
+frontend-design skill,590,11,commercial,detail-frontend-design,P0,weak,/skills/anthropics/frontend-design/,conditional-index,validated-cluster
+claude code skills marketplace,590,34,commercial,directory-marketplace,P1,medium,/skills/,merge,validated-cluster
+skills marketplace,480,44,commercial,directory-marketplace,P1,medium,/skills/,merge,validated-cluster
+claude skills library,480,40,commercial,directory-marketplace,P1,medium,/skills/,merge,validated-cluster
+anthropic agent skills,480,38,informational,agent-skills-concept,P2,strong,/what-are-agent-skills/,merge,validated-cluster
+skills.md,480,44,navigational,skill-md,P2,medium,/guides/skill-md/,merge,validated-cluster
+ai agent skills,480,37,informational,agent-skills-concept,P2,strong,/what-are-agent-skills/,merge,validated-cluster
+claude skills repo,480,58,navigational,claude-hub,P2,strong,/skills/claude-code/,merge,validated-cluster
+load skills with openai agents sdk,480,38,informational,codex-hub,P2,medium,/skills/codex/,merge,validated-cluster
+claude frontend design skill,480,13,commercial,detail-frontend-design,P0,weak,/skills/anthropics/frontend-design/,merge,validated-cluster
+skill-architect,390,23,mixed,create-skill,P1,medium,/guides/create-agent-skill/,merge,validated-cluster
+openai skills,390,58,navigational,codex-hub,P2,medium,/skills/codex/,merge,validated-cluster
+ui/ux pro max skill,320,13,commercial,detail-ui-ux-pro-max,P0,weak,/skills/nexu-io/ui-ux-pro-max/,conditional-index,validated-cluster
+humanizer skill,320,15,commercial,detail-humanizer,P0,weak,/skills/softaworks/humanizer/,conditional-index,validated-cluster
+agent skills marketplace,320,26,commercial,directory-marketplace,P1,medium,/skills/,merge,validated-cluster
+skill marketplace,320,29,commercial,directory-marketplace,P1,medium,/skills/,merge,validated-cluster
+how to add skills to claude code,320,55,transactional,install-cli,P2,medium,/guides/install-agent-skills/,merge,validated-cluster
+ai skill directory platforms,260,9,commercial,directory-marketplace,P0,medium,/skills/,keep,validated-cluster
+dbt agent skills,260,23,commercial,category-data,P1,unknown,/skills/categories/data/,keep,validated-cluster
+skill md,260,33,informational,skill-md,P1,medium,/guides/skill-md/,keep,validated-cluster
+claude skill marketplace,260,55,commercial,directory-marketplace,P2,medium,/skills/,merge,validated-cluster
+claude skills directory,210,34,commercial,directory-marketplace,P1,medium,/skills/,merge,validated-cluster
+agent-browser skill,210,37,commercial,category-browser,P2,unknown,/skills/categories/browser-automation/,keep,validated-cluster
+notebooklm skill,210,32,commercial,detail-notebooklm,P1,unknown,/skills/notebooklm/,conditional-index,validated-cluster
+mcp skills,210,31,informational,skills-vs-mcp,P1,unknown,/compare/agent-skills-vs-mcp/,keep,validated-cluster
+.agents/skills,210,39,transactional,install-cli,P2,medium,/guides/install-agent-skills/,merge,validated-cluster
+playwright-cli skill,170,10,commercial,detail-playwright,P0,unknown,/skills/microsoft/playwright-cli/,conditional-index,validated-cluster
+dev-browser skill,170,3,commercial,category-browser,P0,unknown,/skills/categories/browser-automation/,merge,validated-cluster
+godot skills,170,19,commercial,category-game-dev,P1,unknown,/skills/categories/game-development/,keep,validated-cluster
+figma skill,170,49,commercial,detail-figma,P2,unknown,/skills/figma/,conditional-index,validated-cluster
+n8n skills,170,25,commercial,category-automation,P1,unknown,/skills/categories/automation/,keep,validated-cluster
+openai codex skills,110,0,mixed,codex-hub,P0,medium,/skills/codex/,keep,validated-cluster
+code review skill,110,23,commercial,category-code-quality,P1,unknown,/skills/categories/code-quality/,keep,validated-cluster
+how to install skills in claude code,110,33,transactional,install-cli,P1,medium,/guides/install-agent-skills/,merge,validated-cluster
+skill-installer,110,30,mixed,install-cli,P1,medium,/guides/install-agent-skills/,merge,validated-cluster
+claude code skills examples,110,38,informational,claude-hub,P2,strong,/skills/claude-code/,merge,validated-cluster
+document-skills,110,64,commercial,category-documents,P2,unknown,/skills/categories/documents/,keep,validated-cluster
+notion skills,90,0,commercial,detail-notion,P0,unknown,/skills/notion/,conditional-index,validated-cluster
+skills file,90,0,informational,skill-md,P0,medium,/guides/skill-md/,merge,validated-cluster
+add skills to claude code,90,0,transactional,install-cli,P0,medium,/guides/install-agent-skills/,merge,validated-cluster
+superpowers claude skills,90,0,commercial,detail-superpowers,P0,unknown,/skills/obra/superpowers/,conditional-index,validated-cluster
+claude code skills vs agents,90,19,informational,skills-vs-agents,P0,unknown,/compare/claude-code-skills-vs-agents/,keep,validated-cluster
+claude playwright skill,90,17,commercial,detail-playwright,P1,unknown,/skills/microsoft/playwright-cli/,merge,validated-cluster
+react best practices skill,90,25,commercial,category-code-quality,P1,unknown,/skills/categories/code-quality/,merge,validated-cluster
+browser use skill,90,17,commercial,category-browser,P1,unknown,/skills/categories/browser-automation/,merge,validated-cluster
+openai skills github,90,53,navigational,codex-hub,P2,medium,/skills/codex/,merge,validated-cluster
+codex skill installer,90,40,transactional,codex-hub,P2,medium,/skills/codex/,merge,validated-cluster
+download claude skills,90,39,transactional,install-cli,P2,medium,/guides/install-agent-skills/,merge,validated-cluster
+excalidraw skill,90,29,commercial,category-design,P1,unknown,/skills/categories/design/,keep,validated-cluster
+skills directory,90,42,commercial,directory-marketplace,P2,medium,/skills/,merge,validated-cluster
+context7 skill,90,32,commercial,detail-context7,P2,unknown,/skills/netresearch/context7-skill/,conditional-index,validated-cluster
+skills for codex,70,0,mixed,codex-hub,P0,medium,/skills/codex/,merge,validated-cluster
+mcp skill,70,0,informational,skills-vs-mcp,P0,unknown,/compare/agent-skills-vs-mcp/,merge,validated-cluster
+playwright scraper skill,70,3,commercial,detail-playwright,P0,unknown,/skills/microsoft/playwright-cli/,merge,validated-cluster
+vercel react best practices skill,70,17,commercial,category-code-quality,P1,unknown,/skills/categories/code-quality/,merge,validated-cluster
+claude skill.md,70,28,informational,skill-md,P1,medium,/guides/skill-md/,merge,validated-cluster
+agent skills repo,70,42,navigational,directory-marketplace,P2,medium,/skills/,merge,validated-cluster
+ai skills marketplace,70,32,commercial,directory-marketplace,P1,medium,/skills/,merge,validated-cluster
+agent skills examples,70,40,informational,agent-skills-concept,P2,strong,/what-are-agent-skills/,merge,validated-cluster
+agent skills library,70,59,commercial,directory-marketplace,P2,medium,/skills/,merge,validated-cluster
+remotion agent skills,50,0,commercial,detail-remotion,P0,unknown,/skills/remotion-dev/remotion/,conditional-index,validated-cluster
+code review skills,50,0,commercial,category-code-quality,P0,unknown,/skills/categories/code-quality/,merge,validated-cluster
+claude code playwright skill,50,0,commercial,detail-playwright,P0,unknown,/skills/microsoft/playwright-cli/,merge,validated-cluster
+supabase skills,50,0,commercial,category-database,P0,unknown,/skills/categories/database/,keep,validated-cluster
+claude skill files,50,0,informational,skill-md,P0,medium,/guides/skill-md/,merge,validated-cluster
+claude skills progressive disclosure,50,0,informational,agent-skills-concept,P1,strong,/what-are-agent-skills/,merge,validated-cluster
+docx skill,50,2,commercial,category-documents,P0,unknown,/skills/categories/documents/,merge,validated-cluster
+best agent skills,50,27,commercial,awesome-list,P1,weak,/skills/awesome-claude-skills/,merge,validated-cluster
+skill writer,50,18,informational,create-skill,P1,medium,/guides/create-agent-skill/,merge,validated-cluster
+document skills,50,19,commercial,category-documents,P1,unknown,/skills/categories/documents/,merge,validated-cluster
+mcp builder skill,50,23,commercial,skills-vs-mcp,P1,unknown,/compare/agent-skills-vs-mcp/,merge,validated-cluster
+opencode agent skills,50,24,commercial,client-opencode,P1,unknown,/skills/opencode/,keep,validated-cluster
+codex agent skills,50,41,mixed,codex-hub,P2,medium,/skills/codex/,merge,validated-cluster
+npx add skill,50,28,transactional,install-cli,P1,medium,/guides/install-agent-skills/,merge,validated-cluster
+skill scanner,50,41,commercial,security-tool,P2,unknown,/tools/agent-skill-security-checker/,keep,validated-cluster
+

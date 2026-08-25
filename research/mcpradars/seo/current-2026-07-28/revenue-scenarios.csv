@@ -1,0 +1,4 @@
+scenario,directional_monthly_demand,new_wave0_pages,organic_capture_rate,estimated_90d_sessions,qualified_signup_rate,estimated_qualified_signups,assumed_90d_value_per_signup_usd,estimated_90d_gross_value_usd,generation_cost_usd,verification_cost_usd,maintenance_cost_usd,risk_cost_usd,estimated_90d_net_value_usd,warning
+low,4900,6,2%,294,0.5%,1.5,5,7,1200,1200,480,400,-3273,"Planning scenario only; no paid product conversion history exists"
+medium,4900,6,5%,735,1.5%,11.0,15,165,1200,1200,480,400,-3115,"Planning scenario only; qualified signup value is assumed, not observed"
+high,4900,6,10%,1470,3.0%,44.1,30,1323,1200,1200,480,400,-1957,"High case is not a forecast; ranking, indexation, overlap and conversion assumptions can all fail"

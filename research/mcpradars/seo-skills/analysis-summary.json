@@ -1,0 +1,38 @@
+{
+  "run_date": "2026-07-28",
+  "market": "US",
+  "language": "en",
+  "base_term": "skills",
+  "interpreted_category": "AI Agent Skills",
+  "raw_keyword_rows_processed": 1106,
+  "automated_clean_candidates": 615,
+  "final_curated_keywords": 96,
+  "final_clusters": 19,
+  "entity_candidates": 31,
+  "entity_details_passing_a4_now": 0,
+  "eligible_hubs_guides_tools": 13,
+  "planned_content_map_rows": 28,
+  "wave0_queue_rows": 66,
+  "p0_keyword_rows": 25,
+  "briefs": 6,
+  "gross_cluster_volume": 84360,
+  "serp_queries_validated": 8,
+  "competitor_organic_keywords": {
+    "skills.sh": 211,
+    "skillsmp.com": 320,
+    "agentskill.sh": 21
+  },
+  "decisions": {
+    "directory_hub": "/skills/",
+    "do_not_target": "skills",
+    "detail_default": "noindex until two verified evidence classes",
+    "first_cutoff": "Top eight page groups cover 93.2% of gross mapped volume"
+  },
+  "pending": [
+    "Sandbox installation and task tests for entity candidates",
+    "Repository owner and license resolution for ambiguous entities",
+    "Reproduction of error-guide candidates before any publication",
+    "Revenue assumptions replacement with real Search Console, analytics, and AdSense cohort data"
+  ]
+}
+

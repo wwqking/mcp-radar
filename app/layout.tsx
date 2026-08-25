@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     other: {
       "msvalidate.01": "365B6B723566817E2A8702D3A1A863AF",
       "baidu-site-verification": "codeva-ApeZsR5Peg",
-      monetag: "b6994cc0a2e71d9f16de2d7a06fb3ca7",
     },
   },
 };
@@ -29,11 +28,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5972123080217605"
           crossOrigin="anonymous"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(s){s.dataset.zone='11576425',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`,
-          }}
         />
         {/* 防暗色闪烁 */}
         <script

@@ -37,6 +37,7 @@ export default async function SiteFooter({ locale }: { locale: Locale }) {
               <li><Link href={t("/what-is-mcp-server")} className="hover:text-brand-600 dark:hover:text-brand-400">{locale === "zh" ? "什么是 MCP Server" : "What is an MCP Server"}</Link></li>
               <li><Link href={t("/about")} className="hover:text-brand-600 dark:hover:text-brand-400">{dict.footer.methodology}</Link></li>
               <li><Link href={t("/leaderboard")} className="hover:text-brand-600 dark:hover:text-brand-400">{dict.footer.qualityBoard}</Link></li>
+              <li><Link href={t("/mcp-server-health-report")} className="hover:text-brand-600 dark:hover:text-brand-400">{locale === "zh" ? "MCP 健康度报告" : "MCP health report"}</Link></li>
               <li><Link href={t("/graveyard")} className="hover:text-brand-600 dark:hover:text-brand-400">{dict.footer.graveyard}</Link></li>
               <li><Link href={t("/sponsor")} className="hover:text-brand-600 dark:hover:text-brand-400">{dict.common.sponsor}</Link></li>
               <li><Link href={t("/editorial-policy")} className="hover:text-brand-600 dark:hover:text-brand-400">{locale === "zh" ? "编辑与赞助政策" : "Editorial policy"}</Link></li>

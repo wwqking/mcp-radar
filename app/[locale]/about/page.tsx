@@ -143,6 +143,12 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="mt-4 rounded-lg bg-amber-50 px-4 py-3 text-sm leading-6 text-amber-800 dark:bg-amber-950/50 dark:text-amber-200">
           <strong>{d.boundaryLead}</strong>{d.boundaryBody}
         </div>
+        <Link
+          href={localizedHref(locale, "/mcp-server-health-report")}
+          className="link-accent mt-4 inline-block text-sm font-medium"
+        >
+          {locale === "zh" ? "查看使用这套方法生成的健康度报告" : "View the health report produced with this methodology"}
+        </Link>
       </section>
 
       {/* 5. 利益披露 */}

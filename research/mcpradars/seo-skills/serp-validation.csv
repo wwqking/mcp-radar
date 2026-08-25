@@ -1,0 +1,10 @@
+query,volume,kd,intent,serp_features,top_result_types,competition,decision,target_url,notes
+agent skills,4400,52,informational,"AI Overview;Discussions and forums","official specification;official docs;GitHub;editorial",strong,keep-demote,/what-are-agent-skills/,"Official sources dominate; win with a clearer compatibility matrix and original verification."
+claude skills,27100,58,mixed,"Web results","official docs;GitHub lists;marketplace;editorial;forum",strong,keep-demote,/skills/claude-code/,"Very large demand but broad intent. Use a hub that routes to install, directory, and best-of pages."
+claude skills marketplace,2900,69,commercial,"Web results","marketplaces;directories;GitHub",medium,keep,/skills/,"SkillsMP ranks first; directory intent is explicit."
+skill.md,260,33,informational,"Web results","specification sites;docs;forum",medium,keep,/guides/skill-md/,"Ambiguous exact-match domains; target the format and validation task, not the naked navigation term."
+npx skills,1000,28,transactional,"Web results","GitHub CLI;official Vercel docs;guides;security article",medium,keep,/guides/install-agent-skills/,"Command intent is clear and security concerns create an evidence gap."
+codex skills,110,0,mixed,"AI Overview;Discussions and forums;Videos","official OpenAI docs;GitHub;community;course",medium,keep,/skills/codex/,"Current SERP supports a client-specific guide and curated list."
+awesome claude skills,1300,0,commercial,"Discussions and forums;Videos","GitHub lists;directories;editorial testing",weak,keep-promote,/skills/awesome-claude-skills/,"Low KD and list intent; original task tests can differentiate."
+how to install agent skills,110,33,informational,"AI Overview;Discussions and forums","official IDE docs;Vercel guide;forums",medium,keep,/guides/install-agent-skills/,"Merge with npx skills to avoid cannibalization."
+

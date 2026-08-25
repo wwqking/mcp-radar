@@ -1,0 +1,62 @@
+# A3 conditional rules for MCP server entity pages.
+# No evidence means no section. A query pattern alone never proves applicability.
+
+install:
+  applies_if:
+    - has_runnable_entry not_empty
+  weight: 2
+
+configuration:
+  applies_if:
+    - any_of:
+        - verified_config_exists not_empty
+        - readme_has_config not_empty
+  weight: 1
+
+api_key:
+  applies_if:
+    - auth_type in [api_key, oauth, token]
+  weight: 1
+
+docker:
+  applies_if:
+    - dockerfile_exists not_empty
+  weight: 1
+
+remote_connection:
+  applies_if:
+    - remote_endpoints not_empty
+  weight: 2
+
+troubleshooting:
+  applies_if:
+    - any_of:
+        - confirmed_issue_count >= 3
+        - install_failure_reproduced not_empty
+  standalone_page_if:
+    - error_term_volume >= 200
+  weight: 2
+
+comparison:
+  applies_if:
+    - comparable_entities >= 3
+    - comparison_dimensions >= 3
+  weight: 1
+
+client_compat:
+  applies_if:
+    - supported_clients not_empty
+  weight: 2
+
+editorial_assessment:
+  applies_if:
+    - editorial_notes not_empty
+  weight: 2
+
+health_signals:
+  applies_if:
+    - any_of:
+        - stars >= 1
+        - downloads >= 1
+    - last_commit not_empty
+  weight: 2

@@ -1,0 +1,49 @@
+site: mcpradars
+site_type: directory
+market: United States
+language: English
+research_date: 2026-07-28
+monetization: subscription
+volume_floor: 50
+kd_ceiling: 30
+seeds:
+  - mcp server
+  - mcp
+  - mcp tools
+  - remote mcp server
+exclude_terms:
+  - logo
+  - icon
+  - salary
+  - job
+  - jobs
+  - lyrics
+  - crack
+  - nulled
+  - medical
+  - certified
+  - minecraft
+  - mcp exam
+  - mcp practice
+  - agent skill
+  - claude skill
+  - skills
+competitors:
+  - mcpservers.org
+  - mcp.directory
+  - mcp.so
+  - pulsemcp.com
+  - glama.ai
+scope:
+  include:
+    - MCP server entity and setup pages
+    - troubleshooting guides
+    - protocol comparisons
+    - data-backed best-of guides
+    - remote MCP discovery
+  exclude:
+    - Agent Skills
+    - MCP client directory
+notes: >
+  This directory is a fresh execution of the seo-keyword-research skill.
+  Raw exports remain append-only under research/mcpradars/seo-r3/raw.

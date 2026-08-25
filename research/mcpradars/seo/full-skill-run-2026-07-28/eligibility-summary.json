@@ -1,0 +1,21 @@
+{
+  "entities": 817,
+  "verdicts": {
+    "enrich": 189,
+    "merge": 150,
+    "noindex": 96,
+    "reject": 382
+  },
+  "rules": [
+    "install",
+    "configuration",
+    "api_key",
+    "docker",
+    "remote_connection",
+    "troubleshooting",
+    "comparison",
+    "client_compat",
+    "editorial_assessment",
+    "health_signals"
+  ]
+}

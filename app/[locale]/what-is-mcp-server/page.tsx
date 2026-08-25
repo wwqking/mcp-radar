@@ -184,7 +184,7 @@ export default async function PillarPage({ params }: Props) {
         </section>
       )}
 
-      {/* MCP Server 接入指南目录：列出所有 SEO 落地页，给它们传站内内链权重 + 方便浏览 */}
+      {/* MCP Server 接入指南目录：直接链接合并后的详情页，避免经过重定向。 */}
       <section className="mt-12">
         <h2 className="mb-2 text-lg font-bold text-neutral-900 dark:text-neutral-100">
           {locale === "zh" ? "热门 MCP Server 接入指南" : "Popular MCP Server Setup Guides"}
@@ -200,7 +200,7 @@ export default async function PillarPage({ params }: Props) {
             return (
               <Link
                 key={l.toolSlug}
-                href={localizedHref(locale, `/servers/${l.toolSlug}-mcp-server`)}
+                href={localizedHref(locale, `/server/${l.serverSlug}`)}
                 className="card px-3 py-2.5 text-sm font-medium text-neutral-700 hover:border-brand-400 hover:text-brand-700 dark:text-neutral-300 dark:hover:text-brand-300"
               >
                 {t.toolName} MCP Server →

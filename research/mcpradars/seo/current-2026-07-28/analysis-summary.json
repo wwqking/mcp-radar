@@ -1,0 +1,80 @@
+{
+  "raw_keywords": 25418,
+  "after_clean": 7620,
+  "clusters": 5,
+  "total_planned_pages": 3539,
+  "priority_counts": {
+    "P0": 1214,
+    "P1": 2733,
+    "P2": 3673
+  },
+  "cluster_summary": [
+    {
+      "cluster_id": "entry_detail",
+      "cluster": "Entry / Detail",
+      "keywords": 6058,
+      "total_volume": 1168020,
+      "avg_kd": 21.7,
+      "avg_score": 52.7,
+      "p0_count": 1047,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 3486,
+      "planned_total": 3487
+    },
+    {
+      "cluster_id": "client_integration",
+      "cluster": "Client Integration",
+      "keywords": 676,
+      "total_volume": 69780,
+      "avg_kd": 19.7,
+      "avg_score": 53.1,
+      "p0_count": 92,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 12,
+      "planned_total": 13
+    },
+    {
+      "cluster_id": "concept_compare",
+      "cluster": "Concept & Compare",
+      "keywords": 330,
+      "total_volume": 39210,
+      "avg_kd": 13,
+      "avg_score": 51.1,
+      "p0_count": 47,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 12,
+      "planned_total": 13
+    },
+    {
+      "cluster_id": "ops_infra",
+      "cluster": "Ops / Infra / Security",
+      "keywords": 320,
+      "total_volume": 19870,
+      "avg_kd": 11,
+      "avg_score": 49.7,
+      "p0_count": 16,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 12,
+      "planned_total": 13
+    },
+    {
+      "cluster_id": "howto_build",
+      "cluster": "How-to / Build",
+      "keywords": 236,
+      "total_volume": 19210,
+      "avg_kd": 17.7,
+      "avg_score": 50.6,
+      "p0_count": 12,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 12,
+      "planned_total": 13
+    }
+  ],
+  "monetization_model": "subscription",
+  "scoring_note": "CPC is downweighted and intent is upweighted. SERP strong verdicts remain a separate one-tier demotion."
+}

@@ -1,0 +1,88 @@
+source:
+  google_autocomplete:
+    market: US
+    language: en
+    collected_at: 2026-07-28
+    head_entities: 20
+    query_pattern: "{entity} mcp [a-z], plus the unsuffixed base query"
+    queries: 540
+    failed_queries: 0
+    raw_suggestions: 6434
+    unique_entity_suggestion_pairs: 4986
+    warning: "Autocomplete proves demand existence, not monthly search volume."
+  google_serp:
+    checked_at: 2026-07-28
+    queries: 16
+    warning: "PAA was not observed in the sampled result pages; do not invent FAQ questions."
+
+patterns:
+  client_integration:
+    evidence_count: 738
+    examples:
+      - context7 mcp claude code
+      - context7 mcp cursor
+      - github mcp codex
+    page_use: "Entity-page compatibility/config subsection only after client support is verified."
+  install_setup_config:
+    evidence_count: 209
+    examples:
+      - context7 mcp install
+      - context7 mcp setup
+      - github mcp configuration
+    page_use: "Entity-page section; never a separate URL by default."
+  remote_url_transport:
+    evidence_count: 125
+    examples:
+      - context7 mcp server url
+      - context7 mcp streamable http
+      - github mcp remote
+    page_use: "Entity section only when a remote endpoint or transport is present."
+  tutorial_how_to:
+    evidence_count: 112
+    examples:
+      - context7 mcp how to use
+      - github mcp how to install
+      - figma mcp tutorial
+    page_use: "Absorb into the entity page unless a distinct problem has measured demand."
+  comparison_alternative:
+    evidence_count: 111
+    examples:
+      - context7 mcp vs cli
+      - context7 mcp alternative
+      - context7 mcp local vs remote
+    page_use: "Standalone only when SERP intent and comparable dimensions support it."
+  api_key_oauth_token:
+    evidence_count: 109
+    examples:
+      - context7 mcp api key
+      - does context7 mcp need api key
+      - context7 mcp oauth
+    page_use: "Entity section only when auth_type is api_key, oauth or token."
+  troubleshooting:
+    evidence_count: 74
+    examples:
+      - context7 mcp error connection closed
+      - github mcp error calling initialize eof
+      - context7 mcp not working
+    page_use: "Standalone only after a reproducible failure or repeated issue evidence and volume."
+  pricing_free:
+    evidence_count: 59
+    examples:
+      - context7 mcp pricing
+      - github mcp free
+      - playwright mcp cost
+    page_use: "Entity fact block only with a dated first-party pricing source."
+  docker:
+    evidence_count: 53
+    examples:
+      - context7 mcp docker
+      - github mcp docker image
+      - filesystem mcp docker compose
+    page_use: "Entity section only when a Dockerfile or official image exists."
+  security_permissions:
+    evidence_count: 3
+    examples:
+      - supabase mcp write permission
+      - gitlab mcp permission
+      - cloudflare mcp security
+    page_use: "Low autocomplete incidence does not imply low importance; use official security evidence."

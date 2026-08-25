@@ -1,0 +1,39 @@
+{
+  "raw_keywords": 25479,
+  "cleaned_keywords": 7631,
+  "mechanical_candidate_pages": 3589,
+  "priority_counts": {
+    "P0": 1107,
+    "P1": 2588,
+    "P2": 3936
+  },
+  "classifier_counts": {
+    "entity": 2555,
+    "attribute": 998,
+    "junk": 784,
+    "judge": 3294
+  },
+  "entity_page_opportunities": 179,
+  "entity_actions": {
+    "enrich_existing": 44,
+    "collect_required": 57,
+    "create_ready": 29,
+    "semantic_review": 47,
+    "scope_excluded": 1,
+    "merge_into_entity_page": 1
+  },
+  "content_page_clusters": 54,
+  "content_actions": {
+    "create_ready": 48,
+    "enrich_existing": 6
+  },
+  "unmatched_core_content_keywords": 189,
+  "write_now_pages": 74,
+  "write_now_cluster_demand_us": 56880,
+  "a4_entity_eligibility": {
+    "enrich": 189,
+    "merge": 150,
+    "noindex": 96,
+    "reject": 382
+  }
+}

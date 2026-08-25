@@ -1,0 +1,54 @@
+install:
+  applies_if:
+    - any_of:
+        - github_repo not_empty
+        - verified_install_command not_empty
+  weight: 1
+
+client_compatibility:
+  applies_if:
+    - tested_clients not_empty
+  weight: 2
+
+security:
+  applies_if:
+    - any_of:
+        - security_scan_date not_empty
+        - permissions_review not_empty
+        - artifact_hash not_empty
+  weight: 2
+
+repository_health:
+  applies_if:
+    - github_repo not_empty
+    - last_commit not_empty
+  weight: 1
+
+editorial_test:
+  applies_if:
+    - task_test_result not_empty
+  weight: 2
+
+troubleshooting:
+  applies_if:
+    - any_of:
+        - reproduced_error not_empty
+        - confirmed_issue_count >= 3
+  standalone_page_if:
+    - error_term_volume >= 50
+  weight: 2
+
+comparison:
+  applies_if:
+    - comparable_entities >= 3
+    - comparison_dimensions >= 3
+  weight: 1
+
+index_gate:
+  minimum_distinct_evidence_classes: 2
+  required:
+    - unique_direct_answer
+  otherwise:
+    robots: noindex
+    sitemap: exclude
+

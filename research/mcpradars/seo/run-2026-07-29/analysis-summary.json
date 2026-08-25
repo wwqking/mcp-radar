@@ -1,0 +1,104 @@
+{
+  "raw_keywords": 25479,
+  "after_clean": 8052,
+  "clusters": 7,
+  "total_planned_pages": 4167,
+  "priority_counts": {
+    "P0": 791,
+    "P1": 2324,
+    "P2": 4937
+  },
+  "cluster_summary": [
+    {
+      "cluster_id": "entry_detail",
+      "cluster": "Entry / Detail",
+      "keywords": 5902,
+      "total_volume": 1224380,
+      "avg_kd": 22.8,
+      "avg_score": 50.6,
+      "p0_count": 640,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 3596,
+      "planned_total": 3597
+    },
+    {
+      "cluster_id": "client_integration",
+      "cluster": "Client Integration",
+      "keywords": 764,
+      "total_volume": 83450,
+      "avg_kd": 22.2,
+      "avg_score": 51.3,
+      "p0_count": 82,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 267,
+      "planned_total": 268
+    },
+    {
+      "cluster_id": "concept_compare",
+      "cluster": "Concept & Compare",
+      "keywords": 349,
+      "total_volume": 45200,
+      "avg_kd": 14.2,
+      "avg_score": 48.8,
+      "p0_count": 29,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 85,
+      "planned_total": 86
+    },
+    {
+      "cluster_id": "best_of",
+      "cluster": "Best-of / Alternatives",
+      "keywords": 344,
+      "total_volume": 35500,
+      "avg_kd": 16.5,
+      "avg_score": 48.5,
+      "p0_count": 25,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 82,
+      "planned_total": 83
+    },
+    {
+      "cluster_id": "howto_build",
+      "cluster": "How-to / Build",
+      "keywords": 338,
+      "total_volume": 27970,
+      "avg_kd": 18.9,
+      "avg_score": 47.5,
+      "p0_count": 7,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 68,
+      "planned_total": 69
+    },
+    {
+      "cluster_id": "ops_infra",
+      "cluster": "Ops / Infra / Security",
+      "keywords": 308,
+      "total_volume": 16590,
+      "avg_kd": 10.9,
+      "avg_score": 47.7,
+      "p0_count": 6,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 49,
+      "planned_total": 50
+    },
+    {
+      "cluster_id": "troubleshooting",
+      "cluster": "Troubleshooting / Errors",
+      "keywords": 47,
+      "total_volume": 4240,
+      "avg_kd": 10.5,
+      "avg_score": 48.8,
+      "p0_count": 2,
+      "material": true,
+      "planned_pillar": 1,
+      "planned_cluster_pages": 13,
+      "planned_total": 14
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+modifier,pattern,observed_examples,intent,page_or_section,decision
+client,"{client} skills","claude skills; codex skills; gemini skills; cursor skills marketplace",mixed,hub,keep
+marketplace,"{client} skills marketplace","claude skills marketplace; claude code skills marketplace; agent skills marketplace",commercial,hub,keep
+directory,"{client} skills directory","claude skills directory; ai skill directory platforms",commercial,hub,keep
+install,"how to install/add skills in {client}","how to add skills to claude code; npx skills; codex skill installer",transactional,guide,keep
+format,"skill.md + {client|schema|example}","skill md; claude skill.md; skill.md github",informational,guide-or-tool,keep
+repository,"{vendor|client} skills repo/github","openai skills github; anthropic skills repo; claude skills repository",navigational,section,keep
+best-list,"best/awesome {client} skills","awesome claude skills; best agent skills",commercial,curated-list,keep
+entity,"{entity} skill","frontend-design skill; humanizer skill; playwright-cli skill",mixed,detail,conditional
+task,"{task} skills","code review skill; document skills; browser use skill",commercial,category-hub,keep
+comparison,"skills vs {concept}","claude code skills vs agents; mcp skills",informational,comparison,keep
+compatibility,"{entity} skill for {client}","figma skill claude; notion skills for claude",commercial,detail-section,conditional
+security,"is {entity|source} safe; skill scanner","is it safe to use agent from aitmpl; skill scanner",commercial,tool-or-guide,keep
+error,"{command} + error/fix/not found","install and discovery failures",informational,troubleshooting,conditional
+brand-typo,"brand and misspellings","skill.sh; skills. sh; skillmp; cluade skills",navigational,canonical-hub,merge
+

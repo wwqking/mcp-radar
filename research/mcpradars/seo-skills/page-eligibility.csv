@@ -1,0 +1,22 @@
+target_url,page_type,demand_evidence,supply_evidence,verified_install,client_compatibility,security_review,repo_health,editorial_test,troubleshooting,evidence_class_count,index_decision,reason,refresh_days
+/skills/,directory-hub,"8790 gross cluster volume","37354 skills.sh URLs; 19358 skillsmp URLs",false,false,false,false,false,false,2,index,"Demand and supply justify a hub; hub copy must be editorial and non-templated.",30
+/what-are-agent-skills/,pillar,"8650 gross cluster volume","Official specification and docs visible in SERP",false,true,false,false,false,false,2,index,"Client matrix supplies original value beyond definition text.",60
+/skills/claude-code/,client-hub,"49540 gross cluster volume","Multiple official and community repositories",false,true,false,false,true,false,2,index,"Needs verified shortlist and routing content.",30
+/guides/install-agent-skills/,guide,"4630 gross cluster volume","CLI and manual install methods observed",true,true,true,false,false,true,4,index,"Direct task page with testable instructions.",30
+/guides/skill-md/,guide,"1330 gross cluster volume","Open SKILL.md format and examples",true,true,true,false,false,true,4,index,"Annotated example and validation tests provide uniqueness.",60
+/skills/codex/,client-hub,"1870 gross cluster volume","Official OpenAI documentation plus community repositories",true,true,false,false,true,false,3,index,"Current SERP validates distinct intent.",30
+/skills/awesome-claude-skills/,curated-list,"1400 gross cluster volume","Multiple GitHub lists and directories",true,true,true,true,true,false,5,index,"Only index when recommendations are actually tested and dated.",30
+/guides/create-agent-skill/,guide,"2430 gross cluster volume","Skill creator and authoring ecosystem",true,true,true,false,true,true,5,index,"Template plus validator creates unique utility.",60
+/skills/categories/browser-automation/,category-hub,"470 gross cluster volume","Multiple browser and Playwright candidates",true,true,true,true,true,true,6,index,"Launch only after five candidate tests are complete.",30
+/skills/categories/code-quality/,category-hub,"320 gross cluster volume","Code review and framework-practice candidates",true,true,true,true,true,false,5,index,"Common seeded-bug fixture makes comparison original.",30
+/skills/categories/documents/,category-hub,"320 gross cluster volume","Document and format-specific candidates",true,true,true,true,true,true,6,index,"Rendered artifact QA differentiates the page.",30
+/tools/skill-md-validator/,tool,"Zero-volume adoption bet","Every SKILL.md is potential input",true,true,true,false,true,true,5,index,"First-party utility can earn links without keyword volume.",30
+/skills/anthropics/frontend-design/,detail,"1600 gross related volume","Sitemap and keyword evidence",false,false,false,false,false,false,0,noindex,"Candidate has not yet passed two verified evidence classes.",14
+/skills/nexu-io/ui-ux-pro-max/,detail,"790 gross related volume","Sitemap and keyword evidence",false,false,false,false,false,false,0,noindex,"Candidate has not yet passed two verified evidence classes.",14
+/skills/softaworks/humanizer/,detail,"460 gross related volume","Sitemap and keyword evidence",false,false,false,false,false,false,0,noindex,"Candidate has not yet passed two verified evidence classes.",14
+/skills/microsoft/playwright-cli/,detail,"550 gross related volume","Sitemap and keyword evidence",false,false,false,false,false,false,0,noindex,"Candidate has not yet passed two verified evidence classes.",14
+/skills/obra/superpowers/,detail,"90 measured volume plus adoption signal","Sitemap and SERP mentions",false,false,false,false,false,false,0,noindex,"Candidate has not yet passed two verified evidence classes.",14
+/skills/remotion-dev/remotion/,detail,"470 gross related volume","Sitemap and keyword evidence",false,false,false,false,false,false,0,noindex,"Candidate has not yet passed two verified evidence classes.",14
+/tools/agent-skill-security-checker/,tool,"530 gross related volume","Install-security gap observed in SERP",true,true,true,false,true,true,5,index,"Tool is unique, but must state that static checks cannot guarantee safety.",30
+/skills/{owner}/{slug}/,detail,"Entity or zero-volume adoption evidence","Competitor sitemap or verified repository",false,false,false,false,false,false,0,noindex,"Programmatic default: exclude from sitemap until at least two evidence classes pass.",14
+

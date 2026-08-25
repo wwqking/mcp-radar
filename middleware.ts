@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { LOCALES, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { SITE_URL } from "@/lib/site";
 
 // 无 locale 前缀的路径 → 重定向到带前缀的版本。
 // 语言判定优先级：cookie（用户上次选择）> Accept-Language 头 > 默认英文。
@@ -14,8 +15,60 @@ function detectLocale(req: NextRequest): string {
   return DEFAULT_LOCALE;
 }
 
+const CANONICAL_URL = new URL(SITE_URL);
+const CANONICAL_HOST = CANONICAL_URL.host;
+const APEX_HOST = CANONICAL_HOST.replace(/^www\./, "");
+
+function forwardedValue(value: string | null): string {
+  return (value ?? "").split(",")[0].trim().toLowerCase();
+}
+
+function canonicalRedirect(req: NextRequest): NextResponse | null {
+  const host = forwardedValue(
+    req.headers.get("x-forwarded-host") ?? req.headers.get("host"),
+  );
+  const protocol = forwardedValue(req.headers.get("x-forwarded-proto")) || req.nextUrl.protocol.replace(":", "");
+  const isProductionHost = host === CANONICAL_HOST || host === APEX_HOST;
+
+  // Preview/local hosts must remain reachable on their own origin.
+  if (!isProductionHost || (host === CANONICAL_HOST && protocol === "https")) {
+    return null;
+  }
+
+  const url = new URL(
+    `${req.nextUrl.pathname}${req.nextUrl.search}`,
+    CANONICAL_URL,
+  );
+  return NextResponse.redirect(url, 301);
+}
+
+function isInfrastructurePath(pathname: string): boolean {
+  return (
+    pathname.startsWith("/api/") ||
+    pathname === "/api" ||
+    pathname.startsWith("/_next/") ||
+    pathname === "/feed.xml" ||
+    pathname === "/feed.json" ||
+    pathname === "/llms.txt" ||
+    pathname === "/sitemap.xml" ||
+    pathname === "/robots.txt" ||
+    pathname === "/icon" ||
+    pathname === "/apple-icon" ||
+    pathname === "/opengraph-image" ||
+    pathname === "/favicon.ico" ||
+    /\.[^/]+$/.test(pathname)
+  );
+}
+
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
+
+  const normalized = canonicalRedirect(req);
+  if (normalized) return normalized;
+
+  // Infrastructure routes stay at the root; host/protocol normalization above
+  // still applies to them.
+  if (isInfrastructurePath(pathname)) return NextResponse.next();
 
   // 已带 locale 前缀的放行
   const hasLocale = LOCALES.some(
@@ -37,8 +90,7 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  // 排除：API、_next 内部、以及所有基础设施路由（保持在根、不加前缀）
-  matcher: [
-    "/((?!api|_next|feed\\.xml|feed\\.json|llms\\.txt|sitemap\\.xml|robots\\.txt|icon|apple-icon|opengraph-image|favicon\\.ico|.*\\..*).*)",
-  ],
+  // Run on infrastructure routes too so HTTP/non-www variants cannot bypass
+  // canonicalization. Next's immutable static assets are the only exception.
+  matcher: ["/((?!_next/static|_next/image).*)"],
 };

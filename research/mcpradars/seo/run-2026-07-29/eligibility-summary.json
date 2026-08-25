@@ -1,0 +1,23 @@
+{
+  "entities": 817,
+  "verdicts": {
+    "enrich": 257,
+    "merge": 82,
+    "noindex": 96,
+    "reject": 382
+  },
+  "rules": [
+    "install",
+    "configuration",
+    "api_key",
+    "docker",
+    "remote_connection",
+    "troubleshooting",
+    "comparison",
+    "client_compat",
+    "editorial_assessment",
+    "health_signals"
+  ],
+  "live_urls": 817,
+  "live_matched": 257
+}

@@ -68,6 +68,10 @@ export default async function LeaderboardPage({ params }: { params: Promise<{ lo
         <Link href={localizedHref(locale, "/about")} className="font-medium underline underline-offset-4">
           {d.methodLink}
         </Link>
+        <span aria-hidden="true">·</span>
+        <Link href={localizedHref(locale, "/mcp-server-health-report")} className="font-medium underline underline-offset-4">
+          {locale === "zh" ? "健康度报告" : "Health report"}
+        </Link>
       </div>
 
       <div className="mb-8">

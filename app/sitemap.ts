@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 import { PUBLIC_CATEGORIES, getAllServers, getLastUpdated } from "@/lib/data";
 import { SITE_URL } from "@/lib/site";
 import { LOCALES } from "@/lib/i18n/locales";
-import { getSeoLandingSlugs } from "@/lib/seo-landing";
 import { getGuideModifiedAt, getGuideSlugs } from "@/lib/guides";
 import { TAXONOMY_TOPICS } from "@/lib/taxonomy";
+import { isServerIndexable } from "@/lib/seo-indexability";
 
 const BASE = SITE_URL;
 
@@ -30,12 +30,32 @@ function entry(
   }));
 }
 
+function englishServerEntry(
+  path: string,
+  lastModified: string,
+): MetadataRoute.Sitemap[number] {
+  const url = `${BASE}/en${path}`;
+  return {
+    url,
+    lastModified,
+    changeFrequency: "daily",
+    priority: 0.8,
+    alternates: {
+      languages: {
+        en: url,
+        "x-default": url,
+      },
+    },
+  };
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const datasetUpdatedAt = await getLastUpdated();
   const contentUpdatedAt = "2026-07-28";
   const staticPaths: Array<[string, number, MetadataRoute.Sitemap[number]["changeFrequency"]]> = [
     ["", 1, "daily"],
     ["/what-is-mcp-server", 0.9, "monthly"],
+    ["/mcp-server-health-report", 0.9, "daily"],
     ["/remote-mcp-servers", 0.9, "daily"],
     ["/guides", 0.7, "weekly"],
     ["/leaderboard", 0.7, "daily"],
@@ -68,19 +88,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   const allServers = await getAllServers();
-  const serverPages = allServers.flatMap((s) =>
-    entry(`/server/${s.slug}`, 0.8, s.signals.dataUpdatedAt || datasetUpdatedAt, "daily"),
-  );
-
-  // SEO 落地页 /servers/{tool}-mcp-server —— 精准命中主关键词，优先级略高于普通详情页
-  const seoLandingPages = getSeoLandingSlugs().flatMap((t) =>
-    entry(`/servers/${t}-mcp-server`, 0.9, contentUpdatedAt, "monthly"),
-  );
+  const serverPages = allServers
+    .filter(isServerIndexable)
+    .map((s) =>
+      englishServerEntry(
+        `/server/${s.slug}`,
+        s.signals.dataUpdatedAt || datasetUpdatedAt,
+      ),
+    );
 
   // 指南 / SEO 文章
   const guidePages = getGuideSlugs().flatMap((slug) =>
     entry(`/guides/${slug}`, 0.7, getGuideModifiedAt(slug) ?? contentUpdatedAt, "monthly"),
   );
 
-  return [...staticPages, ...categoryPages, ...topicPages, ...serverPages, ...seoLandingPages, ...guidePages];
+  return [...staticPages, ...categoryPages, ...topicPages, ...serverPages, ...guidePages];
 }

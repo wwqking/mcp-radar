@@ -1,0 +1,41 @@
+project: MCP Radar
+research_topic: Agent Skills
+base_term: skills
+language: en
+market: US
+run_date: 2026-07-28
+site_type: directory
+monetization: display_ads
+interpretation:
+  include:
+    - AI Agent Skills
+    - Claude and Claude Code Skills
+    - Codex Skills
+    - SKILL.md format
+    - skills marketplaces and directories
+    - installation, compatibility, security, and verified usage
+  exclude:
+    - employment skills
+    - soft skills
+    - games and skill trees
+    - professional assessment products
+volume_floor: 10
+page_strategy:
+  primary_market: US English
+  default_detail_indexing: noindex
+  index_gate: "At least two verified evidence classes plus a unique direct answer"
+  detail_canonical_pattern: "/skills/{owner}/{slug}/"
+  locale_policy: "Launch English only; add localized URLs after distinct localized demand and content exist."
+sources:
+  seed_export: raw/skills_broad_us_2026-07-28.csv
+  competitor_exports:
+    - raw/skills.sh_organic_us_2026-07-28.csv
+    - raw/skillsmp.com_organic_us_2026-07-28.csv
+    - raw/agentskill.sh_organic_us_2026-07-28.csv
+  reused_validated_cluster: ../seo-r3/skills-cluster.csv
+  architecture:
+    - https://skills.sh/sitemap.xml
+    - https://skillsmp.com/sitemap.xml
+    - https://agentskill.sh/sitemap.xml
+  serp_method: "Google US, hl=en, gl=us, pws=0, checked in a real browser"
+

@@ -1,0 +1,19 @@
+{
+  "input_rows": 1716,
+  "per_source": {
+    "registry-2026-07-28.json": 666,
+    "github-2026-07-28.json": 817,
+    "npm-2026-07-28.json": 233
+  },
+  "canonical_entities": 747,
+  "rows_merged_away": 969,
+  "confidence": {
+    "high": 642,
+    "medium": 105,
+    "low": 0
+  },
+  "lifecycle": {
+    "candidate": 747
+  },
+  "name_collisions_to_review": 0
+}

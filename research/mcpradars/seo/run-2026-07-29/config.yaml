@@ -1,0 +1,50 @@
+site: mcpradars
+site_type: directory
+market: United States
+language: English
+research_date: 2026-07-29
+monetization: subscription
+volume_floor: 50
+kd_ceiling: 30
+
+# This run re-executes A3/A4 only, against the SAME entity evidence as
+# current-2026-07-28. The skill's eligibility.py changed on 2026-07-29
+# (the "computed" uniqueness class no longer accepts stars+last_commit),
+# so holding the inputs fixed isolates the effect of the gate change.
+#
+# Keyword-side stages (A2/A5/A6) were NOT re-run: no keyword-tool or SERP
+# access this session, and the underlying scripts are unchanged since
+# 2026-07-27. Those outputs in full-skill-run-2026-07-28/ remain current.
+scope:
+  rerun: [A3, A4]
+  not_rerun: [A1, A2, A5, A6, A7]
+  reason_not_rerun: >
+    A2/A5 need browser access to keyword tools and live Google SERPs, which
+    this session does not have. Reusing them unchanged is honest; re-deriving
+    them offline would be fabrication.
+
+evidence_corrections:
+  # Applied to entities.csv this run, sourced from data/servers.json (the real
+  # dataset) rather than the hand-annotated CSV.
+  health_score: >
+    Populated from the published five-dimension TrustScore
+    (lib/collector/score.ts; weights public on /editorial-policy).
+    Previously present only as `trust_score`, a column name the new gate does
+    not recognise — this was a false negative, not a quality problem.
+  activity_trend: >
+    Populated from starsTrend / downloadsTrend (817/817 in data/servers.json).
+  editorial_notes: >
+    CORRECTED DOWNWARD. Was a blanket string on 74 rows (3 distinct values)
+    asserting capability cards and fit guidance that do NOT exist in
+    data/servers.json. Now kept only for the 44 entities with a real landing
+    page. The earlier value was aspirational, not evidence.
+  has_tool: >
+    CORRECTED DOWNWARD. Was one constant string on 704 rows. The config
+    generator is a SITE feature; it is only entity-specific where the entity
+    has a runnable entry. Now gated on has_runnable_entry.
+
+known_fragility: >
+  214 of 257 enrich verdicts pass on exactly two classes, computed + tool.
+  Remove TrustScore or the generated config and they fail. This is a thin
+  margin and the honest read is that most entity pages are still carried by
+  site-wide machinery rather than per-entity substance. See REPORT.md.

@@ -12,6 +12,8 @@
     "start": "next start",
     "lint": "next lint",
     "validate:data": "node --import tsx scripts/validate-data.mts",
+    "audit:seo-index": "node --import tsx scripts/audit-seo-index-surface.mts",
+    "seo:index-allowlist": "node --import tsx scripts/build-seo-index-allowlist.mts",
     "audit:taxonomy": "node --import tsx scripts/audit-taxonomy.mts",
     "audit:taxonomy:write": "node --import tsx scripts/audit-taxonomy.mts --write",
     "collect": "tsx --env-file-if-exists=.env scripts/collect.mts",

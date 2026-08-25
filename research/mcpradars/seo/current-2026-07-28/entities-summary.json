@@ -1,0 +1,22 @@
+{
+  "source_dataset_records": 817,
+  "canonical_entities": 817,
+  "canonicalization_policy": "Use the collector's server slug/package as the entity boundary. Same GitHub repository alone does not merge monorepo packages or distinct registry endpoints.",
+  "hard_link_merge_diagnostic": {
+    "entities": 747,
+    "note": "The generic helper collapsed 817 records to 747 because it treats a shared GitHub repository as identity. That is unsafe for MCP monorepos, so the diagnostic is preserved but not used for page gating.",
+    "file": "entities-hard-link-merged.csv"
+  },
+  "confidence": {
+    "high": 709,
+    "medium": 108
+  },
+  "lifecycle": {
+    "candidate": 712,
+    "deprecated": 9,
+    "stale": 96
+  },
+  "existing_health_pages": 817,
+  "existing_landing_pages": 44,
+  "existing_landings_without_runnable_entry": 25
+}

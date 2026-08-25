@@ -1,0 +1,70 @@
+site: mcpradars
+site_type: directory
+market: United States
+language: English
+seeds:
+  - mcp server
+  - mcp
+  - mcp tools
+  - remote mcp server
+exclude_terms:
+  - logo
+  - icon
+  - salary
+  - job
+  - jobs
+  - lyrics
+  - crack
+  - nulled
+  - medical
+  - certified
+  - minecraft
+  - mcp exam
+  - mcp practice
+  - agent skill
+  - claude skill
+  - skills
+kd_ceiling: 30
+volume_floor: 50
+research_date: 2026-07-28
+monetization: subscription
+monetization_notes: >
+  Inferred from the current newsletter, Pro/team waitlist and planned paid
+  product. Sponsorship is secondary. Replace with leads or adsense if the
+  commercial model changes, then rerun A6.
+competitors:
+  - mcpservers.org
+  - mcp.directory
+  - mcp.so
+  - pulsemcp.com
+  - glama.ai
+competitors_excluded:
+  - modelcontextprotocol.io
+  - github.com/modelcontextprotocol/servers
+scope:
+  include:
+    - MCP server discovery and health data
+    - setup and configuration landings backed by a matching runnable entity
+    - troubleshooting guides
+    - protocol comparisons
+    - data-backed best-of guides
+    - remote MCP server discovery
+  exclude:
+    - Agent Skills
+    - MCP client directory
+    - generic CLI directory
+    - general model directory
+existing:
+  dataset_records: 817
+  canonical_entity_policy: "server slug/package; shared monorepo alone does not merge entities"
+  health_detail_pages: 817
+  seo_landing_pages: 44
+  guides: 6
+  remote_entities: 425
+  official_registry_entities: 666
+notes: >
+  Existing Stage 0 configs already establish the MCP directory site type and
+  US-English market. This run refreshes the current implementation rather than
+  starting a new topic. Raw Semrush and competitor exports dated 2026-07-23 to
+  2026-07-25 remain append-only evidence; current Google SERPs and Autocomplete
+  were checked on 2026-07-28.

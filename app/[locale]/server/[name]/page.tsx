@@ -25,16 +25,20 @@ import { getServerCapability } from "@/lib/server-capabilities";
 import ReadmeFactsCard from "@/components/ReadmeFactsCard";
 import PickGuideCard from "@/components/PickGuideCard";
 import { getPickGuide } from "@/lib/pick-guide";
-import { getSeoLandingByServer } from "@/lib/seo-landing";
+import { getSeoLandingByServer, seoLandingText } from "@/lib/seo-landing";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbSchema, ORGANIZATION_ID } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
+import { localizedHref } from "@/lib/i18n/href";
 import { verdictText, deathReasonText } from "@/lib/i18n/verdict";
 import TrackedLink from "@/components/TrackedLink";
 import { TAXONOMY_TOPICS, taxonomyForServer, topicName } from "@/lib/taxonomy";
+import {
+  evaluateServerIndexability,
+  isServerIndexable,
+} from "@/lib/seo-indexability";
 
 interface Props {
   params: Promise<{ name: string; locale: Locale }>;
@@ -42,7 +46,7 @@ interface Props {
 
 export async function generateStaticParams() {
   const servers = await getAllServers();
-  return servers.map((s) => ({ name: s.slug }));
+  return servers.filter(isServerIndexable).map((s) => ({ name: s.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -50,16 +54,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const s = await getServerBySlug(name);
   if (!s) return {};
   const d = getDictionary(locale).server;
-  const title = d.metaTitleTpl.replace("{name}", s.name);
-  const description = d.metaDescTpl
+  const landing = getSeoLandingByServer(s.slug);
+  const landingText = landing ? seoLandingText(landing, locale) : null;
+  const title = landingText
+    ? `${landingText.toolName} MCP Server — Setup, Tools & Health`
+    : d.metaTitleTpl.replace("{name}", s.name);
+  const description = landingText?.tagline ?? d.metaDescTpl
     .replace("{tagline}", s.tagline)
     .replace("{score}", String(s.trustScore))
     .replace("{verdict}", verdictText(s, locale));
   const url = `/${locale}/server/${s.slug}`;
+  const indexDecision = evaluateServerIndexability(s, locale);
   return {
     title,
     description,
-    alternates: hreflangAlternates(locale, `/server/${s.slug}`),
+    alternates: indexDecision.index
+      ? {
+          canonical: url,
+          languages: {
+            en: `/en/server/${s.slug}`,
+            "x-default": `/en/server/${s.slug}`,
+          },
+        }
+      : { canonical: url },
+    robots: indexDecision.index
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     openGraph: { title, description, url, type: "article" },
     twitter: { card: "summary_large_image", title, description },
   };
@@ -91,6 +111,7 @@ export default async function ServerDetailPage({ params }: Props) {
   const pickGuide = getPickGuide(primaryCategory?.slug);
   const topics = TAXONOMY_TOPICS.filter((topic) => taxonomy.topics.includes(topic.slug));
   const seoLanding = getSeoLandingByServer(s.slug);
+  const landingText = seoLanding ? seoLandingText(seoLanding, locale) : null;
   const starsTrend = trendPct(s.starsTrend);
   const dlTrend = trendPct(s.downloadsTrend);
   const daysAgo = (n: number | null) =>
@@ -106,7 +127,6 @@ export default async function ServerDetailPage({ params }: Props) {
     applicationCategory: "DeveloperApplication",
     applicationSubCategory: "Model Context Protocol Server",
     operatingSystem: "Any",
-    provider: { "@id": ORGANIZATION_ID },
     ...(s.repoUrl ? { codeRepository: s.repoUrl, sameAs: [s.repoUrl] } : {}),
     additionalProperty: [
       {
@@ -131,6 +151,9 @@ export default async function ServerDetailPage({ params }: Props) {
     ...(primaryCategory ? [{ name: categoryName(primaryCategory, locale), path: `/${locale}/category/${primaryCategory.slug}` }] : []),
     { name: s.name, path: `/${locale}/server/${s.slug}` },
   ]);
+  const faq = landingText
+    ? faqSchema(landingText.faq.map((item) => ({ q: item.q, a: item.a })))
+    : null;
 
   const verifiable = s.lifecycle !== "unverifiable";
   const registryKnown = sig.officialRegistryVerifiedAt !== undefined;
@@ -144,7 +167,7 @@ export default async function ServerDetailPage({ params }: Props) {
 
   return (
     <div className="container-site py-10 sm:py-14">
-      <JsonLd data={[appSchema, crumb]} />
+      <JsonLd data={[appSchema, crumb, ...(faq ? [faq] : [])]} />
 
       <nav className="mb-4 text-sm text-neutral-400">
         <Link href={localizedHref(locale, "/")} className="hover:text-brand-600">{d.home}</Link>
@@ -179,6 +202,13 @@ export default async function ServerDetailPage({ params }: Props) {
                   {s.name}
                 </h1>
                 <p className="mt-2 text-neutral-600 dark:text-neutral-400">{s.tagline}</p>
+                {landingText && (
+                  <div className="mt-4 space-y-3 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
+                    {landingText.intro.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                )}
                 {topics.length > 0 && (
                   <div className="mt-3 flex flex-wrap gap-2" aria-label={locale === "zh" ? "主题" : "Topics"}>
                     {topics.map((topic) => (
@@ -191,16 +221,6 @@ export default async function ServerDetailPage({ params }: Props) {
                       </Link>
                     ))}
                   </div>
-                )}
-                {seoLanding && (
-                  <Link
-                    href={localizedHref(locale, `/servers/${seoLanding.toolSlug}-mcp-server`)}
-                    className="link-accent mt-3 inline-flex text-sm font-medium"
-                  >
-                    {locale === "zh"
-                      ? `${seoLanding.zh.toolName} MCP Server 接入指南 →`
-                      : `${seoLanding.en.toolName} MCP Server setup guide →`}
-                  </Link>
                 )}
                 <div className="mt-4 flex flex-wrap gap-2">
                   {s.repoUrl && (
@@ -257,6 +277,21 @@ export default async function ServerDetailPage({ params }: Props) {
                 tryNote: d.tryNote,
               }}
             />
+          )}
+
+          {landingText && (
+            <section className="card mt-6 p-5 sm:p-6">
+              <h2 className="text-lg font-bold text-neutral-900 dark:text-neutral-100">
+                {locale === "zh" ? "为什么用它" : "Why use it"}
+              </h2>
+              <div className="mt-3 space-y-3">
+                {landingText.whyUse.map((paragraph) => (
+                  <p key={paragraph} className="leading-7 text-neutral-600 dark:text-neutral-400">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </section>
           )}
 
           {/* 接入前先知道（README 规则提取，所有有 repo 的 server 都可能有） */}
@@ -384,6 +419,22 @@ export default async function ServerDetailPage({ params }: Props) {
                     <Sparkline data={s.downloadsTrend} width={280} height={56} />
                   </div>
                 )}
+              </div>
+            </section>
+          )}
+
+          {landingText && (
+            <section className="mt-10">
+              <h2 className="mb-2 text-lg font-bold text-neutral-900 dark:text-neutral-100">
+                {locale === "zh" ? "常见问题" : "Frequently Asked Questions"}
+              </h2>
+              <div className="divide-y divide-neutral-100 dark:divide-neutral-800">
+                {landingText.faq.map((item) => (
+                  <div key={item.q} className="py-4">
+                    <h3 className="font-semibold text-neutral-900 dark:text-neutral-100">{item.q}</h3>
+                    <p className="mt-2 leading-7 text-neutral-600 dark:text-neutral-400">{item.a}</p>
+                  </div>
+                ))}
               </div>
             </section>
           )}

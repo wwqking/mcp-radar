@@ -1,11 +1,9 @@
-// SEO 落地页配置：/servers/{tool}-mcp-server 干净 URL，精准命中 "{tool} mcp server" 主关键词。
+// 精选 MCP Server 的编辑文案。文案渲染在 /server/{registry-id} 详情页上；
+// 历史 /servers/{tool}-mcp-server URL 只保留为永久重定向入口，避免两个 URL
+// 争夺同一搜索意图。
 //
-// 为什么和现有 /server/{registry-id} 并存而不替换：
-//   - 旧页 /server/{id} 是「数据详情页」——健康信号、TrustScore、五维卡，URL 是 registry id。
-//   - 新页 /servers/{tool}-mcp-server 是「SEO 落地页」——干净 URL + 教程长文 + What/Install/FAQ，
-//     canonical 指向自己（内容实质不同，不判重复），并链到旧详情页看深度数据。
-//
-// 只为「数据里确有对应 server + 值得推」的白名单工具建页。查不到 server 的工具不建，避免空壳页。
+// 只为「数据里确有对应 server + 值得推」的白名单工具维护文案。查不到
+// server 的工具不建，避免空壳页。
 //
 // 每条 = SEO slug（URL 段，不含 "-mcp-server" 后缀，由路由拼）+ 目标 server slug + 双语文案。
 // 能力/示例复用 lib/server-capabilities.ts（按 serverSlug 查），这里只补 SEO 专属的 intro/why/faq。
@@ -30,7 +28,7 @@ interface SeoLandingText {
 }
 
 export interface SeoLanding {
-  /** URL 段：/servers/{toolSlug}-mcp-server。 */
+  /** 历史重定向 URL 的工具段：/servers/{toolSlug}-mcp-server。 */
   toolSlug: string;
   /** 对应 data/servers.json 里的真实 server slug。 */
   serverSlug: string;

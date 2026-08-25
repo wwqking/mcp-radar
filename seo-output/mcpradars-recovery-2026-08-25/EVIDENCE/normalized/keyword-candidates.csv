@@ -1,0 +1,8 @@
+candidate,source,cluster,decision,notes
+MCP server directory,GSC and live SERP,Evidence-first MCP directory,enrich,Recovery anchor; no new URL
+best MCP servers,GSC pages and live SERP,MCP server leaderboard,enrich,Use tested and explainable rankings
+MCP server health report,site proposition and competitor SERP,MCP ecosystem health report,enrich,Original-data opportunity
+{server name} MCP server,GSC pages and queries,High-signal MCP server evaluation pages,enrich,Admit only when three gates pass
+spawn npx ENOENT,GSC pages and queries,MCP troubleshooting guides,enrich,Existing guide has first-party demand
+{category} MCP servers,GSC pages and taxonomy,Selected MCP category and topic hubs,enrich,Only qualified editorial hubs
+new long-tail server pages,supply-side registry feed,Bulk new entity/keyword pages,reject,Freeze during recovery

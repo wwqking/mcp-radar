@@ -14,6 +14,7 @@ export async function GET() {
       name: "MCP Radar server health dataset",
       snapshotDate,
       methodology: "https://www.mcpradars.com/en/about",
+      report: "https://www.mcpradars.com/en/mcp-server-health-report",
       caveat:
         "TrustScore is a maintenance and adoption screening signal, not a user rating, security certification, or production-readiness guarantee.",
       count: servers.length,
