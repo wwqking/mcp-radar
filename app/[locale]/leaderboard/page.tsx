@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PUBLIC_CATEGORIES, getAllServers, getLastUpdated } from "@/lib/data";
-import LeaderboardTable from "@/components/LeaderboardTable";
+import LeaderboardTable, { type LeaderboardServer } from "@/components/LeaderboardTable";
 import SubscribeInline from "@/components/SubscribeInline";
 import type { Locale } from "@/lib/i18n/locales";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -9,7 +9,7 @@ import { localizedHref, hreflangAlternates } from "@/lib/i18n/href";
 import JsonLd from "@/components/JsonLd";
 import { ORGANIZATION_ID } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
-import { TAXONOMY_TOPICS } from "@/lib/taxonomy";
+import { TAXONOMY_TOPICS, taxonomyForServer } from "@/lib/taxonomy";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -26,6 +26,24 @@ export default async function LeaderboardPage({ params }: { params: Promise<{ lo
   const dict = getDictionary(locale);
   const d = dict.leaderboard;
   const [servers, lastUpdated] = await Promise.all([getAllServers(), getLastUpdated()]);
+  const leaderboardServers: LeaderboardServer[] = servers.map((server) => ({
+    slug: server.slug,
+    name: server.name,
+    tagline: server.tagline,
+    categories: server.categories,
+    topics: taxonomyForServer(server).topics,
+    lifecycle: server.lifecycle,
+    trustScore: server.trustScore,
+    breakdown: server.breakdown,
+    signals: {
+      stars: server.signals.stars,
+      npmWeeklyDownloads: server.signals.npmWeeklyDownloads,
+      lastCommitDaysAgo: server.signals.lastCommitDaysAgo,
+    },
+    verdict: server.verdict,
+    verdictKey: server.verdictKey,
+    verdictDays: server.verdictDays,
+  }));
   const datasetSchema = {
     "@context": "https://schema.org",
     "@type": "Dataset",
@@ -79,7 +97,7 @@ export default async function LeaderboardPage({ params }: { params: Promise<{ lo
       </div>
 
       <LeaderboardTable
-        servers={servers}
+        servers={leaderboardServers}
         categories={PUBLIC_CATEGORIES}
         topics={TAXONOMY_TOPICS}
         locale={locale}

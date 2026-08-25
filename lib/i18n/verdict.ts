@@ -7,8 +7,10 @@ import type { Locale } from "./locales";
 import { getDictionary } from "./dictionaries";
 import { formatNumber } from "@/lib/constants";
 
+type VerdictSource = Pick<MCPServer, "verdict" | "verdictKey" | "verdictDays">;
+
 /** 一句判断。优先 verdictKey → 词典；否则回退旧 verdict 字段。 */
-export function verdictText(server: MCPServer, locale: Locale): string {
+export function verdictText(server: VerdictSource, locale: Locale): string {
   const key = server.verdictKey;
   if (!key) return server.verdict; // 旧数据兜底
   const v = getDictionary(locale).verdict;

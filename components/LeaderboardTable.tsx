@@ -2,19 +2,48 @@
 
 import { Fragment, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import type { Lifecycle, MCPServer, Category, TaxonomyTopic } from "@/lib/types";
+import type {
+  Category,
+  Lifecycle,
+  ScoreBreakdown,
+  TaxonomyTopic,
+  VerdictKey,
+} from "@/lib/types";
 import { formatNumber, categoryName } from "@/lib/constants";
 import TrustScore from "./TrustScore";
 import LifecycleBadge from "./LifecycleBadge";
-import ServerCard from "./ServerCard";
 import type { Locale } from "@/lib/i18n/locales";
 import { localizedHref } from "@/lib/i18n/href";
 import { verdictText } from "@/lib/i18n/verdict";
-import { taxonomyForServer, topicName } from "@/lib/taxonomy";
+import { topicName } from "@/lib/taxonomy";
 
 type SortKey = "score" | "stars" | "downloads" | "updated";
 type View = "table" | "card";
 const PAGE_SIZE = 100;
+
+/**
+ * Keep the leaderboard payload intentionally compact. Passing full MCPServer
+ * records serialized README snippets, install manifests and trend arrays for
+ * every row, which eventually exceeded Cloudflare's 25 MiB asset limit.
+ */
+export interface LeaderboardServer {
+  slug: string;
+  name: string;
+  tagline: string;
+  categories: string[];
+  topics: string[];
+  lifecycle: Lifecycle;
+  trustScore: number;
+  breakdown: ScoreBreakdown;
+  signals: {
+    stars: number;
+    npmWeeklyDownloads: number | null;
+    lastCommitDaysAgo: number | null;
+  };
+  verdict: string;
+  verdictKey?: VerdictKey;
+  verdictDays?: number | null;
+}
 
 interface Labels {
   allCategories: string;
@@ -52,7 +81,7 @@ interface Labels {
 }
 
 interface Props {
-  servers: MCPServer[];
+  servers: LeaderboardServer[];
   categories: Category[];
   topics: TaxonomyTopic[];
   locale: Locale;
@@ -91,7 +120,7 @@ export default function LeaderboardTable({ servers, categories, topics, locale, 
   const list = useMemo(() => {
     let l = [...servers];
     if (cat !== "all") l = l.filter((s) => s.categories.includes(cat));
-    if (topic !== "all") l = l.filter((s) => taxonomyForServer(s).topics.includes(topic));
+    if (topic !== "all") l = l.filter((s) => s.topics.includes(topic));
     if (lc !== "all") l = l.filter((s) => s.lifecycle === lc);
     if (minScore > 0) l = l.filter((s) => s.trustScore >= minScore);
     l.sort((a, b) => {
@@ -217,7 +246,37 @@ export default function LeaderboardTable({ servers, categories, topics, locale, 
       {view === "card" ? (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {visibleList.map((s, i) => (
-            <ServerCard key={s.slug} server={s} locale={locale} rank={i + 1} />
+            <Link
+              key={s.slug}
+              href={localizedHref(locale, `/server/${s.slug}`)}
+              className="card group flex flex-col gap-3 p-4 sm:p-5"
+            >
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-2">
+                    <span className="w-7 shrink-0 text-center font-mono text-sm font-bold text-neutral-400">
+                      {i + 1}
+                    </span>
+                    <h3 className="mono truncate text-sm font-semibold text-brand-700 group-hover:underline dark:text-brand-300">
+                      {s.name}
+                    </h3>
+                  </div>
+                  <p className="mt-1 line-clamp-2 text-sm text-neutral-600 dark:text-neutral-400">
+                    {s.tagline}
+                  </p>
+                </div>
+                <TrustScore value={s.trustScore} size="md" />
+              </div>
+              <div className="mt-auto flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <LifecycleBadge status={s.lifecycle} locale={locale} size="sm" />
+                {s.signals.stars > 0 && <span title="GitHub stars">⭐ {formatNumber(s.signals.stars)}</span>}
+                {s.signals.lastCommitDaysAgo !== null && (
+                  <span>
+                    {s.signals.lastCommitDaysAgo === 0 ? L.today : `${s.signals.lastCommitDaysAgo}d`}
+                  </span>
+                )}
+              </div>
+            </Link>
           ))}
         </div>
       ) : (
