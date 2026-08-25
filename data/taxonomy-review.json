@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-24T22:26:21.098Z",
-  "total": 5744,
+  "generatedAt": "2026-08-25T22:26:05.838Z",
+  "total": 5740,
   "summary": {
-    "needsReview": 3889,
+    "needsReview": 3886,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2640,
-    "uncategorizedRatePct": 46,
+    "uncategorized": 2636,
+    "uncategorizedRatePct": 45.9,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.1
   },
   "alerts": [
-    "待归类占比 46%，超过 5% 审核线",
+    "待归类占比 45.9%，超过 5% 审核线",
     "dev 占比 33.1%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2640,
+    "misc": 2636,
     "dev": 1899,
     "search": 751,
     "files": 256,
@@ -28,12 +28,12 @@
     "marketing": 77
   },
   "topicCounts": {
-    "design-media": 291,
+    "design-media": 289,
     "finance": 191,
     "automation": 190,
     "observability": 119,
     "legal": 90,
-    "mcp-infrastructure": 85,
+    "mcp-infrastructure": 84,
     "visualization": 66,
     "science-health": 31,
     "security": 29,
@@ -72,14 +72,14 @@
     },
     {
       "term": "coding",
-      "count": 117
-    },
-    {
-      "term": "memory",
-      "count": 113
+      "count": 116
     },
     {
       "term": "free",
+      "count": 111
+    },
+    {
+      "term": "memory",
       "count": 111
     },
     {
@@ -96,11 +96,11 @@
     },
     {
       "term": "manage",
-      "count": 98
+      "count": 99
     },
     {
       "term": "create",
-      "count": 94
+      "count": 93
     },
     {
       "term": "code",
@@ -140,7 +140,7 @@
     },
     {
       "term": "across",
-      "count": 70
+      "count": 69
     },
     {
       "term": "audit",
@@ -164,7 +164,7 @@
     },
     {
       "term": "check",
-      "count": 58
+      "count": 59
     },
     {
       "term": "status",
@@ -195,15 +195,15 @@
       "count": 48
     },
     {
+      "term": "before",
+      "count": 47
+    },
+    {
       "term": "deterministic",
       "count": 47
     },
     {
       "term": "analytics",
-      "count": 46
-    },
-    {
-      "term": "before",
       "count": 46
     },
     {
@@ -215,19 +215,15 @@
       "count": 46
     },
     {
-      "term": "apis",
-      "count": 43
-    },
-    {
       "term": "security",
-      "count": 43
+      "count": 44
     },
     {
       "term": "verify",
       "count": 43
     },
     {
-      "term": "call",
+      "term": "apis",
       "count": 42
     },
     {
@@ -235,11 +231,15 @@
       "count": 42
     },
     {
+      "term": "call",
+      "count": 41
+    },
+    {
       "term": "stdio",
       "count": 41
     },
     {
-      "term": "find",
+      "term": "registry",
       "count": 40
     }
   ],
@@ -1054,7 +1054,7 @@
       "name": "ai.signalnodus/sec-filings",
       "confidence": 0.35,
       "topics": [],
-      "description": "Year-over-year 10-K diffs, 8-K events, insider trades, 13F, IPOs, XBRL. Pay per call, key or x402."
+      "description": "Amendment-safe 10-K/10-Q section diffs, claim checks vs XBRL, 8-K events. Accuracy published."
     },
     {
       "slug": "ai-sitepulsar-mcp",
@@ -2450,13 +2450,6 @@
       "description": "Read-only US tax reference for notices, deadlines, filing screens, and clearly labeled estimates."
     },
     {
-      "slug": "com-astranl-mcp",
-      "name": "com.astranl/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Signed physical-reality checks for agents + cross-company coordination. No custody."
-    },
-    {
       "slug": "com-automox-automox-mcp",
       "name": "com.automox/automox-mcp",
       "confidence": 0.35,
@@ -2629,7 +2622,7 @@
       "name": "com.costbench/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Verified pricing, hidden costs, negotiation data & TCO for 3,290+ software products."
+      "description": "Verified pricing, hidden costs, negotiation data, price changes & TCO for 3,390+ software products."
     },
     {
       "slug": "com-crisphive-mcp",
@@ -4214,13 +4207,6 @@
       "description": "Coding agents from Claude Code, Cursor and Codex claim jobs and lock files on one shared board."
     },
     {
-      "slug": "dev-veritap-locker",
-      "name": "dev.veritap/locker",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Durable wallet-addressed memory for AI agents: state that survives your process, opened by your key."
-    },
-    {
       "slug": "dev-weblens-weblens",
       "name": "dev.weblens/weblens",
       "confidence": 0.35,
@@ -4260,7 +4246,7 @@
       "name": "directory.nohumans/registry",
       "confidence": 0.35,
       "topics": [],
-      "description": "Paid-verified directory of x402 APIs — we pay endpoints real USDC and confirm settlement on-chain."
+      "description": "We buy from x402 endpoints with real USDC and publish delivery outcomes. Check before you spend."
     },
     {
       "slug": "django-mcp-server",
@@ -5359,7 +5345,7 @@
       "name": "io.github.AVIDS2/memorix",
       "confidence": 0.35,
       "topics": [],
-      "description": "Local-first persistent project memory for AI coding agents across MCP clients and sessions."
+      "description": "Local-first project memory with legacy MCP and 2026 discovery compatibility."
     },
     {
       "slug": "io-github-awesomemotive-pushengage-mcp",
@@ -6500,7 +6486,7 @@
       "name": "io.github.erayendes/asc-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Every App Store Connect + StoreKit 2 endpoint. 883 tools in 13 profiles, narrow to 24."
+      "description": "Every App Store Connect + StoreKit 2 endpoint. 890 tools in 13 profiles, narrow to 27."
     },
     {
       "slug": "io-github-eshller-ltd-mcp",
@@ -6711,6 +6697,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Generate images and videos via the Corent API — auto model routing with provider fallback."
+    },
+    {
+      "slug": "io-github-giacomomaria81-scorm-mcp-server",
+      "name": "io.github.giacomomaria81/scorm-mcp-server",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Turn HTML or mobile-learning exports into SCORM 2004/1.2 packages, and validate any SCORM zip."
     },
     {
       "slug": "io-github-gimbalgoats-maya-mcp",
@@ -10196,7 +10189,7 @@
       "name": "io.github.memside/memside",
       "confidence": 0.35,
       "topics": [],
-      "description": "AI continuity and memory hub: memories, profiles, rules, context, decisions, tasks, and checkpoints."
+      "description": "AI continuity and Library Templates: memories, profiles, rules, tasks, and checkpoints."
     },
     {
       "slug": "io-github-menot-you-n-memory",
@@ -10533,13 +10526,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Deterministic context packing for AI coding agents; measured 83% fewer input tokens, local."
-    },
-    {
-      "slug": "io-github-navshainc-noshup",
-      "name": "io.github.navshainc/noshup",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "AI-powered grocery and meal planning. Discover meals, plan menus, find deals, track budgets."
     },
     {
       "slug": "io-github-nazar256-memheaven",
@@ -11106,7 +11092,7 @@
       "name": "io.github.opusgrowth/ads-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "233 tools for Google, Microsoft, TikTok, LinkedIn Ads in Claude or ChatGPT. Writes need approval."
+      "description": "Manage Google, Microsoft, TikTok and LinkedIn Ads from Claude or ChatGPT. Writes need approval."
     },
     {
       "slug": "io-github-orangeproai-orangepro",
@@ -11974,7 +11960,7 @@
       "name": "io.github.proplineapi/propline-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live odds, cross-book +EV and graded player-prop results across 24 books. Hosted endpoint included."
+      "description": "Live odds, cross-book +EV and graded player-prop results across 25 books. Hosted endpoint included."
     },
     {
       "slug": "io-github-proventools-proventools",
@@ -13087,7 +13073,7 @@
       "name": "io.github.synopsys0/postfader-fl-studio-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Readback-verified FL Studio transport, mixer, channel, sequencer, and plug-in control."
+      "description": "Verified FL Studio control, mix diagnosis, composition, and arrangement."
     },
     {
       "slug": "io-github-synpareia-trust-mcp",
@@ -17080,6 +17066,13 @@
       "description": "Live cross-DEX pool prices, liquidity and spreads on 6 EVM chains, read from on-chain pool state."
     },
     {
+      "slug": "io-github-doteyeso-ops-mcp-server-vibes-coded",
+      "name": "io.github.doteyeso-ops/mcp-server-vibes-coded",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Agent supply-chain security, scanner consensus, x402 reliability, and commerce MCP tools."
+    },
+    {
       "slug": "io-github-drannakurasova-kobotoolbox-mcp-server",
       "name": "io.github.drannakurasova/kobotoolbox-mcp-server",
       "confidence": 0.45,
@@ -19908,13 +19901,6 @@
       "description": "EU AI Act risk classification, obligations and Article 50 disclosures. Offline, no API key."
     },
     {
-      "slug": "io-github-pedroknigge-arkgate",
-      "name": "io.github.pedroknigge/arkgate",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "When your agent writes TypeScript, ArkGate stops it from breaking the layers."
-    },
-    {
       "slug": "io-github-pedropaulofernandes88-stack-saudeemdado",
       "name": "io.github.pedropaulofernandes88-stack/saudeemdado",
       "confidence": 0.45,
@@ -20206,7 +20192,7 @@
       "name": "io.github.Reachpad/reachpad-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Persistent cloud development environments that coding agents create, run and test software in."
+      "description": "Coding agents build full-stack apps in persistent workspaces and share them by link."
     },
     {
       "slug": "io-github-replynodes-mcp",
@@ -21039,7 +21025,7 @@
       "name": "io.github.Sofiia7/arcbounty-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Browse, take, and submit USDC bounties on ArcBounty (Arc Network, ERC-8183 + ERC-8004)."
+      "description": "Put an AI agent to work for USDC: it takes on-chain bounties and is paid into its own wallet."
     },
     {
       "slug": "io-github-soil911-atlaspi",
@@ -21306,6 +21292,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "KYA MCP gate: evaluate, ingest, request approval. Sole PEP is Shield."
+    },
+    {
+      "slug": "io-github-theoddden-terradev",
+      "name": "io.github.theoddden/terradev",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Imperative Command Line Interface for AI Workload Orchestration."
     },
     {
       "slug": "io-github-thestevenjohnstone-ai-consensus",
@@ -25073,15 +25066,6 @@
       "description": "Create Smart Links, check music campaign readiness, and view analytics for artists and labels."
     },
     {
-      "slug": "io-github-giacomomaria81-scorm-mcp-server",
-      "name": "io.github.giacomomaria81/scorm-mcp-server",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Turn HTML, Claude Design bundles or mobile-learning exports into SCORM 2004/1.2 packages."
-    },
-    {
       "slug": "io-github-grarcht-shuttle",
       "name": "io.github.grarcht/shuttle",
       "confidence": 0.55,
@@ -26664,16 +26648,6 @@
         "automation"
       ],
       "description": "1117 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
-    },
-    {
-      "slug": "io-github-molkex-openflow",
-      "name": "io.github.molkex/openflow",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure",
-        "design-media"
-      ],
-      "description": "Generate images and video on Google Flow (Veo, Nano Banana) from any MCP client"
     },
     {
       "slug": "io-github-moonriddim-skedra",
