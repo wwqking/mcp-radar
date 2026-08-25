@@ -43,6 +43,7 @@ export interface LeaderboardServer {
   verdict: string;
   verdictKey?: VerdictKey;
   verdictDays?: number | null;
+  detailAvailable: boolean;
 }
 
 interface Labels {
@@ -245,12 +246,9 @@ export default function LeaderboardTable({ servers, categories, topics, locale, 
 
       {view === "card" ? (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {visibleList.map((s, i) => (
-            <Link
-              key={s.slug}
-              href={localizedHref(locale, `/server/${s.slug}`)}
-              className="card group flex flex-col gap-3 p-4 sm:p-5"
-            >
+          {visibleList.map((s, i) => {
+            const content = (
+              <>
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2">
@@ -276,8 +274,30 @@ export default function LeaderboardTable({ servers, categories, topics, locale, 
                   </span>
                 )}
               </div>
-            </Link>
-          ))}
+              {!s.detailAvailable && (
+                <p className="text-xs text-neutral-400">
+                  {locale === "zh"
+                    ? "证据不足，详情页暂未发布。"
+                    : "Detail page withheld until the evidence threshold is met."}
+                </p>
+              )}
+              </>
+            );
+
+            return s.detailAvailable ? (
+              <Link
+                key={s.slug}
+                href={localizedHref(locale, `/server/${s.slug}`)}
+                className="card group flex flex-col gap-3 p-4 sm:p-5"
+              >
+                {content}
+              </Link>
+            ) : (
+              <div key={s.slug} className="card flex flex-col gap-3 p-4 sm:p-5">
+                {content}
+              </div>
+            );
+          })}
         </div>
       ) : (
         <div className="card overflow-x-auto p-0">
@@ -303,13 +323,22 @@ export default function LeaderboardTable({ servers, categories, topics, locale, 
                   >
                     <td className="px-4 py-3 font-mono text-neutral-400">{i + 1}</td>
                     <td className="px-4 py-3">
-                      <Link
-                        href={localizedHref(locale, `/server/${s.slug}`)}
-                        onClick={(e) => e.stopPropagation()}
-                        className="mono font-medium text-brand-700 hover:underline dark:text-brand-300"
-                      >
-                        {s.name}
-                      </Link>
+                      {s.detailAvailable ? (
+                        <Link
+                          href={localizedHref(locale, `/server/${s.slug}`)}
+                          onClick={(e) => e.stopPropagation()}
+                          className="mono font-medium text-brand-700 hover:underline dark:text-brand-300"
+                        >
+                          {s.name}
+                        </Link>
+                      ) : (
+                        <span
+                          className="mono font-medium text-neutral-700 dark:text-neutral-300"
+                          title={locale === "zh" ? "证据不足，详情页暂未发布" : "Detail page withheld pending stronger evidence"}
+                        >
+                          {s.name}
+                        </span>
+                      )}
                       <p className="mt-0.5 max-w-[260px] truncate text-xs text-neutral-400">{s.tagline}</p>
                     </td>
                     <td className="px-4 py-3">

@@ -10,6 +10,8 @@ import JsonLd from "@/components/JsonLd";
 import { ORGANIZATION_ID } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 import { TAXONOMY_TOPICS, taxonomyForServer } from "@/lib/taxonomy";
+import { isServerIndexable } from "@/lib/seo-indexability";
+import { getSeoLandingByServer } from "@/lib/seo-landing";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -43,6 +45,8 @@ export default async function LeaderboardPage({ params }: { params: Promise<{ lo
     verdict: server.verdict,
     verdictKey: server.verdictKey,
     verdictDays: server.verdictDays,
+    detailAvailable:
+      isServerIndexable(server) || Boolean(getSeoLandingByServer(server.slug)),
   }));
   const datasetSchema = {
     "@context": "https://schema.org",

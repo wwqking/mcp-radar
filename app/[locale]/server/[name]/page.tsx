@@ -35,7 +35,10 @@ import { localizedHref } from "@/lib/i18n/href";
 import { verdictText, deathReasonText } from "@/lib/i18n/verdict";
 import TrackedLink from "@/components/TrackedLink";
 import { TAXONOMY_TOPICS, taxonomyForServer, topicName } from "@/lib/taxonomy";
-import { evaluateServerIndexability } from "@/lib/seo-indexability";
+import {
+  evaluateServerIndexability,
+  isServerIndexable,
+} from "@/lib/seo-indexability";
 
 interface Props {
   params: Promise<{ name: string; locale: Locale }>;
@@ -43,11 +46,17 @@ interface Props {
 
 export async function generateStaticParams() {
   const servers = await getAllServers();
-  // All catalog records remain browsable from the leaderboard. Index admission
-  // is controlled independently by metadata + sitemap, so low-value records
-  // are still noindex without becoming slow runtime-only routes on Workers.
-  return servers.map((s) => ({ name: s.slug }));
+  // Keep quality-gated pages plus the editorial landing targets that receive
+  // legacy redirects. Everything else is deliberately removed (404) until it
+  // gains evidence, avoiding thin pages and slow runtime data loading.
+  return servers
+    .filter((server) =>
+      isServerIndexable(server) || Boolean(getSeoLandingByServer(server.slug)),
+    )
+    .map((server) => ({ name: server.slug }));
 }
+
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { name, locale } = await params;
