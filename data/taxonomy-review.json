@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-25T22:26:05.838Z",
+  "generatedAt": "2026-08-27T02:56:13.146Z",
   "total": 5740,
   "summary": {
     "needsReview": 3886,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2636,
+    "uncategorized": 2635,
     "uncategorizedRatePct": 45.9,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.1
@@ -15,9 +15,9 @@
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2636,
+    "misc": 2635,
     "dev": 1899,
-    "search": 751,
+    "search": 752,
     "files": 256,
     "ai": 209,
     "comms": 184,
@@ -33,7 +33,7 @@
     "automation": 190,
     "observability": 119,
     "legal": 90,
-    "mcp-infrastructure": 84,
+    "mcp-infrastructure": 85,
     "visualization": 66,
     "science-health": 31,
     "security": 29,
@@ -72,7 +72,7 @@
     },
     {
       "term": "coding",
-      "count": 116
+      "count": 115
     },
     {
       "term": "free",
@@ -92,19 +92,19 @@
     },
     {
       "term": "local",
-      "count": 100
+      "count": 99
     },
     {
       "term": "manage",
       "count": 99
     },
     {
-      "term": "create",
+      "term": "code",
       "count": 93
     },
     {
-      "term": "code",
-      "count": 92
+      "term": "create",
+      "count": 93
     },
     {
       "term": "live",
@@ -148,7 +148,7 @@
     },
     {
       "term": "tasks",
-      "count": 66
+      "count": 65
     },
     {
       "term": "public",
@@ -164,7 +164,7 @@
     },
     {
       "term": "check",
-      "count": 59
+      "count": 58
     },
     {
       "term": "status",
@@ -191,12 +191,12 @@
       "count": 49
     },
     {
-      "term": "every",
+      "term": "before",
       "count": 48
     },
     {
-      "term": "before",
-      "count": 47
+      "term": "every",
+      "count": 48
     },
     {
       "term": "deterministic",
@@ -235,11 +235,11 @@
       "count": 41
     },
     {
-      "term": "stdio",
-      "count": 41
+      "term": "registry",
+      "count": 40
     },
     {
-      "term": "registry",
+      "term": "stdio",
       "count": 40
     }
   ],
@@ -2090,7 +2090,7 @@
       "name": "br.com.signdocs/mcp-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "SignDocs Brasil e-signature tools for AI agents — signing sessions, envelopes, verification."
+      "description": "Assinatura eletrônica no Brasil (ICP-Brasil): envie, assine e verifique com sua conta SignDocs."
     },
     {
       "slug": "build-swapi-star-wars",
@@ -2685,7 +2685,7 @@
       "name": "com.decionis/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Fail-closed policy gate for AI agent actions, with local evaluation and native pre-tool hooks."
+      "description": "Authorize consequential AI agent actions before execution"
     },
     {
       "slug": "com-decision-anchor-da",
@@ -5933,7 +5933,7 @@
       "name": "io.github.ComplyEdge/complyedge",
       "confidence": 0.35,
       "topics": [],
-      "description": "Check prompts against ComplyEdge TrustLint offline rules with article-cited findings."
+      "description": "Offline TrustLint EU AI Act runtime: Article 5, Article 50, GPAI. Article-cited."
     },
     {
       "slug": "io-github-conorbronsdon-apple-podcasts-mcp",
@@ -10598,13 +10598,6 @@
       "description": "MCP server for Linkwarden, the self-hosted bookmark manager with page preservation"
     },
     {
-      "slug": "io-github-ni-c-mcp-hub",
-      "name": "io.github.ni-c/mcp-hub",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Serve many stdio MCP servers from one container, for ChatGPT, Claude and other MCP clients"
-    },
-    {
       "slug": "io-github-ni-c-mealie-mcp",
       "name": "io.github.ni-c/mealie-mcp",
       "confidence": 0.35,
@@ -11267,7 +11260,7 @@
       "name": "io.github.Perseus-Computing-LLC/perseus-vault",
       "confidence": 0.35,
       "topics": [],
-      "description": "Persistent, encrypted, deterministic memory for AI agents. Local-first, 169 canonical tools."
+      "description": "Persistent, encrypted, deterministic memory for AI agents. Local-first, 173 canonical tools."
     },
     {
       "slug": "io-github-pete-builds-unifi",
@@ -15565,7 +15558,7 @@
       "name": "io.github.arthurpanhku/dvalincode",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security scanning that needs no model or API key, plus governed coding tasks."
+      "description": "Deterministic security scanning, no model or API key, plus offline-verifiable proof a fix worked."
     },
     {
       "slug": "io-github-arturlys-listonic-mcp",
@@ -21798,6 +21791,13 @@
       "description": "Local-first memory for AI coding agents: shell history with exit codes, git diffs, docs, MCP."
     },
     {
+      "slug": "io-github-ygao2005-scholar-feed-mcp",
+      "name": "io.github.YGao2005/scholar-feed-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Rank CS/AI/ML papers by citations, forecast impact, or code adoption; trace 23.2M citation edges."
+    },
+    {
       "slug": "io-github-ykastelnik-realevents",
       "name": "io.github.ykastelnik/realevents",
       "confidence": 0.45,
@@ -24711,7 +24711,7 @@
       "topics": [
         "automation"
       ],
-      "description": "GoHighLevel MCP for Claude: 242 tools, 51 modules, incl. the only programmatic GHL workflow builder"
+      "description": "GoHighLevel MCP for Claude: 245 tools, 51 modules, incl. the only programmatic GHL workflow builder"
     },
     {
       "slug": "io-github-drzamarian-n8n-mcp-community",
@@ -25190,7 +25190,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "681 tools, all usable alone: ad research, video ads, publishing, campaigns. Meta, Google, TikTok."
+      "description": "718 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
@@ -25489,15 +25489,6 @@
         "finance"
       ],
       "description": "Korean market data: kimchi premium, sell-side research, news. Pay per call in USDC via x402."
-    },
-    {
-      "slug": "io-github-junnnnnw00-obsidian-everywhere",
-      "name": "io.github.junnnnnw00/obsidian-everywhere",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "Graph context and local file access for Obsidian, with guarded remote MCP access and edits."
     },
     {
       "slug": "io-github-jyswee-bandsaas",
@@ -26793,6 +26784,15 @@
         "visualization"
       ],
       "description": "Last.fm MCP server: scrobbles, charts, artist/album/track info and more"
+    },
+    {
+      "slug": "io-github-ni-c-mcp-hub",
+      "name": "io.github.ni-c/mcp-hub",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Many stdio MCP servers from one container, published over HTTPS with OAuth 2.1 for any MCP client"
     },
     {
       "slug": "io-github-nickatnight96-iphone-mirror-mcp",
