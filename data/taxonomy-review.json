@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-27T02:56:13.146Z",
-  "total": 5740,
+  "generatedAt": "2026-08-28T06:00:12.883Z",
+  "total": 5738,
   "summary": {
-    "needsReview": 3886,
+    "needsReview": 3885,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2635,
+    "uncategorized": 2634,
     "uncategorizedRatePct": 45.9,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.1
@@ -15,20 +15,20 @@
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2635,
-    "dev": 1899,
-    "search": 752,
+    "misc": 2634,
+    "dev": 1900,
+    "search": 751,
     "files": 256,
     "ai": 209,
     "comms": 184,
     "database": 167,
-    "commerce": 156,
+    "commerce": 155,
     "cloud": 130,
     "browser": 115,
     "marketing": 77
   },
   "topicCounts": {
-    "design-media": 289,
+    "design-media": 288,
     "finance": 191,
     "automation": 190,
     "observability": 119,
@@ -37,7 +37,7 @@
     "visualization": 66,
     "science-health": 31,
     "security": 29,
-    "data-analysis": 26,
+    "data-analysis": 27,
     "game-development": 24,
     "iot-robotics": 15
   },
@@ -75,12 +75,12 @@
       "count": 115
     },
     {
-      "term": "free",
+      "term": "memory",
       "count": 111
     },
     {
-      "term": "memory",
-      "count": 111
+      "term": "free",
+      "count": 110
     },
     {
       "term": "credit",
@@ -96,7 +96,7 @@
     },
     {
       "term": "manage",
-      "count": 99
+      "count": 98
     },
     {
       "term": "code",
@@ -104,11 +104,11 @@
     },
     {
       "term": "create",
-      "count": 93
+      "count": 92
     },
     {
       "term": "live",
-      "count": 91
+      "count": 90
     },
     {
       "term": "over",
@@ -131,12 +131,12 @@
       "count": 79
     },
     {
-      "term": "checks",
+      "term": "x402",
       "count": 74
     },
     {
-      "term": "x402",
-      "count": 74
+      "term": "checks",
+      "count": 73
     },
     {
       "term": "across",
@@ -886,7 +886,7 @@
       "name": "ai.nauro/nauro",
       "confidence": 0.35,
       "topics": [],
-      "description": "Human-approved project judgment and current state for connected AI agents, surfaced before work."
+      "description": "Human Controlled Project Truth"
     },
     {
       "slug": "ai-nefesh-human-state",
@@ -4162,7 +4162,7 @@
       "name": "dev.smartergpt/lex",
       "confidence": 0.35,
       "topics": [],
-      "description": "Episodic memory and architectural policy for AI agents. Frames, Atlas, and Policy."
+      "description": "Episodic memory, Frames, Policy Neighborhoods, and policy enforcement for AI agents."
     },
     {
       "slug": "dev-starwell-world-data-statistics",
@@ -6178,7 +6178,7 @@
       "name": "io.github.depixapp/depix-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One MCP: hosted Pix receive + dated charges (22 tools), or local npx non-custodial wallet (49)."
+      "description": "One MCP: hosted Pix receive + dated charges (26 tools), or local npx non-custodial wallet (59)."
     },
     {
       "slug": "io-github-derkcc-market-depth-lab",
@@ -10931,7 +10931,7 @@
       "name": "io.github.NomadBuilder/un-default",
       "confidence": 0.35,
       "topics": [],
-      "description": "Inclusive language scan/fix for AI and human copy. Local rules, no account."
+      "description": "Catch racist, sexist & ableist defaults in AI and human copy. Local rules, no account."
     },
     {
       "slug": "io-github-noordeen123-culprit",
@@ -11085,7 +11085,7 @@
       "name": "io.github.opusgrowth/ads-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Manage Google, Microsoft, TikTok and LinkedIn Ads from Claude or ChatGPT. Writes need approval."
+      "description": "Run Google, Meta, Microsoft, TikTok and LinkedIn Ads from Claude or ChatGPT. Writes need approval."
     },
     {
       "slug": "io-github-orangeproai-orangepro",
@@ -11114,13 +11114,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Author, validate, debug, and explain OPA Rego policies through any MCP-compatible client."
-    },
-    {
-      "slug": "io-github-osauer-canary",
-      "name": "io.github.osauer/canary",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Canary MCP server for Interactive Brokers: daily brief, account and position data, risk checks."
     },
     {
       "slug": "io-github-ostico-bruno-mcp-studio",
@@ -12898,7 +12891,7 @@
       "name": "io.github.Socialpranker/agentburn",
       "confidence": 0.35,
       "topics": [],
-      "description": "Local profiler for AI agents: burn by source, overnight bill, behavioral forensics, config fixes"
+      "description": "Local profiler: which usage window took you out, and where your agent's money goes"
     },
     {
       "slug": "io-github-softeria-ms-365-mcp-server",
@@ -13465,7 +13458,7 @@
       "name": "io.github.vmware-skills/vmware-nsx",
       "confidence": 0.35,
       "topics": [],
-      "description": "VMware NSX networking management with 31 MCP tools: segments, gateways, NAT, routing, IPAM."
+      "description": "VMware NSX networking management with 33 MCP tools: segments, gateways, NAT, routing, IPAM."
     },
     {
       "slug": "io-github-vmware-skills-vmware-nsx-security",
@@ -13479,7 +13472,7 @@
       "name": "io.github.vmware-skills/vmware-storage",
       "confidence": 0.35,
       "topics": [],
-      "description": "VMware vSphere storage management with 11 MCP tools: datastores, iSCSI, vSAN."
+      "description": "VMware vSphere storage management with 12 MCP tools: datastores, iSCSI, vSAN."
     },
     {
       "slug": "io-github-vmware-skills-vmware-vdi",
@@ -14977,7 +14970,7 @@
       "name": "uk.openqr/qr",
       "confidence": 0.35,
       "topics": [],
-      "description": "Generate QR codes; create, edit & track dynamic QR codes with scan analytics. Free, no watermark."
+      "description": "Generate, edit and track dynamic (editable) QR codes with scan analytics. Hosted MCP and REST API."
     },
     {
       "slug": "us-thistripbtw-trips",
@@ -17245,7 +17238,7 @@
       "name": "io.github.FieldmodeLLC/scrapecheck",
       "confidence": 0.45,
       "topics": [],
-      "description": "Verify scraped data against the live source page. Signed verdicts, $0.01 via x402."
+      "description": "Verify before your agent acts on data it paid for. Signed verdicts, checkable offline, via x402."
     },
     {
       "slug": "io-github-financeratecalc-frc-mcp",
@@ -20724,7 +20717,7 @@
       "name": "io.github.SAIHM-Admin/saihm-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Sovereign encrypted memory for AI agents. 8 MCP tools. GDPR erasure. Runnable offline demos."
+      "description": "Enterprise-ready portable memory for AI agents: encrypted, shareable, provably erased."
     },
     {
       "slug": "io-github-saihm-admin-saihm-mcp-server-pro",
@@ -20920,7 +20913,7 @@
       "name": "io.github.SidneyBissoli/bcb-br-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Brazilian Central Bank / Banco Central do Brasil (BCB) - SGS time series MCP: Selic, IPCA, FX, GDP"
+      "description": "Banco Central do Brasil (BCB): SGS series, Focus expectations, PTAX, stats + provenance. 15 tools."
     },
     {
       "slug": "io-github-sidneybissoli-cid10-br-mcp",
@@ -24597,15 +24590,6 @@
       "description": "Build, deploy, drive and debug Android apps: Gradle, emulators, adb, logcat, UI automation"
     },
     {
-      "slug": "io-github-devziqin-transcript",
-      "name": "io.github.devziqin/transcript",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Get transcripts from YouTube, TikTok, X, Instagram and more - even when captions are off."
-    },
-    {
       "slug": "io-github-dfieser-hea-bench",
       "name": "io.github.dfieser/hea-bench",
       "confidence": 0.55,
@@ -24711,7 +24695,7 @@
       "topics": [
         "automation"
       ],
-      "description": "GoHighLevel MCP for Claude: 245 tools, 51 modules, incl. the only programmatic GHL workflow builder"
+      "description": "GoHighLevel MCP for Claude: 247 tools, 51 modules, incl. the only programmatic GHL workflow builder"
     },
     {
       "slug": "io-github-drzamarian-n8n-mcp-community",
@@ -25063,7 +25047,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Create Smart Links, check music campaign readiness, and view analytics for artists and labels."
+      "description": "Create music promotion campaigns, Smart Links, analytics, and music distribution applications."
     },
     {
       "slug": "io-github-grarcht-shuttle",
@@ -27058,6 +27042,15 @@
       "description": "Expose declarative YAML-defined workflows as MCP tools over stdio"
     },
     {
+      "slug": "io-github-osauer-canary",
+      "name": "io.github.osauer/canary",
+      "confidence": 0.55,
+      "topics": [
+        "data-analysis"
+      ],
+      "description": "Read-only IBKR MCP: account, positions, daily brief, reporting status, Edge, and risk."
+    },
+    {
       "slug": "io-github-osauer-ibkr",
       "name": "io.github.osauer/ibkr",
       "confidence": 0.55,
@@ -28164,7 +28157,7 @@
       "topics": [
         "observability"
       ],
-      "description": "VMware Aria Operations: metrics, alerts, capacity, anomaly detection — 18 MCP tools."
+      "description": "VMware Aria Operations: metrics, alerts, capacity, anomaly detection — 33 MCP tools."
     },
     {
       "slug": "io-github-vmware-skills-vmware-monitor",
@@ -28173,7 +28166,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Read-only VMware vCenter/ESXi monitoring with 27 MCP tools. Code-level safety."
+      "description": "Read-only VMware vCenter/ESXi monitoring with 31 MCP tools. Code-level safety."
     },
     {
       "slug": "io-github-vmware-skills-vmware-pilot",
