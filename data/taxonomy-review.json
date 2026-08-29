@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-28T06:00:12.883Z",
-  "total": 5738,
+  "generatedAt": "2026-08-29T03:31:43.490Z",
+  "total": 5735,
   "summary": {
     "needsReview": 3885,
     "needsReviewRatePct": 67.7,
@@ -16,8 +16,8 @@
   ],
   "categoryCounts": {
     "misc": 2634,
-    "dev": 1900,
-    "search": 751,
+    "dev": 1898,
+    "search": 750,
     "files": 256,
     "ai": 209,
     "comms": 184,
@@ -25,7 +25,7 @@
     "commerce": 155,
     "cloud": 130,
     "browser": 115,
-    "marketing": 77
+    "marketing": 76
   },
   "topicCounts": {
     "design-media": 288,
@@ -107,11 +107,11 @@
       "count": 92
     },
     {
-      "term": "live",
+      "term": "over",
       "count": 90
     },
     {
-      "term": "over",
+      "term": "live",
       "count": 89
     },
     {
@@ -140,7 +140,7 @@
     },
     {
       "term": "across",
-      "count": 69
+      "count": 70
     },
     {
       "term": "audit",
@@ -152,7 +152,7 @@
     },
     {
       "term": "public",
-      "count": 62
+      "count": 61
     },
     {
       "term": "analysis",
@@ -164,7 +164,7 @@
     },
     {
       "term": "check",
-      "count": 58
+      "count": 59
     },
     {
       "term": "status",
@@ -188,7 +188,7 @@
     },
     {
       "term": "evidence",
-      "count": 49
+      "count": 50
     },
     {
       "term": "before",
@@ -235,12 +235,12 @@
       "count": 41
     },
     {
-      "term": "registry",
+      "term": "stdio",
       "count": 40
     },
     {
-      "term": "stdio",
-      "count": 40
+      "term": "control",
+      "count": 39
     }
   ],
   "reviewQueue": [
@@ -5037,7 +5037,7 @@
       "name": "io.github.alice51849/lumi-app-finder",
       "confidence": 0.35,
       "topics": [],
-      "description": "Find iOS apps by task across 43 live apps and all 50 Apple locales with direct App Store links."
+      "description": "Find Lumi Studio iOS apps by task across all 50 Apple locales, with direct App Store links."
     },
     {
       "slug": "io-github-alifanov-scopegate",
@@ -5317,7 +5317,7 @@
       "name": "io.github.attestifyagent/attestify-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP stdio server for Attestify OS — governed agent execution with on-chain receipts."
+      "description": "MCP stdio server for Attestify OS — governed agent execution and Attestify Trust signed evidence."
     },
     {
       "slug": "io-github-aurumflux20-effectfence",
@@ -6101,7 +6101,7 @@
       "name": "io.github.datris/datris",
       "confidence": 0.35,
       "topics": [],
-      "description": "AI Agent-Native Data Platform — ingest, validate, transform, and query data."
+      "description": "The data control plane for AI agents — acquire, validate, land, and query data over MCP."
     },
     {
       "slug": "io-github-dave1362-rca-mcp-connector",
@@ -12135,7 +12135,7 @@
       "name": "io.github.Regsorm/code-index",
       "confidence": 0.35,
       "topics": [],
-      "description": "Rust code index MCP server, native 1C:Enterprise (BSL) support. 31 tools, AST for 14 languages."
+      "description": "Rust code index MCP server, native 1C:Enterprise (BSL) support. 32 tools, AST for 14 languages."
     },
     {
       "slug": "io-github-rekklesna-proxmox-mcp-plus",
@@ -12849,7 +12849,7 @@
       "name": "io.github.smith-horn/skillsmith",
       "confidence": 0.35,
       "topics": [],
-      "description": "Publish versioned agent skills to a team-scoped registry, track drift, and deprecate stale ones."
+      "description": "Share agent skills across your team, scan them for risk, and track what's actually used."
     },
     {
       "slug": "io-github-smoke-signal-app-smoke-signal",
@@ -17885,13 +17885,6 @@
       "description": "Model Context Protocol server for Google Gemini AI with chat, research, and grounding"
     },
     {
-      "slug": "io-github-huangdun-tempmd",
-      "name": "io.github.huangdun/tempmd",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Publish artifacts to one stable public temp.md link that updates in place. No account needed."
-    },
-    {
       "slug": "io-github-huginnindustries-codecartographer",
       "name": "io.github.HuginnIndustries/codecartographer",
       "confidence": 0.45,
@@ -19677,6 +19670,13 @@
       "description": "PoC Q5b: run a differently-named console script via a positional runtimeArgument."
     },
     {
+      "slug": "io-github-nock-for-mak-x402-checker",
+      "name": "io.github.nock-for-mak/x402-checker",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Free check/board/name; paid bid/report 0.05, 1c fx/wx/lookups, news 0.001."
+    },
+    {
       "slug": "io-github-nolpak14-getregdata",
       "name": "io.github.Nolpak14/getregdata",
       "confidence": 0.45,
@@ -20724,7 +20724,7 @@
       "name": "io.github.SAIHM-Admin/saihm-mcp-server-pro",
       "confidence": 0.45,
       "topics": [],
-      "description": "Sovereign encrypted memory for AI agents. Sealed on your machine. Start free: say Join SAIHM."
+      "description": "Enterprise-ready portable memory for AI agents: encrypted, shareable, provably erased. Join SAIHM."
     },
     {
       "slug": "io-github-sailorpepe-undesirables-mcp-server",
