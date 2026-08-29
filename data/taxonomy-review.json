@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-29T03:31:43.490Z",
+  "generatedAt": "2026-08-29T23:55:38.700Z",
   "total": 5735,
   "summary": {
-    "needsReview": 3885,
+    "needsReview": 3884,
     "needsReviewRatePct": 67.7,
     "uncategorized": 2634,
     "uncategorizedRatePct": 45.9,
@@ -18,7 +18,7 @@
     "misc": 2634,
     "dev": 1898,
     "search": 750,
-    "files": 256,
+    "files": 257,
     "ai": 209,
     "comms": 184,
     "database": 167,
@@ -28,7 +28,7 @@
     "marketing": 76
   },
   "topicCounts": {
-    "design-media": 288,
+    "design-media": 287,
     "finance": 191,
     "automation": 190,
     "observability": 119,
@@ -80,7 +80,7 @@
     },
     {
       "term": "free",
-      "count": 110
+      "count": 109
     },
     {
       "term": "credit",
@@ -88,7 +88,7 @@
     },
     {
       "term": "read",
-      "count": 101
+      "count": 102
     },
     {
       "term": "local",
@@ -111,12 +111,12 @@
       "count": 90
     },
     {
-      "term": "live",
+      "term": "read-only",
       "count": 89
     },
     {
-      "term": "read-only",
-      "count": 89
+      "term": "live",
+      "count": 87
     },
     {
       "term": "pipeworx-io",
@@ -131,11 +131,11 @@
       "count": 79
     },
     {
-      "term": "x402",
-      "count": 74
+      "term": "checks",
+      "count": 73
     },
     {
-      "term": "checks",
+      "term": "x402",
       "count": 73
     },
     {
@@ -152,10 +152,6 @@
     },
     {
       "term": "public",
-      "count": 61
-    },
-    {
-      "term": "analysis",
       "count": 60
     },
     {
@@ -163,12 +159,16 @@
       "count": 60
     },
     {
+      "term": "analysis",
+      "count": 59
+    },
+    {
       "term": "check",
       "count": 59
     },
     {
       "term": "status",
-      "count": 57
+      "count": 58
     },
     {
       "term": "local-first",
@@ -227,19 +227,19 @@
       "count": 42
     },
     {
-      "term": "plus",
-      "count": 42
-    },
-    {
       "term": "call",
       "count": 41
     },
     {
-      "term": "stdio",
-      "count": 40
+      "term": "plus",
+      "count": 41
     },
     {
       "term": "control",
+      "count": 39
+    },
+    {
+      "term": "find",
       "count": 39
     }
   ],
@@ -3861,7 +3861,7 @@
       "name": "com.voyagehacks/travel",
       "confidence": 0.35,
       "topics": [],
-      "description": "Travel guides plus flight, hotel, eSIM, car rental and gear links in 11 languages."
+      "description": "Multilingual travel guides, gear picks and booking links for AI travel agents."
     },
     {
       "slug": "com-wafergraph-wafergraph-mcp",
@@ -5422,7 +5422,7 @@
       "name": "io.github.beepboop2025/narcoscope",
       "confidence": 0.35,
       "topics": [],
-      "description": "Aggregate official drug-market evidence, cited analyses, and explicit claim boundaries."
+      "description": "Read aggregate official drug-market evidence with explicit provenance, availability, and boundaries."
     },
     {
       "slug": "io-github-beepboop2025-noisefloor",
@@ -5436,7 +5436,7 @@
       "name": "io.github.beepboop2025/palimpsest",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live censorship, China economic, and tamper-evident AI evaluation tools with bounded analysis."
+      "description": "Rights-aware censorship, China-economic status, and tamper-evident AI evaluation tools."
     },
     {
       "slug": "io-github-beepboop2025-seiche",
@@ -5646,7 +5646,7 @@
       "name": "io.github.BuyWhere/buywhere-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Agent-native product catalog for AI shopping agents. 296M+ products, 28 countries."
+      "description": "Agent-native product catalog: 300M+ products, 150,000+ stores, deliver_to ranking."
     },
     {
       "slug": "io-github-byggarepop-unwritten",
@@ -12779,14 +12779,14 @@
       "name": "io.github.SidneyBissoli/ibge-br-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP server for live, sourced Brazilian public data from the official IBGE APIs."
+      "description": "IBGE: geography, census, economy and health from the official APIs, with provenance. 21 tools."
     },
     {
       "slug": "io-github-sidneybissoli-ilo-mcp-server",
       "name": "io.github.SidneyBissoli/ilo-mcp-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "ILO labour statistics (ILOSTAT) with full provenance: source URL, vintage, license. Remote or stdio."
+      "description": "ILO labour statistics (ILOSTAT) with full provenance: source, vintage, license. 4 tools."
     },
     {
       "slug": "io-github-sidneybissoli-uis-mcp-server",
@@ -15488,7 +15488,7 @@
       "name": "io.github.antonpogrebenko-public/rftools",
       "confidence": 0.45,
       "topics": [],
-      "description": "227 RF & electronics calculators + 13 simulation tools for AI agents."
+      "description": "241 RF & electronics calculators + 13 simulation tools for AI agents."
     },
     {
       "slug": "io-github-anup-khanal-aidimag",
@@ -15607,7 +15607,7 @@
       "name": "io.github.asokore/statcite",
       "confidence": 0.45,
       "topics": [],
-      "description": "Economic statistics with citations: World Bank, IMF, BIS, ECB. Verify GDP, inflation, debt figures."
+      "description": "Cited economic statistics: World Bank, IMF, BIS, ECB, Caribbean central banks. Verify any figure."
     },
     {
       "slug": "io-github-asselwan-twothumbs",
@@ -15789,7 +15789,7 @@
       "name": "io.github.blackwell-systems/agent-lsp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Orchestrates language servers into 65 code-intelligence tools across 30 languages, token-optimized."
+      "description": "Orchestrates language servers into 65 code-intelligence tools across 31 languages, token-optimized."
     },
     {
       "slug": "io-github-blite-hq-qnexus-mcp",
@@ -18331,13 +18331,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server for MikroTik routers: firewall, NAT, routing, DHCP, DNS, WireGuard and more via SSH."
-    },
-    {
-      "slug": "io-github-jessiejanie-skim402",
-      "name": "io.github.JessieJanie/skim402",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Web reader for AI agents — output ~4x smaller than raw HTML. Card API key or x402. Free tier."
     },
     {
       "slug": "io-github-jfarcand-mirroir-mcp",
@@ -23345,7 +23338,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Post, schedule and read analytics on X, LinkedIn, Instagram, TikTok, YouTube, Bluesky and more."
+      "description": "Post, schedule, reply and measure across X, LinkedIn, Instagram, TikTok, YouTube, Threads, Bluesky"
     },
     {
       "slug": "dev-tinify-mcp",
@@ -23436,7 +23429,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Swap, transfer, track a portfolio and use Aave V3 on Base, Citrea, HyperEVM and Monad."
+      "description": "Swap, transfer, track a portfolio and use Aave V3 on Base, HyperEVM and Monad."
     },
     {
       "slug": "godot-mcp",
