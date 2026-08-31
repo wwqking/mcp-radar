@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-29T23:55:38.700Z",
-  "total": 5735,
+  "generatedAt": "2026-08-31T00:15:03.460Z",
+  "total": 5734,
   "summary": {
     "needsReview": 3884,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2634,
+    "uncategorized": 2633,
     "uncategorizedRatePct": 45.9,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.1
@@ -15,20 +15,20 @@
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2634,
+    "misc": 2633,
     "dev": 1898,
-    "search": 750,
-    "files": 257,
+    "search": 751,
+    "files": 256,
     "ai": 209,
     "comms": 184,
-    "database": 167,
+    "database": 168,
     "commerce": 155,
     "cloud": 130,
-    "browser": 115,
+    "browser": 116,
     "marketing": 76
   },
   "topicCounts": {
-    "design-media": 287,
+    "design-media": 288,
     "finance": 191,
     "automation": 190,
     "observability": 119,
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 99
+      "count": 98
     },
     {
       "term": "manage",
@@ -108,7 +108,7 @@
     },
     {
       "term": "over",
-      "count": 90
+      "count": 91
     },
     {
       "term": "read-only",
@@ -116,7 +116,7 @@
     },
     {
       "term": "live",
-      "count": 87
+      "count": 88
     },
     {
       "term": "pipeworx-io",
@@ -183,11 +183,11 @@
       "count": 53
     },
     {
-      "term": "intelligence",
-      "count": 51
+      "term": "evidence",
+      "count": 50
     },
     {
-      "term": "evidence",
+      "term": "intelligence",
       "count": 50
     },
     {
@@ -2020,7 +2020,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live global intelligence: real-time markets, conflicts, country risk, chokepoints, energy. 39 tools."
+      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 74 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -3371,7 +3371,7 @@
       "name": "com.negativeev/bet-checker",
       "confidence": 0.35,
       "topics": [],
-      "description": "Grade any MLB, WNBA, PGA or ATP bet against thousands of play-by-play game simulations."
+      "description": "Grade any MLB, WNBA, PGA or ATP bet against thousands of play-by-play sims. No key, no signup."
     },
     {
       "slug": "com-neuhausre-followupboss",
@@ -7480,7 +7480,7 @@
       "name": "io.github.Kaydeep0/geniusflow-federation",
       "confidence": 0.35,
       "topics": [],
-      "description": "Settlement verify-wire: re-check published claims, admit or refuse by named limb."
+      "description": "Re-check pinned sources, package and cite. Live Federation MCP. No account."
     },
     {
       "slug": "io-github-kayhendriksen-foehn",
@@ -11095,13 +11095,6 @@
       "description": "Find test gaps, generate grounded tests, and dynamically prove behavior with mutation testing."
     },
     {
-      "slug": "io-github-orgmentem-zotio",
-      "name": "io.github.OrgMentem/zotio",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Zotero MCP server: preview-first, journaled writes and keyless local reads for AI agents."
-    },
-    {
       "slug": "io-github-orphograph-orphograph",
       "name": "io.github.Orphograph/orphograph",
       "confidence": 0.35,
@@ -12072,7 +12065,7 @@
       "name": "io.github.r3dz4r/datapulse-my",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read-only MCP for 385 Malaysian public datasets: freshness, licence, provenance."
+      "description": "Read-only discovery for 389 Malaysian public datasets with freshness, licence, and provenance."
     },
     {
       "slug": "io-github-ramakrishnanhulk20-patina",
@@ -13465,7 +13458,7 @@
       "name": "io.github.vmware-skills/vmware-nsx-security",
       "confidence": 0.35,
       "topics": [],
-      "description": "VMware NSX security: DFW policies, security groups, tags, Traceflow, IDPS — 21 MCP tools."
+      "description": "VMware NSX security: DFW policies and exclusions, groups, tags, Traceflow, IDPS — 22 MCP tools."
     },
     {
       "slug": "io-github-vmware-skills-vmware-storage",
@@ -14868,13 +14861,6 @@
       "description": "A Model Context Protocol (MCP) server for square"
     },
     {
-      "slug": "st-ravenpo-ravenpost",
-      "name": "st.ravenpo/ravenpost",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Schedule and publish social posts to Instagram, TikTok, X, LinkedIn, Facebook, Threads and more."
-    },
-    {
       "slug": "store-scvd-general-store",
       "name": "store.scvd/general-store",
       "confidence": 0.35,
@@ -15657,6 +15643,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server exposing Ayush Tomar's AI portfolio -- ask what he built or his flagship project."
+    },
+    {
+      "slug": "io-github-b-hash88-knownfix",
+      "name": "io.github.b-hash88/knownfix",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Verified fixes, professional reviews, and evidence-led apparel over MCP."
     },
     {
       "slug": "io-github-b1ff-atlassian-dc-mcp-confluence",
@@ -18484,7 +18477,7 @@
       "name": "io.github.jyswee/a2a-trustgate",
       "confidence": 0.45,
       "topics": [],
-      "description": "A2A TrustGate: 4-gate firewall that screens every AI-agent action before it runs. 49 tools."
+      "description": "A2A TrustGate: 4-gate firewall that screens every AI-agent action before it runs. 50 tools."
     },
     {
       "slug": "io-github-jyswee-buggazi",
@@ -22841,7 +22834,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Full-CRUD Adobe Experience Platform server: 51 tools for schemas, ingestion, profiles, audiences."
+      "description": "Full-CRUD server for AEP, Journey Optimizer and CJA. 61 tools from one OAuth credential."
     },
     {
       "slug": "com-getplexa-mcp",
@@ -25330,7 +25323,7 @@
       "topics": [
         "security"
       ],
-      "description": "Free lockfile malware check plus paid pre-install scan of any skill, tool, or package."
+      "description": "Free lockfile malware check plus paid behavioral scan of packages, agent skills and MCP tools."
     },
     {
       "slug": "io-github-jananadiw-codex-tldraw-mcp",
@@ -28159,7 +28152,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Read-only VMware vCenter/ESXi monitoring with 31 MCP tools. Code-level safety."
+      "description": "Read-only VMware vCenter/ESXi monitoring, 32 MCP tools; vSphere calls allowlist-gated in tests."
     },
     {
       "slug": "io-github-vmware-skills-vmware-pilot",
@@ -28948,6 +28941,15 @@
         "finance"
       ],
       "description": "Free regulatory change feed for financial regulators in Canada, the US, the UK and the EU."
+    },
+    {
+      "slug": "st-ravenpo-ravenpost",
+      "name": "st.ravenpo/ravenpost",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Schedule and publish posts to Instagram, TikTok, X, LinkedIn, YouTube, Pinterest, Facebook & more."
     },
     {
       "slug": "to-orangepeel-orangepeel",
