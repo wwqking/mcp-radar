@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T00:15:03.460Z",
+  "generatedAt": "2026-09-01T01:02:25.589Z",
   "total": 5734,
   "summary": {
     "needsReview": 3884,
@@ -25,7 +25,7 @@
     "commerce": 155,
     "cloud": 130,
     "browser": 116,
-    "marketing": 76
+    "marketing": 77
   },
   "topicCounts": {
     "design-media": 288,
@@ -100,7 +100,7 @@
     },
     {
       "term": "code",
-      "count": 93
+      "count": 94
     },
     {
       "term": "create",
@@ -132,7 +132,7 @@
     },
     {
       "term": "checks",
-      "count": 73
+      "count": 74
     },
     {
       "term": "x402",
@@ -140,7 +140,7 @@
     },
     {
       "term": "across",
-      "count": 70
+      "count": 69
     },
     {
       "term": "audit",
@@ -151,11 +151,11 @@
       "count": 65
     },
     {
-      "term": "public",
-      "count": 60
+      "term": "real",
+      "count": 61
     },
     {
-      "term": "real",
+      "term": "public",
       "count": 60
     },
     {
@@ -184,18 +184,18 @@
     },
     {
       "term": "evidence",
-      "count": 50
+      "count": 51
     },
     {
       "term": "intelligence",
       "count": 50
     },
     {
-      "term": "before",
-      "count": 48
+      "term": "every",
+      "count": 49
     },
     {
-      "term": "every",
+      "term": "before",
       "count": 48
     },
     {
@@ -220,26 +220,26 @@
     },
     {
       "term": "verify",
-      "count": 43
+      "count": 44
+    },
+    {
+      "term": "plus",
+      "count": 42
     },
     {
       "term": "apis",
-      "count": 42
+      "count": 41
     },
     {
       "term": "call",
       "count": 41
     },
     {
-      "term": "plus",
-      "count": 41
+      "term": "find",
+      "count": 40
     },
     {
       "term": "control",
-      "count": 39
-    },
-    {
-      "term": "find",
       "count": 39
     }
   ],
@@ -886,7 +886,7 @@
       "name": "ai.nauro/nauro",
       "confidence": 0.35,
       "topics": [],
-      "description": "Human Controlled Project Truth"
+      "description": "What every agent should know"
     },
     {
       "slug": "ai-nefesh-human-state",
@@ -3679,7 +3679,7 @@
       "name": "com.svgrid/svgrid",
       "confidence": 0.35,
       "topics": [],
-      "description": "Version-pinned Svelte 5 data grid APIs, 373 demo sources, and SvelteKit app scaffolding."
+      "description": "Checks AI-written SvGrid code against the real API, plus version-pinned Svelte 5 grid docs."
     },
     {
       "slug": "com-teamwork-mcp",
@@ -5289,7 +5289,7 @@
       "name": "io.github.aspekt19/loyal-spark",
       "confidence": 0.35,
       "topics": [],
-      "description": "Onchain loyalty MCP on Base: programs, mint, rewards, vouchers for AI agents."
+      "description": "Base MCP (39 tools) on Base: programs, mint, rewards. lsk_ key; plan limits enforced. /for-agents"
     },
     {
       "slug": "io-github-asqi-carter-ftx-mcp",
@@ -5877,7 +5877,7 @@
       "name": "io.github.CodePhantom-1/ddmarketer-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Validated SaaS opportunities mined from real user complaints across 8 sources."
+      "description": "Find and validate SaaS ideas from real user complaints, scored for commercial intent."
     },
     {
       "slug": "io-github-cogdepot-cogdepot",
@@ -11939,7 +11939,7 @@
       "name": "io.github.proplineapi/propline-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live odds, cross-book +EV and graded player-prop results across 25 books. Hosted endpoint included."
+      "description": "Live odds, cross-book +EV and graded player-prop results across 27 books. Hosted endpoint included."
     },
     {
       "slug": "io-github-proventools-proventools",
@@ -13339,7 +13339,7 @@
       "name": "io.github.usenotra/notra",
       "confidence": 0.35,
       "topics": [],
-      "description": "Access the Notra API for managing posts, brand identities, integrations, and schedules."
+      "description": "Access the Notra API for posts, brand identities, integrations, schedules, and GEO."
     },
     {
       "slug": "io-github-vaaraio-vaara",
@@ -14865,7 +14865,7 @@
       "name": "store.scvd/general-store",
       "confidence": 0.35,
       "topics": [],
-      "description": "The trust layer of the x402 economy: free conformance checks, attestation, corpus, agent store."
+      "description": "Evidence observatory for agentic commerce: free x402 conformance checks, corpus, agent store."
     },
     {
       "slug": "store-scvd-tab",
@@ -15999,7 +15999,7 @@
       "name": "io.github.carrotly-ai/disclosures",
       "confidence": 0.45,
       "topics": [],
-      "description": "Corporate-disclosure research across 12 official sources behind ten intent-based tools."
+      "description": "Corporate disclosures from 26 official sources across 21 jurisdiction routes via ten tools."
     },
     {
       "slug": "io-github-cdeust-ai-architect-mcp-codebase",
@@ -16048,7 +16048,7 @@
       "name": "io.github.CHANGCHINFU/mcp-gauge",
       "confidence": 0.45,
       "topics": [],
-      "description": "US government data (USGS/NOAA/SEC/FDA) with cryptographic proof; x402 pay-per-call, no API key"
+      "description": "Verify official facts with Bitcoin-anchored proof. 180+ signals, x402 pay-per-call."
     },
     {
       "slug": "io-github-chanmeng666-archlang-mcp",
@@ -21116,7 +21116,7 @@
       "name": "io.github.Suigar-Gaming/mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "AI agent MCP server for Suigar provably fair on-chain Sui casino game, NFT, referral transactions."
+      "description": "AI agent MCP server for Suigar casino game, SweetHouse, NFT, and referral transactions."
     },
     {
       "slug": "io-github-sunsiyuan-human-survey",
@@ -21270,7 +21270,7 @@
       "name": "io.github.theoddden/terradev",
       "confidence": 0.45,
       "topics": [],
-      "description": "Imperative Command Line Interface for AI Workload Orchestration."
+      "description": "Cross-cloud GPU orchestration CLI."
     },
     {
       "slug": "io-github-thestevenjohnstone-ai-consensus",
@@ -23079,7 +23079,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Monitor reviews on 50+ platforms: fetch, tag, translate, AI insights, rating history, webhooks."
+      "description": "Google reviews API - fetch reviews from Google, Trustpilot, TripAdvisor, G2 + 50 platforms"
     },
     {
       "slug": "com-sapiensinteticos-sapiens",
@@ -25620,7 +25620,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Score any URL against a real design contract — 40 checks, A-F grade, token + motion validation."
+      "description": "Score any URL against a real design contract — 42 checks, A-F grade, token + motion validation."
     },
     {
       "slug": "io-github-lightnow-ai-lightnow-proxy",
@@ -27764,7 +27764,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Diagnoses, drugs & lab codes: ICD-11, SNOMED, LOINC, RxNorm, MeSH, ATC, CID-10. 37 tools, MIT."
+      "description": "Diagnoses, drugs & lab codes: ICD-11, SNOMED, LOINC, RxNorm, MeSH, ATC, CID-10. 31 tools, MIT."
     },
     {
       "slug": "io-github-signaledi-mcp-server",
