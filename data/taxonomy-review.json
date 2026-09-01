@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-01T01:02:25.589Z",
-  "total": 5734,
+  "generatedAt": "2026-09-01T23:50:26.490Z",
+  "total": 5733,
   "summary": {
-    "needsReview": 3884,
+    "needsReview": 3882,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2633,
+    "uncategorized": 2631,
     "uncategorizedRatePct": 45.9,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.1
@@ -15,22 +15,22 @@
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2633,
+    "misc": 2631,
     "dev": 1898,
     "search": 751,
     "files": 256,
     "ai": 209,
     "comms": 184,
     "database": 168,
-    "commerce": 155,
+    "commerce": 156,
     "cloud": 130,
     "browser": 116,
     "marketing": 77
   },
   "topicCounts": {
     "design-media": 288,
+    "automation": 191,
     "finance": 191,
-    "automation": 190,
     "observability": 119,
     "legal": 90,
     "mcp-infrastructure": 85,
@@ -155,16 +155,16 @@
       "count": 61
     },
     {
+      "term": "check",
+      "count": 59
+    },
+    {
       "term": "public",
-      "count": 60
+      "count": 59
     },
     {
       "term": "analysis",
-      "count": 59
-    },
-    {
-      "term": "check",
-      "count": 59
+      "count": 58
     },
     {
       "term": "status",
@@ -2044,13 +2044,6 @@
       "description": "A Model Context Protocol server for searching and analyzing arXiv papers"
     },
     {
-      "slug": "at-gridbert-mcp",
-      "name": "at.gridbert/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Austrian energy data: 100+ electricity tariffs daily, grid fees, subsidies, bill analysis."
-    },
-    {
       "slug": "au-com-aiframework-australian-ai-governance-framework",
       "name": "au.com.aiframework/australian-ai-governance-framework",
       "confidence": 0.35,
@@ -2399,13 +2392,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "AIOProductOS: revenue, feedback, work and analytics on one customer record. 71 tools, 3 apps."
-    },
-    {
-      "slug": "com-aisenseapi-free-public-tools",
-      "name": "com.aisenseapi/free-public-tools",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Public MCP tools for approvals, webhooks, temporary storage, short links, time and UUIDs."
     },
     {
       "slug": "com-aleeth-authority-mcp",
@@ -3490,14 +3476,14 @@
       "name": "com.predictionmarketspicks/fantasy-draft",
       "confidence": 0.35,
       "topics": [],
-      "description": "AI fantasy football draft assistant — 2026 board, best available, sleepers, ADP gaps. Who to draft?"
+      "description": "8-tool AI fantasy draft assistant — 2026 board, best available, sleepers, ADP gaps."
     },
     {
       "slug": "com-predictionmarketspicks-quant",
       "name": "com.predictionmarketspicks/quant",
       "confidence": 0.35,
       "topics": [],
-      "description": "Quant tools for AI agents with a public graded record — Kalshi & Polymarket EV, edge, NFL ADP."
+      "description": "24 quant tools for AI agents, public graded record — Kalshi & Polymarket EV, edge, NFL."
     },
     {
       "slug": "com-presenterprep-presenterprep",
@@ -3883,13 +3869,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Draft, edit, organise, schedule and publish a Writavo Site content from any AI assistant."
-    },
-    {
-      "slug": "com-x402-list-x402-list-mcp",
-      "name": "com.x402-list/x402-list-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "x402-list directory MCP: services, facilitator volume, ranked picks, paid assessments."
     },
     {
       "slug": "com-xcodebuildmcp-xcodebuildmcp",
@@ -5933,7 +5912,7 @@
       "name": "io.github.ComplyEdge/complyedge",
       "confidence": 0.35,
       "topics": [],
-      "description": "Offline TrustLint EU AI Act runtime: Article 5, Article 50, GPAI. Article-cited."
+      "description": "Offline TrustLint EU AI Act Article 5, Article 50, GPAI. Deny this I/O; classifiers score systems."
     },
     {
       "slug": "io-github-conorbronsdon-apple-podcasts-mcp",
@@ -14242,7 +14221,7 @@
       "name": "io.tenova/swt3-witness",
       "confidence": 0.35,
       "topics": [],
-      "description": "Cryptographic AI governance + audit. 33 tools, 36 frameworks. EU AI Act, NIST, OWASP, CMMC, SR 11-7"
+      "description": "Cryptographic AI governance + audit. 59 tools, 36 frameworks. EU AI Act, NIST, OWASP, CMMC, SR 11-7"
     },
     {
       "slug": "io-umtri-umtri",
@@ -21578,7 +21557,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "Local searchable memory over the session histories of twenty coding agents."
+      "description": "Local searchable memory over the session histories of twenty-one coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -22690,6 +22669,15 @@
         "design-media"
       ],
       "description": "Turn your AI host into a product videographer: scripted app demos, voice-over, captions, MP4/GIF."
+    },
+    {
+      "slug": "com-aisenseapi-free-public-tools",
+      "name": "com.aisenseapi/free-public-tools",
+      "confidence": 0.55,
+      "topics": [
+        "automation"
+      ],
+      "description": "Ten public workflow tools with durable Agent Wake tasks and a read-only Verifyum product resource."
     },
     {
       "slug": "com-blixtworks-www-tools",
@@ -24681,7 +24669,7 @@
       "topics": [
         "automation"
       ],
-      "description": "GoHighLevel MCP for Claude: 247 tools, 51 modules, incl. the only programmatic GHL workflow builder"
+      "description": "GoHighLevel MCP for Claude: 248 tools, 51 modules, incl. the only programmatic GHL workflow builder"
     },
     {
       "slug": "io-github-drzamarian-n8n-mcp-community",
@@ -27377,7 +27365,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Scientific due diligence on a claim, sealed in a verifiable attestation. Free screen, gated dossier."
+      "description": "Scientific due diligence on a claim: reviewer questions, failure patterns, dated evidence."
     },
     {
       "slug": "io-github-rezasoleymanifar-vintage",
