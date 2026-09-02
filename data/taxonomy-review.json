@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-01T23:50:26.490Z",
+  "generatedAt": "2026-09-02T23:53:46.311Z",
   "total": 5733,
   "summary": {
-    "needsReview": 3882,
+    "needsReview": 3880,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2631,
+    "uncategorized": 2629,
     "uncategorizedRatePct": 45.9,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.1
@@ -15,14 +15,14 @@
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2631,
+    "misc": 2629,
     "dev": 1898,
     "search": 751,
     "files": 256,
     "ai": 209,
-    "comms": 184,
+    "comms": 186,
     "database": 168,
-    "commerce": 156,
+    "commerce": 157,
     "cloud": 130,
     "browser": 116,
     "marketing": 77
@@ -30,10 +30,10 @@
   "topicCounts": {
     "design-media": 288,
     "automation": 191,
-    "finance": 191,
+    "finance": 190,
     "observability": 119,
     "legal": 90,
-    "mcp-infrastructure": 85,
+    "mcp-infrastructure": 86,
     "visualization": 66,
     "science-health": 31,
     "security": 29,
@@ -80,7 +80,7 @@
     },
     {
       "term": "free",
-      "count": 109
+      "count": 110
     },
     {
       "term": "credit",
@@ -104,7 +104,7 @@
     },
     {
       "term": "create",
-      "count": 92
+      "count": 93
     },
     {
       "term": "over",
@@ -132,7 +132,7 @@
     },
     {
       "term": "checks",
-      "count": 74
+      "count": 75
     },
     {
       "term": "x402",
@@ -159,11 +159,11 @@
       "count": 59
     },
     {
-      "term": "public",
-      "count": 59
+      "term": "analysis",
+      "count": 58
     },
     {
-      "term": "analysis",
+      "term": "public",
       "count": 58
     },
     {
@@ -191,12 +191,12 @@
       "count": 50
     },
     {
-      "term": "every",
+      "term": "before",
       "count": 49
     },
     {
-      "term": "before",
-      "count": 48
+      "term": "every",
+      "count": 49
     },
     {
       "term": "deterministic",
@@ -224,7 +224,7 @@
     },
     {
       "term": "plus",
-      "count": 42
+      "count": 43
     },
     {
       "term": "apis",
@@ -1894,7 +1894,7 @@
       "name": "app.kanera/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Manage Kanera cards, checklists, comments, notes, attachments, automations, reports, and priorities."
+      "description": "Manage Kanera workspaces, boards, cards, checklists, comments, notes, automations, and reports."
     },
     {
       "slug": "app-ledgy-ledgy",
@@ -3470,20 +3470,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "A basic MCP server to operate on the Postman API."
-    },
-    {
-      "slug": "com-predictionmarketspicks-fantasy-draft",
-      "name": "com.predictionmarketspicks/fantasy-draft",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "8-tool AI fantasy draft assistant — 2026 board, best available, sleepers, ADP gaps."
-    },
-    {
-      "slug": "com-predictionmarketspicks-quant",
-      "name": "com.predictionmarketspicks/quant",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "24 quant tools for AI agents, public graded record — Kalshi & Polymarket EV, edge, NFL."
     },
     {
       "slug": "com-presenterprep-presenterprep",
@@ -5401,7 +5387,7 @@
       "name": "io.github.beepboop2025/narcoscope",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read aggregate official drug-market evidence with explicit provenance, availability, and boundaries."
+      "description": "Read bounded illicit-economy evidence with provenance, privacy, availability, and federation intact."
     },
     {
       "slug": "io-github-beepboop2025-noisefloor",
@@ -5912,7 +5898,7 @@
       "name": "io.github.ComplyEdge/complyedge",
       "confidence": 0.35,
       "topics": [],
-      "description": "Offline TrustLint EU AI Act Article 5, Article 50, GPAI. Deny this I/O; classifiers score systems."
+      "description": "Offline TrustLint checks: EU AI Act Article 5, Article 50, GPAI, plus GDPR and HIPAA."
     },
     {
       "slug": "io-github-conorbronsdon-apple-podcasts-mcp",
@@ -10392,7 +10378,7 @@
       "name": "io.github.morluto/flameox",
       "confidence": 0.35,
       "topics": [],
-      "description": "Local runtime evidence for coding-agent performance and reliability investigations"
+      "description": "Bounded local runtime evidence from explicit artifacts and typed direct targets."
     },
     {
       "slug": "io-github-morluto-jacobian",
@@ -12485,7 +12471,7 @@
       "name": "io.github.seekdaseek/agentfeed",
       "confidence": 0.35,
       "topics": [],
-      "description": "AgentFeed: 47 tools — our own liquidation tape + tokenized-equity peg data, paid in USDC."
+      "description": "Collateral exit liquidity, liquidation tape and peg data. 51 tools, paid in USDC via x402."
     },
     {
       "slug": "io-github-seekdaseek-agentfeed-algo",
@@ -12751,7 +12737,7 @@
       "name": "io.github.SidneyBissoli/ibge-br-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "IBGE: geography, census, economy and health from the official APIs, with provenance. 21 tools."
+      "description": "IBGE: geography, census, economy and health from the official APIs, with provenance. 23 tools."
     },
     {
       "slug": "io-github-sidneybissoli-ilo-mcp-server",
@@ -13920,7 +13906,7 @@
       "name": "io.github.zhurong2020/pyobfus-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Obfuscate Python & reverse-map stack traces from your agent. AST-based, no phone-home. PyArmor alt."
+      "description": "Obfuscate Python before shipping; reverse-map tracebacks with your AI agent. No phone-home."
     },
     {
       "slug": "io-github-zoster81-scripthold",
@@ -16163,13 +16149,6 @@
       "description": "Google Slides via gogcli for Claude — deck and slide authoring"
     },
     {
-      "slug": "io-github-chrischall-honeybook-mcp",
-      "name": "io.github.chrischall/honeybook-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "HoneyBook client-portal MCP server for Claude — view contracts and invoices from wedding vendors"
-    },
-    {
       "slug": "io-github-chrischall-housecallpro-mcp",
       "name": "io.github.chrischall/housecallpro-mcp",
       "confidence": 0.45,
@@ -16975,6 +16954,13 @@
       "description": "Local-first YNAB MCP for reconciliation, receipt splitting, safe cleanup, and spending analysis"
     },
     {
+      "slug": "io-github-dljrealty-guesty",
+      "name": "io.github.DLJRealty/guesty",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Guesty MCP server. 43 tools, all free: reservations, listings, guests, messaging, pricing, revenue."
+    },
+    {
       "slug": "io-github-dns-aid-dns-aid",
       "name": "io.github.dns-aid/dns-aid",
       "confidence": 0.45,
@@ -17644,7 +17630,7 @@
       "name": "io.github.GhostlyGawd/codeweb",
       "confidence": 0.45,
       "topics": [],
-      "description": "Your agents break less code and burn fewer tokens — a deterministic call graph over 27 MCP tools."
+      "description": "Your agents break less code and burn fewer tokens — a deterministic call graph over 28 MCP tools."
     },
     {
       "slug": "io-github-ghostlygawd-engineering-board",
@@ -18246,7 +18232,7 @@
       "name": "io.github.jdhart81/neurogenesis",
       "confidence": 0.45,
       "topics": [],
-      "description": "Developmental agents + Wu Wei compute routing: evolve from outcomes, route to cheapest reliable."
+      "description": "Developmental agents for the agent economy: create an agent from a digital genome, then evolve it wi"
     },
     {
       "slug": "io-github-jdhart81-regulatory-radar",
@@ -20696,7 +20682,7 @@
       "name": "io.github.sailorpepe/undesirables-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Conformal TCG risk forecasts + AI card grading, x402 pay-per-call oracle, on-chain soul agents."
+      "description": "TCG oracle: calibrated prices & risk, card-loan terms, AI grading, fantasy souls — proven on-chain."
     },
     {
       "slug": "io-github-salatmaster-keenetic-mcp",
@@ -23083,9 +23069,9 @@
       "name": "com.scriptmasterlabs/x402-gateway",
       "confidence": 0.55,
       "topics": [
-        "finance"
+        "mcp-infrastructure"
       ],
-      "description": "136 pay-per-call tools via x402: squeeze scanners, federal contracting, DeFi. No API key."
+      "description": "Remote MCP gateway for ScriptMasterLabs x402-paid tools and agent-native API access."
     },
     {
       "slug": "com-shareseer-mcp",
@@ -23184,7 +23170,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Scrape customer comments and reviews from Reddit, YouTube, Amazon, TikTok, and 25+ platforms."
+      "description": "Customer-voice research: scrape reviews and comments from 30+ sites, find ads, hooks, creators."
     },
     {
       "slug": "com-twelvedata-mcp",
@@ -24822,7 +24808,7 @@
       "topics": [
         "finance"
       ],
-      "description": "SEC filings and financial data for AI agents: 46 tools for financials, valuation and supply chains."
+      "description": "SEC filings and financial data for AI agents: 55 tools for financials, valuation and supply chains."
     },
     {
       "slug": "io-github-excaliwow-mcp",
@@ -25148,7 +25134,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "718 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
+      "description": "746 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
@@ -25239,7 +25225,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Adobe Illustrator MCP with 63 tools — more than the official Illustrator MCP. macOS | Windows."
+      "description": "Adobe Illustrator MCP with 67 tools — more than the official Illustrator MCP. macOS | Windows."
     },
     {
       "slug": "io-github-iksnerd-adb-mcp",
@@ -26358,7 +26344,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Solana token risk-scoring MCP server for AI trading agents with insider wallet cluster detection."
+      "description": "RiskDataApi — Solana token risk scoring for AI agents. Safety score, insider clusters, honeypot."
     },
     {
       "slug": "io-github-mh-mansouri-embedded-iot-mentor",
