@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-09-02T23:53:46.311Z",
-  "total": 5733,
+  "generatedAt": "2026-09-03T23:51:02.907Z",
+  "total": 5732,
   "summary": {
-    "needsReview": 3880,
+    "needsReview": 3879,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2629,
-    "uncategorizedRatePct": 45.9,
+    "uncategorized": 2628,
+    "uncategorizedRatePct": 45.8,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.1
   },
   "alerts": [
-    "待归类占比 45.9%，超过 5% 审核线",
+    "待归类占比 45.8%，超过 5% 审核线",
     "dev 占比 33.1%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2629,
-    "dev": 1898,
-    "search": 751,
+    "misc": 2628,
+    "dev": 1897,
+    "search": 752,
     "files": 256,
     "ai": 209,
     "comms": 186,
@@ -36,7 +36,7 @@
     "mcp-infrastructure": 86,
     "visualization": 66,
     "science-health": 31,
-    "security": 29,
+    "security": 30,
     "data-analysis": 27,
     "game-development": 24,
     "iot-robotics": 15
@@ -80,7 +80,7 @@
     },
     {
       "term": "free",
-      "count": 110
+      "count": 109
     },
     {
       "term": "credit",
@@ -128,7 +128,7 @@
     },
     {
       "term": "company",
-      "count": 79
+      "count": 80
     },
     {
       "term": "checks",
@@ -140,11 +140,11 @@
     },
     {
       "term": "across",
-      "count": 69
+      "count": 68
     },
     {
       "term": "audit",
-      "count": 68
+      "count": 67
     },
     {
       "term": "tasks",
@@ -155,11 +155,11 @@
       "count": 61
     },
     {
-      "term": "check",
-      "count": 59
+      "term": "analysis",
+      "count": 58
     },
     {
-      "term": "analysis",
+      "term": "check",
       "count": 58
     },
     {
@@ -200,7 +200,7 @@
     },
     {
       "term": "deterministic",
-      "count": 47
+      "count": 48
     },
     {
       "term": "analytics",
@@ -215,16 +215,16 @@
       "count": 46
     },
     {
+      "term": "plus",
+      "count": 44
+    },
+    {
       "term": "security",
       "count": 44
     },
     {
       "term": "verify",
       "count": 44
-    },
-    {
-      "term": "plus",
-      "count": 43
     },
     {
       "term": "apis",
@@ -865,7 +865,7 @@
       "name": "ai.monnet/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Model Context Protocol server for Monnet — motions, plans, and approvals for MCP-compatible clients."
+      "description": "MCP server for Monnet — motions, plans, files, approvals, and the team's company brain."
     },
     {
       "slug": "ai-mrmarket-mrmarket-mcp",
@@ -2615,7 +2615,7 @@
       "name": "com.crisphive/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Field-service dispatch & technician scheduling for AI agents — sub-3-second cascade rescheduling."
+      "description": "Field operations on a deterministic solver — run jobs, crews & fleet from Claude or ChatGPT."
     },
     {
       "slug": "com-crosbynews-weather",
@@ -2734,7 +2734,7 @@
       "name": "com.dzgapp/mint",
       "confidence": 0.35,
       "topics": [],
-      "description": "Inspect Mac storage, explain file activity, and perform journaled cleanup with Trash and Undo."
+      "description": "Inspect Mac and AI-tool storage, explain file activity, and clean safely with Trash and Undo."
     },
     {
       "slug": "com-energyaisolution-energyai",
@@ -6143,7 +6143,7 @@
       "name": "io.github.depixapp/depix-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One MCP: hosted Pix receive + dated charges (26 tools), or local npx non-custodial wallet (59)."
+      "description": "One MCP: hosted Pix receive + dated charges (26 tools), or local npx non-custodial wallet (60)."
     },
     {
       "slug": "io-github-derkcc-market-depth-lab",
@@ -6410,13 +6410,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Resolves real semver range satisfaction (^1.2.3, ~2.0) against a version. Paid via x402/USDC."
-    },
-    {
-      "slug": "io-github-endoflife-ai-endoflife-mcp",
-      "name": "io.github.endoflife-ai/endoflife-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "EOL dates and risk scores for 480+ software products. Check versions, score risk, audit stacks."
     },
     {
       "slug": "io-github-enterpilot-gomodel",
@@ -12740,13 +12733,6 @@
       "description": "IBGE: geography, census, economy and health from the official APIs, with provenance. 23 tools."
     },
     {
-      "slug": "io-github-sidneybissoli-ilo-mcp-server",
-      "name": "io.github.SidneyBissoli/ilo-mcp-server",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "ILO labour statistics (ILOSTAT) with full provenance: source, vintage, license. 4 tools."
-    },
-    {
       "slug": "io-github-sidneybissoli-uis-mcp-server",
       "name": "io.github.SidneyBissoli/uis-mcp-server",
       "confidence": 0.35,
@@ -14648,7 +14634,7 @@
       "name": "org.heathy/nutrition",
       "confidence": 0.35,
       "topics": [],
-      "description": "Nutrition for 917 plant foods & 39 Ayurvedic herbs, reconciled across 11 national datasets"
+      "description": "Nutrition for 910 plant foods across 11 national datasets, plus GB/EU & US claim checking"
     },
     {
       "slug": "org-hookline-mcp",
@@ -14830,7 +14816,7 @@
       "name": "store.scvd/general-store",
       "confidence": 0.35,
       "topics": [],
-      "description": "Evidence observatory for agentic commerce: free x402 conformance checks, corpus, agent store."
+      "description": "Evidence observatory for agentic commerce: x402 preflight, receipt checks, settlement attestations."
     },
     {
       "slug": "store-scvd-tab",
@@ -18015,7 +18001,7 @@
       "name": "io.github.iris-eval/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "The agent eval standard for MCP. Score every agent output for quality, safety, and cost."
+      "description": "Stop shipping agents on vibes. Score every agent output for quality, safety, and cost."
     },
     {
       "slug": "io-github-ironsecco-ironclaw",
@@ -19789,13 +19775,6 @@
       "description": "Operate the AgentPump agent economy: read the market, create, fund, and run autonomous agents."
     },
     {
-      "slug": "io-github-paidsync-paidsync",
-      "name": "io.github.PaidSync/paidsync",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Run ads on Google, Meta, LinkedIn, TikTok and more from AI. 430+ tools across 13 platforms."
-    },
-    {
       "slug": "io-github-parfica-fragrances",
       "name": "io.github.parfica/fragrances",
       "confidence": 0.45,
@@ -20864,7 +20843,7 @@
       "name": "io.github.SidneyBissoli/bcb-br-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Banco Central do Brasil (BCB): SGS series, Focus expectations, PTAX, stats + provenance. 15 tools."
+      "description": "Banco Central do Brasil (BCB): SGS series, Focus expectations, PTAX, stats + provenance. 17 tools."
     },
     {
       "slug": "io-github-sidneybissoli-cid10-br-mcp",
@@ -23514,7 +23493,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Read-only Sui blockchain analytics: 59 tools, protocol-aware tx decoding, no API keys or wallet."
+      "description": "Read-only Sui blockchain analytics: 60 tools, protocol-aware tx decoding, no API keys or wallet."
     },
     {
       "slug": "io-github-4da-systems-4da-mcp-server",
@@ -24730,6 +24709,15 @@
       "description": "MCP server for n8n workflow management -- view, create, sync and manage workflows via AI."
     },
     {
+      "slug": "io-github-endoflife-ai-endoflife-mcp",
+      "name": "io.github.endoflife-ai/endoflife-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "security"
+      ],
+      "description": "EOL dates, risk scores, CISA KEV exposure, SBOM audits and edge-device EOS for 500+ products."
+    },
+    {
       "slug": "io-github-engr-faizanali-text-to-speech",
       "name": "io.github.Engr-FaizanAli/text-to-speech",
       "confidence": 0.55,
@@ -25134,7 +25122,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "746 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
+      "description": "768 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
@@ -25839,7 +25827,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Verified GPU compute for Blender rendering with signed receipts and proof."
+      "description": "FARPY routes GPU workloads to qualified compute and returns verified artifacts and receipts."
     },
     {
       "slug": "io-github-marcosnovo-lexvibe",
@@ -27738,7 +27726,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Diagnoses, drugs & lab codes: ICD-11, SNOMED, LOINC, RxNorm, MeSH, ATC, CID-10. 31 tools, MIT."
+      "description": "Diagnoses, drugs & lab codes: ICD-11, SNOMED, LOINC, RxNorm, MeSH, ATC, CID-10. 33 tools, MIT."
     },
     {
       "slug": "io-github-signaledi-mcp-server",
@@ -27775,6 +27763,16 @@
         "observability"
       ],
       "description": "OeBB (Austrian Railways) train data: stations, departures, connections, service alerts."
+    },
+    {
+      "slug": "io-github-smaniches-uniprot-mcp",
+      "name": "io.github.smaniches/uniprot-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "automation",
+        "science-health"
+      ],
+      "description": "Verifiable, release-aware protein evidence workflows over UniProt and linked scientific sources."
     },
     {
       "slug": "io-github-smart-mcp-proxy-mcpproxy-go",
