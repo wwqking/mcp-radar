@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-09-03T23:51:02.907Z",
-  "total": 5732,
+  "generatedAt": "2026-09-04T23:44:52.017Z",
+  "total": 5722,
   "summary": {
-    "needsReview": 3879,
+    "needsReview": 3872,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2628,
+    "uncategorized": 2620,
     "uncategorizedRatePct": 45.8,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.1
+    "largestCategoryRatePct": 33.2
   },
   "alerts": [
     "待归类占比 45.8%，超过 5% 审核线",
-    "dev 占比 33.1%，超过 30% 拆分评估线",
+    "dev 占比 33.2%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2628,
+    "misc": 2620,
     "dev": 1897,
     "search": 752,
     "files": 256,
     "ai": 209,
-    "comms": 186,
+    "comms": 185,
     "database": 168,
-    "commerce": 157,
+    "commerce": 156,
     "cloud": 130,
     "browser": 116,
     "marketing": 77
   },
   "topicCounts": {
-    "design-media": 288,
+    "design-media": 291,
     "automation": 191,
     "finance": 190,
-    "observability": 119,
+    "observability": 118,
     "legal": 90,
     "mcp-infrastructure": 86,
     "visualization": 66,
     "science-health": 31,
-    "security": 30,
+    "security": 29,
     "data-analysis": 27,
     "game-development": 24,
     "iot-robotics": 15
@@ -56,7 +56,7 @@
     },
     {
       "term": "lookup",
-      "count": 216
+      "count": 217
     },
     {
       "term": "official-source",
@@ -80,23 +80,23 @@
     },
     {
       "term": "free",
-      "count": 109
+      "count": 110
     },
     {
       "term": "credit",
-      "count": 104
+      "count": 105
     },
     {
       "term": "read",
       "count": 102
     },
     {
-      "term": "local",
+      "term": "manage",
       "count": 98
     },
     {
-      "term": "manage",
-      "count": 98
+      "term": "local",
+      "count": 97
     },
     {
       "term": "code",
@@ -111,12 +111,12 @@
       "count": 91
     },
     {
-      "term": "read-only",
-      "count": 89
+      "term": "live",
+      "count": 87
     },
     {
-      "term": "live",
-      "count": 88
+      "term": "read-only",
+      "count": 87
     },
     {
       "term": "pipeworx-io",
@@ -128,7 +128,7 @@
     },
     {
       "term": "company",
-      "count": 80
+      "count": 79
     },
     {
       "term": "checks",
@@ -144,7 +144,7 @@
     },
     {
       "term": "audit",
-      "count": 67
+      "count": 66
     },
     {
       "term": "tasks",
@@ -155,11 +155,11 @@
       "count": 61
     },
     {
-      "term": "analysis",
-      "count": 58
+      "term": "check",
+      "count": 59
     },
     {
-      "term": "check",
+      "term": "analysis",
       "count": 58
     },
     {
@@ -168,7 +168,7 @@
     },
     {
       "term": "status",
-      "count": 58
+      "count": 57
     },
     {
       "term": "local-first",
@@ -184,7 +184,7 @@
     },
     {
       "term": "evidence",
-      "count": 51
+      "count": 50
     },
     {
       "term": "intelligence",
@@ -195,11 +195,11 @@
       "count": 49
     },
     {
-      "term": "every",
-      "count": 49
+      "term": "deterministic",
+      "count": 48
     },
     {
-      "term": "deterministic",
+      "term": "every",
       "count": 48
     },
     {
@@ -216,7 +216,7 @@
     },
     {
       "term": "plus",
-      "count": 44
+      "count": 45
     },
     {
       "term": "security",
@@ -227,12 +227,12 @@
       "count": 44
     },
     {
-      "term": "apis",
+      "term": "call",
       "count": 41
     },
     {
-      "term": "call",
-      "count": 41
+      "term": "apis",
+      "count": 40
     },
     {
       "term": "find",
@@ -1530,7 +1530,7 @@
       "name": "ai.ssid/ssid-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Identify the manufacturer behind any MAC address; flags randomized/private addresses."
+      "description": "Manufacturer-cited router default logins and compliance check, plus MAC/OUI vendor lookup. Free."
     },
     {
       "slug": "ai-statemind-python-code-validator",
@@ -2632,41 +2632,6 @@
       "description": "Validate Dashboardbase widget endpoint responses and setup files against the live contract."
     },
     {
-      "slug": "com-datakoot-base-intel-mcp",
-      "name": "com.datakoot/base-intel-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read-only on-chain intel for AI agents on Base: balances, tokens, gas, tx status. No API keys."
-    },
-    {
-      "slug": "com-datakoot-economy-intel-mcp",
-      "name": "com.datakoot/economy-intel-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Macro data for AI agents: GDP, inflation, unemployment & trade, any country. No API keys."
-    },
-    {
-      "slug": "com-datakoot-filings-intel-mcp",
-      "name": "com.datakoot/filings-intel-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "SEC EDGAR for AI agents: company filings, financials and insider trades. No API keys."
-    },
-    {
-      "slug": "com-datakoot-market-intel-mcp",
-      "name": "com.datakoot/market-intel-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Live & historical FX rates for AI agents, from European Central Bank data. No API keys."
-    },
-    {
-      "slug": "com-datakoot-package-intel-mcp",
-      "name": "com.datakoot/package-intel-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "npm, PyPI & crates.io intel for AI agents: versions, popularity, deps, health. No API keys."
-    },
-    {
       "slug": "com-decionis-mcp",
       "name": "com.decionis/mcp",
       "confidence": 0.35,
@@ -3336,7 +3301,7 @@
       "name": "com.monopoly-gold.planner/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Goal decomposition where every \"done\" is proven by evidence and checked by a judge."
+      "description": "Goal and task planning MCP for Codex and AI agents, with evidence-backed completion."
     },
     {
       "slug": "com-moonlora-moonlora",
@@ -5415,7 +5380,7 @@
       "name": "io.github.beepboop2025/undertow",
       "confidence": 0.35,
       "topics": [],
-      "description": "Daily editorials, exit costs, depth concentration, tiers, and sealed records. No commodity futures."
+      "description": "Daily exit context, depth, tiers, and sealed records. No commodity futures or execution authority."
     },
     {
       "slug": "io-github-bekirdag-pigeonpost",
@@ -6143,7 +6108,7 @@
       "name": "io.github.depixapp/depix-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One MCP: hosted Pix receive + dated charges (26 tools), or local npx non-custodial wallet (60)."
+      "description": "One MCP: hosted Pix receive + dated charges (26 tools), or local npx non-custodial wallet (62)."
     },
     {
       "slug": "io-github-derkcc-market-depth-lab",
@@ -13335,13 +13300,6 @@
       "description": "Evidence-readiness MCP server: validate, audit, and score briefs, memos, and evidence packs."
     },
     {
-      "slug": "io-github-vassiliylakhonin-profile-mcp",
-      "name": "io.github.vassiliylakhonin/profile-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read-only MCP profile server: CV, case studies, claim-to-evidence map, and role matching."
-    },
-    {
       "slug": "io-github-verdochello-verdoc-mcp",
       "name": "io.github.verdochello/verdoc-mcp",
       "confidence": 0.35,
@@ -13745,7 +13703,7 @@
       "name": "io.github.xmpuspus/ph-civic-data-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "PH civic data as MCP tools: the full PSA OpenSTAT catalog, hazards, procurement. 32 tools."
+      "description": "PH civic data as MCP tools: the full PSA OpenSTAT catalog, hazards, procurement. 41 tools."
     },
     {
       "slug": "io-github-xrpl-utilities-mcp",
@@ -13794,7 +13752,7 @@
       "name": "io.github.yongjip/mergetrain",
       "confidence": 0.35,
       "topics": [],
-      "description": "Operate local deploy trains for coding-agent worktrees with approval-gated deploys."
+      "description": "Queue parallel-agent worktree branches, test together, serialize and recover Git pushes."
     },
     {
       "slug": "io-github-yonro-xmemo",
@@ -20038,7 +19996,7 @@
       "name": "io.github.QVerisAI/mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Discover, inspect and call ranked external data & tool APIs with unified billing and usage audit"
+      "description": "Discover, inspect, quote, and call external tools, with usage and final credit settlement audits"
     },
     {
       "slug": "io-github-qwertymuzaffar-udacity-commit",
@@ -21522,7 +21480,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "Local searchable memory over the session histories of twenty-one coding agents."
+      "description": "deja-vu: local memory over the session histories of twenty-two coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -22726,24 +22684,6 @@
       "description": "Build, backtest, and deploy quantitative trading strategies from your AI agent."
     },
     {
-      "slug": "com-datakoot-security-intel-mcp",
-      "name": "com.datakoot/security-intel-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "security"
-      ],
-      "description": "CVE lookups (NVD) and dependency-manifest audits (OSV) for AI agents. No API keys."
-    },
-    {
-      "slug": "com-datakoot-weather-intel-mcp",
-      "name": "com.datakoot/weather-intel-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "observability"
-      ],
-      "description": "US weather, alerts, earthquakes and elevation for AI agents, from NWS/NOAA and USGS. No API keys."
-    },
-    {
       "slug": "com-dethboy-vedetta",
       "name": "com.dethboy/vedetta",
       "confidence": 0.55,
@@ -23493,7 +23433,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Read-only Sui blockchain analytics: 60 tools, protocol-aware tx decoding, no API keys or wallet."
+      "description": "Read-only Sui blockchain analytics: 62 tools, protocol-aware tx decoding, no API keys or wallet."
     },
     {
       "slug": "io-github-4da-systems-4da-mcp-server",
@@ -24489,7 +24429,7 @@
       "topics": [
         "visualization"
       ],
-      "description": "Architecture intelligence, security analysis, and living docs. 13 Mermaid tools."
+      "description": "Architecture intelligence, security analysis, and living docs. 14 Mermaid tools."
     },
     {
       "slug": "io-github-delega-dev-delega",
@@ -24634,7 +24574,7 @@
       "topics": [
         "automation"
       ],
-      "description": "GoHighLevel MCP for Claude: 248 tools, 51 modules, incl. the only programmatic GHL workflow builder"
+      "description": "GoHighLevel MCP for Claude: 250 tools, 51 modules, incl. the only programmatic GHL workflow builder"
     },
     {
       "slug": "io-github-drzamarian-n8n-mcp-community",
@@ -27610,6 +27550,15 @@
         "observability"
       ],
       "description": "Log amateur-radio QSOs to N3FJP logging software over its TCP API."
+    },
+    {
+      "slug": "io-github-scavio-ai-scavio-mcp",
+      "name": "io.github.scavio-ai/scavio-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Structured web data from 31 platforms: Google, YouTube, Amazon, Walmart, Reddit, TikTok, LinkedIn"
     },
     {
       "slug": "io-github-sebastienrousseau-iso20022-mcp",
