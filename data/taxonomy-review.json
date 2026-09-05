@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T23:44:52.017Z",
+  "generatedAt": "2026-09-05T23:35:35.622Z",
   "total": 5722,
   "summary": {
-    "needsReview": 3872,
+    "needsReview": 3871,
     "needsReviewRatePct": 67.7,
-    "uncategorized": 2620,
+    "uncategorized": 2619,
     "uncategorizedRatePct": 45.8,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,25 +15,25 @@
     "低置信度/待审核占比 67.7%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2620,
+    "misc": 2619,
     "dev": 1897,
-    "search": 752,
+    "search": 753,
     "files": 256,
     "ai": 209,
     "comms": 185,
-    "database": 168,
-    "commerce": 156,
+    "database": 169,
+    "commerce": 157,
     "cloud": 130,
     "browser": 116,
     "marketing": 77
   },
   "topicCounts": {
-    "design-media": 291,
-    "automation": 191,
-    "finance": 190,
-    "observability": 118,
+    "design-media": 292,
+    "finance": 191,
+    "automation": 190,
+    "observability": 117,
     "legal": 90,
-    "mcp-infrastructure": 86,
+    "mcp-infrastructure": 85,
     "visualization": 66,
     "science-health": 31,
     "security": 29,
@@ -72,15 +72,15 @@
     },
     {
       "term": "coding",
-      "count": 115
+      "count": 116
+    },
+    {
+      "term": "free",
+      "count": 111
     },
     {
       "term": "memory",
       "count": 111
-    },
-    {
-      "term": "free",
-      "count": 110
     },
     {
       "term": "credit",
@@ -96,7 +96,7 @@
     },
     {
       "term": "local",
-      "count": 97
+      "count": 96
     },
     {
       "term": "code",
@@ -132,7 +132,7 @@
     },
     {
       "term": "checks",
-      "count": 75
+      "count": 76
     },
     {
       "term": "x402",
@@ -152,19 +152,19 @@
     },
     {
       "term": "real",
-      "count": 61
+      "count": 62
     },
     {
       "term": "check",
       "count": 59
     },
     {
-      "term": "analysis",
+      "term": "public",
       "count": 58
     },
     {
-      "term": "public",
-      "count": 58
+      "term": "analysis",
+      "count": 57
     },
     {
       "term": "status",
@@ -200,7 +200,7 @@
     },
     {
       "term": "every",
-      "count": 48
+      "count": 47
     },
     {
       "term": "analytics",
@@ -963,7 +963,7 @@
       "name": "ai.physea/liminality",
       "confidence": 0.35,
       "topics": [],
-      "description": "Breaks a hard question or decision into grounded sub-questions and returns a checkable route."
+      "description": "Breaks a hard question or decision into checkable sub-questions, grounds each to a real tool."
     },
     {
       "slug": "ai-plcs-plcs-ai",
@@ -2314,7 +2314,7 @@
       "name": "com.adrianczuczka/mason",
       "confidence": 0.35,
       "topics": [],
-      "description": "Context engineering MCP server — generates CLAUDE.md files via structured codebase analysis"
+      "description": "Engineering decisions, change impact, documentation audits, and CI evidence for coding assistants."
     },
     {
       "slug": "com-agenticcontrolplane-acp-mcp-server",
@@ -4729,7 +4729,7 @@
       "name": "io.github.agentic-hil/agentic-hil",
       "confidence": 0.35,
       "topics": [],
-      "description": "Probe, flash, reset and drive UART and CAN on a real STM32 or other embedded target, policy-gated."
+      "description": "Develop firmware on the real board behind a debug probe: flash, reset, UART and CAN, policy-gated."
     },
     {
       "slug": "io-github-agenticsubstrate-reputation-gateway",
@@ -15873,7 +15873,7 @@
       "name": "io.github.cachly-dev/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Persistent memory + causal root-cause analysis for AI coding agents. 123 MCP tools. EU, GDPR."
+      "description": "Persistent memory + causal root-cause analysis for AI coding agents. 124 MCP tools. EU, GDPR."
     },
     {
       "slug": "io-github-cadlens-co-cadlens-mcp",
@@ -16762,7 +16762,7 @@
       "name": "io.github.ddevetak/footballcharts-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Tables, results, model probabilities and Monte Carlo projections for 90+ football leagues."
+      "description": "Tables, results, fixtures, goal timing, season projections: 93 football leagues incl. lower tiers"
     },
     {
       "slug": "io-github-decantr-ai-mcp-server",
@@ -18543,13 +18543,6 @@
       "description": "ERC-7303 token-controlled roles for AI agents: grant, check, and revoke permissions on-chain"
     },
     {
-      "slug": "io-github-korovin-aa97-talkthrough-mcp",
-      "name": "io.github.korovin-aa97/talkthrough-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Local MCP server: screen recordings into transcript, exact frames, OCR, wall-clock evidence."
-    },
-    {
       "slug": "io-github-kriskraw80-mychart",
       "name": "io.github.kriskraw80/mychart",
       "confidence": 0.45,
@@ -18806,7 +18799,7 @@
       "name": "io.github.lucaslubi/fidacy-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Action firewall for AI agents: blocks the wrong action before it runs, every verdict Ed25519-signed."
+      "description": "AI Agent Firewall. Enforce signed authority before consequential actions. Free API key required."
     },
     {
       "slug": "io-github-lukebmandel-debug-alto-connector",
@@ -21333,7 +21326,7 @@
       "name": "io.github.ucsandman/dashclaw",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for DashClaw governance — guard, record, invoke, and discover capabilities."
+      "description": "Policy checks, approvals, records, and governed HTTP capabilities for unattended agents."
     },
     {
       "slug": "io-github-udah1-hilan-mcp",
@@ -22984,15 +22977,6 @@
       "description": "Operate your Sapiens Sintéticos AI studio: generate image, article, voice, music and video."
     },
     {
-      "slug": "com-scriptmasterlabs-x402-gateway",
-      "name": "com.scriptmasterlabs/x402-gateway",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Remote MCP gateway for ScriptMasterLabs x402-paid tools and agent-native API access."
-    },
-    {
       "slug": "com-shareseer-mcp",
       "name": "com.shareseer/mcp",
       "confidence": 0.55,
@@ -23315,7 +23299,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Swap, transfer, track a portfolio and use Aave V3 on Base, HyperEVM and Monad."
+      "description": "Swap, transfer, portfolio and Aave V3 on Base, HyperEVM and Monad, with the FibX app as MCP Apps UI."
     },
     {
       "slug": "godot-mcp",
@@ -23892,9 +23876,9 @@
       "name": "io.github.beepboop2025/liquilens",
       "confidence": 0.55,
       "topics": [
-        "observability"
+        "finance"
       ],
-      "description": "Bank and lender monitoring with historical-evidence limits and eligibility flags beside every claim."
+      "description": "Free bank research: NPA reconciliation, small finance banks, UCBs and cited evidence limits."
     },
     {
       "slug": "io-github-beeswaxpat-chronoverify",
@@ -25062,7 +25046,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "768 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
+      "description": "781 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
@@ -25105,10 +25089,9 @@
       "name": "io.github.HorizunGroup/horizun-pbi-mcp",
       "confidence": 0.55,
       "topics": [
-        "data-analysis",
-        "automation"
+        "data-analysis"
       ],
-      "description": "Open-source MCP server for Power BI Desktop, DAX, PBIP, TMDL and PBIR automation."
+      "description": "Build, audit and repair Power BI Desktop models and PBIP reports with DAX, TMDL and PBIR."
     },
     {
       "slug": "io-github-horizungroup-horizun-revit-mcp",
@@ -25324,7 +25307,7 @@
       "topics": [
         "automation"
       ],
-      "description": "19 tools + 5 resources for ServiceNow: CMDB, update sets, tables. OAuth 2.1. Tokyo+, PKCE SanDiego+"
+      "description": "ServiceNow developer data plane: Table API, CMDB, update sets, schema. Read-only, allow/deny, audit."
     },
     {
       "slug": "io-github-jtalk22-asana-mcp-server",
@@ -25451,6 +25434,15 @@
         "finance"
       ],
       "description": "Quantitative trading toolkit with 900+ data columns, backtesting, and 60+ strategy examples."
+    },
+    {
+      "slug": "io-github-korovin-aa97-talkthrough-mcp",
+      "name": "io.github.korovin-aa97/talkthrough-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Local MCP server: recordings or public video URLs into transcript, frames, OCR, wall-clock evidence."
     },
     {
       "slug": "io-github-krishtoautomate-robotactions",
