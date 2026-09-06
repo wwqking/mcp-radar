@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-05T23:35:35.622Z",
+  "generatedAt": "2026-09-06T23:30:21.441Z",
   "total": 5722,
   "summary": {
-    "needsReview": 3871,
-    "needsReviewRatePct": 67.7,
-    "uncategorized": 2619,
+    "needsReview": 3870,
+    "needsReviewRatePct": 67.6,
+    "uncategorized": 2618,
     "uncategorizedRatePct": 45.8,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -12,10 +12,10 @@
   "alerts": [
     "待归类占比 45.8%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.7%，超过 10%"
+    "低置信度/待审核占比 67.6%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2619,
+    "misc": 2618,
     "dev": 1897,
     "search": 753,
     "files": 256,
@@ -24,7 +24,7 @@
     "database": 169,
     "commerce": 157,
     "cloud": 130,
-    "browser": 116,
+    "browser": 117,
     "marketing": 77
   },
   "topicCounts": {
@@ -180,7 +180,7 @@
     },
     {
       "term": "usdc",
-      "count": 53
+      "count": 52
     },
     {
       "term": "evidence",
@@ -227,11 +227,11 @@
       "count": 44
     },
     {
-      "term": "call",
-      "count": 41
+      "term": "apis",
+      "count": 40
     },
     {
-      "term": "apis",
+      "term": "call",
       "count": 40
     },
     {
@@ -6461,13 +6461,6 @@
       "description": "Memory for coding conventions and standing instructions that persists across sessions."
     },
     {
-      "slug": "io-github-figranium-figranium-mcp",
-      "name": "io.github.figranium/figranium-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server implementation for Figranium"
-    },
-    {
       "slug": "io-github-firatmio-mcp-audit-proxy",
       "name": "io.github.firatmio/mcp-audit-proxy",
       "confidence": 0.35,
@@ -11120,7 +11113,7 @@
       "name": "io.github.PatrickPi1312/eu-compliance",
       "confidence": 0.35,
       "topics": [],
-      "description": "Agent bookkeeping, sanctions, KYB, VAT and e-invoice checks - pay per call in USDC"
+      "description": "40 MCP tools: multi-chain RPC, market and transaction decisions, AI, EU compliance and US imports"
     },
     {
       "slug": "io-github-paydirt-ai-paydirt-mcp",
@@ -18190,7 +18183,7 @@
       "name": "io.github.jdhart81/security-preflight",
       "confidence": 0.45,
       "topics": [],
-      "description": "Static MCP manifest and tool-policy security preflight with signed input-redacted receipts"
+      "description": "Evidence-bounded static agent security checks with signed redacted receipts."
     },
     {
       "slug": "io-github-jdhart81-smartscale",
@@ -19233,7 +19226,7 @@
       "name": "io.github.mereditharmcgee/the-commons",
       "confidence": 0.45,
       "topics": [],
-      "description": "A persistent, noncommercial space where AI voices from many models talk to each other. Read free."
+      "description": "AI voices from many models talk to each other. Read free; write with a token that stays out of chat."
     },
     {
       "slug": "io-github-mibayy-token-savior",
@@ -23037,7 +23030,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Managed TikTok/Instagram/YouTube accounts + video posting at scale, operated by human managers."
+      "description": "Managed TikTok/Instagram accounts for geo-sharding, video posting and sandbox previews."
     },
     {
       "slug": "com-toughtongueai-mcp",
@@ -23915,7 +23908,7 @@
       "topics": [
         "mcp-infrastructure"
       ],
-      "description": "MCP gateway federating 21 biomedical MCP servers behind one endpoint: gnomAD, ClinVar, HPO, VEP."
+      "description": "MCP gateway federating 22 biomedical MCP servers behind one endpoint: gnomAD, ClinVar, HPO, VEP."
     },
     {
       "slug": "io-github-bguillow-rgb-itin-finance",
@@ -25046,7 +25039,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "781 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
+      "description": "795 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
@@ -26928,7 +26921,7 @@
       "topics": [
         "data-analysis"
       ],
-      "description": "Read-only IBKR MCP: account, positions, daily brief, reporting status, Edge, and risk."
+      "description": "Read-only IBKR MCP: account, positions, brief, regime, stress, reporting, Edge, and risk."
     },
     {
       "slug": "io-github-osauer-ibkr",
