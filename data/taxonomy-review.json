@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-09-08T00:01:05.996Z",
-  "total": 5721,
+  "generatedAt": "2026-09-08T23:51:42.631Z",
+  "total": 5720,
   "summary": {
-    "needsReview": 3867,
+    "needsReview": 3865,
     "needsReviewRatePct": 67.6,
     "uncategorized": 2616,
     "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.2
+    "largestCategoryRatePct": 33.1
   },
   "alerts": [
     "待归类占比 45.7%，超过 5% 审核线",
-    "dev 占比 33.2%，超过 30% 拆分评估线",
+    "dev 占比 33.1%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.6%，超过 10%"
   ],
   "categoryCounts": {
     "misc": 2616,
-    "dev": 1897,
+    "dev": 1896,
     "search": 754,
     "files": 256,
     "ai": 209,
@@ -24,7 +24,7 @@
     "database": 169,
     "commerce": 157,
     "cloud": 130,
-    "browser": 118,
+    "browser": 119,
     "marketing": 77
   },
   "topicCounts": {
@@ -33,8 +33,8 @@
     "automation": 190,
     "observability": 117,
     "legal": 90,
-    "mcp-infrastructure": 86,
-    "visualization": 66,
+    "mcp-infrastructure": 84,
+    "visualization": 65,
     "science-health": 31,
     "security": 29,
     "data-analysis": 27,
@@ -48,7 +48,7 @@
     },
     {
       "term": "query",
-      "count": 240
+      "count": 241
     },
     {
       "term": "platform-hosted",
@@ -108,15 +108,15 @@
     },
     {
       "term": "over",
-      "count": 90
+      "count": 91
     },
     {
       "term": "live",
-      "count": 87
+      "count": 89
     },
     {
       "term": "read-only",
-      "count": 87
+      "count": 88
     },
     {
       "term": "pipeworx-io",
@@ -136,7 +136,7 @@
     },
     {
       "term": "x402",
-      "count": 73
+      "count": 72
     },
     {
       "term": "across",
@@ -144,7 +144,7 @@
     },
     {
       "term": "audit",
-      "count": 66
+      "count": 67
     },
     {
       "term": "tasks",
@@ -211,12 +211,12 @@
       "count": 46
     },
     {
-      "term": "vehicle",
+      "term": "plus",
       "count": 46
     },
     {
-      "term": "plus",
-      "count": 45
+      "term": "vehicle",
+      "count": 46
     },
     {
       "term": "verify",
@@ -239,7 +239,7 @@
       "count": 40
     },
     {
-      "term": "control",
+      "term": "registry",
       "count": 39
     }
   ],
@@ -1838,7 +1838,7 @@
       "name": "app.evlek/mcp-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "AI-native property MCP for Northern Cyprus (KKTC/TRNC): listings, prices, districts, yields."
+      "description": "Live Northern Cyprus (KKTC/TRNC) property listings and asking-price data. Read-only, 12 tools."
     },
     {
       "slug": "app-flaim-mcp",
@@ -2020,7 +2020,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 74 tools."
+      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 75 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -2160,7 +2160,7 @@
       "name": "chat.mumo/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Consult a multi-model panel on contested decisions via MCP: architecture, plan review, strategy."
+      "description": "Multi-model deliberation over MCP: full responses plus typed cross-model reactions from other labs."
     },
     {
       "slug": "ci-git-mymlh-mcp-server",
@@ -2518,6 +2518,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Non-custodial BVCC Agent Wallet on-chain for AI agents: balances, transfers, approvals, swaps."
+    },
+    {
+      "slug": "com-branderux-mcp",
+      "name": "com.branderux/mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "One message in, a full agentic application out: website and MCP app, live. Built from any AI client."
     },
     {
       "slug": "com-brick-byte-footnote",
@@ -3427,7 +3434,7 @@
       "name": "com.postman/postman-mcp-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "A basic MCP server to operate on the Postman API."
+      "description": "Give your AI agents trusted access to the full Postman platform."
     },
     {
       "slug": "com-presenterprep-presenterprep",
@@ -5303,7 +5310,7 @@
       "name": "io.github.bailinghub/bailinghub-governance",
       "confidence": 0.35,
       "topics": [],
-      "description": "Submit and inspect governed AI business actions through a self-hosted BailingHub control plane."
+      "description": "Let AI agents query and operate business systems with authorization, approval and audit trails."
     },
     {
       "slug": "io-github-bardesss-arr-mcp",
@@ -16279,7 +16286,7 @@
       "name": "io.github.CodesWhat/portkey-admin-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Portkey Admin API MCP server with current coverage and Prisma AIRS interoperability guidance."
+      "description": "Portkey Admin API control-plane MCP server with Prisma AIRS interoperability guidance."
     },
     {
       "slug": "io-github-colm18-gif-theaijournal",
@@ -18233,13 +18240,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "SFMC AMPscript/SSJS/GTL tools + searchable help for 7 MC products (Engagement, Pardot…) via MCP."
-    },
-    {
-      "slug": "io-github-johninarti-agent-passport",
-      "name": "io.github.johnInarti/agent-passport",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Post-quantum (ML-DSA-65/FIPS-204) proofs for AI agents via x402: sign, notarize, provenance, KYA."
     },
     {
       "slug": "io-github-johnisanerd-appstore-reviews",
@@ -20591,7 +20591,7 @@
       "name": "io.github.sailorpepe/undesirables-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "TCG oracle: calibrated prices & risk, card-loan terms, AI grading, fantasy souls — proven on-chain."
+      "description": "TCG oracle: calibrated prices & risk, AI grading, loan terms, fantasy souls - proven on-chain. 23 to"
     },
     {
       "slug": "io-github-salatmaster-keenetic-mcp",
@@ -22586,15 +22586,6 @@
       "description": "What a stock price is betting on: implied growth, duration, and margin, read from SEC filings."
     },
     {
-      "slug": "com-branderux-mcp",
-      "name": "com.branderux/mcp",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Build agentic applications from any MCP client: projects, brand, elements, screens, keys, agent."
-    },
-    {
       "slug": "com-churnsolution-analytics",
       "name": "com.churnsolution/analytics",
       "confidence": 0.55,
@@ -23744,15 +23735,6 @@
       "description": "Concentrated liquidity on Uniswap/Aerodrome (rebalance, compound, leverage) or single-sided lending."
     },
     {
-      "slug": "io-github-arjun0606-smolanalytics",
-      "name": "io.github.Arjun0606/smolanalytics",
-      "confidence": 0.55,
-      "topics": [
-        "visualization"
-      ],
-      "description": "Agent-operated web + product analytics. 79 tools + 14 prompts; answers provably match the dashboard."
-    },
-    {
       "slug": "io-github-arose26-make-audit-mcp",
       "name": "io.github.arose26/make-audit-mcp",
       "confidence": 0.55,
@@ -23961,7 +23943,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Persistent semantic memory API for AI agents with Audio Intelligence."
+      "description": "Persistent memory for AI agents — audio intelligence + Music Memory ingestion and recall"
     },
     {
       "slug": "io-github-braynexservices-nigeria-quidax-crypto",
@@ -24286,7 +24268,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Agent-native TypeScript framework for building MCP servers with declarative definitions."
+      "description": "Agent-native TypeScript framework for MCP servers."
     },
     {
       "slug": "io-github-cyanheads-medical-codes-mcp-server",
@@ -26437,7 +26419,7 @@
       "topics": [
         "finance"
       ],
-      "description": "MCP memory for AI trading agents. Store trades, recall similar setups, track strategy performance."
+      "description": "Tamper-evident decision audit trail and outcome-weighted memory for AI trading agents."
     },
     {
       "slug": "io-github-mobabur94-hammerspoon",
@@ -27243,7 +27225,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Scientific due diligence on a claim: reviewer questions, failure patterns, dated evidence."
+      "description": "Due diligence on life-science claims: omics, trials, gene therapy. Dimension by dimension."
     },
     {
       "slug": "io-github-rezasoleymanifar-vintage",
