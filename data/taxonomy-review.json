@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-09-06T23:30:21.441Z",
-  "total": 5722,
+  "generatedAt": "2026-09-08T00:01:05.996Z",
+  "total": 5721,
   "summary": {
-    "needsReview": 3870,
+    "needsReview": 3867,
     "needsReviewRatePct": 67.6,
-    "uncategorized": 2618,
-    "uncategorizedRatePct": 45.8,
+    "uncategorized": 2616,
+    "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
   },
   "alerts": [
-    "待归类占比 45.8%，超过 5% 审核线",
+    "待归类占比 45.7%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.6%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2618,
+    "misc": 2616,
     "dev": 1897,
-    "search": 753,
+    "search": 754,
     "files": 256,
     "ai": 209,
     "comms": 185,
     "database": 169,
     "commerce": 157,
     "cloud": 130,
-    "browser": 117,
+    "browser": 118,
     "marketing": 77
   },
   "topicCounts": {
-    "design-media": 292,
+    "design-media": 291,
     "finance": 191,
     "automation": 190,
     "observability": 117,
     "legal": 90,
-    "mcp-infrastructure": 85,
+    "mcp-infrastructure": 86,
     "visualization": 66,
     "science-health": 31,
     "security": 29,
@@ -108,7 +108,7 @@
     },
     {
       "term": "over",
-      "count": 91
+      "count": 90
     },
     {
       "term": "live",
@@ -152,7 +152,7 @@
     },
     {
       "term": "real",
-      "count": 62
+      "count": 61
     },
     {
       "term": "check",
@@ -199,12 +199,12 @@
       "count": 48
     },
     {
-      "term": "every",
+      "term": "analytics",
       "count": 47
     },
     {
-      "term": "analytics",
-      "count": 46
+      "term": "every",
+      "count": 47
     },
     {
       "term": "certificate",
@@ -219,12 +219,12 @@
       "count": 45
     },
     {
-      "term": "security",
+      "term": "verify",
       "count": 44
     },
     {
-      "term": "verify",
-      "count": 44
+      "term": "security",
+      "count": 43
     },
     {
       "term": "apis",
@@ -1726,7 +1726,7 @@
       "name": "ai.wellnessproject/wellness-project",
       "confidence": 0.35,
       "topics": [],
-      "description": "63 tools for Apple Health, Fitbit, Oura & Health Connect data in Claude, ChatGPT, Grok & Mistral."
+      "description": "Connect your health, fitness, nutrition, sleep, and wearable data to your AI assistant."
     },
     {
       "slug": "ai-wiplash-wiplash",
@@ -1957,7 +1957,7 @@
       "name": "app.scfcontrolsplatform/mcp-server-scf",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP server for the SCF Controls Platform — 135 tools for controls, evidence, risk, and TPRM."
+      "description": "MCP server for the SCF Controls Platform — 128 tools for controls, evidence, risk, and TPRM."
     },
     {
       "slug": "app-thoughtspot-mcp-server",
@@ -2328,7 +2328,7 @@
       "name": "com.agishub/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "AgisHub — pay-per-call tools for AI agents over x402 (USDC on Base). No API key."
+      "description": "AgisHub — 34 pay-per-call tools for AI agents over x402 (USDC on Base). No API key, no signup."
     },
     {
       "slug": "com-agishub-timezone-toolkit",
@@ -2518,13 +2518,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Non-custodial BVCC Agent Wallet on-chain for AI agents: balances, transfers, approvals, swaps."
-    },
-    {
-      "slug": "com-branderux-mcp",
-      "name": "com.branderux/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Turns any agent into a full agentic application — branded, interactive screens generated at runtime."
     },
     {
       "slug": "com-brick-byte-footnote",
@@ -5887,6 +5880,13 @@
       "description": "Check a social post against a platform's real character limit: X, Bluesky, LinkedIn, Threads."
     },
     {
+      "slug": "io-github-conorbronsdon-substack-mcp",
+      "name": "io.github.conorbronsdon/substack-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Substack drafts, Notes, analytics and consented subscribers. Long-form posts stay draft-only."
+    },
+    {
       "slug": "io-github-conorbronsdon-transistor-mcp",
       "name": "io.github.conorbronsdon/transistor-mcp",
       "confidence": 0.35,
@@ -5983,13 +5983,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Control Krita through a secure local MCP server and authenticated Windows bridge."
-    },
-    {
-      "slug": "io-github-danielenricocahall-lorcana-mcp",
-      "name": "io.github.danielenricocahall/lorcana-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server for searching, exploring, and aggregating Disney Lorcana cards."
     },
     {
       "slug": "io-github-danmat-packkit-mcp",
@@ -7074,7 +7067,7 @@
       "name": "io.github.jackfriks/post-bridge",
       "confidence": 0.35,
       "topics": [],
-      "description": "Schedule and publish social media posts to 9 platforms from your AI agent"
+      "description": "Schedule and publish social media posts to 10 platforms from your AI agent"
     },
     {
       "slug": "io-github-jacobfunch-usefillo",
@@ -7341,13 +7334,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Thirty-two guarded agent utilities and maintained-data lookups over USDC x402."
-    },
-    {
-      "slug": "io-github-juxtaposition1-vape",
-      "name": "io.github.jUXTAPOSITION1/vape",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Autonomous on-chain security detective for Base, exposed over the Model Context Protocol (MCP)."
     },
     {
       "slug": "io-github-juyterman1000-entroly",
@@ -12583,7 +12569,7 @@
       "name": "io.github.shibley/apistatuscheck",
       "confidence": 0.35,
       "topics": [],
-      "description": "Check real-time uptime and incident status for 285 APIs and cloud services."
+      "description": "Check real-time uptime and incident status for 275+ APIs and cloud services."
     },
     {
       "slug": "io-github-shibley-mymcptools",
@@ -13675,7 +13661,7 @@
       "name": "io.github.XBP-Europe/sagemath-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Stateful SageMath MCP server with 33 symbolic math tools and a sandboxed Sage session per client."
+      "description": "Stateful SageMath MCP server with 40 tools and a sandboxed Sage session per client."
     },
     {
       "slug": "io-github-xetenet-xete-mcp",
@@ -21427,13 +21413,6 @@
       "description": "Local-first memory brain for AI coding agents: hooks capture sessions, beliefs injected per prompt."
     },
     {
-      "slug": "io-github-virtualsms-io-sms",
-      "name": "io.github.virtualsms-io/sms",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Real physical SIMs for AI agents: SMS verification and rentals. 145+ countries, 2500+ services."
-    },
-    {
       "slug": "io-github-vishalsachdev-canvas-mcp",
       "name": "io.github.vishalsachdev/canvas-mcp",
       "confidence": 0.45,
@@ -21466,7 +21445,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "deja-vu: local memory over the session histories of twenty-two coding agents."
+      "description": "deja-vu: local memory over the session histories of twenty-three coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -22607,6 +22586,15 @@
       "description": "What a stock price is betting on: implied growth, duration, and margin, read from SEC filings."
     },
     {
+      "slug": "com-branderux-mcp",
+      "name": "com.branderux/mcp",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Build agentic applications from any MCP client: projects, brand, elements, screens, keys, agent."
+    },
+    {
       "slug": "com-churnsolution-analytics",
       "name": "com.churnsolution/analytics",
       "confidence": 0.55,
@@ -23735,7 +23723,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "MCP server for Adobe Photoshop — 102 tools (generative AI + recipes), standalone web UI. Control Ph…"
+      "description": "MCP server for Adobe Photoshop — 118 tools (generative AI + recipes), standalone web UI. Control Ph…"
     },
     {
       "slug": "io-github-alphasmo-alphasmo-tools",
@@ -24220,15 +24208,6 @@
       "description": "Keyless prediction-market data across 12 venues plus paper-trading of crypto spot, futures, and PM."
     },
     {
-      "slug": "io-github-conorbronsdon-substack-mcp",
-      "name": "io.github.conorbronsdon/substack-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Substack MCP server: posts are draft-only by design; short-form Notes publish immediately."
-    },
-    {
       "slug": "io-github-continuum-ai-corp-orcadub-mcp-server",
       "name": "io.github.Continuum-AI-Corp/orcadub-mcp-server",
       "confidence": 0.55,
@@ -24298,7 +24277,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Verify blockchain-anchored timestamp proofs offline. No network calls, account, or API key."
+      "description": "Verify blockchain timestamp proofs offline, or anchor a new one through ProofLedger."
     },
     {
       "slug": "io-github-cyanheads-mcp-ts-core",
@@ -25039,7 +25018,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "795 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
+      "description": "801 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
@@ -25363,7 +25342,7 @@
       "topics": [
         "data-analysis"
       ],
-      "description": "87 tools for the OpenProject API v3: work packages, attachments, git activity, time, reporting"
+      "description": "88 tools for the OpenProject API v3: work packages, attachments, git activity, time, reporting"
     },
     {
       "slug": "io-github-kirbah-mcp-youtube",
@@ -26302,7 +26281,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Agentic Finance: 500+ tools for AI agents over x402 or MPP, free via PoW, or prepaid card credits"
+      "description": "Agentic Finance: 500+ agent tools, multi-chain USDC over x402 or MPP, free via PoW or card credits"
     },
     {
       "slug": "io-github-mikkoparkkola-mcp-gateway",
@@ -28555,7 +28534,7 @@
       "topics": [
         "finance"
       ],
-      "description": "38 tools for blockchain data, live chain queries, and REST API documentation"
+      "description": "46 tools for blockchain data, Deepstate market data, live chain queries, and REST API documentation"
     },
     {
       "slug": "io-skycloak-skycloak-mcp",
@@ -28610,7 +28589,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Agentic video editing on real footage: cut, caption, reframe, score, and export at full quality."
+      "description": "Edit uploaded footage with AI tools: cuts, captions, reframing and previews. Final export in Studio."
     },
     {
       "slug": "kr-ai-vdb-vdb",
