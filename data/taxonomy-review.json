@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T23:51:42.631Z",
+  "generatedAt": "2026-09-09T23:50:54.386Z",
   "total": 5720,
   "summary": {
     "needsReview": 3865,
@@ -17,7 +17,7 @@
   "categoryCounts": {
     "misc": 2616,
     "dev": 1896,
-    "search": 754,
+    "search": 755,
     "files": 256,
     "ai": 209,
     "comms": 185,
@@ -75,12 +75,12 @@
       "count": 116
     },
     {
-      "term": "free",
+      "term": "memory",
       "count": 111
     },
     {
-      "term": "memory",
-      "count": 111
+      "term": "free",
+      "count": 110
     },
     {
       "term": "credit",
@@ -100,7 +100,7 @@
     },
     {
       "term": "code",
-      "count": 94
+      "count": 93
     },
     {
       "term": "create",
@@ -112,7 +112,7 @@
     },
     {
       "term": "live",
-      "count": 89
+      "count": 90
     },
     {
       "term": "read-only",
@@ -156,7 +156,7 @@
     },
     {
       "term": "check",
-      "count": 59
+      "count": 58
     },
     {
       "term": "public",
@@ -224,11 +224,11 @@
     },
     {
       "term": "security",
-      "count": 43
+      "count": 42
     },
     {
       "term": "apis",
-      "count": 40
+      "count": 41
     },
     {
       "term": "call",
@@ -2706,14 +2706,14 @@
       "name": "com.energyaisolution/energyai",
       "confidence": 0.35,
       "topics": [],
-      "description": "One-call installer quote review plus energy incentives, estimates, scores, and routing for agents."
+      "description": "Solar, weatherization, EV charging, battery and heat-pump decision tools for AI agents."
     },
     {
       "slug": "com-energyaisolution-solar-home-incentives",
       "name": "com.energyaisolution/solar-home-incentives",
       "confidence": 0.35,
       "topics": [],
-      "description": "Free solar & home energy tools: estimates, incentives by ZIP, scores, installer routing."
+      "description": "Solar and home energy discovery: estimates, incentive sources, guides and contractor options."
     },
     {
       "slug": "com-entroute-entroute",
@@ -5765,7 +5765,7 @@
       "name": "io.github.cmendezs/mcp-einvoicing-core",
       "confidence": 0.35,
       "topics": [],
-      "description": "Base package for European e-invoicing MCP servers with shared models, XML utils, and OAuth2 client."
+      "description": "Base package for e-invoicing MCP servers. Compliance logic and signing keys stay with you."
     },
     {
       "slug": "io-github-cmendezs-mcp-facture-electronique-fr",
@@ -10525,7 +10525,7 @@
       "name": "io.github.NicoHern/abapilot-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP server for SAP ECC and on-premise S/4HANA: natural-language queries and ABAP dev tooling."
+      "description": "ABAP MCP connector for SAP ECC and on-premise S/4HANA. Requires a licensed ABAPilot backend."
     },
     {
       "slug": "io-github-nifrajs-nifra-docs",
@@ -12576,7 +12576,7 @@
       "name": "io.github.shibley/apistatuscheck",
       "confidence": 0.35,
       "topics": [],
-      "description": "Check real-time uptime and incident status for 275+ APIs and cloud services."
+      "description": "Live status probes plus published uptime and incident history for 280+ APIs and cloud services."
     },
     {
       "slug": "io-github-shibley-mymcptools",
@@ -15272,6 +15272,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Equity comp tax/trade optimizer: ISO/AMT exercise, NSO, RSU, QSBS, concentration, hedging. 50-state."
+    },
+    {
+      "slug": "io-github-alyiox-mcp-walmart-ads",
+      "name": "io.github.alyiox/mcp-walmart-ads",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MCP server for Walmart Connect Ads, Sam's Club Sponsored Ads, and Walmart Marketplace APIs"
     },
     {
       "slug": "io-github-amati032-dev-crawlbit",
@@ -18176,7 +18183,7 @@
       "name": "io.github.jdhart81/security-preflight",
       "confidence": 0.45,
       "topics": [],
-      "description": "Evidence-bounded static agent security checks with signed redacted receipts."
+      "description": "Static MCP, source-code and injection-indicator checks with redacted signed receipts."
     },
     {
       "slug": "io-github-jdhart81-smartscale",
@@ -19192,13 +19199,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server exposing the YourImageShare upload API (upload/list/delete) as tools for AI agents."
-    },
-    {
-      "slug": "io-github-meemoprasad-meeba-brain",
-      "name": "io.github.meemoprasad/meeba-brain",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Ground-truth code graph for your codebase: exact callers, callees, symbols & dependencies."
     },
     {
       "slug": "io-github-memoweft-memoweft",
@@ -21445,7 +21445,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "deja-vu: local memory over the session histories of twenty-three coding agents."
+      "description": "deja-vu: local memory over the session histories of twenty-five coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -22565,7 +22565,7 @@
       "topics": [
         "automation"
       ],
-      "description": "Ten public workflow tools with durable Agent Wake tasks and a read-only Verifyum product resource."
+      "description": "28 public tools for queues, inboxes, webhooks, approvals and temporary workflows. Two resources."
     },
     {
       "slug": "com-blixtworks-www-tools",
@@ -27920,7 +27920,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Focused full-screen UI references and hosted design materials for coding agents."
+      "description": "UI design that stands out. Full-screen UI references and design materials for coding agents."
     },
     {
       "slug": "io-github-umodeler-picoberry-mcp",
