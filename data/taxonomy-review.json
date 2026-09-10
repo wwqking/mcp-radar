@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-09-09T23:50:54.386Z",
-  "total": 5720,
+  "generatedAt": "2026-09-10T23:44:51.848Z",
+  "total": 5719,
   "summary": {
     "needsReview": 3865,
     "needsReviewRatePct": 67.6,
     "uncategorized": 2616,
     "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.1
+    "largestCategoryRatePct": 33.2
   },
   "alerts": [
     "待归类占比 45.7%，超过 5% 审核线",
-    "dev 占比 33.1%，超过 30% 拆分评估线",
+    "dev 占比 33.2%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.6%，超过 10%"
   ],
   "categoryCounts": {
     "misc": 2616,
     "dev": 1896,
     "search": 755,
-    "files": 256,
+    "files": 255,
     "ai": 209,
     "comms": 185,
     "database": 169,
     "commerce": 157,
     "cloud": 130,
-    "browser": 119,
+    "browser": 120,
     "marketing": 77
   },
   "topicCounts": {
@@ -72,7 +72,7 @@
     },
     {
       "term": "coding",
-      "count": 116
+      "count": 115
     },
     {
       "term": "memory",
@@ -195,11 +195,11 @@
       "count": 49
     },
     {
-      "term": "deterministic",
-      "count": 48
+      "term": "analytics",
+      "count": 47
     },
     {
-      "term": "analytics",
+      "term": "deterministic",
       "count": 47
     },
     {
@@ -20801,7 +20801,7 @@
       "name": "io.github.sipyourdrink-ltd/bernstein",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic orchestrator for CLI coding agents. Byte-identical replay, 40+ adapters, air-gap."
+      "description": "The open-source governance layer for AI agents. Byte-identical run receipts, 40+ adapters, air-gap."
     },
     {
       "slug": "io-github-sjh9714-mergewarden",
@@ -23389,7 +23389,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Read-only Sui blockchain analytics: 62 tools, protocol-aware tx decoding, no API keys or wallet."
+      "description": "Read-only Sui blockchain analytics: 65 tools, protocol-aware tx decoding, no API keys or wallet."
     },
     {
       "slug": "io-github-4da-systems-4da-mcp-server",
