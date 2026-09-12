@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T23:54:35.818Z",
+  "generatedAt": "2026-09-12T23:45:45.489Z",
   "total": 5719,
   "summary": {
     "needsReview": 3865,
@@ -17,7 +17,7 @@
   "categoryCounts": {
     "misc": 2616,
     "dev": 1896,
-    "search": 755,
+    "search": 756,
     "files": 255,
     "ai": 209,
     "comms": 185,
@@ -28,7 +28,7 @@
     "marketing": 77
   },
   "topicCounts": {
-    "design-media": 291,
+    "design-media": 292,
     "finance": 191,
     "automation": 190,
     "observability": 117,
@@ -75,11 +75,11 @@
       "count": 115
     },
     {
-      "term": "memory",
+      "term": "free",
       "count": 111
     },
     {
-      "term": "free",
+      "term": "memory",
       "count": 110
     },
     {
@@ -96,7 +96,7 @@
     },
     {
       "term": "local",
-      "count": 96
+      "count": 97
     },
     {
       "term": "code",
@@ -112,11 +112,11 @@
     },
     {
       "term": "live",
-      "count": 90
+      "count": 91
     },
     {
       "term": "read-only",
-      "count": 88
+      "count": 87
     },
     {
       "term": "pipeworx-io",
@@ -4295,7 +4295,7 @@
       "name": "gg.batru/batru-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Calibrated Dota 2, Deadlock & Marvel Rivals win predictions, counter picks, tier lists & momentum."
+      "description": "Live competitive-game predictions, meta data and decision tools for AI agents."
     },
     {
       "slug": "global-rootz-food-grocery",
@@ -6606,13 +6606,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Adaptive plan/build/review cycles for AI coding assistants, persisted across sessions."
-    },
-    {
-      "slug": "io-github-gg13121-corent-mcp",
-      "name": "io.github.gg13121/corent-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Generate images and videos via the Corent API — auto model routing with provider fallback."
     },
     {
       "slug": "io-github-giacomomaria81-scorm-mcp-server",
@@ -13332,7 +13325,7 @@
       "name": "io.github.vmware-skills/vmware-debug",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read-only VMware incident correlation: timeline, spikes, root-cause routing. 2 MCP tools."
+      "description": "VMware incident timeline, root-cause routing, local case ledger; no vSphere access. 14 MCP tools."
     },
     {
       "slug": "io-github-vmware-skills-vmware-harden",
@@ -20577,14 +20570,14 @@
       "name": "io.github.SAIHM-Admin/saihm-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Enterprise-ready portable memory for AI agents: encrypted, shareable, provably erased."
+      "description": "MCP standards client for your own custodial SAIHM operator. Free start: @saihm/mcp-server-pro"
     },
     {
       "slug": "io-github-saihm-admin-saihm-mcp-server-pro",
       "name": "io.github.SAIHM-Admin/saihm-mcp-server-pro",
       "confidence": 0.45,
       "topics": [],
-      "description": "Enterprise-ready portable memory for AI agents: encrypted, shareable, provably erased. Join SAIHM."
+      "description": "Free-to-start portable memory for AI agents: encrypted, shareable, provably erased. Join SAIHM."
     },
     {
       "slug": "io-github-sailorpepe-undesirables-mcp-server",
@@ -23027,7 +23020,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Transcripts from YouTube, TikTok, Instagram and direct media files, with AI transcription fallback."
+      "description": "Production transcript API for YouTube, TikTok and Instagram, with AI transcription fallback."
     },
     {
       "slug": "com-truss-security-truss-mcp",
@@ -24876,6 +24869,15 @@
       "description": "Create music promotion campaigns, Smart Links, analytics, and music distribution applications."
     },
     {
+      "slug": "io-github-gg13121-corent-mcp",
+      "name": "io.github.gg13121/corent-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Generate images, videos, voice, and text via the Corent API. Auto model routing with fallback."
+    },
+    {
       "slug": "io-github-grarcht-shuttle",
       "name": "io.github.grarcht/shuttle",
       "confidence": 0.55,
@@ -25000,7 +25002,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "823 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
+      "description": "825 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
