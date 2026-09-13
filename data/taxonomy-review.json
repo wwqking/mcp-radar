@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-12T23:45:45.489Z",
+  "generatedAt": "2026-09-13T23:56:28.006Z",
   "total": 5719,
   "summary": {
-    "needsReview": 3865,
-    "needsReviewRatePct": 67.6,
-    "uncategorized": 2616,
+    "needsReview": 3863,
+    "needsReviewRatePct": 67.5,
+    "uncategorized": 2615,
     "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -12,28 +12,28 @@
   "alerts": [
     "待归类占比 45.7%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.6%，超过 10%"
+    "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2616,
+    "misc": 2615,
     "dev": 1896,
     "search": 756,
     "files": 255,
-    "ai": 209,
+    "ai": 210,
     "comms": 185,
     "database": 169,
-    "commerce": 157,
+    "commerce": 158,
     "cloud": 130,
     "browser": 120,
     "marketing": 77
   },
   "topicCounts": {
-    "design-media": 292,
+    "design-media": 291,
     "finance": 191,
-    "automation": 190,
+    "automation": 189,
     "observability": 117,
     "legal": 90,
-    "mcp-infrastructure": 84,
+    "mcp-infrastructure": 85,
     "visualization": 65,
     "science-health": 31,
     "security": 29,
@@ -56,7 +56,7 @@
     },
     {
       "term": "lookup",
-      "count": 217
+      "count": 218
     },
     {
       "term": "official-source",
@@ -100,7 +100,7 @@
     },
     {
       "term": "code",
-      "count": 94
+      "count": 93
     },
     {
       "term": "create",
@@ -128,7 +128,7 @@
     },
     {
       "term": "company",
-      "count": 79
+      "count": 80
     },
     {
       "term": "checks",
@@ -176,11 +176,15 @@
     },
     {
       "term": "person",
-      "count": 54
+      "count": 53
     },
     {
       "term": "usdc",
       "count": 52
+    },
+    {
+      "term": "before",
+      "count": 50
     },
     {
       "term": "evidence",
@@ -189,10 +193,6 @@
     {
       "term": "intelligence",
       "count": 50
-    },
-    {
-      "term": "before",
-      "count": 49
     },
     {
       "term": "analytics",
@@ -1985,7 +1985,7 @@
       "name": "app.trustydata/trustydata",
       "confidence": 0.35,
       "topics": [],
-      "description": "French address quality, geocoding & routing from official data (BAN, INSEE, OpenStreetMap)."
+      "description": "French address quality, geocoding, routing, company lookup & catchment stats (BAN, INSEE, OSM)."
     },
     {
       "slug": "app-turnale-turnale",
@@ -6732,6 +6732,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Resolve whether an uncertain side-effecting action completed before software retries it."
+    },
+    {
+      "slug": "io-github-gsterlingpress-recover",
+      "name": "io.github.GSterlingPress/recover",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Choose the safest next action after an API, MCP, or agent failure before retrying."
     },
     {
       "slug": "io-github-guruprasath-annadurai-whitepact",
@@ -12947,7 +12954,7 @@
       "name": "io.github.synopsys0/postfader-fl-studio-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Verified FL Studio control, mix diagnosis, composition, and arrangement."
+      "description": "FL Studio MCP server: 134 tools for mixing, MIDI, sound selection, production runs, and review."
     },
     {
       "slug": "io-github-synpareia-trust-mcp",
@@ -14851,7 +14858,7 @@
       "name": "us.thistripbtw/trips",
       "confidence": 0.35,
       "topics": [],
-      "description": "Turn a trip planned in conversation into a private, editable map link you hand the person."
+      "description": "Hand someone a complete trip as a private, editable map link. No account, no API key, no card."
     },
     {
       "slug": "vantage-mcp-server",
@@ -18067,13 +18074,6 @@
       "description": "Durable project-memory MCP: decisions, constraints, and pipelines across Claude sessions."
     },
     {
-      "slug": "io-github-jason26214-omni-computer-use",
-      "name": "io.github.Jason26214/omni-computer-use",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "A 1:1 replica of Claude Desktop's computer-use tool surface, for Windows and the Claude Code CLI."
-    },
-    {
       "slug": "io-github-jasonczmeng-assay",
       "name": "io.github.JasonCZMeng/assay",
       "confidence": 0.45,
@@ -18372,7 +18372,7 @@
       "name": "io.github.jyswee/buggazi",
       "confidence": 0.45,
       "topics": [],
-      "description": "Project management for coding agents. Bugs, features, sprints. 73 tools stdio, 74 remote SSE."
+      "description": "Project management for coding agents. Bugs, features, sprints. Streamable HTTP + SSE remotes."
     },
     {
       "slug": "io-github-jyswee-gpusmarket",
@@ -21824,7 +21824,7 @@
       "topics": [
         "finance"
       ],
-      "description": "The financial MCP for AI agents - 90+ financial tables, SEC filings, signals, alt-data."
+      "description": "Financial data and research MCP for US/CN/JP equities: filings, statements, ownership, signals."
     },
     {
       "slug": "ai-etincel-etincel-nonfiction",
@@ -22196,15 +22196,6 @@
         "design-media"
       ],
       "description": "Detect grooming, bullying, fraud, and 16+ online threats across text, voice, image, and video."
-    },
-    {
-      "slug": "ai-vaaya-mcp",
-      "name": "ai.vaaya/mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Pay-per-call agent superpowers: media/video gen, product demos, research, GTM, scraping, compute."
     },
     {
       "slug": "ai-verlon-mcp",
@@ -24896,15 +24887,6 @@
       "description": "MCP server for GroupDocs.Redaction — redact text, metadata, annotations, image areas via AI agents."
     },
     {
-      "slug": "io-github-gsterlingpress-recover",
-      "name": "io.github.GSterlingPress/recover",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "Deterministic next-step decisions after failed API, MCP, automation, or AI-agent actions."
-    },
-    {
       "slug": "io-github-guniweb-guniweb-sap-mcp",
       "name": "io.github.guniweb/guniweb-sap-mcp",
       "confidence": 0.55,
@@ -25002,7 +24984,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "825 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
+      "description": "837 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
@@ -28012,7 +27994,7 @@
       "topics": [
         "observability"
       ],
-      "description": "VMware Aria Operations: metrics, alerts, capacity, anomaly detection — 33 MCP tools."
+      "description": "VMware Aria Operations: metrics, alerts, capacity, anomaly detection — 44 MCP tools."
     },
     {
       "slug": "io-github-vmware-skills-vmware-monitor",
