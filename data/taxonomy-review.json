@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T23:56:28.006Z",
+  "generatedAt": "2026-09-15T00:17:19.019Z",
   "total": 5719,
   "summary": {
     "needsReview": 3863,
@@ -19,7 +19,7 @@
     "dev": 1896,
     "search": 756,
     "files": 255,
-    "ai": 210,
+    "ai": 211,
     "comms": 185,
     "database": 169,
     "commerce": 158,
@@ -76,11 +76,11 @@
     },
     {
       "term": "free",
-      "count": 111
+      "count": 110
     },
     {
       "term": "memory",
-      "count": 110
+      "count": 109
     },
     {
       "term": "credit",
@@ -99,15 +99,11 @@
       "count": 97
     },
     {
-      "term": "code",
-      "count": 93
-    },
-    {
       "term": "create",
       "count": 93
     },
     {
-      "term": "over",
+      "term": "code",
       "count": 92
     },
     {
@@ -115,8 +111,12 @@
       "count": 91
     },
     {
+      "term": "over",
+      "count": 90
+    },
+    {
       "term": "read-only",
-      "count": 87
+      "count": 88
     },
     {
       "term": "pipeworx-io",
@@ -144,7 +144,7 @@
     },
     {
       "term": "audit",
-      "count": 67
+      "count": 66
     },
     {
       "term": "tasks",
@@ -156,7 +156,7 @@
     },
     {
       "term": "check",
-      "count": 58
+      "count": 59
     },
     {
       "term": "public",
@@ -196,18 +196,18 @@
     },
     {
       "term": "analytics",
-      "count": 47
-    },
-    {
-      "term": "deterministic",
-      "count": 47
-    },
-    {
-      "term": "every",
-      "count": 47
+      "count": 48
     },
     {
       "term": "certificate",
+      "count": 46
+    },
+    {
+      "term": "deterministic",
+      "count": 46
+    },
+    {
+      "term": "every",
       "count": 46
     },
     {
@@ -231,12 +231,12 @@
       "count": 41
     },
     {
-      "term": "call",
+      "term": "find",
       "count": 40
     },
     {
-      "term": "find",
-      "count": 40
+      "term": "call",
+      "count": 39
     },
     {
       "term": "registry",
@@ -1957,7 +1957,7 @@
       "name": "app.scfcontrolsplatform/mcp-server-scf",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP server for the SCF Controls Platform — 128 tools for controls, evidence, risk, and TPRM."
+      "description": "MCP server for the SCF Controls Platform — 187 tools for controls, evidence, risk, and TPRM."
     },
     {
       "slug": "app-thoughtspot-mcp-server",
@@ -4550,6 +4550,13 @@
       "description": "Private signed AI task receipts with replay checks and optional validated AIPOU claims."
     },
     {
+      "slug": "io-github-0xfreak0-sui-mcp",
+      "name": "io.github.0xfreak0/sui-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Read-only Sui analytics: 68 tools, protocol-aware tx decoding, no API keys or wallet."
+    },
+    {
       "slug": "io-github-0xvibly-hackmyip-mcp",
       "name": "io.github.0xvibly/hackmyip-mcp",
       "confidence": 0.35,
@@ -5317,7 +5324,7 @@
       "name": "io.github.bardesss/arr-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One MCP server for the whole media stack: Radarr, Sonarr, Prowlarr, Bazarr, Jellyfin, Seerr"
+      "description": "One server, 36 tools, the whole media stack: Radarr, Sonarr, Prowlarr, Bazarr, Jellyfin, Seerr"
     },
     {
       "slug": "io-github-barglabs-cejel",
@@ -5905,7 +5912,7 @@
       "name": "io.github.Contentrain/contentrain",
       "confidence": 0.35,
       "topics": [],
-      "description": "Git-native content governance for AI agents — 24 deterministic MCP tools over stdio and HTTP."
+      "description": "Git-native content governance for AI agents — 27 deterministic MCP tools over stdio and HTTP."
     },
     {
       "slug": "io-github-copyleftdev-kahea",
@@ -10917,7 +10924,7 @@
       "name": "io.github.ogasurfproject-jpg/horizon-shield",
       "confidence": 0.35,
       "topics": [],
-      "description": "Independent pre-transaction audit for construction estimates. Free, and every verdict recomputes."
+      "description": "Fair-price check for Japanese renovation quotes: range, verdict, red flags, verified contractors."
     },
     {
       "slug": "io-github-ogasurfproject-jpg-horizon-shield-webmcp",
@@ -16741,7 +16748,7 @@
       "name": "io.github.davesheffer/hunch",
       "confidence": 0.45,
       "topics": [],
-      "description": "Engineering memory for AI-assisted codebases: decisions, bug lineage and invariants, over MCP."
+      "description": "Shared records for AI agents: engineering decisions, bug history, rules, and work state through MCP."
     },
     {
       "slug": "io-github-davidfuchs-mcp-uptime-kuma",
@@ -17140,7 +17147,7 @@
       "name": "io.github.financeratecalc/frc-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Lender-level FHA denial statistics from the full 2025 federal HMDA record. Historical data only."
+      "description": "FHA denial statistics from the 2025 federal HMDA record. 12 tools incl. counterparty screen."
     },
     {
       "slug": "io-github-fino-wind-vaultbeat",
@@ -17561,13 +17568,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Provides tools to use MASV API. MASV is reliable and secure large file transfer service."
-    },
-    {
-      "slug": "io-github-ghostlygawd-codeweb",
-      "name": "io.github.GhostlyGawd/codeweb",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Your agents break less code and burn fewer tokens — a deterministic call graph over 28 MCP tools."
     },
     {
       "slug": "io-github-ghostlygawd-engineering-board",
@@ -23367,15 +23367,6 @@
       "description": "AI-native ERP MCP: ES/EU fiscal compliance (VeriFactu/TicketBAI/Facturae), invoicing, tax, banking"
     },
     {
-      "slug": "io-github-0xfreak0-sui-mcp",
-      "name": "io.github.0xfreak0/sui-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Read-only Sui blockchain analytics: 65 tools, protocol-aware tx decoding, no API keys or wallet."
-    },
-    {
       "slug": "io-github-4da-systems-4da-mcp-server",
       "name": "io.github.4DA-Systems/4da-mcp-server",
       "confidence": 0.55,
@@ -24117,7 +24108,7 @@
       "topics": [
         "legal"
       ],
-      "description": "Keyless MCP: 150 tools for US federal + state/local (SLED) contracting, spending & regulation"
+      "description": "Keyless-first MCP: 152 tools for US federal + state/local (SLED) contracting, spending & regulation"
     },
     {
       "slug": "io-github-codeofaxel-kiln",
@@ -27599,6 +27590,15 @@
       "description": "Deploy repositories or local folders to private Pocketnook URLs from any MCP client."
     },
     {
+      "slug": "io-github-sidneybissoli-ilo-mcp-server",
+      "name": "io.github.SidneyBissoli/ilo-mcp-server",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Labour market data from the ILO (ILOSTAT) by country, year, sex and age, with provenance."
+    },
+    {
       "slug": "io-github-sidneybissoli-medical-terminologies-mcp",
       "name": "io.github.SidneyBissoli/medical-terminologies-mcp",
       "confidence": 0.55,
@@ -27750,7 +27750,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Pre-clinical drug-target intelligence: 60 curated targets, 2,687 counted partner genes, 12 tools"
+      "description": "Pre-clinical drug-target intelligence: 60 curated targets, 1,969 counted partner genes, 12 tools"
     },
     {
       "slug": "io-github-sourceparts-parts-mcp",
@@ -28800,7 +28800,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Schedule and publish posts to Instagram, TikTok, X, LinkedIn, YouTube, Pinterest, Facebook & more."
+      "description": "Schedule & publish social media posts to Instagram, TikTok, X, LinkedIn, YouTube, Pinterest & more."
     },
     {
       "slug": "to-orangepeel-orangepeel",
