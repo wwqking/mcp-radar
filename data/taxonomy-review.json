@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T00:17:19.019Z",
+  "generatedAt": "2026-09-16T00:00:09.251Z",
   "total": 5719,
   "summary": {
     "needsReview": 3863,
@@ -32,7 +32,7 @@
     "finance": 191,
     "automation": 189,
     "observability": 117,
-    "legal": 90,
+    "legal": 91,
     "mcp-infrastructure": 85,
     "visualization": 65,
     "science-health": 31,
@@ -72,7 +72,7 @@
     },
     {
       "term": "coding",
-      "count": 115
+      "count": 116
     },
     {
       "term": "free",
@@ -108,7 +108,7 @@
     },
     {
       "term": "live",
-      "count": 91
+      "count": 90
     },
     {
       "term": "over",
@@ -220,7 +220,7 @@
     },
     {
       "term": "verify",
-      "count": 44
+      "count": 45
     },
     {
       "term": "security",
@@ -1649,7 +1649,7 @@
       "name": "ai.trustysquire/trusty-squire",
       "confidence": 0.35,
       "topics": [],
-      "description": "Trusty Squire signs up / in to websites for you so you don’t have to."
+      "description": "Provision, ship, and pay from your coding agent — keys and cards never leave the vault."
     },
     {
       "slug": "ai-tunnelmind-scry",
@@ -1978,7 +1978,7 @@
       "name": "app.traderspy/traderspy",
       "confidence": 0.35,
       "topics": [],
-      "description": "AI crypto signals, smart money whale positions, live futures prices and indicators"
+      "description": "AI crypto signals, whale positions, 19 technical indicators, derivatives, screener and backtests"
     },
     {
       "slug": "app-trustydata-trustydata",
@@ -5324,7 +5324,7 @@
       "name": "io.github.bardesss/arr-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One server, 36 tools, the whole media stack: Radarr, Sonarr, Prowlarr, Bazarr, Jellyfin, Seerr"
+      "description": "One server, 38 tools, the whole media stack: Radarr, Sonarr, Prowlarr, Bazarr, Jellyfin, Seerr"
     },
     {
       "slug": "io-github-barglabs-cejel",
@@ -12674,7 +12674,7 @@
       "name": "io.github.Shxnque/quesen",
       "confidence": 0.35,
       "topics": [],
-      "description": "Deterministic decision layer for autonomous agents. Reproducible PROCEED, REVIEW, SKIP verdicts."
+      "description": "Deterministic decision layer for autonomous agents: reproducible PROCEED/REVIEW/SKIP verdicts."
     },
     {
       "slug": "io-github-siaginw-hexwitness",
@@ -14025,7 +14025,7 @@
       "name": "io.obsideo/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Encrypted S3-compatible storage with cryptographic possession proofs. 12 GB free, self-serve."
+      "description": "Encrypted S3-compatible storage with possession proofs you can verify yourself. 12 GB free."
     },
     {
       "slug": "io-picsee-short-link",
@@ -22549,7 +22549,7 @@
       "topics": [
         "automation"
       ],
-      "description": "28 public tools for queues, inboxes, webhooks, approvals and temporary workflows. Two resources."
+      "description": "28 public tools for queues, inboxes, webhooks, approvals and temporary workflows. Three resources."
     },
     {
       "slug": "com-blixtworks-www-tools",
@@ -23689,7 +23689,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "MCP server for Adobe Photoshop — 118 tools (generative AI + recipes), standalone web UI. Control Ph…"
+      "description": "MCP server for Adobe Photoshop — 116 tools (generative AI + recipes), standalone web UI. Control Ph…"
     },
     {
       "slug": "io-github-alphasmo-alphasmo-tools",
@@ -24975,7 +24975,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "837 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
+      "description": "840 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
@@ -26431,7 +26431,7 @@
       "topics": [
         "automation"
       ],
-      "description": "1117 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
+      "description": "1174 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
     },
     {
       "slug": "io-github-moonriddim-skedra",
@@ -28500,7 +28500,7 @@
       "topics": [
         "finance"
       ],
-      "description": "46 tools for blockchain data, Deepstate market data, live chain queries, and REST API documentation"
+      "description": "65 tools: blockchain data, Deepstate and Standard Reserve markets, live chain queries, and API docs"
     },
     {
       "slug": "io-skycloak-skycloak-mcp",
