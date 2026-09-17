@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-16T00:00:09.251Z",
-  "total": 5719,
+  "generatedAt": "2026-09-17T00:07:02.334Z",
+  "total": 5718,
   "summary": {
-    "needsReview": 3863,
-    "needsReviewRatePct": 67.5,
+    "needsReview": 3864,
+    "needsReviewRatePct": 67.6,
     "uncategorized": 2615,
     "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
@@ -12,24 +12,24 @@
   "alerts": [
     "待归类占比 45.7%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.5%，超过 10%"
+    "低置信度/待审核占比 67.6%，超过 10%"
   ],
   "categoryCounts": {
     "misc": 2615,
     "dev": 1896,
     "search": 756,
     "files": 255,
-    "ai": 211,
+    "ai": 210,
     "comms": 185,
     "database": 169,
-    "commerce": 158,
+    "commerce": 159,
     "cloud": 130,
     "browser": 120,
     "marketing": 77
   },
   "topicCounts": {
     "design-media": 291,
-    "finance": 191,
+    "finance": 193,
     "automation": 189,
     "observability": 117,
     "legal": 91,
@@ -13766,7 +13766,7 @@
       "name": "io.github.yusong652/itasca-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Give AI agents full access to ITASCA PFC, FLAC3D, 3DEC - documentation, simulation, plot capture."
+      "description": "Give AI agents full access to ITASCA PFC, FLAC3D, 3DEC, MPoint, MassFlow: docs, simulation, plots."
     },
     {
       "slug": "io-github-yusong652-pfc",
@@ -14137,7 +14137,7 @@
       "name": "io.synthnet/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "The commons for working AI agents: field notes, bounties, and reputation that survives resets."
+      "description": "A social network for AI agents: paint a daily self-portrait and talk with the humans who reply."
     },
     {
       "slug": "io-tenova-swt3-witness",
@@ -16566,7 +16566,7 @@
       "name": "io.github.cyanheads/open-meteo-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Global weather via Open-Meteo: forecast, ERA5 archive, marine, air quality, geocoding, elevation."
+      "description": "Global weather via Open-Meteo: forecast, historical, marine, air quality, geocoding, elevation."
     },
     {
       "slug": "io-github-cyanheads-openaq-mcp-server",
@@ -22452,6 +22452,15 @@
       "description": "1M+ Swiss court decisions, statutes & doctrine with citation graph (DE/FR/IT). CC0, free, 42 tools."
     },
     {
+      "slug": "cloud-dchub-mcp-server",
+      "name": "cloud.dchub/mcp-server",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Live power, energy, grid, gas, fiber + off-market data-center capacity in kW/MW — query and cite."
+    },
+    {
       "slug": "co-policyforge-mcp",
       "name": "co.policyforge/mcp",
       "confidence": 0.55,
@@ -28113,7 +28122,7 @@
         "finance",
         "observability"
       ],
-      "description": "Free fundamental stock & ETF analysis: 10-point score, verdict and key metrics for any ticker."
+      "description": "Free stock, ETF & crypto analysis: 10-point score, verdict and key metrics for any ticker."
     },
     {
       "slug": "io-github-wyattpalm2-eng-x402-seller",
@@ -28500,7 +28509,7 @@
       "topics": [
         "finance"
       ],
-      "description": "65 tools: blockchain data, Deepstate and Standard Reserve markets, live chain queries, and API docs"
+      "description": "83 tools: blockchain data, Deepstate and Standard Reserve markets, live chain queries, and API docs"
     },
     {
       "slug": "io-skycloak-skycloak-mcp",
