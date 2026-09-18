@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-09-17T23:56:48.293Z",
-  "total": 5718,
+  "generatedAt": "2026-09-18T23:55:28.280Z",
+  "total": 5717,
   "summary": {
-    "needsReview": 3866,
+    "needsReview": 3862,
     "needsReviewRatePct": 67.6,
-    "uncategorized": 2615,
+    "uncategorized": 2614,
     "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.2
+    "largestCategoryRatePct": 33.1
   },
   "alerts": [
     "待归类占比 45.7%，超过 5% 审核线",
-    "dev 占比 33.2%，超过 30% 拆分评估线",
+    "dev 占比 33.1%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.6%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2615,
-    "dev": 1896,
-    "search": 756,
+    "misc": 2614,
+    "dev": 1895,
+    "search": 757,
     "files": 255,
     "ai": 210,
     "comms": 185,
     "database": 169,
-    "commerce": 159,
+    "commerce": 160,
     "cloud": 130,
     "browser": 120,
     "marketing": 77
   },
   "topicCounts": {
-    "design-media": 291,
+    "design-media": 290,
     "finance": 193,
     "automation": 189,
     "observability": 117,
@@ -37,7 +37,7 @@
     "visualization": 65,
     "science-health": 31,
     "security": 29,
-    "data-analysis": 27,
+    "data-analysis": 26,
     "game-development": 24,
     "iot-robotics": 15
   },
@@ -4639,13 +4639,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Gate/Prove: deny unattended destructive agent tools. Instant Audit $499 on a2zsoc.com."
-    },
-    {
-      "slug": "io-github-accentist-buyking-mcp",
-      "name": "io.github.accentist/buyking-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "세일프라자 AI 사자왕 Bㅏ이킹의 핫딜 시맨틱 검색 서버. 쿠팡, 알리익스프레스, 11번가, G마켓 등 국내외 방대한 초특가/핫딜 정보를 시맨틱 검색으로 제공합니다."
     },
     {
       "slug": "io-github-actenon-kernel",
@@ -13367,7 +13360,7 @@
       "name": "io.github.vmware-skills/vmware-storage",
       "confidence": 0.35,
       "topics": [],
-      "description": "VMware vSphere storage management with 12 MCP tools: datastores, iSCSI, vSAN."
+      "description": "VMware vSphere storage with 14 MCP tools: datastores, iSCSI, vSAN, FC multipath."
     },
     {
       "slug": "io-github-vmware-skills-vmware-vdi",
@@ -21445,7 +21438,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "deja-vu: local memory over the session histories of twenty-five coding agents."
+      "description": "deja-vu: local memory over the session histories of thirty-three coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -24305,15 +24298,6 @@
       "description": "Access FEC campaign finance data. Query data about candidates, money trails, and election filings."
     },
     {
-      "slug": "io-github-cyphonica-powerbi-pbix-mcp",
-      "name": "io.github.cyphonica/powerbi-pbix-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "data-analysis"
-      ],
-      "description": "Local Power BI authoring for AI agents: edit .pbix, semantic model, report, and Power Query."
-    },
-    {
       "slug": "io-github-dahliyaal-justicelibre",
       "name": "io.github.Dahliyaal/justicelibre",
       "confidence": 0.55,
@@ -24555,7 +24539,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Photoshop MCP server: natural-language AI photo editing with your own Photoshop. AI orchestration."
+      "description": "Photoshop MCP server: natural-language AI photo editing in desktop Photoshop. AI orchestration."
     },
     {
       "slug": "io-github-egocen-vivideo-vivideo",
@@ -24990,15 +24974,6 @@
         "visualization"
       ],
       "description": "A whiteboard where AI agents draw their explanations as hand-drawn animated diagrams"
-    },
-    {
-      "slug": "io-github-hermoso-ai-hermoso",
-      "name": "io.github.hermoso-ai/hermoso",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "841 tools, all usable alone: ad research, video ads, 10 publishing channels, 11 ad platforms."
     },
     {
       "slug": "io-github-heyzod-mansa-african-identity",
@@ -26753,15 +26728,6 @@
         "security"
       ],
       "description": "Dependency vulnerability scanner with EPSS scoring. 9 MCP tools. Free tier + x402."
-    },
-    {
-      "slug": "io-github-nowi333-monerometrics",
-      "name": "io.github.nowi333/monerometrics",
-      "confidence": 0.55,
-      "topics": [
-        "observability"
-      ],
-      "description": "Live Monero (XMR) network metrics: reorgs, orphan blocks, mining-pool centralization."
     },
     {
       "slug": "io-github-ns-3e-generate-data-mcp",
