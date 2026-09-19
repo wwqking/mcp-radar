@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-09-18T23:55:28.280Z",
-  "total": 5717,
+  "generatedAt": "2026-09-19T23:55:51.682Z",
+  "total": 5713,
   "summary": {
-    "needsReview": 3862,
-    "needsReviewRatePct": 67.6,
-    "uncategorized": 2614,
+    "needsReview": 3859,
+    "needsReviewRatePct": 67.5,
+    "uncategorized": 2611,
     "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.1
+    "largestCategoryRatePct": 33.2
   },
   "alerts": [
     "待归类占比 45.7%，超过 5% 审核线",
-    "dev 占比 33.1%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.6%，超过 10%"
+    "dev 占比 33.2%，超过 30% 拆分评估线",
+    "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2614,
+    "misc": 2611,
     "dev": 1895,
     "search": 757,
-    "files": 255,
+    "files": 254,
     "ai": 210,
     "comms": 185,
     "database": 169,
@@ -33,8 +33,8 @@
     "automation": 189,
     "observability": 117,
     "legal": 91,
-    "mcp-infrastructure": 85,
-    "visualization": 65,
+    "mcp-infrastructure": 86,
+    "visualization": 64,
     "science-health": 31,
     "security": 29,
     "data-analysis": 26,
@@ -152,7 +152,7 @@
     },
     {
       "term": "real",
-      "count": 61
+      "count": 60
     },
     {
       "term": "check",
@@ -180,11 +180,7 @@
     },
     {
       "term": "usdc",
-      "count": 52
-    },
-    {
-      "term": "before",
-      "count": 50
+      "count": 51
     },
     {
       "term": "evidence",
@@ -193,6 +189,10 @@
     {
       "term": "intelligence",
       "count": 50
+    },
+    {
+      "term": "before",
+      "count": 49
     },
     {
       "term": "analytics",
@@ -211,12 +211,12 @@
       "count": 46
     },
     {
-      "term": "plus",
+      "term": "vehicle",
       "count": 46
     },
     {
-      "term": "vehicle",
-      "count": 46
+      "term": "plus",
+      "count": 45
     },
     {
       "term": "verify",
@@ -228,7 +228,7 @@
     },
     {
       "term": "apis",
-      "count": 41
+      "count": 40
     },
     {
       "term": "find",
@@ -2765,13 +2765,6 @@
       "description": "Pay for x402-priced APIs with feeless, sub-second Nano (XNO) micropayments from a local wallet."
     },
     {
-      "slug": "com-fiatdock-fiatdock-mcp",
-      "name": "com.fiatdock/fiatdock-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Cash out an AI agent's USDC to a real bank account (non-custodial). Plus Base data + a marketplace"
-    },
-    {
       "slug": "com-fidacy-ai-agent-firewall",
       "name": "com.fidacy/ai-agent-firewall",
       "confidence": 0.35,
@@ -4107,20 +4100,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "The official Svelte MCP server providing docs and autofixing tools for Svelte development"
-    },
-    {
-      "slug": "dev-toolstop-check-digits",
-      "name": "dev.toolstop/check-digits",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Catch a mistyped barcode, ISBN, VIN, NPI or LEI before a bad identifier corrupts a record."
-    },
-    {
-      "slug": "dev-toolstop-prop65",
-      "name": "dev.toolstop/prop65",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Is a chemical on California's Proposition 65 list, and does it need a warning?"
     },
     {
       "slug": "dev-uptimepage-uptimepage",
@@ -14473,7 +14452,7 @@
       "name": "me.speedof/speed-test",
       "confidence": 0.35,
       "topics": [],
-      "description": "Official SpeedOf.Me server - Accurate speed tests via over 130 global edge servers with analytics."
+      "description": "Official SpeedOf.Me server - Accurate speed tests via over 200 global edge servers with analytics."
     },
     {
       "slug": "microsoft-mcp",
@@ -18841,7 +18820,7 @@
       "name": "io.github.malkreide/eth-library-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "ETH Library Discovery and Persons APIs"
+      "description": "ETH Library Discovery API"
     },
     {
       "slug": "io-github-malkreide-global-education-mcp",
@@ -18904,7 +18883,7 @@
       "name": "io.github.malkreide/swiss-cultural-heritage-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Heritage inventories, monument lists, archaeological registers"
+      "description": "Swiss cultural heritage: SIKART artists, Nationalmuseum, Helveticat, Memobase, Dodis"
     },
     {
       "slug": "io-github-malkreide-swiss-culture-mcp",
@@ -22686,6 +22665,15 @@
       "description": "MCP server for the FFmpeg Micro video transcoding API — create, monitor, download transcodes."
     },
     {
+      "slug": "com-fiatdock-fiatdock-mcp",
+      "name": "com.fiatdock/fiatdock-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "MCP marketplace: AI agents buy services from other agents per call in USDC, plus a bank cash-out"
+    },
+    {
       "slug": "com-focusgts-aep",
       "name": "com.focusgts/aep",
       "confidence": 0.55,
@@ -23191,15 +23179,6 @@
         "design-media"
       ],
       "description": "Compress, resize, crop, and convert images with the Tinify.dev API from any MCP client."
-    },
-    {
-      "slug": "dev-toolstop-export-control",
-      "name": "dev.toolstop/export-control",
-      "confidence": 0.55,
-      "topics": [
-        "visualization"
-      ],
-      "description": "Does the US Commerce Country Chart require an export licence for an ECCN to a destination?"
     },
     {
       "slug": "dev-voicemode-voicemode",
