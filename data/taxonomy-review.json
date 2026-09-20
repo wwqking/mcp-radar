@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-19T23:55:51.682Z",
+  "generatedAt": "2026-09-20T23:53:38.724Z",
   "total": 5713,
   "summary": {
-    "needsReview": 3859,
-    "needsReviewRatePct": 67.5,
+    "needsReview": 3860,
+    "needsReviewRatePct": 67.6,
     "uncategorized": 2611,
     "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
@@ -12,7 +12,7 @@
   "alerts": [
     "待归类占比 45.7%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.5%，超过 10%"
+    "低置信度/待审核占比 67.6%，超过 10%"
   ],
   "categoryCounts": {
     "misc": 2611,
@@ -91,12 +91,12 @@
       "count": 102
     },
     {
-      "term": "manage",
+      "term": "local",
       "count": 98
     },
     {
-      "term": "local",
-      "count": 97
+      "term": "manage",
+      "count": 98
     },
     {
       "term": "create",
@@ -172,7 +172,7 @@
     },
     {
       "term": "local-first",
-      "count": 55
+      "count": 56
     },
     {
       "term": "person",
@@ -4211,7 +4211,7 @@
       "name": "eu.quantumreadiness/qrp-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Offline scanner for quantum-vulnerable crypto; reports its coverage and emits a CycloneDX CBOM."
+      "description": "Local crypto inventory for developers and AI agents; coverage and limits inside the CBOM."
     },
     {
       "slug": "eu-sendletter-sendletter",
@@ -7473,7 +7473,7 @@
       "name": "io.github.klimPaskov/hoi4-agent-tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "Analyze HOI4 events, tech trees, AI weights, and MTTH; build focus trees, GUIs, and maps."
+      "description": "Analyze HOI4 events, decisions, impact, tech, AI, and MTTH; build focus trees, GUIs, and maps."
     },
     {
       "slug": "io-github-knowledgepa3-gia-mcp-server",
@@ -17630,7 +17630,7 @@
       "name": "io.github.gripforgeai/mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Attach weapons and props to rigged 3D characters: hand-bone detection, fist close, engine binds."
+      "description": "Turn prompts into production-ready game assets: animated characters, textures, terrain, VFX, HUD."
     },
     {
       "slug": "io-github-groupdocs-conversion-groupdocs-conversion-mcp",
@@ -18876,7 +18876,7 @@
       "name": "io.github.malkreide/seco-labor-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "SECO labour market: unemployment, vacancies, workforce indicators"
+      "description": "Swiss labour market and occupational accidents: unemployment, job seekers, vacancies, UVG data"
     },
     {
       "slug": "io-github-malkreide-swiss-cultural-heritage-mcp",
@@ -19423,6 +19423,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Verifiable entropy, provably-fair games, and receipt verification for AI agents (FairSeal API)."
+    },
+    {
+      "slug": "io-github-neiltron-apple-health-mcp",
+      "name": "io.github.neiltron/apple-health-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Local-first Apple Health MCP server for questions about your sleep, workouts and heart data."
     },
     {
       "slug": "io-github-nekzus-npm-sentinel-mcp",
@@ -26925,7 +26932,7 @@
       "topics": [
         "mcp-infrastructure"
       ],
-      "description": "Carry your Phaedo cognitive fingerprint into any MCP client: injection, consults, escalation."
+      "description": "Carry your Phaedo cognitive fingerprint into any MCP client: inject, consult, escalate, sign."
     },
     {
       "slug": "io-github-phdwight-pse-edge-mcp",
