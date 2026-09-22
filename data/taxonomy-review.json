@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-20T23:53:38.724Z",
-  "total": 5713,
+  "generatedAt": "2026-09-22T00:39:16.043Z",
+  "total": 5708,
   "summary": {
-    "needsReview": 3860,
+    "needsReview": 3856,
     "needsReviewRatePct": 67.6,
-    "uncategorized": 2611,
+    "uncategorized": 2607,
     "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,11 +15,11 @@
     "低置信度/待审核占比 67.6%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2611,
-    "dev": 1895,
-    "search": 757,
+    "misc": 2607,
+    "dev": 1896,
+    "search": 756,
     "files": 254,
-    "ai": 210,
+    "ai": 209,
     "comms": 185,
     "database": 169,
     "commerce": 160,
@@ -29,7 +29,7 @@
   },
   "topicCounts": {
     "design-media": 290,
-    "finance": 193,
+    "finance": 192,
     "automation": 189,
     "observability": 117,
     "legal": 91,
@@ -37,7 +37,7 @@
     "visualization": 64,
     "science-health": 31,
     "security": 29,
-    "data-analysis": 26,
+    "data-analysis": 25,
     "game-development": 24,
     "iot-robotics": 15
   },
@@ -56,7 +56,7 @@
     },
     {
       "term": "lookup",
-      "count": 218
+      "count": 217
     },
     {
       "term": "official-source",
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 98
+      "count": 99
     },
     {
       "term": "manage",
@@ -136,7 +136,7 @@
     },
     {
       "term": "x402",
-      "count": 72
+      "count": 70
     },
     {
       "term": "across",
@@ -167,11 +167,11 @@
       "count": 57
     },
     {
-      "term": "status",
-      "count": 57
+      "term": "local-first",
+      "count": 56
     },
     {
-      "term": "local-first",
+      "term": "status",
       "count": 56
     },
     {
@@ -183,16 +183,16 @@
       "count": 51
     },
     {
+      "term": "before",
+      "count": 50
+    },
+    {
       "term": "evidence",
       "count": 50
     },
     {
       "term": "intelligence",
       "count": 50
-    },
-    {
-      "term": "before",
-      "count": 49
     },
     {
       "term": "analytics",
@@ -227,12 +227,12 @@
       "count": 42
     },
     {
-      "term": "apis",
+      "term": "find",
       "count": 40
     },
     {
-      "term": "find",
-      "count": 40
+      "term": "apis",
+      "count": 39
     },
     {
       "term": "call",
@@ -2329,20 +2329,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "AgisHub — 34 pay-per-call tools for AI agents over x402 (USDC on Base). No API key, no signup."
-    },
-    {
-      "slug": "com-agishub-timezone-toolkit",
-      "name": "com.agishub/timezone-toolkit",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Timezone tools for agents: convert, world clock, offset, lookup, date math, holidays, slots. x402"
-    },
-    {
-      "slug": "com-agishub-webhook-relay",
-      "name": "com.agishub/webhook-relay",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Fire-and-forget webhooks for agents with guaranteed, retried delivery and status polling. x402"
     },
     {
       "slug": "com-aiactradar-ai-act-radar",
@@ -4771,7 +4757,7 @@
       "name": "io.github.AIops-tools/fabric-aiops",
       "confidence": 0.35,
       "topics": [],
-      "description": "Governed Cisco Meraki fabric ops: uplink RCA, health score, drift; 34 tools with audit/undo."
+      "description": "Governed Cisco Meraki + ACI fabric ops: uplink RCA, ACI endpoint trace; 37 tools with audit/undo."
     },
     {
       "slug": "io-github-aiops-tools-firewall-aiops",
@@ -4989,13 +4975,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Create Hevy routines and analyze your training from chat. Unofficial; BYO Hevy PRO API key."
-    },
-    {
-      "slug": "io-github-alyiox-mcp-samsclub-ads",
-      "name": "io.github.alyiox/mcp-samsclub-ads",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server for Sam's Club Sponsored Ads APIs"
     },
     {
       "slug": "io-github-ameyxd-petromcp",
@@ -6823,6 +6802,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Audit, reschedule and author Microsoft Project schedules. No Java, no Project install."
+    },
+    {
+      "slug": "io-github-horizungroup-horizun-revit-mcp",
+      "name": "io.github.HorizunGroup/horizun-revit-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Local Windows MCP for Revit 2023-2027. Run the Windows installer before connecting a client."
     },
     {
       "slug": "io-github-hugolsramos01-bit-mcp-agentic-server",
@@ -19562,7 +19548,7 @@
       "name": "io.github.odds-api-io/odds-api-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Live sports betting odds from 265+ bookmakers across 34 sports, with value bets and arbitrage."
+      "description": "Live sports betting odds from 365+ bookmakers across 34 sports, with value bets and arbitrage."
     },
     {
       "slug": "io-github-odu33104-rive-mcp",
@@ -22509,15 +22495,6 @@
       "description": "Windows GUI automation on a hidden second desktop, driven from Claude Code over MCP."
     },
     {
-      "slug": "com-agishub-crypto-prices",
-      "name": "com.agishub/crypto-prices",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Live USD crypto spot prices by ticker (BTC, ETH, SOL, …) for AI agents. x402 pay-per-call."
-    },
-    {
       "slug": "com-aikstockdata-mcp",
       "name": "com.aikstockdata/mcp",
       "confidence": 0.55,
@@ -23004,7 +22981,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Managed TikTok/Instagram accounts for geo-sharding, video posting and sandbox previews."
+      "description": "Managed TikTok/Instagram/YouTube accounts + video posting at scale, operated by human managers."
     },
     {
       "slug": "com-toughtongueai-mcp",
@@ -23691,7 +23668,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "MCP server for Adobe Photoshop — 116 tools (generative AI + recipes), standalone web UI. Control Ph…"
+      "description": "MCP server for Adobe Photoshop — 122 tools (generative AI + recipes), standalone web UI. Control Ph…"
     },
     {
       "slug": "io-github-alphasmo-alphasmo-tools",
@@ -24471,7 +24448,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Read-first blockchain verification. ECDSA-signed booleans across 38 chains. 27 tools."
+      "description": "Read-first blockchain verification. ECDSA-signed booleans across 37 chains. 27 tools."
     },
     {
       "slug": "io-github-drjerryrelth-ghl-command",
@@ -25005,15 +24982,6 @@
         "data-analysis"
       ],
       "description": "Build, audit and repair Power BI Desktop models and PBIP reports with DAX, TMDL and PBIR."
-    },
-    {
-      "slug": "io-github-horizungroup-horizun-revit-mcp",
-      "name": "io.github.HorizunGroup/horizun-revit-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "data-analysis"
-      ],
-      "description": "Open-source MCP server for Autodesk Revit: typed BIM edits, families, exports and Power BI."
     },
     {
       "slug": "io-github-houtini-ai-fmp",
