@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-22T00:39:16.043Z",
-  "total": 5708,
+  "generatedAt": "2026-09-23T00:02:47.747Z",
+  "total": 5706,
   "summary": {
-    "needsReview": 3856,
+    "needsReview": 3855,
     "needsReviewRatePct": 67.6,
-    "uncategorized": 2607,
+    "uncategorized": 2606,
     "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,16 +15,16 @@
     "低置信度/待审核占比 67.6%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2607,
+    "misc": 2606,
     "dev": 1896,
     "search": 756,
-    "files": 254,
+    "files": 253,
     "ai": 209,
     "comms": 185,
     "database": 169,
     "commerce": 160,
-    "cloud": 130,
-    "browser": 120,
+    "cloud": 131,
+    "browser": 119,
     "marketing": 77
   },
   "topicCounts": {
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 111
+      "count": 110
     },
     {
       "term": "memory",
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 99
+      "count": 100
     },
     {
       "term": "manage",
@@ -107,11 +107,11 @@
       "count": 92
     },
     {
-      "term": "over",
-      "count": 90
+      "term": "live",
+      "count": 89
     },
     {
-      "term": "live",
+      "term": "over",
       "count": 89
     },
     {
@@ -136,7 +136,7 @@
     },
     {
       "term": "x402",
-      "count": 70
+      "count": 69
     },
     {
       "term": "across",
@@ -151,11 +151,11 @@
       "count": 65
     },
     {
-      "term": "real",
-      "count": 60
+      "term": "check",
+      "count": 59
     },
     {
-      "term": "check",
+      "term": "real",
       "count": 59
     },
     {
@@ -179,10 +179,6 @@
       "count": 53
     },
     {
-      "term": "usdc",
-      "count": 51
-    },
-    {
       "term": "before",
       "count": 50
     },
@@ -195,15 +191,19 @@
       "count": 50
     },
     {
+      "term": "usdc",
+      "count": 50
+    },
+    {
       "term": "analytics",
       "count": 48
     },
     {
-      "term": "certificate",
-      "count": 46
+      "term": "deterministic",
+      "count": 47
     },
     {
-      "term": "deterministic",
+      "term": "certificate",
       "count": 46
     },
     {
@@ -220,11 +220,15 @@
     },
     {
       "term": "verify",
-      "count": 45
+      "count": 44
     },
     {
       "term": "security",
       "count": 42
+    },
+    {
+      "term": "call",
+      "count": 40
     },
     {
       "term": "find",
@@ -232,10 +236,6 @@
     },
     {
       "term": "apis",
-      "count": 39
-    },
-    {
-      "term": "call",
       "count": 39
     },
     {
@@ -2324,13 +2324,6 @@
       "description": "See, price, and control every tool call your AI agents make: policy checks, cost, and audit tools."
     },
     {
-      "slug": "com-agishub-mcp",
-      "name": "com.agishub/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "AgisHub — 34 pay-per-call tools for AI agents over x402 (USDC on Base). No API key, no signup."
-    },
-    {
       "slug": "com-aiactradar-ai-act-radar",
       "name": "com.aiactradar/ai-act-radar",
       "confidence": 0.35,
@@ -3028,7 +3021,7 @@
       "name": "com.lightbringer/connector",
       "confidence": 0.35,
       "topics": [],
-      "description": "Capture, analyze, validate, and submit inventions, and collaborate on patent reviews."
+      "description": "Register innovations, request patent preparation, and collaborate with Lightbringer’s patent team."
     },
     {
       "slug": "com-linebreakapp-linebreak-gate",
@@ -3994,7 +3987,7 @@
       "name": "dev.jobspipe/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live job postings from 30+ ATS feeds and job boards, one schema. Live results need a Bearer key."
+      "description": "Live job postings from 30+ ATS feeds and job boards, one schema. Sign in with OAuth, or use a key."
     },
     {
       "slug": "dev-libraryapi-libraryapi-mcp",
@@ -12324,7 +12317,7 @@
       "name": "io.github.sassyconsultingllc/sassymcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One MCP server that replaces 75+ — 274 tools in a single exe, smart-loaded."
+      "description": "One MCP server that replaces 75+ — 278 tools in a single exe, smart-loaded."
     },
     {
       "slug": "io-github-saybanet-sayba-platform",
@@ -14102,7 +14095,7 @@
       "name": "io.tenova/swt3-witness",
       "confidence": 0.35,
       "topics": [],
-      "description": "Cryptographic AI governance + audit. 59 tools, 36 frameworks. EU AI Act, NIST, OWASP, CMMC, SR 11-7"
+      "description": "Cryptographic AI governance and audit. 72 tools, 77 frameworks. EU AI Act, NIST, CMMC, MCP Top 10."
     },
     {
       "slug": "io-umtri-umtri",
@@ -17588,7 +17581,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 462 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 472 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -17960,6 +17953,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP Server for iTerminal SSH Connection Manager - Control SSH servers through Claude."
+    },
+    {
+      "slug": "io-github-its-fortunatefolly-hubvibe",
+      "name": "io.github.Its-fortunatefolly/hubvibe",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Pay per call via HTTP 402: 5 deterministic site audits as MCP tools, 37 /work jobs, receipt per job."
     },
     {
       "slug": "io-github-j7an-nexus-mcp",
@@ -19653,7 +19653,7 @@
       "name": "io.github.ostapondo/plonk",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for Plonk: macOS window zones, workspaces, keep-awake, screenshots and on-device OCR."
+      "description": "Plonk gives agents local macOS tools for windows, workspaces, screenshots, OCR, and more."
     },
     {
       "slug": "io-github-pablo-albaladejo-kaiord",
@@ -20916,13 +20916,6 @@
       "description": "KYA: fail-closed CLEAR/REVIEW/BLOCK counterparty screen (OFAC + on-chain), signed receipt."
     },
     {
-      "slug": "io-github-stillmarcus24-stillos-notary-mcp",
-      "name": "io.github.stillmarcus24/stillos-notary-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Ed25519-signed verdicts resolved against real ground truth. Free claim/verify; paid bonded dispute."
-    },
-    {
       "slug": "io-github-stillmarcus24-stillos-swap-mcp",
       "name": "io.github.stillmarcus24/stillos-swap-mcp",
       "confidence": 0.45,
@@ -21410,7 +21403,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "deja-vu: local memory over the session histories of thirty-three coding agents."
+      "description": "deja-vu: local memory over the session histories of thirty-four coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -26383,7 +26376,7 @@
       "topics": [
         "automation"
       ],
-      "description": "1174 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
+      "description": "1170 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
     },
     {
       "slug": "io-github-moonriddim-skedra",
@@ -27693,7 +27686,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Pre-clinical drug-target intelligence: 60 curated targets, 1,969 counted partner genes, 12 tools"
+      "description": "Pre-clinical drug-target intelligence: 60 curated targets, 1,969 counted partner genes, 11 tools"
     },
     {
       "slug": "io-github-sourceparts-parts-mcp",
@@ -27901,7 +27894,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Brazilian stock (B3) fundamentals: ratios, multiples, dividends, scores. Public methodology."
+      "description": "Brazilian stock (B3) fundamentals: ratios, dividends, scores, REITs (FIIs), ETFs. Open methodology."
     },
     {
       "slug": "io-github-vibekit-bot-vibekit-mcp",
