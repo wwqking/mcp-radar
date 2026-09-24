@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-23T00:02:47.747Z",
-  "total": 5706,
+  "generatedAt": "2026-09-24T00:17:00.029Z",
+  "total": 5705,
   "summary": {
-    "needsReview": 3855,
-    "needsReviewRatePct": 67.6,
-    "uncategorized": 2606,
-    "uncategorizedRatePct": 45.7,
+    "needsReview": 3852,
+    "needsReviewRatePct": 67.5,
+    "uncategorized": 2602,
+    "uncategorizedRatePct": 45.6,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
   },
   "alerts": [
-    "待归类占比 45.7%，超过 5% 审核线",
+    "待归类占比 45.6%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.6%，超过 10%"
+    "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2606,
+    "misc": 2602,
     "dev": 1896,
     "search": 756,
     "files": 253,
-    "ai": 209,
+    "ai": 210,
     "comms": 185,
     "database": 169,
     "commerce": 160,
-    "cloud": 131,
+    "cloud": 133,
     "browser": 119,
-    "marketing": 77
+    "marketing": 78
   },
   "topicCounts": {
     "design-media": 290,
@@ -72,7 +72,7 @@
     },
     {
       "term": "coding",
-      "count": 116
+      "count": 115
     },
     {
       "term": "free",
@@ -80,7 +80,7 @@
     },
     {
       "term": "memory",
-      "count": 110
+      "count": 108
     },
     {
       "term": "credit",
@@ -92,26 +92,26 @@
     },
     {
       "term": "local",
-      "count": 100
+      "count": 99
     },
     {
       "term": "manage",
-      "count": 98
+      "count": 97
+    },
+    {
+      "term": "code",
+      "count": 93
     },
     {
       "term": "create",
       "count": 93
     },
     {
-      "term": "code",
-      "count": 92
+      "term": "over",
+      "count": 90
     },
     {
       "term": "live",
-      "count": 89
-    },
-    {
-      "term": "over",
       "count": 89
     },
     {
@@ -140,7 +140,7 @@
     },
     {
       "term": "across",
-      "count": 68
+      "count": 66
     },
     {
       "term": "audit",
@@ -151,11 +151,11 @@
       "count": 65
     },
     {
-      "term": "check",
-      "count": 59
+      "term": "real",
+      "count": 60
     },
     {
-      "term": "real",
+      "term": "check",
       "count": 59
     },
     {
@@ -164,7 +164,7 @@
     },
     {
       "term": "analysis",
-      "count": 57
+      "count": 56
     },
     {
       "term": "local-first",
@@ -179,11 +179,11 @@
       "count": 53
     },
     {
-      "term": "before",
-      "count": 50
+      "term": "evidence",
+      "count": 51
     },
     {
-      "term": "evidence",
+      "term": "before",
       "count": 50
     },
     {
@@ -199,11 +199,11 @@
       "count": 48
     },
     {
-      "term": "deterministic",
-      "count": 47
+      "term": "certificate",
+      "count": 46
     },
     {
-      "term": "certificate",
+      "term": "deterministic",
       "count": 46
     },
     {
@@ -227,15 +227,15 @@
       "count": 42
     },
     {
-      "term": "call",
-      "count": 40
-    },
-    {
       "term": "find",
-      "count": 40
+      "count": 41
     },
     {
       "term": "apis",
+      "count": 39
+    },
+    {
+      "term": "call",
       "count": 39
     },
     {
@@ -5898,7 +5898,7 @@
       "name": "io.github.creator35lwb-web/verifimind-genesis",
       "confidence": 0.35,
       "topics": [],
-      "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.62"
+      "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.63"
     },
     {
       "slug": "io-github-crisnahine-rails-ai-context",
@@ -6111,13 +6111,6 @@
       "description": "An artifact manager for system specifications."
     },
     {
-      "slug": "io-github-dfridkin-clawops",
-      "name": "io.github.dfridkin/clawops",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Deploy and manage self-hosted OpenClaw instances across clouds"
-    },
-    {
       "slug": "io-github-dimitar-grigorov-mcp-file-tools",
       "name": "io.github.dimitar-grigorov/mcp-file-tools",
       "confidence": 0.35,
@@ -6276,7 +6269,7 @@
       "name": "io.github.eezz4/zzop",
       "confidence": 0.35,
       "topics": [],
-      "description": "Deterministic cross-repo contract analysis for AI agents: frontend calls vs backend endpoints."
+      "description": "Deterministic repository oracle for AI agents: inventory, dependency graph, frontend-backend join."
     },
     {
       "slug": "io-github-elberacasa-umbra",
@@ -6703,7 +6696,7 @@
       "name": "io.github.gzchenhao/openhire",
       "confidence": 0.35,
       "topics": [],
-      "description": "Radar for remote AI/Infra jobs from employer ATS; your résumé never transits the server."
+      "description": "Job postings with real posting dates from Greenhouse/Lever/Ashby/Beisen/Moka ATS. 139 employers."
     },
     {
       "slug": "io-github-hackmods-cursor-proxmox-mcp",
@@ -7375,7 +7368,7 @@
       "name": "io.github.kensaurus/mushi-mushi",
       "confidence": 0.35,
       "topics": [],
-      "description": "Bug translation for vibe coders: plain-English diagnosis + paste-ready fix in your AI coding agent"
+      "description": "The bug mediator for AI-built apps: plain-English diagnosis + a ready fix, in your editor."
     },
     {
       "slug": "io-github-kentucky-ai-opentakeoff",
@@ -10241,13 +10234,6 @@
       "description": "End-to-end encrypted inbox where AI agents deliver files and request human approval."
     },
     {
-      "slug": "io-github-mnemoverse-mcp-memory-server",
-      "name": "io.github.mnemoverse/mcp-memory-server",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted memory for AI agents that learns from outcomes — one key across Claude, Cursor & ChatGPT."
-    },
-    {
       "slug": "io-github-model-mischief-managed-agent-observatory",
       "name": "io.github.model-mischief-managed/agent-observatory",
       "confidence": 0.35,
@@ -10350,7 +10336,7 @@
       "name": "io.github.musharna/plant-genomics-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Plant genomics MCP — 50 tools across 23 backends with cross-source synthesis."
+      "description": "Plant genomics MCP — 52 tools across 23 backends with cross-source synthesis."
     },
     {
       "slug": "io-github-musharna-plantcv-mcp",
@@ -12061,13 +12047,6 @@
       "description": "Find printer profiles, check bed fit, slice to .gcode.3mf and extract the G-code."
     },
     {
-      "slug": "io-github-rightonpar-llc-mesh-connector",
-      "name": "io.github.RightOnPar-LLC/mesh-connector",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "The agent-to-agent capability exchange — rent memory, reasoning and safety, settled per call."
-    },
-    {
       "slug": "io-github-rishabhmpc-prompt-compass",
       "name": "io.github.rishabhmpc/prompt-compass",
       "confidence": 0.35,
@@ -12233,7 +12212,7 @@
       "name": "io.github.sammyboi81/arkhive",
       "confidence": 0.35,
       "topics": [],
-      "description": "ArkHive MCP: governed, tamper-evident local memory for AI agents. Where context gives meaning."
+      "description": "Tamper-evident memory + governance MCP for Claude Code, Cursor, Codex. Ships the Seatbelt kit."
     },
     {
       "slug": "io-github-samyatessmith-tru8",
@@ -12373,7 +12352,7 @@
       "name": "io.github.seekdaseek/agentfeed",
       "confidence": 0.35,
       "topics": [],
-      "description": "Collateral exit liquidity, liquidation tape and peg data. 51 tools, paid in USDC via x402."
+      "description": "Liquidation tape, exit liquidity, derivatives and Solana data. Per-call USDC over x402 or MPP."
     },
     {
       "slug": "io-github-seekdaseek-agentfeed-algo",
@@ -17850,6 +17829,13 @@
       "description": "Gives coding agents the user's own view and control of overseer.nvim tasks in Neovim"
     },
     {
+      "slug": "io-github-inavi-systems-inavi-mcp",
+      "name": "io.github.inavi-systems/inavi-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "iNavi Maps docs for AI (South Korea): API specs, Web JS SDK reference, HTML map templates"
+    },
+    {
       "slug": "io-github-incultnitollc-mcp-probe",
       "name": "io.github.Incultnitollc/mcp-probe",
       "confidence": 0.45,
@@ -17959,7 +17945,7 @@
       "name": "io.github.Its-fortunatefolly/hubvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Pay per call via HTTP 402: 5 deterministic site audits as MCP tools, 37 /work jobs, receipt per job."
+      "description": "Pay per call via HTTP 402: 5 site audits + a statistics engine as MCP tools, 38 /work jobs, receipts"
     },
     {
       "slug": "io-github-j7an-nexus-mcp",
@@ -18169,7 +18155,7 @@
       "name": "io.github.JdPG23/market-data-toolkit-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "17 market-data tools for AI agents: eBay sold prices, company KYC, SEC filings, patents, auctions"
+      "description": "19 market-data tools for AI agents: company KYC, SEC filings, patents, auctions, tenders"
     },
     {
       "slug": "io-github-jedanderson432-jedanderson-corpus-mcp",
@@ -19276,6 +19262,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Simulate, generate and draw analog circuits in Micro-Cap 12: SPICE analyses, sweeps and schematics"
+    },
+    {
+      "slug": "io-github-mooshee-govgazette",
+      "name": "io.github.mooshee/govgazette",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Find federal opportunities, research awards and vendors, and review dated exclusion evidence."
     },
     {
       "slug": "io-github-mrfentmen-mixpanel-mcp",
@@ -20907,13 +20900,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Grade a track record before risking capital: REAL_EDGE/REGIME_LUCK/NEGATIVE_EV. Fail-closed."
-    },
-    {
-      "slug": "io-github-stillmarcus24-stillos-kya",
-      "name": "io.github.stillmarcus24/stillos-kya",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "KYA: fail-closed CLEAR/REVIEW/BLOCK counterparty screen (OFAC + on-chain), signed receipt."
     },
     {
       "slug": "io-github-stillmarcus24-stillos-swap-mcp",
@@ -22793,7 +22779,7 @@
       "topics": [
         "data-analysis"
       ],
-      "description": "The Power BI Modeling MCP Server brings Power BI semantic modeling capabilities to your AI agents."
+      "description": "The Power BI Authoring MCP server lets an AI agent create and change Power BI semantic models."
     },
     {
       "slug": "com-midvash-bible",
@@ -24803,15 +24789,6 @@
         "design-media"
       ],
       "description": "Deterministic image rendering with exact typography. Pay per call in USDC, no account."
-    },
-    {
-      "slug": "io-github-getdynamoi-dynamoi",
-      "name": "io.github.getDynamoi/dynamoi",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Create music promotion campaigns, Smart Links, analytics, and music distribution applications."
     },
     {
       "slug": "io-github-gg13121-corent-mcp",
