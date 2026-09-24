@@ -22,6 +22,7 @@ export const CURATED_SEEDS: CuratedSeed[] = [
   { name: "@modelcontextprotocol/server-everything", repoUrl: "https://github.com/modelcontextprotocol/servers", npmPackage: "@modelcontextprotocol/server-everything" },
 
   // 浏览器 / 网页
+  { name: "agent-qa", repoUrl: "https://github.com/vostride/agent-qa", npmPackage: "agent-qa" },
   { name: "@playwright/mcp", repoUrl: "https://github.com/microsoft/playwright-mcp", npmPackage: "@playwright/mcp" },
   { name: "firecrawl-mcp-server", repoUrl: "https://github.com/mendableai/firecrawl-mcp-server", npmPackage: "firecrawl-mcp" },
   { name: "@browserbase/mcp-server-browserbase", repoUrl: "https://github.com/browserbase/mcp-server-browserbase", npmPackage: null },
