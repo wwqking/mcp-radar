@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-24T00:17:00.029Z",
-  "total": 5705,
+  "generatedAt": "2026-09-25T00:17:16.781Z",
+  "total": 5704,
   "summary": {
-    "needsReview": 3852,
+    "needsReview": 3853,
     "needsReviewRatePct": 67.5,
     "uncategorized": 2602,
     "uncategorizedRatePct": 45.6,
@@ -16,7 +16,7 @@
   ],
   "categoryCounts": {
     "misc": 2602,
-    "dev": 1896,
+    "dev": 1895,
     "search": 756,
     "files": 253,
     "ai": 210,
@@ -28,14 +28,14 @@
     "marketing": 78
   },
   "topicCounts": {
-    "design-media": 290,
-    "finance": 192,
+    "design-media": 292,
+    "finance": 190,
     "automation": 189,
     "observability": 117,
     "legal": 91,
     "mcp-infrastructure": 86,
     "visualization": 64,
-    "science-health": 31,
+    "science-health": 32,
     "security": 29,
     "data-analysis": 25,
     "game-development": 24,
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 110
+      "count": 111
     },
     {
       "term": "memory",
@@ -88,7 +88,7 @@
     },
     {
       "term": "read",
-      "count": 102
+      "count": 103
     },
     {
       "term": "local",
@@ -96,11 +96,11 @@
     },
     {
       "term": "manage",
-      "count": 97
+      "count": 96
     },
     {
       "term": "code",
-      "count": 93
+      "count": 94
     },
     {
       "term": "create",
@@ -128,7 +128,7 @@
     },
     {
       "term": "company",
-      "count": 80
+      "count": 79
     },
     {
       "term": "checks",
@@ -160,7 +160,7 @@
     },
     {
       "term": "public",
-      "count": 58
+      "count": 59
     },
     {
       "term": "analysis",
@@ -180,7 +180,7 @@
     },
     {
       "term": "evidence",
-      "count": 51
+      "count": 52
     },
     {
       "term": "before",
@@ -211,16 +211,16 @@
       "count": 46
     },
     {
-      "term": "vehicle",
-      "count": 46
-    },
-    {
       "term": "plus",
       "count": 45
     },
     {
-      "term": "verify",
+      "term": "vehicle",
       "count": 44
+    },
+    {
+      "term": "verify",
+      "count": 43
     },
     {
       "term": "security",
@@ -753,7 +753,7 @@
       "name": "ai.justpublish/just-publish",
       "confidence": 0.35,
       "topics": [],
-      "description": "Publish the website you built with AI to a live public URL — straight from chat, no setup."
+      "description": "Publish the website you built with AI to a live public URL, straight from chat, with no setup."
     },
     {
       "slug": "ai-kawacode-mcp",
@@ -5898,7 +5898,7 @@
       "name": "io.github.creator35lwb-web/verifimind-genesis",
       "confidence": 0.35,
       "topics": [],
-      "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.63"
+      "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.64"
     },
     {
       "slug": "io-github-crisnahine-rails-ai-context",
@@ -11155,7 +11155,7 @@
       "name": "io.github.pipeworx-io/ca-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "California DMV: vehicle and EV registrations by ZIP, field offices, forms, insurer NAIC codes"
+      "description": "California DMV MCP — registered vehicles and EV adoption by ZIP code, field offices,"
     },
     {
       "slug": "io-github-pipeworx-io-ca-grants",
@@ -11183,7 +11183,7 @@
       "name": "io.github.pipeworx-io/ct-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Connecticut DMV: vehicle-level electric vehicle registrations by town, make and model"
+      "description": "Connecticut DMV MCP — electric-vehicle registrations at vehicle level, aggregated on"
     },
     {
       "slug": "io-github-pipeworx-io-cta",
@@ -11197,14 +11197,14 @@
       "name": "io.github.pipeworx-io/dc-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Washington DC DMV: service centers, vehicle inspections by VIN, traffic convictions"
+      "description": "District of Columbia DMV MCP — DMV service centers, the record-level vehicle-inspection"
     },
     {
       "slug": "io-github-pipeworx-io-de-dmv",
       "name": "io.github.pipeworx-io/de-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Delaware DMV: registrations by fuel type, EV and charger rebates, crash statistics"
+      "description": "Delaware DMV MCP — registered vehicles by fuel type, EV adoption, the state's electric"
     },
     {
       "slug": "io-github-pipeworx-io-digitraffic-ais",
@@ -11309,7 +11309,7 @@
       "name": "io.github.pipeworx-io/gov-bids",
       "confidence": 0.35,
       "topics": [],
-      "description": "Open & historical US government bid solicitations from city/county portals — updated daily"
+      "description": "Gov Bids MCP — open & historical US government bid solicitations (Wave 4b, hosted)."
     },
     {
       "slug": "io-github-pipeworx-io-grantconnect-au",
@@ -11323,14 +11323,14 @@
       "name": "io.github.pipeworx-io/h1b",
       "confidence": 0.35,
       "topics": [],
-      "description": "US H-1B visa sponsorship, LCA wages & top sponsors by role — recruiting/talent data"
+      "description": "H-1B MCP — US H-1B visa sponsorship & wage data from DOL Labor Condition"
     },
     {
       "slug": "io-github-pipeworx-io-hi-dmv",
       "name": "io.github.pipeworx-io/hi-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Hawaii: cumulative hybrid and electric vehicles registered statewide since 1999"
+      "description": "Hawaii vehicle-registration MCP — the statewide cumulative count of hybrid and electric"
     },
     {
       "slug": "io-github-pipeworx-io-hilma",
@@ -15519,6 +15519,13 @@
       "description": "Verify claims, resolve FIGI identity, extract claims, and sign x402 delivery receipts over MCP."
     },
     {
+      "slug": "io-github-beepboop2025-liquilens",
+      "name": "io.github.beepboop2025/liquilens",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Free bank-filing and counterparty research; cited evidence limits; public MCP needs no API key."
+    },
+    {
       "slug": "io-github-beepboop2025-lucent",
       "name": "io.github.beepboop2025/lucent",
       "confidence": 0.45,
@@ -16363,7 +16370,7 @@
       "name": "io.github.CryptoAPIs-io/mcp-signer",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for local transaction signing on EVM, UTXO, Tron, and XRP — no API calls needed"
+      "description": "Local transaction signing for EVM, UTXO, Tron, XRP, Kaspa, Solana and Tezos — no API calls"
     },
     {
       "slug": "io-github-cryptoapis-io-mcp-simulate",
@@ -16839,7 +16846,7 @@
       "name": "io.github.DLJRealty/guesty",
       "confidence": 0.45,
       "topics": [],
-      "description": "Guesty MCP server. 43 tools, all free: reservations, listings, guests, messaging, pricing, revenue."
+      "description": "Guesty MCP server. 43 Guesty tools, read and write, free. Grounded replies, message-policy screen."
     },
     {
       "slug": "io-github-dns-aid-dns-aid",
@@ -17560,7 +17567,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 472 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 477 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -17945,7 +17952,7 @@
       "name": "io.github.Its-fortunatefolly/hubvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Pay per call via HTTP 402: 5 site audits + a statistics engine as MCP tools, 38 /work jobs, receipts"
+      "description": "Pay per call via HTTP 402: 5 site audits + 38 /work jobs as MCP tools and A2A skills, receipts"
     },
     {
       "slug": "io-github-j7an-nexus-mcp",
@@ -18746,6 +18753,13 @@
       "description": "Local-first project memory and mistake-prevention guardrails for AI coding agents."
     },
     {
+      "slug": "io-github-luxalgo-luxalgo-mcp-server",
+      "name": "io.github.LuxAlgo/luxalgo-mcp-server",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "LuxAlgo for AI agents: the Library, prop firms, Market Trackers, Edge Stats, and your Trade Journal"
+    },
+    {
       "slug": "io-github-maha-strategies-mps-preflight",
       "name": "io.github.Maha-Strategies/mps-preflight",
       "confidence": 0.45,
@@ -19465,13 +19479,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server for Keepsake — the personal CRM for nurturing your relationships"
-    },
-    {
-      "slug": "io-github-nishitasetia-akta-pro-mcp",
-      "name": "io.github.nishitasetia/akta.pro-MCP",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Private company data & real-time news signals for AI agents."
     },
     {
       "slug": "io-github-nithishr-mcp-multi-poc-alpha",
@@ -20923,13 +20930,6 @@
       "description": "Static analysis scanner for MCP server code and multi-tenant SaaS applications."
     },
     {
-      "slug": "io-github-sudomock-mcp",
-      "name": "io.github.sudomock/mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Product mockup API. Render PSD and 2D mockups, generate videos, manage async jobs and webhooks."
-    },
-    {
       "slug": "io-github-suigar-gaming-mcp",
       "name": "io.github.Suigar-Gaming/mcp",
       "confidence": 0.45,
@@ -21431,7 +21431,7 @@
       "name": "io.github.whisper-sec/whisper",
       "confidence": 0.45,
       "topics": [],
-      "description": "Keyless: verify agent identities & RDAP for a /128. With a key: register, govern & egress agents."
+      "description": "One routable IPv6 per AI agent, verifiable from the DNS root. Keyless tools need no signup."
     },
     {
       "slug": "io-github-white-hat-lab-agent-toolkit",
@@ -22507,7 +22507,7 @@
       "topics": [
         "automation"
       ],
-      "description": "28 public tools for queues, inboxes, webhooks, approvals and temporary workflows. Three resources."
+      "description": "32 public tools for queues, inboxes, webhooks, approvals, DNS names and temporary workflows."
     },
     {
       "slug": "com-blixtworks-www-tools",
@@ -22916,6 +22916,16 @@
         "design-media"
       ],
       "description": "Optimize public image URLs via the ShortPixel SPIO API for AI agents"
+    },
+    {
+      "slug": "com-slickfast-mcp",
+      "name": "com.slickfast/mcp",
+      "confidence": 0.55,
+      "topics": [
+        "visualization",
+        "science-health"
+      ],
+      "description": "JSON in. Chart or Page out. Same picture forever. Scientific plots included."
     },
     {
       "slug": "com-smplkit-mcp",
@@ -23766,15 +23776,6 @@
         "finance"
       ],
       "description": "Polymarket market data, live CLOB books, replay, simulation, and opt-in trading in Rust."
-    },
-    {
-      "slug": "io-github-beepboop2025-liquilens",
-      "name": "io.github.beepboop2025/liquilens",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Free bank research: NPA reconciliation, small finance banks, UCBs and cited evidence limits."
     },
     {
       "slug": "io-github-beeswaxpat-chronoverify",
@@ -25504,15 +25505,6 @@
       "description": "MCP server for the Render Public API: all 207 endpoints plus workflow tools."
     },
     {
-      "slug": "io-github-luxalgo-luxalgo-mcp-server",
-      "name": "io.github.LuxAlgo/luxalgo-mcp-server",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "LuxAlgo Library — the encyclopedia of trading & technical analysis for AI agents. Free, keyless."
-    },
-    {
       "slug": "io-github-lvpiggyqq-xcatcher",
       "name": "io.github.lvpiggyqq/xcatcher",
       "confidence": 0.55,
@@ -26933,7 +26925,7 @@
       "topics": [
         "legal"
       ],
-      "description": "CourtListener MCP — Free Law Project's CourtListener API (free, no auth required for basic access)"
+      "description": "CourtListener MCP — Free Law Project's CourtListener API (v4)."
     },
     {
       "slug": "io-github-pipeworx-io-energy-charts",
@@ -27132,6 +27124,15 @@
         "finance"
       ],
       "description": "MCP server for InsightSentry financial data API - market data, options, screeners, and more"
+    },
+    {
+      "slug": "io-github-richawo-yaps",
+      "name": "io.github.richawo/yaps",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Transcription, subtitles, meeting transcripts, translation, audio conversion, and private memory."
     },
     {
       "slug": "io-github-richer-richard-cochlea-mcp",
@@ -27701,6 +27702,15 @@
         "observability"
       ],
       "description": "Pacer revenue-management API as MCP tools: portfolios, pacing, market metrics, Guesty, briefs."
+    },
+    {
+      "slug": "io-github-sudomock-mcp",
+      "name": "io.github.sudomock/mcp",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Product mockup API. Render PSD and photo mockups, generate videos, manage async jobs and webhooks."
     },
     {
       "slug": "io-github-syedomershah99-being-human",
