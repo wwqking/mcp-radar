@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-25T00:17:16.781Z",
+  "generatedAt": "2026-09-26T00:24:23.329Z",
   "total": 5704,
   "summary": {
     "needsReview": 3853,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2602,
+    "uncategorized": 2601,
     "uncategorizedRatePct": 45.6,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,12 +15,12 @@
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2602,
+    "misc": 2601,
     "dev": 1895,
     "search": 756,
     "files": 253,
     "ai": 210,
-    "comms": 185,
+    "comms": 187,
     "database": 169,
     "commerce": 160,
     "cloud": 133,
@@ -72,7 +72,7 @@
     },
     {
       "term": "coding",
-      "count": 115
+      "count": 116
     },
     {
       "term": "free",
@@ -80,7 +80,7 @@
     },
     {
       "term": "memory",
-      "count": 108
+      "count": 109
     },
     {
       "term": "credit",
@@ -104,7 +104,7 @@
     },
     {
       "term": "create",
-      "count": 93
+      "count": 92
     },
     {
       "term": "over",
@@ -120,7 +120,7 @@
     },
     {
       "term": "pipeworx-io",
-      "count": 82
+      "count": 83
     },
     {
       "term": "detran",
@@ -139,10 +139,6 @@
       "count": 69
     },
     {
-      "term": "across",
-      "count": 66
-    },
-    {
       "term": "audit",
       "count": 66
     },
@@ -151,16 +147,20 @@
       "count": 65
     },
     {
-      "term": "real",
-      "count": 60
+      "term": "across",
+      "count": 64
     },
     {
       "term": "check",
+      "count": 60
+    },
+    {
+      "term": "real",
       "count": 59
     },
     {
       "term": "public",
-      "count": 59
+      "count": 58
     },
     {
       "term": "analysis",
@@ -184,7 +184,7 @@
     },
     {
       "term": "before",
-      "count": 50
+      "count": 51
     },
     {
       "term": "intelligence",
@@ -199,6 +199,10 @@
       "count": 48
     },
     {
+      "term": "every",
+      "count": 48
+    },
+    {
       "term": "certificate",
       "count": 46
     },
@@ -207,23 +211,19 @@
       "count": 46
     },
     {
-      "term": "every",
-      "count": 46
-    },
-    {
       "term": "plus",
       "count": 45
     },
     {
-      "term": "vehicle",
-      "count": 44
-    },
-    {
-      "term": "verify",
+      "term": "security",
       "count": 43
     },
     {
-      "term": "security",
+      "term": "vehicle",
+      "count": 43
+    },
+    {
+      "term": "verify",
       "count": 42
     },
     {
@@ -2118,7 +2118,7 @@
       "name": "cc.roboparts/roboparts",
       "confidence": 0.35,
       "topics": [],
-      "description": "688 humanoid robot component entities with 4-dimension compatibility checking. Vendor-neutral."
+      "description": "852 humanoid/bionic robot parts, 20 categories, 4-dimension compatibility checking. Vendor-neutral."
     },
     {
       "slug": "ch-entscheidsuche-mcp",
@@ -2524,7 +2524,7 @@
       "name": "com.bykaranteli/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Crypto derivatives data: funding, open interest, liquidations, options, ETF flows. Free account key."
+      "description": "Crypto derivatives data: funding, OI, liquidations, options, ETF flows. Free account key required."
     },
     {
       "slug": "com-casemargin-casemargin-mcp-server",
@@ -3437,13 +3437,6 @@
       "description": "Read and filter your Google Business Profile reviews, get stats, and send review requests."
     },
     {
-      "slug": "com-revdoku-revdoku",
-      "name": "com.revdoku/revdoku",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Create account-free website previews and publish durable sites from AI agents with Revdoku."
-    },
-    {
       "slug": "com-rohithmariyala-makemebetter-ai",
       "name": "com.rohithmariyala/makemebetter-ai",
       "confidence": 0.35,
@@ -4337,7 +4330,7 @@
       "name": "ing.3dpack/container-loading",
       "confidence": 0.35,
       "topics": [],
-      "description": "Plain-English shipment input for freight & logistics: containers your cargo fits, 3D load plan."
+      "description": "Container load planning in Claude & ChatGPT: what fits, how full, a labelled 3D plan in the chat."
     },
     {
       "slug": "ink-utilia-solana-preflight",
@@ -4512,7 +4505,7 @@
       "name": "io.github.0xfreak0/sui-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read-only Sui analytics: 68 tools, protocol-aware tx decoding, no API keys or wallet."
+      "description": "Read-only Sui analytics: 76 tools, protocol-aware tx decoding, no API keys or wallet."
     },
     {
       "slug": "io-github-0xvibly-hackmyip-mcp",
@@ -7767,7 +7760,7 @@
       "name": "io.github.masondelan/selvedge",
       "confidence": 0.35,
       "topics": [],
-      "description": "Decision provenance for AI-coded codebases: the why, and what was already tried and rejected."
+      "description": "Persistent decision memory for AI coding agents: rationale, rejected approaches, and entity history."
     },
     {
       "slug": "io-github-masterplayspots-motionspec",
@@ -10336,7 +10329,7 @@
       "name": "io.github.musharna/plant-genomics-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Plant genomics MCP — 52 tools across 23 backends with cross-source synthesis."
+      "description": "Plant genomics MCP — 53 tools across 23 backends with cross-source synthesis."
     },
     {
       "slug": "io-github-musharna-plantcv-mcp",
@@ -11344,14 +11337,14 @@
       "name": "io.github.pipeworx-io/ia-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Iowa DOT driver license stations with hours, CDL availability and queue cameras"
+      "description": "Iowa DMV MCP — the Iowa DOT Motor Vehicle Division's 18 driver license stations, with hours,"
     },
     {
       "slug": "io-github-pipeworx-io-in-bmv",
       "name": "io.github.pipeworx-io/in-bmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Indiana BMV branches, kiosks, BMV Connect and motorcycle skills-test locations"
+      "description": "Indiana BMV MCP — Bureau of Motor Vehicles branches, self-service kiosks, BMV Connect"
     },
     {
       "slug": "io-github-pipeworx-io-irail",
@@ -11365,7 +11358,7 @@
       "name": "io.github.pipeworx-io/iso",
       "confidence": 0.35,
       "topics": [],
-      "description": "ISO Standards MCP — hosted."
+      "description": "ISO Standards MCP."
     },
     {
       "slug": "io-github-pipeworx-io-lemmy",
@@ -11379,14 +11372,14 @@
       "name": "io.github.pipeworx-io/md-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Maryland MVA: registered vehicles and EV/plug-in hybrid counts by county and ZIP, monthly"
+      "description": "Maryland DMV MCP — monthly registered-vehicle counts and electric/plug-in hybrid"
     },
     {
       "slug": "io-github-pipeworx-io-medicaid-intelligence",
       "name": "io.github.pipeworx-io/medicaid-intelligence",
       "confidence": 0.35,
       "topics": [],
-      "description": "Medicaid drug utilization by NDC, managed-care enrollment and state enrollment operations from CMS"
+      "description": "MCP server for medicaid-intelligence"
     },
     {
       "slug": "io-github-pipeworx-io-medicare-coverage",
@@ -11407,14 +11400,14 @@
       "name": "io.github.pipeworx-io/mo-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Missouri license offices with hours, contract agent and closure dates, refreshed daily"
+      "description": "Missouri DMV MCP — the Department of Revenue's driver and motor-vehicle license offices,"
     },
     {
       "slug": "io-github-pipeworx-io-nc-dmv",
       "name": "io.github.pipeworx-io/nc-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "North Carolina DMV: live field-office wait times and driver license office directory"
+      "description": "North Carolina DMV MCP — live wait times at every NCDMV driver license office and"
     },
     {
       "slug": "io-github-pipeworx-io-netherlands-tenders",
@@ -11442,7 +11435,7 @@
       "name": "io.github.pipeworx-io/nj-mvc",
       "confidence": 0.35,
       "topics": [],
-      "description": "New Jersey MVC inspection facilities and 2.3M inspection results by make and model"
+      "description": "New Jersey MVC MCP — Motor Vehicle Commission inspection and emission-repair facilities,"
     },
     {
       "slug": "io-github-pipeworx-io-nps",
@@ -11456,7 +11449,7 @@
       "name": "io.github.pipeworx-io/ny-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "New York DMV: record-level vehicle and EV registrations, offices, road tests, driving schools"
+      "description": "New York State DMV MCP — registered vehicles and EV adoption by county/ZIP/make,"
     },
     {
       "slug": "io-github-pipeworx-io-open-contracting",
@@ -11484,7 +11477,7 @@
       "name": "io.github.pipeworx-io/or-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Oregon DMV: live field-office wait times and office directory for all 60 offices"
+      "description": "Oregon DMV MCP — live wait times at all 60 Oregon DMV field offices, plus the office"
     },
     {
       "slug": "io-github-pipeworx-io-osha",
@@ -11498,7 +11491,7 @@
       "name": "io.github.pipeworx-io/pa-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "PennDOT: quarterly EV, plug-in hybrid and total vehicle registrations by county and ZIP"
+      "description": "Pennsylvania DMV MCP — registered vehicles and electric-vehicle adoption by county and"
     },
     {
       "slug": "io-github-pipeworx-io-patents",
@@ -11519,7 +11512,7 @@
       "name": "io.github.pipeworx-io/polygon-io",
       "confidence": 0.35,
       "topics": [],
-      "description": "Polygon.io MCP."
+      "description": "Massive (formerly Polygon.io) MCP."
     },
     {
       "slug": "io-github-pipeworx-io-property-records",
@@ -11617,7 +11610,7 @@
       "name": "io.github.pipeworx-io/tn-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Tennessee driver service centers with REAL ID and CDL testing, plus crash statistics"
+      "description": "Tennessee DMV MCP — Department of Safety and Homeland Security: the 186 driver service"
     },
     {
       "slug": "io-github-pipeworx-io-treasury-fiscal",
@@ -11631,7 +11624,7 @@
       "name": "io.github.pipeworx-io/tx-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Texas DMV: statewide registered vehicle totals by fiscal year"
+      "description": "Texas DMV MCP — statewide vehicle, pickup and motorcycle registration totals by fiscal"
     },
     {
       "slug": "io-github-pipeworx-io-udbud-dk",
@@ -11652,7 +11645,7 @@
       "name": "io.github.pipeworx-io/uk-gazette",
       "confidence": 0.35,
       "topics": [],
-      "description": "The Gazette — official UK public record: insolvencies, winding-up petitions, deceased estates"
+      "description": "UK Gazette MCP — The Gazette (www.thegazette.co.uk), the UK's official"
     },
     {
       "slug": "io-github-pipeworx-io-ukri-gtr",
@@ -11673,7 +11666,7 @@
       "name": "io.github.pipeworx-io/us-gov-contracts",
       "confidence": 0.35,
       "topics": [],
-      "description": "US state & local government contracts + spending, normalized across jurisdictions — keyless"
+      "description": "US Government Contracts MCP — awarded state & local government contracts,"
     },
     {
       "slug": "io-github-pipeworx-io-vessel-tracking",
@@ -11694,7 +11687,7 @@
       "name": "io.github.pipeworx-io/wa-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Washington DMV/DOL: VIN-level EV population and monthly vehicle registration transactions"
+      "description": "Washington State DMV MCP — the Department of Licensing's VIN-level electric-vehicle"
     },
     {
       "slug": "io-github-pipeworx-io-wikidata-sparql",
@@ -14515,7 +14508,7 @@
       "name": "org.heathy/nutrition",
       "confidence": 0.35,
       "topics": [],
-      "description": "Nutrition for 910 plant foods across 11 national datasets, plus GB/EU & US claim checking"
+      "description": "Nutrition for 1,174 plant foods from 30 national tables, plus GB/EU & US claim checking"
     },
     {
       "slug": "org-hookline-mcp",
@@ -15838,7 +15831,7 @@
       "name": "io.github.cammac-creator/ibanforge",
       "confidence": 0.45,
       "topics": [],
-      "description": "Pre-payout IBAN screening for AI agents: validation, sanctions, Swiss clearing, risk scoring"
+      "description": "Check the bank behind an IBAN before you pay: bank-code check, BIC with source, bank-level sanctions"
     },
     {
       "slug": "io-github-capan-isochrone",
@@ -16314,7 +16307,7 @@
       "name": "io.github.Creed-Space/mettle-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Experimental machine-oriented challenges and signed results. Does not verify identity or substrate."
+      "description": "Experimental reverse CAPTCHA with signed badges and credentials. Not proof of identity or substrate."
     },
     {
       "slug": "io-github-creed-space-vcp-mcp",
@@ -17567,7 +17560,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 477 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 479 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -19789,6 +19782,13 @@
       "description": "Your agent's overlay network. 435 specialist agents + P2P A2A messaging on a 190k-node network."
     },
     {
+      "slug": "io-github-pipeworx-io-wi-dmv",
+      "name": "io.github.pipeworx-io/wi-dmv",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Wisconsin DMV MCP — every WisDOT DMV customer service center, with the services each"
+    },
+    {
       "slug": "io-github-plur-ai-plur",
       "name": "io.github.plur-ai/plur",
       "confidence": 0.45,
@@ -20836,7 +20836,7 @@
       "name": "io.github.Sofiia7/arcbounty-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Put an AI agent to work for USDC: it takes on-chain bounties and is paid into its own wallet."
+      "description": "Put an AI agent to work for USDC, or let it hire: take and post on-chain bounties, get paid."
     },
     {
       "slug": "io-github-soil911-atlaspi",
@@ -27746,7 +27746,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Taiwan Stock Exchange (TWSE) open data as MCP tools: stock quotes, ETF data, 140+ public datasets."
+      "description": "TWSE & TAIFEX open data as MCP tools: stock/ETF snapshots, screening, live quotes, 270+ datasets."
     },
     {
       "slug": "io-github-taygunsavas-patina-unity-mcp",
