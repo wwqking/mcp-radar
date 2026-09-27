@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-26T00:24:23.329Z",
-  "total": 5704,
+  "generatedAt": "2026-09-27T00:14:39.354Z",
+  "total": 5703,
   "summary": {
-    "needsReview": 3853,
-    "needsReviewRatePct": 67.5,
+    "needsReview": 3854,
+    "needsReviewRatePct": 67.6,
     "uncategorized": 2601,
     "uncategorizedRatePct": 45.6,
     "largestCategory": "dev",
@@ -12,14 +12,14 @@
   "alerts": [
     "待归类占比 45.6%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.5%，超过 10%"
+    "低置信度/待审核占比 67.6%，超过 10%"
   ],
   "categoryCounts": {
     "misc": 2601,
     "dev": 1895,
     "search": 756,
     "files": 253,
-    "ai": 210,
+    "ai": 209,
     "comms": 187,
     "database": 169,
     "commerce": 160,
@@ -29,15 +29,15 @@
   },
   "topicCounts": {
     "design-media": 292,
-    "finance": 190,
     "automation": 189,
+    "finance": 189,
     "observability": 117,
     "legal": 91,
-    "mcp-infrastructure": 86,
+    "mcp-infrastructure": 87,
     "visualization": 64,
     "science-health": 32,
     "security": 29,
-    "data-analysis": 25,
+    "data-analysis": 26,
     "game-development": 24,
     "iot-robotics": 15
   },
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 111
+      "count": 112
     },
     {
       "term": "memory",
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 99
+      "count": 100
     },
     {
       "term": "manage",
@@ -116,7 +116,7 @@
     },
     {
       "term": "read-only",
-      "count": 88
+      "count": 87
     },
     {
       "term": "pipeworx-io",
@@ -132,35 +132,35 @@
     },
     {
       "term": "checks",
-      "count": 76
+      "count": 77
     },
     {
       "term": "x402",
       "count": 69
     },
     {
+      "term": "across",
+      "count": 65
+    },
+    {
       "term": "audit",
-      "count": 66
+      "count": 65
     },
     {
       "term": "tasks",
       "count": 65
     },
     {
-      "term": "across",
-      "count": 64
-    },
-    {
       "term": "check",
-      "count": 60
-    },
-    {
-      "term": "real",
       "count": 59
     },
     {
       "term": "public",
-      "count": 58
+      "count": 59
+    },
+    {
+      "term": "real",
+      "count": 59
     },
     {
       "term": "analysis",
@@ -176,7 +176,7 @@
     },
     {
       "term": "person",
-      "count": 53
+      "count": 54
     },
     {
       "term": "evidence",
@@ -195,11 +195,11 @@
       "count": 50
     },
     {
-      "term": "analytics",
-      "count": 48
+      "term": "every",
+      "count": 49
     },
     {
-      "term": "every",
+      "term": "analytics",
       "count": 48
     },
     {
@@ -224,7 +224,7 @@
     },
     {
       "term": "verify",
-      "count": 42
+      "count": 43
     },
     {
       "term": "find",
@@ -235,11 +235,11 @@
       "count": 39
     },
     {
-      "term": "call",
+      "term": "registry",
       "count": 39
     },
     {
-      "term": "registry",
+      "term": "shared",
       "count": 39
     }
   ],
@@ -2258,7 +2258,7 @@
       "name": "co.yungle/yungle",
       "confidence": 0.35,
       "topics": [],
-      "description": "Ask about your Yungle file deliveries — what was sent, who downloaded, what expires. Read-only."
+      "description": "Ask about your Yungle transfers, share files as links, approve every send. Hosted or local."
     },
     {
       "slug": "coach-marian-eng-leadership-toolkit",
@@ -2440,7 +2440,7 @@
       "name": "com.babyblueviper/invinoveritas",
       "confidence": 0.35,
       "topics": [],
-      "description": "AI-agent verifier: verdict committed before the outcome graded against it; /review, /ledger."
+      "description": "Second opinion before an irreversible agent action; signed proofs, free verify, public ledger."
     },
     {
       "slug": "com-backtest360-backtest360",
@@ -10329,7 +10329,7 @@
       "name": "io.github.musharna/plant-genomics-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Plant genomics MCP — 53 tools across 23 backends with cross-source synthesis."
+      "description": "Plant genomics MCP — 56 tools across 23 backends with cross-source synthesis."
     },
     {
       "slug": "io-github-musharna-plantcv-mcp",
@@ -10854,7 +10854,7 @@
       "name": "io.github.ogasurfproject-jpg/horizon-shield",
       "confidence": 0.35,
       "topics": [],
-      "description": "Fair-price check for Japanese renovation quotes: range, verdict, red flags, verified contractors."
+      "description": "Fair-price checks for Japanese renovation quotes, plus Japan and US construction cost data."
     },
     {
       "slug": "io-github-ogasurfproject-jpg-horizon-shield-webmcp",
@@ -11841,7 +11841,7 @@
       "name": "io.github.Pushary/pushary",
       "confidence": 0.35,
       "topics": [],
-      "description": "Reach a human from a running agent. Approvals on the lock screen, plus a cross-agent audit trail."
+      "description": "The decision layer for AI agents. Your agent asks, a person approves or denies on their phone."
     },
     {
       "slug": "io-github-putervision-vision-memory-mcp",
@@ -14837,7 +14837,7 @@
       "name": "xyz.costrinity/vitna-compliance-preflight",
       "confidence": 0.35,
       "topics": [],
-      "description": "Pre-action allow/deny for AI agents. 24 statutes, 13 jurisdictions: EU AI Act, GDPR, DPDP."
+      "description": "Pre-action compliance for AI agents: allow, block or hold. 24 statutes, 13 jurisdictions."
     },
     {
       "slug": "xyz-kellyruns-strategy-lab",
@@ -14886,7 +14886,7 @@
       "name": "com.predictionmarketspicks/quant",
       "confidence": 0.45,
       "topics": [],
-      "description": "29 quant tools. NFL props, the 2026 Senate map, Fed odds — free, no key. Kalshi & Polymarket."
+      "description": "32 quant tools. Kalshi 15-minute markets and perps, NFL props, Fed odds — free, no key."
     },
     {
       "slug": "io-github-0rkz-byte-protocol",
@@ -17560,7 +17560,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 479 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 503 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -17939,20 +17939,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP Server for iTerminal SSH Connection Manager - Control SSH servers through Claude."
-    },
-    {
-      "slug": "io-github-its-fortunatefolly-hubvibe",
-      "name": "io.github.Its-fortunatefolly/hubvibe",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Pay per call via HTTP 402: 5 site audits + 38 /work jobs as MCP tools and A2A skills, receipts"
-    },
-    {
-      "slug": "io-github-j7an-nexus-mcp",
-      "name": "io.github.j7an/nexus-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Invoke CLI agents (Codex, Claude, OpenCode) as MCP tools with parallel execution"
     },
     {
       "slug": "io-github-jacksenechal-scan-mcp",
@@ -18351,7 +18337,7 @@
       "name": "io.github.jyswee/taufunctions",
       "confidence": 0.45,
       "topics": [],
-      "description": "Serverless functions for coding agents. Deploy, invoke, monitor. 13 tools, stdio or remote SSE."
+      "description": "Serverless functions for coding agents. Deploy, invoke, monitor. 13 tools, stdio or remote."
     },
     {
       "slug": "io-github-jyswee-weselltours",
@@ -18876,7 +18862,7 @@
       "name": "io.github.malkreide/swiss-democracy-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Parliament OData, Swissvotes, referendums, voting results"
+      "description": "Swiss popular votes and elections: Swissvotes 1848+, BFS opendata.swiss, SRGSSR Polis 1900+"
     },
     {
       "slug": "io-github-malkreide-swiss-efv-mcp",
@@ -21677,6 +21663,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server for preparing and tracking Peer Cash Base USDC cash-outs"
+    },
+    {
+      "slug": "net-crawlora-crawlora-mcp",
+      "name": "net.crawlora/crawlora-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Hosted MCP: 3099 structured web-data tools across 420 platform groups."
     },
     {
       "slug": "ru-layero-layero",
@@ -24988,7 +24981,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Adobe Illustrator MCP with 67 tools — more than the official Illustrator MCP. macOS | Windows."
+      "description": "Adobe Illustrator MCP with 66 tools — more than the official Illustrator MCP. macOS | Windows."
     },
     {
       "slug": "io-github-iksnerd-adb-mcp",
@@ -25043,6 +25036,24 @@
         "finance"
       ],
       "description": "Estonian e-arveldaja (RIK e-Financials) accounting — invoices, bank import, reports."
+    },
+    {
+      "slug": "io-github-its-fortunatefolly-hubvibe",
+      "name": "io.github.Its-fortunatefolly/hubvibe",
+      "confidence": 0.55,
+      "topics": [
+        "data-analysis"
+      ],
+      "description": "Pay per call via HTTP 402: 5 site audits + 38 /work jobs as MCP tools and A2A skills, receipts"
+    },
+    {
+      "slug": "io-github-j7an-nexus-mcp",
+      "name": "io.github.j7an/nexus-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Delegate tasks to coding agents (Claude, Codex) from any MCP client"
     },
     {
       "slug": "io-github-jamboree777-nightwatch",
@@ -26889,7 +26900,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Guideline-cited biomarker analysis for chronic conditions (diabetes, lupus, cancer). Synthetic."
+      "description": "Guideline-cited lab results analysis for diabetes, kidney, lupus & cancer care. Free sample report."
     },
     {
       "slug": "io-github-pipeworx-io-alpaca",
@@ -27746,7 +27757,7 @@
       "topics": [
         "finance"
       ],
-      "description": "TWSE & TAIFEX open data as MCP tools: stock/ETF snapshots, screening, live quotes, 270+ datasets."
+      "description": "TWSE & TAIFEX open data as MCP tools: stock, ETF & futures snapshots, live quotes, 270+ datasets."
     },
     {
       "slug": "io-github-taygunsavas-patina-unity-mcp",
