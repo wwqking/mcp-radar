@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-27T00:14:39.354Z",
+  "generatedAt": "2026-09-28T00:21:27.727Z",
   "total": 5703,
   "summary": {
-    "needsReview": 3854,
+    "needsReview": 3853,
     "needsReviewRatePct": 67.6,
     "uncategorized": 2601,
     "uncategorizedRatePct": 45.6,
@@ -17,12 +17,12 @@
   "categoryCounts": {
     "misc": 2601,
     "dev": 1895,
-    "search": 756,
+    "search": 757,
     "files": 253,
     "ai": 209,
     "comms": 187,
     "database": 169,
-    "commerce": 160,
+    "commerce": 161,
     "cloud": 133,
     "browser": 119,
     "marketing": 78
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 100
+      "count": 101
     },
     {
       "term": "manage",
@@ -7438,7 +7438,7 @@
       "name": "io.github.klimPaskov/hoi4-agent-tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "Analyze HOI4 events, decisions, impact, tech, AI, and MTTH; build focus trees, GUIs, and maps."
+      "description": "HOI4 modding tools for agents: local references, visual previews, focus trees, interfaces and maps."
     },
     {
       "slug": "io-github-knowledgepa3-gia-mcp-server",
@@ -17560,7 +17560,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 503 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 510 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -21375,7 +21375,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "deja-vu: local memory over the session histories of thirty-four coding agents."
+      "description": "deja-vu: local memory over the session histories of thirty-five coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -25044,7 +25044,7 @@
       "topics": [
         "data-analysis"
       ],
-      "description": "Pay per call via HTTP 402: 5 site audits + 38 /work jobs as MCP tools and A2A skills, receipts"
+      "description": "Pay per call via HTTP 402: 5 site audits + 55 /work jobs as MCP tools and A2A skills, receipts"
     },
     {
       "slug": "io-github-j7an-nexus-mcp",
@@ -25550,15 +25550,6 @@
         "legal"
       ],
       "description": "Swiss federal law, consultations (Fedlex) & TERMDAT terminology (LINDAS) via SPARQL"
-    },
-    {
-      "slug": "io-github-malkreide-news-monitor-mcp",
-      "name": "io.github.malkreide/news-monitor-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "observability"
-      ],
-      "description": "Aggregated news monitoring across Swiss public media RSS feeds"
     },
     {
       "slug": "io-github-malkreide-srgssr-mcp",
@@ -27757,7 +27748,7 @@
       "topics": [
         "finance"
       ],
-      "description": "TWSE & TAIFEX open data as MCP tools: stock, ETF & futures snapshots, live quotes, 270+ datasets."
+      "description": "Unofficial. TWSE & TAIFEX open data for AI: stock, ETF & futures snapshots, quotes, 270+ datasets."
     },
     {
       "slug": "io-github-taygunsavas-patina-unity-mcp",
