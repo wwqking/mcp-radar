@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-28T00:21:27.727Z",
+  "generatedAt": "2026-09-29T01:32:26.942Z",
   "total": 5703,
   "summary": {
-    "needsReview": 3853,
-    "needsReviewRatePct": 67.6,
-    "uncategorized": 2601,
+    "needsReview": 3852,
+    "needsReviewRatePct": 67.5,
+    "uncategorized": 2600,
     "uncategorizedRatePct": 45.6,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -12,19 +12,19 @@
   "alerts": [
     "待归类占比 45.6%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.6%，超过 10%"
+    "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2601,
+    "misc": 2600,
     "dev": 1895,
     "search": 757,
-    "files": 253,
+    "files": 254,
     "ai": 209,
     "comms": 187,
     "database": 169,
     "commerce": 161,
     "cloud": 133,
-    "browser": 119,
+    "browser": 120,
     "marketing": 78
   },
   "topicCounts": {
@@ -88,7 +88,7 @@
     },
     {
       "term": "read",
-      "count": 103
+      "count": 104
     },
     {
       "term": "local",
@@ -116,7 +116,7 @@
     },
     {
       "term": "read-only",
-      "count": 87
+      "count": 86
     },
     {
       "term": "pipeworx-io",
@@ -139,10 +139,6 @@
       "count": 69
     },
     {
-      "term": "across",
-      "count": 65
-    },
-    {
       "term": "audit",
       "count": 65
     },
@@ -151,8 +147,12 @@
       "count": 65
     },
     {
+      "term": "across",
+      "count": 64
+    },
+    {
       "term": "check",
-      "count": 59
+      "count": 60
     },
     {
       "term": "public",
@@ -179,12 +179,12 @@
       "count": 54
     },
     {
-      "term": "evidence",
+      "term": "before",
       "count": 52
     },
     {
-      "term": "before",
-      "count": 51
+      "term": "evidence",
+      "count": 52
     },
     {
       "term": "intelligence",
@@ -228,19 +228,19 @@
     },
     {
       "term": "find",
-      "count": 41
+      "count": 40
     },
     {
-      "term": "apis",
-      "count": 39
-    },
-    {
-      "term": "registry",
+      "term": "review",
       "count": 39
     },
     {
       "term": "shared",
       "count": 39
+    },
+    {
+      "term": "apis",
+      "count": 38
     }
   ],
   "reviewQueue": [
@@ -1775,7 +1775,7 @@
       "name": "app.apick/business",
       "confidence": 0.35,
       "topics": [],
-      "description": "Korean business registry, corporate info, parcel tracking, validation APIs"
+      "description": "Korean business, parcel and simple-auth employment, income, pension, license and health data"
     },
     {
       "slug": "app-businys-mcp-server",
@@ -1845,7 +1845,7 @@
       "name": "app.flaim/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read-only fantasy analysis for ESPN, Yahoo, and Sleeper leagues via MCP"
+      "description": "Fantasy analysis for your ESPN, Yahoo, and Sleeper leagues. Reads your leagues, never changes them."
     },
     {
       "slug": "app-framebench-framebench",
@@ -3784,7 +3784,7 @@
       "name": "com.writavo/cms",
       "confidence": 0.35,
       "topics": [],
-      "description": "Draft, edit, organise, schedule and publish a Writavo Site content from any AI assistant."
+      "description": "Draft, edit, organise, schedule and publish a Writavo Site's content from any AI assistant."
     },
     {
       "slug": "com-xcodebuildmcp-xcodebuildmcp",
@@ -6689,7 +6689,7 @@
       "name": "io.github.gzchenhao/openhire",
       "confidence": 0.35,
       "topics": [],
-      "description": "Job postings with real posting dates from Greenhouse/Lever/Ashby/Beisen/Moka ATS. 139 employers."
+      "description": "Job postings with real posting dates, read from employers' Greenhouse/Lever/Ashby/Beisen/Moka ATS."
     },
     {
       "slug": "io-github-hackmods-cursor-proxmox-mcp",
@@ -10875,7 +10875,7 @@
       "name": "io.github.ogasurfproject-jpg/hs-verify-gate",
       "confidence": 0.35,
       "topics": [],
-      "description": "Conformance checker for MCP servers. Free, no key, verdicts recomputable and re-measured daily."
+      "description": "Check an A2A agent before you delegate, or an MCP server's measured conduct. Free, no key."
     },
     {
       "slug": "io-github-ogasurfproject-jpg-jidec",
@@ -17560,7 +17560,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 510 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 515 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -19681,7 +19681,7 @@
       "name": "io.github.Payotte-com/payotte-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Verified Canadian real-estate pros + housing data: prices, rates, land-transfer tax, rent-vs-buy."
+      "description": "Verified Canadian real-estate pros + housing data: rates, transfer tax, rent-vs-buy, QC assessments."
     },
     {
       "slug": "io-github-pedrammadani-legalithm-mcp-server",
@@ -20143,7 +20143,7 @@
       "name": "io.github.rodvan/viralhunt-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Find trending content and schedule posts across social networks via the ViralHunt.io API."
+      "description": "Trending content on 12 networks, best time, hashtags, templates, drafts and review, publish to 11."
     },
     {
       "slug": "io-github-rohityajee8076-backburner",
@@ -20941,7 +20941,7 @@
       "name": "io.github.SWATGenX/swatgenx",
       "confidence": 0.45,
       "topics": [],
-      "description": "Automated, calibrated SWAT+ watershed modeling and national hydrologic datasets for the U.S."
+      "description": "SWAT+ watershed models for any river in the lower 48 states, with groundwater and PFAS data"
     },
     {
       "slug": "io-github-syedtaj7-kitbag-mcp",
@@ -21669,7 +21669,7 @@
       "name": "net.crawlora/crawlora-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Hosted MCP: 3099 structured web-data tools across 420 platform groups."
+      "description": "Hosted MCP: 3122 structured web-data tools across 420 platform groups."
     },
     {
       "slug": "ru-layero-layero",
@@ -21829,7 +21829,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Generate game assets with AI: sprites, 3D models, animations, sound effects, music, and voices."
+      "description": "Generate game assets with AI: sprites, animations, 3D models with rigging, video, music, SFX, voices"
     },
     {
       "slug": "ai-modelrunner-mcp",
@@ -25044,7 +25044,7 @@
       "topics": [
         "data-analysis"
       ],
-      "description": "Pay per call via HTTP 402: 5 site audits + 55 /work jobs as MCP tools and A2A skills, receipts"
+      "description": "Pay per call via HTTP 402: 5 site audits + 65 /work jobs as MCP tools and A2A skills, receipts"
     },
     {
       "slug": "io-github-j7an-nexus-mcp",
@@ -26347,7 +26347,7 @@
       "topics": [
         "automation"
       ],
-      "description": "1170 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
+      "description": "1176 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
     },
     {
       "slug": "io-github-moonriddim-skedra",
@@ -27170,7 +27170,7 @@
       "topics": [
         "automation"
       ],
-      "description": "A complete color workflow over MCP: mix, convert, harmonize, measure, and remember palettes."
+      "description": "A complete color workflow over MCP: mix, convert, harmonize, measure, place, and remember palettes."
     },
     {
       "slug": "io-github-rocnubie-museaiimage-mcp",
@@ -28699,15 +28699,6 @@
         "observability"
       ],
       "description": "Open-source agent that observes and fixes your application. Query logs, traces, metrics, incidents."
-    },
-    {
-      "slug": "so-ojo-mcp-server",
-      "name": "so.ojo/mcp-server",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Render HTML or templates to a hosted image, in one response. Free previews need no API key."
     },
     {
       "slug": "solutions-dap-bellwether",
