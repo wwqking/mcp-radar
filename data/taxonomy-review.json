@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-29T01:32:26.942Z",
-  "total": 5703,
+  "generatedAt": "2026-09-30T01:04:48.963Z",
+  "total": 5701,
   "summary": {
-    "needsReview": 3852,
+    "needsReview": 3849,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2600,
+    "uncategorized": 2598,
     "uncategorizedRatePct": 45.6,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,14 +15,14 @@
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2600,
-    "dev": 1895,
+    "misc": 2598,
+    "dev": 1894,
     "search": 757,
     "files": 254,
     "ai": 209,
     "comms": 187,
     "database": 169,
-    "commerce": 161,
+    "commerce": 162,
     "cloud": 133,
     "browser": 120,
     "marketing": 78
@@ -30,7 +30,7 @@
   "topicCounts": {
     "design-media": 292,
     "automation": 189,
-    "finance": 189,
+    "finance": 188,
     "observability": 117,
     "legal": 91,
     "mcp-infrastructure": 87,
@@ -48,7 +48,7 @@
     },
     {
       "term": "query",
-      "count": 241
+      "count": 242
     },
     {
       "term": "platform-hosted",
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 112
+      "count": 111
     },
     {
       "term": "memory",
@@ -88,11 +88,11 @@
     },
     {
       "term": "read",
-      "count": 104
+      "count": 105
     },
     {
       "term": "local",
-      "count": 101
+      "count": 100
     },
     {
       "term": "manage",
@@ -107,16 +107,16 @@
       "count": 92
     },
     {
+      "term": "live",
+      "count": 90
+    },
+    {
       "term": "over",
       "count": 90
     },
     {
-      "term": "live",
-      "count": 89
-    },
-    {
       "term": "read-only",
-      "count": 86
+      "count": 85
     },
     {
       "term": "pipeworx-io",
@@ -139,15 +139,15 @@
       "count": 69
     },
     {
-      "term": "audit",
-      "count": 65
-    },
-    {
       "term": "tasks",
       "count": 65
     },
     {
       "term": "across",
+      "count": 64
+    },
+    {
+      "term": "audit",
       "count": 64
     },
     {
@@ -224,18 +224,18 @@
     },
     {
       "term": "verify",
-      "count": 43
+      "count": 42
     },
     {
       "term": "find",
       "count": 40
     },
     {
-      "term": "review",
-      "count": 39
+      "term": "shared",
+      "count": 40
     },
     {
-      "term": "shared",
+      "term": "review",
       "count": 39
     },
     {
@@ -2258,7 +2258,7 @@
       "name": "co.yungle/yungle",
       "confidence": 0.35,
       "topics": [],
-      "description": "Ask about your Yungle transfers, share files as links, approve every send. Hosted or local."
+      "description": "Ask about your Yungle transfers, share big files, download what you're sent. Approve every send."
     },
     {
       "slug": "coach-marian-eng-leadership-toolkit",
@@ -2966,13 +2966,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Create and drive KanbanThing kanban boards. No account, no API key, board link required."
-    },
-    {
-      "slug": "com-kenwea-www-marketplace",
-      "name": "com.kenwea.www/marketplace",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Third-party sandbox verdict on any artifact in one call, no account. Also an agent marketplace."
     },
     {
       "slug": "com-kenxcomp-kenotex-mcp",
@@ -5247,7 +5240,7 @@
       "name": "io.github.baalimago/slivingdoc",
       "confidence": 0.35,
       "topics": [],
-      "description": "Share ordinary text files between concurrent agents without silently overwriting edits."
+      "description": "Durable context for agents and people: shared notes with Git-style merges, no silent overwrites."
     },
     {
       "slug": "io-github-bailinghub-bailinghub-governance",
@@ -5999,13 +5992,6 @@
       "description": "Free stdio bridge to Delx Protocol: resume after compaction, warm handoff, recover. No API key."
     },
     {
-      "slug": "io-github-davidmosiah-delx-protocol",
-      "name": "io.github.davidmosiah/delx-protocol",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Free agent continuity MCP: resume after compaction, warm handoff, recover from failure. No key."
-    },
-    {
       "slug": "io-github-davidpivert-ara-rgaa-mcp",
       "name": "io.github.DavidPivert/ara-rgaa-mcp",
       "confidence": 0.35,
@@ -6346,7 +6332,7 @@
       "name": "io.github.erayendes/asc-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Every App Store Connect + StoreKit 2 endpoint. 890 tools in 13 profiles, narrow to 27."
+      "description": "Every App Store Connect + StoreKit 2 endpoint. 895 tools in 13 profiles, narrow to 27."
     },
     {
       "slug": "io-github-eshller-ltd-mcp",
@@ -10882,7 +10868,7 @@
       "name": "io.github.ogasurfproject-jpg/jidec",
       "confidence": 0.35,
       "topics": [],
-      "description": "Cite and independently verify Bitcoin-anchored construction-estimate audit records."
+      "description": "Read agents' Bitcoin-anchored conduct history (NENRIN) and cite and recompute ledger records."
     },
     {
       "slug": "io-github-omniologynow-rgb-mcp-server",
@@ -14875,6 +14861,13 @@
       "description": "Embed an AI chat widget on your website from your coding agent: provision, configure, get snippet."
     },
     {
+      "slug": "cloud-dchub-mcp-server",
+      "name": "cloud.dchub/mcp-server",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Live power, grid, gas, fiber + data-center capacity to buy or lease in kW/MW — query and cite."
+    },
+    {
       "slug": "com-a2a2p-a2a2p",
       "name": "com.a2a2p/a2a2p",
       "confidence": 0.45,
@@ -14886,7 +14879,7 @@
       "name": "com.predictionmarketspicks/quant",
       "confidence": 0.45,
       "topics": [],
-      "description": "32 quant tools. Kalshi 15-minute markets and perps, NFL props, Fed odds — free, no key."
+      "description": "33 quant tools. Kalshi 15-minute markets and perps, NFL props, NHL, Fed odds — free, no key."
     },
     {
       "slug": "io-github-0rkz-byte-protocol",
@@ -15628,7 +15621,7 @@
       "name": "io.github.blackwell-systems/agent-lsp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Orchestrates language servers into 65 code-intelligence tools across 31 languages, token-optimized."
+      "description": "Orchestrates language servers into 65 code-intelligence tools across 32 languages, token-optimized."
     },
     {
       "slug": "io-github-blite-hq-qnexus-mcp",
@@ -15874,13 +15867,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Turns a feature description into a verified 9-file PRD — multi-judge consensus, 17 MCP tools."
-    },
-    {
-      "slug": "io-github-cgdev2019-comparefairly-mcp",
-      "name": "io.github.cgdev2019/comparefairly-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Neutral, sourced, real-time comparisons on any topic, in 32 languages."
     },
     {
       "slug": "io-github-cgseyhan-architectos",
@@ -17560,7 +17546,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 515 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 520 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -18267,7 +18253,7 @@
       "name": "io.github.juan-sibbo/gam-seller-mcp-node",
       "confidence": 0.45,
       "topics": [],
-      "description": "Governed, read-only MCP server exposing Google Ad Manager inventory discovery to buyer agents"
+      "description": "Governed MCP seller node: buyer agents discover inventory and register intents; no ad-server writes"
     },
     {
       "slug": "io-github-judgment-pack-judgment-pack",
@@ -21669,7 +21655,7 @@
       "name": "net.crawlora/crawlora-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Hosted MCP: 3122 structured web-data tools across 420 platform groups."
+      "description": "Hosted MCP: 3209 structured web-data tools across 438 platform groups."
     },
     {
       "slug": "ru-layero-layero",
@@ -22401,15 +22387,6 @@
         "legal"
       ],
       "description": "1M+ Swiss court decisions, statutes & doctrine with citation graph (DE/FR/IT). CC0, free, 42 tools."
-    },
-    {
-      "slug": "cloud-dchub-mcp-server",
-      "name": "cloud.dchub/mcp-server",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Live power, energy, grid, gas, fiber + off-market data-center capacity in kW/MW — query and cite."
     },
     {
       "slug": "co-policyforge-mcp",
@@ -24060,7 +24037,7 @@
       "topics": [
         "legal"
       ],
-      "description": "Keyless-first MCP: 152 tools for US federal + state/local (SLED) contracting, spending & regulation"
+      "description": "Keyless-first MCP: 153 tools for US federal + state/local (SLED) contracting, spending & regulation"
     },
     {
       "slug": "io-github-codeofaxel-kiln",
