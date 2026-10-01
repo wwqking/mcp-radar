@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-09-30T01:04:48.963Z",
-  "total": 5701,
+  "generatedAt": "2026-10-01T01:06:43.842Z",
+  "total": 5697,
   "summary": {
-    "needsReview": 3849,
+    "needsReview": 3845,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2598,
-    "uncategorizedRatePct": 45.6,
+    "uncategorized": 2594,
+    "uncategorizedRatePct": 45.5,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
   },
   "alerts": [
-    "待归类占比 45.6%，超过 5% 审核线",
+    "待归类占比 45.5%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2598,
+    "misc": 2594,
     "dev": 1894,
     "search": 757,
-    "files": 254,
+    "files": 256,
     "ai": 209,
-    "comms": 187,
+    "comms": 186,
     "database": 169,
     "commerce": 162,
     "cloud": 133,
@@ -28,10 +28,10 @@
     "marketing": 78
   },
   "topicCounts": {
-    "design-media": 292,
-    "automation": 189,
+    "design-media": 293,
+    "automation": 188,
     "finance": 188,
-    "observability": 117,
+    "observability": 118,
     "legal": 91,
     "mcp-infrastructure": 87,
     "visualization": 64,
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 111
+      "count": 112
     },
     {
       "term": "memory",
@@ -115,11 +115,11 @@
       "count": 90
     },
     {
-      "term": "read-only",
-      "count": 85
+      "term": "pipeworx-io",
+      "count": 83
     },
     {
-      "term": "pipeworx-io",
+      "term": "read-only",
       "count": 83
     },
     {
@@ -136,7 +136,7 @@
     },
     {
       "term": "x402",
-      "count": 69
+      "count": 68
     },
     {
       "term": "tasks",
@@ -159,15 +159,15 @@
       "count": 59
     },
     {
-      "term": "real",
-      "count": 59
-    },
-    {
       "term": "analysis",
       "count": 56
     },
     {
       "term": "local-first",
+      "count": 56
+    },
+    {
+      "term": "real",
       "count": 56
     },
     {
@@ -179,12 +179,12 @@
       "count": 54
     },
     {
-      "term": "before",
+      "term": "evidence",
       "count": 52
     },
     {
-      "term": "evidence",
-      "count": 52
+      "term": "before",
+      "count": 51
     },
     {
       "term": "intelligence",
@@ -192,15 +192,15 @@
     },
     {
       "term": "usdc",
-      "count": 50
-    },
-    {
-      "term": "every",
       "count": 49
     },
     {
-      "term": "analytics",
+      "term": "every",
       "count": 48
+    },
+    {
+      "term": "analytics",
+      "count": 47
     },
     {
       "term": "certificate",
@@ -212,11 +212,11 @@
     },
     {
       "term": "plus",
-      "count": 45
+      "count": 44
     },
     {
       "term": "security",
-      "count": 43
+      "count": 44
     },
     {
       "term": "vehicle",
@@ -886,7 +886,7 @@
       "name": "ai.nauro/nauro",
       "confidence": 0.35,
       "topics": [],
-      "description": "What every agent should know"
+      "description": "Decision system for software built with AI"
     },
     {
       "slug": "ai-nefesh-human-state",
@@ -2020,7 +2020,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 75 tools."
+      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 77 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -4494,13 +4494,6 @@
       "description": "Private signed AI task receipts with replay checks and optional validated AIPOU claims."
     },
     {
-      "slug": "io-github-0xfreak0-sui-mcp",
-      "name": "io.github.0xfreak0/sui-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read-only Sui analytics: 76 tools, protocol-aware tx decoding, no API keys or wallet."
-    },
-    {
       "slug": "io-github-0xvibly-hackmyip-mcp",
       "name": "io.github.0xvibly/hackmyip-mcp",
       "confidence": 0.35,
@@ -4869,7 +4862,7 @@
       "name": "io.github.aleksUIX/vastlint",
       "confidence": 0.35,
       "topics": [],
-      "description": "Validate VAST, VMAP, and DAAST ad tags against IAB specs. 232 rules, pure Rust core."
+      "description": "Validate VAST, VMAP, and DAAST ad tags against IAB specs. 235 rules, pure Rust core."
     },
     {
       "slug": "io-github-alex88ryabov-ng-token-saver",
@@ -6277,27 +6270,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Server operations MCP: HTTP health checks, log analysis, deploy dry-runs, mail diagnostics."
-    },
-    {
-      "slug": "io-github-encodi-simulate-monte-carlo",
-      "name": "io.github.encodi/simulate-monte-carlo",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Real Monte Carlo simulation of a compound event/conditional probability. Paid via x402."
-    },
-    {
-      "slug": "io-github-encodi-validar-codigo-medico",
-      "name": "io.github.encodi/validar-codigo-medico",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Validates ICD-10-CM against the real FY2026 catalog (NCHS/CDC) and CPT by structure/category."
-    },
-    {
-      "slug": "io-github-encodi-validar-semver",
-      "name": "io.github.encodi/validar-semver",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Resolves real semver range satisfaction (^1.2.3, ~2.0) against a version. Paid via x402/USDC."
     },
     {
       "slug": "io-github-enterpilot-gomodel",
@@ -7767,7 +7739,7 @@
       "name": "io.github.matiasmaquieira96/risk-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Company data for Spain, France, the UK, Ireland, Poland and Norway — registry, KYB and sanctions."
+      "description": "Company data: Spain, France, UK, Ireland, Poland, Norway, Finland, Sweden, Croatia, Belgium, Denmark"
     },
     {
       "slug": "io-github-matrodrigs-shotcut-mcp",
@@ -11232,7 +11204,7 @@
       "name": "io.github.pipeworx-io/fac",
       "confidence": 0.35,
       "topics": [],
-      "description": "Federal Audit Clearinghouse (FAC) MCP — US single-audit data."
+      "description": "Federal Audit Clearinghouse (FAC) MCP — US single-audit data, served from a"
     },
     {
       "slug": "io-github-pipeworx-io-fcc-ecfs",
@@ -11771,7 +11743,7 @@
       "name": "io.github.proplineapi/propline-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live odds, cross-book +EV and graded player-prop results across 27 books. Hosted endpoint included."
+      "description": "Live odds, cross-book +EV and graded player-prop results across 32 books. Hosted endpoint included."
     },
     {
       "slug": "io-github-proventools-proventools",
@@ -13990,7 +13962,7 @@
       "name": "io.seaworthy/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Disability insurance MCP: a quote_request action plus carrier and coverage research tools."
+      "description": "Disability insurance MCP server with occupation-based estimates, research, and quote requests."
     },
     {
       "slug": "io-socialrobot-socialrobot-mcp",
@@ -16972,7 +16944,7 @@
       "name": "io.github.eltociear/skill-audit-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Scan agent skills and MCP servers for malicious patterns before you load them"
+      "description": "MCP server: static security scanner for MCP servers, agent skills & plugins. 17 attack patterns."
     },
     {
       "slug": "io-github-emergent-wisdom-semahash",
@@ -17455,7 +17427,7 @@
       "name": "io.github.gblinproject/gblin-treasury-risk-regime",
       "confidence": 0.45,
       "topics": [],
-      "description": "Risk regime + treasury for AI agents on Base: free regime reads, signed attestations, idle USDC."
+      "description": "GBLIN on Base for AI agents: risk regime, treasury plan for idle USDC, mint and redeem at NAV. Free."
     },
     {
       "slug": "io-github-georgeracu-google-jules-mcp-server",
@@ -17546,7 +17518,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 520 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 525 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -20139,6 +20111,13 @@
       "description": "Run long shell commands as background tasks: start them, keep working, collect the results later"
     },
     {
+      "slug": "io-github-romudille-bit-agentpay",
+      "name": "io.github.romudille-bit/agentpay",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Buyer-side trust oracle + capped sessions for x402 agents: verified_route, receipts, 17 free tools."
+    },
+    {
       "slug": "io-github-ronniechong-healthchecks-io-mcp",
       "name": "io.github.ronniechong/healthchecks-io-mcp",
       "confidence": 0.45,
@@ -20949,13 +20928,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Official US data for AI agents: CPI inflation since 1913, famous prices, national debt since 1790."
-    },
-    {
-      "slug": "io-github-sypherin-altronis-mcp",
-      "name": "io.github.sypherin/altronis-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Ask the Altronis AI advisor: grant-matched AI plans, SG AI events, news, ecosystem data. Read-only."
     },
     {
       "slug": "io-github-sypherin-sgdata-mcp",
@@ -22471,15 +22443,6 @@
       "description": "Turn your AI host into a product videographer: scripted app demos, voice-over, captions, MP4/GIF."
     },
     {
-      "slug": "com-aisenseapi-free-public-tools",
-      "name": "com.aisenseapi/free-public-tools",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "32 public tools for queues, inboxes, webhooks, approvals, DNS names and temporary workflows."
-    },
-    {
       "slug": "com-blixtworks-www-tools",
       "name": "com.blixtworks.www/tools",
       "confidence": 0.55,
@@ -23303,6 +23266,15 @@
         "finance"
       ],
       "description": "AI-native ERP MCP: ES/EU fiscal compliance (VeriFactu/TicketBAI/Facturae), invoicing, tax, banking"
+    },
+    {
+      "slug": "io-github-0xfreak0-sui-mcp",
+      "name": "io.github.0xfreak0/sui-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "observability"
+      ],
+      "description": "Read-only Sui analytics: fund tracing, protocol-aware tx decoding, no API keys or wallet."
     },
     {
       "slug": "io-github-4da-systems-4da-mcp-server",
@@ -26396,7 +26368,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "A real timeline video editor for AI agents: journaled edits, FFmpeg/MLT rendering, exports"
+      "description": "Orccut: a real timeline video editor for AI agents - journaled edits, FFmpeg/MLT rendering"
     },
     {
       "slug": "io-github-mutonby-openshorts",
