@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-02",
   "entries": {
     "modelcontextprotocol-server-filesystem": {
       "source": "curated",
@@ -1515,7 +1515,9 @@
     "ai-forkmate-forkmate": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "ai-foura-mcp": {
       "source": "registry",
@@ -11610,7 +11612,9 @@
     "dev-mcpfinder-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "dev-mcpgrade-mcp": {
       "source": "registry",
@@ -15737,7 +15741,9 @@
     "io-github-bentleysystems-openstaad-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-beppetemp-cartographer": {
       "source": "registry",
@@ -25978,9 +25984,7 @@
     "io-github-oxygenbubbles-freeagent-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0,
-      "lastEnrichmentAttemptAt": "2026-08-07",
-      "enrichmentAttempts": 1
+      "missingRuns": 1
     },
     "io-github-ozorown-frostbyte": {
       "source": "registry",
@@ -29284,7 +29288,9 @@
     "io-github-synter-media-ai-synter-ads": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-synvoya-codeinspectus": {
       "source": "registry",
@@ -35242,7 +35248,9 @@
     "io-github-bch1212-modelwatch": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-bch1212-outdooriq-mcp": {
       "source": "registry",
@@ -39437,7 +39445,9 @@
     "io-github-corply-dev-corply": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-corporatelad-promptscan": {
       "source": "registry",
@@ -48577,7 +48587,9 @@
     "io-github-hshintelligence-data-on-demand": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-hslee16-archy": {
       "source": "registry",
@@ -52486,22 +52498,30 @@
     "io-github-keshrath-agent-comm": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-keshrath-agent-discover": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-keshrath-agent-knowledge": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-keshrath-agent-tasks": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-kesslerio-attio-mcp-server": {
       "source": "registry",
@@ -53161,7 +53181,9 @@
     "io-github-kubeshop-testkube-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-kuhumcst-dannet": {
       "source": "registry",
@@ -55876,7 +55898,9 @@
     "io-github-marian-kamenistak-elc-conference-mcp-tickets": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-marianfoo-arc-1": {
       "source": "registry",
@@ -61184,7 +61208,9 @@
     "io-github-nublson-purl": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-nubo-db-dynoxide": {
       "source": "registry",
@@ -62500,7 +62526,9 @@
     "io-github-paradoxsyn-rivemcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-paragraflabs-at-ris-mcp": {
       "source": "registry",
@@ -62858,7 +62886,9 @@
     "io-github-pedra-ai-pedra-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-pedro-rivas-android-puppeteer-mcp": {
       "source": "registry",
@@ -85651,7 +85681,9 @@
     "io-nowline-nowline": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-obsideo-mcp": {
       "source": "registry",
@@ -86019,7 +86051,9 @@
     "io-stuntdouble-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-07-28",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-summit53-mcp-server": {
       "source": "registry",
@@ -127596,7 +127630,9 @@
     "com-contracko-contracko": {
       "source": "registry",
       "lastSeenAt": "2026-09-06",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "com-conveyancingfeesaustralia-site": {
       "source": "registry",
@@ -129306,7 +129342,9 @@
     "io-github-jerryliu369-agent-web-search": {
       "source": "registry",
       "lastSeenAt": "2026-09-06",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-khavel-futpicks": {
       "source": "registry",
@@ -129577,7 +129615,9 @@
     "io-github-markup-carve-carve-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-06",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-maskflow-mcp": {
       "source": "registry",
@@ -160617,7 +160657,9 @@
     "com-pack4back-nutrition": {
       "source": "registry",
       "lastSeenAt": "2026-09-22",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "com-rcs-campaigns-campaigns": {
       "source": "registry",
@@ -160940,7 +160982,9 @@
     "io-github-gowrishankar-infra-sabline": {
       "source": "registry",
       "lastSeenAt": "2026-09-22",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-gpambrozio-onshape": {
       "source": "registry",
@@ -161103,7 +161147,9 @@
     "io-github-mrfentmen-arbeitnow-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-22",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-archive-org-mcp": {
       "source": "registry",
@@ -165441,7 +165487,9 @@
     "io-github-mrfentmen-arweave-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-22",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-beehiiv-mcp": {
       "source": "registry",
@@ -165743,7 +165791,9 @@
     "io-github-mrfentmen-mailgun-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-22",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-mailjet-mcp": {
       "source": "registry",
@@ -165824,7 +165874,9 @@
     "io-github-mrfentmen-pinata-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-22",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-pocketbase-mcp": {
       "source": "registry",
@@ -168698,7 +168750,9 @@
     "io-github-gtovtya-b2bleads-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-iwaohig-lineworks-ainote-mcp": {
       "source": "registry",
@@ -168743,12 +168797,16 @@
     "io-github-mrfentmen-aimeleondore-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-appveyor-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-balenciaga-mcp": {
       "source": "registry",
@@ -168778,7 +168836,9 @@
     "io-github-mrfentmen-cgtrader-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-chanel-mcp": {
       "source": "registry",
@@ -168868,12 +168928,16 @@
     "io-github-mrfentmen-isbndb-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-kith-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-kopia-mcp": {
       "source": "registry",
@@ -168898,7 +168962,9 @@
     "io-github-mrfentmen-playcanvas-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-prada-mcp": {
       "source": "registry",
@@ -168918,7 +168984,9 @@
     "io-github-mrfentmen-quip-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-rolex-mcp": {
       "source": "registry",
@@ -168943,7 +169011,9 @@
     "io-github-mrfentmen-shootproof-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-simplecast-mcp": {
       "source": "registry",
@@ -168953,7 +169023,9 @@
     "io-github-mrfentmen-spreaker-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-stadiumgoods-mcp": {
       "source": "registry",
@@ -168983,12 +169055,16 @@
     "io-github-mrfentmen-traxnyc-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-turbosquid-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mrfentmen-wpengine-mcp": {
       "source": "registry",
@@ -169444,7 +169520,9 @@
     "io-github-zhitongblog-solomd": {
       "source": "registry",
       "lastSeenAt": "2026-09-25",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-znecho9-knowledge-forest-mcp": {
       "source": "registry",
@@ -169849,7 +169927,9 @@
     "io-github-sylphxai-lockdocs": {
       "source": "registry",
       "lastSeenAt": "2026-09-26",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-sylphxai-repomap": {
       "source": "registry",
@@ -170740,7 +170820,9 @@
     "io-github-silamir-boondmanager-mcp-server": {
       "source": "registry",
       "lastSeenAt": "2026-09-26",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-soheil1lotfi-swiss-grounding-mcp": {
       "source": "registry",
@@ -171611,7 +171693,9 @@
     "io-github-damejeras-agentchan": {
       "source": "registry",
       "lastSeenAt": "2026-09-27",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-devicorn-cmskite-mcp": {
       "source": "registry",
@@ -174307,7 +174391,9 @@
     "io-github-popcraft-ai-popcraft-mcp": {
       "source": "registry",
       "lastSeenAt": "2026-09-29",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-privadovpn-x402-mcp": {
       "source": "registry",
@@ -174667,7 +174753,9 @@
     "com-qorpiq-mca": {
       "source": "registry",
       "lastSeenAt": "2026-09-30",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "com-sebastienrousseau-passmcp-server": {
       "source": "registry",
@@ -174719,7 +174807,9 @@
     "com-uicapsule-components": {
       "source": "registry",
       "lastSeenAt": "2026-09-30",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "com-unipile-unipile-mcp": {
       "source": "registry",
@@ -174827,7 +174917,9 @@
     "io-github-codewever-wever-labs-products": {
       "source": "registry",
       "lastSeenAt": "2026-09-30",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-dmontgomery40-bambu-printer-mcp": {
       "source": "registry",
@@ -175201,7 +175293,9 @@
     "io-github-jmshinhwa-auftragsverarbeitung-avv-lint": {
       "source": "registry",
       "lastSeenAt": "2026-09-30",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-jmshinhwa-gerichtskosten-tabelle-lint": {
       "source": "registry",
@@ -175290,7 +175384,9 @@
     "io-github-mthburnsbarber-web-business-site-audit": {
       "source": "registry",
       "lastSeenAt": "2026-09-30",
-      "missingRuns": 0
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
     },
     "io-github-mzizi-dev-mzizi-mcp": {
       "source": "registry",
@@ -177581,6 +177677,1413 @@
       "lastSeenAt": "2026-10-01",
       "missingRuns": 0,
       "lastEnrichmentAttemptAt": "2026-10-01",
+      "enrichmentAttempts": 1
+    },
+    "ai-openswitchboard-switchboard": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "ai-yokka-yokka": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "app-allagents-directory": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "app-postel-postel": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "app-ridgehq-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "app-trvlrr-trvlrr": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "click-findyourrolefirst-jobfeed": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "cloud-verifi-human-verification": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "cn-mackorn-mackorn-cone-crusher": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "co-datummarket-datum-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-agenttoolworks-storecatalog": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-deepsearch-x402-korean-stocks": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-evaboot-evaboot": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-flat-hunt-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-flownato-flownato-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-getbillwatchdog-billwatch": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-kreatormesh-kreatormesh": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-launchdistro-launchdistro-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-mambabuilt-mcp-expert-witness-directory": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-mandarelabs-mandare": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-nodajimarket-catalog": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-offlineprotocol-cli": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-pumpgtm-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-themarginapp-the-margin": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-themineworks-recruiting-jobs-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-usebondery-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "com-wpimagefixer-images": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "dev-flatmark-markdown-converter": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "dev-invowerk-xrechnung-e-invoice-validator": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "dev-plugrail-jp-recall": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "dev-stuga-stuga": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-camberstack-google-ads": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-bquantfinance-catalogo-fuentes-publicas": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-christofer566-technical-answer-validator": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-datura-ai-lium-docs": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-desearch-ai-mcp-desearch": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-edge-echo-mcp-netassist": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-hellotravisss-agentpay": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-hugegreencandle-evernode-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-jerryyangai-taoyuan-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-joe-simo-a0": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-julianjohansen-eu-pii-redact": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-lory97-tag-per-track-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-lukefen31-imagic": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mauriziolisanti-fatturapa-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-nicklim123-switchboard-finance": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oxtof-watchdog-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-rixtayz-mail-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-rostislavmatov-mcpcut": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-shimabeigi-delhaize-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-softinator-techlabs-feedbacks": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tibsp-startmining-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tamerlan0606-workmine": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-techmap-job-postings": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-techventures-studio-httrack-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-voicescapee-voicescape": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-alexcgodwin-cloud-devops-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-alexchouck-hash-veabird": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-alexclmy-groki-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-alialtunar-hn-hiring-trends-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-alialtunar-model-price-radar-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-alialtunar-pricing-time-machine-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-alialtunar-review-miner-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-alipishbin77-aether": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-anilyesilkaya-marey": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-avivkeller-umd-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-blaze-apps-appdrift": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-bourhaouta-tailwindshades": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-bret1976-prior": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-contextq-contextq-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-art-institute-chicago-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-cern-inspire-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-cern-opendata-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-elevation-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-faa-traffic-delays-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-fcc-spectrum-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-geonames-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-iana-registries-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-oeis-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-uk-police-crime-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-cyanheads-unesco-heritage-mcp-server": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-damejeras-agentgrasp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-dawestheperson-kronos": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-dg314-videogen": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-elie222-inbox-zero": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-everyai-com-festival-finder": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-everyai-com-invoice-gen": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-everyai-com-sahadeva": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-formbaseso-formbase-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-furoito-japan-physical-capability": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-gatoprd-bounty-engineer": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-impowerdlifestyle-code-cited-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-inde-x-papersprocket": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-intended-so-intended": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-journelyme-journely-markets": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-krax1337-mcp-server-zenmoney": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-kyliemckinleydemo-sec-filing-analyzer": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-lbesecker195-mcp-registry-search-directory": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-lbruce-wq-development-indicators": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-lbruce-wq-international-classifications": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-marcorusc-biomass": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-masamoto1982-ajisai": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mglbagi-agent-output-verifier": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-adguardhome-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-alphavantage-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-ashby-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-checkly-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-google-books-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-invoice-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-lemonsqueezy-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-linear-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-mobygames-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-ns-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-omdb-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-onesignal-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-openrouteservice-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-plaid-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-plain-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-producthunt-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-pusher-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-rawg-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-rollbar-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-uptimerobot-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mrfentmen-wayback-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-mxstage-mxstage": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-nightswatchhq-nuthatch": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-niklas-schmidt-dev-mobdev": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-nitishagar-lumen": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-noah-silver-agentpay-bundle": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-noah-silver-agentpay-extract": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-noah-silver-agentpay-lookup": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-noah-silver-agentpay-tools": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-notiqo-app-notiqo": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oceanmodeling-adcirc-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oceanmodeling-erddap-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oceanmodeling-goes-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oceanmodeling-nhc-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oceanmodeling-ofs-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oceanmodeling-recon-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oceanmodeling-schism-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oceanmodeling-stofs-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oceanmodeling-usgs-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-oceanmodeling-ww3-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-open-mtor-atlas-mtor-atlas": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-parasxos-postbag": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-probe402-probe402-check": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-projectworks007-events-data": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-projectworks007-news-and-trends": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-rico-realistick-mara-briefings": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-robyroro-personamcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-robyroro-romania-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-seinun-ai-maestro-career-studio": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-seungmiyoon-korean-tax-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-simonplmak-cloud-esg-hub": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-skeptrunedev-call4me": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-ssap-pa-feedback-memory": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-sus-tech-gmbh-matrix42-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-szl-holdings-hatun-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-thedaviddias-front-end-checklist": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-thefedoration-moonscroll": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-thejaredchapman-evalforge-lite": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-thinkfiveable-fiveable-ap-teachers": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tidytools-tidytools-apify-tools": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-trhonpavel-medusa-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-agent-skill-audit-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-backtest-cost-sensitivity-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-broker-advisor-check-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-dockerfile-audit-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-econ-calendar-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-gig-tax-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-github-actions-audit-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-ledgeriq-1099-w2-compliance": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-ledgeriq-depreciation": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-ledgeriq-entity-structure": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-ledgeriq-financial-ratios": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-ledgeriq-journal-entries": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-mcp-trust-audit-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-montecarlo-validator-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-npm-supply-chain-audit-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-overfitting-audit-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-pii-redactor-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-pinescript-audit-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-pinescript-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-prop-rules-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-reseller-fees-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-secrets-leak-audit-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-tylerscomic-lab-walkforward-validator-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-wathba-org-wathba": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-withwrit-writ": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-zebbern-hacktricks-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "io-github-zz-plant-ambit": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "live-hkracing-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "net-aivideocheck-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "nl-scamchecker-scamchecker": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "pro-worldly-klar": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "sh-rowsafe-rowsafe": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "site-crawlwise-crawlwise": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "sr-rush-lap-analyzer": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "sr-rush-maintenance": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "uk-co-qaimos-storeshots-storeshots": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
+      "enrichmentAttempts": 1
+    },
+    "xyz-blazephoenix-mcp": {
+      "source": "registry",
+      "lastSeenAt": "2026-10-02",
+      "missingRuns": 0,
+      "lastEnrichmentAttemptAt": "2026-10-02",
       "enrichmentAttempts": 1
     }
   }

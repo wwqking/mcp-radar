@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-01T01:06:43.842Z",
+  "generatedAt": "2026-10-02T01:22:32.685Z",
   "total": 5697,
   "summary": {
-    "needsReview": 3845,
+    "needsReview": 3844,
     "needsReviewRatePct": 67.5,
     "uncategorized": 2594,
     "uncategorizedRatePct": 45.5,
@@ -17,10 +17,10 @@
   "categoryCounts": {
     "misc": 2594,
     "dev": 1894,
-    "search": 757,
+    "search": 758,
     "files": 256,
     "ai": 209,
-    "comms": 186,
+    "comms": 187,
     "database": 169,
     "commerce": 162,
     "cloud": 133,
@@ -29,15 +29,15 @@
   },
   "topicCounts": {
     "design-media": 293,
+    "finance": 189,
     "automation": 188,
-    "finance": 188,
     "observability": 118,
     "legal": 91,
     "mcp-infrastructure": 87,
     "visualization": 64,
     "science-health": 32,
     "security": 29,
-    "data-analysis": 26,
+    "data-analysis": 25,
     "game-development": 24,
     "iot-robotics": 15
   },
@@ -2020,7 +2020,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 77 tools."
+      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 84 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -2895,7 +2895,7 @@
       "name": "com.hemmabo/hemmabo-mcp-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "Host-owned vacation-rental direct booking via VRP. Signed offers, 0% commission. Not an OTA."
+      "description": "6 runtime tools: 2 HemmaBo tools, 2 host onboarding tools, and 2 VRP verification tools. Not an OTA."
     },
     {
       "slug": "com-ifttt-mcp",
@@ -5247,7 +5247,7 @@
       "name": "io.github.bardesss/arr-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One server, 38 tools, the whole media stack: Radarr, Sonarr, Prowlarr, Bazarr, Jellyfin, Seerr"
+      "description": "One server, 38 tools, the whole media stack: the *arrs, Jellyfin, Plex, Seerr and download clients"
     },
     {
       "slug": "io-github-barglabs-cejel",
@@ -14648,7 +14648,7 @@
       "name": "store.scvd/general-store",
       "confidence": 0.35,
       "topics": [],
-      "description": "Evidence observatory for agentic commerce: x402 preflight, receipt checks, settlement attestations."
+      "description": "Evidence observatory: x402/MPP inspection, signed receipt checks and settlement attestations."
     },
     {
       "slug": "store-scvd-tab",
@@ -17518,7 +17518,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 525 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 530 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -23599,7 +23599,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "MCP server for Adobe Photoshop — 122 tools (generative AI + recipes), standalone web UI. Control Ph…"
+      "description": "MCP server for Adobe Photoshop — 127 tools (generative AI + recipes), standalone web UI. Control Ph…"
     },
     {
       "slug": "io-github-alphasmo-alphasmo-tools",
@@ -24985,15 +24985,6 @@
         "finance"
       ],
       "description": "Estonian e-arveldaja (RIK e-Financials) accounting — invoices, bank import, reports."
-    },
-    {
-      "slug": "io-github-its-fortunatefolly-hubvibe",
-      "name": "io.github.Its-fortunatefolly/hubvibe",
-      "confidence": 0.55,
-      "topics": [
-        "data-analysis"
-      ],
-      "description": "Pay per call via HTTP 402: 5 site audits + 65 /work jobs as MCP tools and A2A skills, receipts"
     },
     {
       "slug": "io-github-j7an-nexus-mcp",
