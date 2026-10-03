@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-02T01:22:32.685Z",
+  "generatedAt": "2026-10-03T00:58:32.986Z",
   "total": 5697,
   "summary": {
     "needsReview": 3844,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2594,
+    "uncategorized": 2593,
     "uncategorizedRatePct": 45.5,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,9 +15,9 @@
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2594,
+    "misc": 2593,
     "dev": 1894,
-    "search": 758,
+    "search": 759,
     "files": 256,
     "ai": 209,
     "comms": 187,
@@ -25,20 +25,20 @@
     "commerce": 162,
     "cloud": 133,
     "browser": 120,
-    "marketing": 78
+    "marketing": 79
   },
   "topicCounts": {
     "design-media": 293,
-    "finance": 189,
+    "finance": 190,
     "automation": 188,
     "observability": 118,
-    "legal": 91,
-    "mcp-infrastructure": 87,
+    "legal": 92,
+    "mcp-infrastructure": 88,
     "visualization": 64,
     "science-health": 32,
     "security": 29,
-    "data-analysis": 25,
     "game-development": 24,
+    "data-analysis": 24,
     "iot-robotics": 15
   },
   "emergingTerms": [
@@ -56,7 +56,7 @@
     },
     {
       "term": "lookup",
-      "count": 217
+      "count": 216
     },
     {
       "term": "official-source",
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 112
+      "count": 113
     },
     {
       "term": "memory",
@@ -104,22 +104,22 @@
     },
     {
       "term": "create",
-      "count": 92
+      "count": 91
+    },
+    {
+      "term": "over",
+      "count": 91
     },
     {
       "term": "live",
       "count": 90
     },
     {
-      "term": "over",
-      "count": 90
+      "term": "read-only",
+      "count": 84
     },
     {
       "term": "pipeworx-io",
-      "count": 83
-    },
-    {
-      "term": "read-only",
       "count": 83
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "term": "company",
-      "count": 79
+      "count": 78
     },
     {
       "term": "checks",
@@ -143,12 +143,12 @@
       "count": 65
     },
     {
-      "term": "across",
+      "term": "audit",
       "count": 64
     },
     {
-      "term": "audit",
-      "count": 64
+      "term": "across",
+      "count": 63
     },
     {
       "term": "check",
@@ -211,12 +211,12 @@
       "count": 46
     },
     {
-      "term": "plus",
+      "term": "security",
       "count": 44
     },
     {
-      "term": "security",
-      "count": 44
+      "term": "plus",
+      "count": 43
     },
     {
       "term": "vehicle",
@@ -235,11 +235,11 @@
       "count": 40
     },
     {
-      "term": "review",
-      "count": 39
+      "term": "apis",
+      "count": 38
     },
     {
-      "term": "apis",
+      "term": "research",
       "count": 38
     }
   ],
@@ -2020,7 +2020,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 84 tools."
+      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 86 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -3906,13 +3906,6 @@
       "description": "Czech & EU due diligence in one call — facts, insolvency, sanctions, VAT, risk score, UBO chain."
     },
     {
-      "slug": "dev-cz-agents-eu-registry",
-      "name": "dev.cz-agents/eu-registry",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "EU company registry lookup across 16 countries incl. Sweden Bolagsverket."
-    },
-    {
       "slug": "dev-districtapi-districtapi-mcp",
       "name": "dev.districtapi/districtapi-mcp",
       "confidence": 0.35,
@@ -4611,13 +4604,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Inspect and safely clean local Xcode, Simulator, and XCTest storage."
-    },
-    {
-      "slug": "io-github-adkit-ads",
-      "name": "io.github.adkit/ads",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Create, launch & analyze ad campaigns, spy on competitors - Google, Meta, TikTok, LinkedIn & more."
     },
     {
       "slug": "io-github-admin-rstechie-leporis-mcp",
@@ -6675,7 +6661,7 @@
       "name": "io.github.hedging8563/tokenlab",
       "confidence": 0.35,
       "topics": [],
-      "description": "TokenLab MCP server: 31 default and 80 full-profile tools for models, media, tasks, and files."
+      "description": "TokenLab MCP server: 32 default and 89 full-profile tools for models, media, tasks, and files."
     },
     {
       "slug": "io-github-heidihelena-citevahti",
@@ -7285,6 +7271,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Split shared expenses in a group — no account needed. See who owes whom and settle up."
+    },
+    {
+      "slug": "io-github-kar-thik-openproject-mcp-server",
+      "name": "io.github.kar-thik/openproject-mcp-server",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "91 tools for the OpenProject API v3, with read-only, admin-gate, profile and per-group switches."
     },
     {
       "slug": "io-github-kaydeep0-geniusflow-federation",
@@ -10812,7 +10805,7 @@
       "name": "io.github.ogasurfproject-jpg/horizon-shield",
       "confidence": 0.35,
       "topics": [],
-      "description": "Fair-price checks for Japanese renovation quotes, plus Japan and US construction cost data."
+      "description": "Fair-price checks for Japanese renovation quotes, with sources and recomputable records."
     },
     {
       "slug": "io-github-ogasurfproject-jpg-horizon-shield-webmcp",
@@ -11806,7 +11799,7 @@
       "name": "io.github.putervision/vision-memory-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Local visual UI cache for AI agents using perceptual hashing + CLIP to cut vision token use."
+      "description": "Local visual UI cache for AI agents using perceptual hashing, CLIP, and 3D spatial grounding."
     },
     {
       "slug": "io-github-pzfreo-build123d-mcp",
@@ -12836,13 +12829,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Symbols.app MCP — docs, code generation, publishing, CLI/SDK reference"
-    },
-    {
-      "slug": "io-github-synopsys0-postfader-fl-studio-mcp",
-      "name": "io.github.synopsys0/postfader-fl-studio-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "FL Studio MCP server: 134 tools for mixing, MIDI, sound selection, production runs, and review."
     },
     {
       "slug": "io-github-synpareia-trust-mcp",
@@ -14851,7 +14837,7 @@
       "name": "com.predictionmarketspicks/quant",
       "confidence": 0.45,
       "topics": [],
-      "description": "33 quant tools. Kalshi 15-minute markets and perps, NFL props, NHL, Fed odds — free, no key."
+      "description": "Free, no key: NFL prop board, Kalshi vs Polymarket gaps, 15-min crypto, Fed odds, NHL, EV/Kelly."
     },
     {
       "slug": "io-github-0rkz-byte-protocol",
@@ -14914,7 +14900,7 @@
       "name": "io.github.5dive-ai/5dive-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Expose the 5dive agent-fleet CLI (tasks, agents, digest) as stdio MCP tools."
+      "description": "Expose the 5dive agent-fleet CLI (tasks, agents, digest) as MCP tools, over stdio or HTTP."
     },
     {
       "slug": "io-github-99blaked99-the-metis-fca-handbook-ai-harness-mcp",
@@ -15608,6 +15594,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Local-first MCP server for safe Ghost authoring, diagnostics, scheduling, and publishing."
+    },
+    {
+      "slug": "io-github-bosmdavid-gif-dropthehassle",
+      "name": "io.github.bosmdavid-gif/dropthehassle",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Your AI puts your site online on a free link with HTTPS. Your own .com later. No token needed."
     },
     {
       "slug": "io-github-botzrdev-dreamd",
@@ -17518,7 +17511,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 530 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 535 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -23032,6 +23025,15 @@
       "description": "Share prototypes as private links clients open without an account, attach specs, read comments."
     },
     {
+      "slug": "dev-cz-agents-eu-registry",
+      "name": "dev.cz-agents/eu-registry",
+      "confidence": 0.55,
+      "topics": [
+        "legal"
+      ],
+      "description": "EU company registry lookup: 16 countries incl. Lithuania (JAR: identity + legal status)."
+    },
+    {
       "slug": "dev-exit1-exit1-mcp",
       "name": "dev.exit1/exit1-mcp",
       "confidence": 0.55,
@@ -24189,7 +24191,7 @@
       "topics": [
         "legal"
       ],
-      "description": "Free access to 3.3M French & EU court decisions + 1.5M law articles w/ history. 31 read-only tools"
+      "description": "MCP jurisprudence française : 3,3 M décisions (Cass, CE, CAA, TA, CEDH, CJUE) + lois à date. Gratuit"
     },
     {
       "slug": "io-github-damianotobasco-sync-socials-agent",
@@ -25167,15 +25169,6 @@
       "description": "License your creative work to AI on your terms, and run your creator business. 46 tools, keyless."
     },
     {
-      "slug": "io-github-kar-thik-openproject-mcp-server",
-      "name": "io.github.kar-thik/openproject-mcp-server",
-      "confidence": 0.55,
-      "topics": [
-        "data-analysis"
-      ],
-      "description": "88 tools for the OpenProject API v3: work packages, attachments, git activity, time, reporting"
-    },
-    {
       "slug": "io-github-kirbah-mcp-youtube",
       "name": "io.github.kirbah/mcp-youtube",
       "confidence": 0.55,
@@ -26094,7 +26087,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Agentic Finance: 500+ agent tools, multi-chain USDC over x402 or MPP, free via PoW or card credits"
+      "description": "Agentic Finance: 500+ agent tools, multi-chain USDC over x402 or MPP, or free via proof-of-work"
     },
     {
       "slug": "io-github-mikkoparkkola-mcp-gateway",
@@ -26966,7 +26959,7 @@
       "topics": [
         "automation"
       ],
-      "description": "Deterministic, persistent graph server for tracking workflow state, decisions, and blockers."
+      "description": "Persistent workflow graph server tracking tasks, decisions, spatial entities, and blockers."
     },
     {
       "slug": "io-github-pzalutski-pixel-godotlens",
@@ -27662,6 +27655,15 @@
         "design-media"
       ],
       "description": "Learns your writing voice from your own prompt history, then makes the model write like that."
+    },
+    {
+      "slug": "io-github-synopsys0-postfader-fl-studio-mcp",
+      "name": "io.github.synopsys0/postfader-fl-studio-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "FL Studio MCP server: read, mix, compose, and edit your open FL Studio project from any MCP client."
     },
     {
       "slug": "io-github-syuaibsyuaib-ssyubix-pixelart-mcp",
