@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-03T00:58:32.986Z",
-  "total": 5697,
+  "generatedAt": "2026-10-04T00:25:09.598Z",
+  "total": 5696,
   "summary": {
-    "needsReview": 3844,
+    "needsReview": 3843,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2593,
+    "uncategorized": 2592,
     "uncategorizedRatePct": 45.5,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,9 +15,9 @@
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2593,
-    "dev": 1894,
-    "search": 759,
+    "misc": 2592,
+    "dev": 1893,
+    "search": 760,
     "files": 256,
     "ai": 209,
     "comms": 187,
@@ -29,7 +29,7 @@
   },
   "topicCounts": {
     "design-media": 293,
-    "finance": 190,
+    "finance": 189,
     "automation": 188,
     "observability": 118,
     "legal": 92,
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 113
+      "count": 114
     },
     {
       "term": "memory",
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 100
+      "count": 101
     },
     {
       "term": "manage",
@@ -107,11 +107,11 @@
       "count": 91
     },
     {
-      "term": "over",
-      "count": 91
+      "term": "live",
+      "count": 90
     },
     {
-      "term": "live",
+      "term": "over",
       "count": 90
     },
     {
@@ -127,12 +127,12 @@
       "count": 81
     },
     {
-      "term": "company",
+      "term": "checks",
       "count": 78
     },
     {
-      "term": "checks",
-      "count": 77
+      "term": "company",
+      "count": 78
     },
     {
       "term": "x402",
@@ -143,16 +143,16 @@
       "count": 65
     },
     {
+      "term": "across",
+      "count": 64
+    },
+    {
       "term": "audit",
       "count": 64
     },
     {
-      "term": "across",
-      "count": 63
-    },
-    {
       "term": "check",
-      "count": 60
+      "count": 61
     },
     {
       "term": "public",
@@ -163,24 +163,24 @@
       "count": 56
     },
     {
-      "term": "local-first",
-      "count": 56
-    },
-    {
-      "term": "real",
-      "count": 56
-    },
-    {
       "term": "status",
       "count": 56
     },
     {
-      "term": "person",
-      "count": 54
+      "term": "local-first",
+      "count": 55
+    },
+    {
+      "term": "real",
+      "count": 55
     },
     {
       "term": "evidence",
-      "count": 52
+      "count": 54
+    },
+    {
+      "term": "person",
+      "count": 54
     },
     {
       "term": "before",
@@ -215,12 +215,12 @@
       "count": 44
     },
     {
-      "term": "plus",
+      "term": "vehicle",
       "count": 43
     },
     {
-      "term": "vehicle",
-      "count": 43
+      "term": "plus",
+      "count": 42
     },
     {
       "term": "verify",
@@ -228,18 +228,18 @@
     },
     {
       "term": "find",
-      "count": 40
+      "count": 41
     },
     {
       "term": "shared",
       "count": 40
     },
     {
-      "term": "apis",
-      "count": 38
+      "term": "review",
+      "count": 39
     },
     {
-      "term": "research",
+      "term": "apis",
       "count": 38
     }
   ],
@@ -3686,7 +3686,7 @@
       "name": "com.tulimoa/platform",
       "confidence": 0.35,
       "topics": [],
-      "description": "Discover curated SaaS and AI-agent tools in the Tulimoa directory; submit and edit your listings."
+      "description": "Find curated AI and MCP tools in the Tulimoa directory; submit yours free with a badge or for $5."
     },
     {
       "slug": "com-twelvepermissions-twelve-permissions",
@@ -3792,13 +3792,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Local stdio MCP bridge for XCREENER's XQL screener API — validate, explain, and run queries."
-    },
-    {
-      "slug": "com-xquik-mcp",
-      "name": "com.xquik/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "128 REST operations. 120 MCP routes; 119 JSON/text ops. OAuth 2.1. Not affiliated with X Corp."
     },
     {
       "slug": "com-xrpldashboard-xrpldashboard-mcp",
@@ -5296,7 +5289,7 @@
       "name": "io.github.beepboop2025/undertow",
       "confidence": 0.35,
       "topics": [],
-      "description": "Daily exit context, depth, tiers, and sealed records. No commodity futures or execution authority."
+      "description": "Dated exit evidence, depth, tiers and gold cash scenarios. No executable quotes or trade authority."
     },
     {
       "slug": "io-github-bekirdag-pigeonpost",
@@ -6164,7 +6157,7 @@
       "name": "io.github.dtkmn/mcp-zap-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "Safe, self-hosted OWASP ZAP operator for guided AI security scans and reports."
+      "description": "Safe, self-hosted ZAP operator for guided AI security scans and reports."
     },
     {
       "slug": "io-github-dv1-321-scalpstream-mcp",
@@ -14606,7 +14599,7 @@
       "name": "sh.releases/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "An agent-friendly API for product changelogs. A unified registry via CLI, API, or MCP."
+      "description": "Release notes and changelogs from across the web, indexed for agents. Also via CLI and REST API."
     },
     {
       "slug": "site-chatgpt-larklaon-one-bad-idea-not-work",
@@ -14942,7 +14935,7 @@
       "name": "io.github.abm9111/chamber",
       "confidence": 0.45,
       "topics": [],
-      "description": "Cited Q&A over your own notes, plus drift detection when a cited source changes. Local-first CLI."
+      "description": "Indexed note: numbers, capitalised names, file names. Local, no model, no meaning check."
     },
     {
       "slug": "io-github-aborruso-ckan-mcp-server",
@@ -16251,7 +16244,7 @@
       "name": "io.github.Craig-Horton/aibvf-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "AI BVF: score AI portfolios Stop/Fix/Accelerate with decision confidence and pace-layer drag."
+      "description": "AI BVF: review AI proposals with Stop, Fix or Accelerate, evidence gaps and next actions."
     },
     {
       "slug": "io-github-creed-space-mettle-mcp",
@@ -17035,7 +17028,7 @@
       "name": "io.github.financeratecalc/frc-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "FHA denial statistics from the 2025 federal HMDA record. 12 tools incl. counterparty screen."
+      "description": "US FHA mortgage denial statistics (2025 federal HMDA record) with claim receipts and use contracts"
     },
     {
       "slug": "io-github-fino-wind-vaultbeat",
@@ -17511,7 +17504,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 535 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 540 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -17945,7 +17938,7 @@
       "name": "io.github.jamhimself/robinx-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Robinhood Chain (4663) caller accuracy + token intel, graded vs real price since genesis. x402-paid"
+      "description": "Robinhood Chain MCP server: rug checks, deployer records, measured X callers. For agents and bots."
     },
     {
       "slug": "io-github-jarmstrong158-conductor",
@@ -22754,6 +22747,16 @@
       "description": "AI-powered website change monitoring - manage monitors and alerts via MCP."
     },
     {
+      "slug": "com-pexafy-pexafy-mcp",
+      "name": "com.pexafy/pexafy-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "finance",
+        "design-media"
+      ],
+      "description": "Find free-to-use stock photos by words, by image or by similarity; every result names its licence."
+    },
+    {
       "slug": "com-playbykey-theory-mcp",
       "name": "com.playbykey/theory-mcp",
       "confidence": 0.55,
@@ -23285,7 +23288,7 @@
       "topics": [
         "security"
       ],
-      "description": "Dependency intelligence for AI agents. CVE scanning, health checks, upgrade planning."
+      "description": "Upgrade intelligence for AI agents: what an upgrade changes, where it touches your code, CVE scans."
     },
     {
       "slug": "io-github-a1-x-tech-mcp-google-business",
@@ -24191,7 +24194,7 @@
       "topics": [
         "legal"
       ],
-      "description": "MCP jurisprudence française : 3,3 M décisions (Cass, CE, CAA, TA, CEDH, CJUE) + lois à date. Gratuit"
+      "description": "MCP jurisprudence française : 3,5 M+ décisions (Cass, CE, CAA, TA, CEDH, CJUE) + lois à date"
     },
     {
       "slug": "io-github-damianotobasco-sync-socials-agent",
@@ -24995,7 +24998,7 @@
       "topics": [
         "mcp-infrastructure"
       ],
-      "description": "Delegate tasks to coding agents (Claude, Codex) from any MCP client"
+      "description": "Delegate tasks to coding agents (Claude, Codex, Antigravity) from any MCP client"
     },
     {
       "slug": "io-github-jamboree777-nightwatch",
@@ -26709,15 +26712,6 @@
       "description": "Local IBKR MCP server for agentic trading desks: market data, portfolio context, risk checks."
     },
     {
-      "slug": "io-github-oxygenbubbles-freeagent-mcp-server",
-      "name": "io.github.OxygenBubbles/freeagent-mcp-server",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "FreeAgent accounting MCP: bank reconciliation, expenses, mileage claims and receipts."
-    },
-    {
       "slug": "io-github-paarths-collab-quant-brain-mcp",
       "name": "io.github.paarths-collab/quant-brain-mcp",
       "confidence": 0.55,
@@ -27454,7 +27448,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Diagnoses, drugs & lab codes: ICD-11, SNOMED, LOINC, RxNorm, MeSH, ATC, CID-10. 33 tools, MIT."
+      "description": "Diagnoses, drugs & lab codes: ICD-11, SNOMED, LOINC, RxNorm, MeSH, ATC, CID-10. 34 tools, MIT."
     },
     {
       "slug": "io-github-signaledi-mcp-server",
@@ -28449,7 +28443,7 @@
       "topics": [
         "finance"
       ],
-      "description": "The risk officer for AI-assisted trading: enforced exit rules, cooling-off, and public receipts."
+      "description": "The risk officer for AI trading: an independent, read-only watcher for your trading agent."
     },
     {
       "slug": "mcp-obsidian",
