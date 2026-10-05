@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T00:25:09.598Z",
+  "generatedAt": "2026-10-05T00:29:17.314Z",
   "total": 5696,
   "summary": {
     "needsReview": 3843,
@@ -17,7 +17,7 @@
   "categoryCounts": {
     "misc": 2592,
     "dev": 1893,
-    "search": 760,
+    "search": 761,
     "files": 256,
     "ai": 209,
     "comms": 187,
@@ -92,27 +92,27 @@
     },
     {
       "term": "local",
-      "count": 101
+      "count": 100
     },
     {
       "term": "manage",
-      "count": 96
+      "count": 97
     },
     {
       "term": "code",
-      "count": 94
+      "count": 93
     },
     {
       "term": "create",
       "count": 91
     },
     {
-      "term": "live",
+      "term": "over",
       "count": 90
     },
     {
-      "term": "over",
-      "count": 90
+      "term": "live",
+      "count": 89
     },
     {
       "term": "read-only",
@@ -2832,7 +2832,7 @@
       "name": "com.getspawnpoint/spawnpoint",
       "confidence": 0.35,
       "topics": [],
-      "description": "Deploy the small apps your agent builds: one tool call returns a live, private shareable HTTPS link."
+      "description": "Deploy the apps your agent builds to a private, shareable HTTPS link, checked for leaked keys first."
     },
     {
       "slug": "com-getspm-spm",
@@ -11729,7 +11729,7 @@
       "name": "io.github.proplineapi/propline-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live odds, cross-book +EV and graded player-prop results across 32 books. Hosted endpoint included."
+      "description": "Live odds, cross-book +EV and graded player-prop results across 37 books. Hosted endpoint included."
     },
     {
       "slug": "io-github-proventools-proventools",
@@ -13584,7 +13584,7 @@
       "name": "io.github.yaver-io/yaver",
       "confidence": 0.35,
       "topics": [],
-      "description": "Phone-first local dev MCP for Claude Code and Codex: install Yaver, pair mobile, run, build, deploy."
+      "description": "Phone-first OpenCode MCP for trusted devices: run, build, deploy, and manage endpoint-local tools."
     },
     {
       "slug": "io-github-yixuanzhong-plaxis-mcp",
@@ -15726,7 +15726,7 @@
       "name": "io.github.bruchris/canvas-lms-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "TypeScript MCP server for Canvas LMS — 165 tools across 42 domains."
+      "description": "TypeScript MCP server for Canvas LMS — 167 tools across 42 domains."
     },
     {
       "slug": "io-github-bryanjbelanger-talos-mcp-server",
@@ -17504,7 +17504,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 540 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 548 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -22261,7 +22261,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Compare what a trading-card seller keeps across eBay, Pulltrader, and other card marketplaces."
+      "description": "Trading-card research and seller economics: identify cards, check sold comps, and compare fees."
     },
     {
       "slug": "app-sallim-korea-realty",
@@ -26283,7 +26283,7 @@
       "topics": [
         "automation"
       ],
-      "description": "1176 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
+      "description": "1250 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
     },
     {
       "slug": "io-github-moonriddim-skedra",
@@ -27448,7 +27448,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Diagnoses, drugs & lab codes: ICD-11, SNOMED, LOINC, RxNorm, MeSH, ATC, CID-10. 34 tools, MIT."
+      "description": "Diagnoses, drugs & lab codes: ICD-11, LOINC, RxNorm, MeSH, ATC, CID-10. 33 tools, MIT."
     },
     {
       "slug": "io-github-signaledi-mcp-server",
@@ -28443,7 +28443,7 @@
       "topics": [
         "finance"
       ],
-      "description": "The risk officer for AI trading: an independent, read-only watcher for your trading agent."
+      "description": "Anomaly detection for AI trading agents: read-only, flags the hour the agent breaks its baseline."
     },
     {
       "slug": "mcp-obsidian",
