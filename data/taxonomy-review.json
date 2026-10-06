@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-05T00:29:17.314Z",
-  "total": 5696,
+  "generatedAt": "2026-10-06T02:07:09.332Z",
+  "total": 5694,
   "summary": {
-    "needsReview": 3843,
-    "needsReviewRatePct": 67.5,
-    "uncategorized": 2592,
+    "needsReview": 3840,
+    "needsReviewRatePct": 67.4,
+    "uncategorized": 2590,
     "uncategorizedRatePct": 45.5,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -12,24 +12,24 @@
   "alerts": [
     "待归类占比 45.5%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.5%，超过 10%"
+    "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2592,
-    "dev": 1893,
+    "misc": 2590,
+    "dev": 1892,
     "search": 761,
     "files": 256,
     "ai": 209,
     "comms": 187,
-    "database": 169,
-    "commerce": 162,
+    "database": 170,
+    "commerce": 163,
     "cloud": 133,
     "browser": 120,
     "marketing": 79
   },
   "topicCounts": {
     "design-media": 293,
-    "finance": 189,
+    "finance": 190,
     "automation": 188,
     "observability": 118,
     "legal": 92,
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 114
+      "count": 113
     },
     {
       "term": "memory",
@@ -100,7 +100,7 @@
     },
     {
       "term": "code",
-      "count": 93
+      "count": 94
     },
     {
       "term": "create",
@@ -108,7 +108,7 @@
     },
     {
       "term": "over",
-      "count": 90
+      "count": 91
     },
     {
       "term": "live",
@@ -136,7 +136,7 @@
     },
     {
       "term": "x402",
-      "count": 68
+      "count": 67
     },
     {
       "term": "tasks",
@@ -152,11 +152,11 @@
     },
     {
       "term": "check",
-      "count": 61
+      "count": 60
     },
     {
       "term": "public",
-      "count": 59
+      "count": 58
     },
     {
       "term": "analysis",
@@ -196,11 +196,11 @@
     },
     {
       "term": "every",
-      "count": 48
+      "count": 47
     },
     {
       "term": "analytics",
-      "count": 47
+      "count": 46
     },
     {
       "term": "certificate",
@@ -235,11 +235,11 @@
       "count": 40
     },
     {
-      "term": "review",
-      "count": 39
+      "term": "apis",
+      "count": 38
     },
     {
-      "term": "apis",
+      "term": "review",
       "count": 38
     }
   ],
@@ -991,7 +991,7 @@
       "name": "ai.posteverywhere/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Schedule and publish social posts to 11 platforms with media, campaigns, analytics and AI captions"
+      "description": "The agentic social media scheduler. Write, schedule and publish to all top social platforms."
     },
     {
       "slug": "ai-preclick-preclick-mcp",
@@ -1530,7 +1530,7 @@
       "name": "ai.ssid/ssid-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Manufacturer-cited router default logins and compliance check, plus MAC/OUI vendor lookup. Free."
+      "description": "Router default logins, compliance index, MAC/OUI lookup. Reads free; submit_correction is Pro."
     },
     {
       "slug": "ai-statemind-python-code-validator",
@@ -2020,7 +2020,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 86 tools."
+      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 89 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -4606,13 +4606,6 @@
       "description": "Send and read WhatsApp messages on your Leporis account from AI coding agents, via your own API key."
     },
     {
-      "slug": "io-github-aeoess-agent-passport-mcp",
-      "name": "io.github.aeoess/agent-passport-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Cryptographic identity, delegation, governance, and commerce for AI agents. 152 tools."
-    },
-    {
       "slug": "io-github-aeoess-mingle",
       "name": "io.github.aeoess/mingle",
       "confidence": 0.35,
@@ -6409,7 +6402,7 @@
       "name": "io.github.futuresearch/futuresearch-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "AI forecasting for your AI: probabilities, dates, and numbers with a public track record."
+      "description": "Forecast questions about the future, including the outcome under each option."
     },
     {
       "slug": "io-github-fxjim-agent-commerce-guard",
@@ -11855,7 +11848,7 @@
       "name": "io.github.r3dz4r/datapulse-my",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read-only discovery for 418 Malaysian public datasets with freshness, licence, and provenance."
+      "description": "Read-only discovery for 425 Malaysian public datasets with freshness, licence, and provenance."
     },
     {
       "slug": "io-github-ramakrishnanhulk20-patina",
@@ -16576,13 +16569,6 @@
       "description": "See and kill the dev servers your coding agents leave running, and get collision-free ports."
     },
     {
-      "slug": "io-github-daniel3303-equibles",
-      "name": "io.github.daniel3303/equibles",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "90+ free tools, Claude & ChatGPT: prices, options, SEC filings, 13F, insider, congress, transcripts."
-    },
-    {
       "slug": "io-github-danieltomaro13-sportsdata-mcp",
       "name": "io.github.DanielTomaro13/sportsdata-mcp",
       "confidence": 0.45,
@@ -16968,13 +16954,6 @@
       "description": "Exact-decimal double-entry for agents. Call MCP tools; do not do money math in tokens."
     },
     {
-      "slug": "io-github-ethan-hub26-embedcalc-mcp",
-      "name": "io.github.ethan-hub26/embedcalc-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Embedded calculators, codegen & schematic review: CRC, timing, struct, IEEE-754, KiCad."
-    },
-    {
       "slug": "io-github-ethanasm-mcp-queue-doctor",
       "name": "io.github.ethanasm/mcp-queue-doctor",
       "confidence": 0.45,
@@ -17266,7 +17245,7 @@
       "name": "io.github.gabrielmahia/kenya-health-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "🏥 Kenya Health MCP"
+      "description": "Kenya health MCP: SHIF calculator, facility finder, SHA maternity care, Article 43 rights"
     },
     {
       "slug": "io-github-gabrielmahia-kilimo-mcp",
@@ -17504,7 +17483,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 548 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 553 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -19478,7 +19457,7 @@
       "name": "io.github.ODU33104/rive-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Free, editor-less MCP server for Rive: create, edit, inspect, render and preview .riv animations"
+      "description": "Free, editor-less MCP server for Rive: create, edit, render .riv — plus an AI-collaborative Studio"
     },
     {
       "slug": "io-github-ogasurfproject-jpg-hs-audit-app",
@@ -19738,6 +19717,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "41 tools to ship an App Store release: metadata, screenshots, builds, TestFlight, IAP, submit."
+    },
+    {
+      "slug": "io-github-poiuyhje-eqvps",
+      "name": "io.github.Poiuyhje/eqvps",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "No-KYC VPS + per-second code sandboxes AI agents run over MCP — 75 tools, SDK, pay BTC/XMR/USDC/USDT"
     },
     {
       "slug": "io-github-polygraphso-litmus",
@@ -20951,13 +20937,6 @@
       "description": "A local-first MCP server that routes development tasks to authoritative project documentation."
     },
     {
-      "slug": "io-github-tang-vu-keryx",
-      "name": "io.github.tang-vu/keryx",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Autonomous research agent that pays every source it cites in USDC on Arc via x402 micropayments."
-    },
-    {
       "slug": "io-github-tarang8811-getintel",
       "name": "io.github.tarang8811/getintel",
       "confidence": 0.45,
@@ -21613,7 +21592,7 @@
       "name": "net.crawlora/crawlora-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Hosted MCP: 3209 structured web-data tools across 438 platform groups."
+      "description": "Hosted MCP: 3475 structured web-data tools across 468 platform groups."
     },
     {
       "slug": "ru-layero-layero",
@@ -24149,7 +24128,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Agent-native TypeScript framework for MCP servers."
+      "description": "Agent-native TypeScript framework for building MCP servers."
     },
     {
       "slug": "io-github-cyanheads-medical-codes-mcp-server",
@@ -24204,6 +24183,15 @@
         "design-media"
       ],
       "description": "Create, schedule and publish social posts to TikTok, Instagram, Facebook and YouTube."
+    },
+    {
+      "slug": "io-github-daniel3303-equibles",
+      "name": "io.github.daniel3303/equibles",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "SEC filings, company financials, holdings, earnings calls, stock prices, options and macro data."
     },
     {
       "slug": "io-github-danishashko-yahoo-finance-mcp",
@@ -24349,15 +24337,6 @@
         "visualization"
       ],
       "description": "Create and edit UML, flowchart, wireframe and sequence diagrams on an Umlout whiteboard."
-    },
-    {
-      "slug": "io-github-dongdongbh-mindwtr",
-      "name": "io.github.dongdongbh/mindwtr",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "Task and project automation for local and self-hosted Mindwtr Cloud data; read-only by default."
     },
     {
       "slug": "io-github-dongwu259-photo-s",
@@ -26108,7 +26087,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "2,500+ scientific tools for AI scientists: life science, research, literature, and more."
+      "description": "2,700+ scientific tools for AI scientists: life science, research, literature, and more."
     },
     {
       "slug": "io-github-mindstone-mcp-server-elevenlabs",
@@ -26283,7 +26262,7 @@
       "topics": [
         "automation"
       ],
-      "description": "1250 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
+      "description": "1285 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
     },
     {
       "slug": "io-github-moonriddim-skedra",
@@ -28416,7 +28395,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Edit uploaded footage with AI tools: cuts, captions, reframing and previews. Final export in Studio."
+      "description": "AI video editor for real footage: cut, caption, reframe, add music and b-roll, preview, export MP4."
     },
     {
       "slug": "kr-ai-vdb-vdb",
