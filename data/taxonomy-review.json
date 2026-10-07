@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-06T02:07:09.332Z",
+  "generatedAt": "2026-10-07T01:21:23.923Z",
   "total": 5694,
   "summary": {
-    "needsReview": 3840,
-    "needsReviewRatePct": 67.4,
+    "needsReview": 3841,
+    "needsReviewRatePct": 67.5,
     "uncategorized": 2590,
     "uncategorizedRatePct": 45.5,
     "largestCategory": "dev",
@@ -12,7 +12,7 @@
   "alerts": [
     "待归类占比 45.5%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.4%，超过 10%"
+    "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
     "misc": 2590,
@@ -34,8 +34,8 @@
     "observability": 118,
     "legal": 92,
     "mcp-infrastructure": 88,
-    "visualization": 64,
-    "science-health": 32,
+    "visualization": 63,
+    "science-health": 33,
     "security": 29,
     "game-development": 24,
     "data-analysis": 24,
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 100
+      "count": 99
     },
     {
       "term": "manage",
@@ -3140,7 +3140,7 @@
       "name": "com.mambabuilt/mcp-gtm-suite",
       "confidence": 0.35,
       "topics": [],
-      "description": "11 Mamba Labs account-intelligence MCP tools in one server: identity, signals, ICP. Clay-ready."
+      "description": "21 Mamba Labs account-intelligence MCP tools in one server: identity, signals, ICP. Clay-ready."
     },
     {
       "slug": "com-mambabuilt-mcp-icp-fit-scorer",
@@ -6067,6 +6067,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "AlbumentationsX MCP for batch previews, compare preview runs, segmentation masks, and exports."
+    },
+    {
+      "slug": "io-github-dmkorj-umlout",
+      "name": "io.github.dmkorj/umlout",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Build Umlout projects: objects with types and fields, relations, and boards that draw them."
     },
     {
       "slug": "io-github-doc2mcp-freefirecommunity",
@@ -10252,7 +10259,7 @@
       "name": "io.github.musharna/data-aggregator-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Find & fetch research datasets across 17 archives, omics registries, and literature sources."
+      "description": "Find & fetch research datasets across 18 archives, omics registries, and literature sources."
     },
     {
       "slug": "io-github-musharna-jobd",
@@ -13997,7 +14004,7 @@
       "name": "io.tenova/swt3-witness",
       "confidence": 0.35,
       "topics": [],
-      "description": "Cryptographic AI governance and audit. 72 tools, 77 frameworks. EU AI Act, NIST, CMMC, MCP Top 10."
+      "description": "Cryptographic AI governance and audit. 75 tools, 84 frameworks. EU AI Act, NIST, CMMC, MCP Top 10."
     },
     {
       "slug": "io-umtri-umtri",
@@ -15250,7 +15257,7 @@
       "name": "io.github.antonpogrebenko-public/rftools",
       "confidence": 0.45,
       "topics": [],
-      "description": "241 RF & electronics calculators + 13 simulation tools for AI agents."
+      "description": "255 RF & electronics calculators + 13 simulation tools for AI agents."
     },
     {
       "slug": "io-github-anup-khanal-aidimag",
@@ -15327,7 +15334,7 @@
       "name": "io.github.arturogarrido/claudinho",
       "confidence": 0.45,
       "topics": [],
-      "description": "Live 2026 World Cup scores, fixtures & standings for your AI agent. No keys. Unofficial fan project."
+      "description": "Live football scores, fixtures and standings for 15 supported competitions. Unofficial fan project."
     },
     {
       "slug": "io-github-aryamthecodebreaker-fixmap",
@@ -18526,7 +18533,7 @@
       "name": "io.github.littleblakew/msds-chain",
       "confidence": 0.45,
       "topics": [],
-      "description": "Chemical safety intelligence — 23 tools: compatibility, hazards, PPE, compliance, SDS lookup"
+      "description": "Chemical safety intelligence — 24 tools: compatibility, hazards, PPE, compliance, SDS lookup"
     },
     {
       "slug": "io-github-livetennisapi-livetennisapi-mcp",
@@ -19367,13 +19374,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Administer wg-easy (WireGuard Easy) v15: manage VPN clients, configs, QR codes and server status"
-    },
-    {
-      "slug": "io-github-nickjlamb-redacta-mcp",
-      "name": "io.github.nickjlamb/redacta-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Pseudonymise and restore patient identifiers & PII in text — local, HIPAA Safe Harbor mode."
     },
     {
       "slug": "io-github-nicolascroce-keepsake",
@@ -20461,6 +20461,13 @@
       "description": "MCP server for Rachio sprinkler controllers — schedules, zones, and live watering control"
     },
     {
+      "slug": "io-github-ryuxik-snhp",
+      "name": "io.github.ryuxik/snhp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Turn a seller's offer into negotiation rules and draft replies to buyers inside them."
+    },
+    {
       "slug": "io-github-saihm-admin-saihm-mcp",
       "name": "io.github.SAIHM-Admin/saihm-mcp",
       "confidence": 0.45,
@@ -21081,7 +21088,7 @@
       "name": "io.github.TranQui004/signalint",
       "confidence": 0.45,
       "topics": [],
-      "description": "Local stdio MCP server for cached, loop-aware JS/TypeScript diagnostics (Oxlint, tsc, Biome)."
+      "description": "Local stdio MCP server for cached, loop-aware JS/TS diagnostics (Oxlint, tsc, Biome, ESLint)."
     },
     {
       "slug": "io-github-treevu-ai-cli-market-world",
@@ -21298,7 +21305,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "deja-vu: local memory over the session histories of thirty-five coding agents."
+      "description": "deja-vu: local memory over the session histories of thirty-eight coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -24330,15 +24337,6 @@
       "description": "Read your own DMARC aggregate and forensic reports: sources, alignment, alerts, CSV export."
     },
     {
-      "slug": "io-github-dmkorj-umlout",
-      "name": "io.github.dmkorj/umlout",
-      "confidence": 0.55,
-      "topics": [
-        "visualization"
-      ],
-      "description": "Create and edit UML, flowchart, wireframe and sequence diagrams on an Umlout whiteboard."
-    },
-    {
       "slug": "io-github-dongwu259-photo-s",
       "name": "io.github.Dongwu259/photo-s",
       "confidence": 0.55,
@@ -26426,6 +26424,15 @@
         "automation"
       ],
       "description": "Drive a real iPhone via macOS iPhone Mirroring; Xcode build/test automation for sims and devices."
+    },
+    {
+      "slug": "io-github-nickjlamb-redacta-mcp",
+      "name": "io.github.nickjlamb/redacta-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "science-health"
+      ],
+      "description": "Keep patient identifiers out of AI agent context — a local privacy boundary for healthcare agents."
     },
     {
       "slug": "io-github-nirholas-3d-ai-agent-avatar",
