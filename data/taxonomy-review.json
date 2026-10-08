@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-07T01:21:23.923Z",
-  "total": 5694,
+  "generatedAt": "2026-10-08T01:45:04.270Z",
+  "total": 5693,
   "summary": {
-    "needsReview": 3841,
+    "needsReview": 3842,
     "needsReviewRatePct": 67.5,
     "uncategorized": 2590,
     "uncategorizedRatePct": 45.5,
@@ -18,7 +18,7 @@
     "misc": 2590,
     "dev": 1892,
     "search": 761,
-    "files": 256,
+    "files": 255,
     "ai": 209,
     "comms": 187,
     "database": 170,
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 113
+      "count": 114
     },
     {
       "term": "memory",
@@ -2055,14 +2055,14 @@
       "name": "bid.scope/aec",
       "confidence": 0.35,
       "topics": [],
-      "description": "AEC subcontractor vendor procurement plumbing layer. Preview - V3 launches 2027."
+      "description": "AEC subcontractor procurement layer. Preview - V3 launches 2027."
     },
     {
       "slug": "bid-scope-claims",
       "name": "bid.scope/claims",
       "confidence": 0.35,
       "topics": [],
-      "description": "Insurance claims-side vendor procurement (IMEs, IA, surveillance). Preview - V2 launches Q3 2026."
+      "description": "Claims-side professional procurement (IMEs, independent adjusters, surveillance). Preview."
     },
     {
       "slug": "bot-myagi-openagent-registry",
@@ -7725,7 +7725,7 @@
       "name": "io.github.matiasmaquieira96/risk-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Company data: Spain, France, UK, Ireland, Poland, Norway, Finland, Sweden, Croatia, Belgium, Denmark"
+      "description": "KYB: Spain, France, UK, Ireland, Poland, Norway, Finland, Sweden, Croatia, Belgium, Denmark, EE, SK"
     },
     {
       "slug": "io-github-matrodrigs-shotcut-mcp",
@@ -10770,7 +10770,7 @@
       "name": "io.github.nxtg-ai/forge-orchestrator",
       "confidence": 0.35,
       "topics": [],
-      "description": "Multi-tool AI orchestration: Claude Code, Codex, Gemini on shared repos. 11 MCP tools, stdio."
+      "description": "AI orchestration: Claude Code, Codex, Gemini on shared repos. 11 MCP tools, stdio (stage: internal)"
     },
     {
       "slug": "io-github-oaslananka-health-monitor-mcp",
@@ -14833,6 +14833,13 @@
       "description": "Free, no key: NFL prop board, Kalshi vs Polymarket gaps, 15-min crypto, Fed odds, NHL, EV/Kelly."
     },
     {
+      "slug": "es-mapasocietario-borme",
+      "name": "es.mapasocietario/borme",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Spanish company registry (BORME): companies, directors, how they connect. Needs a free work account."
+    },
+    {
       "slug": "io-github-0rkz-byte-protocol",
       "name": "io.github.0rkz/byte-protocol",
       "confidence": 0.45,
@@ -16930,7 +16937,7 @@
       "name": "io.github.emergent-wisdom/semahash",
       "confidence": 0.45,
       "topics": [],
-      "description": "Content-addressed semantics: fail-closed handshakes over 457 cognitive patterns."
+      "description": "Content-addressed semantics: fail-closed handshakes over 606 cognitive patterns."
     },
     {
       "slug": "io-github-enthrium-oe-mcp",
@@ -17329,7 +17336,7 @@
       "name": "io.github.gabrielmahia/swahili-health-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "🏥 Swahili Health MCP"
+      "description": "Kenya county health indicators (maternal care, immunization, stunting) from the Kenya DHS 2022"
     },
     {
       "slug": "io-github-gabrielmahia-tafsiri-mcp",
@@ -22303,7 +22310,7 @@
         "automation",
         "legal"
       ],
-      "description": "Dispatch litigation work to legal-services vendors from any MCP-compatible AI workflow."
+      "description": "Dispatch litigation work to legal-services professionals from any MCP-compatible AI workflow."
     },
     {
       "slug": "bid-scope-pharma",
@@ -22621,7 +22628,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Used-Mac market: quality-gated listings with deep links, asking-price stats, trust checks, alerts."
+      "description": "Used-Mac market: quality-gated listings with deep links, sale estimates, trust checks, alerts."
     },
     {
       "slug": "com-mambabuilt-mcp-legal-entity-resolver",
@@ -25545,7 +25552,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Free MCP: typed MELANY ratings for any US stock or ETF (11,000+) plus mortgage-rate context."
+      "description": "Free stock-rating MCP: tier, 0-100 score, 8 factors, 11,000+ US tickers, plus mortgage rates."
     },
     {
       "slug": "io-github-marvinrey7879-patternfetch",
