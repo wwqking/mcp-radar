@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-08T01:45:04.270Z",
-  "total": 5693,
+  "generatedAt": "2026-10-09T01:48:13.664Z",
+  "total": 5690,
   "summary": {
-    "needsReview": 3842,
+    "needsReview": 3840,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2590,
+    "uncategorized": 2589,
     "uncategorizedRatePct": 45.5,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,12 +15,12 @@
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2590,
-    "dev": 1892,
-    "search": 761,
+    "misc": 2589,
+    "dev": 1889,
+    "search": 759,
     "files": 255,
     "ai": 209,
-    "comms": 187,
+    "comms": 188,
     "database": 170,
     "commerce": 163,
     "cloud": 133,
@@ -28,14 +28,14 @@
     "marketing": 79
   },
   "topicCounts": {
-    "design-media": 293,
-    "finance": 190,
+    "design-media": 292,
+    "finance": 191,
     "automation": 188,
     "observability": 118,
     "legal": 92,
-    "mcp-infrastructure": 88,
+    "mcp-infrastructure": 87,
     "visualization": 63,
-    "science-health": 33,
+    "science-health": 32,
     "security": 29,
     "game-development": 24,
     "data-analysis": 24,
@@ -72,7 +72,7 @@
     },
     {
       "term": "coding",
-      "count": 116
+      "count": 117
     },
     {
       "term": "free",
@@ -80,14 +80,14 @@
     },
     {
       "term": "memory",
-      "count": 109
-    },
-    {
-      "term": "credit",
-      "count": 105
+      "count": 108
     },
     {
       "term": "read",
+      "count": 106
+    },
+    {
+      "term": "credit",
       "count": 105
     },
     {
@@ -96,7 +96,7 @@
     },
     {
       "term": "manage",
-      "count": 97
+      "count": 98
     },
     {
       "term": "code",
@@ -104,11 +104,11 @@
     },
     {
       "term": "create",
-      "count": 91
+      "count": 92
     },
     {
       "term": "over",
-      "count": 91
+      "count": 90
     },
     {
       "term": "live",
@@ -128,7 +128,7 @@
     },
     {
       "term": "checks",
-      "count": 78
+      "count": 80
     },
     {
       "term": "company",
@@ -136,7 +136,7 @@
     },
     {
       "term": "x402",
-      "count": 67
+      "count": 66
     },
     {
       "term": "tasks",
@@ -159,11 +159,11 @@
       "count": 58
     },
     {
-      "term": "analysis",
-      "count": 56
+      "term": "status",
+      "count": 57
     },
     {
-      "term": "status",
+      "term": "analysis",
       "count": 56
     },
     {
@@ -171,7 +171,7 @@
       "count": 55
     },
     {
-      "term": "real",
+      "term": "person",
       "count": 55
     },
     {
@@ -179,8 +179,8 @@
       "count": 54
     },
     {
-      "term": "person",
-      "count": 54
+      "term": "real",
+      "count": 53
     },
     {
       "term": "before",
@@ -188,11 +188,11 @@
     },
     {
       "term": "intelligence",
-      "count": 50
+      "count": 48
     },
     {
       "term": "usdc",
-      "count": 49
+      "count": 48
     },
     {
       "term": "every",
@@ -215,11 +215,15 @@
       "count": 44
     },
     {
+      "term": "plus",
+      "count": 43
+    },
+    {
       "term": "vehicle",
       "count": 43
     },
     {
-      "term": "plus",
+      "term": "find",
       "count": 42
     },
     {
@@ -227,20 +231,16 @@
       "count": 42
     },
     {
-      "term": "find",
-      "count": 41
-    },
-    {
       "term": "shared",
       "count": 40
     },
     {
-      "term": "apis",
-      "count": 38
+      "term": "review",
+      "count": 39
     },
     {
-      "term": "review",
-      "count": 38
+      "term": "stdio",
+      "count": 39
     }
   ],
   "reviewQueue": [
@@ -963,7 +963,7 @@
       "name": "ai.physea/liminality",
       "confidence": 0.35,
       "topics": [],
-      "description": "Breaks a hard question or decision into checkable sub-questions, grounds each to a real tool."
+      "description": "Augment your work with Liminal. Stop repeating yourself and build on what’s already solved."
     },
     {
       "slug": "ai-plcs-plcs-ai",
@@ -1838,7 +1838,7 @@
       "name": "app.evlek/mcp-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live Northern Cyprus (KKTC/TRNC) property listings and asking-price data. Read-only, 12 tools."
+      "description": "Live Northern Cyprus (KKTC/TRNC) property listings and asking-price data. Read-only, 8 tools."
     },
     {
       "slug": "app-flaim-mcp",
@@ -2020,7 +2020,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 89 tools."
+      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 90 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -3029,6 +3029,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Create and manage Linkonda short links and QR codes, with no per-visitor tracking."
+    },
+    {
+      "slug": "com-macfax-macfax",
+      "name": "com.macfax/macfax",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Identify any Apple serial and read its device record, plus used-Mac prices, listings and checks."
     },
     {
       "slug": "com-mambabuilt-mcp-ai-tooling-detector",
@@ -5219,7 +5226,7 @@
       "name": "io.github.bardesss/arr-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One server, 38 tools, the whole media stack: the *arrs, Jellyfin, Plex, Seerr and download clients"
+      "description": "One server, 39 tools, the whole media stack: the *arrs, Jellyfin, Plex, Seerr and download clients"
     },
     {
       "slug": "io-github-barglabs-cejel",
@@ -5261,7 +5268,7 @@
       "name": "io.github.beepboop2025/noisefloor",
       "confidence": 0.35,
       "topics": [],
-      "description": "Is this number real, or is it noise? Peek-safe A/B tests, change detection, honest forecasts."
+      "description": "Offline market diagnostics, news repetition, data coverage and statistical checks for AI agents."
     },
     {
       "slug": "io-github-beepboop2025-palimpsest",
@@ -5892,6 +5899,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Control Krita through a secure local MCP server and authenticated Windows bridge."
+    },
+    {
+      "slug": "io-github-damianotobasco-sync-socials-agent",
+      "name": "io.github.DamianoTobasco/sync-socials-agent",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Create, schedule and publish social posts, including X on paid Growth, through Sync Socials."
     },
     {
       "slug": "io-github-danmat-packkit-mcp",
@@ -11855,7 +11869,7 @@
       "name": "io.github.r3dz4r/datapulse-my",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read-only discovery for 425 Malaysian public datasets with freshness, licence, and provenance."
+      "description": "Read-only discovery for 440 Malaysian public datasets with freshness, licence, and provenance."
     },
     {
       "slug": "io-github-ramakrishnanhulk20-patina",
@@ -12285,13 +12299,6 @@
       "description": "Run tickets, boards, OKRs and cloud coding agents in your Builderforce workspace"
     },
     {
-      "slug": "io-github-seekdaseek-agentfeed",
-      "name": "io.github.seekdaseek/agentfeed",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Liquidation tape, exit liquidity, derivatives and Solana data. Per-call USDC over x402 or MPP."
-    },
-    {
       "slug": "io-github-seekdaseek-agentfeed-algo",
       "name": "io.github.seekdaseek/agentfeed-algo",
       "confidence": 0.35,
@@ -12695,7 +12702,7 @@
       "name": "io.github.spacefast/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Publish files and folders to the web instantly: permanent URLs, immutable versions, claim links."
+      "description": "Build, publish, and manage websites, dashboards, reports, and web tools with Spacefast."
     },
     {
       "slug": "io-github-srikarjy-biolab-mcp-server",
@@ -14774,7 +14781,7 @@
       "name": "xyz.costrinity/vitna-compliance-preflight",
       "confidence": 0.35,
       "topics": [],
-      "description": "Pre-action compliance for AI agents: allow, block or hold. 24 statutes, 13 jurisdictions."
+      "description": "Wraps stdio MCP servers. Risky calls wait for a person; no answer, no run. Signed records."
     },
     {
       "slug": "xyz-kellyruns-strategy-lab",
@@ -16405,7 +16412,7 @@
       "name": "io.github.cyanheads/cpsc-recalls-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "US consumer product recalls from the CPSC — hazards, remedies, and affected products."
+      "description": "US consumer product recalls from the CPSC: hazards, remedies, and affected products."
     },
     {
       "slug": "io-github-cyanheads-eia-energy-mcp-server",
@@ -17353,13 +17360,6 @@
       "description": "MCP server for transport coordination in East Africa (usafiri = transport)"
     },
     {
-      "slug": "io-github-gabrielmahia-wapimaji-mcp",
-      "name": "io.github.gabrielmahia/wapimaji-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "💧 WapiMaji MCP — Kenya Water & Drought Intelligence"
-    },
-    {
       "slug": "io-github-galengoodwick-cartridge-cafe",
       "name": "io.github.GalenGoodwick/cartridge-cafe",
       "confidence": 0.45,
@@ -17497,7 +17497,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 553 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 558 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -19142,7 +19142,7 @@
       "name": "io.github.mizcausevic-dev/mcp-kinetic-gain",
       "confidence": 0.45,
       "topics": [],
-      "description": "Unified MCP server for the 12-spec Kinetic Gain Suite + DefenseTech 6-pack — 75 governance tools."
+      "description": "75-tool MCP server for 12 Kinetic Gain specs and DefenseTech checks."
     },
     {
       "slug": "io-github-mkxultra-ai-cli-mcp",
@@ -19961,7 +19961,7 @@
       "name": "io.github.rigour-labs/rigour",
       "confidence": 0.45,
       "topics": [],
-      "description": "Quality gates for AI agents. Lint, test, build checks with memory persistence."
+      "description": "Lets coding agents review their change, find an existing helper, and recall the team's lessons."
     },
     {
       "slug": "io-github-rileybuilds-oracle-feeds-mcp",
@@ -20752,7 +20752,7 @@
       "name": "io.github.snenenenenenene/transita-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Visa eligibility matcher and immigration intelligence for MCP-compatible AI assistants."
+      "description": "Match a profile against 100+ visas in 16 countries: eligibility, cost, timeline, intake status."
     },
     {
       "slug": "io-github-snowmead-oxcode",
@@ -22622,15 +22622,6 @@
       "description": "AI-powered test automation: run tests, analyze failures, query results across mabl workspaces."
     },
     {
-      "slug": "com-macfax-macfax",
-      "name": "com.macfax/macfax",
-      "confidence": 0.55,
-      "topics": [
-        "observability"
-      ],
-      "description": "Used-Mac market: quality-gated listings with deep links, sale estimates, trust checks, alerts."
-    },
-    {
       "slug": "com-mambabuilt-mcp-legal-entity-resolver",
       "name": "com.mambabuilt/mcp-legal-entity-resolver",
       "confidence": 0.55,
@@ -23597,7 +23588,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "MCP server for Adobe Photoshop — 127 tools (generative AI + recipes), standalone web UI. Control Ph…"
+      "description": "MCP server for Adobe Photoshop — 128 tools (generative AI + recipes), standalone web UI. Control Ph…"
     },
     {
       "slug": "io-github-alphasmo-alphasmo-tools",
@@ -24190,15 +24181,6 @@
       "description": "MCP jurisprudence française : 3,5 M+ décisions (Cass, CE, CAA, TA, CEDH, CJUE) + lois à date"
     },
     {
-      "slug": "io-github-damianotobasco-sync-socials-agent",
-      "name": "io.github.DamianoTobasco/sync-socials-agent",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Create, schedule and publish social posts to TikTok, Instagram, Facebook and YouTube."
-    },
-    {
       "slug": "io-github-daniel3303-equibles",
       "name": "io.github.daniel3303/equibles",
       "confidence": 0.55,
@@ -24676,6 +24658,15 @@
         "automation"
       ],
       "description": "MCP server for Kenya Revenue Authority tax workflows and information"
+    },
+    {
+      "slug": "io-github-gabrielmahia-wapimaji-mcp",
+      "name": "io.github.gabrielmahia/wapimaji-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "observability"
+      ],
+      "description": "Kenya drought-response toolkit: simulated drought phases, confirmed SMS alerts, coordination events"
     },
     {
       "slug": "io-github-galavoxx-phaedo-mcp",
@@ -26811,7 +26802,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Guideline-cited lab results analysis for diabetes, kidney, lupus & cancer care. Free sample report."
+      "description": "Explains lab results for diabetes, kidney, lupus and cancer care, citing guidelines. Free sample."
     },
     {
       "slug": "io-github-pipeworx-io-alpaca",
@@ -28148,15 +28139,6 @@
         "design-media"
       ],
       "description": "NovelAI image generation as MCP tools: txt2img, img2img, inpaint, upscale, Director, ControlNet."
-    },
-    {
-      "slug": "io-github-xnjiang-37soul-mcp",
-      "name": "io.github.xnjiang/37soul-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Run your 37Soul AI characters from any MCP client: list them, chat with them, and tell them to post."
     },
     {
       "slug": "io-github-xxxoooxoxo-wiff",
