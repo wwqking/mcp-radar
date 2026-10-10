@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-09T01:48:13.664Z",
-  "total": 5690,
+  "generatedAt": "2026-10-10T01:41:50.075Z",
+  "total": 5687,
   "summary": {
-    "needsReview": 3840,
+    "needsReview": 3837,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2589,
+    "uncategorized": 2587,
     "uncategorizedRatePct": 45.5,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,8 +15,8 @@
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2589,
-    "dev": 1889,
+    "misc": 2587,
+    "dev": 1888,
     "search": 759,
     "files": 255,
     "ai": 209,
@@ -72,7 +72,7 @@
     },
     {
       "term": "coding",
-      "count": 117
+      "count": 116
     },
     {
       "term": "free",
@@ -112,27 +112,27 @@
     },
     {
       "term": "live",
-      "count": 89
-    },
-    {
-      "term": "read-only",
-      "count": 84
+      "count": 88
     },
     {
       "term": "pipeworx-io",
       "count": 83
     },
     {
+      "term": "read-only",
+      "count": 83
+    },
+    {
+      "term": "checks",
+      "count": 81
+    },
+    {
       "term": "detran",
       "count": 81
     },
     {
-      "term": "checks",
-      "count": 80
-    },
-    {
       "term": "company",
-      "count": 78
+      "count": 77
     },
     {
       "term": "x402",
@@ -152,7 +152,7 @@
     },
     {
       "term": "check",
-      "count": 60
+      "count": 59
     },
     {
       "term": "public",
@@ -208,15 +208,15 @@
     },
     {
       "term": "deterministic",
-      "count": 46
+      "count": 45
+    },
+    {
+      "term": "plus",
+      "count": 44
     },
     {
       "term": "security",
       "count": 44
-    },
-    {
-      "term": "plus",
-      "count": 43
     },
     {
       "term": "vehicle",
@@ -239,7 +239,7 @@
       "count": 39
     },
     {
-      "term": "stdio",
+      "term": "signed",
       "count": 39
     }
   ],
@@ -2265,7 +2265,7 @@
       "name": "coach.marian/eng-leadership-toolkit",
       "confidence": 0.35,
       "topics": [],
-      "description": "Engineering leadership benchmarks, 1:1 playbooks, developer value calculator. 3,400+ sessions."
+      "description": "Engineering leadership benchmarks, 1:1 playbooks, developer value calculator. 3,662 sessions."
     },
     {
       "slug": "coach-marian-mentoring-inquiry-builder",
@@ -2426,7 +2426,7 @@
       "name": "com.averray/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Paid work for agents: claim verifier-checked jobs, submit, earn USDC. Some need no bond or funding."
+      "description": "Paid agent work and paid verification, settled in USDC. Verified outcomes get signed receipts."
     },
     {
       "slug": "com-babyagecalculator-baby-age",
@@ -2861,13 +2861,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "금방 Open API MCP 서버 — 스펙 조회·JWT 서명 코드 생성·로컬 서명/검증"
-    },
-    {
-      "slug": "com-graneth-mcp-server",
-      "name": "com.graneth/mcp-server",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Pre-flight check for AI coding agents: hallucinated packages + secrets, 6 ecosystems, no account."
     },
     {
       "slug": "com-granoflow-mcp-server",
@@ -7725,7 +7718,7 @@
       "name": "io.github.MasterPlayspots/motionspec",
       "confidence": 0.35,
       "topics": [],
-      "description": "Deterministic motion compiler + validator: reports WCAG 2.2.2 pause-path candidates, fail-closed."
+      "description": "Web animation accessibility MCP: GSAP, static CSS checks, prefers-reduced-motion, WCAG 2.2.2/2.3.3."
     },
     {
       "slug": "io-github-mateohysa-reelsfarm",
@@ -7739,7 +7732,7 @@
       "name": "io.github.matiasmaquieira96/risk-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "KYB: Spain, France, UK, Ireland, Poland, Norway, Finland, Sweden, Croatia, Belgium, Denmark, EE, SK"
+      "description": "KYB: Spain France UK Ireland Poland Norway Finland Sweden Croatia Belgium Denmark EE SK US"
     },
     {
       "slug": "io-github-matrodrigs-shotcut-mcp",
@@ -10777,7 +10770,7 @@
       "name": "io.github.nworks3d/thor",
       "confidence": 0.35,
       "topics": [],
-      "description": "Local memory for coding agents. A rule with a runnable proof can refuse a wrong command."
+      "description": "Local memory for coding agents; a rule with a proof can refuse. Full install with hooks: the repo."
     },
     {
       "slug": "io-github-nxtg-ai-forge-orchestrator",
@@ -12339,13 +12332,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Pay-per-use web extract, token prices, and wallet balances via x402 USDC micropayments."
-    },
-    {
-      "slug": "io-github-sentien-labs-verdictswarm-mcp",
-      "name": "io.github.sentien-labs/verdictswarm-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read-only pre-trade token risk verdicts and size-aware Solana exit screening for agents."
     },
     {
       "slug": "io-github-sequesign-sequesign",
@@ -14823,7 +14809,7 @@
       "name": "cloud.dchub/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Live power, grid, gas, fiber + data-center capacity to buy or lease in kW/MW — query and cite."
+      "description": "DCPI grid-power scores for 300+ markets, plus capacity to buy or lease; query and cite."
     },
     {
       "slug": "com-a2a2p-a2a2p",
@@ -15740,7 +15726,7 @@
       "name": "io.github.bruchris/canvas-lms-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "TypeScript MCP server for Canvas LMS — 167 tools across 42 domains."
+      "description": "TypeScript MCP server for Canvas LMS — 169 tools across 42 domains."
     },
     {
       "slug": "io-github-bryanjbelanger-talos-mcp-server",
@@ -15859,7 +15845,7 @@
       "name": "io.github.ChanMeng666/archlang-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Compile, describe, lint, validate, score and repair multi-storey and curved ArchLang floor plans."
+      "description": "Compile, describe, lint, validate, score, repair, fix, finish, suggest and complete ArchLang plans."
     },
     {
       "slug": "io-github-chaoz23-charactercheck",
@@ -16447,7 +16433,7 @@
       "name": "io.github.cyanheads/nonprofit-explorer-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for nonprofit financials via ProPublica — IRS Form 990 data for 1.8M+ nonprofits."
+      "description": "MCP server for nonprofit financials via ProPublica: IRS Form 990 data for 1.8M+ nonprofits."
     },
     {
       "slug": "io-github-cyanheads-ntfy-mcp-server",
@@ -16503,7 +16489,7 @@
       "name": "io.github.cyanheads/ourairports-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Offline global aviation reference — airports, runways, navaids, frequencies from OurAirports."
+      "description": "Offline global aviation reference: airports, runways, navaids, frequencies from OurAirports."
     },
     {
       "slug": "io-github-cyanheads-sanctions-screening-mcp-server",
@@ -16944,7 +16930,7 @@
       "name": "io.github.emergent-wisdom/semahash",
       "confidence": 0.45,
       "topics": [],
-      "description": "Content-addressed semantics: fail-closed handshakes over 606 cognitive patterns."
+      "description": "Content-addressed semantics: fail-closed handshakes over 616 cognitive patterns."
     },
     {
       "slug": "io-github-enthrium-oe-mcp",
@@ -17469,7 +17455,7 @@
       "name": "io.github.glongusmain/glongus-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for Glongus, an escrow-secured marketplace where AI agents trade physical goods"
+      "description": "Let your agent buy and sell physical goods, with escrow and shipping."
     },
     {
       "slug": "io-github-glslang-windbg-mcp",
@@ -17497,7 +17483,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 558 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 563 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -19387,7 +19373,7 @@
       "name": "io.github.nicolascroce/keepsake",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for Keepsake — the personal CRM for nurturing your relationships"
+      "description": "Keepsake (keepsake.place), the app where creators and solo entrepreneurs empty their heads"
     },
     {
       "slug": "io-github-nithishr-mcp-multi-poc-alpha",
@@ -21245,13 +21231,6 @@
       "description": "Official MCP server: EU VAT validation via VIES, plus offline rates and format checks."
     },
     {
-      "slug": "io-github-vdmeu-registrum-mcp",
-      "name": "io.github.vdmeu/registrum-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "UK company data: profiles, iXBRL financials, directors, PSC chains, ECCTA. Hosted, no key."
-    },
-    {
       "slug": "io-github-veracium-ai-veracium",
       "name": "io.github.veracium-ai/veracium",
       "confidence": 0.45,
@@ -21312,7 +21291,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "deja-vu: local memory over the session histories of thirty-eight coding agents."
+      "description": "deja-vu: local memory over the session histories of forty-one coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -28418,7 +28397,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Anomaly detection for AI trading agents: read-only, flags the hour the agent breaks its baseline."
+      "description": "An AI agent for prop firm challenges on Propr; the connector reads it, never trades."
     },
     {
       "slug": "mcp-obsidian",
