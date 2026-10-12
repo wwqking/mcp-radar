@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T00:43:14.099Z",
-  "total": 5687,
+  "generatedAt": "2026-10-12T00:59:54.598Z",
+  "total": 5686,
   "summary": {
     "needsReview": 3838,
     "needsReviewRatePct": 67.5,
@@ -16,7 +16,7 @@
   ],
   "categoryCounts": {
     "misc": 2587,
-    "dev": 1888,
+    "dev": 1887,
     "search": 759,
     "files": 255,
     "ai": 209,
@@ -76,11 +76,11 @@
     },
     {
       "term": "free",
-      "count": 114
+      "count": 115
     },
     {
       "term": "memory",
-      "count": 108
+      "count": 107
     },
     {
       "term": "credit",
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 99
+      "count": 98
     },
     {
       "term": "manage",
@@ -108,7 +108,7 @@
     },
     {
       "term": "over",
-      "count": 90
+      "count": 91
     },
     {
       "term": "live",
@@ -132,7 +132,7 @@
     },
     {
       "term": "company",
-      "count": 78
+      "count": 79
     },
     {
       "term": "x402",
@@ -167,16 +167,16 @@
       "count": 56
     },
     {
+      "term": "evidence",
+      "count": 55
+    },
+    {
       "term": "local-first",
       "count": 55
     },
     {
       "term": "person",
       "count": 55
-    },
-    {
-      "term": "evidence",
-      "count": 54
     },
     {
       "term": "real",
@@ -235,11 +235,11 @@
       "count": 40
     },
     {
-      "term": "signed",
-      "count": 39
+      "term": "stdio",
+      "count": 40
     },
     {
-      "term": "stdio",
+      "term": "signed",
       "count": 39
     }
   ],
@@ -2223,7 +2223,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "733 MCP tools across 1196 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "734 MCP tools across 1197 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -3427,7 +3427,7 @@
       "name": "com.reputemap/reputemap",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read and filter your Google Business Profile reviews, get stats, and send review requests."
+      "description": "Read Google reviews and stats, draft AI replies, publish the ones you approve, request reviews."
     },
     {
       "slug": "com-rohithmariyala-makemebetter-ai",
@@ -6290,7 +6290,7 @@
       "name": "io.github.erayendes/asc-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Every App Store Connect + StoreKit 2 endpoint. 895 tools in 13 profiles, narrow to 27."
+      "description": "Every App Store Connect + StoreKit 2 endpoint. 902 tools in 13 profiles, narrow to 27."
     },
     {
       "slug": "io-github-eshller-ltd-mcp",
@@ -6920,7 +6920,7 @@
       "name": "io.github.IPGeolocation/ipgeolocation-io-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Official MCP server for IP geolocation, security, ASN, abuse, timezone, astronomy, and user-agent."
+      "description": "IP geolocation, security, ASN, abuse, time zones, astronomy, and user-agent parsing over stdio."
     },
     {
       "slug": "io-github-iron-mark-stellaroid-earn",
@@ -7389,7 +7389,7 @@
       "name": "io.github.klimPaskov/hoi4-agent-tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "HOI4 modding tools for agents: local references, visual previews, focus trees, interfaces and maps."
+      "description": "HOI4 modding for agents: cited docs, tree/GUI/map previews, event and AI analysis, validated edits."
     },
     {
       "slug": "io-github-knowledgepa3-gia-mcp-server",
@@ -7732,7 +7732,7 @@
       "name": "io.github.matiasmaquieira96/risk-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "KYB: Spain France UK Ireland Poland Norway Finland Sweden Croatia Belgium Denmark EE SK CH US"
+      "description": "KYB API: company registry data from 18 countries, insolvency notices and sanctions screening"
     },
     {
       "slug": "io-github-matrodrigs-shotcut-mcp",
@@ -13038,7 +13038,7 @@
       "name": "io.github.tresor4k/realdentalcosts-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "US dental prices: 12 procedures, 51 states, 200+ cities, cash vs insurance estimates."
+      "description": "Sourced US and Canadian dental prices, Medicaid and Medicare dental rules, treatment-plan checker."
     },
     {
       "slug": "io-github-trrahul-xamlmcp",
@@ -14819,6 +14819,13 @@
       "description": "Turn agent intent into physical parts: engineering review, measured geometry, calibrated pricing."
     },
     {
+      "slug": "com-predictionmarketspicks-fantasy-draft",
+      "name": "com.predictionmarketspicks/fantasy-draft",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Fantasy football for any AI agent: draft board, start/sit, waivers, your Sleeper league. Free."
+    },
+    {
       "slug": "com-predictionmarketspicks-quant",
       "name": "com.predictionmarketspicks/quant",
       "confidence": 0.45,
@@ -15195,13 +15202,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Recover stranded native gas: empty a chain's balance to exactly zero on 25 EVM chains."
-    },
-    {
-      "slug": "io-github-andypgray-loadbearing",
-      "name": "io.github.andypgray/loadbearing",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Checks .NET solutions against a fluent C# architecture spec and explains the rules to agents."
     },
     {
       "slug": "io-github-andypgray-resharper-cli-mcp",
@@ -15761,7 +15761,7 @@
       "name": "io.github.cachly-dev/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Persistent memory + causal root-cause analysis for AI coding agents. 124 MCP tools. EU, GDPR."
+      "description": "Solve it once. From then on, your AI knows. Experience for coding agents, EU-hosted. 124 MCP tools."
     },
     {
       "slug": "io-github-cadlens-co-cadlens-mcp",
@@ -16930,7 +16930,7 @@
       "name": "io.github.emergent-wisdom/semahash",
       "confidence": 0.45,
       "topics": [],
-      "description": "Content-addressed semantics: fail-closed handshakes over 616 cognitive patterns."
+      "description": "Content-addressed semantics: fail-closed handshakes over 617 cognitive patterns."
     },
     {
       "slug": "io-github-enthrium-oe-mcp",
@@ -17014,7 +17014,7 @@
       "name": "io.github.financeratecalc/frc-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "US FHA mortgage denial statistics (2025 federal HMDA record) with claim receipts and use contracts"
+      "description": "2025 US FHA mortgage record statistics, with a gate that checks AI sentences preserve the evidence"
     },
     {
       "slug": "io-github-fino-wind-vaultbeat",
@@ -17483,7 +17483,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 569 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 574 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -25076,7 +25076,7 @@
       "topics": [
         "automation"
       ],
-      "description": "ServiceNow developer data plane: Table API, CMDB, update sets, schema. Read-only, allow/deny, audit."
+      "description": "ServiceNow MCP server: Table API, CMDB, schema, update sets. Read-only mode, OAuth, audit log."
     },
     {
       "slug": "io-github-jtalk22-asana-mcp-server",
@@ -27292,7 +27292,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Structured web data from 35 platforms: Google, YouTube, Amazon, Walmart, Reddit, TikTok, LinkedIn"
+      "description": "Structured web data from 36 platforms: Google, YouTube, Amazon, Walmart, Reddit, TikTok, LinkedIn"
     },
     {
       "slug": "io-github-sebastienrousseau-iso20022-mcp",
@@ -27789,7 +27789,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Brazilian stock (B3) fundamentals: ratios, dividends, scores, REITs (FIIs), ETFs. Open methodology."
+      "description": "Brazilian stock (B3) fundamentals: ratios, dividends, scores, FIIs, ETFs, BDRs. Open methodology."
     },
     {
       "slug": "io-github-vibekit-bot-vibekit-mcp",
