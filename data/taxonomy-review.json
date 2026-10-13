@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-12T00:59:54.598Z",
-  "total": 5686,
+  "generatedAt": "2026-10-13T02:54:23.430Z",
+  "total": 5684,
   "summary": {
-    "needsReview": 3838,
+    "needsReview": 3836,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2587,
+    "uncategorized": 2585,
     "uncategorizedRatePct": 45.5,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,15 +15,15 @@
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2587,
+    "misc": 2585,
     "dev": 1887,
     "search": 759,
-    "files": 255,
+    "files": 256,
     "ai": 209,
-    "comms": 188,
+    "comms": 189,
     "database": 170,
     "commerce": 163,
-    "cloud": 133,
+    "cloud": 134,
     "browser": 120,
     "marketing": 79
   },
@@ -76,27 +76,27 @@
     },
     {
       "term": "free",
-      "count": 115
+      "count": 116
     },
     {
       "term": "memory",
       "count": 107
     },
     {
+      "term": "read",
+      "count": 106
+    },
+    {
       "term": "credit",
       "count": 105
     },
     {
-      "term": "read",
-      "count": 105
+      "term": "manage",
+      "count": 98
     },
     {
       "term": "local",
-      "count": 98
-    },
-    {
-      "term": "manage",
-      "count": 98
+      "count": 97
     },
     {
       "term": "code",
@@ -132,14 +132,14 @@
     },
     {
       "term": "company",
-      "count": 79
-    },
-    {
-      "term": "x402",
-      "count": 66
+      "count": 78
     },
     {
       "term": "tasks",
+      "count": 65
+    },
+    {
+      "term": "x402",
       "count": 65
     },
     {
@@ -164,7 +164,7 @@
     },
     {
       "term": "analysis",
-      "count": 56
+      "count": 55
     },
     {
       "term": "evidence",
@@ -187,15 +187,15 @@
       "count": 51
     },
     {
-      "term": "intelligence",
-      "count": 48
-    },
-    {
       "term": "usdc",
       "count": 48
     },
     {
       "term": "every",
+      "count": 47
+    },
+    {
+      "term": "intelligence",
       "count": 47
     },
     {
@@ -239,8 +239,8 @@
       "count": 40
     },
     {
-      "term": "signed",
-      "count": 39
+      "term": "apis",
+      "count": 38
     }
   ],
   "reviewQueue": [
@@ -2223,7 +2223,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "734 MCP tools across 1197 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "737 MCP tools across 1200 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -3092,13 +3092,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Classify a job title into department and seniority, and optionally verify the position."
-    },
-    {
-      "slug": "com-mambabuilt-mcp-domain-to-linkedin-url-resolver",
-      "name": "com.mambabuilt/mcp-domain-to-linkedin-url-resolver",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Resolves a company domain or name to its LinkedIn URL with confidence and firmographics."
     },
     {
       "slug": "com-mambabuilt-mcp-event-presence-index",
@@ -5499,7 +5492,7 @@
       "name": "io.github.cafferychen777/chatspatial",
       "confidence": 0.35,
       "topics": [],
-      "description": "Schema-enforced spatial transcriptomics analysis with 20 tools and 66 methods via MCP"
+      "description": "Schema-enforced spatial transcriptomics analysis with 20 tools and 65 methods via MCP"
     },
     {
       "slug": "io-github-camlowe-mcp-server-reddit-ads",
@@ -6647,7 +6640,7 @@
       "name": "io.github.Hashlock-Tech/hashlock",
       "confidence": 0.35,
       "topics": [],
-      "description": "Non-custodial cross-chain OTC for AI agents: sealed RFQ, negotiation, HTLC atomic swaps. Testnet."
+      "description": "Non-custodial cross-chain OTC for AI agents: sealed RFQ, negotiation, HTLC atomic swaps."
     },
     {
       "slug": "io-github-havix0101-arkon-vault",
@@ -7361,7 +7354,7 @@
       "name": "io.github.kindrat86/sanctionsai",
       "confidence": 0.35,
       "topics": [],
-      "description": "OFAC sanctions screening for AI agents: screen names, wallets, entities against the SDN list."
+      "description": "OFAC sanctions screening for AI agents: 1,050 wallets, 19,389 SDN names, <100ms. Free tier, no key."
     },
     {
       "slug": "io-github-kindrat86-sipiteno",
@@ -7389,7 +7382,7 @@
       "name": "io.github.klimPaskov/hoi4-agent-tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "HOI4 modding for agents: cited docs, tree/GUI/map previews, event and AI analysis, validated edits."
+      "description": "Build HOI4 mods: focus trees, events, decisions, worlds, GUI previews, docs and AI balance."
     },
     {
       "slug": "io-github-knowledgepa3-gia-mcp-server",
@@ -7732,7 +7725,7 @@
       "name": "io.github.matiasmaquieira96/risk-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "KYB API: company registry data from 18 countries, insolvency notices and sanctions screening"
+      "description": "KYB API: company registry data from 27 countries, insolvency notices and sanctions screening"
     },
     {
       "slug": "io-github-matrodrigs-shotcut-mcp",
@@ -10266,7 +10259,7 @@
       "name": "io.github.musharna/data-aggregator-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Find & fetch research datasets across 18 archives, omics registries, and literature sources."
+      "description": "Find & fetch research datasets across 20 archives, omics registries, and literature sources."
     },
     {
       "slug": "io-github-musharna-jobd",
@@ -13083,13 +13076,6 @@
       "description": "The Kalman filter for the non-Gaussian, non-stationary world. Unsupervised structural change."
     },
     {
-      "slug": "io-github-untitledfinancial-dpx",
-      "name": "io.github.untitledfinancial/dpx",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "AI-native settlement rail + intelligence oracle for autonomous agents. x402, Base mainnet, 81 tools."
-    },
-    {
       "slug": "io-github-usekaval-kaval",
       "name": "io.github.usekaval/kaval",
       "confidence": 0.35,
@@ -14767,7 +14753,7 @@
       "name": "xyz.costrinity/vitna-compliance-preflight",
       "confidence": 0.35,
       "topics": [],
-      "description": "Wraps stdio MCP servers. Risky calls wait for a person; no answer, no run. Signed records."
+      "description": "Guard wraps stdio MCP servers: risky calls wait for a person; no answer, no run. Remote: cooperative"
     },
     {
       "slug": "xyz-kellyruns-strategy-lab",
@@ -15593,7 +15579,7 @@
       "name": "io.github.bosmdavid-gif/dropthehassle",
       "confidence": 0.45,
       "topics": [],
-      "description": "Your AI puts your site online: free HTTPS link, or a .com for €19 that goes live with no DNS."
+      "description": "Your AI publishes your site: free HTTPS link, or a .com for €19 that goes live with no DNS."
     },
     {
       "slug": "io-github-botzrdev-dreamd",
@@ -15726,7 +15712,7 @@
       "name": "io.github.bruchris/canvas-lms-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "TypeScript MCP server for Canvas LMS — 172 tools across 42 domains."
+      "description": "TypeScript MCP server for Canvas LMS — 174 tools across 42 domains."
     },
     {
       "slug": "io-github-bryanjbelanger-talos-mcp-server",
@@ -15761,7 +15747,7 @@
       "name": "io.github.cachly-dev/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Solve it once. From then on, your AI knows. Experience for coding agents, EU-hosted. 124 MCP tools."
+      "description": "Solve it once. From then on, your AI knows. Experience for coding agents, hosted in the EU."
     },
     {
       "slug": "io-github-cadlens-co-cadlens-mcp",
@@ -17357,7 +17343,7 @@
       "name": "io.github.gambadio/onepassword-agent-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Local MCP access to approved 1Password fields without exposing plaintext secrets to AI agents."
+      "description": "Save and use 1Password secrets locally without exposing plaintext to AI agents."
     },
     {
       "slug": "io-github-garl-protocol-agent-trust",
@@ -17483,7 +17469,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 574 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 579 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -17736,6 +17722,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Repo-native task continuity for AI coding agents: a reviewed task-state ledger served over MCP."
+    },
+    {
+      "slug": "io-github-ihuzaifashoukat-x-use",
+      "name": "io.github.ihuzaifashoukat/x-use",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Research X (Twitter), read inboxes and review publishing through MCP. No X API key required."
     },
     {
       "slug": "io-github-ilpr-waitlister",
@@ -18282,13 +18275,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "NASA-validated computed planetary positions for your AI: 19 astrology tools, never hallucinated."
-    },
-    {
-      "slug": "io-github-kaiser-data-kitsune-mcp",
-      "name": "io.github.kaiser-data/kitsune-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Shape-shifting MCP hub — shapeshift() into 130,000+ servers at runtime. No restarts. 7 registries."
     },
     {
       "slug": "io-github-kakha13-esim-mcp",
@@ -21585,7 +21571,7 @@
       "name": "net.crawlora/crawlora-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Hosted MCP: 3475 structured web-data tools across 468 platform groups."
+      "description": "Hosted MCP: 3631 structured web-data tools across 471 platform groups."
     },
     {
       "slug": "no-apier-mcp",
@@ -21779,7 +21765,7 @@
       "topics": [
         "automation"
       ],
-      "description": "Run Plori agents in Workspaces over MCP."
+      "description": "Plori runs AI agents in Workspaces."
     },
     {
       "slug": "ai-primateintelligence-mcp",
@@ -23013,7 +22999,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Set up uptime monitoring from your editor: create checks, configure alerts, query uptime history."
+      "description": "Set up uptime monitoring from your editor: create checks, alerts, and query uptime. Can sign you up."
     },
     {
       "slug": "dev-ezstat-ezstat-mcp-server",
@@ -28640,7 +28626,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Loudness (EBU R128 / BS.1770-4), true-peak and voice-quality analysis for local files and URLs."
+      "description": "Loudness, true-peak and voice-quality analysis of URLs and local files via the hosted AudioLab API."
     },
     {
       "slug": "trade-snacs-snacs-data",
