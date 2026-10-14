@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-10-13T02:54:23.430Z",
-  "total": 5684,
+  "generatedAt": "2026-10-14T00:55:11.961Z",
+  "total": 5681,
   "summary": {
-    "needsReview": 3836,
+    "needsReview": 3833,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2585,
-    "uncategorizedRatePct": 45.5,
+    "uncategorized": 2581,
+    "uncategorizedRatePct": 45.4,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
   },
   "alerts": [
-    "待归类占比 45.5%，超过 5% 审核线",
+    "待归类占比 45.4%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2585,
+    "misc": 2581,
     "dev": 1887,
-    "search": 759,
+    "search": 760,
     "files": 256,
     "ai": 209,
     "comms": 189,
-    "database": 170,
+    "database": 171,
     "commerce": 163,
     "cloud": 134,
     "browser": 120,
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 116
+      "count": 115
     },
     {
       "term": "memory",
@@ -135,6 +135,10 @@
       "count": 78
     },
     {
+      "term": "audit",
+      "count": 65
+    },
+    {
       "term": "tasks",
       "count": 65
     },
@@ -144,10 +148,6 @@
     },
     {
       "term": "across",
-      "count": 64
-    },
-    {
-      "term": "audit",
       "count": 64
     },
     {
@@ -239,8 +239,8 @@
       "count": 40
     },
     {
-      "term": "apis",
-      "count": 38
+      "term": "build",
+      "count": 39
     }
   ],
   "reviewQueue": [
@@ -1810,7 +1810,7 @@
       "name": "app.desktopcommander/remote-desktop-commander",
       "confidence": 0.35,
       "topics": [],
-      "description": "Hosted MCP server connecting claude.ai, ChatGPT and other AI apps to your own computer"
+      "description": "Remote Desktop Commander: use files, terminal and processes on your own computers from any AI app."
     },
     {
       "slug": "app-devglow-devglow",
@@ -2233,13 +2233,6 @@
       "description": "Your AI builds, deploys, and runs full-stack apps on a hosted workspace created at first sign-in."
     },
     {
-      "slug": "co-webhook-webhook",
-      "name": "co.webhook/webhook",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Receive, inspect, replay and deliver webhooks — with signature verification and agent triggers."
-    },
-    {
       "slug": "co-whooshly-whooshly-mcp",
       "name": "co.whooshly/whooshly-mcp",
       "confidence": 0.35,
@@ -2608,7 +2601,7 @@
       "name": "com.dashboardbase/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Validate Dashboardbase widget endpoint responses and setup files against the live contract."
+      "description": "Validate dashboardbase widget endpoint responses and setup files against the live contract."
     },
     {
       "slug": "com-decionis-mcp",
@@ -2798,13 +2791,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "4,764 products, 626 categories: sourced prices, dated price history, independent-test coverage."
-    },
-    {
-      "slug": "com-gadgethumans-gadgethumans-mcp",
-      "name": "com.gadgethumans/gadgethumans-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP endpoint — 46 tools + 300+ REST endpoints. Free tier, no API keys, no signup."
     },
     {
       "slug": "com-gentkey-mcp",
@@ -4312,13 +4298,6 @@
       "description": "Solana transaction diagnosis, simulation, token-risk evidence, and priority fees via x402 USDC."
     },
     {
-      "slug": "io-aimeat-aimeat",
-      "name": "io.aimeat/aimeat",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "AIMEAT - the Linux of AI. An open, federated, self-hosted AI operating system you own. MIT."
-    },
-    {
       "slug": "io-atono-atono-mcp-server",
       "name": "io.atono/atono-mcp-server",
       "confidence": 0.35,
@@ -4827,7 +4806,7 @@
       "name": "io.github.aleksUIX/vastlint",
       "confidence": 0.35,
       "topics": [],
-      "description": "Validate VAST, VMAP, and DAAST ad tags against IAB specs. 234 rules, pure Rust core."
+      "description": "Validate VAST, VMAP, and DAAST ad tags against IAB specs. 246 rules, pure Rust core."
     },
     {
       "slug": "io-github-alex88ryabov-ng-token-saver",
@@ -5108,13 +5087,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "MCP server for Yandex Wordstat API: top & related queries, demand dynamics and regions."
-    },
-    {
-      "slug": "io-github-aspekt19-loyal-spark",
-      "name": "io.github.aspekt19/loyal-spark",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Base MCP (39 tools) on Base: programs, mint, rewards. lsk_ key; plan limits enforced. /for-agents"
     },
     {
       "slug": "io-github-asqi-carter-ftx-mcp",
@@ -5849,7 +5821,7 @@
       "name": "io.github.crisnahine/rails-ai-context",
       "confidence": 0.35,
       "topics": [],
-      "description": "45 MCP tools give AI agents live Rails schema, routes, models, and conventions."
+      "description": "35 MCP tools give AI agents live Rails schema, routes, models, and conventions."
     },
     {
       "slug": "io-github-cristianosantana-mcp-nfe-hub-v1",
@@ -11477,7 +11449,7 @@
       "name": "io.github.pipeworx-io/revternal",
       "confidence": 0.35,
       "topics": [],
-      "description": "Revternal MCP — wraps the Revternal Developer Intelligence API"
+      "description": "Revternal MCP — wraps Revternal's people/developer intelligence API (api.revternal.com), rebuilt…"
     },
     {
       "slug": "io-github-pipeworx-io-rfc-editor",
@@ -11918,7 +11890,7 @@
       "name": "io.github.Regsorm/code-index",
       "confidence": 0.35,
       "topics": [],
-      "description": "Rust code index MCP server, native 1C:Enterprise (BSL) support. 32 tools, AST for 14 languages."
+      "description": "Rust code index MCP server, native 1C:Enterprise (BSL) support. 37 tools, AST for 14 languages."
     },
     {
       "slug": "io-github-rekklesna-proxmox-mcp-plus",
@@ -14781,7 +14753,7 @@
       "name": "ai.kinlab/kin",
       "confidence": 0.45,
       "topics": [],
-      "description": "A graph-native code repository for people and AI agents."
+      "description": "A graph-native code repository for AI agents and the people who build with them."
     },
     {
       "slug": "ai-syntheticbrew-syntheticbrew",
@@ -15712,7 +15684,7 @@
       "name": "io.github.bruchris/canvas-lms-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "TypeScript MCP server for Canvas LMS — 174 tools across 42 domains."
+      "description": "TypeScript MCP server for Canvas LMS — 176 tools across 42 domains."
     },
     {
       "slug": "io-github-bryanjbelanger-talos-mcp-server",
@@ -17469,7 +17441,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 579 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 584 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -20976,7 +20948,7 @@
       "name": "io.github.The-Pixel-Boys/shield-kya",
       "confidence": 0.45,
       "topics": [],
-      "description": "KYA MCP gate: evaluate, ingest, request approval. Sole PEP is Shield."
+      "description": "Audit trail and traceability for AI agents. MCP gate: evaluate, ingest, request approval."
     },
     {
       "slug": "io-github-theoddden-terradev",
@@ -23027,6 +22999,15 @@
         "automation"
       ],
       "description": "Mobile device interaction automation via MCP"
+    },
+    {
+      "slug": "dev-lastping-lastping",
+      "name": "dev.lastping/lastping",
+      "confidence": 0.55,
+      "topics": [
+        "observability"
+      ],
+      "description": "AI agent monitoring: alerts when your agents fail, stall or need you"
     },
     {
       "slug": "dev-postlake-social",
@@ -25965,7 +25946,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Photo to technical drawing, CAD-ready DXF and DWG, 3D models and product renders."
+      "description": "Photo or text to technical drawing, DXF and DWG, printable STL, 3D models and product renders."
     },
     {
       "slug": "io-github-memi-design-memi",
