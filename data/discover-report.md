@@ -1,6 +1,8 @@
-# 候选发现报告 · 2026-07-26
+# 候选发现报告 · 2026-08-17
 
-扫了 290 个候选，过三道门槛的 **25** 个，挡掉 201 个。
+扫了 274 个候选，过三道门槛的 **18** 个，搜到但库里已有 110 个，挡掉 191 个。
+
+> 「库里已有」单列是有原因的：它既不是命中也不是被门槛挡掉，混进任何一边都会让人误判门槛太严。这个数高说明清单这一段已经采过了，正常往下走即可。
 
 三道门槛：① 仓库名与关键词对得上（挡 GitHub 搜索误命中）② 确实是 server 不是清单/客户端/教程 ③ npm 包的 repository 要指回同一个仓库（否则填 null）。
 
@@ -8,70 +10,63 @@
 
 ## 有人在搜、但我们没有（关键词来源）
 
-| 搜索量 | 仓库 | ★ | npm | 说明 |
-|---|---|---|---|---|
-| 1600/mo | [szeider/mcp-solver](https://github.com/szeider/mcp-solver) | 176 | — | Model Context Protocol (MCP) server for constraint optimizat |
+| 搜索量 | 来自哪份清单 | 仓库 | ★ | npm | 说明 |
+|---|---|---|---|---|---|
+| 170/mo | 人工缺口清单 | [serpapi/serpapi-mcp](https://github.com/serpapi/serpapi-mcp) | 165 | — | SerpApi MCP Server for Google and other search engine result |
+| 140/mo | 人工缺口清单 | [alpacahq/alpaca-mcp-server](https://github.com/alpacahq/alpaca-mcp-server) | 919 | — | Alpaca’s official MCP Server lets you trade stocks, ETFs, cr |
+| 140/mo | 人工缺口清单 | [HealthyApps/health-auto-export-mcp-server](https://github.com/HealthyApps/health-auto-export-mcp-server) | 61 | — | An MCP server that provides Apple Health data via the Health |
+| 140/mo | 人工缺口清单 | [okta/okta-mcp-server](https://github.com/okta/okta-mcp-server) | 54 | — | Okta Self-Hosted MCP Server |
+| 140/mo | 人工缺口清单 | [SonarSource/sonarqube-mcp-server](https://github.com/SonarSource/sonarqube-mcp-server) | 626 | — | Official SonarQube MCP Server for code quality and security  |
+| 110/mo | 人工缺口清单 | [nickclyde/duckduckgo-mcp-server](https://github.com/nickclyde/duckduckgo-mcp-server) | 1420 | — | A Model Context Protocol (MCP) server that provides web sear |
+| 110/mo | 人工缺口清单 | [ryaker/outlook-mcp](https://github.com/ryaker/outlook-mcp) | 425 | — | MCP server for Claude to access Outlook data via Microsoft G |
+| 110/mo | 人工缺口清单 | [classfang/ssh-mcp-server](https://github.com/classfang/ssh-mcp-server) | 775 | — | 基于 SSH 的 MCP 服务 🧙‍♀️。已被MCP官方收录 🎉。 SSH MCP Server 🧙‍♀️. It |
 
 ## GitHub 上高星但库里没有（趋势来源）
 
 | ★ | 仓库 | 最近提交 | npm | 说明 |
 |---|---|---|---|---|
-| 35349 | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | 0天前 | codebase-memory-mcp | High-performance code intelligence MCP server. Indexes codeb |
-| 8843 | [wonderwhy-er/DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) | 1天前 | — | This is MCP server for Claude that gives it terminal control |
-| 8285 | [idosal/git-mcp](https://github.com/idosal/git-mcp) | 79天前 | — | Put an end to code hallucinations! GitMCP is a free, open-so |
-| 7043 | [firecrawl/firecrawl-mcp-server](https://github.com/firecrawl/firecrawl-mcp-server) | 0天前 | — | 🔥 Official Firecrawl MCP Server - Adds powerful web scrapin |
-| 5636 | [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) | 14天前 | — | Model Context Protocol Server for Mobile Automation and Scra |
-| 4135 | [MarkusPfundstein/mcp-obsidian](https://github.com/MarkusPfundstein/mcp-obsidian) | 72天前 | — | MCP server that interacts with Obsidian via the Obsidian res |
-| 4058 | [haris-musa/excel-mcp-server](https://github.com/haris-musa/excel-mcp-server) | 105天前 | — | A Model Context Protocol server for Excel file manipulation |
-| 1360 | [robotmcp/ros-mcp-server](https://github.com/robotmcp/ros-mcp-server) | 1天前 | — | Connect AI models like Claude & GPT with robots using MCP an |
-| 1342 | [designcomputer/mysql_mcp_server](https://github.com/designcomputer/mysql_mcp_server) | 35天前 | — | A Model Context Protocol (MCP) server that enables secure in |
-| 1332 | [chigwell/telegram-mcp](https://github.com/chigwell/telegram-mcp) | 0天前 | — | Telegram MCP server powered by Telethon to let MCP clients r |
-| 1281 | [caol64/wenyan-mcp](https://github.com/caol64/wenyan-mcp) | 88天前 | — | 文颜 MCP Server 可以让 AI 自动将 Markdown 文章排版后发布至微信公众号。 |
-| 1255 | [matlab/matlab-mcp-server](https://github.com/matlab/matlab-mcp-server) | 16天前 | — | Run MATLAB® using AI applications with the official MATLAB M |
-| 1252 | [DaxianLee/cocos-mcp-server](https://github.com/DaxianLee/cocos-mcp-server) | 18天前 | — | 一款全面的、便捷的cocos creator AI MCP服务插件，适用于3.8.0以上cocos版本，一键安装，一键启 |
-| 1235 | [philschmid/mcp-cli](https://github.com/philschmid/mcp-cli) | 170天前 | — | Lighweight CLI to interact with MCP servers |
-| 1227 | [datalayer/jupyter-mcp-server](https://github.com/datalayer/jupyter-mcp-server) | 0天前 | — | 🪐 🔧 Model Context Protocol (MCP) Server for Jupyter. |
-| 1173 | [mcpjungle/MCPJungle](https://github.com/mcpjungle/MCPJungle) | 67天前 | — | One place to manage & connect to all your MCP servers |
-| 1118 | [Joooook/12306-mcp](https://github.com/Joooook/12306-mcp) | 16天前 | — | This is a 12306 ticket search server based on the Model Cont |
-| 1095 | [mukul975/cve-mcp-server](https://github.com/mukul975/cve-mcp-server) | 9天前 | — | Production-grade MCP server giving Claude 27 security intell |
-| 1080 | [saidsurucu/yargi-mcp](https://github.com/saidsurucu/yargi-mcp) | 12天前 | — | MCP Server For Turkish Legal Databases |
-| 1043 | [irinabuht12-oss/google-meta-ads-ga4-mcp](https://github.com/irinabuht12-oss/google-meta-ads-ga4-mcp) | 110天前 | — | MCP server for Google Ads, Meta Ads & GA4 — works with ChatG |
-| 1012 | [PortSwigger/mcp-server](https://github.com/PortSwigger/mcp-server) | 29天前 | — | MCP Server for Burp |
-| 997 | [microsoft/powerbi-modeling-mcp](https://github.com/microsoft/powerbi-modeling-mcp) | 16天前 | @microsoft/powerbi-modeling-mcp | The Power BI Modeling MCP Server, brings Power BI semantic m |
-| 990 | [cisco-ai-defense/mcp-scanner](https://github.com/cisco-ai-defense/mcp-scanner) | 2天前 | — | Scan MCP servers for potential threats & security findings. |
-| 986 | [johnhuang316/code-index-mcp](https://github.com/johnhuang316/code-index-mcp) | 75天前 | — | A Model Context Protocol (MCP) server that helps large langu |
+| 3335 | [bethington/ghidra-mcp](https://github.com/bethington/ghidra-mcp) | 4天前 | — | Ghidra MCP Server — 200+ MCP tools for AI-powered reverse en |
+| 2911 | [zcaceres/markdownify-mcp](https://github.com/zcaceres/markdownify-mcp) | 7天前 | — | A Model Context Protocol server for converting almost anythi |
+| 2671 | [zinja-coder/jadx-ai-mcp](https://github.com/zinja-coder/jadx-ai-mcp) | 11天前 | — | Plugin for JADX to integrate MCP server |
+| 2519 | [zhizhuodemao/js-reverse-mcp](https://github.com/zhizhuodemao/js-reverse-mcp) | 33天前 | js-reverse-mcp | AI Agent-first JS 逆向 MCP Server：有头 Chrome 调试、断点、网络/WebSocket |
+| 2461 | [chrisryugj/korean-law-mcp](https://github.com/chrisryugj/korean-law-mcp) | 1天前 | korean-law-mcp | 법제처 국가법령정보를 LLM에서 바로 조회하는 MCP 서버. 법령·판례·조례 검색과 인용 검증 | MCP s |
+| 2358 | [knowsuchagency/mcp2cli](https://github.com/knowsuchagency/mcp2cli) | 0天前 | — | Turn any MCP, OpenAPI, or GraphQL server into a CLI — at run |
+| 2277 | [jamubc/gemini-mcp-tool](https://github.com/jamubc/gemini-mcp-tool) | 27天前 | gemini-mcp-tool | MCP server that enables AI assistants to interact with Googl |
+| 2173 | [samuelgursky/davinci-resolve-mcp](https://github.com/samuelgursky/davinci-resolve-mcp) | 1天前 | davinci-resolve-mcp | MCP server integration for DaVinci Resolve Studio |
+| 2136 | [joshuayoes/ios-simulator-mcp](https://github.com/joshuayoes/ios-simulator-mcp) | 4天前 | ios-simulator-mcp | MCP server for interacting with the iOS simulator |
+| 2081 | [modelcontextprotocol/mcpb](https://github.com/modelcontextprotocol/mcpb) | 83天前 | — | Desktop Extensions: One-click local MCP server installation  |
 
-## 挡掉的 201 个（抽样 30）
+## 挡掉的 191 个（抽样 30）
 
 | 候选 | 挡掉原因 |
 |---|---|
-| chatgpt | 搜索误命中（首位是 danny-avila/LibreChat，与词无关） |
-| withastro/docs-mcp | 像是 docs? 而不是 server |
-| huggingface/mcp-course | 像是 course 而不是 server |
-| rafaorleaes/playright-test | ★1 < 50 |
-| confluence | 搜索误命中（首位是 sooperset/mcp-atlassian，与词无关） |
-| azure | 搜索误命中（首位是 danny-avila/LibreChat，与词无关） |
-| BofAI/mcp-server-tron | ★13 < 50 |
-| components system | 搜索误命中（首位是 southleft/design-systems-mcp，与词无关） |
-| Yasirrazaa/notebookllm | ★5 < 50 |
-| antigravity | 搜索误命中（首位是 google-labs-code/stitch-skills，与词无关） |
-| postgresql | 搜索误命中（首位是 t8y2/dbx，与词无关） |
-| langchain4j/langchain4j | 仓库名不带 mcp（多半只是描述里顺带提到） |
-| ZenNotes/zennotes | 仓库名不带 mcp（多半只是描述里顺带提到） |
-| ollama | 搜索误命中（首位是 PDFMathTranslate/PDFMathTranslate，与词无关） |
-| sql | 搜索误命中（首位是 zylon-ai/private-gpt，与词无关） |
-| liangdabiao/amazon-sorftime-research-MCP-skill | 像是 skills? 而不是 server |
-| dip pip | 搜索误命中（首位是 kthlong/ProprioceptiveAcuity_Data，与词无关） |
-| specification | 搜索误命中（首位是 harsha-iiiv/openapi-mcp-generator，与词无关） |
-| app | 搜索误命中（首位是 SigNoz/signoz，与词无关） |
-| six2dez/burp-ai-agent | 仓库名不带 mcp（多半只是描述里顺带提到） |
-| mcse certification | GitHub 上搜不到仓库 |
-| model context protocol | 搜索误命中（首位是 microsoft/mcp-for-beginners，与词无关） |
-| johnlindquist/mcpez | ★7 < 50 |
-| PCSX2/myMCpp | ★37 < 50 |
-| updates | 搜索误命中（首位是 6551Team/opennews-mcp，与词无关） |
-| six2dez/burp-ai-agent | 仓库名不带 mcp（多半只是描述里顺带提到） |
-| irish pub | 搜索误命中（首位是 the-fluid-company/ireland-public-context-graph，与词无关） |
-| chrome-mcp-server | 搜索误命中（首位是 hangwin/mcp-chrome，与词无关） |
-| google-labs-code/stitch-skills | 仓库名不带 mcp（多半只是描述里顺带提到） |
+| signerlabs/ShipSwift | 仓库名不带 mcp（多半只是描述里顺带提到） |
+| TronTram/ShadcnUI_MCP_Store | ★0 < 50 |
+| zilliztech/claude-context | 仓库名不带 mcp（多半只是描述里顺带提到） |
+| pdcolandrea/mobbin-mcp | 已归档 |
+| BlackSnufkin/LitterBox | 仓库名不带 mcp（多半只是描述里顺带提到） |
+| yynxxxxx/Codex-X | 像是 skills? 而不是 server |
+| run-llama/llamaindex-docusearcher | ★13 < 50 |
+| Mofedul-Joy/make-com-claude-skills | ★1 < 50 |
+| microsoft/SharePoint-Embedded-Samples | 像是 fors+building 而不是 server |
+| seriallazer/ibkr-mcp-server | 像是 client 而不是 server |
+| pythonastrepltool | GitHub 和 registry 都搜不到仓库 |
+| Prat011/mcp-server-monday | ★34 < 50 |
+| semgrep/mcp | 已归档 |
+| otaviocmaciel/DAC-MCP482x-VHDL-core | ★1 < 50 |
+| gleanwork/mcp-server | 已归档 |
+| gifflet/graphiti-mcp-server | 382 天没提交 |
+| Adrninistrator/java-all-call-graph-server | ★8 < 50 |
+| verygoodplugins/robinhood-mcp | ★38 < 50 |
+| Jakedismo/codegraph-rust | 仓库名不带 mcp（多半只是描述里顺带提到） |
+| teddytennant/wizard | 像是 gateway 而不是 server |
+| CDataSoftware/workday-mcp-server-by-cdata | ★14 < 50 |
+| aws-solutions-library-samples/guidance-for-scalable-model-inference-and-agentic-ai-on-amazon-eks | ★19 < 50 |
+| blurrah/mcp-graphql | 343 天没提交 |
+| GuDaStudio/GrokSearch | 仓库名不带 mcp（多半只是描述里顺带提到） |
+| hyperb1iss/lucidity-mcp | 没有 server/tool 语义 |
+| interface360/xh-demystify-mulesoft-mcp | ★1 < 50 |
+| agentailor/fullstack-langgraph-nextjs-agent | 像是 template 而不是 server |
+| recursechat/mcp-server-apple-shortcuts | 604 天没提交 |
 | punkpeye/awesome-mcp-servers | 像是 awesome 而不是 server |
+| headroomlabs-ai/headroom | 像是 proxy 而不是 server |
