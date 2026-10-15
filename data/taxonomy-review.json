@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-14T00:55:11.961Z",
-  "total": 5681,
+  "generatedAt": "2026-10-15T00:21:36.330Z",
+  "total": 5680,
   "summary": {
-    "needsReview": 3833,
+    "needsReview": 3834,
     "needsReviewRatePct": 67.5,
     "uncategorized": 2581,
     "uncategorizedRatePct": 45.4,
@@ -17,23 +17,23 @@
   "categoryCounts": {
     "misc": 2581,
     "dev": 1887,
-    "search": 760,
+    "search": 759,
     "files": 256,
     "ai": 209,
-    "comms": 189,
+    "comms": 188,
     "database": 171,
-    "commerce": 163,
+    "commerce": 164,
     "cloud": 134,
     "browser": 120,
     "marketing": 79
   },
   "topicCounts": {
-    "design-media": 292,
-    "finance": 191,
+    "design-media": 291,
+    "finance": 190,
     "automation": 188,
     "observability": 118,
     "legal": 92,
-    "mcp-infrastructure": 87,
+    "mcp-infrastructure": 86,
     "visualization": 63,
     "science-health": 32,
     "security": 29,
@@ -84,19 +84,19 @@
     },
     {
       "term": "read",
-      "count": 106
+      "count": 107
     },
     {
       "term": "credit",
       "count": 105
     },
     {
-      "term": "manage",
+      "term": "local",
       "count": 98
     },
     {
-      "term": "local",
-      "count": 97
+      "term": "manage",
+      "count": 98
     },
     {
       "term": "code",
@@ -108,11 +108,15 @@
     },
     {
       "term": "over",
-      "count": 91
+      "count": 90
     },
     {
       "term": "live",
       "count": 89
+    },
+    {
+      "term": "checks",
+      "count": 83
     },
     {
       "term": "pipeworx-io",
@@ -120,11 +124,7 @@
     },
     {
       "term": "read-only",
-      "count": 83
-    },
-    {
-      "term": "checks",
-      "count": 81
+      "count": 82
     },
     {
       "term": "detran",
@@ -135,11 +135,11 @@
       "count": 78
     },
     {
-      "term": "audit",
-      "count": 65
+      "term": "tasks",
+      "count": 66
     },
     {
-      "term": "tasks",
+      "term": "audit",
       "count": 65
     },
     {
@@ -151,11 +151,11 @@
       "count": 64
     },
     {
-      "term": "check",
-      "count": 58
+      "term": "public",
+      "count": 59
     },
     {
-      "term": "public",
+      "term": "check",
       "count": 58
     },
     {
@@ -184,11 +184,11 @@
     },
     {
       "term": "before",
-      "count": 51
+      "count": 50
     },
     {
       "term": "usdc",
-      "count": 48
+      "count": 49
     },
     {
       "term": "every",
@@ -231,15 +231,15 @@
       "count": 42
     },
     {
+      "term": "build",
+      "count": 39
+    },
+    {
       "term": "shared",
-      "count": 40
+      "count": 39
     },
     {
       "term": "stdio",
-      "count": 40
-    },
-    {
-      "term": "build",
       "count": 39
     }
   ],
@@ -2223,7 +2223,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "737 MCP tools across 1200 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "743 MCP tools across 1206 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -3476,7 +3476,7 @@
       "name": "com.shipstatic/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Deploy static websites from AI agents. Free at mcp.shipstatic.com — no install, no signup."
+      "description": "Deploy static websites, landing pages, and prototypes instantly from AI agents."
     },
     {
       "slug": "com-sigaoli-profile",
@@ -5311,6 +5311,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Real-time codebase graph for AI assistants: call graphs, dependencies, symbol lookup."
+    },
+    {
+      "slug": "io-github-biosshot-easyeda-copilot",
+      "name": "io.github.biosshot/easyeda-copilot",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "AI tools for EasyEDA Pro schematics, PCB placement and routing, SPICE simulation, and DRC."
     },
     {
       "slug": "io-github-biosshot-kicad-copilot",
@@ -7697,7 +7704,7 @@
       "name": "io.github.matiasmaquieira96/risk-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "KYB API: company registry data from 27 countries, insolvency notices and sanctions screening"
+      "description": "KYB API: company registry data from 28 countries, insolvency notices and sanctions screening"
     },
     {
       "slug": "io-github-matrodrigs-shotcut-mcp",
@@ -10742,7 +10749,7 @@
       "name": "io.github.nxtg-ai/forge-orchestrator",
       "confidence": 0.35,
       "topics": [],
-      "description": "AI orchestration: Claude Code, Codex, Gemini on shared repos. 11 MCP tools, stdio (stage: internal)"
+      "description": "Claude Code; Codex CLI as task runner; Gemini CLI in development (B1, 2026-10-27) (public preview)"
     },
     {
       "slug": "io-github-oaslananka-health-monitor-mcp",
@@ -11064,7 +11071,7 @@
       "name": "io.github.pipeworx-io/ca-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "California DMV MCP — registered vehicles and EV adoption by ZIP code, field offices,"
+      "description": "California DMV MCP — registered vehicles and EV adoption by ZIP code, field offices, the official…"
     },
     {
       "slug": "io-github-pipeworx-io-ca-grants",
@@ -12863,7 +12870,7 @@
       "name": "io.github.tersignhq/evidence",
       "confidence": 0.35,
       "topics": [],
-      "description": "Counter-signed evidence records for agent commerce: receipts, verification, dispute envelopes."
+      "description": "The record layer for the machine age: counter-signed receipts and agent action records."
     },
     {
       "slug": "io-github-tethral-inc-acr",
@@ -13640,7 +13647,7 @@
       "name": "io.github.zeroatflops/flopsindex-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "GPU compute price indices over MCP; every value carries a verify URL. Five key-free tools."
+      "description": "GPU rental reference prices (spot, on-demand, DePIN), key-free; every value carries a verify URL."
     },
     {
       "slug": "io-github-zhitongblog-unterm",
@@ -13654,7 +13661,7 @@
       "name": "io.github.zhurong2020/pyobfus-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Obfuscate Python before shipping; reverse-map tracebacks with your AI agent. No phone-home."
+      "description": "9 local Python protection tools, delivery checks and traceback reverse mapping. No telemetry."
     },
     {
       "slug": "io-github-zoster81-scripthold",
@@ -14606,7 +14613,7 @@
       "name": "tech.skeletonarmy/marrow",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read-only MCP access to your own Apple Health data, mirrored from the Marrow iOS app."
+      "description": "Nine MCP tools that read your own Apple Health data, mirrored from the Marrow iOS app."
     },
     {
       "slug": "to-derive-derive",
@@ -14761,6 +14768,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Embed an AI chat widget on your website from your coding agent: provision, configure, get snippet."
+    },
+    {
+      "slug": "be-vibedeploy-vibedeploy",
+      "name": "be.vibedeploy/vibedeploy",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Deploy AI-built sites and apps to EU hosting from your AI agent. OAuth sign-in, 14-day free trial."
     },
     {
       "slug": "cloud-dchub-mcp-server",
@@ -15803,7 +15817,7 @@
       "name": "io.github.ChanMeng666/archlang-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Compile, describe, lint, validate, score, repair, fix, finish, suggest and complete ArchLang plans."
+      "description": "ArchLang: compile, describe, lint, validate, score, repair, fix, finish, suggest, complete, link."
     },
     {
       "slug": "io-github-chaoz23-charactercheck",
@@ -16461,7 +16475,7 @@
       "name": "io.github.cyanheads/secedgar-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Query SEC EDGAR filings, XBRL financials, and company data through MCP. STDIO & Streamable HTTP."
+      "description": "Query SEC EDGAR filings, XBRL financials, and company data via MCP. STDIO or Streamable HTTP."
     },
     {
       "slug": "io-github-cyanheads-toolkit-mcp-server",
@@ -17203,7 +17217,7 @@
       "name": "io.github.gabrielmahia/kazi-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for jobs and employment coordination in East Africa (kazi = work)"
+      "description": "Kenya labour market MCP: job matching, wage benchmarks, skills gap, Employment Act rights. Demo."
     },
     {
       "slug": "io-github-gabrielmahia-kenya-health-mcp",
@@ -17232,13 +17246,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "💳 mkopo-mcp — Alternative Credit Scoring MCP Server"
-    },
-    {
-      "slug": "io-github-gabrielmahia-mpesa-mcp",
-      "name": "io.github.gabrielmahia/mpesa-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for M-Pesa mobile-money integration in Kenya"
     },
     {
       "slug": "io-github-gabrielmahia-nishati-mcp",
@@ -17441,7 +17448,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 584 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 589 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -20536,6 +20543,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "ISO 20022 pacs.008 FI-to-FI credit transfers: generate, validate, parse, scheme + address checks."
+    },
+    {
+      "slug": "io-github-seekdaseek-agentfeed",
+      "name": "io.github.seekdaseek/agentfeed",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Crypto data, Solana pre-trade checks, sanctions, papers, language tasks. 89 tools, USDC, 21 chains."
     },
     {
       "slug": "io-github-semanticdatacharter-sdcgovernance",
@@ -23718,15 +23732,6 @@
       "description": "Secure MCP access to Big Red Cloud accounting data, workflows, help and training."
     },
     {
-      "slug": "io-github-biosshot-easyeda-copilot",
-      "name": "io.github.biosshot/easyeda-copilot",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Connect MCP clients to EasyEDA Desktop for schematic and PCB design, routing, inspection, and DRC."
-    },
-    {
       "slug": "io-github-bitget-ai-bitget-agent-mcp",
       "name": "io.github.Bitget-AI/bitget-agent-mcp",
       "confidence": 0.55,
@@ -25241,7 +25246,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Score any URL against a real design contract — 44 checks, A-F grade, token + motion validation."
+      "description": "Design quality gate for AI-generated UI: score any URL on 45 deterministic checks, A–F grade."
     },
     {
       "slug": "io-github-lightnow-ai-lightnow-proxy",
@@ -27259,7 +27264,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Structured web data from 36 platforms: Google, YouTube, Amazon, Walmart, Reddit, TikTok, LinkedIn"
+      "description": "Structured web data from 38 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
     },
     {
       "slug": "io-github-sebastienrousseau-iso20022-mcp",
