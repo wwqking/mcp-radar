@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-15T00:21:36.330Z",
+  "generatedAt": "2026-10-16T00:11:45.978Z",
   "total": 5680,
   "summary": {
-    "needsReview": 3834,
+    "needsReview": 3833,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2581,
+    "uncategorized": 2580,
     "uncategorizedRatePct": 45.4,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,26 +15,26 @@
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2581,
+    "misc": 2580,
     "dev": 1887,
     "search": 759,
     "files": 256,
     "ai": 209,
     "comms": 188,
     "database": 171,
-    "commerce": 164,
+    "commerce": 165,
     "cloud": 134,
     "browser": 120,
     "marketing": 79
   },
   "topicCounts": {
     "design-media": 291,
-    "finance": 190,
+    "finance": 189,
     "automation": 188,
     "observability": 118,
     "legal": 92,
     "mcp-infrastructure": 86,
-    "visualization": 63,
+    "visualization": 64,
     "science-health": 32,
     "security": 29,
     "game-development": 24,
@@ -48,7 +48,7 @@
     },
     {
       "term": "query",
-      "count": 242
+      "count": 244
     },
     {
       "term": "platform-hosted",
@@ -104,7 +104,7 @@
     },
     {
       "term": "create",
-      "count": 92
+      "count": 90
     },
     {
       "term": "over",
@@ -116,7 +116,7 @@
     },
     {
       "term": "checks",
-      "count": 83
+      "count": 84
     },
     {
       "term": "pipeworx-io",
@@ -156,15 +156,11 @@
     },
     {
       "term": "check",
-      "count": 58
+      "count": 56
     },
     {
       "term": "status",
-      "count": 58
-    },
-    {
-      "term": "analysis",
-      "count": 55
+      "count": 56
     },
     {
       "term": "evidence",
@@ -177,6 +173,10 @@
     {
       "term": "person",
       "count": 55
+    },
+    {
+      "term": "analysis",
+      "count": 54
     },
     {
       "term": "real",
@@ -823,7 +823,7 @@
       "name": "ai.mcpanalytics/analytics",
       "confidence": 0.35,
       "topics": [],
-      "description": "The statistical analyst in your AI chat — validated, citable, re-runnable analysis of your data."
+      "description": "A statistical analyst in your AI chat: bring data and a question, get a citable, re-runnable report."
     },
     {
       "slug": "ai-mcpcap-mcpcap",
@@ -2223,7 +2223,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "743 MCP tools across 1206 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "744 MCP tools across 1207 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -4862,7 +4862,7 @@
       "name": "io.github.AliKarami/mikromcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP server for MikroTik RouterOS: typed tools, dry-run, RBAC, audit logs, and rollback."
+      "description": "MCP server for MikroTik RouterOS and SwOS: typed tools, dry-run, RBAC, audit logs, and rollback."
     },
     {
       "slug": "io-github-alimbenhelal-pro-alm-xpp-mcp",
@@ -5821,7 +5821,7 @@
       "name": "io.github.creator35lwb-web/verifimind-genesis",
       "confidence": 0.35,
       "topics": [],
-      "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.64"
+      "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.65"
     },
     {
       "slug": "io-github-crisnahine-rails-ai-context",
@@ -6815,7 +6815,7 @@
       "name": "io.github.IlyaIvanchikov/weeek-mcp-smart",
       "confidence": 0.35,
       "topics": [],
-      "description": "WEEEK tasks by name, not IDs — an MCP server"
+      "description": "WEEEK tasks and CRM by name, not IDs — an MCP server covering the whole public API"
     },
     {
       "slug": "io-github-ilyaskhallouki-hypruse",
@@ -7704,7 +7704,7 @@
       "name": "io.github.matiasmaquieira96/risk-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "KYB API: company registry data from 28 countries, insolvency notices and sanctions screening"
+      "description": "KYB API: company registry data from 29 countries, insolvency notices and sanctions screening"
     },
     {
       "slug": "io-github-matrodrigs-shotcut-mcp",
@@ -10749,7 +10749,7 @@
       "name": "io.github.nxtg-ai/forge-orchestrator",
       "confidence": 0.35,
       "topics": [],
-      "description": "Claude Code; Codex CLI as task runner; Gemini CLI in development (B1, 2026-10-27) (public preview)"
+      "description": "Forge orchestrator MCP server for Claude Code (alpha). Codex/Gemini runners are not in the alpha."
     },
     {
       "slug": "io-github-oaslananka-health-monitor-mcp",
@@ -10827,6 +10827,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "MCP server for prismAId AI-assisted systematic reviews and protocol conformance checking."
+    },
+    {
+      "slug": "io-github-openadaptai-openadapt-agent",
+      "name": "io.github.OpenAdaptAI/openadapt-agent",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Your AI agent decides what to enter. OpenAdapt enters it in the app and checks that it saved."
     },
     {
       "slug": "io-github-openimagedebugger-oid-mcp",
@@ -13185,7 +13192,7 @@
       "name": "io.github.vmware-skills/vmware-storage",
       "confidence": 0.35,
       "topics": [],
-      "description": "VMware vSphere storage with 14 MCP tools: datastores, iSCSI, vSAN, FC multipath."
+      "description": "VMware vSphere storage with 15 MCP tools: datastores, iSCSI, vSAN, FC multipath."
     },
     {
       "slug": "io-github-vmware-skills-vmware-vdi",
@@ -16881,7 +16888,7 @@
       "name": "io.github.electron-stagewright/core",
       "confidence": 0.45,
       "topics": [],
-      "description": "Agent-native MCP server for driving, inspecting, and asserting on real Electron desktop apps."
+      "description": "Agentic UX testing for real Electron apps: launch, inspect, interact, and assert through MCP."
     },
     {
       "slug": "io-github-elninyo-ops-baseline-mcp",
@@ -17448,7 +17455,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 589 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 594 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -20318,7 +20325,7 @@
       "name": "io.github.runapi-builder/luma-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "RunAPI MCP server for Luma: create tasks, poll status, check pricing."
+      "description": "RunAPI MCP server for Luma: query historical tasks."
     },
     {
       "slug": "io-github-runapi-builder-midjourney-mcp",
@@ -20353,7 +20360,7 @@
       "name": "io.github.runapi-builder/runway-aleph-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "RunAPI MCP server for Runway Aleph: create tasks, poll status, check pricing."
+      "description": "RunAPI MCP server for Runway Aleph: query historical tasks."
     },
     {
       "slug": "io-github-runapi-builder-runway-mcp",
@@ -20549,7 +20556,7 @@
       "name": "io.github.seekdaseek/agentfeed",
       "confidence": 0.45,
       "topics": [],
-      "description": "Crypto data, Solana pre-trade checks, sanctions, papers, language tasks. 89 tools, USDC, 21 chains."
+      "description": "Crypto data, Solana pre-trade checks, sanctions, papers, language tasks. 90 tools, USDC, 21 chains."
     },
     {
       "slug": "io-github-semanticdatacharter-sdcgovernance",
@@ -22242,15 +22249,6 @@
       "description": "Query metrics, targets, entities, and team data in your Steep workspace via MCP."
     },
     {
-      "slug": "app-tradeit-mcp",
-      "name": "app.tradeit/mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Trade stock, crypto, and options on Robinhood, ETrade, Webull, Charles Schwab, Coinbase, or Kraken."
-    },
-    {
       "slug": "bid-scope-healthcare",
       "name": "bid.scope/healthcare",
       "confidence": 0.55,
@@ -23635,9 +23633,9 @@
       "name": "io.github.atilaahmettaner/tradingview-mcp",
       "confidence": 0.55,
       "topics": [
-        "finance"
+        "visualization"
       ],
-      "description": "Real-time market data, screeners, technical analysis & backtesting for stocks, crypto and forex."
+      "description": "Market analysis for AI assistants: screeners, multi-timeframe analysis, backtests, in-chat charts."
     },
     {
       "slug": "io-github-austin-starks-nexustrade-mcp",
@@ -24136,7 +24134,7 @@
       "topics": [
         "legal"
       ],
-      "description": "MCP jurisprudence française : 3,5 M+ décisions (Cass, CE, CAA, TA, CEDH, CJUE) + lois à date"
+      "description": "MCP juridique : jurisprudence et lois françaises, 3,9 M+ décisions, 19 outils, accès libre"
     },
     {
       "slug": "io-github-daniel3303-equibles",
@@ -24342,9 +24340,10 @@
       "name": "io.github.eat-pray-ai/yutu",
       "confidence": 0.55,
       "topics": [
-        "design-media"
+        "design-media",
+        "automation"
       ],
-      "description": "The AI-powered toolkit that grows your YouTube channel on autopilot"
+      "description": "CLI, MCP server, and AI agent to automate YouTube workflows"
     },
     {
       "slug": "io-github-editmamei-editmamei",
@@ -24651,7 +24650,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Text to speech for MCP clients. 23 languages, six voices, every render watermarked."
+      "description": "Sets Gandr up from the live docs, then speaks. 23 languages, six voices, every render watermarked."
     },
     {
       "slug": "io-github-gautamvarmadatla-mcpsafetywarden",
@@ -26609,15 +26608,6 @@
       "description": "Long-term memory for AI agents — your Obsidian vault as searchable persistent memory."
     },
     {
-      "slug": "io-github-openadaptai-openadapt-agent",
-      "name": "io.github.OpenAdaptAI/openadapt-agent",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "Local Beta bridge for governed openadapt-flow workflows and attended actions."
-    },
-    {
       "slug": "io-github-openhcsdev-openhcs",
       "name": "io.github.OpenHCSDev/openhcs",
       "confidence": 0.55,
@@ -27797,7 +27787,7 @@
       "topics": [
         "observability"
       ],
-      "description": "VMware Aria Operations: metrics, alerts, capacity, anomaly detection — 44 MCP tools."
+      "description": "VMware Aria Operations: metrics, alerts, capacity, anomaly detection — 46 MCP tools."
     },
     {
       "slug": "io-github-vmware-skills-vmware-monitor",
@@ -27806,7 +27796,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Read-only VMware vCenter/ESXi monitoring, 32 MCP tools; vSphere calls allowlist-gated in tests."
+      "description": "Read-only VMware vCenter/ESXi monitoring, 33 MCP tools; vSphere calls allowlist-gated in tests."
     },
     {
       "slug": "io-github-vmware-skills-vmware-pilot",
