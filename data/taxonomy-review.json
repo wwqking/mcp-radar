@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-17T00:12:11.015Z",
+  "generatedAt": "2026-10-17T23:48:54.011Z",
   "total": 5680,
   "summary": {
-    "needsReview": 3833,
-    "needsReviewRatePct": 67.5,
+    "needsReview": 3829,
+    "needsReviewRatePct": 67.4,
     "uncategorized": 2580,
     "uncategorizedRatePct": 45.4,
     "largestCategory": "dev",
@@ -12,27 +12,27 @@
   "alerts": [
     "待归类占比 45.4%，超过 5% 审核线",
     "dev 占比 33.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.5%，超过 10%"
+    "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
     "misc": 2580,
     "dev": 1887,
-    "search": 759,
-    "files": 256,
-    "ai": 209,
-    "comms": 188,
+    "search": 760,
+    "files": 257,
+    "ai": 210,
+    "comms": 190,
     "database": 171,
     "commerce": 165,
-    "cloud": 134,
-    "browser": 120,
+    "cloud": 135,
+    "browser": 121,
     "marketing": 79
   },
   "topicCounts": {
     "design-media": 291,
-    "finance": 189,
+    "finance": 190,
     "automation": 188,
     "observability": 118,
-    "legal": 92,
+    "legal": 95,
     "mcp-infrastructure": 86,
     "visualization": 64,
     "science-health": 32,
@@ -72,7 +72,7 @@
     },
     {
       "term": "coding",
-      "count": 115
+      "count": 116
     },
     {
       "term": "free",
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 98
+      "count": 99
     },
     {
       "term": "manage",
@@ -107,16 +107,16 @@
       "count": 90
     },
     {
-      "term": "over",
+      "term": "live",
       "count": 90
     },
     {
-      "term": "live",
+      "term": "over",
       "count": 89
     },
     {
       "term": "checks",
-      "count": 84
+      "count": 85
     },
     {
       "term": "pipeworx-io",
@@ -167,10 +167,6 @@
       "count": 55
     },
     {
-      "term": "local-first",
-      "count": 55
-    },
-    {
       "term": "person",
       "count": 55
     },
@@ -179,12 +175,16 @@
       "count": 54
     },
     {
+      "term": "local-first",
+      "count": 54
+    },
+    {
       "term": "real",
       "count": 53
     },
     {
       "term": "before",
-      "count": 50
+      "count": 51
     },
     {
       "term": "usdc",
@@ -192,10 +192,6 @@
     },
     {
       "term": "every",
-      "count": 47
-    },
-    {
-      "term": "intelligence",
       "count": 47
     },
     {
@@ -211,8 +207,12 @@
       "count": 45
     },
     {
+      "term": "intelligence",
+      "count": 45
+    },
+    {
       "term": "plus",
-      "count": 44
+      "count": 45
     },
     {
       "term": "security",
@@ -232,7 +232,7 @@
     },
     {
       "term": "build",
-      "count": 39
+      "count": 40
     },
     {
       "term": "shared",
@@ -6451,7 +6451,7 @@
       "name": "io.github.getnable/finops-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "See where your cloud and AI bills go, and spend less. Local-first, in your terminal or editor."
+      "description": "Prices what your coding agents are about to do, before they do it. Plus local cloud and AI cost."
     },
     {
       "slug": "io-github-getpapi-papi",
@@ -10315,7 +10315,7 @@
       "name": "io.github.neat-technologies/neat",
       "confidence": 0.35,
       "topics": [],
-      "description": "Fused graph of your codebase — static code + runtime OTel — for AI agents, over MCP."
+      "description": "A live graph of your running system, code fused with OTel runtime, that your agent queries over MCP."
     },
     {
       "slug": "io-github-neilberkman-sidereon",
@@ -14798,6 +14798,13 @@
       "description": "Turn agent intent into physical parts: engineering review, measured geometry, calibrated pricing."
     },
     {
+      "slug": "com-finalpos-build-final-flows",
+      "name": "com.finalpos.build/final-flows",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Flow's direct endpoint for sk_ keys. For all of Final in one server, use com.finalpos/final."
+    },
+    {
       "slug": "com-predictionmarketspicks-fantasy-draft",
       "name": "com.predictionmarketspicks/fantasy-draft",
       "confidence": 0.45,
@@ -16965,7 +16972,7 @@
       "name": "io.github.faze79/wpf-visual-tree",
       "confidence": 0.45,
       "topics": [],
-      "description": "Let AI agents inspect and drive running WPF apps: tree, bindings, screenshots, clicks, text input."
+      "description": "Inspect and drive WPF apps: trees, bindings, screenshots, mouse dragging and touch gestures."
     },
     {
       "slug": "io-github-felixwaweru-code-fundi-mcp",
@@ -17119,105 +17126,70 @@
       "name": "io.github.gabrielmahia/afya-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for Kenya health system navigation: SHA/SHIF coverage (NHIF's successor), facility finder"
+      "description": "Kenya health system guides: SHA/SHIF coverage, facility templates, maternal care, CHWs. Demo data."
     },
     {
       "slug": "io-github-gabrielmahia-afya-ya-akili-mcp",
       "name": "io.github.gabrielmahia/afya-ya-akili-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for mental-health support coordination in East Africa (afya ya akili = mental health)"
-    },
-    {
-      "slug": "io-github-gabrielmahia-ardhi-mcp",
-      "name": "io.github.gabrielmahia/ardhi-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for land records and land-service coordination in Kenya (ardhi = land)"
+      "description": "Kenya mental health resources: sourced crisis lines, provider sample, rights, workplace wellness."
     },
     {
       "slug": "io-github-gabrielmahia-bima-mcp",
       "name": "io.github.gabrielmahia/bima-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "🛡️ bima-mcp — Kenya Insurance Intelligence MCP Server"
+      "description": "Kenya insurance MCP: sample products, NHIF-era coverage figures, illustrative crop risk. Demo data."
     },
     {
       "slug": "io-github-gabrielmahia-church-mcp",
       "name": "io.github.gabrielmahia/church-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for congregation and community-organization coordination in East Africa"
+      "description": "Kenya faith-community reference: dioceses, denominations, Muslim community, registration. Sample."
     },
     {
       "slug": "io-github-gabrielmahia-county-mcp",
       "name": "io.github.gabrielmahia/county-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for Kenyan county-government services and coordination"
+      "description": "Kenya county reference: facts, budget guide, services, CDF, wards and contacts. Sample data."
     },
     {
       "slug": "io-github-gabrielmahia-decision-intelligence-mcp",
       "name": "io.github.gabrielmahia/decision-intelligence-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "classical-strategy-mcp"
-    },
-    {
-      "slug": "io-github-gabrielmahia-diaspora-mcp",
-      "name": "io.github.gabrielmahia/diaspora-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for diaspora services coordination between East Africa and abroad"
+      "description": "Public-domain military strategy and philosophy texts as MCP tools: Sun Tzu, Napoleon and more."
     },
     {
       "slug": "io-github-gabrielmahia-elimu-mcp",
       "name": "io.github.gabrielmahia/elimu-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for education coordination in East Africa (elimu = education)"
+      "description": "Kenya education guides: exams, HELB loans, TVET, literacy; template school list. Sample data."
     },
     {
       "slug": "io-github-gabrielmahia-faida-mcp",
       "name": "io.github.gabrielmahia/faida-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for savings and investment coordination in East Africa (faida = returns)"
-    },
-    {
-      "slug": "io-github-gabrielmahia-familia-mcp",
-      "name": "io.github.gabrielmahia/familia-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for family-services coordination in East Africa (familia = family)"
+      "description": "Kenya savings and investment guides: T-bond calculator, NSE, unit trusts, diaspora. Indicative data."
     },
     {
       "slug": "io-github-gabrielmahia-habari-mcp",
       "name": "io.github.gabrielmahia/habari-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for news and public-information coordination in East Africa (habari = news)"
-    },
-    {
-      "slug": "io-github-gabrielmahia-haki-ya-kazi-mcp",
-      "name": "io.github.gabrielmahia/haki-ya-kazi-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for labor-rights information and coordination in Kenya (haki ya kazi = labor rights)"
+      "description": "Kenya civic information guides: Gazette, tenders, open data, Parliament, feedback channels."
     },
     {
       "slug": "io-github-gabrielmahia-historia-mcp",
       "name": "io.github.gabrielmahia/historia-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server grounding agents in East African historical sources (historia = history)"
-    },
-    {
-      "slug": "io-github-gabrielmahia-jumuia-mcp",
-      "name": "io.github.gabrielmahia/jumuia-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for community-group coordination in East Africa (jumuia = community)"
+      "description": "Kenya and East Africa history reference: timeline, leaders, heritage sites, ethnic groups, archives."
     },
     {
       "slug": "io-github-gabrielmahia-kazi-mcp",
@@ -17234,67 +17206,53 @@
       "description": "MCP server for Kenya health data: SHIF contributions (NHIF's successor), a small facility sample, ma"
     },
     {
-      "slug": "io-github-gabrielmahia-kilimo-mcp",
-      "name": "io.github.gabrielmahia/kilimo-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for agriculture coordination in East Africa (kilimo = farming)"
-    },
-    {
       "slug": "io-github-gabrielmahia-mazingira-mcp",
       "name": "io.github.gabrielmahia/mazingira-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for environment and climate coordination in East Africa (mazingira = environment)"
+      "description": "Kenya environment guides: NEMA permits, climate data sources, protected areas, climate adaptation."
     },
     {
       "slug": "io-github-gabrielmahia-mkopo-mcp",
       "name": "io.github.gabrielmahia/mkopo-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "💳 mkopo-mcp — Alternative Credit Scoring MCP Server"
+      "description": "Demo alternative credit scoring from M-PESA signals. Not a CRB product; synthetic, nothing stored."
     },
     {
       "slug": "io-github-gabrielmahia-nishati-mcp",
       "name": "io.github.gabrielmahia/nishati-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for energy coordination in East Africa (nishati = energy)"
+      "description": "Kenya energy guides: KPLC connections, tariff estimate, solar options, programmes. Illustrative."
     },
     {
       "slug": "io-github-gabrielmahia-nyumba-mcp",
       "name": "io.github.gabrielmahia/nyumba-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for housing coordination in East Africa (nyumba = house)"
-    },
-    {
-      "slug": "io-github-gabrielmahia-offline-mcp",
-      "name": "io.github.gabrielmahia/offline-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server enabling offline-first agent operation over intermittent connectivity"
+      "description": "Kenya housing guides: rents, tenant rights, permits, affordable housing, mortgage estimate."
     },
     {
       "slug": "io-github-gabrielmahia-remit-mcp",
       "name": "io.github.gabrielmahia/remit-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "💸 remit-mcp"
+      "description": "Compare remittance corridors to Kenya (US, UK, Canada) on synthetic prices. Demonstration only."
     },
     {
       "slug": "io-github-gabrielmahia-sifa-mcp",
       "name": "io.github.gabrielmahia/sifa-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "⭐ sifa-mcp — Portable Reputation & Skills Passport MCP Server"
+      "description": "Demo portable reputation and skills passport; in-memory profiles, nothing verified or stored."
     },
     {
       "slug": "io-github-gabrielmahia-soko-mcp",
       "name": "io.github.gabrielmahia/soko-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "📊 soko-mcp — Kenya Commodity Price Intelligence MCP Server"
+      "description": "Kenya commodity price tools on synthetic demo data: prices, trends, comparison, sell or hold."
     },
     {
       "slug": "io-github-gabrielmahia-swahili-health-mcp",
@@ -17308,14 +17266,14 @@
       "name": "io.github.gabrielmahia/tafsiri-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for Swahili translation and language grounding (tafsiri = translate)"
+      "description": "Swahili, Kikuyu and Luo civic glossaries and language guides for Kenya. Small reference sets."
     },
     {
       "slug": "io-github-gabrielmahia-usafiri-mcp",
       "name": "io.github.gabrielmahia/usafiri-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for transport coordination in East Africa (usafiri = transport)"
+      "description": "Kenya transport guides: matatu fares, NTSA services, boda licensing, freight, passenger rights."
     },
     {
       "slug": "io-github-galengoodwick-cartridge-cafe",
@@ -17455,7 +17413,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 599 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 604 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -18414,7 +18372,7 @@
       "name": "io.github.kwizzlesurp10-ctrl/x402-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Pay for HTTP APIs and charge for your own: x402 micropayments in USDC on Base."
+      "description": "Pay-per-call US city property compliance and Base tx checks, paid in USDC on Base via x402."
     },
     {
       "slug": "io-github-kyungseopk1m-semver-checks",
@@ -21270,7 +21228,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "deja-vu: local memory over the session histories of forty-one coding agents."
+      "description": "deja-vu: local memory over the session histories of forty-two coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -23192,7 +23150,7 @@
       "topics": [
         "visualization"
       ],
-      "description": "Create diagrams in chat, rendered as live interactive draw.io diagrams. 10,000+ searchable shapes."
+      "description": "Create draw.io diagrams in chat from Mermaid or XML, shown live and interactive. 10,000+ shapes."
     },
     {
       "slug": "io-form-formio-uag",
@@ -24608,13 +24566,31 @@
       "description": "stdio bridge for the local Unity Editor MCP server from FunplayAI/funplay-unity-mcp."
     },
     {
-      "slug": "io-github-gabrielmahia-kra-mcp",
-      "name": "io.github.gabrielmahia/kra-mcp",
+      "slug": "io-github-gabrielmahia-familia-mcp",
+      "name": "io.github.gabrielmahia/familia-mcp",
       "confidence": 0.55,
       "topics": [
-        "automation"
+        "legal"
       ],
-      "description": "MCP server for Kenya Revenue Authority tax workflows and information"
+      "description": "Kenya family-law guides: succession, wills, trusts, diaspora property, caretaker records."
+    },
+    {
+      "slug": "io-github-gabrielmahia-haki-ya-kazi-mcp",
+      "name": "io.github.gabrielmahia/haki-ya-kazi-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "legal"
+      ],
+      "description": "Kenya labour rights: 2026 minimum wages, dismissal, leave, unions, labour court. Not legal advice."
+    },
+    {
+      "slug": "io-github-gabrielmahia-jumuia-mcp",
+      "name": "io.github.gabrielmahia/jumuia-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Kenya community finance guides: SACCOs, chama formation, cooperatives, loans, member rights."
     },
     {
       "slug": "io-github-gabrielmahia-wapimaji-mcp",
@@ -26894,7 +26870,7 @@
       "topics": [
         "game-development"
       ],
-      "description": "Godot's own view of your GDScript project: navigation, diagnostics, engine API, scene checks"
+      "description": "Godot's own view of your GDScript project: code, scenes, and the running game"
     },
     {
       "slug": "io-github-quantustik-mcp",
