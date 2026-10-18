@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-17T23:48:54.011Z",
-  "total": 5680,
+  "generatedAt": "2026-10-18T23:58:28.646Z",
+  "total": 5678,
   "summary": {
-    "needsReview": 3829,
+    "needsReview": 3828,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2580,
+    "uncategorized": 2578,
     "uncategorizedRatePct": 45.4,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,7 +15,7 @@
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2580,
+    "misc": 2578,
     "dev": 1887,
     "search": 760,
     "files": 257,
@@ -28,15 +28,15 @@
     "marketing": 79
   },
   "topicCounts": {
-    "design-media": 291,
-    "finance": 190,
+    "design-media": 290,
+    "finance": 191,
     "automation": 188,
     "observability": 118,
     "legal": 95,
     "mcp-infrastructure": 86,
     "visualization": 64,
     "science-health": 32,
-    "security": 29,
+    "security": 28,
     "game-development": 24,
     "data-analysis": 24,
     "iot-robotics": 15
@@ -48,7 +48,7 @@
     },
     {
       "term": "query",
-      "count": 244
+      "count": 243
     },
     {
       "term": "platform-hosted",
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 115
+      "count": 116
     },
     {
       "term": "memory",
@@ -84,7 +84,7 @@
     },
     {
       "term": "read",
-      "count": 107
+      "count": 106
     },
     {
       "term": "credit",
@@ -112,7 +112,7 @@
     },
     {
       "term": "over",
-      "count": 89
+      "count": 90
     },
     {
       "term": "checks",
@@ -139,6 +139,10 @@
       "count": 66
     },
     {
+      "term": "across",
+      "count": 65
+    },
+    {
       "term": "audit",
       "count": 65
     },
@@ -147,16 +151,12 @@
       "count": 65
     },
     {
-      "term": "across",
-      "count": 64
-    },
-    {
       "term": "public",
       "count": 59
     },
     {
       "term": "check",
-      "count": 56
+      "count": 57
     },
     {
       "term": "status",
@@ -195,24 +195,24 @@
       "count": 47
     },
     {
-      "term": "analytics",
+      "term": "certificate",
       "count": 46
     },
     {
-      "term": "certificate",
+      "term": "intelligence",
       "count": 46
+    },
+    {
+      "term": "analytics",
+      "count": 45
     },
     {
       "term": "deterministic",
       "count": 45
     },
     {
-      "term": "intelligence",
-      "count": 45
-    },
-    {
       "term": "plus",
-      "count": 45
+      "count": 44
     },
     {
       "term": "security",
@@ -232,7 +232,7 @@
     },
     {
       "term": "build",
-      "count": 40
+      "count": 39
     },
     {
       "term": "shared",
@@ -299,13 +299,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Read-only Remote MCP for externally grounded AI agent trust receipts."
-    },
-    {
-      "slug": "ai-analyticslegends-sap-analytics",
-      "name": "ai.analyticslegends/sap-analytics",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "AI agent for SAP analytics: firms, day rates, contract radar, news, concepts, studies"
     },
     {
       "slug": "ai-ankimcp-anki-mcp-server",
@@ -2020,7 +2013,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Live markets, conflicts, country risk, chokepoints, energy, and China decision signals. 94 tools."
+      "description": "Real-time global intelligence across conflict, markets, energy, trade, shipping and cyber. 94 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -2223,7 +2216,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "744 MCP tools across 1207 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "745 MCP tools across 1208 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -2265,7 +2258,7 @@
       "name": "coach.marian/mentoring-inquiry-builder",
       "confidence": 0.35,
       "topics": [],
-      "description": "Build your mentoring inquiry with Marian Kamenistak: formal offer in 16 minutes, 16% AI discount."
+      "description": "AI mentoring fit and book: check the fit with Marian Kamenistak and book a session in 10 minutes."
     },
     {
       "slug": "com-530amodel-calculator",
@@ -2818,7 +2811,7 @@
       "name": "com.getspawnpoint/spawnpoint",
       "confidence": 0.35,
       "topics": [],
-      "description": "Deploy the apps your agent builds to a private, shareable HTTPS link, checked for leaked keys first."
+      "description": "The place where your team's AI lives: deploy what your agent builds to a private, shareable link."
     },
     {
       "slug": "com-getspm-spm",
@@ -5821,7 +5814,7 @@
       "name": "io.github.creator35lwb-web/verifimind-genesis",
       "confidence": 0.35,
       "topics": [],
-      "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.65"
+      "description": "X-Z-CS AI validation with auditable reasoning. 8 active tools; 5 in maintenance. v0.5.66"
     },
     {
       "slug": "io-github-crisnahine-rails-ai-context",
@@ -6843,7 +6836,7 @@
       "name": "io.github.industrial-aiops/iaiops",
       "confidence": 0.35,
       "topics": [],
-      "description": "Governed OT data tap: 14 field protocols + cross-protocol RCA brain; audit + MOC gating."
+      "description": "Governed OT data tap: 15 field protocols + cross-protocol RCA brain; audit + MOC gating."
     },
     {
       "slug": "io-github-industrial-aiops-iaiops-energy",
@@ -10238,7 +10231,7 @@
       "name": "io.github.musharna/data-aggregator-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Find & fetch research datasets across 20 archives, omics registries, and literature sources."
+      "description": "Find & fetch research datasets across 21 archives, omics registries, and literature sources."
     },
     {
       "slug": "io-github-musharna-jobd",
@@ -10855,13 +10848,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Turn long videos into AI-curated short clips: caption, reframe, thumbnail, schedule, and publish."
-    },
-    {
-      "slug": "io-github-opusgrowth-ads-mcp",
-      "name": "io.github.opusgrowth/ads-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Run Google, Meta, Microsoft, TikTok and LinkedIn Ads from Claude or ChatGPT. Writes need approval."
     },
     {
       "slug": "io-github-orangeproai-orangepro",
@@ -14620,7 +14606,7 @@
       "name": "tech.skeletonarmy/marrow",
       "confidence": 0.35,
       "topics": [],
-      "description": "Nine MCP tools that read your own Apple Health data, mirrored from the Marrow iOS app."
+      "description": "Marrow Health: your Apple Health data over MCP, from the free iOS app. Reads, and writes on demand."
     },
     {
       "slug": "to-derive-derive",
@@ -14788,7 +14774,7 @@
       "name": "cloud.dchub/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "DCPI grid-power scores for 300+ markets, plus capacity to buy or lease; query and cite."
+      "description": "DC Hub is the live data layer for data-center site selection. DCPI + capacity to buy or lease."
     },
     {
       "slug": "com-a2a2p-a2a2p",
@@ -14964,6 +14950,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Produce complete AI videos from a brief with Maestro"
+    },
+    {
+      "slug": "io-github-acedatacloud-mcp-nanobanana-pro",
+      "name": "io.github.AceDataCloud/mcp-nanobanana-pro",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Generate and edit Nano Banana images with Ace Data Cloud; retrieve the same task for results."
     },
     {
       "slug": "io-github-acedatacloud-mcp-shorturl",
@@ -15874,6 +15867,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Declarative agent orchestration for engineering teams"
+    },
+    {
+      "slug": "io-github-chipzen-ai-chipzen-mcp",
+      "name": "io.github.chipzen-ai/chipzen-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Poker arena for AI agents: play rated heads-up No-Limit Hold'em on chipzen.ai."
     },
     {
       "slug": "io-github-chrischall-angi-mcp",
@@ -17413,7 +17413,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 604 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 606 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -19695,7 +19695,7 @@
       "name": "io.github.predgeAI/whale-data-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Signed settled outcomes (Polymarket, sports, Kalshi) + whale signals as agent tools, paid via x402."
+      "description": "Signed settled outcomes (Polymarket, sports) + whale signals as agent tools, paid via x402."
     },
     {
       "slug": "io-github-prithviseran-hunch",
@@ -20654,7 +20654,7 @@
       "name": "io.github.slookisen/finn-tannlege-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Norwegian dental clinic directory MCP: ~6,900 clinics with Helfo-agreement, specialty, duty, chain."
+      "description": "Norwegian dental clinic directory MCP: 5,400+ clinics with Helfo-agreement, specialty, duty, chain."
     },
     {
       "slug": "io-github-slookisen-opplevagent-mcp",
@@ -21575,6 +21575,15 @@
       "description": "Ephemeral data sandbox for AI workflows with guardrails and security"
     },
     {
+      "slug": "ai-analyticslegends-sap-analytics",
+      "name": "ai.analyticslegends/sap-analytics",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "SAP AI & analytics market data for agents: SAP firms, day rates, jobs, Joule & BDC news"
+    },
+    {
       "slug": "ai-bloopo-bloopo",
       "name": "ai.bloopo/bloopo",
       "confidence": 0.55,
@@ -21716,7 +21725,7 @@
       "topics": [
         "automation"
       ],
-      "description": "Plori runs AI agents in Workspaces."
+      "description": "Plori runs AI agents that collaborate on one product in the cloud."
     },
     {
       "slug": "ai-primateintelligence-mcp",
@@ -23307,15 +23316,6 @@
       "description": "MCP server for MiniMax H3 multimodal video generation"
     },
     {
-      "slug": "io-github-acedatacloud-mcp-nanobanana-pro",
-      "name": "io.github.AceDataCloud/mcp-nanobanana-pro",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "MCP server for NanoBanana AI image generation and editing"
-    },
-    {
       "slug": "io-github-acedatacloud-mcp-producer",
       "name": "io.github.AceDataCloud/mcp-producer",
       "confidence": 0.55,
@@ -23331,7 +23331,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "MCP server for ByteDance Seedance AI video generation"
+      "description": "Generate Seedance videos with Ace Data Cloud; retrieve the original task for finished video."
     },
     {
       "slug": "io-github-acedatacloud-mcp-seedream-pro",
@@ -23349,7 +23349,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "MCP server for Suno AI music generation, lyrics, and covers"
+      "description": "Create Suno music, lyrics and covers with Ace Data Cloud; retrieve the same task for results."
     },
     {
       "slug": "io-github-acedatacloud-mcp-veo",
@@ -26492,15 +26492,6 @@
       "description": "Control and verify a live Unity Editor through a local, low-token MCP server."
     },
     {
-      "slug": "io-github-novadyne-hq-vulnfeed",
-      "name": "io.github.novadyne-hq/vulnfeed",
-      "confidence": 0.55,
-      "topics": [
-        "security"
-      ],
-      "description": "Dependency vulnerability scanner with EPSS scoring. 9 MCP tools. Free tier + x402."
-    },
-    {
       "slug": "io-github-ns-3e-generate-data-mcp",
       "name": "io.github.ns-3e/generate-data-mcp",
       "confidence": 0.55,
@@ -28342,7 +28333,7 @@
       "topics": [
         "finance"
       ],
-      "description": "An AI agent for prop firm challenges on Propr; the connector reads it, never trades."
+      "description": "AI risk officer: private trading theses, evidence, exit criteria and decision history. No execution."
     },
     {
       "slug": "mcp-obsidian",
