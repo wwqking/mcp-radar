@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T23:58:28.646Z",
-  "total": 5678,
+  "generatedAt": "2026-10-20T00:58:39.711Z",
+  "total": 5676,
   "summary": {
     "needsReview": 3828,
     "needsReviewRatePct": 67.4,
@@ -17,19 +17,19 @@
   "categoryCounts": {
     "misc": 2578,
     "dev": 1887,
-    "search": 760,
+    "search": 758,
     "files": 257,
     "ai": 210,
     "comms": 190,
     "database": 171,
     "commerce": 165,
     "cloud": 135,
-    "browser": 121,
+    "browser": 122,
     "marketing": 79
   },
   "topicCounts": {
     "design-media": 290,
-    "finance": 191,
+    "finance": 190,
     "automation": 188,
     "observability": 118,
     "legal": 95,
@@ -79,12 +79,12 @@
       "count": 116
     },
     {
-      "term": "memory",
-      "count": 107
+      "term": "read",
+      "count": 108
     },
     {
-      "term": "read",
-      "count": 106
+      "term": "memory",
+      "count": 107
     },
     {
       "term": "credit",
@@ -116,7 +116,7 @@
     },
     {
       "term": "checks",
-      "count": 85
+      "count": 84
     },
     {
       "term": "pipeworx-io",
@@ -156,7 +156,7 @@
     },
     {
       "term": "check",
-      "count": 57
+      "count": 58
     },
     {
       "term": "status",
@@ -223,11 +223,11 @@
       "count": 43
     },
     {
-      "term": "find",
-      "count": 42
+      "term": "verify",
+      "count": 43
     },
     {
-      "term": "verify",
+      "term": "find",
       "count": 42
     },
     {
@@ -2013,7 +2013,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Real-time global intelligence across conflict, markets, energy, trade, shipping and cyber. 94 tools."
+      "description": "Real-time global intelligence across conflict, markets, energy, trade, shipping and cyber. 96 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -2720,7 +2720,7 @@
       "name": "com.fahaliai/fahali",
       "confidence": 0.35,
       "topics": [],
-      "description": "Market-risk for AI agents: verified lead time, signed receipts, judged record. Not advice."
+      "description": "Market-risk for AI agents: verified lead time, SHA-256-hashed receipts, judged record. Not advice."
     },
     {
       "slug": "com-feeless402-nano-pay",
@@ -3518,7 +3518,7 @@
       "name": "com.sourcey/sourcey",
       "confidence": 0.35,
       "topics": [],
-      "description": "Find and compare startup credits and deals with eligibility checks and exact evidence."
+      "description": "Find startup credits and deals; check eligibility and read Agent Readiness reports with evidence."
     },
     {
       "slug": "com-sportwizzard-sportwizzard",
@@ -5831,6 +5831,13 @@
       "description": "Consulta status de NFe na SEFAZ pela chave de acesso: autorizada, cancelada, protocolo."
     },
     {
+      "slug": "io-github-csolomon0704-prog-verify-proof",
+      "name": "io.github.csolomon0704-prog/verify-proof",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Verify timestamp proofs offline, anchor hashes through ProofLedger, keep agent run receipts."
+    },
+    {
       "slug": "io-github-cyberlife-coder-velesdb-memory",
       "name": "io.github.cyberlife-coder/velesdb-memory",
       "confidence": 0.35,
@@ -6234,7 +6241,7 @@
       "name": "io.github.entia-systems-core/entity-verification",
       "confidence": 0.35,
       "topics": [],
-      "description": "11.3M entities, 10 countries, 12 tools. EU VAT (VIES), BORME, GLEIF, KYB. Free: 100 req/month."
+      "description": "Verified business identity for AI agents: 11.3M entities, EU VAT (VIES), BORME, GLEIF. Free trial."
     },
     {
       "slug": "io-github-entityadam-comfyui-mcp",
@@ -15407,13 +15414,6 @@
       "description": "MCP server exposing Ayush Tomar's AI portfolio -- ask what he built or his flagship project."
     },
     {
-      "slug": "io-github-b-hash88-knownfix",
-      "name": "io.github.b-hash88/knownfix",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Verified fixes, professional reviews, and evidence-led apparel over MCP."
-    },
-    {
       "slug": "io-github-b1ff-atlassian-dc-mcp-confluence",
       "name": "io.github.b1ff/atlassian-dc-mcp-confluence",
       "confidence": 0.45,
@@ -15705,7 +15705,7 @@
       "name": "io.github.bruchris/canvas-lms-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "TypeScript MCP server for Canvas LMS — 176 tools across 42 domains."
+      "description": "TypeScript MCP server for Canvas LMS — 177 tools across 42 domains."
     },
     {
       "slug": "io-github-bryanjbelanger-talos-mcp-server",
@@ -16356,7 +16356,7 @@
       "name": "io.github.cyanheads/aviation-weather-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Fetch METARs, TAFs, PIREPs, and domestic SIGMETs from the NWS Aviation Weather Center."
+      "description": "METARs, TAFs, PIREPs, domestic/international SIGMETs and CWAs via NWS AWC. AIRMETs not served."
     },
     {
       "slug": "io-github-cyanheads-census-mcp-server",
@@ -19731,6 +19731,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "The Oura v2 API as an MCP server. Paginates, fixes the date range, warns when data is missing."
+    },
+    {
+      "slug": "io-github-psyb0t-mailbox",
+      "name": "io.github.psyb0t/mailbox",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Scoped IMAP/SMTP access over HTTP and MCP: read, organize, draft, reply and send mail."
     },
     {
       "slug": "io-github-pungggi-smart-terminal",
@@ -24030,15 +24037,6 @@
         "observability"
       ],
       "description": "EuroRWA analyst: tokenized money-market fund signals, snapshots, analytics and alerts."
-    },
-    {
-      "slug": "io-github-csolomon0704-prog-verify-proof",
-      "name": "io.github.csolomon0704-prog/verify-proof",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Verify blockchain timestamp proofs offline, or anchor a new one through ProofLedger."
     },
     {
       "slug": "io-github-cyanheads-mcp-ts-core",
