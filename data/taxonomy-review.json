@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-20T00:58:39.711Z",
-  "total": 5676,
+  "generatedAt": "2026-10-21T00:26:18.429Z",
+  "total": 5674,
   "summary": {
-    "needsReview": 3828,
+    "needsReview": 3826,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2578,
+    "uncategorized": 2576,
     "uncategorizedRatePct": 45.4,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,25 +15,25 @@
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2578,
-    "dev": 1887,
-    "search": 758,
+    "misc": 2576,
+    "dev": 1886,
+    "search": 757,
     "files": 257,
     "ai": 210,
-    "comms": 190,
+    "comms": 191,
     "database": 171,
     "commerce": 165,
     "cloud": 135,
     "browser": 122,
-    "marketing": 79
+    "marketing": 80
   },
   "topicCounts": {
-    "design-media": 290,
-    "finance": 190,
+    "design-media": 291,
+    "finance": 191,
     "automation": 188,
     "observability": 118,
     "legal": 95,
-    "mcp-infrastructure": 86,
+    "mcp-infrastructure": 87,
     "visualization": 64,
     "science-health": 32,
     "security": 28,
@@ -48,7 +48,7 @@
     },
     {
       "term": "query",
-      "count": 243
+      "count": 244
     },
     {
       "term": "platform-hosted",
@@ -56,7 +56,7 @@
     },
     {
       "term": "lookup",
-      "count": 216
+      "count": 217
     },
     {
       "term": "official-source",
@@ -108,11 +108,11 @@
     },
     {
       "term": "live",
-      "count": 90
+      "count": 89
     },
     {
       "term": "over",
-      "count": 90
+      "count": 89
     },
     {
       "term": "checks",
@@ -135,10 +135,6 @@
       "count": 78
     },
     {
-      "term": "tasks",
-      "count": 66
-    },
-    {
       "term": "across",
       "count": 65
     },
@@ -147,8 +143,12 @@
       "count": 65
     },
     {
-      "term": "x402",
+      "term": "tasks",
       "count": 65
+    },
+    {
+      "term": "x402",
+      "count": 63
     },
     {
       "term": "public",
@@ -2013,7 +2013,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Real-time global intelligence across conflict, markets, energy, trade, shipping and cyber. 96 tools."
+      "description": "Real-time global intelligence across conflict, markets, energy, trade, shipping and cyber. 95 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -2216,7 +2216,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "745 MCP tools across 1208 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "746 MCP tools across 1209 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -3469,7 +3469,7 @@
       "name": "com.shipstatic/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Deploy static websites, landing pages, and prototypes instantly from AI agents."
+      "description": "Deploy static websites, landing pages, and prototypes instantly. Free, no account needed."
     },
     {
       "slug": "com-sigaoli-profile",
@@ -5464,7 +5464,7 @@
       "name": "io.github.cafferychen777/chatspatial",
       "confidence": 0.35,
       "topics": [],
-      "description": "Schema-enforced spatial transcriptomics analysis with 20 tools and 65 methods via MCP"
+      "description": "Schema-enforced spatial transcriptomics analysis with 20 tools and 67 methods via MCP"
     },
     {
       "slug": "io-github-camlowe-mcp-server-reddit-ads",
@@ -6139,13 +6139,6 @@
       "description": "Safe, self-hosted ZAP operator for guided AI security scans and reports."
     },
     {
-      "slug": "io-github-dv1-321-scalpstream-mcp",
-      "name": "io.github.DV1-321/scalpstream-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Pay-per-call data over x402: air quality, border waits, fuel prices, market research."
-    },
-    {
       "slug": "io-github-dwgx-smartcli",
       "name": "io.github.dwgx/smartcli",
       "confidence": 0.35,
@@ -6482,13 +6475,6 @@
       "description": "A local receipt and approval gate for AI agent sessions. The agent can act, but it cannot sign."
     },
     {
-      "slug": "io-github-gitserge-crypto-aotrust-notary",
-      "name": "io.github.GitSerge-crypto/aotrust-notary",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Cryptographic proof of existence for AI agents. Base x402, NEAR anchored. Free tier."
-    },
-    {
       "slug": "io-github-glc-rag-geo-mcp",
       "name": "io.github.glc-rag/geo-mcp",
       "confidence": 0.35,
@@ -6629,13 +6615,6 @@
       "description": "Private projects, preflight, decisions, and handoffs that keep work continuous across AI tools."
     },
     {
-      "slug": "io-github-hedging8563-tokenlab",
-      "name": "io.github.hedging8563/tokenlab",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "TokenLab MCP server: 32 default and 89 full-profile tools for models, media, tasks, and files."
-    },
-    {
       "slug": "io-github-heidihelena-citevahti",
       "name": "io.github.heidihelena/citevahti",
       "confidence": 0.35,
@@ -6760,13 +6739,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Create loop-perfect ASCII animations and website-ready embeds with an AI agent."
-    },
-    {
-      "slug": "io-github-ies86-shortlist-price-index",
-      "name": "io.github.ies86/shortlist-price-index",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Software entry prices for 16 categories, with ratings and true 3-year cost. CC BY 4.0"
     },
     {
       "slug": "io-github-ignaciohermosillacornejo-copilot-money-mcp",
@@ -7053,7 +7025,7 @@
       "name": "io.github.jgravelle/jcodemunch-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Token-efficient code exploration via tree-sitter AST parsing. 70+ languages, 86-99% token savings."
+      "description": "Retrieves code by symbol via tree-sitter. 96.6% fewer tokens per lookup than grep-and-read."
     },
     {
       "slug": "io-github-jiankn-savepinner",
@@ -14781,7 +14753,7 @@
       "name": "cloud.dchub/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "DC Hub is the live data layer for data-center site selection. DCPI + capacity to buy or lease."
+      "description": "Data center energy, electricity & power grid data: DCPI to query and cite, capacity to buy or lease."
     },
     {
       "slug": "com-a2a2p-a2a2p",
@@ -15705,7 +15677,7 @@
       "name": "io.github.bruchris/canvas-lms-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "TypeScript MCP server for Canvas LMS — 177 tools across 42 domains."
+      "description": "TypeScript MCP server for Canvas LMS — 183 tools across 42 domains."
     },
     {
       "slug": "io-github-bryanjbelanger-talos-mcp-server",
@@ -20661,7 +20633,7 @@
       "name": "io.github.slookisen/finn-tannlege-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Norwegian dental clinic directory MCP: 5,400+ clinics with Helfo-agreement, specialty, duty, chain."
+      "description": "Norwegian dental clinic MCP: more than 4,500 clinics with Helfo, specialty and emergency care data."
     },
     {
       "slug": "io-github-slookisen-opplevagent-mcp",
@@ -21529,7 +21501,7 @@
       "name": "net.crawlora/crawlora-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Hosted MCP: 3631 structured web-data tools across 471 platform groups."
+      "description": "Hosted MCP: 3665 structured web-data tools across 472 platform groups."
     },
     {
       "slug": "no-apier-mcp",
@@ -24283,6 +24255,15 @@
       "description": "Google Trends, YouTube, Ads Transparency and Play reviews over plain HTTP. No API key."
     },
     {
+      "slug": "io-github-dv1-321-scalpstream-mcp",
+      "name": "io.github.DV1-321/scalpstream-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Pay-per-call air quality, fuel prices, border waits, recalls and market data for AI agents via x402."
+    },
+    {
       "slug": "io-github-dweekly-quicken-mac-mcp",
       "name": "io.github.dweekly/quicken-mac-mcp",
       "confidence": 0.55,
@@ -24743,6 +24724,15 @@
         "visualization"
       ],
       "description": "34-tool Caelus MCP for validated astrology: charts, transits, Vedic, facts, sky view, synthetic."
+    },
+    {
+      "slug": "io-github-hedging8563-tokenlab",
+      "name": "io.github.hedging8563/tokenlab",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "TokenLab MCP server: generate images and video, call models. 32 default and 89 full-profile tools."
     },
     {
       "slug": "io-github-helm-protocol-openttt-pot",
@@ -26715,7 +26705,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Explains lab results for diabetes, kidney, lupus and cancer care, citing guidelines. Free sample."
+      "description": "Which tests may be due with diabetes, kidney disease, lupus or a cancer history. Guideline-cited."
     },
     {
       "slug": "io-github-pipeworx-io-alpaca",
