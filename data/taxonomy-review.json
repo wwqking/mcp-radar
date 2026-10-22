@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-21T00:26:18.429Z",
-  "total": 5674,
+  "generatedAt": "2026-10-22T00:30:25.092Z",
+  "total": 5671,
   "summary": {
-    "needsReview": 3826,
+    "needsReview": 3825,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2576,
+    "uncategorized": 2573,
     "uncategorizedRatePct": 45.4,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.2
+    "largestCategoryRatePct": 33.3
   },
   "alerts": [
     "待归类占比 45.4%，超过 5% 审核线",
-    "dev 占比 33.2%，超过 30% 拆分评估线",
+    "dev 占比 33.3%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2576,
+    "misc": 2573,
     "dev": 1886,
     "search": 757,
     "files": 257,
@@ -80,19 +80,19 @@
     },
     {
       "term": "read",
-      "count": 108
-    },
-    {
-      "term": "memory",
       "count": 107
     },
     {
+      "term": "memory",
+      "count": 106
+    },
+    {
       "term": "credit",
-      "count": 105
+      "count": 104
     },
     {
       "term": "local",
-      "count": 99
+      "count": 100
     },
     {
       "term": "manage",
@@ -107,16 +107,16 @@
       "count": 90
     },
     {
-      "term": "live",
-      "count": 89
-    },
-    {
       "term": "over",
       "count": 89
     },
     {
+      "term": "live",
+      "count": 88
+    },
+    {
       "term": "checks",
-      "count": 84
+      "count": 83
     },
     {
       "term": "pipeworx-io",
@@ -135,11 +135,11 @@
       "count": 78
     },
     {
-      "term": "across",
-      "count": 65
+      "term": "audit",
+      "count": 66
     },
     {
-      "term": "audit",
+      "term": "across",
       "count": 65
     },
     {
@@ -163,10 +163,6 @@
       "count": 56
     },
     {
-      "term": "evidence",
-      "count": 55
-    },
-    {
       "term": "person",
       "count": 55
     },
@@ -175,15 +171,19 @@
       "count": 54
     },
     {
-      "term": "local-first",
+      "term": "evidence",
       "count": 54
     },
     {
       "term": "real",
-      "count": 53
+      "count": 54
     },
     {
       "term": "before",
+      "count": 51
+    },
+    {
+      "term": "local-first",
       "count": 51
     },
     {
@@ -208,7 +208,7 @@
     },
     {
       "term": "deterministic",
-      "count": 45
+      "count": 44
     },
     {
       "term": "plus",
@@ -219,27 +219,27 @@
       "count": 44
     },
     {
-      "term": "vehicle",
-      "count": 43
-    },
-    {
       "term": "verify",
-      "count": 43
+      "count": 44
     },
     {
       "term": "find",
-      "count": 42
+      "count": 43
+    },
+    {
+      "term": "vehicle",
+      "count": 43
     },
     {
       "term": "build",
       "count": 39
     },
     {
-      "term": "shared",
+      "term": "review",
       "count": 39
     },
     {
-      "term": "stdio",
+      "term": "shared",
       "count": 39
     }
   ],
@@ -1964,7 +1964,7 @@
       "name": "app.toolsnap/toolsnap-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Deterministic AI agent microtools, no accounts/API keys. fetch_extract: 98% token cut. 38 tools."
+      "description": "Deterministic AI agent microtools, no accounts/API keys. fetch_extract: 98% token cut. 47 tools."
     },
     {
       "slug": "app-traderspy-traderspy",
@@ -6591,7 +6591,7 @@
       "name": "io.github.gzchenhao/openhire",
       "confidence": 0.35,
       "topics": [],
-      "description": "Job postings with real posting dates, read from employers' Greenhouse/Lever/Ashby/Beisen/Moka ATS."
+      "description": "Jobs with the employer's real posting date, from employers' own ATS. HR family. Résumé stays local."
     },
     {
       "slug": "io-github-hackmods-cursor-proxmox-mcp",
@@ -7417,7 +7417,7 @@
       "name": "io.github.LambdaTest/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Agentic testing: HyperExecute jobs, test failure triage, SmartUI visual diffs, a11y audits"
+      "description": "Agentic AI quality engineering: run, debug and triage tests on real browsers and devices"
     },
     {
       "slug": "io-github-launzi-tvsub-mcp",
@@ -10967,27 +10967,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Query your DevExpress XAF app: entities, controllers, actions, rules, Model Editor."
-    },
-    {
-      "slug": "io-github-perseus-computing-llc-ledger",
-      "name": "io.github.Perseus-Computing-LLC/ledger",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Verifiable, hash-chained event provenance for autonomous systems. Local-first, MIT. 5 MCP tools."
-    },
-    {
-      "slug": "io-github-perseus-computing-llc-perseus",
-      "name": "io.github.Perseus-Computing-LLC/perseus",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Live context MCP server: resolves git, services, and tests into agent context. Local-first, MIT."
-    },
-    {
-      "slug": "io-github-perseus-computing-llc-perseus-vault",
-      "name": "io.github.Perseus-Computing-LLC/perseus-vault",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Persistent, encrypted, deterministic memory for AI agents. Local-first, 173 canonical tools."
     },
     {
       "slug": "io-github-pete-builds-unifi",
@@ -14791,6 +14770,13 @@
       "description": "Spanish company registry (BORME): companies, directors, how they connect. Needs a free work account."
     },
     {
+      "slug": "io-costory-finops",
+      "name": "io.costory/finops",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "FinOps agent MCP: one allocated view of cloud, AI and data costs for your team. Starter $300/mo"
+    },
+    {
       "slug": "io-github-0rkz-byte-protocol",
       "name": "io.github.0rkz/byte-protocol",
       "confidence": 0.45,
@@ -16972,7 +16958,7 @@
       "name": "io.github.financeratecalc/frc-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "2025 US FHA mortgage record statistics, with a gate that checks AI sentences preserve the evidence"
+      "description": "2025 HMDA FHA denial statistics and dated US mortgage rule tables, with receipts you can verify."
     },
     {
       "slug": "io-github-fino-wind-vaultbeat",
@@ -17385,7 +17371,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 606 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 611 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -19751,7 +19737,7 @@
       "name": "io.github.QVerisAI/mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Discover, inspect, quote, and call external tools, with usage and final credit settlement audits"
+      "description": "Professional data and tools for AI: find services, review scope, call them, and audit usage."
     },
     {
       "slug": "io-github-qwertymuzaffar-udacity-commit",
@@ -22667,7 +22653,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Create amazing video experiences with the Qencode API, straight from your AI assistant."
+      "description": "Video pipeline for AI agents: analyze with AI, transcode to MP4/HLS/DASH, edit, protect and deliver."
     },
     {
       "slug": "com-redbark-mcp",
@@ -23508,7 +23494,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Concentrated liquidity on Uniswap/Aerodrome (rebalance, compound, leverage) or single-sided lending."
+      "description": "Concentrated liquidity on Uniswap/Aero (rebalance, compound, leverage) or single-sided lending."
     },
     {
       "slug": "io-github-arose26-make-audit-mcp",
@@ -23792,7 +23778,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Chat-driven AI video montage: beat-synced cuts, auto-matched music, subtitles, transitions."
+      "description": "Video editing through the Cassette agent: import media, edit by chat turn, read the timeline, export"
     },
     {
       "slug": "io-github-cbetz-last-ehr",
@@ -24626,6 +24612,15 @@
       "description": "Deterministic image rendering with exact typography. Pay per call in USDC, no account."
     },
     {
+      "slug": "io-github-getdynamoi-dynamoi",
+      "name": "io.github.getDynamoi/dynamoi",
+      "confidence": 0.55,
+      "topics": [
+        "design-media"
+      ],
+      "description": "Music promotion for AI agents: Spotify and YouTube ads, Smart Links, optional distribution."
+    },
+    {
       "slug": "io-github-gg13121-corent-mcp",
       "name": "io.github.gg13121/corent-mcp",
       "confidence": 0.55,
@@ -25011,7 +25006,7 @@
       "topics": [
         "automation"
       ],
-      "description": "ServiceNow MCP server: Table API, CMDB, schema, update sets. Read-only mode, OAuth, audit log."
+      "description": "ServiceNow MCP server: Table API, CMDB, schema, aggregates, update sets and four Agent Skills."
     },
     {
       "slug": "io-github-jtalk22-asana-mcp-server",
@@ -26678,7 +26673,7 @@
       "topics": [
         "mcp-infrastructure"
       ],
-      "description": "Carry your Phaedo cognitive fingerprint into any MCP client: inject, consult, escalate, sign."
+      "description": "Make AI apps answer your way, check with you before acting, and get approvals on your phone."
     },
     {
       "slug": "io-github-phdwight-pse-edge-mcp",
@@ -26750,7 +26745,7 @@
       "topics": [
         "visualization"
       ],
-      "description": "Energy-Charts (Fraunhofer ISE) MCP — European electricity generation, prices, and capacity."
+      "description": "Energy-Charts (Fraunhofer ISE) MCP — European electricity generation, prices, and capacity.…"
     },
     {
       "slug": "io-github-pipeworx-io-fda-devices",
