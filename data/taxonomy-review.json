@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-10-22T00:30:25.092Z",
-  "total": 5671,
+  "generatedAt": "2026-10-23T00:27:58.491Z",
+  "total": 5668,
   "summary": {
-    "needsReview": 3825,
+    "needsReview": 3821,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2573,
-    "uncategorizedRatePct": 45.4,
+    "uncategorized": 2570,
+    "uncategorizedRatePct": 45.3,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.3
+    "largestCategoryRatePct": 33.2
   },
   "alerts": [
-    "待归类占比 45.4%，超过 5% 审核线",
-    "dev 占比 33.3%，超过 30% 拆分评估线",
+    "待归类占比 45.3%，超过 5% 审核线",
+    "dev 占比 33.2%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2573,
-    "dev": 1886,
-    "search": 757,
+    "misc": 2570,
+    "dev": 1884,
+    "search": 759,
     "files": 257,
     "ai": 210,
     "comms": 191,
@@ -120,7 +120,7 @@
     },
     {
       "term": "pipeworx-io",
-      "count": 83
+      "count": 82
     },
     {
       "term": "read-only",
@@ -135,12 +135,12 @@
       "count": 78
     },
     {
-      "term": "audit",
+      "term": "across",
       "count": 66
     },
     {
-      "term": "across",
-      "count": 65
+      "term": "audit",
+      "count": 66
     },
     {
       "term": "tasks",
@@ -148,7 +148,7 @@
     },
     {
       "term": "x402",
-      "count": 63
+      "count": 62
     },
     {
       "term": "public",
@@ -188,7 +188,7 @@
     },
     {
       "term": "usdc",
-      "count": 49
+      "count": 48
     },
     {
       "term": "every",
@@ -2216,7 +2216,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "746 MCP tools across 1209 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "747 MCP tools across 1210 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -3218,13 +3218,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "MCP tools for interacting with Microsoft Fabric"
-    },
-    {
-      "slug": "com-mireye-earth",
-      "name": "com.mireye/earth",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server for Mireye Earth — federal-source-cited geospatial data for any MCP-aware agent."
     },
     {
       "slug": "com-mographr-motion-tools",
@@ -7025,7 +7018,7 @@
       "name": "io.github.jgravelle/jcodemunch-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Retrieves code by symbol via tree-sitter. 96.6% fewer tokens per lookup than grep-and-read."
+      "description": "Retrieves code by symbol via tree-sitter. 96.2% fewer tokens per lookup than grep-and-read."
     },
     {
       "slug": "io-github-jiankn-savepinner",
@@ -11123,13 +11116,6 @@
       "description": "Federal Audit Clearinghouse (FAC) MCP — US single-audit data, served from a served from a…"
     },
     {
-      "slug": "io-github-pipeworx-io-fcc-ecfs",
-      "name": "io.github.pipeworx-io/fcc-ecfs",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server for fcc-ecfs"
-    },
-    {
       "slug": "io-github-pipeworx-io-fcc-regulations",
       "name": "io.github.pipeworx-io/fcc-regulations",
       "confidence": 0.35,
@@ -13531,13 +13517,6 @@
       "description": "Compare 488 Korean universities on 17 official disclosure indicators (대학알리미). No API key."
     },
     {
-      "slug": "io-github-yusong652-itasca-mcp",
-      "name": "io.github.yusong652/itasca-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Give AI agents full access to ITASCA PFC, FLAC3D, 3DEC, MPoint, MassFlow: docs, simulation, plots."
-    },
-    {
       "slug": "io-github-yusong652-pfc",
       "name": "io.github.yusong652/pfc",
       "confidence": 0.35,
@@ -14760,7 +14739,7 @@
       "name": "com.predictionmarketspicks/quant",
       "confidence": 0.45,
       "topics": [],
-      "description": "Free, no key: NFL prop board, Kalshi vs Polymarket gaps, 15-min crypto, Fed odds, NHL, EV/Kelly."
+      "description": "Free, no key: NFL + NBA prop boards, NHL model, Kalshi vs Polymarket gaps, Fed odds, EV/Kelly."
     },
     {
       "slug": "es-mapasocietario-borme",
@@ -15663,7 +15642,7 @@
       "name": "io.github.bruchris/canvas-lms-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "TypeScript MCP server for Canvas LMS — 183 tools across 42 domains."
+      "description": "TypeScript MCP server for Canvas LMS — 187 tools across 42 domains."
     },
     {
       "slug": "io-github-bryanjbelanger-talos-mcp-server",
@@ -16639,20 +16618,6 @@
       "description": "MCP server and TypeScript SDK for OOREP homeopathic repertory and materia medica reference data."
     },
     {
-      "slug": "io-github-dida-ai-hotelbooking",
-      "name": "io.github.DIDA-AI/hotelbooking",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Hotel Booking MCP Server"
-    },
-    {
-      "slug": "io-github-dida-ai-hotelbooking-ai",
-      "name": "io.github.DIDA-AI/hotelbooking-ai",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Hotel Booking MCP Server (Global/AI Edition)"
-    },
-    {
       "slug": "io-github-digilac-simap-mcp",
       "name": "io.github.Digilac/simap-mcp",
       "confidence": 0.45,
@@ -17371,7 +17336,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 611 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 613 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -18050,7 +18015,7 @@
       "name": "io.github.jonahthan433/cortexcloud",
       "confidence": 0.45,
       "topics": [],
-      "description": "Pay-per-call QUBO/Ising optimization for AI agents via x402 (USDC on Base). No API keys."
+      "description": "Pay-per-call on-chain data for AI agents: token, wallet, risk, whale, NFT, tx. No API keys."
     },
     {
       "slug": "io-github-jonathanb555-torah-mcp",
@@ -20529,6 +20494,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Geopolitical grounding for AI agents: country risk, forecasts, chokepoints, sanctions. Free tier."
+    },
+    {
+      "slug": "io-github-servosity-cipp-mcp",
+      "name": "io.github.Servosity/cipp-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "MSP MCP for CIPP: Microsoft 365, Entra ID, Intune, Exchange, Defender and GDAP across all tenants"
     },
     {
       "slug": "io-github-shawn1905-generation-ship",
@@ -24618,7 +24590,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Music promotion for AI agents: Spotify and YouTube ads, Smart Links, optional distribution."
+      "description": "Music promotion and distribution for AI agents: Spotify and YouTube ads, Smart Links, releases."
     },
     {
       "slug": "io-github-gg13121-corent-mcp",
