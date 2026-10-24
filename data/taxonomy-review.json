@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-23T00:27:58.491Z",
+  "generatedAt": "2026-10-24T00:19:26.804Z",
   "total": 5668,
   "summary": {
-    "needsReview": 3821,
+    "needsReview": 3819,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2570,
+    "uncategorized": 2567,
     "uncategorizedRatePct": 45.3,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.2
@@ -15,10 +15,10 @@
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2570,
+    "misc": 2567,
     "dev": 1884,
-    "search": 759,
-    "files": 257,
+    "search": 760,
+    "files": 259,
     "ai": 210,
     "comms": 191,
     "database": 171,
@@ -29,9 +29,9 @@
   },
   "topicCounts": {
     "design-media": 291,
-    "finance": 191,
+    "finance": 192,
     "automation": 188,
-    "observability": 118,
+    "observability": 119,
     "legal": 95,
     "mcp-infrastructure": 87,
     "visualization": 64,
@@ -132,7 +132,7 @@
     },
     {
       "term": "company",
-      "count": 78
+      "count": 77
     },
     {
       "term": "across",
@@ -160,7 +160,11 @@
     },
     {
       "term": "status",
-      "count": 56
+      "count": 57
+    },
+    {
+      "term": "evidence",
+      "count": 55
     },
     {
       "term": "person",
@@ -168,10 +172,6 @@
     },
     {
       "term": "analysis",
-      "count": 54
-    },
-    {
-      "term": "evidence",
       "count": 54
     },
     {
@@ -195,6 +195,10 @@
       "count": 47
     },
     {
+      "term": "analytics",
+      "count": 46
+    },
+    {
       "term": "certificate",
       "count": 46
     },
@@ -203,7 +207,7 @@
       "count": 46
     },
     {
-      "term": "analytics",
+      "term": "verify",
       "count": 45
     },
     {
@@ -216,10 +220,6 @@
     },
     {
       "term": "security",
-      "count": 44
-    },
-    {
-      "term": "verify",
       "count": 44
     },
     {
@@ -1768,7 +1768,7 @@
       "name": "app.apick/business",
       "confidence": 0.35,
       "topics": [],
-      "description": "Korean business, parcel and simple-auth employment, income, pension, license and health data"
+      "description": "Korean business, bid and real-estate analytics, parcel, building register and simple-auth data"
     },
     {
       "slug": "app-businys-mcp-server",
@@ -2216,7 +2216,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "747 MCP tools across 1210 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "749 MCP tools across 1212 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -7663,13 +7663,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Create, manage, schedule, and publish short-form user-generated content through AI agents."
-    },
-    {
-      "slug": "io-github-matiasmaquieira96-risk-mcp",
-      "name": "io.github.matiasmaquieira96/risk-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "KYB API: company registry data from 29 countries, insolvency notices and sanctions screening"
     },
     {
       "slug": "io-github-matrodrigs-shotcut-mcp",
@@ -14189,20 +14182,6 @@
       "description": "AI-native restaurant discovery: verified/menu-indexed/discovered tiers + signed allergy-safety data."
     },
     {
-      "slug": "me-identik-electronica",
-      "name": "me.identik/electronica",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Firma electrónica argentina (Ley 25.506): enviar documentos a firmar, seguir estado y validar."
-    },
-    {
-      "slug": "me-identik-firma",
-      "name": "me.identik/firma",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Firma digital argentina (Ley 25.506) con certificados de certificador licenciado."
-    },
-    {
       "slug": "me-proship-mcp-proship-mcp",
       "name": "me.proship.mcp/proship-mcp",
       "confidence": 0.35,
@@ -16797,7 +16776,7 @@
       "name": "io.github.edushinka/betbetter-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Free sports model win probabilities and fair odds for nine sports. No API key required."
+      "description": "Predicted scores, win chances and checked sport stats for 29 competitions. Free and licensed tools."
     },
     {
       "slug": "io-github-eilodon-calm-mcp",
@@ -17336,7 +17315,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 613 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 618 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -18170,6 +18149,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "US grid data for agents: LMP, carbon, load, queues, ERCOT large loads, RT−DA spread forecasts."
+    },
+    {
+      "slug": "io-github-kawal393-apex-psi-mcp",
+      "name": "io.github.kawal393/apex-psi-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Append-only evidence receipts for AI records: seal, verify, cite, chain-check, anchor status."
     },
     {
       "slug": "io-github-kewelin-ecpro-mcp",
@@ -22243,7 +22229,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Media memory for AI agents and their humans: books, movies, music, shows, anime, podcasts, games."
+      "description": "Media memory for AI agents: books, movies, music, shows, anime, podcasts, games, manga."
     },
     {
       "slug": "com-agentfenster-agentfenster",
@@ -22755,15 +22741,6 @@
       "description": "Create voice-agent scenarios, pull session analytics, place SIP calls, schedule meeting bots."
     },
     {
-      "slug": "com-transcriptfetch-youtube-transcripts",
-      "name": "com.transcriptfetch/youtube-transcripts",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Production transcript API for YouTube, TikTok and Instagram, with AI transcription fallback."
-    },
-    {
       "slug": "com-truss-security-truss-mcp",
       "name": "com.truss-security/truss-mcp",
       "confidence": 0.55,
@@ -23041,7 +23018,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Query live Mac system metrics, listening ports, and Claude Code and Codex session history."
+      "description": "Built into the Actvt Mac app: live system metrics, ports, and Claude Code, Codex and pi sessions."
     },
     {
       "slug": "io-applyra-mcp-server",
@@ -25695,6 +25672,16 @@
       "description": "MCP server for Turkish legislation (Adalet Bakanligi Bedesten API): verifiable citations."
     },
     {
+      "slug": "io-github-matiasmaquieira96-risk-mcp",
+      "name": "io.github.matiasmaquieira96/risk-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "finance",
+        "observability"
+      ],
+      "description": "Company data and KYB API for 29 countries: monitoring, financial statements, insolvency, sanctions"
+    },
+    {
       "slug": "io-github-matteo-sung-lockvet",
       "name": "io.github.matteo-sung/lockvet",
       "confidence": 0.55,
@@ -26146,7 +26133,7 @@
       "topics": [
         "automation"
       ],
-      "description": "1295 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
+      "description": "1310 professional Agent Skills + workflow recipes — searchable & fetchable over MCP."
     },
     {
       "slug": "io-github-moonriddim-skedra",
