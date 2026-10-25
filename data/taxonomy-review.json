@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T00:02:49.241Z",
+  "generatedAt": "2026-10-25T23:50:32.598Z",
   "total": 5668,
   "summary": {
     "needsReview": 3819,
@@ -28,12 +28,12 @@
     "marketing": 80
   },
   "topicCounts": {
-    "design-media": 290,
-    "finance": 191,
+    "design-media": 291,
+    "finance": 192,
     "automation": 188,
     "observability": 119,
     "legal": 95,
-    "mcp-infrastructure": 87,
+    "mcp-infrastructure": 88,
     "visualization": 63,
     "science-health": 32,
     "security": 28,
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 101
+      "count": 100
     },
     {
       "term": "manage",
@@ -116,7 +116,7 @@
     },
     {
       "term": "checks",
-      "count": 83
+      "count": 84
     },
     {
       "term": "pipeworx-io",
@@ -156,7 +156,7 @@
     },
     {
       "term": "check",
-      "count": 58
+      "count": 57
     },
     {
       "term": "status",
@@ -195,12 +195,12 @@
       "count": 47
     },
     {
-      "term": "analytics",
+      "term": "certificate",
       "count": 46
     },
     {
-      "term": "certificate",
-      "count": 46
+      "term": "analytics",
+      "count": 45
     },
     {
       "term": "intelligence",
@@ -340,7 +340,7 @@
       "name": "ai.auxen/auxen",
       "confidence": 0.35,
       "topics": [],
-      "description": "Provision private AI model endpoints on dedicated GPUs (Llama, Qwen, Mistral). Pay per minute."
+      "description": "Hire AI workers that run on schedule, report back and act with your OK. Or deploy private models."
     },
     {
       "slug": "ai-bareun-bareun",
@@ -1904,13 +1904,6 @@
       "description": "Tarot card meanings for love, and answers to the most-asked love questions, in 22 languages."
     },
     {
-      "slug": "app-miniaccountant-mini-accountant",
-      "name": "app.miniaccountant/mini-accountant",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hosted MCP server for Mini Accountant: invoices, expenses, customers, analytics, tax estimates."
-    },
-    {
       "slug": "app-nausika-mcp",
       "name": "app.nausika/mcp",
       "confidence": 0.35,
@@ -2216,7 +2209,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "750 MCP tools across 1216 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "753 MCP tools across 1219 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -6213,7 +6206,7 @@
       "name": "io.github.ellmos-ai/ellmos-controlcenter-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP control plane: local server discovery, profiles, capability bundles, and policy audits."
+      "description": "MCP control plane: discovery of servers, tools and skills, profiles, audits, gated tool gateway."
     },
     {
       "slug": "io-github-ellmos-ai-ellmos-servercommander-mcp",
@@ -11701,7 +11694,7 @@
       "name": "io.github.Pushary/pushary",
       "confidence": 0.35,
       "topics": [],
-      "description": "The decision layer for AI agents. Your agent asks, a person approves or denies on their phone."
+      "description": "Human-in-the-loop for AI agents: ask a person and get approvals or answers by push notification."
     },
     {
       "slug": "io-github-putervision-vision-memory-mcp",
@@ -14844,7 +14837,7 @@
       "name": "io.github.abm9111/chamber",
       "confidence": 0.45,
       "topics": [],
-      "description": "Indexed note: numbers, capitalised names, file names. Local, no model, no meaning check."
+      "description": "Checks a claim's numbers, names and file names against your indexed notes. Local; no model."
     },
     {
       "slug": "io-github-aborruso-ckan-mcp-server",
@@ -15328,13 +15321,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Real-time water temperature and tides for 8,000+ locations, by name or lat/long coordinates."
-    },
-    {
-      "slug": "io-github-ayush-s-tomar-portfolio-mcp-server",
-      "name": "io.github.ayush-s-tomar/portfolio-mcp-server",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server exposing Ayush Tomar's AI portfolio -- ask what he built or his flagship project."
     },
     {
       "slug": "io-github-b1ff-atlassian-dc-mcp-confluence",
@@ -20934,7 +20920,7 @@
       "name": "io.github.toruproject/mapnetwork-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Generate styled PNG/SVG map images of any location with 11 customizable color themes."
+      "description": "Generate styled PNG/SVG map images of places in Japan with 11 customizable color themes."
     },
     {
       "slug": "io-github-tosin2013-mcp-adr-analysis-server",
@@ -21452,7 +21438,7 @@
       "name": "net.crawlora/crawlora-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Hosted MCP: 3665 structured web-data tools across 472 platform groups."
+      "description": "Hosted MCP: 3829 structured web-data tools across 480 platform groups."
     },
     {
       "slug": "no-apier-mcp",
@@ -22081,6 +22067,15 @@
         "visualization"
       ],
       "description": "Lucid’s connector creates diagrams, searches, edits, shares, and retrieves docs to summarize."
+    },
+    {
+      "slug": "app-miniaccountant-mini-accountant",
+      "name": "app.miniaccountant/mini-accountant",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Invoicing, expenses, accounting analytics. OAuth 2.1 dynamic client registration, no API key."
     },
     {
       "slug": "app-miromiro-miromiro",
@@ -23535,6 +23530,15 @@
       "description": "Drive terminal coding agents by voice, with receipts that never claim more than they proved."
     },
     {
+      "slug": "io-github-ayush-s-tomar-portfolio-mcp-server",
+      "name": "io.github.ayush-s-tomar/portfolio-mcp-server",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Ask any MCP client what Ayush Singh Tomar has built: projects, stacks, and a resume summary."
+    },
+    {
       "slug": "io-github-beckettlab-beckett-godot-mcp",
       "name": "io.github.beckettlab/beckett-godot-mcp",
       "confidence": 0.55,
@@ -23670,7 +23674,7 @@
       "topics": [
         "finance"
       ],
-      "description": "MCP server for SEC EDGAR data — company filings, financial concepts, and company info"
+      "description": "Rust MCP server for SEC EDGAR data — company filings, financial concepts, and company info"
     },
     {
       "slug": "io-github-builditwithgk-repo-cartographer",
@@ -24240,7 +24244,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Headless Blender asset QA over MCP: background script runs and FBX reimport verification."
+      "description": "Local-first MCP asset QA for headless Blender: bounded scripts, FBX reimports, four-view renders."
     },
     {
       "slug": "io-github-ellmos-ai-n8n-manager-mcp",
