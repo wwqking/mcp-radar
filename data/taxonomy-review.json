@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T00:19:26.804Z",
+  "generatedAt": "2026-10-25T00:02:49.241Z",
   "total": 5668,
   "summary": {
     "needsReview": 3819,
@@ -28,13 +28,13 @@
     "marketing": 80
   },
   "topicCounts": {
-    "design-media": 291,
-    "finance": 192,
+    "design-media": 290,
+    "finance": 191,
     "automation": 188,
     "observability": 119,
     "legal": 95,
     "mcp-infrastructure": 87,
-    "visualization": 64,
+    "visualization": 63,
     "science-health": 32,
     "security": 28,
     "game-development": 24,
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 100
+      "count": 101
     },
     {
       "term": "manage",
@@ -108,7 +108,7 @@
     },
     {
       "term": "over",
-      "count": 89
+      "count": 90
     },
     {
       "term": "live",
@@ -148,7 +148,7 @@
     },
     {
       "term": "x402",
-      "count": 62
+      "count": 63
     },
     {
       "term": "public",
@@ -204,7 +204,7 @@
     },
     {
       "term": "intelligence",
-      "count": 46
+      "count": 45
     },
     {
       "term": "verify",
@@ -2216,7 +2216,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "749 MCP tools across 1212 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "750 MCP tools across 1216 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -6130,6 +6130,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Safe, self-hosted ZAP operator for guided AI security scans and reports."
+    },
+    {
+      "slug": "io-github-dv1-321-scalpstream-mcp",
+      "name": "io.github.DV1-321/scalpstream-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Pay-per-call air quality, US product recalls, border waits and cheapest fuel for AI agents via x402."
     },
     {
       "slug": "io-github-dwgx-smartcli",
@@ -11949,6 +11956,13 @@
       "description": "Apple Health AI Bridge provides read-only local MCP access for Health Bridge for AI."
     },
     {
+      "slug": "io-github-roomi-fields-notebooklm-mcp",
+      "name": "io.github.roomi-fields/notebooklm-mcp",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Google Gemini Notebook (ex NotebookLM) over MCP + a local REST API — cited answers, Studio, history"
+    },
+    {
       "slug": "io-github-rstreamlabs-rstream",
       "name": "io.github.rstreamlabs/rstream",
       "confidence": 0.35,
@@ -13403,13 +13417,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "MCP server for TimeZest — appointment scheduling, agents, appointment types, and resources for MSPs."
-    },
-    {
-      "slug": "io-github-x-pact-pdao-agent-exchange",
-      "name": "io.github.X-PACT/pdao-agent-exchange",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Solana Mainnet verification, intelligence, machine receipts, and agent logistics through MCP."
     },
     {
       "slug": "io-github-xbbg-org-xbbg-mcp",
@@ -16314,7 +16321,7 @@
       "name": "io.github.cyanheads/exchange-rates-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Convert currencies, get FX rates, and query historical ECB exchange rate data."
+      "description": "Convert currencies, get FX rates, and query historical Frankfurter v1 exchange rate data."
     },
     {
       "slug": "io-github-cyanheads-fcc-broadband-mcp-server",
@@ -21151,7 +21158,7 @@
       "name": "io.github.vshulcz/deja-vu",
       "confidence": 0.45,
       "topics": [],
-      "description": "deja-vu: local memory over the session histories of forty-two coding agents."
+      "description": "deja-vu: local memory over the session histories of forty-three coding agents."
     },
     {
       "slug": "io-github-waddou-mcp-moncompte",
@@ -24190,15 +24197,6 @@
       "description": "Google Trends, YouTube, Ads Transparency and Play reviews over plain HTTP. No API key."
     },
     {
-      "slug": "io-github-dv1-321-scalpstream-mcp",
-      "name": "io.github.DV1-321/scalpstream-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Pay-per-call air quality, fuel prices, border waits, recalls and market data for AI agents via x402."
-    },
-    {
       "slug": "io-github-dweekly-quicken-mac-mcp",
       "name": "io.github.dweekly/quicken-mac-mcp",
       "confidence": 0.55,
@@ -24612,7 +24610,7 @@
       "topics": [
         "finance"
       ],
-      "description": "HPSILab Quant finance MCP for US stocks, ETFs, options, Monte Carlo, backtesting, and risk analysis."
+      "description": "Stock & options risk analytics for AI agents: pre-trade risk scan, IV, gamma walls, Monte Carlo."
     },
     {
       "slug": "io-github-handys11-projgraph",
@@ -26812,7 +26810,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Live S&P 500 quantum-model signals, forecasts and trade plans. Educational, not financial advice."
+      "description": "S&P 500 market data: filings, earnings, insider, Congress and institutional trades. No forecasts."
     },
     {
       "slug": "io-github-quasarg-taste-bank",
@@ -26984,15 +26982,6 @@
         "observability"
       ],
       "description": "Monitor MCP servers, API contracts and AI outputs for schema drift. Alerts on breaking changes."
-    },
-    {
-      "slug": "io-github-roomi-fields-notebooklm-mcp",
-      "name": "io.github.roomi-fields/notebooklm-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Automate Google NotebookLM — Q&A with citations, audio, video, content generation"
     },
     {
       "slug": "io-github-rozetyp-vuln-intel",
@@ -27989,6 +27978,15 @@
       "description": "MCP server for Unitrends Backup — appliances, jobs, recovery points, restores, alerts."
     },
     {
+      "slug": "io-github-x-pact-pdao-agent-exchange",
+      "name": "io.github.X-PACT/pdao-agent-exchange",
+      "confidence": 0.55,
+      "topics": [
+        "automation"
+      ],
+      "description": "PrivateDAO services for verification, multichain intelligence, risk, and agent workflows."
+    },
+    {
       "slug": "io-github-xinvxueyuan-novelai-image-mcp",
       "name": "io.github.xinvxueyuan/novelai-image-mcp",
       "confidence": 0.55,
@@ -28357,7 +28355,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Personal-finance workspace for AI agents: accounts, spending, budgets, goals, and investments."
+      "description": "Personal finance for your AI agent: money goals, a budget, and a weekly review of your accounts."
     },
     {
       "slug": "n8n-mcp",
