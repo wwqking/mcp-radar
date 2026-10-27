@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T23:50:32.598Z",
-  "total": 5668,
+  "generatedAt": "2026-10-27T01:09:13.467Z",
+  "total": 5666,
   "summary": {
     "needsReview": 3819,
     "needsReviewRatePct": 67.4,
@@ -16,20 +16,20 @@
   ],
   "categoryCounts": {
     "misc": 2567,
-    "dev": 1884,
+    "dev": 1883,
     "search": 760,
     "files": 259,
     "ai": 210,
     "comms": 191,
     "database": 171,
-    "commerce": 165,
+    "commerce": 164,
     "cloud": 135,
     "browser": 122,
     "marketing": 80
   },
   "topicCounts": {
-    "design-media": 291,
-    "finance": 192,
+    "design-media": 290,
+    "finance": 193,
     "automation": 188,
     "observability": 119,
     "legal": 95,
@@ -71,11 +71,11 @@
       "count": 122
     },
     {
-      "term": "coding",
-      "count": 116
+      "term": "free",
+      "count": 117
     },
     {
-      "term": "free",
+      "term": "coding",
       "count": 116
     },
     {
@@ -112,7 +112,7 @@
     },
     {
       "term": "live",
-      "count": 88
+      "count": 89
     },
     {
       "term": "checks",
@@ -135,12 +135,12 @@
       "count": 77
     },
     {
-      "term": "across",
+      "term": "audit",
       "count": 66
     },
     {
-      "term": "audit",
-      "count": 66
+      "term": "across",
+      "count": 65
     },
     {
       "term": "tasks",
@@ -156,7 +156,7 @@
     },
     {
       "term": "check",
-      "count": 57
+      "count": 58
     },
     {
       "term": "status",
@@ -176,7 +176,7 @@
     },
     {
       "term": "real",
-      "count": 54
+      "count": 53
     },
     {
       "term": "before",
@@ -326,7 +326,7 @@
       "name": "ai.atlaso/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "AI memory layer — one shared, persistent memory across every AI tool you connect."
+      "description": "Atlaso, the AI memory layer: one shared, persistent memory for every AI tool you connect."
     },
     {
       "slug": "ai-autonomad-computeback",
@@ -2076,7 +2076,7 @@
       "name": "build.swapi/star-wars",
       "confidence": 0.35,
       "topics": [],
-      "description": "Star Wars API (SWAPI) as a remote MCP server: films, people, planets, species, starships, vehicles."
+      "description": "Free remote Star Wars MCP server (SWAPI data): people, films, planets, starships. No API key."
     },
     {
       "slug": "ca-bluecraneworks-forms",
@@ -2209,7 +2209,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "753 MCP tools across 1219 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "754 MCP tools across 1221 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -5562,7 +5562,7 @@
       "name": "io.github.chriswu727/argus",
       "confidence": 0.35,
       "topics": [],
-      "description": "Autonomous QA MCP for web and macOS that tests like a real engineer, finds bugs, and verifies them."
+      "description": "Testing MCP for web and macOS: evidence-backed coverage, persistence checks and live progress."
     },
     {
       "slug": "io-github-chrzanowy-agent-tollbooth",
@@ -6248,7 +6248,7 @@
       "name": "io.github.erayendes/asc-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Every App Store Connect + StoreKit 2 endpoint. 902 tools in 13 profiles, narrow to 27."
+      "description": "Every App Store Connect + StoreKit 2 endpoint. 929 tools in 13 profiles, narrow to 27."
     },
     {
       "slug": "io-github-eshller-ltd-mcp",
@@ -10210,7 +10210,7 @@
       "name": "io.github.musharna/plant-genomics-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Plant genomics MCP — 56 tools across 23 backends with cross-source synthesis."
+      "description": "Plant genomics MCP — 58 tools across 24 backends with cross-source synthesis."
     },
     {
       "slug": "io-github-musharna-plantcv-mcp",
@@ -11148,7 +11148,7 @@
       "name": "io.github.pipeworx-io/gov-auctions",
       "confidence": 0.35,
       "topics": [],
-      "description": "Government Auctions MCP — physical-asset auctions (surplus, seized, forfeited,"
+      "description": "Government Auctions MCP — physical-asset auctions (surplus, seized, forfeited, tax-deed) that…"
     },
     {
       "slug": "io-github-pipeworx-io-gov-bids",
@@ -11162,7 +11162,7 @@
       "name": "io.github.pipeworx-io/grantconnect-au",
       "confidence": 0.35,
       "topics": [],
-      "description": "GrantConnect (Australia) MCP — Commonwealth grant opportunities and grants"
+      "description": "GrantConnect (Australia) MCP — Commonwealth grant opportunities and grants awarded, from…"
     },
     {
       "slug": "io-github-pipeworx-io-h1b",
@@ -14665,6 +14665,13 @@
       "description": "A Model Context Protocol server for Zendesk"
     },
     {
+      "slug": "ai-justdomain-just-domain",
+      "name": "ai.justdomain/just-domain",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Check a domain name, both prices and whether it can transfer in. You register it on justdomain.ai."
+    },
+    {
       "slug": "ai-kinlab-kin",
       "name": "ai.kinlab/kin",
       "confidence": 0.45,
@@ -16433,7 +16440,7 @@
       "name": "io.github.cyanheads/who-gho-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "WHO Global Health Observatory — 3,059 indicators across 194 member states."
+      "description": "WHO Global Health Observatory — 3,102 indicators across 194 member states."
     },
     {
       "slug": "io-github-cyanheads-worldbank-mcp-server",
@@ -17745,13 +17752,6 @@
       "description": "Read-only ops/health MCP server for a local vLLM instance: health tiers, GPU/VRAM, service status."
     },
     {
-      "slug": "io-github-jamhimself-robinx-mcp",
-      "name": "io.github.jamhimself/robinx-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Robinhood Chain MCP server: rug checks, deployer records, measured X callers. For agents and bots."
-    },
-    {
       "slug": "io-github-jarmstrong158-conductor",
       "name": "io.github.jarmstrong158/Conductor",
       "confidence": 0.45,
@@ -19016,7 +19016,7 @@
       "name": "io.github.mooshee/govgazette",
       "confidence": 0.45,
       "topics": [],
-      "description": "Find federal opportunities, research awards and vendors, and review dated exclusion evidence."
+      "description": "Find federal contracting opportunities, research awards and vendors, and review exclusion evidence."
     },
     {
       "slug": "io-github-mrfentmen-mixpanel-mcp",
@@ -24220,15 +24220,6 @@
       "description": "CLI, MCP server, and AI agent to automate YouTube workflows"
     },
     {
-      "slug": "io-github-editmamei-editmamei",
-      "name": "io.github.editmamei/editmamei",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Photoshop MCP server: natural-language AI photo editing in desktop Photoshop. AI orchestration."
-    },
-    {
       "slug": "io-github-egocen-vivideo-vivideo",
       "name": "io.github.egocen-vivideo/vivideo",
       "confidence": 0.55,
@@ -24859,6 +24850,15 @@
         "security"
       ],
       "description": "Free lockfile malware check plus paid behavioral scan of packages, agent skills and MCP tools."
+    },
+    {
+      "slug": "io-github-jamhimself-robinx-mcp",
+      "name": "io.github.jamhimself/robinx-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Robinhood Chain social signal for trading bots: graded X callers, token verdicts, deployer records."
     },
     {
       "slug": "io-github-jananadiw-codex-tldraw-mcp",
@@ -27536,7 +27536,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Turn any video or livestream into scored, captioned, ready-to-post vertical clips."
+      "description": "AI video, images, AI influencers, character swaps and clipping from Claude or ChatGPT."
     },
     {
       "slug": "io-github-thestreamcode-chutes-media-mcp",
