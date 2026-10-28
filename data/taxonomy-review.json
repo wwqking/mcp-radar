@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-10-27T01:09:13.467Z",
-  "total": 5666,
+  "generatedAt": "2026-10-28T01:01:22.441Z",
+  "total": 5662,
   "summary": {
     "needsReview": 3819,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2567,
+    "uncategorized": 2565,
     "uncategorizedRatePct": 45.3,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.2
+    "largestCategoryRatePct": 33.3
   },
   "alerts": [
     "待归类占比 45.3%，超过 5% 审核线",
-    "dev 占比 33.2%，超过 30% 拆分评估线",
+    "dev 占比 33.3%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2567,
+    "misc": 2565,
     "dev": 1883,
     "search": 760,
-    "files": 259,
+    "files": 258,
     "ai": 210,
     "comms": 191,
-    "database": 171,
+    "database": 172,
     "commerce": 164,
     "cloud": 135,
-    "browser": 122,
+    "browser": 121,
     "marketing": 80
   },
   "topicCounts": {
-    "design-media": 290,
-    "finance": 193,
-    "automation": 188,
+    "design-media": 289,
+    "finance": 191,
+    "automation": 189,
     "observability": 119,
     "legal": 95,
     "mcp-infrastructure": 88,
@@ -71,12 +71,12 @@
       "count": 122
     },
     {
-      "term": "free",
+      "term": "coding",
       "count": 117
     },
     {
-      "term": "coding",
-      "count": 116
+      "term": "free",
+      "count": 117
     },
     {
       "term": "read",
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 100
+      "count": 102
     },
     {
       "term": "manage",
@@ -100,7 +100,7 @@
     },
     {
       "term": "code",
-      "count": 94
+      "count": 95
     },
     {
       "term": "create",
@@ -112,11 +112,11 @@
     },
     {
       "term": "live",
-      "count": 89
+      "count": 88
     },
     {
       "term": "checks",
-      "count": 84
+      "count": 82
     },
     {
       "term": "pipeworx-io",
@@ -135,11 +135,11 @@
       "count": 77
     },
     {
-      "term": "audit",
-      "count": 66
+      "term": "across",
+      "count": 65
     },
     {
-      "term": "across",
+      "term": "audit",
       "count": 65
     },
     {
@@ -148,7 +148,7 @@
     },
     {
       "term": "x402",
-      "count": 63
+      "count": 62
     },
     {
       "term": "public",
@@ -164,7 +164,7 @@
     },
     {
       "term": "evidence",
-      "count": 55
+      "count": 56
     },
     {
       "term": "person",
@@ -176,7 +176,7 @@
     },
     {
       "term": "real",
-      "count": 53
+      "count": 54
     },
     {
       "term": "before",
@@ -187,15 +187,19 @@
       "count": 51
     },
     {
-      "term": "usdc",
-      "count": 48
-    },
-    {
       "term": "every",
       "count": 47
     },
     {
+      "term": "usdc",
+      "count": 47
+    },
+    {
       "term": "certificate",
+      "count": 46
+    },
+    {
+      "term": "verify",
       "count": 46
     },
     {
@@ -207,7 +211,7 @@
       "count": 45
     },
     {
-      "term": "verify",
+      "term": "plus",
       "count": 45
     },
     {
@@ -215,16 +219,12 @@
       "count": 44
     },
     {
-      "term": "plus",
+      "term": "find",
       "count": 44
     },
     {
       "term": "security",
       "count": 44
-    },
-    {
-      "term": "find",
-      "count": 43
     },
     {
       "term": "vehicle",
@@ -235,11 +235,11 @@
       "count": 39
     },
     {
-      "term": "review",
+      "term": "publish",
       "count": 39
     },
     {
-      "term": "shared",
+      "term": "review",
       "count": 39
     }
   ],
@@ -2006,7 +2006,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Real-time global intelligence across conflict, markets, energy, trade, shipping and cyber. 95 tools."
+      "description": "Real-time global intelligence across conflict, markets, energy, trade, shipping and cyber. 97 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -2209,7 +2209,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "754 MCP tools across 1221 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "754 MCP tools across 1222 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -3819,7 +3819,7 @@
       "name": "dev.1social/1social",
       "confidence": 0.35,
       "topics": [],
-      "description": "Publish, schedule and verify social posts across seven networks from your AI assistant."
+      "description": "Publish, schedule and verify social posts across eight networks from your AI assistant."
     },
     {
       "slug": "dev-adrkit-mcp",
@@ -5562,7 +5562,7 @@
       "name": "io.github.chriswu727/argus",
       "confidence": 0.35,
       "topics": [],
-      "description": "Testing MCP for web and macOS: evidence-backed coverage, persistence checks and live progress."
+      "description": "Testing MCP for coding agents: exercise real user journeys, find bugs, verify them with evidence."
     },
     {
       "slug": "io-github-chrzanowy-agent-tollbooth",
@@ -11232,14 +11232,14 @@
       "name": "io.github.pipeworx-io/medicaid-intelligence",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP server for medicaid-intelligence"
+      "description": "Investor-oriented Medicaid drug utilization, managed-care, and enrollment signals."
     },
     {
       "slug": "io-github-pipeworx-io-medicare-coverage",
       "name": "io.github.pipeworx-io/medicare-coverage",
       "confidence": 0.35,
       "topics": [],
-      "description": "MCP server for medicare-coverage"
+      "description": "Medicare national and local coverage policy from the official CMS Coverage API."
     },
     {
       "slug": "io-github-pipeworx-io-mhw",
@@ -14651,13 +14651,6 @@
       "description": "Stress-test lowcap, perp and LP strategies. Returns the full distribution and a reproduction seed."
     },
     {
-      "slug": "xyz-tollboothswap-api-tollbooth",
-      "name": "xyz.tollboothswap.api/tollbooth",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Token swaps and honeypot/rug checks for AI agents on 8 chains, paid per-call in USDC via x402."
-    },
-    {
       "slug": "zendesk-mcp-server",
       "name": "zendesk-mcp-server",
       "confidence": 0.35,
@@ -14732,7 +14725,7 @@
       "name": "es.mapasocietario/borme",
       "confidence": 0.45,
       "topics": [],
-      "description": "Spanish company registry (BORME): companies, directors, how they connect. Needs a free work account."
+      "description": "Spanish company registry (BORME): companies, directors, how they connect. Needs a free account."
     },
     {
       "slug": "io-costory-finops",
@@ -16559,7 +16552,7 @@
       "name": "io.github.dengyier/OpenWorkProof",
       "confidence": 0.45,
       "topics": [],
-      "description": "Verifiable execution for AI agents: Ed25519-signed work contracts and audit trails."
+      "description": "Verifiable agent work contracts; separate opt-in Codex preview-directory guard."
     },
     {
       "slug": "io-github-dernif-payanagent",
@@ -17315,7 +17308,14 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 618 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 624 rules, 39 tools, CLI + doctor + host audit."
+    },
+    {
+      "slug": "io-github-good-sender-goodsender-mcp",
+      "name": "io.github.good-sender/goodsender-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Publish blog posts and newsletters from Claude, Claude Code, Codex and ChatGPT. Hosted or local."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -19093,7 +19093,7 @@
       "name": "io.github.msanchezgrice/talkform",
       "confidence": 0.45,
       "topics": [],
-      "description": "Local Talkform schemas, bundled interview templates, and config validation for AI agents."
+      "description": "Collect reviewed human answers through hosted handoffs, plus local templates and config validation."
     },
     {
       "slug": "io-github-mshegolev-allure-testops-mcp",
@@ -21438,7 +21438,7 @@
       "name": "net.crawlora/crawlora-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Hosted MCP: 3829 structured web-data tools across 480 platform groups."
+      "description": "Hosted MCP: 3926 structured web-data tools across 488 platform groups."
     },
     {
       "slug": "no-apier-mcp",
@@ -24183,6 +24183,15 @@
       "description": "GoHighLevel MCP for Claude: 250 tools, 51 modules, incl. the only programmatic GHL workflow builder"
     },
     {
+      "slug": "io-github-droidrun-mobilerun",
+      "name": "io.github.droidrun/mobilerun",
+      "confidence": 0.55,
+      "topics": [
+        "automation"
+      ],
+      "description": "Let AI agents control Android and iOS devices on Mobilerun Cloud: screen, input, apps, workflows."
+    },
+    {
       "slug": "io-github-drzamarian-n8n-mcp-community",
       "name": "io.github.drzamarian/n8n-mcp-community",
       "confidence": 0.55,
@@ -26061,7 +26070,7 @@
       "topics": [
         "security"
       ],
-      "description": "Code security scanner for AI agents. 45+ vulnerability patterns, AST analysis, Solana micropayments."
+      "description": "Deterministic code security scan + tx preflight, paid in USDC via x402."
     },
     {
       "slug": "io-github-mituan-ai-paperbanana-cn",
@@ -26652,7 +26661,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Query 190 Apple Health metrics from any MCP agent: zero-dependency, read-only, local-first."
+      "description": "Apple Health for any MCP agent: 194 metrics, 16 read-only tools, local stdio, zero dependencies."
     },
     {
       "slug": "io-github-philongevity-phi-longevity-prism",
@@ -28577,15 +28586,6 @@
         "finance"
       ],
       "description": "Solana memecoin rug check for trading agents: pump.fun launches, calibrated rug risk, wallets, KOL."
-    },
-    {
-      "slug": "xyz-scanhood-mcp",
-      "name": "xyz.scanhood/mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "On-chain honeypot/rug scanner, market data, and launch tools for Robinhood Chain (EVM 4663)."
     },
     {
       "slug": "zapier-mcp",
