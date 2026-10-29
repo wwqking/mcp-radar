@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-10-28T01:01:22.441Z",
-  "total": 5662,
+  "generatedAt": "2026-10-29T01:34:19.169Z",
+  "total": 5640,
   "summary": {
-    "needsReview": 3819,
+    "needsReview": 3803,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2565,
-    "uncategorizedRatePct": 45.3,
+    "uncategorized": 2549,
+    "uncategorizedRatePct": 45.2,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.3
+    "largestCategoryRatePct": 33.4
   },
   "alerts": [
-    "待归类占比 45.3%，超过 5% 审核线",
-    "dev 占比 33.3%，超过 30% 拆分评估线",
+    "待归类占比 45.2%，超过 5% 审核线",
+    "dev 占比 33.4%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2565,
+    "misc": 2549,
     "dev": 1883,
-    "search": 760,
+    "search": 756,
     "files": 258,
-    "ai": 210,
-    "comms": 191,
-    "database": 172,
+    "ai": 209,
+    "comms": 189,
+    "database": 171,
     "commerce": 164,
     "cloud": 135,
-    "browser": 121,
+    "browser": 122,
     "marketing": 80
   },
   "topicCounts": {
-    "design-media": 289,
-    "finance": 191,
-    "automation": 189,
+    "design-media": 288,
+    "automation": 190,
+    "finance": 188,
     "observability": 119,
     "legal": 95,
-    "mcp-infrastructure": 88,
+    "mcp-infrastructure": 87,
     "visualization": 63,
     "science-health": 32,
     "security": 28,
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 117
+      "count": 116
     },
     {
       "term": "read",
@@ -84,7 +84,7 @@
     },
     {
       "term": "memory",
-      "count": 106
+      "count": 105
     },
     {
       "term": "credit",
@@ -92,11 +92,11 @@
     },
     {
       "term": "local",
-      "count": 102
+      "count": 101
     },
     {
       "term": "manage",
-      "count": 98
+      "count": 97
     },
     {
       "term": "code",
@@ -108,11 +108,11 @@
     },
     {
       "term": "over",
-      "count": 90
+      "count": 89
     },
     {
       "term": "live",
-      "count": 88
+      "count": 87
     },
     {
       "term": "checks",
@@ -123,11 +123,11 @@
       "count": 82
     },
     {
-      "term": "read-only",
-      "count": 82
+      "term": "detran",
+      "count": 81
     },
     {
-      "term": "detran",
+      "term": "read-only",
       "count": 81
     },
     {
@@ -148,7 +148,7 @@
     },
     {
       "term": "x402",
-      "count": 62
+      "count": 61
     },
     {
       "term": "public",
@@ -164,14 +164,14 @@
     },
     {
       "term": "evidence",
-      "count": 56
-    },
-    {
-      "term": "person",
       "count": 55
     },
     {
       "term": "analysis",
+      "count": 54
+    },
+    {
+      "term": "person",
       "count": 54
     },
     {
@@ -191,20 +191,16 @@
       "count": 47
     },
     {
-      "term": "usdc",
-      "count": 47
+      "term": "certificate",
+      "count": 46
     },
     {
-      "term": "certificate",
+      "term": "usdc",
       "count": 46
     },
     {
       "term": "verify",
       "count": 46
-    },
-    {
-      "term": "analytics",
-      "count": 45
     },
     {
       "term": "intelligence",
@@ -215,6 +211,10 @@
       "count": 45
     },
     {
+      "term": "analytics",
+      "count": 44
+    },
+    {
       "term": "deterministic",
       "count": 44
     },
@@ -223,12 +223,12 @@
       "count": 44
     },
     {
-      "term": "security",
-      "count": 44
-    },
-    {
       "term": "vehicle",
       "count": 43
+    },
+    {
+      "term": "security",
+      "count": 42
     },
     {
       "term": "build",
@@ -239,7 +239,7 @@
       "count": 39
     },
     {
-      "term": "review",
+      "term": "shared",
       "count": 39
     }
   ],
@@ -284,7 +284,7 @@
       "name": "ai.agentplaybooks/agentplaybooks",
       "confidence": 0.35,
       "topics": [],
-      "description": "Manage portable AI agent playbooks, Agent Skills, MCP configurations, personas, and memory."
+      "description": "Vendor-neutral home for portable agents: skills, MCP tools, memory, canvas, and secret proxy."
     },
     {
       "slug": "ai-agenttrust-mcp-server",
@@ -411,13 +411,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Quant-research MCP — tradeable signals from public-company website stack changes. 7 tools."
-    },
-    {
-      "slug": "ai-bowmark-bowmark",
-      "name": "ai.bowmark/bowmark",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Do things on live websites: prices, availability, quotes, bookings, anything behind a form or login."
     },
     {
       "slug": "ai-callmcp-server",
@@ -746,7 +739,7 @@
       "name": "ai.justpublish/just-publish",
       "confidence": 0.35,
       "topics": [],
-      "description": "Publish the website you built with AI to a live public URL, straight from chat, with no setup."
+      "description": "Publish and update the website you built with AI at a live public URL. Sign-in required."
     },
     {
       "slug": "ai-kawacode-mcp",
@@ -2076,7 +2069,7 @@
       "name": "build.swapi/star-wars",
       "confidence": 0.35,
       "topics": [],
-      "description": "Free remote Star Wars MCP server (SWAPI data): people, films, planets, starships. No API key."
+      "description": "Free Star Wars MCP server (SWAPI): people, films, planets, species, starships, vehicles. No API key."
     },
     {
       "slug": "ca-bluecraneworks-forms",
@@ -5467,13 +5460,6 @@
       "description": "Generate a Flutter app from a JSON spec free; pay only for the compiled APK (USDC on Base)."
     },
     {
-      "slug": "io-github-caseyyahbara-finsec",
-      "name": "io.github.CaseyYahbara/finsec",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Certified SEC EDGAR fact memory for AI agents with zero hallucination and filing provenance."
-    },
-    {
       "slug": "io-github-cdump-evmole",
       "name": "io.github.cdump/evmole",
       "confidence": 0.35,
@@ -7081,7 +7067,7 @@
       "name": "io.github.john-broadway/proximo-proxmox",
       "confidence": 0.35,
       "topics": [],
-      "description": "The Proxmox MCP you can hand the keys: VE/PBS/PMG/PDM. Plan, prove, undo, diagnose. MCP/A2A/API."
+      "description": "The governed client for Proxmox (PVE, PBS, PMG, PDM): plans, keeps the receipts, puts things back."
     },
     {
       "slug": "io-github-john0n1-chainrpc-mcp",
@@ -11309,7 +11295,7 @@
       "name": "io.github.pipeworx-io/open-contracting",
       "confidence": 0.35,
       "topics": [],
-      "description": "Open Contracting MCP — international public procurement: government tenders"
+      "description": "Open Contracting MCP — international public procurement: government tenders and contract awards…"
     },
     {
       "slug": "io-github-pipeworx-io-open-meteo",
@@ -11337,7 +11323,7 @@
       "name": "io.github.pipeworx-io/osha",
       "confidence": 0.35,
       "topics": [],
-      "description": "OSHA MCP — US workplace-safety standards (29 CFR Chapter XVII, parts 1900–1990)"
+      "description": "OSHA MCP — US workplace-safety standards (29 CFR Chapter XVII, parts 1900–1990) AND OSHA…"
     },
     {
       "slug": "io-github-pipeworx-io-pa-dmv",
@@ -14560,60 +14546,11 @@
       "description": "Base 主网去中心化支付路由+金库：查 NAV、构造路由支付 calldata、金库存取、绑定引路人分账。存款安全·引路人激励·消费即升值，全部链上可核验。"
     },
     {
-      "slug": "tv-tootie-unraid-mcp",
-      "name": "tv.tootie/unraid-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server for Unraid API — provides tools to interact with an Unraid server's GraphQL API."
-    },
-    {
-      "slug": "ua-com-mfoxa-catalog",
-      "name": "ua.com.mfoxa/catalog",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read-only catalog of licensed Ukrainian MFOs: loan terms, NBU licenses, ratings and reviews."
-    },
-    {
-      "slug": "uk-co-cybercentry-verification",
-      "name": "uk.co.cybercentry/verification",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Twelve tools: token, wallet, contract and site security. Two free, the rest $1 in USDC over x402."
-    },
-    {
-      "slug": "uk-openqr-qr",
-      "name": "uk.openqr/qr",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Generate, edit and track dynamic (editable) QR codes with scan analytics. Hosted MCP and REST API."
-    },
-    {
-      "slug": "us-thistripbtw-trips",
-      "name": "us.thistripbtw/trips",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hand someone a complete trip as a private, editable map link. No account, no API key, no card."
-    },
-    {
       "slug": "vantage-mcp-server",
       "name": "vantage-mcp-server",
       "confidence": 0.35,
       "topics": [],
       "description": "MCP Server to fetch costs and usage data from your Vantage account."
-    },
-    {
-      "slug": "vip-witnessd-witnessd",
-      "name": "vip.witnessd/witnessd",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Neutral third-party witness: independently fetch, hash, timestamp, archive any URL or API response."
-    },
-    {
-      "slug": "vote-andre-elections",
-      "name": "vote.andre/elections",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Résultats des élections françaises 1999-2026 par bureau de vote, socio-démo INSEE et cartes."
     },
     {
       "slug": "weather-mcp-server",
@@ -14635,20 +14572,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects."
-    },
-    {
-      "slug": "xyz-costrinity-vitna-compliance-preflight",
-      "name": "xyz.costrinity/vitna-compliance-preflight",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Guard wraps stdio MCP servers: risky calls wait for a person; no answer, no run. Remote: cooperative"
-    },
-    {
-      "slug": "xyz-kellyruns-strategy-lab",
-      "name": "xyz.kellyruns/strategy-lab",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Stress-test lowcap, perp and LP strategies. Returns the full distribution and a reproduction seed."
     },
     {
       "slug": "zendesk-mcp-server",
@@ -17315,7 +17238,7 @@
       "name": "io.github.good-sender/goodsender-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Publish blog posts and newsletters from Claude, Claude Code, Codex and ChatGPT. Hosted or local."
+      "description": "Publish blog posts, send newsletters and emails from Claude, Claude Code, Codex and ChatGPT."
     },
     {
       "slug": "io-github-gopalrajsuresh-covalent-bond",
@@ -17826,7 +17749,7 @@
       "name": "io.github.jdhart81/agent-market-network",
       "confidence": 0.45,
       "topics": [],
-      "description": "Signed agent discovery, security attestations, paid work, and verified settlement reputation."
+      "description": "Signed agent discovery, verified escrow funding, paid work, settlement and usefulness receipts."
     },
     {
       "slug": "io-github-jdhart81-agent-notary",
@@ -19016,7 +18939,7 @@
       "name": "io.github.mooshee/govgazette",
       "confidence": 0.45,
       "topics": [],
-      "description": "Find federal contracting opportunities, research awards and vendors, and review exclusion evidence."
+      "description": "Find federal contracts, awards, vendors, and exclusion records. Built by Moosh Works."
     },
     {
       "slug": "io-github-mrfentmen-mixpanel-mcp",
@@ -24180,7 +24103,7 @@
       "topics": [
         "automation"
       ],
-      "description": "GoHighLevel MCP for Claude: 250 tools, 51 modules, incl. the only programmatic GHL workflow builder"
+      "description": "GoHighLevel MCP for Claude: 250 tools, 51 modules, including a workflow builder"
     },
     {
       "slug": "io-github-droidrun-mobilerun",
@@ -25690,7 +25613,7 @@
         "finance",
         "observability"
       ],
-      "description": "Company data and KYB API for 29 countries: monitoring, financial statements, insolvency, sanctions"
+      "description": "Company data and KYB API for 31 countries: monitoring, financial statements, insolvency, sanctions"
     },
     {
       "slug": "io-github-matteo-sung-lockvet",
@@ -26661,7 +26584,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Apple Health for any MCP agent: 194 metrics, 16 read-only tools, local stdio, zero dependencies."
+      "description": "Ask your agent about your own Apple Health data: 194 metrics, 18 tools, local, 0 deps."
     },
     {
       "slug": "io-github-philongevity-phi-longevity-prism",
@@ -26679,7 +26602,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Alpaca MCP — real-time US stock market data via the Alpaca Market Data API"
+      "description": "Alpaca MCP — real-time US stock market data via the Alpaca Market Data API (data.alpaca.markets…"
     },
     {
       "slug": "io-github-pipeworx-io-banking-regulations",
@@ -28534,33 +28457,6 @@
       "description": "SEC dilution data, live market data, and news for U.S. equities, with point-in-time as-of queries."
     },
     {
-      "slug": "uk-co-codecrafted-design",
-      "name": "uk.co.codecrafted/design",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Guide user-led frontend design decisions from project brief through implementation review."
-    },
-    {
-      "slug": "uk-wintergreen-financial-data",
-      "name": "uk.wintergreen/financial-data",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Financial data for AI agents: crypto data, Polymarket odds, weather/oil calibration, trust scoring."
-    },
-    {
-      "slug": "us-lotlytics-lotlytics-mcp",
-      "name": "us.lotlytics/lotlytics-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "US real estate market data for AI agents: prices, yields, forecasts and scores for 894 markets."
-    },
-    {
       "slug": "xero-mcp-server",
       "name": "xero-mcp-server",
       "confidence": 0.55,
@@ -28568,24 +28464,6 @@
         "finance"
       ],
       "description": "An MCP server that integrates with the MCP protocol. https://modelcontextprotocol.io/introduction"
-    },
-    {
-      "slug": "xyz-558686-gpt55-token-gateway",
-      "name": "xyz.558686.gpt55/token-gateway",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Remote MCP gateway for GPT-5.6 Luna, Soul, Terra, and x402-paid agent tools with no API key."
-    },
-    {
-      "slug": "xyz-mindjack-mcp",
-      "name": "xyz.mindjack/mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Solana memecoin rug check for trading agents: pump.fun launches, calibrated rug risk, wallets, KOL."
     },
     {
       "slug": "zapier-mcp",
