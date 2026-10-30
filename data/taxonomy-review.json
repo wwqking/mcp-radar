@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-10-29T01:34:19.169Z",
-  "total": 5640,
+  "generatedAt": "2026-10-30T01:35:16.111Z",
+  "total": 5607,
   "summary": {
-    "needsReview": 3803,
+    "needsReview": 3777,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2549,
-    "uncategorizedRatePct": 45.2,
+    "uncategorized": 2523,
+    "uncategorizedRatePct": 45,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.4
+    "largestCategoryRatePct": 33.6
   },
   "alerts": [
-    "待归类占比 45.2%，超过 5% 审核线",
-    "dev 占比 33.4%，超过 30% 拆分评估线",
+    "待归类占比 45%，超过 5% 审核线",
+    "dev 占比 33.6%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2549,
+    "misc": 2523,
     "dev": 1883,
-    "search": 756,
-    "files": 258,
+    "search": 752,
+    "files": 255,
     "ai": 209,
     "comms": 189,
-    "database": 171,
+    "database": 170,
     "commerce": 164,
     "cloud": 135,
     "browser": 122,
     "marketing": 80
   },
   "topicCounts": {
-    "design-media": 288,
-    "automation": 190,
-    "finance": 188,
-    "observability": 119,
+    "design-media": 285,
+    "automation": 188,
+    "finance": 185,
+    "observability": 118,
     "legal": 95,
-    "mcp-infrastructure": 87,
+    "mcp-infrastructure": 88,
     "visualization": 63,
     "science-health": 32,
     "security": 28,
@@ -56,7 +56,7 @@
     },
     {
       "term": "lookup",
-      "count": 217
+      "count": 216
     },
     {
       "term": "official-source",
@@ -76,23 +76,23 @@
     },
     {
       "term": "free",
-      "count": 116
+      "count": 113
     },
     {
       "term": "read",
       "count": 107
     },
     {
-      "term": "memory",
-      "count": 105
-    },
-    {
       "term": "credit",
       "count": 104
     },
     {
+      "term": "memory",
+      "count": 103
+    },
+    {
       "term": "local",
-      "count": 101
+      "count": 100
     },
     {
       "term": "manage",
@@ -100,7 +100,7 @@
     },
     {
       "term": "code",
-      "count": 95
+      "count": 94
     },
     {
       "term": "create",
@@ -115,10 +115,6 @@
       "count": 87
     },
     {
-      "term": "checks",
-      "count": 82
-    },
-    {
       "term": "pipeworx-io",
       "count": 82
     },
@@ -131,12 +127,12 @@
       "count": 81
     },
     {
-      "term": "company",
-      "count": 77
+      "term": "checks",
+      "count": 80
     },
     {
-      "term": "across",
-      "count": 65
+      "term": "company",
+      "count": 77
     },
     {
       "term": "audit",
@@ -147,12 +143,16 @@
       "count": 65
     },
     {
-      "term": "x402",
-      "count": 61
+      "term": "across",
+      "count": 64
     },
     {
       "term": "public",
-      "count": 59
+      "count": 60
+    },
+    {
+      "term": "x402",
+      "count": 60
     },
     {
       "term": "check",
@@ -163,11 +163,11 @@
       "count": 57
     },
     {
-      "term": "evidence",
-      "count": 55
+      "term": "analysis",
+      "count": 54
     },
     {
-      "term": "analysis",
+      "term": "evidence",
       "count": 54
     },
     {
@@ -184,14 +184,18 @@
     },
     {
       "term": "local-first",
-      "count": 51
-    },
-    {
-      "term": "every",
-      "count": 47
+      "count": 50
     },
     {
       "term": "certificate",
+      "count": 46
+    },
+    {
+      "term": "every",
+      "count": 46
+    },
+    {
+      "term": "plus",
       "count": 46
     },
     {
@@ -203,18 +207,6 @@
       "count": 46
     },
     {
-      "term": "intelligence",
-      "count": 45
-    },
-    {
-      "term": "plus",
-      "count": 45
-    },
-    {
-      "term": "analytics",
-      "count": 44
-    },
-    {
       "term": "deterministic",
       "count": 44
     },
@@ -223,7 +215,15 @@
       "count": 44
     },
     {
+      "term": "intelligence",
+      "count": 44
+    },
+    {
       "term": "vehicle",
+      "count": 44
+    },
+    {
+      "term": "analytics",
       "count": 43
     },
     {
@@ -235,12 +235,12 @@
       "count": 39
     },
     {
-      "term": "publish",
-      "count": 39
+      "term": "control",
+      "count": 38
     },
     {
       "term": "shared",
-      "count": 39
+      "count": 38
     }
   ],
   "reviewQueue": [
@@ -1999,7 +1999,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Real-time global intelligence across conflict, markets, energy, trade, shipping and cyber. 97 tools."
+      "description": "Real-time global intelligence across conflict, markets, energy, trade, shipping and cyber. 99 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -5446,6 +5446,13 @@
       "description": "Schema-enforced spatial transcriptomics analysis with 20 tools and 67 methods via MCP"
     },
     {
+      "slug": "io-github-callstack-agent-device",
+      "name": "io.github.callstack/agent-device",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Open source device layer for AI agents: control mobile, web, TV, and desktop apps over MCP"
+    },
+    {
       "slug": "io-github-camlowe-mcp-server-reddit-ads",
       "name": "io.github.camlowe/mcp-server-reddit-ads",
       "confidence": 0.35,
@@ -7004,7 +7011,7 @@
       "name": "io.github.jgravelle/jcodemunch-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Retrieves code by symbol via tree-sitter. 96.2% fewer tokens per lookup than grep-and-read."
+      "description": "Retrieves code by symbol via tree-sitter, so an agent reads the function it needs, not the file."
     },
     {
       "slug": "io-github-jiankn-savepinner",
@@ -11022,7 +11029,7 @@
       "name": "io.github.pipeworx-io/ct-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Connecticut DMV MCP — electric-vehicle registrations at vehicle level, aggregated on"
+      "description": "Connecticut DMV MCP — electric-vehicle registrations at vehicle level, aggregated on demand by…"
     },
     {
       "slug": "io-github-pipeworx-io-cta",
@@ -11036,14 +11043,14 @@
       "name": "io.github.pipeworx-io/dc-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "District of Columbia DMV MCP — DMV service centers, the record-level vehicle-inspection"
+      "description": "District of Columbia DMV MCP — DMV service centers, the record-level vehicle-inspection file, and…"
     },
     {
       "slug": "io-github-pipeworx-io-de-dmv",
       "name": "io.github.pipeworx-io/de-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Delaware DMV MCP — registered vehicles by fuel type, EV adoption, the state's electric"
+      "description": "Delaware DMV MCP — registered vehicles by fuel type, EV adoption, the state's electric vehicle and…"
     },
     {
       "slug": "io-github-pipeworx-io-digitraffic-ais",
@@ -11162,7 +11169,7 @@
       "name": "io.github.pipeworx-io/hi-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Hawaii vehicle-registration MCP — the statewide cumulative count of hybrid and electric"
+      "description": "Hawaii vehicle-registration MCP — the statewide cumulative count of hybrid and electric vehicles…"
     },
     {
       "slug": "io-github-pipeworx-io-hilma",
@@ -11176,21 +11183,21 @@
       "name": "io.github.pipeworx-io/ia-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Iowa DMV MCP — the Iowa DOT Motor Vehicle Division's 18 driver license stations, with hours,"
+      "description": "Iowa DMV MCP — the Iowa DOT Motor Vehicle Division's 18 driver license stations, with hours, CDL…"
     },
     {
       "slug": "io-github-pipeworx-io-in-bmv",
       "name": "io.github.pipeworx-io/in-bmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Indiana BMV MCP — Bureau of Motor Vehicles branches, self-service kiosks, BMV Connect"
+      "description": "Indiana BMV MCP — Bureau of Motor Vehicles branches, self-service kiosks, BMV Connect locations…"
     },
     {
       "slug": "io-github-pipeworx-io-irail",
       "name": "io.github.pipeworx-io/irail",
       "confidence": 0.35,
       "topics": [],
-      "description": "iRail MCP — Belgian rail (SNCB/NMBS) real-time via the community iRail API"
+      "description": "iRail MCP — Belgian rail (SNCB/NMBS) real-time via the community iRail API (https://api.irail.be…"
     },
     {
       "slug": "io-github-pipeworx-io-iso",
@@ -11211,7 +11218,7 @@
       "name": "io.github.pipeworx-io/md-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Maryland DMV MCP — monthly registered-vehicle counts and electric/plug-in hybrid"
+      "description": "Maryland DMV MCP — monthly registered-vehicle counts and electric/plug-in hybrid adoption by…"
     },
     {
       "slug": "io-github-pipeworx-io-medicaid-intelligence",
@@ -11239,14 +11246,14 @@
       "name": "io.github.pipeworx-io/mo-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Missouri DMV MCP — the Department of Revenue's driver and motor-vehicle license offices,"
+      "description": "Missouri DMV MCP — the Department of Revenue's driver and motor-vehicle license offices, with…"
     },
     {
       "slug": "io-github-pipeworx-io-nc-dmv",
       "name": "io.github.pipeworx-io/nc-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "North Carolina DMV MCP — live wait times at every NCDMV driver license office and"
+      "description": "North Carolina DMV MCP — live wait times at every NCDMV driver license office and license plate…"
     },
     {
       "slug": "io-github-pipeworx-io-netherlands-tenders",
@@ -11274,7 +11281,7 @@
       "name": "io.github.pipeworx-io/nj-mvc",
       "confidence": 0.35,
       "topics": [],
-      "description": "New Jersey MVC MCP — Motor Vehicle Commission inspection and emission-repair facilities,"
+      "description": "New Jersey MVC MCP — Motor Vehicle Commission inspection and emission-repair facilities, and the…"
     },
     {
       "slug": "io-github-pipeworx-io-nps",
@@ -11288,7 +11295,7 @@
       "name": "io.github.pipeworx-io/ny-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "New York State DMV MCP — registered vehicles and EV adoption by county/ZIP/make,"
+      "description": "New York State DMV MCP — registered vehicles and EV adoption by county/ZIP/make, DMV office…"
     },
     {
       "slug": "io-github-pipeworx-io-open-contracting",
@@ -11316,7 +11323,7 @@
       "name": "io.github.pipeworx-io/or-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Oregon DMV MCP — live wait times at all 60 Oregon DMV field offices, plus the office"
+      "description": "Oregon DMV MCP — live wait times at all 60 Oregon DMV field offices, plus the office locator the…"
     },
     {
       "slug": "io-github-pipeworx-io-osha",
@@ -11344,7 +11351,7 @@
       "name": "io.github.pipeworx-io/pipeworx-faq",
       "confidence": 0.35,
       "topics": [],
-      "description": "Pipeworx FAQ MCP — curated answers to questions ABOUT Pipeworx itself"
+      "description": "Pipeworx FAQ MCP — curated answers to questions ABOUT Pipeworx itself (what it is, pricing…"
     },
     {
       "slug": "io-github-pipeworx-io-polygon-io",
@@ -11358,7 +11365,7 @@
       "name": "io.github.pipeworx-io/property-records",
       "confidence": 0.35,
       "topics": [],
-      "description": "Property Records MCP — address-level US property records (sales history,"
+      "description": "Property Records MCP — address-level US property records (sales history, assessed value, owner…"
     },
     {
       "slug": "io-github-pipeworx-io-qrcode",
@@ -11421,7 +11428,7 @@
       "name": "io.github.pipeworx-io/social-signal",
       "confidence": 0.35,
       "topics": [],
-      "description": "Social Signal — post-VOLUME TIME SERIES across the open social networks that"
+      "description": "Social Signal — post-VOLUME TIME SERIES across the open social networks that can be read without…"
     },
     {
       "slug": "io-github-pipeworx-io-spain-tenders",
@@ -11449,7 +11456,7 @@
       "name": "io.github.pipeworx-io/tn-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Tennessee DMV MCP — Department of Safety and Homeland Security: the 186 driver service"
+      "description": "Tennessee DMV MCP — Department of Safety and Homeland Security: the 186 driver service centers…"
     },
     {
       "slug": "io-github-pipeworx-io-treasury-fiscal",
@@ -11463,7 +11470,7 @@
       "name": "io.github.pipeworx-io/tx-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Texas DMV MCP — statewide vehicle, pickup and motorcycle registration totals by fiscal"
+      "description": "Texas DMV MCP — statewide vehicle, pickup and motorcycle registration totals by fiscal year, from…"
     },
     {
       "slug": "io-github-pipeworx-io-udbud-dk",
@@ -11484,14 +11491,14 @@
       "name": "io.github.pipeworx-io/uk-gazette",
       "confidence": 0.35,
       "topics": [],
-      "description": "UK Gazette MCP — The Gazette (www.thegazette.co.uk), the UK's official"
+      "description": "UK Gazette MCP — The Gazette (www.thegazette.co.uk), the UK's official public record (London /…"
     },
     {
       "slug": "io-github-pipeworx-io-ukri-gtr",
       "name": "io.github.pipeworx-io/ukri-gtr",
       "confidence": 0.35,
       "topics": [],
-      "description": "UKRI Gateway to Research (GtR) MCP — every grant awarded by the UK's seven"
+      "description": "UKRI Gateway to Research (GtR) MCP — every grant awarded by the UK's seven research councils plus…"
     },
     {
       "slug": "io-github-pipeworx-io-us-dmv",
@@ -11505,7 +11512,7 @@
       "name": "io.github.pipeworx-io/us-gov-contracts",
       "confidence": 0.35,
       "topics": [],
-      "description": "US Government Contracts MCP — awarded state & local government contracts,"
+      "description": "US Government Contracts MCP — awarded state & local government contracts, normalized across…"
     },
     {
       "slug": "io-github-pipeworx-io-vessel-tracking",
@@ -11526,7 +11533,7 @@
       "name": "io.github.pipeworx-io/wa-dmv",
       "confidence": 0.35,
       "topics": [],
-      "description": "Washington State DMV MCP — the Department of Licensing's VIN-level electric-vehicle"
+      "description": "Washington State DMV MCP — the Department of Licensing's VIN-level electric-vehicle population…"
     },
     {
       "slug": "io-github-pipeworx-io-wikidata-sparql",
@@ -11855,7 +11862,7 @@
       "name": "io.github.Richard-Ewing/exogram",
       "confidence": 0.35,
       "topics": [],
-      "description": "Model Context Protocol server for the Exogram Authority Runtime."
+      "description": "Official MCP bridge to Exogram—the Personal AI Agent for your work, people, and life."
     },
     {
       "slug": "io-github-richard7463-ai2human-mcp",
@@ -14406,144 +14413,11 @@
       "description": "Цены, наличие, отзывы и СПП с Ozon и Wildberries — на компьютере продавца"
     },
     {
-      "slug": "sh-alchemylab-artistally-conventions",
-      "name": "sh.alchemylab.artistally/conventions",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Free fan-convention data for AI agents: dates, registration windows & table costs, US & Canada"
-    },
-    {
-      "slug": "sh-clearfront-clearfront",
-      "name": "sh.clearfront/clearfront",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "OSINT sweep of a digital footprint: breaches, accounts, data brokers, domains and IPs"
-    },
-    {
-      "slug": "sh-gaffer-mcp",
-      "name": "sh.gaffer/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Test analytics for AI agents: test history, flaky tests, failure clusters, coverage."
-    },
-    {
-      "slug": "sh-handover-handover",
-      "name": "sh.handover/handover",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Shared, versioned context that humans and AI agents can publish, review, annotate, and continue."
-    },
-    {
-      "slug": "sh-newsflash-newsflash",
-      "name": "sh.newsflash/newsflash",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Real-time corroborated news events + 5-year archive, for agents. Free tier, no key."
-    },
-    {
-      "slug": "sh-openbudget-mcp",
-      "name": "sh.openbudget/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Ask your AI about bank accounts, spending, debts, holdings, and investment activity."
-    },
-    {
-      "slug": "sh-releases-mcp",
-      "name": "sh.releases/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Release notes and changelogs from across the web, indexed for agents. Also via CLI and REST API."
-    },
-    {
-      "slug": "site-chatgpt-larklaon-one-bad-idea-not-work",
-      "name": "site.chatgpt.larklaon.one-bad-idea/not-work",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "An inter-agent graffiti wall for one completely optional trace."
-    },
-    {
-      "slug": "so-echoai-echo-ai",
-      "name": "so.echoai/echo-ai",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "List, configure, chat with, analyse and embed your Echo AI assistants."
-    },
-    {
       "slug": "square-mcp-server",
       "name": "square-mcp-server",
       "confidence": 0.35,
       "topics": [],
       "description": "A Model Context Protocol (MCP) server for square"
-    },
-    {
-      "slug": "store-scvd-general-store",
-      "name": "store.scvd/general-store",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Evidence observatory: x402/MPP inspection, signed receipt checks and settlement attestations."
-    },
-    {
-      "slug": "store-scvd-tab",
-      "name": "store.scvd/tab",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Every tool a builder signs up for, on one tab: trials, burn, price drift. Local JSONL, zero deps."
-    },
-    {
-      "slug": "studio-screenify-screenify",
-      "name": "studio.screenify/screenify",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Record your screen and export studio-styled demo videos on macOS, driven by your AI assistant."
-    },
-    {
-      "slug": "tech-human-tap",
-      "name": "tech.human/tap",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Credential isolation for AI agents: placeholder secrets, policy checks, optional human approval."
-    },
-    {
-      "slug": "tech-skeletonarmy-marrow",
-      "name": "tech.skeletonarmy/marrow",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Marrow Health: your Apple Health data over MCP, from the free iOS app. Reads, and writes on demand."
-    },
-    {
-      "slug": "to-derive-derive",
-      "name": "to.derive/derive",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Publish agent output to permanent versioned URLs, read review comments back, and revise."
-    },
-    {
-      "slug": "to-viibe-living-memory",
-      "name": "to.viibe/living-memory",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "An MCP memory server. One memory your agents share — across models, devices and apps."
-    },
-    {
-      "slug": "tools-datadive-datadive",
-      "name": "tools.datadive/datadive",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Amazon niche, keyword, competitor and Rank Radar research from your DataDive account."
-    },
-    {
-      "slug": "tools-growthkit-revenue-intelligence",
-      "name": "tools.growthkit/revenue-intelligence",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Sales intelligence for B2B SMEs — lead scoring, ICP fit, CRM enrichment & writeback."
-    },
-    {
-      "slug": "top-zheng-he-zhenghe-mcp",
-      "name": "top.zheng-he/zhenghe-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Base 主网去中心化支付路由+金库：查 NAV、构造路由支付 calldata、金库存取、绑定引路人分账。存款安全·引路人激励·消费即升值，全部链上可核验。"
     },
     {
       "slug": "vantage-mcp-server",
@@ -14642,6 +14516,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Free, no key: NFL + NBA prop boards, NHL model, Kalshi vs Polymarket gaps, Fed odds, EV/Kelly."
+    },
+    {
+      "slug": "com-xquik-mcp",
+      "name": "com.xquik/mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Xquik is the world's fastest and cheapest X Twitter data API with the most complete X data."
     },
     {
       "slug": "es-mapasocietario-borme",
@@ -14950,13 +14831,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server for datos.gob.do — Dominican Republic open government data (CKAN 2.11)."
-    },
-    {
-      "slug": "io-github-alejooroncoy-campus-cli",
-      "name": "io.github.alejooroncoy/campus-cli",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Unofficial Blackboard Learn (LMS) MCP for students: courses, assignments, grades, materials."
     },
     {
       "slug": "io-github-alex-jordan547-renforge",
@@ -18795,13 +18669,6 @@
       "description": "Your Garmin golf data in Claude: GPS shots, strokes gained, club distances, health context"
     },
     {
-      "slug": "io-github-mclaut-ariadne",
-      "name": "io.github.mclaut/ariadne",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Local-first multilingual, auditable memory for Codex, Claude Code, and MCP clients."
-    },
-    {
       "slug": "io-github-mdefrance-autocarver",
       "name": "io.github.mdefrance/autocarver",
       "confidence": 0.45,
@@ -19443,7 +19310,7 @@
       "name": "io.github.pipeworx-io/wi-dmv",
       "confidence": 0.45,
       "topics": [],
-      "description": "Wisconsin DMV MCP — every WisDOT DMV customer service center, with the services each"
+      "description": "Wisconsin DMV MCP — every WisDOT DMV customer service center, with the services each individual…"
     },
     {
       "slug": "io-github-plur-ai-plur",
@@ -22280,7 +22147,7 @@
       "topics": [
         "finance"
       ],
-      "description": "x402 pay-per-call crypto sentiment, divergence & analyst reads. USDC on Base. NFA."
+      "description": "x402 crypto sentiment & analyst reads. 4 FREE funnel + 16 paid ($0.01–$0.09) USDC on Base. NFA."
     },
     {
       "slug": "com-dexpaprika-dexpaprika",
@@ -23290,6 +23157,15 @@
       "description": "MCP gateway/proxy: multiplexes tool calls across upstream MCP servers into one catalog."
     },
     {
+      "slug": "io-github-alejooroncoy-campus-cli",
+      "name": "io.github.alejooroncoy/campus-cli",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Campus relay MCP client: authenticated access to courses, assignments, grades and materials."
+    },
+    {
       "slug": "io-github-alepha188838884-context-firewall",
       "name": "io.github.Alepha188838884/context-firewall",
       "confidence": 0.55,
@@ -23625,15 +23501,6 @@
         "design-media"
       ],
       "description": "Remote MCP for AI video, image, music and speech generation."
-    },
-    {
-      "slug": "io-github-callstack-agent-device",
-      "name": "io.github.callstack/agent-device",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "MCP server for mobile app automation: verify, control, and debug iOS, Android, TV, and desktop apps"
     },
     {
       "slug": "io-github-cambriannetwork-cambrian-api",
@@ -27088,7 +26955,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Structured web data from 38 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
+      "description": "Structured web data from 42 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
     },
     {
       "slug": "io-github-sebastienrousseau-iso20022-mcp",
@@ -28385,51 +28252,6 @@
       "description": "MCP Server for ServiceNow"
     },
     {
-      "slug": "sh-grabbit-mcp",
-      "name": "sh.grabbit/mcp",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "Find high-intent Reddit conversations and manage lead workflows from MCP-compatible AI agents."
-    },
-    {
-      "slug": "sh-superlog-superlog",
-      "name": "sh.superlog/superlog",
-      "confidence": 0.55,
-      "topics": [
-        "observability"
-      ],
-      "description": "Open-source agent that observes and fixes your application. Query logs, traces, metrics, incidents."
-    },
-    {
-      "slug": "solutions-dap-bellwether",
-      "name": "solutions.dap/bellwether",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Free regulatory change feed for financial regulators in Canada, the US, the UK and the EU."
-    },
-    {
-      "slug": "st-ravenpo-ravenpost",
-      "name": "st.ravenpo/ravenpost",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Schedule & publish social media posts to Instagram, TikTok, X, LinkedIn, YouTube, Pinterest & more."
-    },
-    {
-      "slug": "to-orangepeel-orangepeel",
-      "name": "to.orangepeel/orangepeel",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Cited Hermès price & resale market data as MCP tools, with attribution. Not affiliated."
-    },
-    {
       "slug": "todoist-mcp",
       "name": "todoist-mcp",
       "confidence": 0.55,
@@ -28437,24 +28259,6 @@
         "automation"
       ],
       "description": "A set of tools to connect to AI agents, to allow them to use Todoist on a user's behalf. Includes MCP support."
-    },
-    {
-      "slug": "tools-audiolab-audiolab",
-      "name": "tools.audiolab/audiolab",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Loudness, true-peak and voice-quality analysis of URLs and local files via the hosted AudioLab API."
-    },
-    {
-      "slug": "trade-snacs-snacs-data",
-      "name": "trade.snacs/snacs-data",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "SEC dilution data, live market data, and news for U.S. equities, with point-in-time as-of queries."
     },
     {
       "slug": "xero-mcp-server",
