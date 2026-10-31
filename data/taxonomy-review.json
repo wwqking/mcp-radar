@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-10-30T01:35:16.111Z",
-  "total": 5607,
+  "generatedAt": "2026-10-31T01:29:51.114Z",
+  "total": 5574,
   "summary": {
-    "needsReview": 3777,
+    "needsReview": 3757,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2523,
-    "uncategorizedRatePct": 45,
+    "uncategorized": 2505,
+    "uncategorizedRatePct": 44.9,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.6
+    "largestCategoryRatePct": 33.8
   },
   "alerts": [
-    "待归类占比 45%，超过 5% 审核线",
-    "dev 占比 33.6%，超过 30% 拆分评估线",
+    "待归类占比 44.9%，超过 5% 审核线",
+    "dev 占比 33.8%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2523,
-    "dev": 1883,
-    "search": 752,
-    "files": 255,
-    "ai": 209,
-    "comms": 189,
-    "database": 170,
+    "misc": 2505,
+    "dev": 1882,
+    "search": 746,
+    "files": 253,
+    "ai": 207,
+    "comms": 188,
+    "database": 169,
     "commerce": 164,
     "cloud": 135,
-    "browser": 122,
+    "browser": 120,
     "marketing": 80
   },
   "topicCounts": {
     "design-media": 285,
-    "automation": 188,
+    "automation": 187,
     "finance": 185,
     "observability": 118,
     "legal": 95,
-    "mcp-infrastructure": 88,
+    "mcp-infrastructure": 87,
     "visualization": 63,
     "science-health": 32,
     "security": 28,
@@ -76,11 +76,11 @@
     },
     {
       "term": "free",
-      "count": 113
+      "count": 112
     },
     {
       "term": "read",
-      "count": 107
+      "count": 106
     },
     {
       "term": "credit",
@@ -92,7 +92,7 @@
     },
     {
       "term": "local",
-      "count": 100
+      "count": 99
     },
     {
       "term": "manage",
@@ -104,7 +104,7 @@
     },
     {
       "term": "create",
-      "count": 90
+      "count": 89
     },
     {
       "term": "over",
@@ -128,7 +128,7 @@
     },
     {
       "term": "checks",
-      "count": 80
+      "count": 79
     },
     {
       "term": "company",
@@ -139,12 +139,12 @@
       "count": 65
     },
     {
-      "term": "tasks",
-      "count": 65
-    },
-    {
       "term": "across",
       "count": 64
+    },
+    {
+      "term": "tasks",
+      "count": 63
     },
     {
       "term": "public",
@@ -152,7 +152,7 @@
     },
     {
       "term": "x402",
-      "count": 60
+      "count": 59
     },
     {
       "term": "check",
@@ -175,11 +175,11 @@
       "count": 54
     },
     {
-      "term": "real",
-      "count": 54
+      "term": "before",
+      "count": 51
     },
     {
-      "term": "before",
+      "term": "real",
       "count": 51
     },
     {
@@ -192,10 +192,6 @@
     },
     {
       "term": "every",
-      "count": 46
-    },
-    {
-      "term": "plus",
       "count": 46
     },
     {
@@ -215,7 +211,7 @@
       "count": 44
     },
     {
-      "term": "intelligence",
+      "term": "plus",
       "count": 44
     },
     {
@@ -227,12 +223,16 @@
       "count": 43
     },
     {
+      "term": "intelligence",
+      "count": 43
+    },
+    {
       "term": "security",
-      "count": 42
+      "count": 41
     },
     {
       "term": "build",
-      "count": 39
+      "count": 38
     },
     {
       "term": "control",
@@ -5156,7 +5156,7 @@
       "name": "io.github.bardesss/arr-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One server, 39 tools, the whole media stack: the *arrs, Jellyfin, Plex, Seerr and download clients"
+      "description": "One server, 40 tools, the whole media stack: the *arrs, Jellyfin, Plex, Seerr and download clients"
     },
     {
       "slug": "io-github-barglabs-cejel",
@@ -13822,7 +13822,7 @@
       "name": "io.socialrobot/socialrobot-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Schedule and analyze social media posts from AI assistants. 17 tools, free on every plan."
+      "description": "Schedule and analyze posts on 10 social networks from AI assistants. 25 tools, free on every plan."
     },
     {
       "slug": "io-studiomeyer-academy",
@@ -14266,95 +14266,11 @@
       "description": "Persistent project context — Rust-native MCP server. IANA-registered .faf format."
     },
     {
-      "slug": "online-trvaelmind-travelmind-mcp",
-      "name": "online.trvaelmind/travelmind-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "TravelMind: 8 MCP tools for travel (12306 trains, flights, hotels, geocode, planning, policy)."
-    },
-    {
-      "slug": "org-agenticsubstrate-agentic-substrate",
-      "name": "org.agenticsubstrate/agentic-substrate",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Agent reputation economy: known-answer probation, expertise tags, jobs, staked delivery"
-    },
-    {
-      "slug": "org-ainglish-ainglish",
-      "name": "org.ainglish/ainglish",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "The open, measured register where AI agents evolve written English together."
-    },
-    {
-      "slug": "org-aioq-aio",
-      "name": "org.aioq/aio",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "AI integrity standards, benchmarks, and EU AI Act-aligned Tier 0 model certification"
-    },
-    {
-      "slug": "org-contextoverflow-library",
-      "name": "org.contextoverflow/library",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Describe what's going wrong with your AI; get the named technique both of you can read. No auth."
-    },
-    {
-      "slug": "org-heathy-nutrition",
-      "name": "org.heathy/nutrition",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Nutrition for more than 1,100 plant foods from 30 national tables, plus GB/EU & US claim checking"
-    },
-    {
-      "slug": "org-hookline-mcp",
-      "name": "org.hookline/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hookline MCP — create webhook endpoints, inspect requests, and validate payloads from AI agents."
-    },
-    {
-      "slug": "org-mercantry-registry",
-      "name": "org.mercantry/registry",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Agent-native registry: 168k+ real restaurants in LA, Hong Kong & Tokyo. Unranked, honest signals."
-    },
-    {
-      "slug": "org-pubscope-pubscope",
-      "name": "org.pubscope/pubscope",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Journal intelligence: indexing, quartile, APC, trust score, measured publication times"
-    },
-    {
-      "slug": "org-virtualflybrain-vfb3-mcp",
-      "name": "org.virtualflybrain/vfb3-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server for Drosophila neuroscience data from VirtualFlyBrain"
-    },
-    {
       "slug": "pagerduty-mcp-server",
       "name": "pagerduty-mcp-server",
       "confidence": 0.35,
       "topics": [],
       "description": "PagerDuty's official local MCP (Model Context Protocol) server which provides tools to interact with your PagerDuty account directly from your MCP-enabled client."
-    },
-    {
-      "slug": "pl-cenogram-mcp-server",
-      "name": "pl.cenogram/mcp-server",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Polish real estate for AI: 8M+ deed transaction prices (RCN) + per-parcel context by cadastral ID"
-    },
-    {
-      "slug": "pl-piszczek-ai-economics",
-      "name": "pl.piszczek/ai-economics",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "12 calculators for AI cost, energy and agent verification. Free API, no key."
     },
     {
       "slug": "postman-mcp-server",
@@ -14371,46 +14287,11 @@
       "description": ""
     },
     {
-      "slug": "pro-namesniper-namesniper",
-      "name": "pro.namesniper/namesniper",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Monitor taken usernames and get alerted when they drop, plus handle, domain, and trademark checks."
-    },
-    {
-      "slug": "pro-tasktime-agent-bridge",
-      "name": "pro.tasktime/agent-bridge",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "First-party local TaskTime Pro tools for tasks, timers, expenses, invoices, reports, and planning."
-    },
-    {
-      "slug": "pro-worldclock-time",
-      "name": "pro.worldclock/time",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "A real clock for AI agents: current time, timezone conversion, and DST facts from the IANA tzdb."
-    },
-    {
       "slug": "resend-mcp",
       "name": "resend-mcp",
       "confidence": 0.35,
       "topics": [],
       "description": "The official MCP server to send emails and interact with Resend"
-    },
-    {
-      "slug": "ru-invoicebox-mcp-server",
-      "name": "ru.invoicebox/mcp-server",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP-сервер Инвойсбокса: счета, отгрузки и возвраты по просьбе человека"
-    },
-    {
-      "slug": "ru-parsee-parsee",
-      "name": "ru.parsee/parsee",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Цены, наличие, отзывы и СПП с Ozon и Wildberries — на компьютере продавца"
     },
     {
       "slug": "square-mcp-server",
@@ -16506,13 +16387,6 @@
       "description": "Live cross-DEX pool prices, liquidity and spreads on 6 EVM chains, read from on-chain pool state."
     },
     {
-      "slug": "io-github-doteyeso-ops-mcp-server-vibes-coded",
-      "name": "io.github.doteyeso-ops/mcp-server-vibes-coded",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Agent supply-chain security, scanner consensus, x402 reliability, and commerce MCP tools."
-    },
-    {
       "slug": "io-github-drannakurasova-kobotoolbox-mcp-server",
       "name": "io.github.drannakurasova/kobotoolbox-mcp-server",
       "confidence": 0.45,
@@ -17105,7 +16979,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 624 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 629 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-good-sender-goodsender-mcp",
@@ -17980,7 +17854,7 @@
       "name": "io.github.kitepon/aiterm-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Persistent terminals and one launcher for Claude, Codex, Grok, and Cursor harnesses."
+      "description": "Persistent terminals and one launcher for Claude, Codex, Grok, Cursor, and Antigravity harnesses."
     },
     {
       "slug": "io-github-kittycad-zoo-mcp",
@@ -20213,7 +20087,7 @@
       "name": "io.github.seekdaseek/agentfeed",
       "confidence": 0.45,
       "topics": [],
-      "description": "Crypto data, Solana pre-trade checks, sanctions, papers, language tasks. 90 tools, USDC, 21 chains."
+      "description": "Crypto briefs and data, Solana pre-trade checks, sanctions, papers, NLP. 93 tools, USDC, 20 chains."
     },
     {
       "slug": "io-github-semanticdatacharter-sdcgovernance",
@@ -21236,13 +21110,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Machine-verifiable Norwegian company authority: status, roles and coded signing authority."
-    },
-    {
-      "slug": "ru-layero-layero",
-      "name": "ru.layero/layero",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Deploy and operate sites on Layero — hosting with build servers in Russia: domains, env, Data API."
     },
     {
       "slug": "elevenlabs-elevenlabs-mcp",
@@ -26955,7 +26822,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Structured web data from 42 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
+      "description": "Structured web data from 41 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
     },
     {
       "slug": "io-github-sebastienrousseau-iso20022-mcp",
@@ -28195,15 +28062,6 @@
         "mcp-infrastructure"
       ],
       "description": ""
-    },
-    {
-      "slug": "org-velocms-mcp",
-      "name": "org.velocms/mcp",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Draft, publish, and manage your VeloCMS blog from Claude, Cursor, or any MCP client."
     },
     {
       "slug": "powerbi-modeling-mcp",
