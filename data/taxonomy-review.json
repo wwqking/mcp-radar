@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-10-31T01:29:51.114Z",
-  "total": 5574,
+  "generatedAt": "2026-11-01T00:43:57.458Z",
+  "total": 5549,
   "summary": {
-    "needsReview": 3757,
+    "needsReview": 3740,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2505,
+    "uncategorized": 2490,
     "uncategorizedRatePct": 44.9,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.8
+    "largestCategoryRatePct": 33.9
   },
   "alerts": [
     "待归类占比 44.9%，超过 5% 审核线",
-    "dev 占比 33.8%，超过 30% 拆分评估线",
+    "dev 占比 33.9%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2505,
+    "misc": 2490,
     "dev": 1882,
-    "search": 746,
-    "files": 253,
+    "search": 742,
+    "files": 252,
     "ai": 207,
-    "comms": 188,
+    "comms": 185,
     "database": 169,
-    "commerce": 164,
-    "cloud": 135,
+    "commerce": 163,
+    "cloud": 133,
     "browser": 120,
     "marketing": 80
   },
   "topicCounts": {
-    "design-media": 285,
+    "design-media": 283,
     "automation": 187,
-    "finance": 185,
-    "observability": 118,
+    "finance": 184,
+    "observability": 116,
     "legal": 95,
     "mcp-infrastructure": 87,
     "visualization": 63,
@@ -76,11 +76,11 @@
     },
     {
       "term": "free",
-      "count": 112
+      "count": 111
     },
     {
       "term": "read",
-      "count": 106
+      "count": 105
     },
     {
       "term": "credit",
@@ -88,7 +88,7 @@
     },
     {
       "term": "memory",
-      "count": 103
+      "count": 102
     },
     {
       "term": "local",
@@ -100,19 +100,19 @@
     },
     {
       "term": "code",
-      "count": 94
+      "count": 93
     },
     {
       "term": "create",
-      "count": 89
+      "count": 88
     },
     {
       "term": "over",
-      "count": 89
+      "count": 87
     },
     {
       "term": "live",
-      "count": 87
+      "count": 86
     },
     {
       "term": "pipeworx-io",
@@ -132,7 +132,7 @@
     },
     {
       "term": "company",
-      "count": 77
+      "count": 76
     },
     {
       "term": "audit",
@@ -140,27 +140,27 @@
     },
     {
       "term": "across",
-      "count": 64
+      "count": 63
     },
     {
       "term": "tasks",
       "count": 63
     },
     {
-      "term": "public",
-      "count": 60
-    },
-    {
-      "term": "x402",
+      "term": "check",
       "count": 59
     },
     {
-      "term": "check",
+      "term": "public",
+      "count": 59
+    },
+    {
+      "term": "x402",
       "count": 58
     },
     {
       "term": "status",
-      "count": 57
+      "count": 56
     },
     {
       "term": "analysis",
@@ -196,11 +196,7 @@
     },
     {
       "term": "usdc",
-      "count": 46
-    },
-    {
-      "term": "verify",
-      "count": 46
+      "count": 45
     },
     {
       "term": "deterministic",
@@ -219,28 +215,32 @@
       "count": 44
     },
     {
-      "term": "analytics",
+      "term": "intelligence",
       "count": 43
     },
     {
-      "term": "intelligence",
+      "term": "verify",
       "count": 43
+    },
+    {
+      "term": "analytics",
+      "count": 42
     },
     {
       "term": "security",
       "count": 41
     },
     {
-      "term": "build",
-      "count": 38
-    },
-    {
       "term": "control",
       "count": 38
     },
     {
-      "term": "shared",
-      "count": 38
+      "term": "apis",
+      "count": 37
+    },
+    {
+      "term": "build",
+      "count": 37
     }
   ],
   "reviewQueue": [
@@ -1005,7 +1005,7 @@
       "name": "ai.pullpush/pullpush-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Connect any two APIs and keep them in sync — 48 MCP tools with shadow previews and diagnostics."
+      "description": "Connect any two APIs and keep them in sync — 50 MCP tools with shadow previews and diagnostics."
     },
     {
       "slug": "ai-responsibleailabs-rail-score",
@@ -5156,7 +5156,7 @@
       "name": "io.github.bardesss/arr-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One server, 40 tools, the whole media stack: the *arrs, Jellyfin, Plex, Seerr and download clients"
+      "description": "One server, 40 tools, the whole media stack: *arrs, Jellyfin, Plex, Seerr, Cleanuparr, downloaders"
     },
     {
       "slug": "io-github-barglabs-cejel",
@@ -5751,7 +5751,7 @@
       "name": "io.github.Contentrain/contentrain",
       "confidence": 0.35,
       "topics": [],
-      "description": "Git-native content governance for AI agents — 27 deterministic MCP tools over stdio and HTTP."
+      "description": "Git content governance, 27 deterministic MCP tools. Hosted: docs.contentrain.io/developer/mcp-cloud"
     },
     {
       "slug": "io-github-copyleftdev-kahea",
@@ -14175,95 +14175,11 @@
       "description": "AI-native restaurant discovery: verified/menu-indexed/discovered tiers + signed allergy-safety data."
     },
     {
-      "slug": "me-proship-mcp-proship-mcp",
-      "name": "me.proship.mcp/proship-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Create Thailand Post shipments, print labels, and track parcels in Thailand via ProShip."
-    },
-    {
-      "slug": "me-reefwith-reef",
-      "name": "me.reefwith/reef",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Shared, living memory for you and your people — coves your AI assistant can read and write."
-    },
-    {
-      "slug": "me-route6-netid",
-      "name": "me.route6/netid",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Gives AI agents a public IPv6 identity, hostname, port forwarding, web fetch, team mesh. Free tier."
-    },
-    {
-      "slug": "me-speedof-speed-test",
-      "name": "me.speedof/speed-test",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Official SpeedOf.Me server - Accurate speed tests via over 200 global edge servers with analytics."
-    },
-    {
       "slug": "microsoft-mcp",
       "name": "microsoft-mcp",
       "confidence": 0.35,
       "topics": [],
       "description": "Catalog of official Microsoft MCP (Model Context Protocol) server implementations for AI-powered data access and tool integration"
-    },
-    {
-      "slug": "money-barker-stablecoin-yield",
-      "name": "money.barker/stablecoin-yield",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Barker's real-time stablecoin yield index + AI advisor + non-custodial deposit/redeem (x402 paid)."
-    },
-    {
-      "slug": "net-agentfund-us-economic-macro-sec-edgar-onchain-data",
-      "name": "net.agentfund/us-economic-macro-sec-edgar-onchain-data",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "21 paid tools: US macro data, SEC EDGAR filings, on-chain EVM reads. Settled in USDC on Base."
-    },
-    {
-      "slug": "net-anyhook-anyhook",
-      "name": "net.anyhook/anyhook",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "A webhook inbox for agents: one call returns a live URL. Mock, verify, inspect and replay."
-    },
-    {
-      "slug": "net-gwindex-gwinnett-index",
-      "name": "net.gwindex/gwinnett-index",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Gwinnett County, GA zoning and land use. Resolves an address to its governing jurisdiction."
-    },
-    {
-      "slug": "net-mostexpensivewatches-mcp",
-      "name": "net.mostexpensivewatches/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Documented luxury-watch auction records: 1,150+ verified results, prices, rankings and datasets"
-    },
-    {
-      "slug": "network-tagit-nfc-verify",
-      "name": "network.tagit/nfc-verify",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Verify on-chain lifecycle state and provenance of NFC-tagged physical products."
-    },
-    {
-      "slug": "one-faf-claude-faf-mcp",
-      "name": "one.faf/claude-faf-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Persistent project context for Claude. IANA-registered .faf format."
-    },
-    {
-      "slug": "one-faf-rust-faf-mcp",
-      "name": "one.faf/rust-faf-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Persistent project context — Rust-native MCP server. IANA-registered .faf format."
     },
     {
       "slug": "pagerduty-mcp-server",
@@ -14347,7 +14263,7 @@
       "name": "ai.kinlab/kin",
       "confidence": 0.45,
       "topics": [],
-      "description": "A graph-native code repository for AI agents and the people who build with them."
+      "description": "Connect accounts once. Set what agents may do per account. Enforced when the action runs."
     },
     {
       "slug": "ai-syntheticbrew-syntheticbrew",
@@ -16566,7 +16482,7 @@
       "name": "io.github.financeratecalc/frc-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "2025 HMDA FHA denial statistics and dated US mortgage rule tables, with receipts you can verify."
+      "description": "2025 HMDA FHA denial statistics and dated US mortgage rule tables, with verifiable receipts."
     },
     {
       "slug": "io-github-fino-wind-vaultbeat",
@@ -16979,7 +16895,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 629 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 634 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-good-sender-goodsender-mcp",
@@ -19205,7 +19121,7 @@
       "name": "io.github.pofky/asc-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "41 tools to ship an App Store release: metadata, screenshots, builds, TestFlight, IAP, submit."
+      "description": "Ask your AI to check, fix and submit your App Store release. 41 tools for the paperwork."
     },
     {
       "slug": "io-github-poiuyhje-eqvps",
@@ -21098,20 +21014,6 @@
       "description": "MCP server for preparing and tracking Peer Cash Base USDC cash-outs"
     },
     {
-      "slug": "net-crawlora-crawlora-mcp",
-      "name": "net.crawlora/crawlora-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Hosted MCP: 3926 structured web-data tools across 488 platform groups."
-    },
-    {
-      "slug": "no-apier-mcp",
-      "name": "no.apier/mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Machine-verifiable Norwegian company authority: status, roles and coded signing authority."
-    },
-    {
       "slug": "elevenlabs-elevenlabs-mcp",
       "name": "@elevenlabs/elevenlabs-mcp",
       "confidence": 0.55,
@@ -21298,7 +21200,7 @@
       "topics": [
         "automation"
       ],
-      "description": "Plori runs AI agents that collaborate on one product in the cloud."
+      "description": "Plori runs AI agents in cloud Workspaces."
     },
     {
       "slug": "ai-primateintelligence-mcp",
@@ -26822,7 +26724,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Structured web data from 41 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
+      "description": "Structured web data from 45 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
     },
     {
       "slug": "io-github-sebastienrousseau-iso20022-mcp",
@@ -28019,15 +27921,6 @@
       "description": "Model Context Protocol Server for Mobile Automation and Scraping (iOS, Android, Emulators, Simulators and Real Devices)"
     },
     {
-      "slug": "money-candor-candor-finance",
-      "name": "money.candor/candor-finance",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Personal finance for your AI agent: money goals, a budget, and a weekly review of your accounts."
-    },
-    {
       "slug": "n8n-mcp",
       "name": "n8n-mcp",
       "confidence": 0.55,
@@ -28035,24 +27928,6 @@
         "automation"
       ],
       "description": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you "
-    },
-    {
-      "slug": "net-audiodelivery-mcp",
-      "name": "net.audiodelivery/mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "AI-manageable audio CDN: upload, transcode, normalize, stream & deliver audio, plus grounded docs."
-    },
-    {
-      "slug": "online-jinero-jinero",
-      "name": "online.jinero/jinero",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "AI-agent design tools: fonts, font recognition, palettes, color naming, contrast, code, SVG, CSS."
     },
     {
       "slug": "open-mcp-client",
