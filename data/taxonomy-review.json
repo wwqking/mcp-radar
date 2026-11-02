@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-11-01T00:43:57.458Z",
-  "total": 5549,
+  "generatedAt": "2026-11-02T01:16:51.602Z",
+  "total": 5532,
   "summary": {
-    "needsReview": 3740,
+    "needsReview": 3730,
     "needsReviewRatePct": 67.4,
-    "uncategorized": 2490,
+    "uncategorized": 2482,
     "uncategorizedRatePct": 44.9,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.9
+    "largestCategoryRatePct": 34
   },
   "alerts": [
     "待归类占比 44.9%，超过 5% 审核线",
-    "dev 占比 33.9%，超过 30% 拆分评估线",
+    "dev 占比 34%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2490,
-    "dev": 1882,
-    "search": 742,
-    "files": 252,
-    "ai": 207,
+    "misc": 2482,
+    "dev": 1881,
+    "search": 737,
+    "files": 250,
+    "ai": 206,
     "comms": 185,
     "database": 169,
     "commerce": 163,
     "cloud": 133,
     "browser": 120,
-    "marketing": 80
+    "marketing": 78
   },
   "topicCounts": {
-    "design-media": 283,
+    "design-media": 281,
     "automation": 187,
-    "finance": 184,
+    "finance": 182,
     "observability": 116,
-    "legal": 95,
+    "legal": 94,
     "mcp-infrastructure": 87,
     "visualization": 63,
     "science-health": 32,
-    "security": 28,
+    "security": 27,
     "game-development": 24,
     "data-analysis": 24,
     "iot-robotics": 15
@@ -88,7 +88,7 @@
     },
     {
       "term": "memory",
-      "count": 102
+      "count": 101
     },
     {
       "term": "local",
@@ -96,7 +96,7 @@
     },
     {
       "term": "manage",
-      "count": 97
+      "count": 96
     },
     {
       "term": "code",
@@ -139,12 +139,12 @@
       "count": 65
     },
     {
-      "term": "across",
+      "term": "tasks",
       "count": 63
     },
     {
-      "term": "tasks",
-      "count": 63
+      "term": "across",
+      "count": 62
     },
     {
       "term": "check",
@@ -156,7 +156,7 @@
     },
     {
       "term": "x402",
-      "count": 58
+      "count": 57
     },
     {
       "term": "status",
@@ -215,16 +215,16 @@
       "count": 44
     },
     {
-      "term": "intelligence",
-      "count": 43
-    },
-    {
       "term": "verify",
       "count": 43
     },
     {
-      "term": "analytics",
+      "term": "intelligence",
       "count": 42
+    },
+    {
+      "term": "analytics",
+      "count": 41
     },
     {
       "term": "security",
@@ -1999,7 +1999,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Real-time global intelligence across conflict, markets, energy, trade, shipping and cyber. 99 tools."
+      "description": "Real-time global intelligence on conflict, markets, energy, trade, shipping and cyber. 100 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -11939,7 +11939,7 @@
       "name": "io.github.roian6/health-bridge",
       "confidence": 0.35,
       "topics": [],
-      "description": "Apple Health AI Bridge provides read-only local MCP access for Health Bridge for AI."
+      "description": "Read-only local MCP access to Apple Health data through Apple Health AI Bridge."
     },
     {
       "slug": "io-github-roomi-fields-notebooklm-mcp",
@@ -13115,7 +13115,7 @@
       "name": "io.github.vmware-skills/vmware-storage",
       "confidence": 0.35,
       "topics": [],
-      "description": "VMware vSphere storage with 15 MCP tools: datastores, iSCSI, vSAN, FC multipath."
+      "description": "VMware vSphere storage with 16 MCP tools: datastores, iSCSI, vSAN, FC multipath."
     },
     {
       "slug": "io-github-vmware-skills-vmware-vdi",
@@ -14063,13 +14063,6 @@
       "description": "Official Jina AI Remote MCP Server"
     },
     {
-      "slug": "jp-softglow-storycanon",
-      "name": "jp.softglow/storycanon",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "A structured story bible for long-form fiction: scenes, characters, world, plot and foreshadowing."
-    },
-    {
       "slug": "jupyter-mcp-server",
       "name": "jupyter-mcp-server",
       "confidence": 0.35,
@@ -14082,20 +14075,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Zerodha Kite MCP server"
-    },
-    {
-      "slug": "link-cyberelf-whetstone-tools",
-      "name": "link.cyberelf.whetstone/tools",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Verifier-grounded AI promotion gates, disposable report cards, and signed PASS/HOLD/BLOCK receipts."
-    },
-    {
-      "slug": "link-snapto-snapto",
-      "name": "link.snapto/snapto",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Manage your Snapto link-in-bio page: links, social icons, and visit and click analytics."
     },
     {
       "slug": "linkedin-mcp-server",
@@ -14159,20 +14138,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "UI over MCP. Create next-gen UI experiences with the protocol and SDK!"
-    },
-    {
-      "slug": "me-ai-know-memory",
-      "name": "me.ai-know/memory",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Chinese-first brain-inspired memory MCP — hybrid recall, 7-layer user profile, workspace assembly."
-    },
-    {
-      "slug": "me-foodnear-foodnear-me",
-      "name": "me.foodnear/foodnear-me",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "AI-native restaurant discovery: verified/menu-indexed/discovered tiers + signed allergy-safety data."
     },
     {
       "slug": "microsoft-mcp",
@@ -15985,7 +15950,7 @@
       "name": "io.github.cyanheads/sanctions-screening-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Screen names against OFAC, EU, UK, UN sanctions lists; resolve entities via GLEIF. Screening aid."
+      "description": "Screen eleven sanctions/export-control lists; resolve GLEIF entities offline. Screening aid."
     },
     {
       "slug": "io-github-cyanheads-secedgar-mcp-server",
@@ -16895,7 +16860,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 634 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 639 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-good-sender-goodsender-mcp",
@@ -16987,13 +16952,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "A business phone system for AI agents: send texts, place calls, read transcripts, buy numbers."
-    },
-    {
-      "slug": "io-github-harleycoops-workspace-alberta",
-      "name": "io.github.HarleyCoops/workspace-alberta",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Canadian procurement intelligence: CanadaBuys and Alberta tenders, ranked for your shop."
     },
     {
       "slug": "io-github-hcpapi-housecall-pro-mcp",
@@ -19173,13 +19131,6 @@
       "description": "Decodes US VINs and looks up open NHTSA safety recall campaigns for a vehicle."
     },
     {
-      "slug": "io-github-predgeai-whale-data-mcp",
-      "name": "io.github.predgeAI/whale-data-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Signed settled outcomes (Polymarket, sports) + whale signals as agent tools, paid via x402."
-    },
-    {
       "slug": "io-github-prithviseran-hunch",
       "name": "io.github.PrithviSeran/hunch",
       "confidence": 0.45,
@@ -20003,7 +19954,7 @@
       "name": "io.github.seekdaseek/agentfeed",
       "confidence": 0.45,
       "topics": [],
-      "description": "Crypto briefs and data, Solana pre-trade checks, sanctions, papers, NLP. 93 tools, USDC, 20 chains."
+      "description": "Crypto briefs and data, Solana pre-trade checks, sanctions, papers, NLP. 102 tools, USDC, 20 chains."
     },
     {
       "slug": "io-github-semanticdatacharter-sdcgovernance",
@@ -26220,7 +26171,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Ask your agent about your own Apple Health data: 194 metrics, 18 tools, local, 0 deps."
+      "description": "Ask your agent about your own Apple Health data: 194 metrics, 21 tools, local, 0 deps."
     },
     {
       "slug": "io-github-philongevity-phi-longevity-prism",
@@ -26724,7 +26675,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Structured web data from 45 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
+      "description": "Structured web data from 51 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
     },
     {
       "slug": "io-github-sebastienrousseau-iso20022-mcp",
@@ -27819,33 +27770,6 @@
         "design-media"
       ],
       "description": "AI video editor for real footage: cut, caption, reframe, add music and b-roll, preview, export MP4."
-    },
-    {
-      "slug": "kr-ai-vdb-vdb",
-      "name": "kr.ai.vdb/vdb",
-      "confidence": 0.55,
-      "topics": [
-        "security"
-      ],
-      "description": "Check packages for CVEs, slopsquatting, and CISA KEV before your AI agent installs them."
-    },
-    {
-      "slug": "market-mundane-mundane",
-      "name": "market.mundane/mundane",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Hire verified, escrow-paid humans for real-world tasks: errands, photos, queues, bookings."
-    },
-    {
-      "slug": "markets-tally-mcp",
-      "name": "markets.tally/mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "AI risk officer: private trading theses, evidence, exit criteria and decision history. No execution."
     },
     {
       "slug": "mcp-obsidian",
