@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-11-02T01:16:51.602Z",
-  "total": 5532,
+  "generatedAt": "2026-11-03T03:21:17.353Z",
+  "total": 5507,
   "summary": {
-    "needsReview": 3730,
-    "needsReviewRatePct": 67.4,
-    "uncategorized": 2482,
-    "uncategorizedRatePct": 44.9,
+    "needsReview": 3715,
+    "needsReviewRatePct": 67.5,
+    "uncategorized": 2465,
+    "uncategorizedRatePct": 44.8,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 34
+    "largestCategoryRatePct": 34.2
   },
   "alerts": [
-    "待归类占比 44.9%，超过 5% 审核线",
-    "dev 占比 34%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.4%，超过 10%"
+    "待归类占比 44.8%，超过 5% 审核线",
+    "dev 占比 34.2%，超过 30% 拆分评估线",
+    "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2482,
+    "misc": 2465,
     "dev": 1881,
-    "search": 737,
-    "files": 250,
+    "search": 736,
+    "files": 249,
     "ai": 206,
-    "comms": 185,
+    "comms": 183,
     "database": 169,
-    "commerce": 163,
+    "commerce": 160,
     "cloud": 133,
     "browser": 120,
-    "marketing": 78
+    "marketing": 76
   },
   "topicCounts": {
-    "design-media": 281,
-    "automation": 187,
+    "design-media": 280,
+    "automation": 188,
     "finance": 182,
     "observability": 116,
     "legal": 94,
@@ -48,7 +48,7 @@
     },
     {
       "term": "query",
-      "count": 244
+      "count": 242
     },
     {
       "term": "platform-hosted",
@@ -72,15 +72,11 @@
     },
     {
       "term": "coding",
-      "count": 117
+      "count": 118
     },
     {
       "term": "free",
-      "count": 111
-    },
-    {
-      "term": "read",
-      "count": 105
+      "count": 110
     },
     {
       "term": "credit",
@@ -95,24 +91,28 @@
       "count": 99
     },
     {
-      "term": "manage",
+      "term": "read",
       "count": 96
     },
     {
       "term": "code",
-      "count": 93
+      "count": 92
     },
     {
-      "term": "create",
-      "count": 88
+      "term": "manage",
+      "count": 92
     },
     {
       "term": "over",
       "count": 87
     },
     {
+      "term": "create",
+      "count": 85
+    },
+    {
       "term": "live",
-      "count": 86
+      "count": 85
     },
     {
       "term": "pipeworx-io",
@@ -139,12 +139,12 @@
       "count": 65
     },
     {
-      "term": "tasks",
-      "count": 63
-    },
-    {
       "term": "across",
       "count": 62
+    },
+    {
+      "term": "tasks",
+      "count": 61
     },
     {
       "term": "check",
@@ -152,7 +152,7 @@
     },
     {
       "term": "public",
-      "count": 59
+      "count": 58
     },
     {
       "term": "x402",
@@ -160,14 +160,10 @@
     },
     {
       "term": "status",
-      "count": 56
+      "count": 55
     },
     {
       "term": "analysis",
-      "count": 54
-    },
-    {
-      "term": "evidence",
       "count": 54
     },
     {
@@ -175,15 +171,19 @@
       "count": 54
     },
     {
+      "term": "evidence",
+      "count": 53
+    },
+    {
       "term": "before",
       "count": 51
     },
     {
-      "term": "real",
-      "count": 51
+      "term": "local-first",
+      "count": 50
     },
     {
-      "term": "local-first",
+      "term": "real",
       "count": 50
     },
     {
@@ -207,12 +207,12 @@
       "count": 44
     },
     {
-      "term": "plus",
+      "term": "vehicle",
       "count": 44
     },
     {
-      "term": "vehicle",
-      "count": 44
+      "term": "plus",
+      "count": 43
     },
     {
       "term": "verify",
@@ -223,12 +223,12 @@
       "count": 42
     },
     {
-      "term": "analytics",
+      "term": "security",
       "count": 41
     },
     {
-      "term": "security",
-      "count": 41
+      "term": "analytics",
+      "count": 39
     },
     {
       "term": "control",
@@ -425,13 +425,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "A flock of AI users tests your deployed app and reports where real people get stuck, with fixes."
-    },
-    {
-      "slug": "ai-certscore-mcp",
-      "name": "ai.certscore/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "CertScore website risk-signal tools for scans, findings, evidence, and latest-domain lookups."
     },
     {
       "slug": "ai-certscore-mcp-light",
@@ -2202,7 +2195,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "754 MCP tools across 1222 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "763 MCP tools across 1233 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -3386,13 +3379,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Manage your MakeMeBetter AI tasks, habits, and goals from your AI assistant."
-    },
-    {
-      "slug": "com-runmirrors-mirrors",
-      "name": "com.runmirrors/mirrors",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "AI agent testing: replay real sessions against a rebuilt staging environment to catch regressions."
     },
     {
       "slug": "com-saveproptax-saveproptax",
@@ -7011,7 +6997,7 @@
       "name": "io.github.jgravelle/jcodemunch-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Retrieves code by symbol via tree-sitter, so an agent reads the function it needs, not the file."
+      "description": "Gives AI coding agents the function they asked for, not the whole file. Runs locally, 70+ languages."
     },
     {
       "slug": "io-github-jiankn-savepinner",
@@ -13958,104 +13944,6 @@
       "description": "Manage cron/heartbeat checks, read pings and flips, pause/resume/delete on Healthchecks.io."
     },
     {
-      "slug": "io-usefulapi-instatus",
-      "name": "io.usefulapi/instatus",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Manage status pages: components, incidents and maintenances; set live component status."
-    },
-    {
-      "slug": "io-usefulapi-numeral",
-      "name": "io.usefulapi/numeral",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Calculate sales tax & VAT, record transactions and refunds, manage products and customers."
-    },
-    {
-      "slug": "io-usefulapi-pipedrive",
-      "name": "io.usefulapi/pipedrive",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read deals, persons, organizations, activities and pipelines; create and update CRM records."
-    },
-    {
-      "slug": "io-usefulapi-plausible-analytics",
-      "name": "io.usefulapi/plausible-analytics",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Query site stats, realtime visitors, breakdowns and goals from Plausible Analytics."
-    },
-    {
-      "slug": "io-usefulapi-portkey",
-      "name": "io.usefulapi/portkey",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read AI-gateway analytics, configs, virtual keys, workspaces and users; log request feedback."
-    },
-    {
-      "slug": "io-usefulapi-reclaimai",
-      "name": "io.usefulapi/reclaimai",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read tasks, habits, events and scheduling links; create and update Reclaim tasks and habits."
-    },
-    {
-      "slug": "io-usefulapi-simpletexting",
-      "name": "io.usefulapi/simpletexting",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Send SMS/MMS, manage contacts, and read campaigns, messages and media on SimpleTexting."
-    },
-    {
-      "slug": "io-usefulapi-spikesh",
-      "name": "io.usefulapi/spikesh",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read Spike.sh incidents, on-call, escalations and services; acknowledge, resolve, set priority."
-    },
-    {
-      "slug": "io-usefulapi-squadcast",
-      "name": "io.usefulapi/squadcast",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read incidents, services, teams, on-call schedules; acknowledge, resolve and note incidents."
-    },
-    {
-      "slug": "io-usefulapi-tailscale",
-      "name": "io.usefulapi/tailscale",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read devices, users, keys, ACLs and DNS for a tailnet; manage devices, routes and auth keys."
-    },
-    {
-      "slug": "io-usefulapi-twenty",
-      "name": "io.usefulapi/twenty",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read people, companies, opportunities, notes and tasks; create and update records in Twenty CRM."
-    },
-    {
-      "slug": "io-usefulapi-zendesk",
-      "name": "io.usefulapi/zendesk",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read tickets, users, orgs, macros and satisfaction ratings; create, update and comment on tickets."
-    },
-    {
-      "slug": "io-veezee-all",
-      "name": "io.veezee/all",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Real-time LinkedIn, X (Twitter) and Reddit data for AI agents. Free key, self-minted, no signup."
-    },
-    {
-      "slug": "it-logr-mcp",
-      "name": "it.logr/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Query any public logr profile — timelines, events, full context — plus owner-authorized writes."
-    },
-    {
       "slug": "jina-mcp",
       "name": "jina-mcp",
       "confidence": 0.35,
@@ -14231,6 +14119,13 @@
       "description": "Connect accounts once. Set what agents may do per account. Enforced when the action runs."
     },
     {
+      "slug": "ai-presentations-presentations-ai",
+      "name": "ai.presentations/presentations-ai",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Create designed slide decks from a prompt, notes, or an outline, then export them or share a link."
+    },
+    {
       "slug": "ai-syntheticbrew-syntheticbrew",
       "name": "ai.syntheticbrew/syntheticbrew",
       "confidence": 0.45,
@@ -14250,6 +14145,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Data center energy, electricity & power grid data: DCPI to query and cite, capacity to buy or lease."
+    },
+    {
+      "slug": "co-tempguru-event-staffing",
+      "name": "co.tempguru/event-staffing",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "W-2 staffing: 300+ U.S. and Canadian markets, 5,000+ events, 100,000+ completed shifts."
     },
     {
       "slug": "com-a2a2p-a2a2p",
@@ -15691,7 +15593,7 @@
       "name": "io.github.couchbase/mcp-server-couchbase",
       "confidence": 0.45,
       "topics": [],
-      "description": "Couchbase MCP Server - Enable AI agents to connect to and interact with Couchbase clusters."
+      "description": "Couchbase MCP servers: Operational and Operational Insights clusters."
     },
     {
       "slug": "io-github-craig-horton-aibvf-mcp",
@@ -16105,13 +16007,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server for Trello boards with rate limiting, type safety, and comprehensive API integration."
-    },
-    {
-      "slug": "io-github-dengyier-openworkproof",
-      "name": "io.github.dengyier/OpenWorkProof",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Verifiable agent work contracts; separate opt-in Codex preview-directory guard."
     },
     {
       "slug": "io-github-dernif-payanagent",
@@ -16860,7 +16755,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 639 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 644 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-good-sender-goodsender-mcp",
@@ -21019,6 +20914,15 @@
       "description": "Turn one sentence into finished ads: video ads, UGC, product photos, voiceover, brand kits, A/B."
     },
     {
+      "slug": "ai-certscore-mcp",
+      "name": "ai.certscore/mcp",
+      "confidence": 0.55,
+      "topics": [
+        "automation"
+      ],
+      "description": "MCP server for CertScore.ai public website risk-signal workflows."
+    },
+    {
       "slug": "ai-com-mcp-registry",
       "name": "ai.com.mcp/registry",
       "confidence": 0.55,
@@ -21867,7 +21771,7 @@
       "topics": [
         "finance"
       ],
-      "description": "x402 crypto sentiment & analyst reads. 4 FREE funnel + 16 paid ($0.01–$0.09) USDC on Base. NFA."
+      "description": "FREE route+korra; funnel $0.07; desk $0.01-$0.09 USDC on Base. NFA."
     },
     {
       "slug": "com-dexpaprika-dexpaprika",
@@ -23220,7 +23124,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Remote MCP for AI video, image, music and speech generation."
+      "description": "Official ViewMax Studio MCP: AI video, image, music, speech and sound effects."
     },
     {
       "slug": "io-github-cambriannetwork-cambrian-api",
@@ -23584,6 +23488,15 @@
       "description": "Polymarket trading, market discovery, copy trading and backtesting — 48 MCP tools."
     },
     {
+      "slug": "io-github-dengyier-openworkproof",
+      "name": "io.github.dengyier/OpenWorkProof",
+      "confidence": 0.55,
+      "topics": [
+        "observability"
+      ],
+      "description": "Verifiable agent evidence; opt-in Codex guard and reference SOC alert review."
+    },
+    {
       "slug": "io-github-dengyu123456-crochet-engine",
       "name": "io.github.dengyu123456/crochet-engine",
       "confidence": 0.55,
@@ -23772,7 +23685,7 @@
       "topics": [
         "security"
       ],
-      "description": "EOL dates, risk scores, CISA KEV exposure, SBOM audits and edge-device EOS for 500+ products."
+      "description": "EOL dates, risk scores, CISA KEV exposure, SBOM audits and edge-device EOS for 700+ products."
     },
     {
       "slug": "io-github-engr-faizanali-text-to-speech",
@@ -26171,7 +26084,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Ask your agent about your own Apple Health data: 194 metrics, 21 tools, local, 0 deps."
+      "description": "Ask your agent about your own Apple Health data: 194 metrics, 22 tools, local, 0 deps."
     },
     {
       "slug": "io-github-philongevity-phi-longevity-prism",
@@ -26180,7 +26093,7 @@
       "topics": [
         "science-health"
       ],
-      "description": "Which tests may be due with diabetes, kidney disease, lupus or a cancer history. Guideline-cited."
+      "description": "Every doctor, your complete record: get medical records, prep for visits, explain lab results."
     },
     {
       "slug": "io-github-pipeworx-io-alpaca",
@@ -26675,7 +26588,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Structured web data from 51 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
+      "description": "Structured web data from 58 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
     },
     {
       "slug": "io-github-sebastienrousseau-iso20022-mcp",
@@ -27752,24 +27665,6 @@
         "data-analysis"
       ],
       "description": "List reverse-ETL sources, destinations, models, syncs and runs; trigger syncs into SaaS tools."
-    },
-    {
-      "slug": "io-usefulapi-statuspal",
-      "name": "io.usefulapi/statuspal",
-      "confidence": 0.55,
-      "topics": [
-        "observability"
-      ],
-      "description": "Read status-page status, services, incidents and metrics; create, update and publish incidents."
-    },
-    {
-      "slug": "io-valmera-video-editor",
-      "name": "io.valmera/video-editor",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "AI video editor for real footage: cut, caption, reframe, add music and b-roll, preview, export MP4."
     },
     {
       "slug": "mcp-obsidian",
