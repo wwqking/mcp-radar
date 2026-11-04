@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-11-03T03:21:17.353Z",
-  "total": 5507,
+  "generatedAt": "2026-11-04T01:57:06.673Z",
+  "total": 5473,
   "summary": {
-    "needsReview": 3715,
-    "needsReviewRatePct": 67.5,
-    "uncategorized": 2465,
-    "uncategorizedRatePct": 44.8,
+    "needsReview": 3688,
+    "needsReviewRatePct": 67.4,
+    "uncategorized": 2439,
+    "uncategorizedRatePct": 44.6,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 34.2
+    "largestCategoryRatePct": 34.4
   },
   "alerts": [
-    "待归类占比 44.8%，超过 5% 审核线",
-    "dev 占比 34.2%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.5%，超过 10%"
+    "待归类占比 44.6%，超过 5% 审核线",
+    "dev 占比 34.4%，超过 30% 拆分评估线",
+    "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2465,
-    "dev": 1881,
-    "search": 736,
-    "files": 249,
-    "ai": 206,
-    "comms": 183,
-    "database": 169,
-    "commerce": 160,
+    "misc": 2439,
+    "dev": 1880,
+    "search": 733,
+    "files": 250,
+    "ai": 208,
+    "comms": 179,
+    "database": 168,
+    "commerce": 159,
     "cloud": 133,
     "browser": 120,
     "marketing": 76
   },
   "topicCounts": {
-    "design-media": 280,
-    "automation": 188,
-    "finance": 182,
+    "design-media": 277,
+    "automation": 187,
+    "finance": 181,
     "observability": 116,
     "legal": 94,
-    "mcp-infrastructure": 87,
-    "visualization": 63,
+    "mcp-infrastructure": 85,
+    "visualization": 62,
     "science-health": 32,
     "security": 27,
     "game-development": 24,
-    "data-analysis": 24,
+    "data-analysis": 23,
     "iot-robotics": 15
   },
   "emergingTerms": [
@@ -72,11 +72,11 @@
     },
     {
       "term": "coding",
-      "count": 118
+      "count": 116
     },
     {
       "term": "free",
-      "count": 110
+      "count": 109
     },
     {
       "term": "credit",
@@ -84,31 +84,27 @@
     },
     {
       "term": "memory",
-      "count": 101
+      "count": 100
     },
     {
       "term": "local",
       "count": 99
     },
     {
-      "term": "read",
-      "count": 96
-    },
-    {
       "term": "code",
-      "count": 92
+      "count": 91
     },
     {
       "term": "manage",
-      "count": 92
+      "count": 89
     },
     {
       "term": "over",
       "count": 87
     },
     {
-      "term": "create",
-      "count": 85
+      "term": "read",
+      "count": 87
     },
     {
       "term": "live",
@@ -117,6 +113,10 @@
     {
       "term": "pipeworx-io",
       "count": 82
+    },
+    {
+      "term": "create",
+      "count": 81
     },
     {
       "term": "detran",
@@ -128,26 +128,26 @@
     },
     {
       "term": "checks",
-      "count": 79
+      "count": 78
     },
     {
       "term": "company",
       "count": 76
     },
     {
-      "term": "audit",
-      "count": 65
-    },
-    {
       "term": "across",
-      "count": 62
+      "count": 63
     },
     {
-      "term": "tasks",
-      "count": 61
+      "term": "audit",
+      "count": 63
     },
     {
       "term": "check",
+      "count": 60
+    },
+    {
+      "term": "tasks",
       "count": 59
     },
     {
@@ -157,10 +157,6 @@
     {
       "term": "x402",
       "count": 57
-    },
-    {
-      "term": "status",
-      "count": 55
     },
     {
       "term": "analysis",
@@ -175,16 +171,20 @@
       "count": 53
     },
     {
+      "term": "status",
+      "count": 53
+    },
+    {
       "term": "before",
       "count": 51
     },
     {
       "term": "local-first",
-      "count": 50
+      "count": 49
     },
     {
       "term": "real",
-      "count": 50
+      "count": 49
     },
     {
       "term": "certificate",
@@ -192,7 +192,11 @@
     },
     {
       "term": "every",
-      "count": 46
+      "count": 45
+    },
+    {
+      "term": "find",
+      "count": 45
     },
     {
       "term": "usdc",
@@ -200,10 +204,6 @@
     },
     {
       "term": "deterministic",
-      "count": 44
-    },
-    {
-      "term": "find",
       "count": 44
     },
     {
@@ -215,11 +215,11 @@
       "count": 43
     },
     {
-      "term": "verify",
-      "count": 43
+      "term": "intelligence",
+      "count": 42
     },
     {
-      "term": "intelligence",
+      "term": "verify",
       "count": 42
     },
     {
@@ -231,15 +231,15 @@
       "count": 39
     },
     {
-      "term": "control",
-      "count": 38
-    },
-    {
       "term": "apis",
       "count": 37
     },
     {
       "term": "build",
+      "count": 37
+    },
+    {
+      "term": "clearance",
       "count": 37
     }
   ],
@@ -1657,13 +1657,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "PreClick scans links for threats and confirms intent match with high accuracy before agents click."
-    },
-    {
-      "slug": "ai-usestring-web-access",
-      "name": "ai.usestring/web-access",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "The most accurate web access API. Stop getting blocked."
     },
     {
       "slug": "ai-waystation-airtable",
@@ -5737,7 +5730,7 @@
       "name": "io.github.Contentrain/contentrain",
       "confidence": 0.35,
       "topics": [],
-      "description": "Git content governance, 27 deterministic MCP tools. Hosted: docs.contentrain.io/developer/mcp-cloud"
+      "description": "Git content governance, 23 deterministic MCP tools. Hosted: docs.contentrain.io/developer/mcp-cloud"
     },
     {
       "slug": "io-github-copyleftdev-kahea",
@@ -6997,7 +6990,7 @@
       "name": "io.github.jgravelle/jcodemunch-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Gives AI coding agents the function they asked for, not the whole file. Runs locally, 70+ languages."
+      "description": "Gives AI agents the function they asked for, not the file. Commercial use needs a license."
     },
     {
       "slug": "io-github-jiankn-savepinner",
@@ -10742,7 +10735,7 @@
       "name": "io.github.ogasurfproject-jpg/jidec",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read agents' Bitcoin-anchored conduct history (NENRIN) and cite and recompute ledger records."
+      "description": "Read Bitcoin-anchored conduct history (NENRIN), admissions and daily check roots; cite records."
     },
     {
       "slug": "io-github-omniologynow-rgb-mcp-server",
@@ -13797,153 +13790,6 @@
       "description": "Direct access to your Sanity projects (content, datasets, releases, schemas) and agent rules"
     },
     {
-      "slug": "io-seaworthy-mcp",
-      "name": "io.seaworthy/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Disability insurance MCP server with occupation-based estimates, research, and quote requests."
-    },
-    {
-      "slug": "io-socialrobot-socialrobot-mcp",
-      "name": "io.socialrobot/socialrobot-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Schedule and analyze posts on 10 social networks from AI assistants. 25 tools, free on every plan."
-    },
-    {
-      "slug": "io-studiomeyer-academy",
-      "name": "io.studiomeyer/academy",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "The Academy curriculum as an offline MCP library. Hosted course connector adds progress."
-    },
-    {
-      "slug": "io-studiomeyer-hook-conformance",
-      "name": "io.studiomeyer/hook-conformance",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Audits MCP servers for Claude Code mcp_tool hook readiness: idempotency, latency, side-effects."
-    },
-    {
-      "slug": "io-studiomeyer-protocol-conformance",
-      "name": "io.studiomeyer/protocol-conformance",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP conformance test harness. JSON-RPC, OAuth 2.1 PKCE, schemas, smoke, annotations. CLI + lib."
-    },
-    {
-      "slug": "io-studiomeyer-server-attestation",
-      "name": "io.studiomeyer/server-attestation",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Ed25519-signed MCP tool manifests + spawn attestation. Layer-2 supply-chain hardening."
-    },
-    {
-      "slug": "io-studiomeyer-stdio-shellguard",
-      "name": "io.studiomeyer/stdio-shellguard",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Defense-in-depth for MCP stdio servers: shell-injection guard, AST audit CLI, RCE blocking."
-    },
-    {
-      "slug": "io-studiomeyer-tenant-pair",
-      "name": "io.studiomeyer/tenant-pair",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Multi-user tenancy library for MCP servers. Pairs, groups, bi-temporal shared state, DSGVO erasure."
-    },
-    {
-      "slug": "io-synthnet-mcp",
-      "name": "io.synthnet/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "A social network for AI agents: paint a daily self-portrait and talk with the humans who reply."
-    },
-    {
-      "slug": "io-tenova-swt3-witness",
-      "name": "io.tenova/swt3-witness",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Cryptographic AI governance and audit. 75 tools, 84 frameworks. EU AI Act, NIST, CMMC, MCP Top 10."
-    },
-    {
-      "slug": "io-umtri-umtri",
-      "name": "io.umtri/umtri",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Give your AI agent a persistent map of your project's structure, dependencies, and bugs."
-    },
-    {
-      "slug": "io-usefulapi-aircall",
-      "name": "io.usefulapi/aircall",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read calls, contacts, users, teams and numbers; tag calls and create or update contacts."
-    },
-    {
-      "slug": "io-usefulapi-all-quiet",
-      "name": "io.usefulapi/all-quiet",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Manage incidents and on-call: list/create/update incidents, who is on call, on-call overrides."
-    },
-    {
-      "slug": "io-usefulapi-clickup",
-      "name": "io.usefulapi/clickup",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read teams, spaces, lists and tasks; create, update and comment on tasks and track time."
-    },
-    {
-      "slug": "io-usefulapi-emailoctopus",
-      "name": "io.usefulapi/emailoctopus",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Manage lists, contacts and campaigns, and read campaign performance reports on EmailOctopus."
-    },
-    {
-      "slug": "io-usefulapi-foxyio",
-      "name": "io.usefulapi/foxyio",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read Foxy transactions, subscriptions, customers, carts and coupons; update customers and subs."
-    },
-    {
-      "slug": "io-usefulapi-freshdesk",
-      "name": "io.usefulapi/freshdesk",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read tickets, contacts, companies, agents and groups; create, update and reply to tickets."
-    },
-    {
-      "slug": "io-usefulapi-groove-hq",
-      "name": "io.usefulapi/groove-hq",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read Groove shared-inbox conversations, contacts, agents and tags; close, assign, snooze and tag."
-    },
-    {
-      "slug": "io-usefulapi-gumroad",
-      "name": "io.usefulapi/gumroad",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read products, sales, subscribers and offer codes; verify, enable and disable product licenses."
-    },
-    {
-      "slug": "io-usefulapi-harvest",
-      "name": "io.usefulapi/harvest",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read time entries, projects, clients, tasks and invoices; log and update tracked time."
-    },
-    {
-      "slug": "io-usefulapi-healthchecksio",
-      "name": "io.usefulapi/healthchecksio",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Manage cron/heartbeat checks, read pings and flips, pause/resume/delete on Healthchecks.io."
-    },
-    {
       "slug": "jina-mcp",
       "name": "jina-mcp",
       "confidence": 0.35,
@@ -14124,6 +13970,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Create designed slide decks from a prompt, notes, or an outline, then export them or share a link."
+    },
+    {
+      "slug": "ai-sugra-api-mcp",
+      "name": "ai.sugra/api-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Connect AI agents to primary sources - markets, macro, entities, news, network, earth and research."
     },
     {
       "slug": "ai-syntheticbrew-syntheticbrew",
@@ -14943,13 +14796,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Your AI publishes your site: free HTTPS link, or a .com for €19 that goes live with no DNS."
-    },
-    {
-      "slug": "io-github-botzrdev-dreamd",
-      "name": "io.github.botzrDev/dreamd",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Local-first, cross-harness memory for AI coding agents."
     },
     {
       "slug": "io-github-boxlab-ltd-yandex-metrica-mcp",
@@ -17353,13 +17199,6 @@
       "description": "MCP server for MikroTik routers: firewall, NAT, routing, DHCP, DNS, WireGuard and more via SSH."
     },
     {
-      "slug": "io-github-jfarcand-mirroir-mcp",
-      "name": "io.github.jfarcand/mirroir-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Control a real iPhone through macOS iPhone Mirroring: screenshot, tap, swipe, type."
-    },
-    {
       "slug": "io-github-jkawamoto-mcp-florence2",
       "name": "io.github.jkawamoto/mcp-florence2",
       "confidence": 0.45,
@@ -17798,7 +17637,7 @@
       "name": "io.github.littleblakew/msds-chain",
       "confidence": 0.45,
       "topics": [],
-      "description": "Chemical safety intelligence — 24 tools: compatibility, hazards, PPE, compliance, SDS lookup"
+      "description": "Chemical safety intelligence — 25 tools: compatibility, hazards, PPE, compliance, SDS lookup"
     },
     {
       "slug": "io-github-livetennisapi-livetennisapi-mcp",
@@ -18673,7 +18512,7 @@
       "name": "io.github.Nolpak14/getregdata",
       "confidence": 0.45,
       "topics": [],
-      "description": "Business-registry data for agents: one-call Poland KYB verdict, UBO, insolvency, adverse media"
+      "description": "Official registry data for agents: insolvency across Europe, Poland and CEE KYB, UBO, land registers"
     },
     {
       "slug": "io-github-northtekdevs-lossless-context-mcp",
@@ -20017,7 +19856,7 @@
       "name": "io.github.snenenenenenene/transita-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Match a profile against 100+ visas in 16 countries: eligibility, cost, timeline, intake status."
+      "description": "Find the visa routes you qualify for in 16 countries, then track one on transita.app."
     },
     {
       "slug": "io-github-snowmead-oxcode",
@@ -20689,7 +20528,7 @@
       "name": "io.github.Wopee-io/wopee-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "AI testing agents for web apps — dispatch test runs, crawls, fetch artifacts and status."
+      "description": "Wopee.io AI testing agents: dispatch analyses and test runs, fetch artifacts and results."
     },
     {
       "slug": "io-github-www-in-bio-inbio",
@@ -24281,7 +24120,7 @@
       "topics": [
         "security"
       ],
-      "description": "Free lockfile malware check plus paid behavioral scan of packages, agent skills and MCP tools."
+      "description": "Supply chain security: free npm lockfile malware check, paid scan of packages, skills, MCP servers."
     },
     {
       "slug": "io-github-jamhimself-robinx-mcp",
@@ -25113,7 +24952,7 @@
         "finance",
         "observability"
       ],
-      "description": "Company data and KYB API for 31 countries: monitoring, financial statements, insolvency, sanctions"
+      "description": "Company data and KYB API for 35 countries: monitoring, financial statements, insolvency, sanctions"
     },
     {
       "slug": "io-github-matteo-sung-lockvet",
@@ -27085,7 +26924,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Brazilian stock (B3) fundamentals: ratios, dividends, scores, FIIs, ETFs, BDRs. Open methodology."
+      "description": "Brazilian stocks (B3): 36 read-only tools for fundamentals, dividends, FIIs, ETFs, BDRs. Free."
     },
     {
       "slug": "io-github-vibekit-bot-vibekit-mcp",
@@ -27628,43 +27467,6 @@
         "finance"
       ],
       "description": "Blockchain data, Deepstate and Standard Reserve markets, live chain queries, and API docs"
-    },
-    {
-      "slug": "io-skycloak-skycloak-mcp",
-      "name": "io.skycloak/skycloak-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Managed Keycloak from any MCP client: clusters, realms, apps, SSO, users, domains, audit events."
-    },
-    {
-      "slug": "io-studiomeyer-video",
-      "name": "io.studiomeyer/video",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Video production: recording, editing, effects, captions, TTS, screenshots. 8 tools."
-    },
-    {
-      "slug": "io-tradeonyx-tradeonyx",
-      "name": "io.tradeonyx/tradeonyx",
-      "confidence": 0.55,
-      "topics": [
-        "finance",
-        "design-media"
-      ],
-      "description": "Trading journal with pattern detection: log trades by voice, query your own history."
-    },
-    {
-      "slug": "io-usefulapi-census",
-      "name": "io.usefulapi/census",
-      "confidence": 0.55,
-      "topics": [
-        "data-analysis"
-      ],
-      "description": "List reverse-ETL sources, destinations, models, syncs and runs; trigger syncs into SaaS tools."
     },
     {
       "slug": "mcp-obsidian",
