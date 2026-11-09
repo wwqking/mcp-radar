@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-11-08T01:06:15.481Z",
-  "total": 5121,
+  "generatedAt": "2026-11-09T01:28:40.478Z",
+  "total": 5100,
   "summary": {
-    "needsReview": 3458,
+    "needsReview": 3444,
     "needsReviewRatePct": 67.5,
-    "uncategorized": 2276,
-    "uncategorizedRatePct": 44.4,
+    "uncategorized": 2270,
+    "uncategorizedRatePct": 44.5,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 34.5
+    "largestCategoryRatePct": 34.4
   },
   "alerts": [
-    "待归类占比 44.4%，超过 5% 审核线",
-    "dev 占比 34.5%，超过 30% 拆分评估线",
+    "待归类占比 44.5%，超过 5% 审核线",
+    "dev 占比 34.4%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2276,
-    "dev": 1767,
-    "search": 682,
-    "files": 233,
-    "ai": 198,
+    "misc": 2270,
+    "dev": 1756,
+    "search": 678,
+    "files": 232,
+    "ai": 197,
     "comms": 167,
-    "database": 163,
-    "commerce": 146,
+    "database": 161,
+    "commerce": 145,
     "cloud": 121,
     "browser": 107,
     "marketing": 73
   },
   "topicCounts": {
-    "design-media": 261,
+    "design-media": 260,
     "automation": 178,
-    "finance": 168,
+    "finance": 167,
     "observability": 95,
     "legal": 94,
     "mcp-infrastructure": 79,
     "visualization": 57,
     "science-health": 30,
-    "security": 25,
+    "security": 24,
     "game-development": 23,
     "data-analysis": 22,
     "iot-robotics": 15
@@ -48,7 +48,7 @@
     },
     {
       "term": "query",
-      "count": 240
+      "count": 238
     },
     {
       "term": "platform-hosted",
@@ -72,7 +72,7 @@
     },
     {
       "term": "coding",
-      "count": 107
+      "count": 105
     },
     {
       "term": "credit",
@@ -83,23 +83,23 @@
       "count": 101
     },
     {
-      "term": "code",
-      "count": 90
-    },
-    {
       "term": "local",
       "count": 89
+    },
+    {
+      "term": "code",
+      "count": 88
     },
     {
       "term": "memory",
       "count": 87
     },
     {
-      "term": "read",
-      "count": 85
+      "term": "live",
+      "count": 83
     },
     {
-      "term": "live",
+      "term": "read",
       "count": 83
     },
     {
@@ -119,10 +119,6 @@
       "count": 81
     },
     {
-      "term": "company",
-      "count": 76
-    },
-    {
       "term": "create",
       "count": 76
     },
@@ -135,6 +131,10 @@
       "count": 75
     },
     {
+      "term": "company",
+      "count": 75
+    },
+    {
       "term": "check",
       "count": 60
     },
@@ -144,7 +144,7 @@
     },
     {
       "term": "audit",
-      "count": 58
+      "count": 57
     },
     {
       "term": "public",
@@ -167,12 +167,12 @@
       "count": 53
     },
     {
-      "term": "analysis",
+      "term": "evidence",
       "count": 52
     },
     {
-      "term": "evidence",
-      "count": 52
+      "term": "analysis",
+      "count": 51
     },
     {
       "term": "before",
@@ -2195,7 +2195,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "771 MCP tools across 1239 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "773 MCP tools across 1240 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -2790,7 +2790,7 @@
       "name": "com.getspawnpoint/spawnpoint",
       "confidence": 0.35,
       "topics": [],
-      "description": "The place where your team's AI lives: deploy what your agent builds to a private, shareable link."
+      "description": "The launchpad for your AI-enabled business: deploy what your agent builds to a private link."
     },
     {
       "slug": "com-getspm-spm",
@@ -4631,7 +4631,7 @@
       "name": "io.github.AIops-tools/fabric-aiops",
       "confidence": 0.35,
       "topics": [],
-      "description": "Governed Cisco Meraki + ACI fabric ops: uplink RCA, ACI endpoint trace; 37 tools with audit/undo."
+      "description": "Governed Cisco Meraki/Catalyst/ACI, Arista CVP & UniFi ops — 37 MCP tools with audit."
     },
     {
       "slug": "io-github-aiops-tools-firewall-aiops",
@@ -6241,7 +6241,7 @@
       "name": "io.github.erayendes/asc-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Every App Store Connect + StoreKit 2 endpoint. 929 tools in 13 profiles, narrow to 27."
+      "description": "Every App Store Connect + StoreKit 2 endpoint. 786 tools in 14 profiles, narrow to 17."
     },
     {
       "slug": "io-github-eshller-ltd-mcp",
@@ -11743,7 +11743,7 @@
       "name": "io.github.r3dz4r/datapulse-my",
       "confidence": 0.35,
       "topics": [],
-      "description": "Read-only discovery for 440 Malaysian public datasets with freshness, licence, and provenance."
+      "description": "Read-only discovery for 447 Malaysian public datasets with freshness, licence, and provenance."
     },
     {
       "slug": "io-github-ramakrishnanhulk20-patina",
@@ -12829,48 +12829,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Pre-action gate: verify before pay/trade/write/deploy. execute=true only on ALLOW."
-    },
-    {
-      "slug": "io-github-thriftell-budgetary",
-      "name": "io.github.thriftell/budgetary",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Pre-flight token-spend estimate (range, scenario, confidence) for a coding task, or an abstention."
-    },
-    {
-      "slug": "io-github-tiagosilva07-zyrax-guard",
-      "name": "io.github.tiagosilva07/zyrax-guard",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Audit AI agent configs for prompt injection & rogue MCP servers; vet packages"
-    },
-    {
-      "slug": "io-github-tide-foundation-raziel",
-      "name": "io.github.tide-foundation/raziel",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server teaching AI agents to implement TideCloak: auth, E2EE, IGA, security analysis"
-    },
-    {
-      "slug": "io-github-tidewave-ai-tidewave-phoenix",
-      "name": "io.github.tidewave-ai/tidewave-phoenix",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Runtime-level MCP server for Phoenix development: run code, read logs, query the DB, read docs."
-    },
-    {
-      "slug": "io-github-tidewave-ai-tidewave-rails",
-      "name": "io.github.tidewave-ai/tidewave-rails",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Runtime-level MCP server for Rails development: run code, read logs, query the DB, read docs."
-    },
-    {
-      "slug": "io-github-tiptreesystems-althea-mcp",
-      "name": "io.github.tiptreesystems/althea-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Connect coding agents to your Althea and, through her, a consent-first network of ML researchers."
     },
     {
       "slug": "io-github-tocharianou-kibana",
@@ -15803,7 +15761,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 649 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 654 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-good-sender-goodsender-mcp",
@@ -19320,46 +19278,11 @@
       "description": "Audit trail and traceability for AI agents. MCP gate: evaluate, ingest, request approval."
     },
     {
-      "slug": "io-github-theoddden-terradev",
-      "name": "io.github.theoddden/terradev",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Cross-cloud GPU orchestration CLI."
-    },
-    {
       "slug": "io-github-thestevenjohnstone-ai-consensus",
       "name": "io.github.TheStevenJohnstone/ai-consensus",
       "confidence": 0.45,
       "topics": [],
       "description": "Standing review layer for coding agents: Claude, GPT and Gemini debate, return consensus + dissent."
-    },
-    {
-      "slug": "io-github-thomenz-brdata-mcp",
-      "name": "io.github.thomenz/brdata-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Brazilian company, risk & public-tender data (CNPJ, CEIS/CNEP, PNCP) as x402-paid agent tools"
-    },
-    {
-      "slug": "io-github-thuupx-lunge",
-      "name": "io.github.thuupx/lunge",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Agent-native API client: execute/test REST/GraphQL/WS/SSE with assertions, extraction, collections"
-    },
-    {
-      "slug": "io-github-tidynest-raven-nest-mcp",
-      "name": "io.github.tidynest/raven-nest-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "AI-driven penetration testing - 22 security tools behind safety-hardened MCP endpoints"
-    },
-    {
-      "slug": "io-github-tim0-12432-hotkeylessahk-mcp-skill",
-      "name": "io.github.tim0-12432/HotkeylessAHK-mcp-skill",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for Hotkeyless AHK HTTP API."
     },
     {
       "slug": "io-github-toremlabs-proof",
@@ -25251,7 +25174,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Structured web data from 59 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
+      "description": "Structured web data from 61 platforms: Google, ChatGPT, Gemini, YouTube, Amazon, Reddit, TikTok"
     },
     {
       "slug": "io-github-sebastienrousseau-iso20022-mcp",
@@ -25625,15 +25548,6 @@
       "description": "Control the Unity Editor from MCP hosts through a local Rust server and C# Unity bridge."
     },
     {
-      "slug": "io-github-thestockgoatballs-clipspeed-mcp",
-      "name": "io.github.thestockgoatballs/clipspeed-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "AI video, images, AI influencers, character swaps and clipping from Claude or ChatGPT."
-    },
-    {
       "slug": "io-github-thestreamcode-chutes-media-mcp",
       "name": "io.github.TheStreamCode/chutes-media-mcp",
       "confidence": 0.55,
@@ -25641,24 +25555,6 @@
         "design-media"
       ],
       "description": "Generate image, video, music and speech through Chutes and save assets into your project."
-    },
-    {
-      "slug": "io-github-thomenz-soldefi-mcp",
-      "name": "io.github.thomenz/soldefi-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Solana DeFi risk intel over x402: rug/honeypot scans, pool analysis, wash-filtered pools."
-    },
-    {
-      "slug": "io-github-threadlinqs-cmd-intelthreadlinqs-mcp",
-      "name": "io.github.threadlinqs-cmd/intelthreadlinqs-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "security"
-      ],
-      "description": "Threadlinqs threat-intelligence MCP — 49 tools: threats, detections, IOCs, actors, C2, MITRE, CVEs"
     },
     {
       "slug": "io-github-tomaslucasutn-godot-mcp-bridge",
