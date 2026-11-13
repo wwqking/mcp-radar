@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-12T02:45:04.237Z",
+  "generatedAt": "2026-11-13T02:24:29.874Z",
   "total": 4818,
   "summary": {
-    "needsReview": 3276,
+    "needsReview": 3274,
     "needsReviewRatePct": 68,
-    "uncategorized": 2177,
+    "uncategorized": 2176,
     "uncategorizedRatePct": 45.2,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.6
@@ -15,12 +15,12 @@
     "低置信度/待审核占比 68%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2177,
+    "misc": 2176,
     "dev": 1618,
     "search": 625,
     "files": 217,
-    "ai": 190,
-    "comms": 160,
+    "ai": 191,
+    "comms": 161,
     "database": 150,
     "commerce": 137,
     "cloud": 108,
@@ -91,6 +91,10 @@
       "count": 83
     },
     {
+      "term": "read",
+      "count": 83
+    },
+    {
       "term": "pipeworx-io",
       "count": 82
     },
@@ -103,23 +107,15 @@
       "count": 81
     },
     {
-      "term": "read",
-      "count": 81
-    },
-    {
       "term": "live",
       "count": 77
-    },
-    {
-      "term": "over",
-      "count": 76
     },
     {
       "term": "create",
       "count": 75
     },
     {
-      "term": "manage",
+      "term": "over",
       "count": 75
     },
     {
@@ -127,8 +123,12 @@
       "count": 74
     },
     {
+      "term": "manage",
+      "count": 74
+    },
+    {
       "term": "checks",
-      "count": 70
+      "count": 71
     },
     {
       "term": "read-only",
@@ -136,7 +136,7 @@
     },
     {
       "term": "check",
-      "count": 59
+      "count": 58
     },
     {
       "term": "person",
@@ -411,13 +411,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Quant-research MCP — tradeable signals from public-company website stack changes. 7 tools."
-    },
-    {
-      "slug": "ai-callmcp-server",
-      "name": "ai.callmcp/server",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "One MCP tool contract for telephony — any call provider, hosted, local, or BYOK."
     },
     {
       "slug": "ai-canaryusers-canaryusers",
@@ -1992,7 +1985,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Real-time global intelligence on conflict, markets, energy, trade, shipping and cyber. 102 tools."
+      "description": "Real-time global intelligence on conflict, markets, energy, trade, shipping and cyber. 104 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -2195,7 +2188,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "795 MCP tools across 1255 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "800 MCP tools across 1259 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -2741,7 +2734,7 @@
       "name": "com.formasty/form-builder",
       "confidence": 0.35,
       "topics": [],
-      "description": "Create, edit, validate, publish, and inspect Formasty forms and quizzes over authenticated MCP."
+      "description": "Build forms, quizzes, and surveys from your AI assistant. Create, edit, publish, and read responses."
     },
     {
       "slug": "com-formpaste-formpaste",
@@ -14375,7 +14368,7 @@
       "name": "io.github.cyanheads/wsdot-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "WA highway conditions, ferry schedules, vessel locations, toll rates, and border waits via MCP."
+      "description": "WA highway conditions, ferry schedules and fares, vessel locations, tolls, and border waits via MCP."
     },
     {
       "slug": "io-github-cygnussystems-cygnus-ssh-mcp",
@@ -14446,13 +14439,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Shared records for AI agents: engineering decisions, bug history, rules, and work state through MCP."
-    },
-    {
-      "slug": "io-github-davidfuchs-mcp-uptime-kuma",
-      "name": "io.github.DavidFuchs/mcp-uptime-kuma",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "A Model Context Protocol (MCP) server for Uptime Kuma version 2."
     },
     {
       "slug": "io-github-ddevetak-footballcharts-mcp",
@@ -15229,7 +15215,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 667 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 669 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-good-sender-goodsender-mcp",
@@ -17357,7 +17343,7 @@
       "name": "io.github.peturgeorgievv-factory/postfast-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for the PostFast API — schedule and manage social media posts via AI tools"
+      "description": "Schedule posts on 11 social networks, answer comments and read analytics, hosted or local"
     },
     {
       "slug": "io-github-philpof102-svg-biii",
@@ -17427,7 +17413,7 @@
       "name": "io.github.pofky/asc-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Ask your AI to check, fix and submit your App Store release. 41 tools for the paperwork."
+      "description": "App Store Connect MCP server: your AI agent checks, fixes, submits and releases your iOS app."
     },
     {
       "slug": "io-github-poiuyhje-eqvps",
@@ -21663,7 +21649,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Music promotion and distribution for AI agents: Spotify and YouTube ads, Smart Links, releases."
+      "description": "Promote a song on Spotify or promote a video on YouTube from your AI agent. Free Smart Links."
     },
     {
       "slug": "io-github-gg13121-corent-mcp",
@@ -24016,7 +24002,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Interact with climate metrics via Riskthinking.AI's CDT Express API in supported AI chat experiences"
+      "description": "Physical climate risk metrics for locations, assets, companies, and market indexes from CDT Express"
     },
     {
       "slug": "io-github-rmartins1451-losbeto-mcp",
