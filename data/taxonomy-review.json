@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-13T02:24:29.874Z",
+  "generatedAt": "2026-11-14T02:01:29.702Z",
   "total": 4818,
   "summary": {
-    "needsReview": 3274,
+    "needsReview": 3276,
     "needsReviewRatePct": 68,
     "uncategorized": 2176,
     "uncategorizedRatePct": 45.2,
@@ -95,12 +95,12 @@
       "count": 83
     },
     {
-      "term": "pipeworx-io",
+      "term": "code",
       "count": 82
     },
     {
-      "term": "code",
-      "count": 81
+      "term": "pipeworx-io",
+      "count": 82
     },
     {
       "term": "detran",
@@ -128,7 +128,7 @@
     },
     {
       "term": "checks",
-      "count": 71
+      "count": 72
     },
     {
       "term": "read-only",
@@ -200,7 +200,7 @@
     },
     {
       "term": "every",
-      "count": 41
+      "count": 40
     },
     {
       "term": "intelligence",
@@ -1985,7 +1985,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Real-time global intelligence on conflict, markets, energy, trade, shipping and cyber. 104 tools."
+      "description": "Real-time global intelligence on conflict, markets, energy, trade, shipping and cyber. 97 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -2188,7 +2188,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "800 MCP tools across 1259 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "811 MCP tools across 1264 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -6227,7 +6227,7 @@
       "name": "io.github.erayendes/asc-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Every App Store Connect + StoreKit 2 endpoint. 786 tools in 14 profiles, narrow to 17."
+      "description": "App Store Connect, TestFlight & StoreKit 2. 786 tools in 14 profiles, narrow to 17."
     },
     {
       "slug": "io-github-eshller-ltd-mcp",
@@ -7228,7 +7228,7 @@
       "name": "io.github.kensaurus/mushi-mushi",
       "confidence": 0.35,
       "topics": [],
-      "description": "Bug fixing for AI-built apps: plain-English diagnosis + a ready fix, in your editor."
+      "description": "One place to improve AI-built apps: fix bugs, smooth user journeys and clean up the code."
     },
     {
       "slug": "io-github-kentucky-ai-opentakeoff",
@@ -12859,6 +12859,13 @@
       "description": "A WCAG accessibility testing MCP for AI agents, Codex, Claude Code, and automated UI audits."
     },
     {
+      "slug": "io-github-adkit-ads",
+      "name": "io.github.adkit/ads",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Run Meta, Google, TikTok, LinkedIn, Microsoft, Reddit, X and Pinterest ads from your AI agent."
+    },
+    {
       "slug": "io-github-admin978-canvas-mcp",
       "name": "io.github.admin978/canvas-mcp",
       "confidence": 0.45,
@@ -14095,7 +14102,7 @@
       "name": "io.github.CryptoAPIs-io/mcp-aml",
       "confidence": 0.45,
       "topics": [],
-      "description": "MCP server for AML address verification and transaction screening via Crypto APIs"
+      "description": "MCP server for AML address verification, transaction screening, and exposure checks via Crypto APIs"
     },
     {
       "slug": "io-github-cryptoapis-io-mcp-broadcast",
@@ -16860,7 +16867,7 @@
       "name": "io.github.Mnymann/nordic-data",
       "confidence": 0.45,
       "topics": [],
-      "description": "Company, KYB, VAT, sanctions, LEI and address data for 15 EU countries."
+      "description": "Company, KYB, VAT, sanctions, LEI and address data for 15 European countries."
     },
     {
       "slug": "io-github-moelayyan90-xguard",
@@ -19414,6 +19421,15 @@
       "description": "M12 lens and C-mount lens finder with image-sensor matching and field-of-view calculator."
     },
     {
+      "slug": "com-contrastcyber-api",
+      "name": "com.contrastcyber/api",
+      "confidence": 0.55,
+      "topics": [
+        "security"
+      ],
+      "description": "Monitor CVEs, packages, domains and IPs. CVE/EPSS/KEV, SBOM, DNS/TLS, IP lookups. No key, x402."
+    },
+    {
       "slug": "com-cosmicjs-mcp",
       "name": "com.cosmicjs/mcp",
       "confidence": 0.55,
@@ -21269,7 +21285,7 @@
       "topics": [
         "automation"
       ],
-      "description": "GoHighLevel MCP for Claude: 250 tools, 51 modules, including a workflow builder"
+      "description": "GoHighLevel MCP for Claude: 325+ tools, 67 modules, including a workflow builder"
     },
     {
       "slug": "io-github-droidrun-mobilerun",
@@ -21333,7 +21349,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "Local-first MCP asset QA for headless Blender: bounded scripts, FBX reimports, four-view renders."
+      "description": "Blender QA: executable discovery, background scripts, structural FBX reimport, four-view visual"
     },
     {
       "slug": "io-github-ellmos-ai-n8n-manager-mcp",
@@ -23732,7 +23748,7 @@
       "topics": [
         "observability"
       ],
-      "description": "Ask your agent about your own Apple Health data: 194 metrics, 22 tools, local, 0 deps."
+      "description": "Ask your agent about your own Apple Health data: 194 metrics, 21 tools, local, 0 deps."
     },
     {
       "slug": "io-github-philongevity-phi-longevity-prism",
