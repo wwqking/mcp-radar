@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-14T02:01:29.702Z",
-  "total": 4818,
+  "generatedAt": "2026-11-15T01:34:41.367Z",
+  "total": 4816,
   "summary": {
-    "needsReview": 3276,
+    "needsReview": 3274,
     "needsReviewRatePct": 68,
-    "uncategorized": 2176,
+    "uncategorized": 2175,
     "uncategorizedRatePct": 45.2,
     "largestCategory": "dev",
     "largestCategoryRatePct": 33.6
@@ -15,8 +15,8 @@
     "低置信度/待审核占比 68%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2176,
-    "dev": 1618,
+    "misc": 2175,
+    "dev": 1617,
     "search": 625,
     "files": 217,
     "ai": 191,
@@ -24,15 +24,15 @@
     "database": 150,
     "commerce": 137,
     "cloud": 108,
-    "browser": 102,
+    "browser": 103,
     "marketing": 71
   },
   "topicCounts": {
     "design-media": 246,
-    "automation": 166,
-    "finance": 162,
+    "automation": 164,
+    "finance": 163,
     "legal": 93,
-    "observability": 88,
+    "observability": 89,
     "mcp-infrastructure": 71,
     "visualization": 54,
     "science-health": 27,
@@ -48,7 +48,7 @@
     },
     {
       "term": "query",
-      "count": 233
+      "count": 232
     },
     {
       "term": "platform-hosted",
@@ -84,10 +84,6 @@
     },
     {
       "term": "local",
-      "count": 84
-    },
-    {
-      "term": "memory",
       "count": 83
     },
     {
@@ -96,6 +92,10 @@
     },
     {
       "term": "code",
+      "count": 82
+    },
+    {
+      "term": "memory",
       "count": 82
     },
     {
@@ -132,7 +132,7 @@
     },
     {
       "term": "read-only",
-      "count": 66
+      "count": 65
     },
     {
       "term": "check",
@@ -151,10 +151,6 @@
       "count": 52
     },
     {
-      "term": "audit",
-      "count": 52
-    },
-    {
       "term": "status",
       "count": 52
     },
@@ -165,6 +161,10 @@
     {
       "term": "x402",
       "count": 52
+    },
+    {
+      "term": "audit",
+      "count": 51
     },
     {
       "term": "analysis",
@@ -179,12 +179,12 @@
       "count": 46
     },
     {
-      "term": "before",
-      "count": 45
+      "term": "real",
+      "count": 46
     },
     {
-      "term": "real",
-      "count": 45
+      "term": "before",
+      "count": 44
     },
     {
       "term": "vehicle",
@@ -199,11 +199,11 @@
       "count": 41
     },
     {
-      "term": "every",
-      "count": 40
+      "term": "intelligence",
+      "count": 41
     },
     {
-      "term": "intelligence",
+      "term": "every",
       "count": 40
     },
     {
@@ -2188,7 +2188,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "811 MCP tools across 1264 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "817 MCP tools across 1267 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -6787,14 +6787,7 @@
       "name": "io.github.industrial-aiops/iaiops",
       "confidence": 0.35,
       "topics": [],
-      "description": "Governed OT data tap: 15 field protocols + cross-protocol RCA brain; audit + MOC gating."
-    },
-    {
-      "slug": "io-github-industrial-aiops-iaiops-energy",
-      "name": "io.github.industrial-aiops/iaiops-energy",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Industrial-AIOps energy edition: IEC-104/DNP3/IEC-61850 read-only OT connectors on iaiops.core."
+      "description": "Read-first OT data collection and cross-protocol diagnostics with audited MCP tools and CLI."
     },
     {
       "slug": "io-github-ingtian-witness",
@@ -7236,13 +7229,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Construction takeoff for AI agents: load plans, set scale, measure, count, export with provenance."
-    },
-    {
-      "slug": "io-github-kerne-protocol-honesty-index",
-      "name": "io.github.kerne-protocol/honesty-index",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Advertised versus realized yield for stablecoin vaults, signed hourly, reproducible from chain."
     },
     {
       "slug": "io-github-kimotostudio-jp-data-mcp",
@@ -10269,13 +10255,6 @@
       "description": "Local secret & credential checks for AI-assisted dev — runs on your machine, results redacted."
     },
     {
-      "slug": "io-github-neus-neus-mcp",
-      "name": "io.github.neus/neus-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "The trust harness for AI agents. Set what an agent can do before it acts."
-    },
-    {
       "slug": "io-github-nevent-dev-mcp-nevent",
       "name": "io.github.nevent-dev/mcp-nevent",
       "confidence": 0.35,
@@ -12625,7 +12604,7 @@
       "name": "cloud.dchub/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Data center energy, electricity & power grid data: DCPI to query and cite, capacity to buy or lease."
+      "description": "Orchestration layer for data center and energy intelligence. Start with execute_plan."
     },
     {
       "slug": "co-tempguru-event-staffing",
@@ -15169,6 +15148,13 @@
       "description": "Provides tools to use MASV API. MASV is reliable and secure large file transfer service."
     },
     {
+      "slug": "io-github-ghost-in-the-droid-android-agent",
+      "name": "io.github.ghost-in-the-droid/android-agent",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Give any AI agent a real Android phone or iPhone. 66 MCP tools, 117 hub skills, human in the loop."
+    },
+    {
       "slug": "io-github-ghostlygawd-engineering-board",
       "name": "io.github.GhostlyGawd/engineering-board",
       "confidence": 0.45,
@@ -15222,7 +15208,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 669 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 670 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-good-sender-goodsender-mcp",
@@ -17143,13 +17129,6 @@
       "description": "MCP server for EasyEDA Pro: PCB inspection, BOM, exports, and hardware review."
     },
     {
-      "slug": "io-github-octonove-crbro-memory",
-      "name": "io.github.Octonove/crbro-memory",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Persistent file-based memory for AI agents: inspectable, versionable, fully local."
-    },
-    {
       "slug": "io-github-odds-api-io-odds-api-mcp-server",
       "name": "io.github.odds-api-io/odds-api-mcp-server",
       "confidence": 0.45,
@@ -19028,7 +19007,7 @@
       "topics": [
         "mcp-infrastructure"
       ],
-      "description": "Inspect and manage Verlon AI gates, logs, recommendations, and experiments from any MCP client."
+      "description": "Inspect and manage Verlon AI gates, logs and models from any MCP client."
     },
     {
       "slug": "ai-voris-mcp-server",
@@ -21285,7 +21264,7 @@
       "topics": [
         "automation"
       ],
-      "description": "GoHighLevel MCP for Claude: 325+ tools, 67 modules, including a workflow builder"
+      "description": "GoHighLevel MCP for Claude: 325+ tools, 69 modules, including a workflow builder"
     },
     {
       "slug": "io-github-droidrun-mobilerun",
@@ -21903,6 +21882,15 @@
       "description": "Connect RStudio to AI assistants for interactive R coding and data analysis."
     },
     {
+      "slug": "io-github-industrial-aiops-iaiops-energy",
+      "name": "io.github.industrial-aiops/iaiops-energy",
+      "confidence": 0.55,
+      "topics": [
+        "observability"
+      ],
+      "description": "Read-only IEC-104, DNP3 and IEC 61850 monitoring with governed MCP tools for energy systems."
+    },
+    {
       "slug": "io-github-inity13-precisioncalc-mcp",
       "name": "io.github.inity13/precisioncalc-mcp",
       "confidence": 0.55,
@@ -22101,6 +22089,15 @@
       "description": "License your creative work to AI on your terms, and run your creator business. 46 tools, keyless."
     },
     {
+      "slug": "io-github-kerne-protocol-honesty-index",
+      "name": "io.github.kerne-protocol/honesty-index",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Read-only Kerne data on Base: signed reserves, signed stock quote, quote checks, vault state."
+    },
+    {
       "slug": "io-github-kirbah-mcp-youtube",
       "name": "io.github.kirbah/mcp-youtube",
       "confidence": 0.55,
@@ -22144,15 +22141,6 @@
         "observability"
       ],
       "description": "Encrypted credential vault for AI agents — auto OAuth refresh, rate limiting, audit logging."
-    },
-    {
-      "slug": "io-github-kontent-ai-mcp-server",
-      "name": "io.github.kontent-ai/mcp-server",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "Connect to Kontent.ai to manage content, types, taxonomies, and workflows via natural language"
     },
     {
       "slug": "io-github-koreal6803-finlab-ai",
