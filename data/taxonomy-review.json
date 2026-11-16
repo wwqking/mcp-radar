@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-11-15T01:34:41.367Z",
-  "total": 4816,
+  "generatedAt": "2026-11-16T01:37:31.985Z",
+  "total": 4745,
   "summary": {
-    "needsReview": 3274,
-    "needsReviewRatePct": 68,
-    "uncategorized": 2175,
-    "uncategorizedRatePct": 45.2,
+    "needsReview": 3217,
+    "needsReviewRatePct": 67.8,
+    "uncategorized": 2157,
+    "uncategorizedRatePct": 45.5,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.6
+    "largestCategoryRatePct": 33.1
   },
   "alerts": [
-    "待归类占比 45.2%，超过 5% 审核线",
-    "dev 占比 33.6%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 68%，超过 10%"
+    "待归类占比 45.5%，超过 5% 审核线",
+    "dev 占比 33.1%，超过 30% 拆分评估线",
+    "低置信度/待审核占比 67.8%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2175,
-    "dev": 1617,
-    "search": 625,
-    "files": 217,
-    "ai": 191,
+    "misc": 2157,
+    "dev": 1570,
+    "search": 616,
+    "files": 216,
+    "ai": 188,
     "comms": 161,
-    "database": 150,
-    "commerce": 137,
-    "cloud": 108,
-    "browser": 103,
+    "database": 149,
+    "commerce": 135,
+    "cloud": 107,
+    "browser": 102,
     "marketing": 71
   },
   "topicCounts": {
-    "design-media": 246,
-    "automation": 164,
+    "design-media": 237,
+    "automation": 163,
     "finance": 163,
     "legal": 93,
-    "observability": 89,
-    "mcp-infrastructure": 71,
+    "observability": 88,
+    "mcp-infrastructure": 70,
     "visualization": 54,
     "science-health": 27,
     "data-analysis": 22,
     "game-development": 21,
-    "security": 21,
+    "security": 20,
     "iot-robotics": 15
   },
   "emergingTerms": [
@@ -47,11 +47,11 @@
       "count": 316
     },
     {
-      "term": "query",
-      "count": 232
+      "term": "platform-hosted",
+      "count": 230
     },
     {
-      "term": "platform-hosted",
+      "term": "query",
       "count": 230
     },
     {
@@ -76,15 +76,11 @@
     },
     {
       "term": "free",
-      "count": 98
+      "count": 97
     },
     {
       "term": "coding",
-      "count": 95
-    },
-    {
-      "term": "local",
-      "count": 83
+      "count": 96
     },
     {
       "term": "read",
@@ -107,15 +103,11 @@
       "count": 81
     },
     {
+      "term": "local",
+      "count": 80
+    },
+    {
       "term": "live",
-      "count": 77
-    },
-    {
-      "term": "create",
-      "count": 75
-    },
-    {
-      "term": "over",
       "count": 75
     },
     {
@@ -127,43 +119,39 @@
       "count": 74
     },
     {
+      "term": "over",
+      "count": 73
+    },
+    {
       "term": "checks",
-      "count": 72
+      "count": 71
     },
     {
       "term": "read-only",
-      "count": 65
-    },
-    {
-      "term": "check",
-      "count": 58
+      "count": 64
     },
     {
       "term": "person",
       "count": 54
     },
     {
+      "term": "create",
+      "count": 52
+    },
+    {
       "term": "public",
-      "count": 53
+      "count": 52
     },
     {
       "term": "across",
-      "count": 52
-    },
-    {
-      "term": "status",
-      "count": 52
-    },
-    {
-      "term": "tasks",
-      "count": 52
-    },
-    {
-      "term": "x402",
-      "count": 52
+      "count": 51
     },
     {
       "term": "audit",
+      "count": 51
+    },
+    {
+      "term": "x402",
       "count": 51
     },
     {
@@ -176,19 +164,19 @@
     },
     {
       "term": "evidence",
-      "count": 46
+      "count": 45
     },
     {
       "term": "real",
-      "count": 46
-    },
-    {
-      "term": "before",
-      "count": 44
+      "count": 45
     },
     {
       "term": "vehicle",
       "count": 44
+    },
+    {
+      "term": "before",
+      "count": 43
     },
     {
       "term": "local-first",
@@ -196,15 +184,15 @@
     },
     {
       "term": "deterministic",
-      "count": 41
+      "count": 40
     },
     {
       "term": "intelligence",
-      "count": 41
+      "count": 40
     },
     {
       "term": "every",
-      "count": 40
+      "count": 39
     },
     {
       "term": "plus",
@@ -223,16 +211,16 @@
       "count": 37
     },
     {
+      "term": "work",
+      "count": 37
+    },
+    {
       "term": "publish",
       "count": 36
     },
     {
-      "term": "verify",
-      "count": 36
-    },
-    {
-      "term": "work",
-      "count": 36
+      "term": "check",
+      "count": 35
     },
     {
       "term": "debts",
@@ -241,6 +229,18 @@
     {
       "term": "files",
       "count": 35
+    },
+    {
+      "term": "research",
+      "count": 35
+    },
+    {
+      "term": "verify",
+      "count": 35
+    },
+    {
+      "term": "cnpj",
+      "count": 34
     }
   ],
   "reviewQueue": [
@@ -2188,7 +2188,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "817 MCP tools across 1267 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "821 MCP tools across 1271 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -3266,7 +3266,7 @@
       "name": "com.offnadir-delta/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "From first signal to satellite evidence: live world-event intelligence and collection planning."
+      "description": "AI-ready OSINT and satellite GEOINT platform: evidence for the next decision."
     },
     {
       "slug": "com-oksigenia-checker-mcp",
@@ -5135,7 +5135,7 @@
       "name": "io.github.bardesss/arr-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "One server, 46 tools, the whole media stack: *arrs, Jellyfin, Plex, Seerr, Cleanuparr, downloaders"
+      "description": "One server, 44 tools, the whole media stack: *arrs, Jellyfin, Plex, Seerr, Cleanuparr, downloaders"
     },
     {
       "slug": "io-github-barglabs-cejel",
@@ -11879,97 +11879,6 @@
       "description": "Explore PVZ Fusion gameplay, selected plant guides, and verified PC or Android build information"
     },
     {
-      "slug": "io-github-rogerawong-cudaq-docs-mcp",
-      "name": "io.github.rogerawong/cudaq-docs-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "CUDA-Q docs, API reference, and runnable examples for AI agents, pinned to your installed version."
-    },
-    {
-      "slug": "io-github-roian6-health-bridge",
-      "name": "io.github.roian6/health-bridge",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read-only local MCP access to Apple Health data through Apple Health AI Bridge."
-    },
-    {
-      "slug": "io-github-roomi-fields-notebooklm-mcp",
-      "name": "io.github.roomi-fields/notebooklm-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Google Gemini Notebook (ex NotebookLM) over MCP + a local REST API — cited answers, Studio, history"
-    },
-    {
-      "slug": "io-github-rstreamlabs-rstream",
-      "name": "io.github.rstreamlabs/rstream",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Local stdio MCP server for rstream setup, tunnels, WebTTY, and remote operations."
-    },
-    {
-      "slug": "io-github-rubenmarcus-portfolio",
-      "name": "io.github.rubenmarcus/portfolio",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Public portfolio MCP for resume, services, availability, project evidence, and introductions."
-    },
-    {
-      "slug": "io-github-rudranaresh0201-devmcp",
-      "name": "io.github.rudranaresh0201/devmcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Git/CI MCP server with the full protocol surface (tools, resources, prompts, roots, sampling)."
-    },
-    {
-      "slug": "io-github-runcycles-cycles-mcp-server",
-      "name": "io.github.runcycles/cycles-mcp-server",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Runtime budget authority for AI agents — reserve, enforce, reconcile spend across providers"
-    },
-    {
-      "slug": "io-github-rwaldman-agentbits",
-      "name": "io.github.rwaldman/agentbits",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Machine-readable utilities and datasets for AI agents."
-    },
-    {
-      "slug": "io-github-ryansilk-apexvol-mcp",
-      "name": "io.github.ryansilk/apexvol-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Options analytics for AI assistants: chains, IV rank, VRP, Greeks, GEX, expected moves, screeners."
-    },
-    {
-      "slug": "io-github-ryanyang828-listinggood",
-      "name": "io.github.ryanyang828/listinggood",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Get recommended by Amazon's AI. Hosted MCP server for Amazon listing compliance & generation."
-    },
-    {
-      "slug": "io-github-ryoohshima-agenttakt",
-      "name": "io.github.ryoohshima/agenttakt",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Review, edit, and approve AI agent task plans in a ComfyUI-style visual node editor in your terminal"
-    },
-    {
-      "slug": "io-github-s0fractal-warrant",
-      "name": "io.github.s0fractal/warrant",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Record an agent's decisions with reasons anyone can re-execute offline — verify recomputes them."
-    },
-    {
-      "slug": "io-github-saagpatel-mcp-audit",
-      "name": "io.github.saagpatel/mcp-audit",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Scan, enumerate, and risk-score every MCP server configured on your machine."
-    },
-    {
       "slug": "io-github-samik081-mcp-adguard-home",
       "name": "io.github.Samik081/mcp-adguard-home",
       "confidence": 0.35,
@@ -12359,7 +12268,7 @@
       "name": "io.github.Wolfe-Jam/mcp-better",
       "confidence": 0.35,
       "topics": [],
-      "description": "AAIF-verified modern MCP setup optimised to the 2026-07-28 model (BETTER textbook)."
+      "description": "Modern MCP setup for the 2026-07-28 spec (BETTER textbook). AAIF Ambassador contribution."
     },
     {
       "slug": "io-github-xbp-europe-sagemath-mcp",
@@ -15698,21 +15607,21 @@
       "name": "io.github.jdhart81/agent-erc8004-bridge",
       "confidence": 0.45,
       "topics": [],
-      "description": "The MCP-native bridge to ERC-8004 (on-chain agent identity/reputation/validation): resolve registrat"
+      "description": "MCP bridge to ERC-8004 on-chain agent identity, reputation and validation registries."
     },
     {
       "slug": "io-github-jdhart81-agent-escrow",
       "name": "io.github.jdhart81/agent-escrow",
       "confidence": 0.45,
       "topics": [],
-      "description": "Trustless escrow & settlement for A2A transactions: exactly-once state machine, frozen fees, tamper-"
+      "description": "Escrow and settlement for agent-to-agent jobs: exactly-once state machine, frozen fees, audit log."
     },
     {
       "slug": "io-github-jdhart81-agent-hive-orchestrator",
       "name": "io.github.jdhart81/agent-hive-orchestrator",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic nested hive-mind orchestration over the A2A rails: hire N solvers, adversarial cross-r"
+      "description": "Deterministic hive orchestration on the A2A rails: hire N solvers and cross-review their work."
     },
     {
       "slug": "io-github-jdhart81-agent-market-network",
@@ -15726,28 +15635,28 @@
       "name": "io.github.jdhart81/agent-notary",
       "confidence": 0.45,
       "topics": [],
-      "description": "Verifiable delivery for the agent economy: commit-reveal content notarization. Sellers commit to a d"
+      "description": "Verifiable delivery for agent jobs: commit-reveal notarization of delivered content."
     },
     {
       "slug": "io-github-jdhart81-agent-offset-clearinghouse",
       "name": "io.github.jdhart81/agent-offset-clearinghouse",
       "confidence": 0.45,
       "topics": [],
-      "description": "Verified conservation credits matched to agent compute emissions — the conservation flywheel of the "
+      "description": "Matches verified conservation credits to agent compute emissions, with retirement records."
     },
     {
       "slug": "io-github-jdhart81-green-router",
       "name": "io.github.jdhart81/green-router",
       "confidence": 0.45,
       "topics": [],
-      "description": "Carbon-accounted agent compute: free footprints; certificates backed by real offset retirement."
+      "description": "Free energy and carbon footprint quotes for agent compute, and greener backend ranking."
     },
     {
       "slug": "io-github-jdhart81-neurogenesis",
       "name": "io.github.jdhart81/neurogenesis",
       "confidence": 0.45,
       "topics": [],
-      "description": "Developmental agents for the agent economy: create an agent from a digital genome, then evolve it wi"
+      "description": "Developmental agents: create an agent from a digital genome, then evolve it by evaluation."
     },
     {
       "slug": "io-github-jdhart81-regulatory-radar",
@@ -15768,7 +15677,7 @@
       "name": "io.github.jdhart81/smartscale",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic CR80 pixel-geometry scaler. Callers supply the card and object pixel geometry; this MC"
+      "description": "Deterministic CR80 card pixel-geometry scaler for caller-supplied card and object geometry."
     },
     {
       "slug": "io-github-jdhart81-verdigraph",
@@ -15782,7 +15691,7 @@
       "name": "io.github.jdhart81/viridisos",
       "confidence": 0.45,
       "topics": [],
-      "description": "ViridisOS — theorem-backed conservation certification + the unified trust root/mark/toll. Certify pa"
+      "description": "ViridisOS: theorem-backed conservation certification and the fleet's trust root."
     },
     {
       "slug": "io-github-jdpg23-market-data-toolkit-mcp",
@@ -17766,39 +17675,11 @@
       "description": "Run long shell commands as background tasks: start them, keep working, collect the results later"
     },
     {
-      "slug": "io-github-romudille-bit-agentpay",
-      "name": "io.github.romudille-bit/agentpay",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Buyer-side trust oracle + capped sessions for x402 agents: verified_route, receipts, 17 free tools."
-    },
-    {
-      "slug": "io-github-ronniechong-healthchecks-io-mcp",
-      "name": "io.github.ronniechong/healthchecks-io-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Unofficial MCP server for managing Healthchecks.io checks via the Management API"
-    },
-    {
       "slug": "io-github-rubenglez-devicecloud",
       "name": "io.github.RubenGlez/devicecloud",
       "confidence": 0.45,
       "topics": [],
       "description": "Triage failing DeviceCloud Maestro test runs: fail reasons, screenshots, flaky-flow analytics"
-    },
-    {
-      "slug": "io-github-rudimentall1-agent-guardrail",
-      "name": "io.github.rudimentall1/agent-guardrail",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Deterministic policy firewall for AI agent tool calls - YAML rules, not a fuzzy risk score."
-    },
-    {
-      "slug": "io-github-rudimentall1-agentic-wallet-guardian-v3",
-      "name": "io.github.rudimentall1/agentic-wallet-guardian-v3",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Explainable ALLOW/WARN/BLOCK risk decisions for AI agent actions before execution, signed as OAA."
     },
     {
       "slug": "io-github-rudrendupaul-agenticworkspace",
@@ -17953,202 +17834,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Wraps the WorkspaceGuard CLI as a single generic MCP tool for workspace usage checks."
-    },
-    {
-      "slug": "io-github-runapi-builder-flux-2-mcp",
-      "name": "io.github.runapi-builder/flux-2-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Flux 2: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-flux-kontext-mcp",
-      "name": "io.github.runapi-builder/flux-kontext-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Flux Kontext: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-flux-mcp",
-      "name": "io.github.runapi-builder/flux-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Flux: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-gemini-omni-mcp",
-      "name": "io.github.runapi-builder/gemini-omni-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Gemini Omni: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-gemini-tts-mcp",
-      "name": "io.github.runapi-builder/gemini-tts-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Gemini TTS: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-grok-imagine-mcp",
-      "name": "io.github.runapi-builder/grok-imagine-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Grok Imagine: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-hailuo-mcp",
-      "name": "io.github.runapi-builder/hailuo-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Hailuo: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-happyhorse-mcp",
-      "name": "io.github.runapi-builder/happyhorse-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for HappyHorse: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-ideogram-v3-mcp",
-      "name": "io.github.runapi-builder/ideogram-v3-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Ideogram V3: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-imagen-4-mcp",
-      "name": "io.github.runapi-builder/imagen-4-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Imagen 4: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-infinitetalk-mcp",
-      "name": "io.github.runapi-builder/infinitetalk-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for InfiniteTalk: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-kling-mcp",
-      "name": "io.github.runapi-builder/kling-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Kling: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-luma-mcp",
-      "name": "io.github.runapi-builder/luma-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Luma: query historical tasks."
-    },
-    {
-      "slug": "io-github-runapi-builder-midjourney-mcp",
-      "name": "io.github.runapi-builder/midjourney-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Midjourney: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-nano-banana-mcp",
-      "name": "io.github.runapi-builder/nano-banana-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Nano Banana: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-qwen-2-mcp",
-      "name": "io.github.runapi-builder/qwen-2-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Qwen 2: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-recraft-mcp",
-      "name": "io.github.runapi-builder/recraft-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Recraft: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-runway-aleph-mcp",
-      "name": "io.github.runapi-builder/runway-aleph-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Runway Aleph: query historical tasks."
-    },
-    {
-      "slug": "io-github-runapi-builder-runway-mcp",
-      "name": "io.github.runapi-builder/runway-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Runway: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-seedance-mcp",
-      "name": "io.github.runapi-builder/seedance-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Seedance: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-seedream-mcp",
-      "name": "io.github.runapi-builder/seedream-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Seedream: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-suno-mcp",
-      "name": "io.github.runapi-builder/suno-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Suno: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-topaz-mcp",
-      "name": "io.github.runapi-builder/topaz-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Topaz: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-veo-3-1-mcp",
-      "name": "io.github.runapi-builder/veo-3-1-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Veo 3.1: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-wan-mcp",
-      "name": "io.github.runapi-builder/wan-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "RunAPI MCP server for Wan: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-rwestergren-cronometer-api-mcp",
-      "name": "io.github.rwestergren/cronometer-api-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for Cronometer nutrition tracking — food logs, diary, macros, fasting"
-    },
-    {
-      "slug": "io-github-rwestergren-rachio-mcp",
-      "name": "io.github.rwestergren/rachio-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for Rachio sprinkler controllers — schedules, zones, and live watering control"
-    },
-    {
-      "slug": "io-github-ryuxik-snhp",
-      "name": "io.github.ryuxik/snhp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Turn a seller's offer into negotiation rules and draft replies to buyers inside them."
     },
     {
       "slug": "io-github-saihm-admin-saihm-mcp",
@@ -18323,7 +18008,7 @@
       "name": "io.github.The-Pixel-Boys/shield-kya",
       "confidence": 0.45,
       "topics": [],
-      "description": "Audit trail and traceability for AI agents. MCP gate: evaluate, ingest, request approval."
+      "description": "Stops your coding agent from deleting, leaking or dropping things. MCP gate: evaluate and ingest."
     },
     {
       "slug": "io-github-thestevenjohnstone-ai-consensus",
@@ -21310,7 +20995,7 @@
         "design-media",
         "automation"
       ],
-      "description": "CLI, MCP server, and AI agent to automate YouTube workflows"
+      "description": "CLI, MCP server, and AI Agent to automate YouTube workflows"
     },
     {
       "slug": "io-github-egocen-vivideo-vivideo",
@@ -24054,42 +23739,6 @@
       "description": "Manage social publishing workflows through OpenPost"
     },
     {
-      "slug": "io-github-rogermsc-rendercheck",
-      "name": "io.github.rogermsc/rendercheck",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Check generated audio, video and stills for defects. Returns a verdict, not more media."
-    },
-    {
-      "slug": "io-github-rohitcodilya-fixzi-mcp",
-      "name": "io.github.rohitcodilya/fixzi-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "observability"
-      ],
-      "description": "Monitor MCP servers, API contracts and AI outputs for schema drift. Alerts on breaking changes."
-    },
-    {
-      "slug": "io-github-rozetyp-vuln-intel",
-      "name": "io.github.rozetyp/vuln-intel",
-      "confidence": 0.55,
-      "topics": [
-        "security"
-      ],
-      "description": "Free hosted CVE intel for bug-bounty agents: CVE fact-check, attack approaches from paid H1 reports"
-    },
-    {
-      "slug": "io-github-rudranaresh0201-verimcp",
-      "name": "io.github.rudranaresh0201/verimcp",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Transparent MCP proxy that independently re-verifies tool-call claims before the Host trusts them."
-    },
-    {
       "slug": "io-github-rudrendupaul-auditreach",
       "name": "io.github.RudrenduPaul/auditreach",
       "confidence": 0.55,
@@ -24124,78 +23773,6 @@
         "mcp-infrastructure"
       ],
       "description": "Policy-enforcing MCP proxy with portable evidence output."
-    },
-    {
-      "slug": "io-github-runapi-builder-elevenlabs-mcp",
-      "name": "io.github.runapi-builder/elevenlabs-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "RunAPI MCP server for ElevenLabs: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-gpt-4o-image-mcp",
-      "name": "io.github.runapi-builder/gpt-4o-image-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "RunAPI MCP server for GPT-4o Image: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-gpt-image-2-mcp",
-      "name": "io.github.runapi-builder/gpt-image-2-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "RunAPI MCP server for GPT Image 2: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-gpt-image-mcp",
-      "name": "io.github.runapi-builder/gpt-image-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "RunAPI MCP server for GPT Image: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-qwen-image-mcp",
-      "name": "io.github.runapi-builder/qwen-image-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "RunAPI MCP server for Qwen Image: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-runapi-builder-runapi-mcp",
-      "name": "io.github.runapi-builder/runapi-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "130+ AI models for image, video, music, and audio — 18 model families, one RunAPI account."
-    },
-    {
-      "slug": "io-github-runapi-builder-z-image-mcp",
-      "name": "io.github.runapi-builder/z-image-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "RunAPI MCP server for Z Image: create tasks, poll status, check pricing."
-    },
-    {
-      "slug": "io-github-ryss30-orcool-studio",
-      "name": "io.github.ryss30/orcool-studio",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "AI tools for mobile app ad production: concepts, avatars, video rendering, performance feedback."
     },
     {
       "slug": "io-github-sidneybissoli-ilo-mcp-server",
