@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-11-16T01:37:31.985Z",
-  "total": 4745,
+  "generatedAt": "2026-11-17T04:22:29.462Z",
+  "total": 4687,
   "summary": {
-    "needsReview": 3217,
+    "needsReview": 3178,
     "needsReviewRatePct": 67.8,
-    "uncategorized": 2157,
-    "uncategorizedRatePct": 45.5,
+    "uncategorized": 2142,
+    "uncategorizedRatePct": 45.7,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.1
+    "largestCategoryRatePct": 32.8
   },
   "alerts": [
-    "待归类占比 45.5%，超过 5% 审核线",
-    "dev 占比 33.1%，超过 30% 拆分评估线",
+    "待归类占比 45.7%，超过 5% 审核线",
+    "dev 占比 32.8%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.8%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2157,
-    "dev": 1570,
-    "search": 616,
-    "files": 216,
-    "ai": 188,
-    "comms": 161,
-    "database": 149,
-    "commerce": 135,
-    "cloud": 107,
-    "browser": 102,
+    "misc": 2142,
+    "dev": 1537,
+    "search": 611,
+    "files": 211,
+    "ai": 184,
+    "comms": 156,
+    "database": 148,
+    "commerce": 133,
+    "cloud": 105,
+    "browser": 100,
     "marketing": 71
   },
   "topicCounts": {
-    "design-media": 237,
-    "automation": 163,
-    "finance": 163,
+    "design-media": 233,
+    "automation": 161,
+    "finance": 161,
     "legal": 93,
     "observability": 88,
-    "mcp-infrastructure": 70,
+    "mcp-infrastructure": 67,
     "visualization": 54,
-    "science-health": 27,
+    "science-health": 26,
     "data-analysis": 22,
     "game-development": 21,
     "security": 20,
@@ -52,7 +52,7 @@
     },
     {
       "term": "query",
-      "count": 230
+      "count": 229
     },
     {
       "term": "lookup",
@@ -75,20 +75,12 @@
       "count": 103
     },
     {
-      "term": "free",
-      "count": 97
-    },
-    {
       "term": "coding",
-      "count": 96
+      "count": 94
     },
     {
-      "term": "read",
-      "count": 83
-    },
-    {
-      "term": "code",
-      "count": 82
+      "term": "free",
+      "count": 94
     },
     {
       "term": "memory",
@@ -99,16 +91,20 @@
       "count": 82
     },
     {
+      "term": "code",
+      "count": 81
+    },
+    {
       "term": "detran",
       "count": 81
     },
     {
-      "term": "local",
-      "count": 80
+      "term": "read",
+      "count": 81
     },
     {
-      "term": "live",
-      "count": 75
+      "term": "local",
+      "count": 78
     },
     {
       "term": "company",
@@ -119,12 +115,16 @@
       "count": 74
     },
     {
+      "term": "live",
+      "count": 72
+    },
+    {
       "term": "over",
-      "count": 73
+      "count": 72
     },
     {
       "term": "checks",
-      "count": 71
+      "count": 69
     },
     {
       "term": "read-only",
@@ -135,24 +135,24 @@
       "count": 54
     },
     {
-      "term": "create",
-      "count": 52
-    },
-    {
       "term": "public",
       "count": 52
     },
     {
-      "term": "across",
+      "term": "x402",
       "count": 51
+    },
+    {
+      "term": "across",
+      "count": 50
     },
     {
       "term": "audit",
-      "count": 51
+      "count": 50
     },
     {
-      "term": "x402",
-      "count": 51
+      "term": "create",
+      "count": 50
     },
     {
       "term": "analysis",
@@ -164,11 +164,11 @@
     },
     {
       "term": "evidence",
-      "count": 45
+      "count": 44
     },
     {
       "term": "real",
-      "count": 45
+      "count": 44
     },
     {
       "term": "vehicle",
@@ -187,10 +187,6 @@
       "count": 40
     },
     {
-      "term": "intelligence",
-      "count": 40
-    },
-    {
       "term": "every",
       "count": 39
     },
@@ -199,7 +195,7 @@
       "count": 39
     },
     {
-      "term": "find",
+      "term": "intelligence",
       "count": 38
     },
     {
@@ -207,27 +203,19 @@
       "count": 37
     },
     {
-      "term": "usdc",
-      "count": 37
-    },
-    {
       "term": "work",
       "count": 37
     },
     {
-      "term": "publish",
+      "term": "find",
       "count": 36
-    },
-    {
-      "term": "check",
-      "count": 35
     },
     {
       "term": "debts",
       "count": 35
     },
     {
-      "term": "files",
+      "term": "publish",
       "count": 35
     },
     {
@@ -235,11 +223,23 @@
       "count": 35
     },
     {
+      "term": "usdc",
+      "count": 35
+    },
+    {
       "term": "verify",
       "count": 35
     },
     {
+      "term": "check",
+      "count": 34
+    },
+    {
       "term": "cnpj",
+      "count": 34
+    },
+    {
+      "term": "files",
       "count": 34
     }
   ],
@@ -1985,7 +1985,7 @@
       "name": "app.worldmonitor/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Real-time global intelligence on conflict, markets, energy, trade, shipping and cyber. 97 tools."
+      "description": "Real-time global intelligence on conflict, markets, energy, trade, shipping and cyber. 100 tools."
     },
     {
       "slug": "app-zooza-mcp-server",
@@ -2188,7 +2188,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "821 MCP tools across 1271 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "823 MCP tools across 1272 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -5954,7 +5954,7 @@
       "name": "io.github.DevDizzle/gammarips",
       "confidence": 0.35,
       "topics": [],
-      "description": "Anti-firehose options-flow data for AI agents: curated daily pool, features, realized outcomes."
+      "description": "Nightly Combo A options dataset, 10-min liquidity snapshots, and 3-day excursion history for agents."
     },
     {
       "slug": "io-github-devlensio-devlens",
@@ -11330,7 +11330,7 @@
       "name": "io.github.pipeworx-io/revternal",
       "confidence": 0.35,
       "topics": [],
-      "description": "Revternal MCP — wraps Revternal's people/developer intelligence API (api.revternal.com), rebuilt…"
+      "description": "Unofficial Revternal MCP — wraps Revternal's people/developer intelligence API…"
     },
     {
       "slug": "io-github-pipeworx-io-rfc-editor",
@@ -11788,20 +11788,6 @@
       "description": "Audit-first test strategy MCP server for repository-native test planning."
     },
     {
-      "slug": "io-github-rhein1-agoragentic",
-      "name": "io.github.rhein1/agoragentic",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Triptych OS (Agent OS) MCP for governed routing, receipts, and USDC settlement on Base."
-    },
-    {
-      "slug": "io-github-ribato22-volante",
-      "name": "io.github.ribato22/volante",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Routes to the best predicted fit from configured metadata/evidence after hard-capability filtering."
-    },
-    {
       "slug": "io-github-ric-lavers-electron-dance",
       "name": "io.github.Ric-Lavers/electron-dance",
       "confidence": 0.35,
@@ -11814,69 +11800,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Official MCP bridge to Exogram—the Personal AI Agent for your work, people, and life."
-    },
-    {
-      "slug": "io-github-richard7463-ai2human-mcp",
-      "name": "io.github.richard7463/ai2human-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Dispatch human-execution tasks with proof verification, local checks, and compliance reviews."
-    },
-    {
-      "slug": "io-github-richardofortune-cadloop-openscad",
-      "name": "io.github.richardofortune/cadloop-openscad",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Compile OpenSCAD, read computed values, preview and measure the mesh, without a GUI."
-    },
-    {
-      "slug": "io-github-richardofortune-cadloop-slicer",
-      "name": "io.github.richardofortune/cadloop-slicer",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Find printer profiles, check bed fit, slice to .gcode.3mf and extract the G-code."
-    },
-    {
-      "slug": "io-github-rishabhmpc-prompt-compass",
-      "name": "io.github.rishabhmpc/prompt-compass",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Decision-only prompt routing and firewall checks for local/cloud routing, PII and jailbreak risk."
-    },
-    {
-      "slug": "io-github-rithwikbabu-packwright-mcp",
-      "name": "io.github.rithwikbabu/packwright-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Packwright compiles, renders, validates, and captures paired Minecraft Java packs."
-    },
-    {
-      "slug": "io-github-rkocosmergon-cosmergon",
-      "name": "io.github.rkocosmergon/cosmergon",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Living economy for AI agents — Conway physics, energy currency, marketplace, reputation."
-    },
-    {
-      "slug": "io-github-rm0nroe-catalyst-edge-mcp",
-      "name": "io.github.rm0nroe/catalyst-edge-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Source-linked market intelligence for AI agents researching public-company tickers."
-    },
-    {
-      "slug": "io-github-rn-devtools-hub-rn-devtools-hub",
-      "name": "io.github.rn-devtools-hub/rn-devtools-hub",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Drive a running React Native or Expo app from inside its JS runtime: see, act, prove."
-    },
-    {
-      "slug": "io-github-rocnubie-pvz-fusion-mcp",
-      "name": "io.github.rocnubie/pvz-fusion-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Explore PVZ Fusion gameplay, selected plant guides, and verified PC or Android build information"
     },
     {
       "slug": "io-github-samik081-mcp-adguard-home",
@@ -14564,7 +14487,7 @@
       "name": "io.github.EduBase/MCP",
       "confidence": 0.45,
       "topics": [],
-      "description": "EduBase MCP server"
+      "description": "Official EduBase MCP server: training, exams, competencies and results from your AI assistant"
     },
     {
       "slug": "io-github-edushinka-betbetter-mcp",
@@ -17514,13 +17437,6 @@
       "description": "Coding agents build full-stack apps in persistent workspaces and share them by link."
     },
     {
-      "slug": "io-github-replynodes-mcp",
-      "name": "io.github.replynodes/mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Connect AI agents to Replynodes over the Model Context Protocol."
-    },
-    {
       "slug": "io-github-rererr-amenbo",
       "name": "io.github.Rererr/amenbo",
       "confidence": 0.45,
@@ -17528,60 +17444,11 @@
       "description": "Japanese-web-native MCP server for low-impact, token-efficient web collection"
     },
     {
-      "slug": "io-github-resuly-daleads-mcp",
-      "name": "io.github.resuly/daleads-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Australian development application and property intelligence data for AI agents."
-    },
-    {
-      "slug": "io-github-richardofortune-tyrekick",
-      "name": "io.github.richardofortune/tyrekick",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Read and resolve human feedback pinned on your live prototype, straight from your coding agent."
-    },
-    {
-      "slug": "io-github-rigour-labs-rigour",
-      "name": "io.github.rigour-labs/rigour",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Lets coding agents review their change, find an existing helper, and recall the team's lessons."
-    },
-    {
-      "slug": "io-github-rileybuilds-oracle-feeds-mcp",
-      "name": "io.github.rileybuilds/oracle-feeds-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "On-chain price oracles: Chainlink (5 chains) + Pyth, staleness-flagged, no forced RPC key."
-    },
-    {
       "slug": "io-github-rinava-pls-touch-grass",
       "name": "io.github.Rinava/pls-touch-grass",
       "confidence": 0.45,
       "topics": [],
       "description": "An MCP server that knows how long it's been since you touched grass"
-    },
-    {
-      "slug": "io-github-rm-rf-prod-groundtruth",
-      "name": "io.github.rm-rf-prod/groundtruth",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Live docs MCP server. 793+ libraries, evidence-verified answers, code audit, snippets, dispatch."
-    },
-    {
-      "slug": "io-github-rmterenzi-qseow-mcp",
-      "name": "io.github.rmterenzi/qseow-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Agent tools for Qlik Sense Enterprise on Windows: troubleshoot, govern, query and build."
-    },
-    {
-      "slug": "io-github-roamzy-io-mcp-server",
-      "name": "io.github.roamzy-io/mcp-server",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Agent-native global eSIM: buy for 193 countries, per-MB in USDT/USDC. Agents earn 20% referral."
     },
     {
       "slug": "io-github-roberton003-mcp-server-decisions",
@@ -17596,76 +17463,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Live countdown timers for game launches, movie releases, sports and holidays."
-    },
-    {
-      "slug": "io-github-rocnubie-17-0-mcp",
-      "name": "io.github.rocnubie/17-0-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Free 17-0 game. Spin all-time NFL teams, draft 7 legends, simulate a 17-game regular season"
-    },
-    {
-      "slug": "io-github-rocnubie-countdowns-online-mcp",
-      "name": "io.github.rocnubie/countdowns-online-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Live countdown timers for game launches, movie releases, sports and holidays."
-    },
-    {
-      "slug": "io-github-rocnubie-desktop-mate-mcp",
-      "name": "io.github.rocnubie/desktop-mate-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Desktop Mate download, mod sources, characters, and setup in one verified guide with links to"
-    },
-    {
-      "slug": "io-github-rocnubie-makebracket-mcp",
-      "name": "io.github.rocnubie/makebracket-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Create, run, and share brackets for decisions, tournaments, and group votes with no sign-up"
-    },
-    {
-      "slug": "io-github-rocnubie-osrs-calc-mcp",
-      "name": "io.github.rocnubie/osrs-calc-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "OSRS Calculator plans XP, actions, hours, and time to a target level across skills, with combat"
-    },
-    {
-      "slug": "io-github-rocnubie-palsaveeditor-mcp",
-      "name": "io.github.rocnubie/palsaveeditor-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Inspect Palworld save files locally, compare snapshots, create a recognition receipt, and export"
-    },
-    {
-      "slug": "io-github-rocnubie-pitch-queens-mcp",
-      "name": "io.github.rocnubie/pitch-queens-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Pitch Queens is a free, independent 2027 Women's World Cup simulator with a bracket predictor"
-    },
-    {
-      "slug": "io-github-rocnubie-reactiontimetest-mcp",
-      "name": "io.github.rocnubie/reactiontimetest-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Free online reaction time test with five rounds, average milliseconds, rank context, daily streaks"
-    },
-    {
-      "slug": "io-github-rocnubie-tiermakerlist-mcp",
-      "name": "io.github.rocnubie/tiermakerlist-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Rank real images by drag or tap, save drafts locally without sign-up, export a PNG or JSON board"
-    },
-    {
-      "slug": "io-github-rodvan-viralhunt-mcp",
-      "name": "io.github.rodvan/viralhunt-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Trending content on 12 networks, best time, hashtags, templates, drafts and review, publish to 11."
     },
     {
       "slug": "io-github-rohityajee8076-backburner",
@@ -19301,15 +19098,6 @@
         "data-analysis"
       ],
       "description": "The Power BI Authoring MCP server lets an AI agent create and change Power BI semantic models."
-    },
-    {
-      "slug": "com-midvash-bible",
-      "name": "com.midvash/bible",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Free, no-key Bible MCP server — 86 translations in 32 languages, from any MCP client."
     },
     {
       "slug": "com-numeratica-mcp",
@@ -23631,24 +23419,6 @@
       "description": "Model Context Protocol server for Red Hat Lightspeed - advisor, image builder, inventory, and more"
     },
     {
-      "slug": "io-github-rephrasyai-rephrasy-mcp",
-      "name": "io.github.rephrasyai/rephrasy-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Humanize AI text and check AI-detection scores from Claude, Cursor, or any MCP client."
-    },
-    {
-      "slug": "io-github-reutavidan-zetesis",
-      "name": "io.github.reutavidan/zetesis",
-      "confidence": 0.55,
-      "topics": [
-        "science-health"
-      ],
-      "description": "Due diligence on life-science claims: omics, trials, gene therapy. Dimension by dimension."
-    },
-    {
       "slug": "io-github-rezasoleymanifar-vintage",
       "name": "io.github.RezaSoleymanifar/vintage",
       "confidence": 0.55,
@@ -23656,33 +23426,6 @@
         "finance"
       ],
       "description": "Free financial data from eleven sources behind six verbs, point-in-time where the source allows."
-    },
-    {
-      "slug": "io-github-rezmeplxrf-insightsentry-mcp",
-      "name": "io.github.rezmeplxrf/insightsentry_mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "MCP server for InsightSentry financial data API - market data, options, screeners, and more"
-    },
-    {
-      "slug": "io-github-richawo-yaps",
-      "name": "io.github.richawo/yaps",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Transcription, subtitles, meeting transcripts, translation, audio conversion, and private memory."
-    },
-    {
-      "slug": "io-github-richer-richard-cochlea-mcp",
-      "name": "io.github.richer-richard/cochlea-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Render, analyze, and verify audio (WAV/FLAC/mp3/ogg) offline and deterministically via MCP tools."
     },
     {
       "slug": "io-github-riskthinking-cdt-express-mcp",
@@ -23694,15 +23437,6 @@
       "description": "Physical climate risk metrics for locations, assets, companies, and market indexes from CDT Express"
     },
     {
-      "slug": "io-github-rmartins1451-losbeto-mcp",
-      "name": "io.github.rmartins1451/losbeto-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "x402-paid market intelligence: forex, stocks, Brazil macro (BCB/B3) + crypto."
-    },
-    {
       "slug": "io-github-rnvizion-rnv-color-mcp",
       "name": "io.github.RNVizion/rnv-color-mcp",
       "confidence": 0.55,
@@ -23710,33 +23444,6 @@
         "automation"
       ],
       "description": "A complete color workflow over MCP: mix, convert, harmonize, measure, place, and remember palettes."
-    },
-    {
-      "slug": "io-github-rocnubie-museaiimage-mcp",
-      "name": "io.github.rocnubie/museaiimage-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Muse AI Image turns prompts into photoreal pictures and clips with the Muse Image model and Muse"
-    },
-    {
-      "slug": "io-github-rocnubie-producerai-mcp",
-      "name": "io.github.rocnubie/producerai-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Producer AI Music is a free AI music generator. Describe a song or paste lyrics, get a full track"
-    },
-    {
-      "slug": "io-github-rodrgds-openpost",
-      "name": "io.github.rodrgds/openpost",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "Manage social publishing workflows through OpenPost"
     },
     {
       "slug": "io-github-rudrendupaul-auditreach",
