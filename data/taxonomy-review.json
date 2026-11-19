@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-11-18T03:22:06.399Z",
-  "total": 4623,
+  "generatedAt": "2026-11-19T02:59:32.650Z",
+  "total": 4579,
   "summary": {
-    "needsReview": 3129,
-    "needsReviewRatePct": 67.7,
-    "uncategorized": 2111,
-    "uncategorizedRatePct": 45.7,
+    "needsReview": 3092,
+    "needsReviewRatePct": 67.5,
+    "uncategorized": 2085,
+    "uncategorizedRatePct": 45.5,
     "largestCategory": "dev",
     "largestCategoryRatePct": 32.8
   },
   "alerts": [
-    "待归类占比 45.7%，超过 5% 审核线",
+    "待归类占比 45.5%，超过 5% 审核线",
     "dev 占比 32.8%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.7%，超过 10%"
+    "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2111,
-    "dev": 1517,
+    "misc": 2085,
+    "dev": 1502,
     "search": 605,
     "files": 208,
     "ai": 182,
     "comms": 155,
-    "database": 147,
-    "commerce": 131,
-    "cloud": 104,
-    "browser": 96,
+    "database": 146,
+    "commerce": 128,
+    "cloud": 103,
+    "browser": 93,
     "marketing": 70
   },
   "topicCounts": {
@@ -32,8 +32,8 @@
     "automation": 159,
     "finance": 159,
     "legal": 92,
-    "observability": 88,
-    "mcp-infrastructure": 67,
+    "observability": 87,
+    "mcp-infrastructure": 66,
     "visualization": 53,
     "science-health": 26,
     "data-analysis": 22,
@@ -52,7 +52,7 @@
     },
     {
       "term": "query",
-      "count": 228
+      "count": 227
     },
     {
       "term": "lookup",
@@ -83,15 +83,7 @@
       "count": 91
     },
     {
-      "term": "pipeworx-io",
-      "count": 82
-    },
-    {
       "term": "detran",
-      "count": 81
-    },
-    {
-      "term": "memory",
       "count": 81
     },
     {
@@ -99,12 +91,12 @@
       "count": 78
     },
     {
-      "term": "read",
-      "count": 77
+      "term": "memory",
+      "count": 78
     },
     {
       "term": "local",
-      "count": 76
+      "count": 75
     },
     {
       "term": "company",
@@ -112,31 +104,35 @@
     },
     {
       "term": "manage",
-      "count": 74
+      "count": 73
+    },
+    {
+      "term": "read",
+      "count": 73
     },
     {
       "term": "live",
-      "count": 71
+      "count": 69
     },
     {
       "term": "checks",
-      "count": 68
+      "count": 67
     },
     {
       "term": "over",
-      "count": 68
+      "count": 67
+    },
+    {
+      "term": "pipeworx-io",
+      "count": 59
     },
     {
       "term": "read-only",
-      "count": 60
+      "count": 59
     },
     {
       "term": "person",
       "count": 53
-    },
-    {
-      "term": "public",
-      "count": 51
     },
     {
       "term": "create",
@@ -148,14 +144,14 @@
     },
     {
       "term": "audit",
-      "count": 49
-    },
-    {
-      "term": "across",
-      "count": 47
+      "count": 48
     },
     {
       "term": "analysis",
+      "count": 47
+    },
+    {
+      "term": "public",
       "count": 47
     },
     {
@@ -163,8 +159,8 @@
       "count": 46
     },
     {
-      "term": "vehicle",
-      "count": 44
+      "term": "across",
+      "count": 45
     },
     {
       "term": "before",
@@ -172,19 +168,19 @@
     },
     {
       "term": "local-first",
-      "count": 42
+      "count": 41
     },
     {
       "term": "real",
       "count": 41
     },
     {
-      "term": "deterministic",
-      "count": 40
+      "term": "vehicle",
+      "count": 41
     },
     {
-      "term": "every",
-      "count": 39
+      "term": "deterministic",
+      "count": 40
     },
     {
       "term": "evidence",
@@ -195,7 +191,7 @@
       "count": 39
     },
     {
-      "term": "intelligence",
+      "term": "every",
       "count": 38
     },
     {
@@ -203,19 +199,19 @@
       "count": 37
     },
     {
-      "term": "find",
-      "count": 36
+      "term": "intelligence",
+      "count": 37
     },
     {
       "term": "debts",
       "count": 35
     },
     {
-      "term": "publish",
+      "term": "find",
       "count": 35
     },
     {
-      "term": "research",
+      "term": "publish",
       "count": 35
     },
     {
@@ -241,6 +237,10 @@
     {
       "term": "registry",
       "count": 34
+    },
+    {
+      "term": "federal",
+      "count": 33
     }
   ],
   "reviewQueue": [
@@ -2188,7 +2188,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "824 MCP tools across 1273 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "824 MCP tools across 1274 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -2286,7 +2286,7 @@
       "name": "com.aiactradar/ai-act-radar",
       "confidence": 0.35,
       "topics": [],
-      "description": "EU AI Act obligations and updates from ten official sources, incl. the national layer."
+      "description": "EU AI Act obligations and updates from 22 official EU and national sources. No key needed."
     },
     {
       "slug": "com-ainetcafe-ai-netcafe",
@@ -4904,7 +4904,7 @@
       "name": "io.github.AnthonyPuggs/ausecon-mcp-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "Australian economic data from the ABS, RBA, and APRA: CPI, GDP, cash rate, labour, and more."
+      "description": "Unofficial: Australian economic data from the ABS, RBA and APRA. CPI, GDP, cash rate, jobs and more."
     },
     {
       "slug": "io-github-antvsl-oura-mcp",
@@ -5373,7 +5373,7 @@
       "name": "io.github.brianirish/laravel-mcp-companion",
       "confidence": 0.35,
       "topics": [],
-      "description": "Laravel documentation aggregator: multi-version core docs, services, packages, learning paths."
+      "description": "Laravel docs for every version from 6.x to 13.x, plus services and packages, kept local and offline."
     },
     {
       "slug": "io-github-brunovicco-mcp-server-auth-template",
@@ -11347,193 +11347,11 @@
       "description": "SAM.gov MCP — Federal contract opportunities and entity registration data"
     },
     {
-      "slug": "io-github-pipeworx-io-sec-form-d",
-      "name": "io.github.pipeworx-io/sec-form-d",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "SEC Form D fundraising intelligence."
-    },
-    {
-      "slug": "io-github-pipeworx-io-sec-regulations",
-      "name": "io.github.pipeworx-io/sec-regulations",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "SEC Regulations MCP — US securities regulations (17 CFR)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-simap",
-      "name": "io.github.pipeworx-io/simap",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "simap MCP — Swiss public procurement tenders and awards (keyless)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-social-signal",
-      "name": "io.github.pipeworx-io/social-signal",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Social Signal — post-VOLUME TIME SERIES across the open social networks that can be read without…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-spain-tenders",
-      "name": "io.github.pipeworx-io/spain-tenders",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Spain public procurement MCP — PLACSP tender notices (keyless)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-statuspage",
-      "name": "io.github.pipeworx-io/statuspage",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Service status / uptime MCP — Atlassian Statuspage v2."
-    },
-    {
-      "slug": "io-github-pipeworx-io-tax-regulations",
-      "name": "io.github.pipeworx-io/tax-regulations",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Tax Regulations MCP — US Treasury / IRS regulations (26 CFR, 'Treas. Reg.')."
-    },
-    {
-      "slug": "io-github-pipeworx-io-tn-dmv",
-      "name": "io.github.pipeworx-io/tn-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Tennessee DMV MCP — Department of Safety and Homeland Security: the 186 driver service centers…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-treasury-fiscal",
-      "name": "io.github.pipeworx-io/treasury-fiscal",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Treasury Fiscal MCP — US Treasury Fiscal Data API"
-    },
-    {
-      "slug": "io-github-pipeworx-io-tx-dmv",
-      "name": "io.github.pipeworx-io/tx-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Texas DMV MCP — statewide vehicle, pickup and motorcycle registration totals by fiscal year, from…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-udbud-dk",
-      "name": "io.github.pipeworx-io/udbud-dk",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Udbud.dk MCP — Danish government public procurement notices (keyless)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-uk-contracts",
-      "name": "io.github.pipeworx-io/uk-contracts",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "UK Contracts Finder MCP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-uk-gazette",
-      "name": "io.github.pipeworx-io/uk-gazette",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "UK Gazette MCP — The Gazette (www.thegazette.co.uk), the UK's official public record (London /…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-ukri-gtr",
-      "name": "io.github.pipeworx-io/ukri-gtr",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "UKRI Gateway to Research (GtR) MCP — every grant awarded by the UK's seven research councils plus…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-us-dmv",
-      "name": "io.github.pipeworx-io/us-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "US state DMV data: vehicle and EV registrations, office locators, live wait times"
-    },
-    {
-      "slug": "io-github-pipeworx-io-us-gov-contracts",
-      "name": "io.github.pipeworx-io/us-gov-contracts",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "US Government Contracts MCP — awarded state & local government contracts, normalized across…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-vessel-tracking",
-      "name": "io.github.pipeworx-io/vessel-tracking",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Vessel Tracking — live worldwide ship positions from AIS."
-    },
-    {
-      "slug": "io-github-pipeworx-io-visa-requirements",
-      "name": "io.github.pipeworx-io/visa-requirements",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Visa Requirements MCP — passport visa rules for any nationality → destination pair"
-    },
-    {
-      "slug": "io-github-pipeworx-io-wa-dmv",
-      "name": "io.github.pipeworx-io/wa-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Washington State DMV MCP — the Department of Licensing's VIN-level electric-vehicle population…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-wikidata-sparql",
-      "name": "io.github.pipeworx-io/wikidata-sparql",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Wikidata SPARQL MCP — Wikidata Query Service"
-    },
-    {
-      "slug": "io-github-pipeworx-io-wolfram-alpha",
-      "name": "io.github.pipeworx-io/wolfram-alpha",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Wolfram Alpha MCP — computational, factual, and quantitative queries"
-    },
-    {
-      "slug": "io-github-pipeworx-io-worldbank-procurement",
-      "name": "io.github.pipeworx-io/worldbank-procurement",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "World Bank Procurement Notices MCP — global development tenders (keyless)."
-    },
-    {
       "slug": "io-github-pistachiopony-fortunetellers-hand",
       "name": "io.github.PistachioPony/fortunetellers-hand",
       "confidence": 0.35,
       "topics": [],
       "description": "Solo journaling RPG — Claude runs The Fortuneteller's Hand, reading cards and casting Omens."
-    },
-    {
-      "slug": "io-github-plastic-labs-honcho",
-      "name": "io.github.plastic-labs/honcho",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Memory that reasons: continual learning for stateful agents. Better context, fewer tokens."
-    },
-    {
-      "slug": "io-github-potatohoney-p-weasley-deepmind",
-      "name": "io.github.potatohoney-p/weasley-deepmind",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Secure, fragment-based long-term memory for MCP-compatible AI agents."
-    },
-    {
-      "slug": "io-github-prakharagarwal-dev-linkedin-mcp-server",
-      "name": "io.github.prakharagarwal-dev/linkedin-mcp-server",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Find LinkedIn jobs and people, research companies, manage network, posts, and messages with MCP."
-    },
-    {
-      "slug": "io-github-pramodreddyboddu-mq-sentinel",
-      "name": "io.github.pramodreddyboddu/mq-sentinel",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read-only IBM MQ diagnostics for AI agents. Cited root cause, never destructive."
     },
     {
       "slug": "io-github-proagentstore-platform",
@@ -12016,7 +11834,7 @@
       "name": "io.github.Wolfe-Jam/mcp-better",
       "confidence": 0.35,
       "topics": [],
-      "description": "Modern MCP setup for the 2026-07-28 spec (BETTER textbook). AAIF Ambassador contribution."
+      "description": "Rust MCP textbook for 2026-07-28: annotated tools, MCP conformance suite in CI. AAIF contribution."
     },
     {
       "slug": "io-github-xbp-europe-sagemath-mcp",
@@ -17031,81 +16849,11 @@
       "description": "Your agent's overlay network. 435 specialist agents + P2P A2A messaging on a 190k-node network."
     },
     {
-      "slug": "io-github-pipeworx-io-wi-dmv",
-      "name": "io.github.pipeworx-io/wi-dmv",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Wisconsin DMV MCP — every WisDOT DMV customer service center, with the services each individual…"
-    },
-    {
-      "slug": "io-github-plur-ai-plur",
-      "name": "io.github.plur-ai/plur",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Open, local-first engram memory for AI agents: read, correct, delete; shared over MCP."
-    },
-    {
-      "slug": "io-github-pofky-appstore-connect-mcp",
-      "name": "io.github.pofky/appstore-connect-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Check app review status, read reviews, download sales reports from App Store Connect"
-    },
-    {
-      "slug": "io-github-pofky-asc-mcp",
-      "name": "io.github.pofky/asc-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "App Store Connect MCP server: your AI agent checks, fixes, submits and releases your iOS app."
-    },
-    {
       "slug": "io-github-poiuyhje-eqvps",
       "name": "io.github.Poiuyhje/eqvps",
       "confidence": 0.45,
       "topics": [],
       "description": "No-KYC VPS + per-second code sandboxes AI agents run over MCP — 75 tools, SDK, pay BTC/XMR/USDC/USDT"
-    },
-    {
-      "slug": "io-github-polygraphso-litmus",
-      "name": "io.github.polygraphso/litmus",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Grade MCP servers A to F with the open behavioral litmus. npm: full toolset; hosted: lookups only."
-    },
-    {
-      "slug": "io-github-pooriaarab-aigentify",
-      "name": "io.github.pooriaarab/aigentify",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Audit and generate agent-native product surfaces"
-    },
-    {
-      "slug": "io-github-posecode-dev-posecode-mcp",
-      "name": "io.github.posecode-dev/posecode-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Author, ROM-validate, and render 3D human movement (.posecode) with a shareable playground link."
-    },
-    {
-      "slug": "io-github-ppop123-knowuswell-mcp",
-      "name": "io.github.ppop123/knowuswell-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Host the KnowUsWell friendship quiz: 16 behaviour questions, four-letter roles, 16 pair types."
-    },
-    {
-      "slug": "io-github-prashantsinghmangat-tracebug",
-      "name": "io.github.prashantsinghmangat/tracebug",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "AI agents read TraceBug bug reports (console, network, replay, repro timeline) from local disk."
-    },
-    {
-      "slug": "io-github-pratikmehkarkar-vin-recall-mcp",
-      "name": "io.github.pratikmehkarkar/vin-recall-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Decodes US VINs and looks up open NHTSA safety recall campaigns for a vehicle."
     },
     {
       "slug": "io-github-prithviseran-hunch",
@@ -18644,7 +18392,7 @@
       "topics": [
         "finance"
       ],
-      "description": "FREE route+track-record+korra; feed/snapshot $0.01; desk $0.01-$0.09. NFA."
+      "description": "FREE route+track-record+korra; feed/snap/hist $0.01; screener $0.03; desk $0.09. NFA."
     },
     {
       "slug": "com-dexpaprika-dexpaprika",
@@ -19080,7 +18828,7 @@
       "topics": [
         "automation"
       ],
-      "description": "Hosted MCP server connecting AI assistants to 9,000+ apps and 40,000+ actions via Zapier."
+      "description": "Automate workflows across 10,000+ apps. Run one-off actions or build automations with triggers."
     },
     {
       "slug": "com-zhijipaipan-zhiji-bazi",
@@ -22832,6 +22580,15 @@
       "description": "Stock analysis MCP: 38 indicators, 7 optimizers, 8 backtests, US + India sectors."
     },
     {
+      "slug": "io-github-packrift-packrift-mcp",
+      "name": "io.github.Packrift/packrift-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "finance"
+      ],
+      "description": "Shipping boxes, mailers, bags and tape: fit items, cut dimensional weight, live US price and stock."
+    },
+    {
       "slug": "io-github-palveron-governance-gateway",
       "name": "io.github.palveron/governance-gateway",
       "confidence": 0.55,
@@ -22993,24 +22750,6 @@
         "science-health"
       ],
       "description": "FDA medical-device regulatory intelligence from keyless openFDA datasets."
-    },
-    {
-      "slug": "io-github-pricewatcha-pricewatcha",
-      "name": "io.github.pricewatcha/pricewatcha",
-      "confidence": 0.55,
-      "topics": [
-        "observability"
-      ],
-      "description": "Track prices & price history on any online shop, with alerts and an API"
-    },
-    {
-      "slug": "io-github-prismnetwork-tech-mcp",
-      "name": "io.github.prismnetwork-tech/mcp",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Rent real NVIDIA GPUs from your agent. Browse with no wallet; pay per second onchain."
     },
     {
       "slug": "io-github-productofamerica-mcp-server-kicad",
@@ -23263,7 +23002,7 @@
       "topics": [
         "finance"
       ],
-      "description": "Read-only MCP servers for Russian marketplaces: prices, stock, ratings, reviews, seller identity"
+      "description": "Read-only MCP for 12 RU/CN marketplaces (WB, Ozon, Yandex, Avito, Ali): prices, stock, comparison"
     },
     {
       "slug": "io-github-x-pact-pdao-agent-exchange",
