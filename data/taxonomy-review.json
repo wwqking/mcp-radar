@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-11-19T02:59:32.650Z",
-  "total": 4579,
+  "generatedAt": "2026-11-20T02:53:18.450Z",
+  "total": 4548,
   "summary": {
-    "needsReview": 3092,
-    "needsReviewRatePct": 67.5,
-    "uncategorized": 2085,
-    "uncategorizedRatePct": 45.5,
+    "needsReview": 3065,
+    "needsReviewRatePct": 67.4,
+    "uncategorized": 2056,
+    "uncategorizedRatePct": 45.2,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 32.8
+    "largestCategoryRatePct": 33
   },
   "alerts": [
-    "待归类占比 45.5%，超过 5% 审核线",
-    "dev 占比 32.8%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.5%，超过 10%"
+    "待归类占比 45.2%，超过 5% 审核线",
+    "dev 占比 33%，超过 30% 拆分评估线",
+    "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2085,
+    "misc": 2056,
     "dev": 1502,
-    "search": 605,
-    "files": 208,
+    "search": 606,
+    "files": 210,
     "ai": 182,
-    "comms": 155,
-    "database": 146,
-    "commerce": 128,
+    "comms": 154,
+    "database": 145,
+    "commerce": 129,
     "cloud": 103,
     "browser": 93,
     "marketing": 70
@@ -75,12 +75,12 @@
       "count": 103
     },
     {
-      "term": "free",
-      "count": 93
+      "term": "coding",
+      "count": 90
     },
     {
-      "term": "coding",
-      "count": 91
+      "term": "free",
+      "count": 90
     },
     {
       "term": "detran",
@@ -92,39 +92,35 @@
     },
     {
       "term": "memory",
-      "count": 78
-    },
-    {
-      "term": "local",
-      "count": 75
+      "count": 77
     },
     {
       "term": "company",
       "count": 74
     },
     {
+      "term": "read",
+      "count": 74
+    },
+    {
+      "term": "local",
+      "count": 73
+    },
+    {
       "term": "manage",
       "count": 73
-    },
-    {
-      "term": "read",
-      "count": 73
-    },
-    {
-      "term": "live",
-      "count": 69
     },
     {
       "term": "checks",
       "count": 67
     },
     {
-      "term": "over",
+      "term": "live",
       "count": 67
     },
     {
-      "term": "pipeworx-io",
-      "count": 59
+      "term": "over",
+      "count": 67
     },
     {
       "term": "read-only",
@@ -151,16 +147,16 @@
       "count": 47
     },
     {
-      "term": "public",
-      "count": 47
-    },
-    {
       "term": "certificate",
       "count": 46
     },
     {
       "term": "across",
       "count": 45
+    },
+    {
+      "term": "public",
+      "count": 44
     },
     {
       "term": "before",
@@ -175,11 +171,11 @@
       "count": 41
     },
     {
-      "term": "vehicle",
-      "count": 41
+      "term": "deterministic",
+      "count": 40
     },
     {
-      "term": "deterministic",
+      "term": "vehicle",
       "count": 40
     },
     {
@@ -188,10 +184,6 @@
     },
     {
       "term": "plus",
-      "count": 39
-    },
-    {
-      "term": "every",
       "count": 38
     },
     {
@@ -199,8 +191,16 @@
       "count": 37
     },
     {
-      "term": "intelligence",
+      "term": "every",
       "count": 37
+    },
+    {
+      "term": "work",
+      "count": 37
+    },
+    {
+      "term": "intelligence",
+      "count": 36
     },
     {
       "term": "debts",
@@ -223,10 +223,6 @@
       "count": 35
     },
     {
-      "term": "work",
-      "count": 35
-    },
-    {
       "term": "cnpj",
       "count": 34
     },
@@ -239,8 +235,12 @@
       "count": 34
     },
     {
-      "term": "federal",
+      "term": "name",
       "count": 33
+    },
+    {
+      "term": "analytics",
+      "count": 32
     }
   ],
   "reviewQueue": [
@@ -2188,7 +2188,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "824 MCP tools across 1274 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "827 MCP tools across 1275 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -4092,7 +4092,7 @@
       "name": "eu.quantumreadiness/qrp-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Local crypto inventory for developers and AI agents; coverage and limits inside the CBOM."
+      "description": "Offline post-quantum scanner for code: CycloneDX CBOM, RNG calls next to keys, what it did not read"
     },
     {
       "slug": "eu-sendletter-sendletter",
@@ -4114,13 +4114,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!"
-    },
-    {
-      "slug": "fi-ophis-mcp",
-      "name": "fi.ophis/mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Gasless, MEV-protected onchain token swaps for AI agents on 14 EVM chains, built on CoW Protocol."
     },
     {
       "slug": "firebase-mcp",
@@ -4253,7 +4246,7 @@
       "name": "io.atono/atono-mcp-server",
       "confidence": 0.35,
       "topics": [],
-      "description": "Give your AI coding tools your team's product context: stories, bugs, epics, and glossary."
+      "description": "Give your AI coding agents the product context behind the work, from requirements to decisions."
     },
     {
       "slug": "io-ausdata-abs-mcp",
@@ -10294,7 +10287,7 @@
       "name": "io.github.NicoHern/abapilot-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "ABAP MCP connector for SAP ECC and on-premise S/4HANA. Requires a licensed ABAPilot backend."
+      "description": "Governed MCP access to SAP ECC, S/4HANA and RISE, as the named SAP user. Needs the ABAPilot backend."
     },
     {
       "slug": "io-github-nifrajs-nifra-docs",
@@ -11149,202 +11142,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "ISO Standards MCP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-lemmy",
-      "name": "io.github.pipeworx-io/lemmy",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Lemmy MCP — public reads on any Lemmy instance."
-    },
-    {
-      "slug": "io-github-pipeworx-io-md-dmv",
-      "name": "io.github.pipeworx-io/md-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Maryland DMV MCP — monthly registered-vehicle counts and electric/plug-in hybrid adoption by…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-medicaid-intelligence",
-      "name": "io.github.pipeworx-io/medicaid-intelligence",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Investor-oriented Medicaid drug utilization, managed-care, and enrollment signals."
-    },
-    {
-      "slug": "io-github-pipeworx-io-medicare-coverage",
-      "name": "io.github.pipeworx-io/medicare-coverage",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Medicare national and local coverage policy from the official CMS Coverage API."
-    },
-    {
-      "slug": "io-github-pipeworx-io-mhw",
-      "name": "io.github.pipeworx-io/mhw",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MHW MCP — Monster Hunter World data (mhw-db.com, free, no auth)"
-    },
-    {
-      "slug": "io-github-pipeworx-io-mo-dmv",
-      "name": "io.github.pipeworx-io/mo-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Missouri DMV MCP — the Department of Revenue's driver and motor-vehicle license offices, with…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-nc-dmv",
-      "name": "io.github.pipeworx-io/nc-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "North Carolina DMV MCP — live wait times at every NCDMV driver license office and license plate…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-netherlands-tenders",
-      "name": "io.github.pipeworx-io/netherlands-tenders",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Netherlands TenderNed MCP — Dutch government public procurement notices (keyless)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-nihr",
-      "name": "io.github.pipeworx-io/nihr",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "UK NIHR (National Institute for Health and Care Research) open-data MCP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-nist-standards",
-      "name": "io.github.pipeworx-io/nist-standards",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "NIST Standards MCP pack"
-    },
-    {
-      "slug": "io-github-pipeworx-io-nj-mvc",
-      "name": "io.github.pipeworx-io/nj-mvc",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "New Jersey MVC MCP — Motor Vehicle Commission inspection and emission-repair facilities, and the…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-nps",
-      "name": "io.github.pipeworx-io/nps",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "NPS MCP — US National Park Service (free key, generous limits)"
-    },
-    {
-      "slug": "io-github-pipeworx-io-ny-dmv",
-      "name": "io.github.pipeworx-io/ny-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "New York State DMV MCP — registered vehicles and EV adoption by county/ZIP/make, DMV office…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-open-contracting",
-      "name": "io.github.pipeworx-io/open-contracting",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Open Contracting MCP — international public procurement: government tenders and contract awards…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-open-meteo",
-      "name": "io.github.pipeworx-io/open-meteo",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Open-Meteo MCP — weather forecast + historical reanalysis + sister APIs"
-    },
-    {
-      "slug": "io-github-pipeworx-io-opendatasoft",
-      "name": "io.github.pipeworx-io/opendatasoft",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Opendatasoft (generic portal) MCP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-or-dmv",
-      "name": "io.github.pipeworx-io/or-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Oregon DMV MCP — live wait times at all 60 Oregon DMV field offices, plus the office locator the…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-osha",
-      "name": "io.github.pipeworx-io/osha",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "OSHA MCP — US workplace-safety standards (29 CFR Chapter XVII, parts 1900–1990) AND OSHA…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-pa-dmv",
-      "name": "io.github.pipeworx-io/pa-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Pennsylvania DMV MCP — registered vehicles and electric-vehicle adoption by county and by ZIP…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-patents",
-      "name": "io.github.pipeworx-io/patents",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Patents MCP — wraps the USPTO Open Data Portal (ODP) Patent File Wrapper API"
-    },
-    {
-      "slug": "io-github-pipeworx-io-pipeworx-faq",
-      "name": "io.github.pipeworx-io/pipeworx-faq",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Pipeworx FAQ MCP — curated answers to questions ABOUT Pipeworx itself (what it is, pricing…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-polygon-io",
-      "name": "io.github.pipeworx-io/polygon-io",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Massive (formerly Polygon.io) MCP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-property-records",
-      "name": "io.github.pipeworx-io/property-records",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Property Records MCP — address-level US property records (sales history, assessed value, owner…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-qrcode",
-      "name": "io.github.pipeworx-io/qrcode",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "QR Code MCP — wraps api.qrserver.com (free, no auth)"
-    },
-    {
-      "slug": "io-github-pipeworx-io-revternal",
-      "name": "io.github.pipeworx-io/revternal",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Unofficial Revternal MCP — wraps Revternal's people/developer intelligence API…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-rfc-editor",
-      "name": "io.github.pipeworx-io/rfc-editor",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "RFC Editor MCP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-riot-games",
-      "name": "io.github.pipeworx-io/riot-games",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Riot Games API MCP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-samgov",
-      "name": "io.github.pipeworx-io/samgov",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "SAM.gov MCP — Federal contract opportunities and entity registration data"
     },
     {
       "slug": "io-github-pistachiopony-fortunetellers-hand",
@@ -12212,7 +12009,7 @@
       "name": "io.github.aahlijia/dekko",
       "confidence": 0.45,
       "topics": [],
-      "description": "Static code map generator: MAP.md + map.json for any repo, plus a Claude Code /map plugin"
+      "description": "Static code map for any repo (MAP.md + map.json), plus Claude Code, Codex and Cursor plugins"
     },
     {
       "slug": "io-github-aarwitz-tapp",
@@ -12887,6 +12684,13 @@
       "description": "Your AI publishes your site: free HTTPS link, or a .com for €19 that goes live with no DNS."
     },
     {
+      "slug": "io-github-bourbondog-amicus",
+      "name": "io.github.BourbonDog/amicus",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Multi-model council for Claude: review your work or do a task, judged blind. Or fork any model."
+    },
+    {
       "slug": "io-github-boxlab-ltd-yandex-metrica-mcp",
       "name": "io.github.BoxLab-Ltd/yandex-metrica-mcp",
       "confidence": 0.45,
@@ -13045,7 +12849,7 @@
       "name": "io.github.cachly-dev/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Memory for coding agents: stores every fix and finds it again when the problem returns. EU-hosted."
+      "description": "Keeps the rules, decisions and fixes you explain to your AI, for every session and tool. EU servers."
     },
     {
       "slug": "io-github-cadlens-co-cadlens-mcp",
@@ -16608,7 +16412,7 @@
       "name": "io.github.odds-api-io/odds-api-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Odds from 450+ bookmakers across 34 sports: odds, closing lines, settlement, golf outrights."
+      "description": "Odds from 450+ bookmakers across 34 sports: odds, closing lines, settlement, same game parlays."
     },
     {
       "slug": "io-github-odu33104-rive-mcp",
@@ -16762,7 +16566,7 @@
       "name": "io.github.Payotte-com/payotte-mcp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Verified Canadian real-estate pros + housing data: rates, transfer tax, rent-vs-buy, QC assessments."
+      "description": "Verified Canadian real-estate pros, housing grants + housing rules, taxes, prices in 10 countries."
     },
     {
       "slug": "io-github-pedrammadani-legalithm-mcp-server",
@@ -18392,7 +18196,7 @@
       "topics": [
         "finance"
       ],
-      "description": "FREE route+track-record+korra; feed/snap/hist $0.01; screener $0.03; desk $0.09. NFA."
+      "description": "FREE track-record; cached feed/snap/hist/screener/route/korra $0.01; 14 live desks $0.05. NFA."
     },
     {
       "slug": "com-dexpaprika-dexpaprika",
@@ -19616,7 +19420,7 @@
       "topics": [
         "mcp-infrastructure"
       ],
-      "description": "MCP gateway federating 22 biomedical MCP servers behind one endpoint: gnomAD, ClinVar, HPO, VEP."
+      "description": "MCP gateway federating 26 biomedical MCP servers behind one endpoint: gnomAD, ClinVar, HPO, VEP."
     },
     {
       "slug": "io-github-bguillow-rgb-itin-finance",
@@ -20442,6 +20246,15 @@
         "design-media"
       ],
       "description": "41 tools for Adobe Edge Delivery Services: read, audit, track, monitor, fix, publish, undo — safely."
+    },
+    {
+      "slug": "io-github-foundrole-jobs-mcp-proxy",
+      "name": "io.github.foundrole/jobs-mcp-proxy",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Remote jobs & resume tailoring"
     },
     {
       "slug": "io-github-freema-mcp-design-system-extractor",
