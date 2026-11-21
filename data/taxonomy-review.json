@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-11-20T02:53:18.450Z",
-  "total": 4548,
+  "generatedAt": "2026-11-21T03:02:04.865Z",
+  "total": 4516,
   "summary": {
-    "needsReview": 3065,
-    "needsReviewRatePct": 67.4,
-    "uncategorized": 2056,
-    "uncategorizedRatePct": 45.2,
+    "needsReview": 3040,
+    "needsReviewRatePct": 67.3,
+    "uncategorized": 2030,
+    "uncategorizedRatePct": 45,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33
+    "largestCategoryRatePct": 33.2
   },
   "alerts": [
-    "待归类占比 45.2%，超过 5% 审核线",
-    "dev 占比 33%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.4%，超过 10%"
+    "待归类占比 45%，超过 5% 审核线",
+    "dev 占比 33.2%，超过 30% 拆分评估线",
+    "低置信度/待审核占比 67.3%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2056,
-    "dev": 1502,
-    "search": 606,
+    "misc": 2030,
+    "dev": 1501,
+    "search": 601,
     "files": 210,
     "ai": 182,
     "comms": 154,
@@ -33,9 +33,9 @@
     "finance": 159,
     "legal": 92,
     "observability": 87,
-    "mcp-infrastructure": 66,
-    "visualization": 53,
-    "science-health": 26,
+    "mcp-infrastructure": 68,
+    "visualization": 52,
+    "science-health": 25,
     "data-analysis": 22,
     "security": 20,
     "game-development": 19,
@@ -80,7 +80,7 @@
     },
     {
       "term": "free",
-      "count": 90
+      "count": 89
     },
     {
       "term": "detran",
@@ -88,11 +88,11 @@
     },
     {
       "term": "code",
-      "count": 78
+      "count": 79
     },
     {
       "term": "memory",
-      "count": 77
+      "count": 78
     },
     {
       "term": "company",
@@ -111,16 +111,16 @@
       "count": 73
     },
     {
-      "term": "checks",
+      "term": "over",
       "count": 67
+    },
+    {
+      "term": "checks",
+      "count": 66
     },
     {
       "term": "live",
-      "count": 67
-    },
-    {
-      "term": "over",
-      "count": 67
+      "count": 66
     },
     {
       "term": "read-only",
@@ -136,7 +136,7 @@
     },
     {
       "term": "x402",
-      "count": 50
+      "count": 49
     },
     {
       "term": "audit",
@@ -155,10 +155,6 @@
       "count": 45
     },
     {
-      "term": "public",
-      "count": 44
-    },
-    {
       "term": "before",
       "count": 42
     },
@@ -175,7 +171,7 @@
       "count": 40
     },
     {
-      "term": "vehicle",
+      "term": "public",
       "count": 40
     },
     {
@@ -184,6 +180,10 @@
     },
     {
       "term": "plus",
+      "count": 38
+    },
+    {
+      "term": "vehicle",
       "count": 38
     },
     {
@@ -199,11 +199,11 @@
       "count": 37
     },
     {
-      "term": "intelligence",
-      "count": 36
+      "term": "debts",
+      "count": 35
     },
     {
-      "term": "debts",
+      "term": "files",
       "count": 35
     },
     {
@@ -211,11 +211,11 @@
       "count": 35
     },
     {
-      "term": "publish",
+      "term": "intelligence",
       "count": 35
     },
     {
-      "term": "usdc",
+      "term": "publish",
       "count": 35
     },
     {
@@ -227,11 +227,11 @@
       "count": 34
     },
     {
-      "term": "files",
+      "term": "registry",
       "count": 34
     },
     {
-      "term": "registry",
+      "term": "usdc",
       "count": 34
     },
     {
@@ -2188,7 +2188,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "827 MCP tools across 1275 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "828 MCP tools across 1276 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -10976,174 +10976,6 @@
       "description": "CTA MCP — Chicago Transit Authority real-time trains ('L') + buses"
     },
     {
-      "slug": "io-github-pipeworx-io-dc-dmv",
-      "name": "io.github.pipeworx-io/dc-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "District of Columbia DMV MCP — DMV service centers, the record-level vehicle-inspection file, and…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-de-dmv",
-      "name": "io.github.pipeworx-io/de-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Delaware DMV MCP — registered vehicles by fuel type, EV adoption, the state's electric vehicle and…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-digitraffic-ais",
-      "name": "io.github.pipeworx-io/digitraffic-ais",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Digitraffic AIS MCP — live vessel positions in Finnish and Baltic Sea waters."
-    },
-    {
-      "slug": "io-github-pipeworx-io-doffin",
-      "name": "io.github.pipeworx-io/doffin",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Doffin MCP — Norwegian government public procurement notices (BYOK / platform key)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-edgar",
-      "name": "io.github.pipeworx-io/edgar",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "EDGAR MCP — SEC EDGAR public APIs (free, no auth)"
-    },
-    {
-      "slug": "io-github-pipeworx-io-entur",
-      "name": "io.github.pipeworx-io/entur",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Entur MCP — Norway public transport, nationwide, all modes (developer.entur.org)"
-    },
-    {
-      "slug": "io-github-pipeworx-io-epa-regulations",
-      "name": "io.github.pipeworx-io/epa-regulations",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "EPA Regulations MCP — US Environmental Protection Agency regulations (40 CFR)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-faa-regulations",
-      "name": "io.github.pipeworx-io/faa-regulations",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "FAA Regulations MCP — US Federal Aviation Regulations (14 CFR, 'FARs')."
-    },
-    {
-      "slug": "io-github-pipeworx-io-fac",
-      "name": "io.github.pipeworx-io/fac",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Federal Audit Clearinghouse (FAC) MCP — US single-audit data, served from a served from a…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-fcc-regulations",
-      "name": "io.github.pipeworx-io/fcc-regulations",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "FCC Regulations MCP — US Federal Communications Commission rules (47 CFR)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-fda-drug-competition",
-      "name": "io.github.pipeworx-io/fda-drug-competition",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Orange Book competitive intelligence from FDA's monthly official data ZIP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-fda-regulations",
-      "name": "io.github.pipeworx-io/fda-regulations",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "FDA Regulations MCP — US Food & Drug Administration regulations (21 CFR)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-freshdesk",
-      "name": "io.github.pipeworx-io/freshdesk",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Freshdesk MCP Pack — helpdesk ticket and contact management via Freshdesk API v2."
-    },
-    {
-      "slug": "io-github-pipeworx-io-gets-nz",
-      "name": "io.github.pipeworx-io/gets-nz",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "GETS NZ MCP — New Zealand Government Electronic Tenders Service (keyless)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-gov-auctions",
-      "name": "io.github.pipeworx-io/gov-auctions",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Government Auctions MCP — physical-asset auctions (surplus, seized, forfeited, tax-deed) that…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-gov-bids",
-      "name": "io.github.pipeworx-io/gov-bids",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Gov Bids MCP — open & historical US government bid solicitations (Wave 4b, hosted)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-grantconnect-au",
-      "name": "io.github.pipeworx-io/grantconnect-au",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "GrantConnect (Australia) MCP — Commonwealth grant opportunities and grants awarded, from…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-h1b",
-      "name": "io.github.pipeworx-io/h1b",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "H-1B MCP — US H-1B visa sponsorship & wage data from DOL Labor Condition Application (LCA)…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-hi-dmv",
-      "name": "io.github.pipeworx-io/hi-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hawaii vehicle-registration MCP — the statewide cumulative count of hybrid and electric vehicles…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-hilma",
-      "name": "io.github.pipeworx-io/hilma",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hilma MCP — Finnish government public procurement notices (keyed)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-ia-dmv",
-      "name": "io.github.pipeworx-io/ia-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Iowa DMV MCP — the Iowa DOT Motor Vehicle Division's 18 driver license stations, with hours, CDL…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-in-bmv",
-      "name": "io.github.pipeworx-io/in-bmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Indiana BMV MCP — Bureau of Motor Vehicles branches, self-service kiosks, BMV Connect locations…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-irail",
-      "name": "io.github.pipeworx-io/irail",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "iRail MCP — Belgian rail (SNCB/NMBS) real-time via the community iRail API (https://api.irail.be…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-iso",
-      "name": "io.github.pipeworx-io/iso",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "ISO Standards MCP."
-    },
-    {
       "slug": "io-github-pistachiopony-fortunetellers-hand",
       "name": "io.github.PistachioPony/fortunetellers-hand",
       "confidence": 0.35,
@@ -12682,6 +12514,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Your AI publishes your site: free HTTPS link, or a .com for €19 that goes live with no DNS."
+    },
+    {
+      "slug": "io-github-botzrdev-dreamd",
+      "name": "io.github.botzrDev/dreamd",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Shared memory for Claude Code, Cursor and Cline, in files you can audit. Lessons cite their sources."
     },
     {
       "slug": "io-github-bourbondog-amicus",
@@ -14494,7 +14333,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 673 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 682 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-good-sender-goodsender-mcp",
@@ -15419,13 +15258,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "MCP server for Cinema 4D — entity CRUD, parameter-level access, batched undo, security controls."
-    },
-    {
-      "slug": "io-github-kwizzlesurp10-ctrl-x402-mcp",
-      "name": "io.github.kwizzlesurp10-ctrl/x402-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Pay-per-call US city property compliance and Base tx checks, paid in USDC on Base via x402."
     },
     {
       "slug": "io-github-kyungseopk1m-semver-checks",
@@ -18975,9 +18807,10 @@
       "name": "io.github.aartiq/nowaikit",
       "confidence": 0.55,
       "topics": [
+        "mcp-infrastructure",
         "automation"
       ],
-      "description": "ServiceNow MCP server: 450+ tools for Claude, ChatGPT, Copilot & any AI. Read-only by default."
+      "description": "AI toolkit for ServiceNow: 500+ tools for Claude, ChatGPT, Copilot and any MCP client."
     },
     {
       "slug": "io-github-acedatacloud-mcp-fish",
@@ -19420,7 +19253,7 @@
       "topics": [
         "mcp-infrastructure"
       ],
-      "description": "MCP gateway federating 26 biomedical MCP servers behind one endpoint: gnomAD, ClinVar, HPO, VEP."
+      "description": "MCP gateway federating 30 biomedical MCP servers behind one endpoint: gnomAD, ClinVar, HPO, VEP."
     },
     {
       "slug": "io-github-bguillow-rgb-itin-finance",
@@ -20940,6 +20773,15 @@
         "legal"
       ],
       "description": "Offline AI governance code indicators (EU AI Act, Korea, Colorado). Indication, not legal advice."
+    },
+    {
+      "slug": "io-github-kwizzlesurp10-ctrl-x402-mcp",
+      "name": "io.github.kwizzlesurp10-ctrl/x402-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Base mainnet x402 ($0.01 USDC) MCP gateway for 14+ US city housing & property compliance checks."
     },
     {
       "slug": "io-github-kyanitelabs-kinocut",
@@ -22545,24 +22387,6 @@
         "legal"
       ],
       "description": "CourtListener MCP — Free Law Project's CourtListener API (v4)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-energy-charts",
-      "name": "io.github.pipeworx-io/energy-charts",
-      "confidence": 0.55,
-      "topics": [
-        "visualization"
-      ],
-      "description": "Energy-Charts (Fraunhofer ISE) MCP — European electricity generation, prices, and capacity.…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-fda-devices",
-      "name": "io.github.pipeworx-io/fda-devices",
-      "confidence": 0.55,
-      "topics": [
-        "science-health"
-      ],
-      "description": "FDA medical-device regulatory intelligence from keyless openFDA datasets."
     },
     {
       "slug": "io-github-productofamerica-mcp-server-kicad",
