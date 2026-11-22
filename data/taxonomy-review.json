@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-11-21T03:02:04.865Z",
-  "total": 4516,
+  "generatedAt": "2026-11-22T01:57:04.495Z",
+  "total": 4496,
   "summary": {
-    "needsReview": 3040,
+    "needsReview": 3025,
     "needsReviewRatePct": 67.3,
-    "uncategorized": 2030,
-    "uncategorizedRatePct": 45,
+    "uncategorized": 2017,
+    "uncategorizedRatePct": 44.9,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.2
+    "largestCategoryRatePct": 33.3
   },
   "alerts": [
-    "待归类占比 45%，超过 5% 审核线",
-    "dev 占比 33.2%，超过 30% 拆分评估线",
+    "待归类占比 44.9%，超过 5% 审核线",
+    "dev 占比 33.3%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.3%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 2030,
-    "dev": 1501,
-    "search": 601,
-    "files": 210,
+    "misc": 2017,
+    "dev": 1498,
+    "search": 599,
+    "files": 207,
     "ai": 182,
     "comms": 154,
-    "database": 145,
-    "commerce": 129,
+    "database": 144,
+    "commerce": 128,
     "cloud": 103,
-    "browser": 93,
+    "browser": 92,
     "marketing": 70
   },
   "topicCounts": {
     "design-media": 228,
     "automation": 159,
-    "finance": 159,
-    "legal": 92,
+    "finance": 156,
+    "legal": 91,
     "observability": 87,
     "mcp-infrastructure": 68,
     "visualization": 52,
-    "science-health": 25,
+    "science-health": 26,
     "data-analysis": 22,
     "security": 20,
     "game-development": 19,
@@ -80,7 +80,7 @@
     },
     {
       "term": "free",
-      "count": 89
+      "count": 88
     },
     {
       "term": "detran",
@@ -88,7 +88,7 @@
     },
     {
       "term": "code",
-      "count": 79
+      "count": 78
     },
     {
       "term": "memory",
@@ -147,12 +147,12 @@
       "count": 47
     },
     {
-      "term": "certificate",
+      "term": "across",
       "count": 46
     },
     {
-      "term": "across",
-      "count": 45
+      "term": "certificate",
+      "count": 46
     },
     {
       "term": "before",
@@ -167,12 +167,12 @@
       "count": 41
     },
     {
-      "term": "deterministic",
+      "term": "public",
       "count": 40
     },
     {
-      "term": "public",
-      "count": 40
+      "term": "deterministic",
+      "count": 39
     },
     {
       "term": "evidence",
@@ -183,15 +183,15 @@
       "count": 38
     },
     {
-      "term": "vehicle",
-      "count": 38
-    },
-    {
       "term": "clearance",
       "count": 37
     },
     {
       "term": "every",
+      "count": 37
+    },
+    {
+      "term": "vehicle",
       "count": 37
     },
     {
@@ -1999,7 +1999,7 @@
       "name": "art.travel/mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Art-tourism data for AI agents: biennales, art fairs, museums, layover itineraries with 2026 facts."
+      "description": "Verified art-travel data: art events, museum hours and room status by date, layovers, itineraries."
     },
     {
       "slug": "arxiv-mcp-server",
@@ -3791,7 +3791,7 @@
       "name": "dev.1social/1social",
       "confidence": 0.35,
       "topics": [],
-      "description": "Publish, schedule and verify social posts across eight networks from your AI assistant."
+      "description": "Publish, schedule and verify social posts across ten networks from your AI assistant."
     },
     {
       "slug": "dev-adrkit-mcp",
@@ -5555,7 +5555,7 @@
       "name": "io.github.clarilayer/clarilayer",
       "confidence": 0.35,
       "topics": [],
-      "description": "Individual-analyst context layer: recall, remember, and reconcile your data and engineering context."
+      "description": "Turns selected past conversations into durable context your AI can use across projects and sessions."
     },
     {
       "slug": "io-github-clervo-connect",
@@ -7110,13 +7110,6 @@
       "confidence": 0.35,
       "topics": [],
       "description": "DigiKey and Mouser MCP server for component research, BOM analysis, and sourcing."
-    },
-    {
-      "slug": "io-github-jurimaxam-dotcom-chemdraw-mcp",
-      "name": "io.github.jurimaxam-dotcom/chemdraw-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Molecule names or SMILES to 2D structures, reactions, mechanisms, spectra - drawn locally by RDKit."
     },
     {
       "slug": "io-github-justhandledlabs-agent-gateway",
@@ -10920,62 +10913,6 @@
       "description": "GA4 conversion analyst inside Claude — funnel drops, traffic anomalies, device gaps, with numbers."
     },
     {
-      "slug": "io-github-pineforge-4pass-pineforge-backtest-mcp",
-      "name": "io.github.pineforge-4pass/pineforge-backtest-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Offline PineScript v6 → C++ backtests at deterministic TradingView parity, run locally via MCP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-bright-data",
-      "name": "io.github.pipeworx-io/bright-data",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Bright Data MCP — Bright Data Web Unlocker + SERP API (brightdata.com)"
-    },
-    {
-      "slug": "io-github-pipeworx-io-ca-dmv",
-      "name": "io.github.pipeworx-io/ca-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "California DMV MCP — registered vehicles and EV adoption by ZIP code, field offices, the official…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-ca-grants",
-      "name": "io.github.pipeworx-io/ca-grants",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "California Grants Portal MCP — open State of California grant funding opportunities (keyless)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-censtatd-hk",
-      "name": "io.github.pipeworx-io/censtatd-hk",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Hong Kong Census and Statistics Department (C&SD) open-data MCP."
-    },
-    {
-      "slug": "io-github-pipeworx-io-citybikes",
-      "name": "io.github.pipeworx-io/citybikes",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Citybikes MCP — wraps CityBik.es API (free, no auth required)"
-    },
-    {
-      "slug": "io-github-pipeworx-io-ct-dmv",
-      "name": "io.github.pipeworx-io/ct-dmv",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Connecticut DMV MCP — electric-vehicle registrations at vehicle level, aggregated on demand by…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-cta",
-      "name": "io.github.pipeworx-io/cta",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "CTA MCP — Chicago Transit Authority real-time trains ('L') + buses"
-    },
-    {
       "slug": "io-github-pistachiopony-fortunetellers-hand",
       "name": "io.github.PistachioPony/fortunetellers-hand",
       "confidence": 0.35,
@@ -12492,7 +12429,7 @@
       "name": "io.github.blackwell-systems/agent-lsp",
       "confidence": 0.45,
       "topics": [],
-      "description": "Language servers as 66 code-intelligence tools for AI agents, CI-verified on 32 languages."
+      "description": "Language servers as 66 code-intelligence tools for AI agents, CI-verified on 33 languages."
     },
     {
       "slug": "io-github-blite-hq-qnexus-mcp",
@@ -14333,7 +14270,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 682 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 684 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-good-sender-goodsender-mcp",
@@ -16464,25 +16401,11 @@
       "description": "Agent-first bookmark management with auto-registration, categories, tags, and shared collections."
     },
     {
-      "slug": "io-github-pierreb4-seven-dpt-mcp",
-      "name": "io.github.pierreb4/seven-dpt-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Feynman's twelve-problems method as an MCP server: dormant problems + an evoke loop for new tricks."
-    },
-    {
       "slug": "io-github-pierrejanineh-tech-debt-mcp",
       "name": "io.github.PierreJanineh/tech-debt-mcp",
       "confidence": 0.45,
       "topics": [],
       "description": "MCP Server for analyzing technical debt across multiple programming languages"
-    },
-    {
-      "slug": "io-github-pilot-protocol-pilot-mcp",
-      "name": "io.github.pilot-protocol/pilot-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Your agent's overlay network. 435 specialist agents + P2P A2A messaging on a 190k-node network."
     },
     {
       "slug": "io-github-poiuyhje-eqvps",
@@ -18374,7 +18297,7 @@
       "topics": [
         "security"
       ],
-      "description": "Threadlinqs threat-intelligence MCP — 73 tools: threats, detections, IOCs, actors, C2, MITRE, CVEs"
+      "description": "Threat intelligence: threats, detections (SPL/KQL/Sigma), IOCs, CVEs/CWEs, ATT&CK coverage, actors"
     },
     {
       "slug": "com-tokportal-mcp",
@@ -20658,6 +20581,15 @@
       "description": "Korean market data: kimchi premium, sell-side research, news. Pay per call in USDC via x402."
     },
     {
+      "slug": "io-github-jurimaxam-dotcom-chemdraw-mcp",
+      "name": "io.github.jurimaxam-dotcom/chemdraw-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "science-health"
+      ],
+      "description": "Interactive chemistry panels for structures, 3D models, proteins, mechanisms, spectra and lab plots."
+    },
+    {
       "slug": "io-github-jyswee-bandsaas",
       "name": "io.github.jyswee/bandsaas",
       "confidence": 0.55,
@@ -21607,15 +21539,6 @@
       "description": "Read-only enterprise research MCP: frameworks, frozen snapshots, sourced results. No trading advice."
     },
     {
-      "slug": "io-github-mikeypetrillo-agent402",
-      "name": "io.github.MikeyPetrillo/agent402",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Agentic Finance: 500+ agent tools, multi-chain USDC over x402 or MPP, or free via proof-of-work"
-    },
-    {
       "slug": "io-github-mikkoparkkola-mcp-gateway",
       "name": "io.github.MikkoParkkola/mcp-gateway",
       "confidence": 0.55,
@@ -21932,7 +21855,7 @@
       "topics": [
         "automation"
       ],
-      "description": "Your saved nanoodle workflow graphs as MCP tools — BYOK or pay per call in Nano (x402)"
+      "description": "Saved or agent-composed nanoodle workflows as MCP tools: BYOK, pay per call in Nano, or pay in NEAR"
     },
     {
       "slug": "io-github-narumiruna-yfinance-mcp",
@@ -22351,42 +22274,6 @@
         "science-health"
       ],
       "description": "Every doctor, your complete record: connect your patient portals or upload records from any doctor."
-    },
-    {
-      "slug": "io-github-pipeworx-io-alpaca",
-      "name": "io.github.pipeworx-io/alpaca",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Alpaca MCP — real-time US stock market data via the Alpaca Market Data API (data.alpaca.markets…"
-    },
-    {
-      "slug": "io-github-pipeworx-io-banking-regulations",
-      "name": "io.github.pipeworx-io/banking-regulations",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Banking Regulations MCP — US banking & consumer-finance rules (12 CFR)."
-    },
-    {
-      "slug": "io-github-pipeworx-io-china-stocks",
-      "name": "io.github.pipeworx-io/china-stocks",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "China A-shares MCP. Keyless."
-    },
-    {
-      "slug": "io-github-pipeworx-io-court-listener",
-      "name": "io.github.pipeworx-io/court-listener",
-      "confidence": 0.55,
-      "topics": [
-        "legal"
-      ],
-      "description": "CourtListener MCP — Free Law Project's CourtListener API (v4)."
     },
     {
       "slug": "io-github-productofamerica-mcp-server-kicad",
