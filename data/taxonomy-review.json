@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-11-23T02:15:40.929Z",
-  "total": 4364,
+  "generatedAt": "2026-11-24T05:48:03.977Z",
+  "total": 4265,
   "summary": {
-    "needsReview": 2934,
+    "needsReview": 2865,
     "needsReviewRatePct": 67.2,
-    "uncategorized": 1962,
-    "uncategorizedRatePct": 45,
+    "uncategorized": 1907,
+    "uncategorizedRatePct": 44.7,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.1
+    "largestCategoryRatePct": 33.3
   },
   "alerts": [
-    "待归类占比 45%，超过 5% 审核线",
-    "dev 占比 33.1%，超过 30% 拆分评估线",
+    "待归类占比 44.7%，超过 5% 审核线",
+    "dev 占比 33.3%，超过 30% 拆分评估线",
     "低置信度/待审核占比 67.2%，超过 10%"
   ],
   "categoryCounts": {
-    "misc": 1962,
-    "dev": 1443,
-    "search": 589,
-    "files": 201,
-    "ai": 179,
-    "comms": 148,
-    "database": 137,
-    "commerce": 125,
-    "cloud": 97,
+    "misc": 1907,
+    "dev": 1420,
+    "search": 581,
+    "files": 198,
+    "ai": 172,
+    "comms": 145,
+    "database": 136,
+    "commerce": 120,
+    "cloud": 96,
     "browser": 91,
     "marketing": 68
   },
   "topicCounts": {
-    "design-media": 220,
-    "automation": 157,
-    "finance": 151,
+    "design-media": 216,
+    "automation": 154,
+    "finance": 147,
     "legal": 90,
-    "observability": 81,
-    "mcp-infrastructure": 63,
-    "visualization": 49,
-    "science-health": 25,
+    "observability": 78,
+    "mcp-infrastructure": 62,
+    "visualization": 48,
+    "science-health": 23,
     "data-analysis": 21,
     "game-development": 19,
     "security": 19,
@@ -52,11 +52,11 @@
     },
     {
       "term": "query",
-      "count": 226
+      "count": 225
     },
     {
       "term": "lookup",
-      "count": 213
+      "count": 212
     },
     {
       "term": "official-source",
@@ -75,12 +75,12 @@
       "count": 103
     },
     {
-      "term": "free",
-      "count": 86
+      "term": "coding",
+      "count": 84
     },
     {
-      "term": "coding",
-      "count": 85
+      "term": "free",
+      "count": 83
     },
     {
       "term": "detran",
@@ -88,43 +88,43 @@
     },
     {
       "term": "memory",
-      "count": 76
+      "count": 75
     },
     {
       "term": "company",
-      "count": 74
+      "count": 73
     },
     {
       "term": "manage",
-      "count": 72
-    },
-    {
-      "term": "local",
-      "count": 69
-    },
-    {
-      "term": "read",
-      "count": 69
-    },
-    {
-      "term": "code",
       "count": 68
     },
     {
+      "term": "code",
+      "count": 67
+    },
+    {
+      "term": "local",
+      "count": 67
+    },
+    {
       "term": "live",
-      "count": 66
-    },
-    {
-      "term": "over",
-      "count": 65
-    },
-    {
-      "term": "checks",
       "count": 64
     },
     {
+      "term": "checks",
+      "count": 63
+    },
+    {
+      "term": "over",
+      "count": 63
+    },
+    {
+      "term": "read",
+      "count": 63
+    },
+    {
       "term": "read-only",
-      "count": 59
+      "count": 57
     },
     {
       "term": "person",
@@ -132,15 +132,11 @@
     },
     {
       "term": "create",
-      "count": 49
-    },
-    {
-      "term": "x402",
       "count": 48
     },
     {
       "term": "audit",
-      "count": 47
+      "count": 46
     },
     {
       "term": "certificate",
@@ -151,8 +147,12 @@
       "count": 45
     },
     {
+      "term": "x402",
+      "count": 45
+    },
+    {
       "term": "analysis",
-      "count": 44
+      "count": 42
     },
     {
       "term": "before",
@@ -160,10 +160,6 @@
     },
     {
       "term": "real",
-      "count": 40
-    },
-    {
-      "term": "public",
       "count": 39
     },
     {
@@ -171,7 +167,7 @@
       "count": 38
     },
     {
-      "term": "local-first",
+      "term": "public",
       "count": 38
     },
     {
@@ -179,15 +175,11 @@
       "count": 37
     },
     {
-      "term": "deterministic",
-      "count": 37
-    },
-    {
       "term": "every",
       "count": 37
     },
     {
-      "term": "plus",
+      "term": "local-first",
       "count": 37
     },
     {
@@ -195,15 +187,23 @@
       "count": 37
     },
     {
-      "term": "work",
-      "count": 37
-    },
-    {
-      "term": "debts",
-      "count": 35
+      "term": "deterministic",
+      "count": 36
     },
     {
       "term": "find",
+      "count": 36
+    },
+    {
+      "term": "plus",
+      "count": 36
+    },
+    {
+      "term": "work",
+      "count": 36
+    },
+    {
+      "term": "debts",
       "count": 35
     },
     {
@@ -219,14 +219,6 @@
       "count": 34
     },
     {
-      "term": "registry",
-      "count": 34
-    },
-    {
-      "term": "publish",
-      "count": 33
-    },
-    {
       "term": "list",
       "count": 32
     },
@@ -235,12 +227,20 @@
       "count": 32
     },
     {
+      "term": "publish",
+      "count": 32
+    },
+    {
+      "term": "registry",
+      "count": 32
+    },
+    {
       "term": "research",
       "count": 32
     },
     {
-      "term": "usdc",
-      "count": 32
+      "term": "apps",
+      "count": 31
     }
   ],
   "reviewQueue": [
@@ -1946,13 +1946,6 @@
       "description": "AI crypto signals, whale positions, 19 technical indicators, derivatives, screener and backtests"
     },
     {
-      "slug": "app-trustydata-trustydata",
-      "name": "app.trustydata/trustydata",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "French address quality, geocoding, routing, company lookup & catchment stats (BAN, INSEE, OSM)."
-    },
-    {
       "slug": "app-turnale-turnale",
       "name": "app.turnale/turnale",
       "confidence": 0.35,
@@ -2188,7 +2181,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "832 MCP tools across 1277 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "836 MCP tools across 1280 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -2951,7 +2944,7 @@
       "name": "com.kythene/kythene",
       "confidence": 0.35,
       "topics": [],
-      "description": "Your AI's work, reviewed by your team, remembered - shared artifacts with review, plus team memory."
+      "description": "Everything an AI-native team needs: reviewed work, team memory and wiki, facts, asks and toolkits."
     },
     {
       "slug": "com-lightbringer-connector",
@@ -4092,7 +4085,7 @@
       "name": "eu.quantumreadiness/qrp-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Offline post-quantum scanner for code: CycloneDX CBOM, RNG calls next to keys, what it did not read"
+      "description": "Find quantum-vulnerable cryptography (RSA, ECDSA, DH) in code: offline cryptographic inventory, CBOM"
     },
     {
       "slug": "eu-sendletter-sendletter",
@@ -10192,319 +10185,11 @@
       "description": "Model Context Protocol server for Taiwan Legislative Yuan API v2."
     },
     {
-      "slug": "io-github-natiixnt-redcon",
-      "name": "io.github.natiixnt/redcon",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Deterministic context packing for AI coding agents; measured 83% fewer input tokens, local."
-    },
-    {
-      "slug": "io-github-nazar256-memheaven",
-      "name": "io.github.nazar256/memheaven",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Self-hosted remote MCP memory server for ChatGPT and AI agents."
-    },
-    {
-      "slug": "io-github-ndrysdal-byte-prediction-friction-tracker",
-      "name": "io.github.ndrysdal-byte/prediction-friction-tracker",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Prediction-market fee/KYC/withdrawal data, venue recommendations, and a paid x402 change feed."
-    },
-    {
-      "slug": "io-github-neat-technologies-neat",
-      "name": "io.github.neat-technologies/neat",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "A live graph of your running system, code fused with OTel runtime, that your agent queries over MCP."
-    },
-    {
-      "slug": "io-github-neilberkman-sidereon",
-      "name": "io.github.neilberkman/sidereon",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "GNSS positioning and astrodynamics: orbit propagation, passes, GNSS solves, and RINEX QC"
-    },
-    {
-      "slug": "io-github-netallion-netallion-mcp-lite",
-      "name": "io.github.netallion/netallion-mcp-lite",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Local secret & credential checks for AI-assisted dev — runs on your machine, results redacted."
-    },
-    {
-      "slug": "io-github-nevent-dev-mcp-nevent",
-      "name": "io.github.nevent-dev/mcp-nevent",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Talk to your live-events CRM (campaigns, analytics, paid ads, segments) in Claude and ChatGPT."
-    },
-    {
-      "slug": "io-github-ni-c-audiobookshelf-mcp",
-      "name": "io.github.ni-c/audiobookshelf-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Browse your Audiobookshelf libraries and keep listening progress, bookmarks and playlists in sync"
-    },
-    {
-      "slug": "io-github-ni-c-freshrss-mcp",
-      "name": "io.github.ni-c/freshrss-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server for FreshRSS, the self-hosted RSS feed aggregator"
-    },
-    {
-      "slug": "io-github-ni-c-linkwarden-mcp",
-      "name": "io.github.ni-c/linkwarden-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server for Linkwarden, the self-hosted bookmark manager with page preservation"
-    },
-    {
-      "slug": "io-github-ni-c-mealie-mcp",
-      "name": "io.github.ni-c/mealie-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP server for Mealie, the self-hosted recipe manager and meal planner"
-    },
-    {
-      "slug": "io-github-ni-c-opengist-mcp",
-      "name": "io.github.ni-c/opengist-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read, create, update and delete gists on a self-hosted Opengist instance"
-    },
-    {
       "slug": "io-github-nicohern-abapilot-mcp",
       "name": "io.github.NicoHern/abapilot-mcp",
       "confidence": 0.35,
       "topics": [],
       "description": "Governed MCP access to SAP ECC, S/4HANA and RISE, as the named SAP user. Needs the ABAPilot backend."
-    },
-    {
-      "slug": "io-github-nifrajs-nifra-docs",
-      "name": "io.github.nifrajs/nifra-docs",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Nifra docs, runnable examples, and API types as an MCP server for any AI assistant."
-    },
-    {
-      "slug": "io-github-nirholas-3d-agent-mcp",
-      "name": "io.github.nirholas/3d-agent-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "MCP tools from three.ws: free + paid text-to-3D, rigging, agent reputation, market intel."
-    },
-    {
-      "slug": "io-github-nirholas-3d-ar-studio",
-      "name": "io.github.nirholas/3d-ar-studio",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Put 3D models in someone's real room: generate, arrange, and hand back one AR link."
-    },
-    {
-      "slug": "io-github-nirholas-activity-mcp",
-      "name": "io.github.nirholas/activity-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Trending agents and coins, the $THREE holder leaderboard, and the site-wide activity ticker."
-    },
-    {
-      "slug": "io-github-nirholas-agenc-mcp",
-      "name": "io.github.nirholas/agenc-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Browse the AgenC on-chain task marketplace, query the agent registry, and link identities."
-    },
-    {
-      "slug": "io-github-nirholas-agent-sniper",
-      "name": "io.github.nirholas/agent-sniper",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Self-custodial pump.fun sniper: arm strategies, snipe, manage positions. Simulate by default."
-    },
-    {
-      "slug": "io-github-nirholas-agora-mcp",
-      "name": "io.github.nirholas/agora-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Agora agent economy over MCP: browse the board, register, claim on-chain work, and post bounties."
-    },
-    {
-      "slug": "io-github-nirholas-assistant-widget",
-      "name": "io.github.nirholas/assistant-widget",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Generate a paste-ready embed for a floating 3D avatar chatbot on any website."
-    },
-    {
-      "slug": "io-github-nirholas-autopilot-mcp",
-      "name": "io.github.nirholas/autopilot-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Set autopilot scopes and a daily SOL spend cap, then propose, execute, and undo agent actions."
-    },
-    {
-      "slug": "io-github-nirholas-billing-mcp",
-      "name": "io.github.nirholas/billing-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "An agent's account economics — plan quotas, metered usage, invoices, receipts, and earnings."
-    },
-    {
-      "slug": "io-github-nirholas-clash-mcp",
-      "name": "io.github.nirholas/clash-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Play three.ws Coin Clash — read the faction battle board and leaderboard, enlist, and rally."
-    },
-    {
-      "slug": "io-github-nirholas-concierge-mcp",
-      "name": "io.github.nirholas/concierge-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Ask any website's AI concierge a grounded question, and generate the embed to add one to a site."
-    },
-    {
-      "slug": "io-github-nirholas-intel-mcp",
-      "name": "io.github.nirholas/intel-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Coin smart-money scores, wallet reputation, signal feeds, and KOL leaderboards."
-    },
-    {
-      "slug": "io-github-nirholas-kol-mcp",
-      "name": "io.github.nirholas/kol-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Per-wallet KOL deep dive — a tracked trader's portfolio P&L and its trades on a given mint."
-    },
-    {
-      "slug": "io-github-nirholas-loom-mcp",
-      "name": "io.github.nirholas/loom-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Browse the community 3D-creation gallery, fetch a creation with its viewer URL, and submit it."
-    },
-    {
-      "slug": "io-github-nirholas-marketplace-mcp",
-      "name": "io.github.nirholas/marketplace-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Browse and discover the public three.ws agent marketplace and skills catalog. Read-only."
-    },
-    {
-      "slug": "io-github-nirholas-metaplex-agent",
-      "name": "io.github.nirholas/metaplex-agent",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Deploy AI agents on-chain on Solana with an EIP-8004 identity. Deploy fee funds $THREE buybacks."
-    },
-    {
-      "slug": "io-github-nirholas-naming-mcp",
-      "name": "io.github.nirholas/naming-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "On-chain identity for AI agents: resolve .sol names, reverse-lookup wallets, check handles."
-    },
-    {
-      "slug": "io-github-nirholas-notifications-mcp",
-      "name": "io.github.nirholas/notifications-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read the inbox, mark items read, manage delivery preferences, and register Web Push devices."
-    },
-    {
-      "slug": "io-github-nirholas-provenance-mcp",
-      "name": "io.github.nirholas/provenance-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Append-only, signed, on-chain-verifiable agent action log — record and audit what agents did."
-    },
-    {
-      "slug": "io-github-nirholas-pump-fun-sdk",
-      "name": "io.github.nirholas/pump-fun-sdk",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Build extend and maintain pump - Token creation buying selling migration fee collection"
-    },
-    {
-      "slug": "io-github-nirholas-pumpfun-solana-mcp",
-      "name": "io.github.nirholas/pumpfun-solana-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Free, read-only pump.fun + Solana MCP: token discovery, on-chain analysis, SNS, 3D snapshots."
-    },
-    {
-      "slug": "io-github-nirholas-scene-mcp",
-      "name": "io.github.nirholas/scene-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Compose a placed 3D diorama from one sentence, export a forged world, browse saved scenes."
-    },
-    {
-      "slug": "io-github-nirholas-signals-mcp",
-      "name": "io.github.nirholas/signals-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Discover signal feeds ranked by proven edge, rank publishers, and subscribe + track results."
-    },
-    {
-      "slug": "io-github-nirholas-three-token-mcp",
-      "name": "io.github.nirholas/three-token-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Price, hold, and burn $THREE on Solana — the first MCP server whose actions burn a token."
-    },
-    {
-      "slug": "io-github-nirholas-threews-avatar",
-      "name": "io.github.nirholas/threews-avatar",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "three.ws 3D avatars in your agent: render a live, interactive 3D avatar inline, or get an embed."
-    },
-    {
-      "slug": "io-github-nirholas-threews-pumpfun",
-      "name": "io.github.nirholas/threews-pumpfun",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Free pump.fun and Solana token discovery and on-chain analysis tools, by three.ws."
-    },
-    {
-      "slug": "io-github-nirholas-tutor-mcp",
-      "name": "io.github.nirholas/tutor-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read a Pay-As-You-Learn tutoring session's itemized tab and close it for an attested invoice."
-    },
-    {
-      "slug": "io-github-nirholas-vanity-mcp",
-      "name": "io.github.nirholas/vanity-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Read the three.ws vanity-address market: quote difficulty + USDC price, browse the board."
-    },
-    {
-      "slug": "io-github-nirholas-x402-bridge",
-      "name": "io.github.nirholas/x402-bridge",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Pay any x402 endpoint on the open web: auto-paying bridge with Bazaar discovery and spend caps."
-    },
-    {
-      "slug": "io-github-nirholas-x402-mcp",
-      "name": "io.github.nirholas/x402-mcp",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Self-custodial x402 wallet for AI agents: pay any service in USDC or $THREE from your own key."
-    },
-    {
-      "slug": "io-github-nisarg-pujara-vectorlink-coalent",
-      "name": "io.github.nisarg-pujara-vectorlink/coalent",
-      "confidence": 0.35,
-      "topics": [],
-      "description": "Fresh, attributed facts from your sources — cached, and invalidated the moment a source changes."
     },
     {
       "slug": "io-github-nomadbuilder-un-default",
@@ -15757,95 +15442,11 @@
       "description": "Route tasks by measured judgment quality: third-party-verified, Brier-based calibration records."
     },
     {
-      "slug": "io-github-ndesv21-socialclaw",
-      "name": "io.github.ndesv21/socialclaw",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Connect any AI agent to 11+ social platforms: schedule, publish & track posts via hosted MCP."
-    },
-    {
-      "slug": "io-github-ned-del-fairseal-mcp-server",
-      "name": "io.github.ned-del/fairseal-mcp-server",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Verifiable entropy, provably-fair games, and receipt verification for AI agents (FairSeal API)."
-    },
-    {
-      "slug": "io-github-neiltron-apple-health-mcp",
-      "name": "io.github.neiltron/apple-health-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Local-first Apple Health MCP server for questions about your sleep, workouts and heart data."
-    },
-    {
       "slug": "io-github-nekzus-npm-sentinel-mcp",
       "name": "io.github.Nekzus/npm-sentinel-mcp",
       "confidence": 0.45,
       "topics": [],
       "description": "Advanced NPM analysis: Recursive security scanning, ecosystem awareness, and deep insights."
-    },
-    {
-      "slug": "io-github-nexus-mcp-infra-npm-package-ws-has-241560546-weekl",
-      "name": "io.github.nexus-mcp-infra/npm-package-ws-has-241560546-weekly-downloads-but-sdk",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Stateful WebSocket session registry with per-connection Shannon entropy delta tracking for schema di"
-    },
-    {
-      "slug": "io-github-nexus-mcp-infra-transfer-entropy-api-sdk",
-      "name": "io.github.nexus-mcp-infra/transfer-entropy-api-sdk",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Detect causal dependencies in time series"
-    },
-    {
-      "slug": "io-github-nguyenhuy158-healthchecksio-mcp",
-      "name": "io.github.nguyenhuy158/healthchecksio-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "MCP server for Healthchecks.io API"
-    },
-    {
-      "slug": "io-github-ni-c-hetzner-dns-mcp",
-      "name": "io.github.ni-c/hetzner-dns-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Manage DNS zones and records (zonefiles, RRSets, TTL, protection) via the Hetzner Cloud API"
-    },
-    {
-      "slug": "io-github-ni-c-wg-easy-mcp",
-      "name": "io.github.ni-c/wg-easy-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Administer wg-easy (WireGuard Easy) v15: manage VPN clients, configs, QR codes and server status"
-    },
-    {
-      "slug": "io-github-nicolascroce-keepsake",
-      "name": "io.github.nicolascroce/keepsake",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Keepsake (keepsake.place), the app where creators and solo entrepreneurs empty their heads"
-    },
-    {
-      "slug": "io-github-nithishr-mcp-multi-poc-alpha",
-      "name": "io.github.nithishr/mcp-multi-poc-alpha",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "PoC alpha server - base install, subcommand selection from a shared PyPI package."
-    },
-    {
-      "slug": "io-github-nithishr-mcp-multi-poc-beta",
-      "name": "io.github.nithishr/mcp-multi-poc-beta",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "PoC beta server - extras-gated deps, subcommand selection, same PyPI package as alpha."
-    },
-    {
-      "slug": "io-github-nithishr-mcp-multi-poc-beta-script",
-      "name": "io.github.nithishr/mcp-multi-poc-beta-script",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "PoC Q5b: run a differently-named console script via a positional runtimeArgument."
     },
     {
       "slug": "io-github-nolpak14-getregdata",
@@ -18167,7 +17768,7 @@
       "topics": [
         "visualization"
       ],
-      "description": "Create draw.io diagrams in chat from Mermaid or XML, shown live and interactive. 10,000+ shapes."
+      "description": "Mermaid, PlantUML, CSV or XML in, editable draw.io diagrams out, live in chat. 10,000+ shapes."
     },
     {
       "slug": "io-form-formio-uag",
@@ -21383,114 +20984,6 @@
         "finance"
       ],
       "description": "Access Yahoo Finance stock data, news, screeners, options, financials, and charts through MCP."
-    },
-    {
-      "slug": "io-github-ndyakov-lastfm-mcp",
-      "name": "io.github.ndyakov/lastfm-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "visualization"
-      ],
-      "description": "Last.fm MCP server: scrobbles, charts, artist/album/track info and more"
-    },
-    {
-      "slug": "io-github-ni-c-mcp-hub",
-      "name": "io.github.ni-c/mcp-hub",
-      "confidence": 0.55,
-      "topics": [
-        "mcp-infrastructure"
-      ],
-      "description": "Many stdio MCP servers from one container, published over HTTPS with OAuth 2.1 for any MCP client"
-    },
-    {
-      "slug": "io-github-nickatnight96-iphone-mirror-mcp",
-      "name": "io.github.nickatnight96/iphone-mirror-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "Drive a real iPhone via macOS iPhone Mirroring; Xcode build/test automation for sims and devices."
-    },
-    {
-      "slug": "io-github-nickjlamb-redacta-mcp",
-      "name": "io.github.nickjlamb/redacta-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "science-health"
-      ],
-      "description": "Keep patient identifiers out of AI agent context — a local privacy boundary for healthcare agents."
-    },
-    {
-      "slug": "io-github-nirholas-3d-ai-agent-avatar",
-      "name": "io.github.nirholas/3D-AI-Agent-Avatar",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "3D AI Agent Avatar — render any GLB, give it a Solana wallet, a voice, and pump.fun powers."
-    },
-    {
-      "slug": "io-github-nirholas-alerts-mcp",
-      "name": "io.github.nirholas/alerts-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "observability"
-      ],
-      "description": "Create, update, and delete pump.fun alert rules and read fired-alert history across channels."
-    },
-    {
-      "slug": "io-github-nirholas-audio-mcp",
-      "name": "io.github.nirholas/audio-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Text-to-speech, speech-to-text, audio-to-face lipsync, and motion-capture clips for 3D agents."
-    },
-    {
-      "slug": "io-github-nirholas-copy-mcp",
-      "name": "io.github.nirholas/copy-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Manage copy-trade follows — follow leaders, tune sizing and guard rules, and track fees owed."
-    },
-    {
-      "slug": "io-github-nirholas-hood-mcp",
-      "name": "io.github.nirholas/hood-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Robinhood Chain data + guarded trading for AI agents: Stock Token quotes, portfolios, launches"
-    },
-    {
-      "slug": "io-github-nirholas-portfolio-mcp",
-      "name": "io.github.nirholas/portfolio-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "An agent's trading state — portfolio value, PnL, live balances, trade feed, and signed transfers."
-    },
-    {
-      "slug": "io-github-nirholas-vision-mcp",
-      "name": "io.github.nirholas/vision-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Image understanding for AI agents — analyze and describe any image via the three.ws pipeline."
-    },
-    {
-      "slug": "io-github-nirholas-xactions",
-      "name": "io.github.nirholas/xactions",
-      "confidence": 0.55,
-      "topics": [
-        "automation"
-      ],
-      "description": "X/Twitter automation MCP: scrape, post, schedule, analyze, engage. No API key required."
     },
     {
       "slug": "io-github-nitmi-blea",
