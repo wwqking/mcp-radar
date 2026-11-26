@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-11-25T04:49:57.840Z",
-  "total": 4199,
+  "generatedAt": "2026-11-26T03:59:23.830Z",
+  "total": 4185,
   "summary": {
-    "needsReview": 2824,
-    "needsReviewRatePct": 67.3,
+    "needsReview": 2821,
+    "needsReviewRatePct": 67.4,
     "uncategorized": 1884,
-    "uncategorizedRatePct": 44.9,
+    "uncategorizedRatePct": 45,
     "largestCategory": "dev",
-    "largestCategoryRatePct": 33.1
+    "largestCategoryRatePct": 32.9
   },
   "alerts": [
-    "待归类占比 44.9%，超过 5% 审核线",
-    "dev 占比 33.1%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.3%，超过 10%"
+    "待归类占比 45%，超过 5% 审核线",
+    "dev 占比 32.9%，超过 30% 拆分评估线",
+    "低置信度/待审核占比 67.4%，超过 10%"
   ],
   "categoryCounts": {
     "misc": 1884,
-    "dev": 1389,
-    "search": 573,
-    "files": 194,
-    "ai": 169,
-    "comms": 141,
+    "dev": 1377,
+    "search": 570,
+    "files": 192,
+    "ai": 165,
+    "comms": 140,
     "database": 135,
     "commerce": 119,
     "cloud": 91,
@@ -28,7 +28,7 @@
     "marketing": 67
   },
   "topicCounts": {
-    "design-media": 208,
+    "design-media": 207,
     "automation": 149,
     "finance": 146,
     "legal": 89,
@@ -52,7 +52,7 @@
     },
     {
       "term": "query",
-      "count": 225
+      "count": 224
     },
     {
       "term": "lookup",
@@ -80,7 +80,7 @@
     },
     {
       "term": "coding",
-      "count": 83
+      "count": 81
     },
     {
       "term": "detran",
@@ -95,6 +95,10 @@
       "count": 73
     },
     {
+      "term": "local",
+      "count": 67
+    },
+    {
       "term": "manage",
       "count": 67
     },
@@ -103,15 +107,7 @@
       "count": 66
     },
     {
-      "term": "local",
-      "count": 66
-    },
-    {
       "term": "live",
-      "count": 63
-    },
-    {
-      "term": "read",
       "count": 63
     },
     {
@@ -119,8 +115,12 @@
       "count": 62
     },
     {
-      "term": "over",
+      "term": "read",
       "count": 62
+    },
+    {
+      "term": "over",
+      "count": 61
     },
     {
       "term": "read-only",
@@ -148,7 +148,7 @@
     },
     {
       "term": "analysis",
-      "count": 42
+      "count": 43
     },
     {
       "term": "across",
@@ -2146,7 +2146,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "836 MCP tools across 1280 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "837 MCP tools across 1281 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -2601,7 +2601,7 @@
       "name": "com.energyaisolution/energyai",
       "confidence": 0.35,
       "topics": [],
-      "description": "Solar, weatherization, EV charging, battery and heat-pump decision tools for AI agents."
+      "description": "Solar, heat pump and battery decisions for agents: incentives, estimates, quote review, installers"
     },
     {
       "slug": "com-energyaisolution-solar-home-incentives",
@@ -3735,7 +3735,7 @@
       "name": "dev.1social/1social",
       "confidence": 0.35,
       "topics": [],
-      "description": "Publish, schedule and verify social posts across ten networks from your AI assistant."
+      "description": "Publish, schedule and verify social posts across eleven networks from your AI assistant."
     },
     {
       "slug": "dev-adrkit-mcp",
@@ -4813,7 +4813,7 @@
       "name": "io.github.andreilungeanu/cursor-delegate-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "Bridge AI coding hosts to cursor-agent over the Agent Client Protocol."
+      "description": "Bring Cursor's CLI agent into your agent's council for second opinions, plans and edits."
     },
     {
       "slug": "io-github-andreisilva1-binky",
@@ -5212,7 +5212,7 @@
       "name": "io.github.biosshot/kicad-copilot",
       "confidence": 0.35,
       "topics": [],
-      "description": "File-oriented MCP server for KiCad schematics, PCB placement, routing, and pours."
+      "description": "Local KiCad MCP server for schematics, PCB placement, routing, and electrical and thermal analysis."
     },
     {
       "slug": "io-github-bitfenceai-bitfence",
@@ -13640,7 +13640,7 @@
       "name": "io.github.hermoso-ai/hermoso",
       "confidence": 0.45,
       "topics": [],
-      "description": "Launch and market what your AI built. 1682 tools, usable alone. Start free: 160+ credits. No markup."
+      "description": "Launch and market what your AI built. 1828 tools, usable alone. Start free: 160+ credits. No markup."
     },
     {
       "slug": "io-github-heznpc-airmcp",
@@ -15188,27 +15188,6 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Find federal contracts, awards, vendors, and exclusion records. Built by Moosh Works."
-    },
-    {
-      "slug": "io-github-mrfentmen-mixpanel-mcp",
-      "name": "io.github.mrfentmen/mixpanel-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Query Mixpanel events, funnels, retention, cohorts, and user profiles."
-    },
-    {
-      "slug": "io-github-mrfentmen-screenplaywriter-mcp",
-      "name": "io.github.mrfentmen/screenplaywriter-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Read, write, and analyze screenplays in Fountain format."
-    },
-    {
-      "slug": "io-github-mrkeyoor-should-i-use",
-      "name": "io.github.mrkeyoor/should-i-use",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Honest library picks for coding agents in 25-360 tokens. Tells your agent what NOT to install."
     },
     {
       "slug": "io-github-mrrefactoring-atlassian-dc-mcp-confluence",
@@ -18730,7 +18709,7 @@
       "topics": [
         "design-media"
       ],
-      "description": "AI video generation via the Vivideo API: auto or manual mode, avatars, voices, brand kits."
+      "description": "AI video via the Vivideo API: agents sign up, buy a plan and make auto or manual videos."
     },
     {
       "slug": "io-github-ellmos-ai-ellmos-blender-use-mcp",
