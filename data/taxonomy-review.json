@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-26T03:59:23.830Z",
-  "total": 4185,
+  "generatedAt": "2026-11-27T04:00:22.321Z",
+  "total": 4184,
   "summary": {
-    "needsReview": 2821,
+    "needsReview": 2822,
     "needsReviewRatePct": 67.4,
     "uncategorized": 1884,
     "uncategorizedRatePct": 45,
@@ -16,8 +16,8 @@
   ],
   "categoryCounts": {
     "misc": 1884,
-    "dev": 1377,
-    "search": 570,
+    "dev": 1376,
+    "search": 569,
     "files": 192,
     "ai": 165,
     "comms": 140,
@@ -33,7 +33,7 @@
     "finance": 146,
     "legal": 89,
     "observability": 78,
-    "mcp-infrastructure": 61,
+    "mcp-infrastructure": 62,
     "visualization": 47,
     "science-health": 23,
     "data-analysis": 21,
@@ -52,7 +52,7 @@
     },
     {
       "term": "query",
-      "count": 224
+      "count": 225
     },
     {
       "term": "lookup",
@@ -76,7 +76,7 @@
     },
     {
       "term": "free",
-      "count": 84
+      "count": 85
     },
     {
       "term": "coding",
@@ -187,6 +187,10 @@
       "count": 36
     },
     {
+      "term": "find",
+      "count": 36
+    },
+    {
       "term": "local-first",
       "count": 36
     },
@@ -199,7 +203,7 @@
       "count": 35
     },
     {
-      "term": "find",
+      "term": "intelligence",
       "count": 35
     },
     {
@@ -208,10 +212,6 @@
     },
     {
       "term": "cnpj",
-      "count": 34
-    },
-    {
-      "term": "intelligence",
       "count": 34
     },
     {
@@ -2146,7 +2146,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "837 MCP tools across 1281 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "838 MCP tools across 1282 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -3735,7 +3735,7 @@
       "name": "dev.1social/1social",
       "confidence": 0.35,
       "topics": [],
-      "description": "Publish, schedule and verify social posts across eleven networks from your AI assistant."
+      "description": "Publish, schedule and verify social posts across twelve networks from your AI assistant."
     },
     {
       "slug": "dev-adrkit-mcp",
@@ -6157,7 +6157,7 @@
       "name": "io.github.erayendes/asc-mcp",
       "confidence": 0.35,
       "topics": [],
-      "description": "App Store Connect, TestFlight & StoreKit 2. 786 tools in 14 profiles, narrow to 17."
+      "description": "App Store Connect, TestFlight & StoreKit 2. 790 tools in 14 profiles, narrow to 17."
     },
     {
       "slug": "io-github-eshller-ltd-mcp",
@@ -10917,7 +10917,7 @@
       "name": "cloud.dchub/mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Orchestration layer for data center and energy intelligence. execute_plan, DCPI, power grid, fiber."
+      "description": "The orchestration layer for data center and energy intelligence. Find power, land, fiber, capacity."
     },
     {
       "slug": "co-tempguru-event-staffing",
@@ -10952,7 +10952,7 @@
       "name": "com.predictionmarketspicks/quant",
       "confidence": 0.45,
       "topics": [],
-      "description": "Independent quant layer: fee-adjusted edge, Kelly, combos, best price: Kalshi, Polymarket US, Novig"
+      "description": "Free to connect, no API key. Independent quant layer: EV, Kelly on Kalshi, Polymarket US, Novig"
     },
     {
       "slug": "com-xquik-mcp",
@@ -11575,7 +11575,7 @@
       "name": "io.github.beepboop2025/liquilens",
       "confidence": 0.45,
       "topics": [],
-      "description": "Free bank-filing and counterparty research; cited evidence limits; public MCP needs no API key."
+      "description": "Free bank-filing and counterparty research; cited evidence limits; the public MCP is open to all."
     },
     {
       "slug": "io-github-beepboop2025-lucent",
@@ -13640,7 +13640,7 @@
       "name": "io.github.hermoso-ai/hermoso",
       "confidence": 0.45,
       "topics": [],
-      "description": "Launch and market what your AI built. 1828 tools, usable alone. Start free: 160+ credits. No markup."
+      "description": "Launch and market what your AI built. 1831 tools, usable alone. Start free: 160+ credits. No markup."
     },
     {
       "slug": "io-github-heznpc-airmcp",
@@ -15167,6 +15167,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Company, KYB, VAT, sanctions, LEI and address data for 15 European countries."
+    },
+    {
+      "slug": "io-github-moelayyan90-xguard",
+      "name": "io.github.moelayyan90/xguard",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Paid technical intelligence for developers and AI agents. USD 0.001 per successful atomic query."
     },
     {
       "slug": "io-github-mohibshaikh-hwcontract",
