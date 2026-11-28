@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-27T04:00:22.321Z",
-  "total": 4184,
+  "generatedAt": "2026-11-28T03:45:56.136Z",
+  "total": 4183,
   "summary": {
-    "needsReview": 2822,
-    "needsReviewRatePct": 67.4,
+    "needsReview": 2823,
+    "needsReviewRatePct": 67.5,
     "uncategorized": 1884,
     "uncategorizedRatePct": 45,
     "largestCategory": "dev",
@@ -12,11 +12,11 @@
   "alerts": [
     "待归类占比 45%，超过 5% 审核线",
     "dev 占比 32.9%，超过 30% 拆分评估线",
-    "低置信度/待审核占比 67.4%，超过 10%"
+    "低置信度/待审核占比 67.5%，超过 10%"
   ],
   "categoryCounts": {
     "misc": 1884,
-    "dev": 1376,
+    "dev": 1375,
     "search": 569,
     "files": 192,
     "ai": 165,
@@ -28,12 +28,12 @@
     "marketing": 67
   },
   "topicCounts": {
-    "design-media": 207,
+    "design-media": 206,
     "automation": 149,
-    "finance": 146,
+    "finance": 145,
     "legal": 89,
     "observability": 78,
-    "mcp-infrastructure": 62,
+    "mcp-infrastructure": 63,
     "visualization": 47,
     "science-health": 23,
     "data-analysis": 21,
@@ -88,7 +88,7 @@
     },
     {
       "term": "company",
-      "count": 73
+      "count": 74
     },
     {
       "term": "memory",
@@ -120,7 +120,7 @@
     },
     {
       "term": "over",
-      "count": 61
+      "count": 60
     },
     {
       "term": "read-only",
@@ -128,7 +128,7 @@
     },
     {
       "term": "person",
-      "count": 52
+      "count": 53
     },
     {
       "term": "create",
@@ -159,6 +159,10 @@
       "count": 40
     },
     {
+      "term": "every",
+      "count": 39
+    },
+    {
       "term": "real",
       "count": 39
     },
@@ -172,10 +176,6 @@
     },
     {
       "term": "clearance",
-      "count": 37
-    },
-    {
-      "term": "every",
       "count": 37
     },
     {
@@ -2146,7 +2146,7 @@
       "name": "co.ainumbers/tools",
       "confidence": 0.35,
       "topics": [],
-      "description": "838 MCP tools across 1282 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
+      "description": "839 MCP tools across 1282 fintech tools: ChainGraph AP2 decisions, execution_hash. Zero PII."
     },
     {
       "slug": "co-obto-obto",
@@ -2469,6 +2469,13 @@
       "confidence": 0.35,
       "topics": [],
       "description": "Drive a live Cinevva game session: edit game files, import CC0 assets, preview changes."
+    },
+    {
+      "slug": "com-coinbucha-bitcoin-signals",
+      "name": "com.coinbucha/bitcoin-signals",
+      "confidence": 0.35,
+      "topics": [],
+      "description": "Filing-linked company bitcoin holdings, per share, next results dates; sovereign, hiring, hashrate."
     },
     {
       "slug": "com-considus-pagespeed-insights-mcp",
@@ -11025,13 +11032,6 @@
       "description": "MCP server for Japan geodata: cadastral lot numbers (chiban) and reverse geocoding, for AI agents."
     },
     {
-      "slug": "io-github-5dive-ai-5dive-mcp",
-      "name": "io.github.5dive-ai/5dive-mcp",
-      "confidence": 0.45,
-      "topics": [],
-      "description": "Expose the 5dive agent-fleet CLI (tasks, agents, digest) as MCP tools, over stdio or HTTP."
-    },
-    {
       "slug": "io-github-99blaked99-the-metis-fca-handbook-ai-harness-mcp",
       "name": "io.github.99blakeD99/the-metis-fca-handbook-ai-harness-mcp",
       "confidence": 0.45,
@@ -12527,7 +12527,7 @@
       "name": "io.github.cyanheads/exchange-rates-mcp-server",
       "confidence": 0.45,
       "topics": [],
-      "description": "Convert currencies, get FX rates, and query historical Frankfurter v1 exchange rate data."
+      "description": "Query daily Frankfurter rates and convert currencies using fixed euro adoption rates."
     },
     {
       "slug": "io-github-cyanheads-fcc-broadband-mcp-server",
@@ -13521,7 +13521,7 @@
       "name": "io.github.goklab/guardvibe",
       "confidence": 0.45,
       "topics": [],
-      "description": "Deterministic security layer your AI can't be. 685 rules, 39 tools, CLI + doctor + host audit."
+      "description": "Deterministic security layer your AI can't be. 687 rules, 39 tools, CLI + doctor + host audit."
     },
     {
       "slug": "io-github-good-sender-goodsender-mcp",
@@ -13683,6 +13683,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "Model Context Protocol server for Google Gemini AI with chat, research, and grounding"
+    },
+    {
+      "slug": "io-github-huanggoodmanagency-pops4-mcp-catalog",
+      "name": "io.github.HuangGoodmanAgency/pops4-mcp-catalog",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "Plan and price what a brand needs made for a launch or event. A person approves every quote. No key."
     },
     {
       "slug": "io-github-huginnindustries-codecartographer",
@@ -14299,6 +14306,13 @@
       "confidence": 0.45,
       "topics": [],
       "description": "NASA-validated computed planetary positions for your AI: 19 astrology tools, never hallucinated."
+    },
+    {
+      "slug": "io-github-kaiser-data-kitsune-mcp",
+      "name": "io.github.kaiser-data/kitsune-mcp",
+      "confidence": 0.45,
+      "topics": [],
+      "description": "One MCP server, every form: hot-reload your own MCP server, test any server in seconds, caged."
     },
     {
       "slug": "io-github-kakha13-esim-mcp",
@@ -16769,15 +16783,6 @@
       "description": "Query Churn Solution cancellation-flow metrics, revenue, and feedback analytics (read-only)."
     },
     {
-      "slug": "com-coinbucha-bitcoin-signals",
-      "name": "com.coinbucha/bitcoin-signals",
-      "confidence": 0.55,
-      "topics": [
-        "finance"
-      ],
-      "description": "Leading non-price Bitcoin signals over MCP: sovereign, hiring, hashrate. Not financial advice."
-    },
-    {
       "slug": "com-coinpaprika-coinpaprika",
       "name": "com.coinpaprika/coinpaprika",
       "confidence": 0.55,
@@ -17592,6 +17597,15 @@
         "security"
       ],
       "description": "Upgrade intelligence for AI agents: what an upgrade changes, where it touches your code, CVE scans."
+    },
+    {
+      "slug": "io-github-5dive-ai-5dive-mcp",
+      "name": "io.github.5dive-ai/5dive-mcp",
+      "confidence": 0.55,
+      "topics": [
+        "mcp-infrastructure"
+      ],
+      "description": "Run your 5dive agent team from Claude, ChatGPT or any MCP client, over stdio or HTTP."
     },
     {
       "slug": "io-github-a1-x-tech-mcp-google-business",
@@ -20653,15 +20667,6 @@
         "design-media"
       ],
       "description": "Control Adobe Premiere Pro video editing via ExtendScript."
-    },
-    {
-      "slug": "io-github-mrfentmen-gimp-mcp",
-      "name": "io.github.mrfentmen/gimp-mcp",
-      "confidence": 0.55,
-      "topics": [
-        "design-media"
-      ],
-      "description": "Control GIMP image editing via Python-Fu scripting from AI agents."
     },
     {
       "slug": "io-github-nitmi-blea",
